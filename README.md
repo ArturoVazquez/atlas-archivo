@@ -54,3 +54,6 @@ El visor, el pipeline de validación y la construcción del atlas se desarrollan
 en privado. Este repositorio es su cara documental: lo que cualquier lector
 necesita para comprobar de dónde sale un dato, con qué doctrina se publicó y
 qué puede hacer con él.
+
+El atlas es obra de una sola persona: lo cura y lo mantiene **Arturo David
+Vázquez Paumard**. Cómo citarlo está en [`CITATION.cff`](CITATION.cff).

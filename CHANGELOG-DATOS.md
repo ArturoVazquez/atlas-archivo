@@ -340,6 +340,11 @@ a etiquetar. Lo que trae es un diente nuevo y dos remiendos en el visor.
   y eso deja fuera `frame-ancestors`: **cualquier página puede seguir metiendo el
   atlas en un iframe**. No es un descuido; es el precio del alojamiento, y el
   atlas ofrece un incrustable propio de todos modos.
+  > **Nota del 2026-08-11:** este límite murió con la mudanza a Vercel (release
+  > .37, que ya sí admite cabeceras). `frame-ancestors 'none'` va desde entonces
+  > como cabecera real en todas las rutas menos `incrustar.html`, que existe
+  > para ser incrustado. La entrada de arriba se queda como estaba: el registro
+  > no se reescribe, se anota.
 
 ## datos-v2026.08.30 — Las cuatro del Taibilla, con mejor geometría que las seis que ya estaban
 

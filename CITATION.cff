@@ -11,8 +11,8 @@ abstract: >-
   verificación; lo que falta se declara como hueco, y la doctrina la comprueba
   la integración continua en cada cambio.
 authors:
-  - family-names: Vázquez
-    given-names: Arturo
+  - family-names: Vázquez Paumard
+    given-names: Arturo David
 repository-code: https://github.com/ArturoVazquez/atlas-archivo
 url: https://atlas.eltercioviejo.com
 license: CC-BY-4.0
