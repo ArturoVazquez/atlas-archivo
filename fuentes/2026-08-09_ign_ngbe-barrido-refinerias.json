@@ -1,0 +1,163 @@
+{
+ "_": "Barrido del Nomenclátor Geográfico Básico de España (api-features.ign.es) buscando las refinerías, por recuadro alrededor de cada municipio. Capturado el 2026-08-09.",
+ "consultas": [
+  {
+   "sitio": "cartagena",
+   "bbox": "-1.2673078569999598,41.9419197790001,-0.9673078569999599,42.2419197790001",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.2673078569999598%2C41.9419197790001%2C-0.9673078569999599%2C42.2419197790001&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.2673078569999598%2C41.9419197790001%2C-0.9673078569999599%2C42.2419197790001&limit=1000&offset=936&f=json"
+   ],
+   "numberMatched": 941,
+   "barridos": 941,
+   "aciertos": []
+  },
+  {
+   "sitio": "coruna",
+   "bbox": "-8.545825599,43.22149478,-8.245825599,43.52149478",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-8.545825599%2C43.22149478%2C-8.245825599%2C43.52149478&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-8.545825599%2C43.22149478%2C-8.245825599%2C43.52149478&limit=1000&offset=1000&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-8.545825599%2C43.22149478%2C-8.245825599%2C43.52149478&limit=1000&offset=1997&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-8.545825599%2C43.22149478%2C-8.245825599%2C43.52149478&limit=1000&offset=2996&f=json"
+   ],
+   "numberMatched": 3167,
+   "barridos": 3167,
+   "aciertos": []
+  },
+  {
+   "sitio": "puertollano",
+   "bbox": "-4.1121392850000005,37.34153217,-3.812139285,37.64153217",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-4.1121392850000005%2C37.34153217%2C-3.812139285%2C37.64153217&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-4.1121392850000005%2C37.34153217%2C-3.812139285%2C37.64153217&limit=1000&offset=988&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-4.1121392850000005%2C37.34153217%2C-3.812139285%2C37.64153217&limit=1000&offset=1983&f=json"
+   ],
+   "numberMatched": 2516,
+   "barridos": 2516,
+   "aciertos": []
+  },
+  {
+   "sitio": "tarragona",
+   "bbox": "1.1041615580000002,40.96745293,1.404161558,41.26745293",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=1.1041615580000002%2C40.96745293%2C1.404161558%2C41.26745293&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=1.1041615580000002%2C40.96745293%2C1.404161558%2C41.26745293&limit=1000&offset=983&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=1.1041615580000002%2C40.96745293%2C1.404161558%2C41.26745293&limit=1000&offset=1298&f=json"
+   ],
+   "numberMatched": 1299,
+   "barridos": 1299,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-03-09",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "la Refineria",
+      "fuente": "C.A. Cataluña"
+     },
+     "id": "2015897",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       1.22271722100004,
+       41.1793214410001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "muskiz",
+   "bbox": "-3.27496229677254,43.1732911818427,-2.97496229677254,43.4732911818427",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.27496229677254%2C43.1732911818427%2C-2.97496229677254%2C43.4732911818427&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.27496229677254%2C43.1732911818427%2C-2.97496229677254%2C43.4732911818427&limit=1000&offset=718&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.27496229677254%2C43.1732911818427%2C-2.97496229677254%2C43.4732911818427&limit=1000&offset=1378&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.27496229677254%2C43.1732911818427%2C-2.97496229677254%2C43.4732911818427&limit=1000&offset=2107&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.27496229677254%2C43.1732911818427%2C-2.97496229677254%2C43.4732911818427&limit=1000&offset=2828&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.27496229677254%2C43.1732911818427%2C-2.97496229677254%2C43.4732911818427&limit=1000&offset=2966&f=json"
+   ],
+   "numberMatched": 2975,
+   "barridos": 2975,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "Petronor SA errefinategia",
+      "fuente": "C.A. País Vasco"
+     },
+     "id": "1701533",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -3.11590519399994,
+       43.3278810400001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Barrio",
+      "tiponombre": "nombre_variante_1",
+      "fecha": "2023-08-08",
+      "codigo_ngbe": "2.1.8",
+      "etiqueta": "Lasesarre",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "1701589",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.99121057099995,
+       43.2999269030001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "tenerife",
+   "bbox": "-16.4044857,28.3200052,-16.1044857,28.620005199999998",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-16.4044857%2C28.3200052%2C-16.1044857%2C28.620005199999998&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-16.4044857%2C28.3200052%2C-16.1044857%2C28.620005199999998&limit=1000&offset=987&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-16.4044857%2C28.3200052%2C-16.1044857%2C28.620005199999998&limit=1000&offset=1251&f=json"
+   ],
+   "numberMatched": 1253,
+   "barridos": 1253,
+   "aciertos": []
+  },
+  {
+   "sitio": "san-roque",
+   "bbox": "-6.72220456199991,42.4775022040001,-6.4222045619999095,42.7775022040001",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-6.72220456199991%2C42.4775022040001%2C-6.4222045619999095%2C42.7775022040001&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-6.72220456199991%2C42.4775022040001%2C-6.4222045619999095%2C42.7775022040001&limit=1000&offset=1000&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-6.72220456199991%2C42.4775022040001%2C-6.4222045619999095%2C42.7775022040001&limit=1000&offset=1998&f=json"
+   ],
+   "numberMatched": 2830,
+   "barridos": 2830,
+   "aciertos": []
+  },
+  {
+   "sitio": "palos",
+   "bbox": "-3.84518987799995,40.2542971200001,-3.5451898779999502,40.5542971200001",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.84518987799995%2C40.2542971200001%2C-3.5451898779999502%2C40.5542971200001&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.84518987799995%2C40.2542971200001%2C-3.5451898779999502%2C40.5542971200001&limit=1000&offset=996&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.84518987799995%2C40.2542971200001%2C-3.5451898779999502%2C40.5542971200001&limit=1000&offset=1980&f=json"
+   ],
+   "numberMatched": 2364,
+   "barridos": 2364,
+   "aciertos": []
+  }
+ ]
+}

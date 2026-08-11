@@ -1,0 +1,2512 @@
+# CHANGELOG de datos
+
+Una entrada por **release de datos** (etiqueta Git `datos-vAAAA.MM`, con sufijo
+`.N` si hay más de una en el mismo mes; contrato §8).
+Cada entrada dice **qué cambió, por qué y con qué evidencia** — y alimenta la
+respuesta en el hilo de El Tercio de esa capa.
+
+Esto no es un registro de commits: es el registro de lo que un lector externo
+necesita saber para confiar en una versión de los datos, o para desconfiar de la
+anterior con motivo.
+
+**Formato de cada entrada:**
+
+```
+## datos-vAAAA.MM — título
+
+### Añadido
+- capa/registro — qué entra, con su fuente
+
+### Corregido
+- capa:slug · campo — valor viejo → valor nuevo, y la fuente que lo obliga
+
+### Retirado
+- capa:slug — a `estado_registro: retirado`, y por qué. (Nunca borrado.)
+
+### Huecos
+- lo que sigue sin fuente primaria, dicho en voz alta
+```
+
+La sección **Huecos** no es opcional ni decorativa. Una release que no declara lo
+que no sabe está afirmando que lo sabe todo.
+
+---
+
+## datos-v2026.08.37 — El vigía cobra su primera pieza: la concesión de Valdelentisco
+
+**Primera release del circuito de guardia completo**: `otear` señaló el acto en
+su barrido semanal (1 hallazgo sobre 8 sumarios y 1.440 actos), la curación lo
+juzgó y entra. Y primera release tras la mudanza del taller (DECISIONES D10):
+el despliegue ya no es un push — es el ritual prebuilt de Vercel — y la fuente
+nueva se sincroniza a `atlas-archivo`, que es donde las fichas citan.
+
+### Añadido
+- `desaladoras:valdelentisco` — fuente f5 (BOE-B-2026-26187, 2026-08-05:
+  anuncio de la CHS de información pública de la concesión de las aguas
+  desaladas de la IDAM, 37 hm³/año con destino agrícola, expediente
+  CSR-0008/2018, 309 solicitudes de aprovechamiento evaluadas) y clave «La
+  concesión de sus aguas, en información pública». Ningún campo cambia: `fase`
+  sigue en `produccion` y la capacidad no se toca — el acto es un trámite
+  abierto y se registra como tal, el mismo molde de la ampliación de
+  Torrevieja. La capa pasa a **1.1.1** (parche: enriquecimiento de un
+  registro; ni registro ni campo nuevo — §3 no tiene fila exacta para este
+  caso y se elige el peldaño menor, dicho aquí).
+
+### Huecos
+- La concesión en sí: una información pública no otorga nada. Cuando el BOE
+  traiga el otorgamiento (o su denegación), ese acto actualizará la clave — y
+  el vigía, que ya barre `desaladoras`, debería cantarlo solo.
+- Los de la capa siguen donde estaban: la coordenada de las plantas (el punto
+  es el del municipio, f9 de cada registro) y el censo completo de la
+  desalación española, que esta capa no es y lo dice.
+
+## datos-v2026.08.36 — La foto gana su película: las series temporales
+
+**Ningún registro cambia y nace una clase nueva de artefacto** (contrato
+**1.35.0**, §4.1): las **series temporales** — la película de un registro
+junto a su foto. La primera es `agua-embalsada`: **369 series con 683.892
+partes semanales desde 1988**, extraídas del histórico del Boletín Hidrológico
+que ya estaba archivado en `fuentes/` desde la release `.18`, por el mismo
+emparejamiento que la `.32`.
+
+### Añadido
+
+- **`datos/series/agua-embalsada/` — un fichero por embalse**, con fecha, agua
+  y capacidad de cada parte. La capacidad viaja EN la serie, no como
+  constante: Contreras pasó de 874 a 361 hm³ en 2019 y una capacidad fija
+  mentiría sobre tres décadas. Un punto por línea: el refresco mensual será
+  una línea de diff por fichero.
+- **Tres reglas de doctrina, todas con diente en CI (§7.11)**: solo hay
+  película donde hay negativo (una fuente primaria archivada con el histórico
+  completo — nada de reconstruir ni empalmar); los huecos se quedan huecos
+  (sin interpolación, y la gráfica corta la línea donde faltan partes); y
+  **R11** — el último punto de la serie debe cuadrar con el campo de la ficha
+  que la serie declara, y la última fecha con su `fecha_dato`. R11 pasó sobre
+  las 369 a la primera, lo que además re-verifica la extracción de la `.32`
+  por una vía independiente.
+- **La gráfica, en la ficha**: SVG dibujado a mano por `graficaSerie()` en
+  `expediente.js` — un solo dibujante para el dossier del visor (que trae la
+  serie por fetch) y las páginas pre-renderizadas (que la incrustan en el
+  build, porque su CSP es `script-src 'none'` y allí no hay JS). El eje X es
+  el tiempo, no el índice: los huecos se VEN. La capacidad va fina y sólida,
+  no discontinua — el discontinuo aquí significa «no verificado», y la
+  capacidad es un hecho. Sin porcentajes: los prohíbe R7 también dibujados.
+- **El manifiesto declara qué capas tienen serie** (`series:
+  "reserva-semanal"`, §3): el visor pide la película sin conocer capas por su
+  nombre y sin sembrar 404 en las que no la tienen.
+- **`pipeline/seriar.py`**, la herramienta de extracción: escribe solo donde
+  se le diga, `access_parser` sigue sin ser dependencia del pipeline, y quien
+  la corre firma. Método gana la sección «La foto y la película» (03), en las
+  dos lenguas.
+
+### Huecos
+
+- **32 embalses del Boletín siguen sin serie** — los mismos 32 sin ficha de la
+  `.32`: una serie sin ficha es huérfana por contrato.
+- **La ampliación natural** (generación por provincia, anual) queda para
+  cuando esta se haya usado: generalizar antes de usar es infraestructura sin
+  usuario.
+
+---
+
+## datos-v2026.08.35 — El manifiesto dice por fin su propio nombre
+
+**Ningún registro cambia en esta release, y existe por un fallo de
+procedimiento que conviene dejar escrito.** Las releases `.32`, `.33` y `.34`
+salieron sin actualizar los dos campos que el manifiesto declara de sí mismo:
+`release` (seguía diciendo `2026.08.31`) y `schema_version` (seguía en 1.33.0
+cuando el contrato ya iba por 1.34.0). Lo cazó **la guarda del propio
+despliegue** — «declarada: datos-v2026.08.34 · servida: datos-v2026.08.31» —
+que existe exactamente para esto, y funcionó.
+
+La etiqueta publicada **no se mueve ni se reescribe** (§8), y menos con un DOI
+apuntándole: la corrección es esta release, cuyo manifiesto declara
+`2026.08.35` y `1.34.0`. Las tres anteriores quedan como están, con sus datos
+correctos y su nombre interno equivocado — este párrafo es su fe de erratas.
+
+**La lección, para el procedimiento:** publicar una release de datos es TRES
+gestos, no dos — la entrada del changelog, los campos del manifiesto
+(`release` y, si el contrato se movió, `schema_version`), y la etiqueta. El
+que falte cualquiera lo dirá el despliegue en rojo.
+
+---
+
+## datos-v2026.08.34 — El expediente de Matamulas y el municipio de Las Cruces, saldados
+
+Ningún registro entra ni sale: **dos registros de `minerales-proyectos` pagan
+sus deudas documentales**, las que F1 dejó declaradas el 2026-08-05.
+
+### Corregido
+
+- **`minerales-proyectos:matamulas` sube de `no_verificado` a `parcial`** — ya
+  no es el único «no verificado» global de la capa. El expediente
+  administrativo está archivado del DOCM: la **DIA negativa** (Resolución de
+  26-10-2017 de la Viceconsejería de Medio Ambiente, DOCM n.º 215, ref.
+  2017/13014 — que además sostiene qué es el yacimiento: monacita gris, fosfato
+  de tierras raras con alto contenido en europio y neodimio) y la
+  **denegación de las tres concesiones** (Matamulas-F1, Rematamulas 1.ª y 2.ª,
+  49 cuadrículas en Torrenueva y Torre de Juan Abad; resoluciones de
+  14-11-2017, DOCM n.º 235, ref. 2017/14349). Promotor, materias y tipo de
+  proyecto pasan a `confirmado`; la `fase` queda `parcial` a conciencia: leer
+  «parado» o «cerrado» depende del tramo judicial, que es lo único que sigue
+  sin fuente primaria — la sentencia del TSJ (17-12-2020, según secundarias) y
+  la casación. El CENDOJ rechaza la consulta programática (403): se saca a
+  mano o no se saca.
+- **`minerales-proyectos:las-cruces` resuelve su conflicto de municipio** por
+  la vía que pedía su propio hueco: un acto que enumere los términos. El
+  anuncio de la **Confederación Hidrográfica del Guadalquivir**
+  (BOE-B-2020-25403, información pública del artículo 4.7 de la Directiva
+  Marco del Agua para la mina interior y refinería polimetalúrgica) sitúa el
+  proyecto «en los términos municipales de **Gerena, Guillena y Salteras**» —
+  los tres a la vez, que era exactamente lo que el topónimo del IGN (Guillena),
+  la concesión multiparte del catastro (Salteras) y la ficha de la Comisión
+  (Gerena) venían diciendo por separado sin que ninguno mintiera. El campo
+  `municipio` enumera ahora los tres. Sigue `parcial`: la `fase` continúa sin
+  fuente.
+
+### Huecos
+
+- **Matamulas, el tramo judicial**: texto de la sentencia y estado de la
+  casación (ver arriba).
+- **Pista nueva, sin acto**: la prensa y la web del promotor sitúan un nuevo
+  permiso de investigación de Quantum Minería («Neodimio», solicitado en
+  2022, sobre Santa Cruz de Mudela, Torrenueva y Valdepeñas, 292 cuadrículas,
+  en consultas). Sin anuncio localizado en el DOCM no entra; queda en PLAN.md.
+
+---
+
+## datos-v2026.08.33 — Las tres pistas de cables, saldadas: entran dos amarres y Sagunto
+
+`cables-submarinos` pasa de **6 a 9 aterrizajes** (contrato **1.34.0**). Las tres
+pistas que dejó abiertas la release `.17` están comprobadas — y la comprobación
+dio lo que la capa temía: dos de los tres documentos **financian sin situar**.
+
+### Añadido
+
+- **Canalink Base 6, los dos amarres del cable Tenerife-El Hierro** — primer
+  expediente canario de la capa: en Canarias el dominio público
+  marítimo-terrestre lo tramita el **Gobierno canario**, no las Demarcaciones
+  estatales, y su anuncio no lleva código CNC (la referencia es la del BOC,
+  `boc-a-2026-091-1583`, información pública de 13-05-2026).
+  - **Playa del Salto, Tamaduste (Valverde, El Hierro)** — `paraje`: la playa
+    la nombra el **proyecto básico de la propia información pública**
+    (perforación dirigida bajo la playa), el mismo trato que el nombre de
+    Grace Hopper en Sopela. El Nomenclátor la rotula «Playa del Salto».
+  - **Candelaria (Tenerife)** — `municipio`: el acto no baja del término
+    municipal en este lado, y el registro lo dice en vez de adivinar la playa.
+- **Aterrizaje en Sagunto (Valencia)** — `parcial` y `municipio`: el expediente
+  CNC02/25/46/0013 (Valencia Digital Port Conect, S.L., información pública de
+  19-01-2026) no nombra sistema, ni destino, ni playa. Mismo perfil y mismo
+  trato que la Virgen del Mar de Santander.
+- **El esquema aprende el caso**: `emplazamiento` admite `null` cuando el acto
+  sitúa solo el término municipal (contrato 1.34.0, §13).
+
+### Corregido
+
+- **`penbal-4-valencia`** gana clave y fuente: su expediente de legalización
+  (CNC02/17/46/0009) **volvió a información pública el 26-05-2026**
+  (BOE-B-2026-17288). El cable sigue en servicio; lo que se tramita es la
+  concesión que lo legaliza.
+
+### Huecos
+
+- **PENCAN-X (Península-Gran Canaria) NO entra, y queda dicho por qué**: sus
+  dos reales decretos (RD 1124/2024 y RD 268/2026, archivados) son
+  **subvención pura** — ni playa, ni municipio, ni coordenada. La prensa sitúa
+  los amarres (playa de la Ballena en Rota, Las Canteras en Las Palmas) pero
+  **no se ha localizado el acto de Costas** que lo sostenga; cuando aparezca
+  —BOJA para el lado de Cádiz, BOC para el canario—, el registro es media
+  tarde.
+- **El ramal de Canalink a Fuerteventura tampoco**: el RD 973/2025 (archivado)
+  financia «un nuevo ramal que conecte con el sur de Fuerteventura» y no baja
+  de ahí — ni término municipal siquiera.
+- **Pista nueva, localizada al comprobar estas**: la web de Costas canaria
+  publica el proyecto de un cable **La Palma-Tenerife con amarre en la playa
+  de El Socorro (Los Realejos)**. Le falta encontrar su anuncio de información
+  pública; queda apuntada en PLAN.md.
+
+---
+
+## datos-v2026.08.32 — Los 93 embalses que faltaban: entran 61, y los 32 dicen por qué no
+
+`agua-embalsada` pasa de **308 a 369 registros** y del 86 % al **98,4 % de la
+capacidad embalsada de España** (55.554 de 56.480 hm³). Es la deuda que dejó
+declarada la release `.18`: «ampliar el barrido a los otros tipos y lenguas,
+desambiguar por punto-en-polígono contra las demarcaciones, y declarar como
+hueco lo que siga sin casar». Eso exactamente es esta release.
+
+### Añadido
+
+- **61 embalses** (52 vigentes, 9 históricos; 24 de uso hidroeléctrico), 6.317
+  hm³ de capacidad y 4.587 embalsados en su último parte. Entre ellos los
+  grandes que faltaban: **Ricobayo** (1.145 hm³), **El Grado** (400),
+  **Itoiz**… ya estaba; **Puente Nuevo**, **Guadalhorce-Guadalteba**,
+  **Camarasa**, **Riba-roja**.
+- **El barrido del Nomenclátor se amplía a dos tipos nuevos**, archivados
+  enteros: «Masa de agua» (6.395 topónimos) y «Conjunto de masas de agua» (21),
+  paginados y cerrados contra `numberMatched`. Ahí viven los embalses que el
+  Boletín llama por su lago: los estanys e ibones pirenaicos regulados (Mar,
+  Negro, Saburó, Tort, Bachimaña, Certascan).
+- **Cada punto nuevo está verificado contra su demarcación**, como los 308
+  anteriores. El emparejador ahora conserva la **ñ** (Pena de Beceite y La Peña
+  del Gállego son dos embalses, y la normalización de tildes los fundía),
+  compara sin espacios (Riba-roja), y admite equivalencias declaradas caso a
+  caso: Chandrexa→Chandreja, Eúgui→Eugi, Sichar→Sitjar, Ciurana→Siurana,
+  Ullivarri→Uribarri-Ganboa, Sant Pons→Sant Ponç, Riocobo→Río Covo,
+  Villagudín→Vilagudín, Bao→Vao, Cornalbo→Cornalvo.
+- **Once identificaciones no son literales y lo dicen**: llevan
+  `geo_fuente__v: parcial` y una clave con el motivo. Las tres de nombre
+  oficial distinto (Tremp/Talárn es el «Pantà de Sant Antoni», Cortes II es
+  «Cortes de Pallás», Catllar es el «Pantà del Gaià»), las de escalera u
+  homonimia resueltas por la cifra del propio Boletín (Montoro III por sus 105
+  hm³, El Grado I por sus 400, Pena por sus 18, el contraembalse de Guillena
+  por sus 5), el salto que rotula a su presa (Guijo de Granadilla), la presa
+  vieja bajo su recrecimiento (La Breña, histórica, anclada al vaso de Breña
+  II) y el lago sin apellido (Bachimaña, al ibón regulado Alto).
+- **Cuatro partes que nombran dos presas colindantes** se anclan a la primera
+  del nombre y citan a las dos: Guadalhorce-Guadalteba, Alsa-Mediajo,
+  Torrejón Tajo-Tiétar; y los dobles rótulos de Ricobayo y Azután se declaran.
+
+### Corregido
+
+- Nada: ningún registro existente cambia.
+
+### Huecos
+
+**De los 401 embalses del Boletín quedan 32 sin publicar**, 926 hm³ — el 1,6 %
+de la capacidad. Ninguno en silencio:
+
+| Motivo | Cuántos | Quiénes |
+|---|---|---|
+| Agrupaciones sin vaso propio (ya declaradas en `.18`) | 5 | los cinco «Sistema …» del Pirineo |
+| Sin topónimo en el NGBE, ampliación incluida | 24 | entre ellos presas recientes que el Nomenclátor aún no rotula (Enciso, Lechago, San Salvador, Terroba) y las balsas de Monegros (Las Fitas, Laverné, Valdepatao) |
+| Homónimos en cuenca sin discriminador | 3 | Castro (tres lagunas homónimas y el embalse sin rotular), Fresneda (dos embalses homónimos), Las Parras |
+
+- **El servicio de demarcaciones cambió de casa y nadie lo dijo.** El WFS que
+  usó la `.18` (y que registra datos.gob.es) responde 404, y su endpoint
+  `wfs.aspx` delata capabilities rotos en disco. La verificación de cuenca se
+  hace ahora contra el **ArcGIS REST público del mismo Ministerio**
+  (`aguaHidroDemarcaciones/MapServer`), que sirve los mismos 25 polígonos —
+  y que devuelve 404 intermitentes sobre URLs que existen: se reintenta antes
+  de concluir nada.
+
+---
+
+## datos-v2026.08.31 — Un enlace de una ficha ya no puede ejecutar nada
+
+**Ningún registro cambia en esta release, y por eso existe.** Sale de una
+auditoría de ataques al visor —pedida, no provocada por ningún incidente— y lo
+único que mueve es `schema_version`, que vive en el manifiesto y por tanto obliga
+a etiquetar. Lo que trae es un diente nuevo y dos remiendos en el visor.
+
+### Añadido
+- **contrato §7.10 (bloquea)** — toda `url` de fuente y todo `debate_url` han de
+  ser `http` o `https`. Lo que se descubrió al intentar romper el atlas: un `url`
+  con esquema `javascript:` **atraviesa las dos defensas que parecían cubrirlo**.
+  El esquema JSON no lo ve, porque su `"format": "uri"` acepta
+  `javascript:alert(1)` — es, literalmente, una URI válida. Y el escapado
+  tampoco, porque convierte comillas y no toca el esquema de una URL. Llegaba
+  intacto al `href` de la ficha, y desde la .29 la ficha no es solo un panel:
+  son **4.548 páginas HTML servidas por el dominio del atlas**.
+- **contrato §9 (avisa)** — el `color` de una categoría tiene ahora forma
+  comprobada. Es la otra mitad del mismo hallazgo: el color viaja hasta un
+  atributo `style`, y allí un `;` dentro del valor abre una declaración nueva.
+
+### Corregido
+- **`nuclear` · el rótulo de `grupo`** — las siete fichas nucleares decían
+  «**Grupo empresarial: I**», y el dato no es ningún grupo empresarial: es el
+  reactor dentro de su emplazamiento, como dice su propio esquema. El fallo no
+  estaba en el dato sino en la tabla de rótulos del visor, que rotula por nombre
+  de campo sin saber de qué capa viene — y `refinerias` había estrenado `grupo`
+  con el otro sentido, el de Grupo Repsol. El campo se queda **sin rótulo fijo**
+  y sale como «Grupo», que es verdad en las dos capas. Se barrieron los 28
+  ficheros buscando más homónimos: es el único.
+- **el rótulo de `titular`** — decía «Titular del expediente» en cuatro capas y
+  solo en una hay expediente: en `gas-almacenamiento` es el de una concesión, en
+  `icts` la entidad del Anexo I y en `minerales-derechos` quien figura en el
+  catastro. Pasa a «Titular».
+
+### Retirado
+- nada.
+
+### Huecos
+- **Sin cambios respecto a la .30**: esta release no toca un solo registro, así
+  que los huecos declarados siguen exactamente donde estaban — las seis
+  desaladoras de Acuamed en `municipio`, las coordenadas en cifra de las BAES,
+  la prórroga de Almaraz sin resolución, y los demás que cada ficha declara.
+- **Lo que esta release NO cierra, dicho aquí porque se comprobó y no se puede
+  arreglar desde el repositorio:** el atlas se sirve desde GitHub Pages, que no
+  admite cabeceras propias. La política de contenido va por tanto en un `<meta>`,
+  y eso deja fuera `frame-ancestors`: **cualquier página puede seguir metiendo el
+  atlas en un iframe**. No es un descuido; es el precio del alojamiento, y el
+  atlas ofrece un incrustable propio de todos modos.
+
+## datos-v2026.08.30 — Las cuatro del Taibilla, con mejor geometría que las seis que ya estaban
+
+### Añadido
+
+- **`desaladoras` crece de 6 a 10** y pasa a llamarse por lo que ya es:
+  «Desaladoras de interés general del Estado». Entran las cuatro de la
+  **Mancomunidad de los Canales del Taibilla** — San Pedro del Pinatar I y II
+  (65.000 m³/día cada una, en el paraje de El Mojón) y Alicante I y II (60.000
+  tras su ampliación, y 65.000, en el paraje de Agua Amarga) — con sus DIA de
+  2005, el contrato de explotación de San Pedro (2022) y las fichas oficiales
+  del organismo.
+- **Las nuevas entran con mejor geometría que las viejas**: el Nomenclátor
+  nombra las dos de San Pedro (la ampliación de desaladoras que el barrido de
+  la release .28 dejó capturada de propina), y las dos de Alicante van al
+  topónimo del paraje que la propia MCT declara. Paraje las cuatro; las seis
+  de Acuamed siguen en municipio con su hueco.
+- **Nace `capacidad_m3_dia`** (contrato 1.32.0): la MCT y la DIA del Bajo
+  Almanzora publican en m³/día, y un campo no cambia de unidad según el
+  registro. Conviven dos campos de capacidad, cada acto en su unidad, sin
+  conversión — convertir exigiría suponer días de operación.
+
+### Corregido
+
+- `desaladoras:bajo-almanzora` — la producción de proyecto (60.000 m³/día) se
+  muda de `claves` al campo nuevo, con la fecha de su DIA. La cifra no cambia;
+  cambia dónde vive.
+
+### Huecos
+
+- La capa sigue sin ser el censo de la desalación española: autonómicas,
+  canarias y privadas quedan como ampliación, cada una con sus actos.
+- Para San Pedro I ningún acto localizado atribuye la planta a un único
+  término municipal: la MCT la sitúa en el paraje de El Mojón y nombra tanto
+  San Pedro del Pinatar como Pilar de la Horadada — el registro no lleva
+  municipio y su descripción lo cuenta.
+
+---
+
+## datos-v2026.08.29 — Las 28 ICTS, y el horizonte de capas queda completo
+
+### Añadido
+
+- **`icts` — 28 registros**, las Infraestructuras Científicas y Técnicas
+  Singulares del **Mapa 2025-2028** aprobado por el Consejo de Política
+  Científica, Tecnológica y de Innovación (20-10-2025). El plan preveía sacar
+  la capa «documento a documento» del Mapa; resultó que **el acuerdo del
+  Consejo ES el documento**: su Anexo I trae las 28 con tipología, entidad
+  titular y localización, y las 64 infraestructuras que agrupan van en claves,
+  verbatim. Del Gran Telescopio Canarias al cultivo del atún rojo, pasando por
+  el sincrotrón ALBA, Doñana, el láser de petavatio del CLPU y las dos bases
+  antárticas — **la primera vez que el atlas publica un punto en la Antártida**.
+- **Estrena el árbol `ciencia`** (séptimo, añadido al final para no mover la
+  vista de arranque del visor) **y la precisión `autonomia`**, hermana
+  intermedia entre `municipio` y `pais`.
+
+### La lección
+
+**El Mapa sitúa por comunidad autónoma, y fingir más precisión sería relleno.**
+El GTC «se sabe» que está en el Roque de los Muchachos — pero ningún acto
+localizado lo dice, así que va en `autonomia` con su hueco, mientras que los
+Observatorios de Canarias, Calar Alto, Yebes y Doñana sí tienen topónimo del
+Nomenclátor y van en `paraje`. La escalera entera de la capa —paraje, municipio,
+autonomia, pais, ilustrativa— es la fuente mandando sobre el mapa, no al revés.
+
+### Huecos
+
+- Nueve ICTS de sede única declaran la ubicación de su instalación: el Mapa
+  solo da la comunidad, el Nomenclátor no las nombra (consultas archivadas) y
+  ningún otro acto localizado las sitúa.
+- Las **coordenadas en cifra de las dos bases antárticas**: las páginas
+  oficiales las sitúan por isla (Livingston y Decepción) y ninguna archivada da
+  el número. El punto va `ilustrativa` sobre la isla, y lo dice.
+- **IDISOM está en el Mapa y aún no existe**: el propio acuerdo la declara «a
+  constituir» — va en fase `desarrollo`, no se esconde ni se finge operativa.
+
+---
+
+## datos-v2026.08.28 — Las desaladoras: el «sin inventario único» tenía una salida, y era un acto
+
+### Añadido
+
+- **`desaladoras` — 6 registros.** Las IDAM de interés general del Estado
+  operativas y encomendadas a Acuamed que nombra la **Orden TED/157/2023**:
+  Torrevieja (80 hm³/año, la mayor de Europa), Valdelentisco (70), Águilas-
+  Guadalentín (40 de proyecto), Carboneras (44 previstos en 1999), Campo de
+  Dalías (30) y Bajo Almanzora. El plan daba la capa por bloqueada «sin
+  inventario único»; la orden resultó ser el perímetro — el mismo movimiento
+  que desbloqueó `red-electrica`, esta vez con un acto en lugar de una
+  cartografía. Cada planta lleva además su DIA o su informe de ampliación, que
+  es quien la sitúa y le da capacidad.
+
+### La lección
+
+**El punto de municipio también puede estar mal.** La primera pasada de
+geometría ancló «Águilas», «Carboneras» y «El Ejido» en homónimos de **Madrid,
+Huesca y León** — el primer punto que devuelve el Nomenclátor no es el
+municipio, y un barrido centrado en el sitio equivocado produce un cero que no
+vale nada. Se rehízo filtrando por `tipo=Municipio` y validando contra la
+provincia, y el barrido archivado **conserva la pasada descartada**: el error
+queda a la vista para que se vea qué se comprobó.
+
+### Huecos
+
+- **La capa no es el censo de la desalación española y no lo afirma.** Las
+  cuatro de la Mancomunidad de los Canales del Taibilla (dos ya capturadas por
+  el barrido: San Pedro del Pinatar I y II), las autonómicas, las canarias y
+  las privadas son ampliación pendiente, cada una con sus actos.
+- Las seis declaran la coordenada de la planta como hueco: ningún acto la
+  publica y el Nomenclátor no las nombra — punto de municipio.
+- Águilas: la capacidad actualmente en servicio tras la ampliación prevista en
+  su propia DIA. Bajo Almanzora: la capacidad en hm³/año (su DIA la da en
+  m³/día, y va en claves para no cambiar la unidad de un campo).
+- **ICTS es lo único que queda del horizonte**, y sigue fuera porque ahí de
+  verdad no hay acto que sostenga un perímetro — todavía.
+
+---
+
+## datos-v2026.08.27 — Tres capas de una tanda: el gas bajo tierra, las dos bases y las antenas del espacio
+
+Con esta release, **del horizonte de capas apuntado en PLAN.md solo quedan las
+dos sin inventario único** (desaladoras e ICTS). Las tres de hoy comparten
+método: el perímetro lo fija un acto, cada afirmación lleva el suyo, y lo que
+ningún acto sostiene se declara en vez de rellenarse.
+
+### Añadido
+
+- **`gas-almacenamiento` — 5 registros.** Los **cuatro básicos** que nombra la
+  resolución anual de capacidad de la DGPEM —Serrablo (9.730 GWh), Gaviota
+  (18.340), Marismas (831) y Yela (7.025)— **y Castor**. El plan decía «Yela,
+  Serrablo, Gaviota»; la resolución dice cuatro: **Marismas estaba en la lista
+  oficial y no en la que todo el mundo repite.** Las concesiones marinas se
+  publican como **polígono vértice a vértice del anexo de su real decreto**
+  (Gaviota 8 vértices y 4.229 ha; Castor 4 y 6.519 ha) — la primera geometría
+  del atlas que sale del propio BOE. La ficha de Castor registra el expediente
+  entero: concesión (2008) → sismicidad, extinción e hibernación (RDL 13/2014)
+  → desmantelamiento (2019) → **sellado de pozos autorizado en 2025**. Es la
+  historia que este atlas cuenta mejor que nadie, y ahora está contada con sus
+  cinco actos archivados.
+- **`bases-eeuu` — 2 registros.** Rota y Morón, las bases de utilización
+  conjunta del anejo 2 del Convenio de Cooperación para la Defensa de 1988.
+  Cada despliegue autorizado va en claves con su instrumento: los cuatro
+  destructores AEGIS (Segundo Protocolo, 2012), la fuerza de respuesta a
+  crisis (Tercer Protocolo, 2015), los dos buques adicionales (2023). **Se
+  registra el régimen, no la guarnición**: nada que no esté en los tratados.
+- **`seguimiento-espacial` — 3 registros.** El complejo de espacio profundo de
+  la NASA en Robledo de Chavela (acuerdo renovado en 2024 por quince años), la
+  antena de espacio lejano de la ESA en Cebreros, y la estación del INTA en
+  Maspalomas — esta última publicada `parcial` y con su ficha diciendo por qué
+  es el registro más flojo: la sostiene una licitación, no un tratado.
+
+### La lección
+
+**La lista que todo el mundo repite no es la lista del acto.** Tres veces en
+una tanda: los básicos eran cuatro y no tres; las refinerías de la release
+anterior eran diez y no «ocho o nueve»; y Maspalomas, que siempre se cita junto
+a Robledo y Cebreros, resultó no tener tratado en el BOE que la sostenga.
+
+### Huecos
+
+- **Serrablo y Yela**: la coordenada de la instalación no la publica ningún
+  acto localizado — van como punto de municipio, dicho en cada ficha.
+- **Marismas**: qué titular quedó para el almacenamiento tras la cesión de los
+  yacimientos a Trinity Capital (2022) no lo dice ninguno de los dos actos; y
+  su geometría vive en los reales decretos de yacimiento de 1988-1995, no
+  reconstruida en esta pasada.
+- **Cebreros**: ningún acto posterior a 2012 afirma con fecha que siga
+  operativa; la fase se apoya en que sus dos acuerdos siguen en vigor.
+- **Maspalomas**: el instrumento que defina su régimen (los acuerdos INTA-ESA
+  del Centro Espacial de Canarias no están en el BOE, o no se han localizado).
+- **Desaladoras e ICTS siguen fuera**, y no por olvido: sin inventario único no
+  hay perímetro que un acto sostenga. Son las dos últimas del horizonte.
+
+---
+
+## datos-v2026.08.26 — Las diez refinerías: el perímetro lo fija un código, no el gusto
+
+Primera capa nueva desde la rama del transporte, y primera del bloque que el
+horizonte de PLAN.md llamaba «refinerías y almacenamiento de gas primero». El
+plan viejo decía «ocho o nueve, autorizaciones en el BOE»; la realidad salió
+mejor: **diez, y con dos fuentes que se reparten el trabajo** sin necesidad de
+ir acto por acto.
+
+### Añadido
+
+- **`refinerias` — 10 registros**, los diez complejos de refino de petróleo del
+  país. El perímetro no lo eligió el atlas: es lo que el **PRTR-España** —el
+  registro estatal de emisiones que obliga el Reglamento (CE) 166/2006, fuente
+  primaria por la misma doctrina que la plataforma PCI-PMI (contrato §6.1,
+  enmienda 1.16)— clasifica como **actividad 1.a.i con CNAE 19.20**. Buscar
+  «refinería» por nombre en el mismo registro devuelve refinerías de aluminio,
+  de aceites y de mantecas: sin el código, la capa habría nacido contaminada.
+- **CORES** (corporación de derecho público adscrita a MITECO, estadística
+  oficial de hidrocarburos) sostiene la capacidad de destilación de crudo del
+  último año cerrado, el grupo empresarial, el año de inicio de cada una y la
+  única nota de inactividad. **La suma de las diez cuadra con el total nacional
+  de la propia serie: 79.200 kt en 2025** — se comprobó antes de publicar, que
+  es la lección del PERTE.
+- **La coordenada es la del registro** (`geo_precision: exacta`, la ficha PRTR
+  de cada complejo). En Muskiz y Tarragona la corrobora el Nomenclátor del IGN
+  con un topónimo a menos de un kilómetro («Petronor SA errefinategia», «la
+  Refineria»); en los otros ocho el IGN no nombra la instalación, y el barrido
+  por recuadro que lo demuestra está archivado — un cero del IGN no prueba
+  ausencia si no se confirma por bbox.
+- **Tenerife entra en `parado`, no se omite.** La primera refinería de España
+  (1930) figura en la serie de CORES con 4.500 kt de capacidad y una nota:
+  mantiene su estatus legal y no tiene los permisos para arrancar. Esa
+  distancia —capacidad que figura, planta que no opera— es la clase de hecho
+  que este atlas existe para registrar.
+
+### La lección
+
+**La 1.27 se estrenó a la primera oportunidad.** La atribución de CORES es de
+fórmula fija —«Fuente CORES (www.cores.es)», con la misma calidad tipográfica
+que el dato— y esta vez se leyó ANTES de publicar, no veintidós capas después.
+
+### Huecos
+
+- **Ninguna fuente localizada dice, instalación a instalación, si una
+  refinería está operando.** La `fase` de las nueve activas se sostiene en la
+  serie vigente de CORES y en que su única nota de inactividad señala solo a
+  Tenerife — por eso va `parcial` en las nueve, con el hueco f9 pidiendo el
+  acto administrativo (la autorización o la AAI de cada complejo).
+- El PRTR publica el complejo, no sus unidades: qué procesos tiene cada
+  refinería (vacío, coquización, hidrocraqueo) está en la serie de CORES y **no
+  se publica en esta pasada** — cabría como campos si alguna vez hace falta.
+- Del **almacenamiento subterráneo de gas** —la otra mitad del bloque del
+  horizonte— no entra nada todavía: sigue en la cola, acto por acto como
+  `cables-submarinos`, con Castor incluido.
+
+---
+
+## datos-v2026.08.25 — Citar bien no es citar a quien toca, es citarlo como pide
+
+La release anterior encontró el problema y lo dejó anotado. Esta lo arregla.
+
+### La lección, primero
+
+**Comprobar que una fuente es compatible no es lo mismo que leer cómo obliga a
+citarla.** El atlas llevaba veintidós capas haciendo lo primero —bien, y por
+escrito— y ninguna haciendo lo segundo.
+
+La licencia del IGN (Orden FOM/2807/2015) no se limita a conceder el uso: su
+punto 4 **fija la forma del reconocimiento**, y para obra derivada exige el
+literal «Obra derivada de \<producto\> \<fecha\> CC-BY 4.0 \<productores\>».
+Su punto 5 obliga además a repetirlo **en los metadatos**. Adif exige «©
+Administrador de infraestructuras ferroviarias».
+
+### Corregido
+
+**15 atribuciones**, con los identificadores sacados de la tabla de productos del
+propio SCNE:
+
+| Producto | Capas | Fórmula |
+|---|---|---|
+| Base Topográfica Nacional | 3 | `Obra derivada de BTN Continua CC-BY 4.0 ign.es` |
+| Nomenclátor Geográfico Básico | 8 | `Obra derivada de NGBE Continua CC-BY 4.0 ign.es` |
+| Límites administrativos | 2 | `Obra derivada de BDLJE Continua CC-BY 4.0 ign.es` |
+| Adif | 1 | `© Administrador de infraestructuras ferroviarias` |
+| Puertos del Estado | 1 | ahora nombra su licencia, `CC BY 4.0` |
+
+**Cuatro de las trece no mencionaban al IGN en absoluto** —`minerales-proyectos`,
+`nuclear`, `electricidad-interconexiones` y `limites-soberania`—, que es peor que
+mencionarlo con la fórmula equivocada. Se sitúan por topónimo del Nomenclátor y
+su atribución no lo decía.
+
+**Lo de cada emisor se conserva.** La licencia pide que su fórmula **esté**, no
+que esté sola: `agua-embalsada` sigue citando al MITECO y `rte-t` a la Unión
+Europea, con la del IGN dentro.
+
+### Y ahora se ve
+
+El campo `atribucion` existía desde la primera release y **no lo pintaba nadie**.
+Ahora viaja con la **fuente** de MapLibre, no con el pie: aparece mientras la
+capa está encendida y desaparece al apagarla — que es literalmente lo que pide el
+punto 4, «visible junto con los datos, de forma legible y a pie de mapa».
+
+Atarlo al pie habría sido más fácil y habría dicho una mentira pequeña: que el
+atlas usa la BTN incluso con las tres capas de la BTN apagadas.
+
+### La trampa que hizo falta para encontrar todo esto
+
+**`npm run build` desde la raíz del repositorio construía otro proyecto.** La raíz
+no tenía `package.json`, así que npm **subía por el árbol de directorios** hasta
+el primero que encontrase —en la máquina donde se escribió esto, uno del perfil
+del usuario— y compilaba un proyecto React ajeno mientras imprimía «✓ built en
+3,5 s». Un verde que no verificaba **nada** del atlas, y con el que se dio por
+buena la release anterior.
+
+Se destapó al comprobar que el cambio de la atribución llegaba al bundle: no
+llegaba, y el hash del fichero no cambiaba nunca. Tapado con un `package.json` en
+la raíz que no construye nada y solo delega en `app/`. **La raíz ahora responde
+por sí misma o falla**, que es lo que tenía que haber hecho desde el principio.
+
+---
+
+## datos-v2026.08.24 — El atlas no se aplicaba a sí mismo lo que exige a sus fuentes
+
+**Ningún registro cambia.** Cambia poder contestar, de una capa cualquiera, la
+pregunta más natural que se le puede hacer a un dato: **¿de dónde sale esto y qué
+me obliga?**
+
+Se contestaba, pero cruzando cinco sitios ordenados por criterios distintos —el
+manifiesto por capa, los `__f` por registro, el contrato por campo, el changelog
+**por release** y `fuentes/` por fecha de captura—. Ahora hay una ficha por capa.
+
+### Añadido
+
+- **`fuentes/PROCEDENCIA.md`.** Una ficha por cada una de las 22 capas: de dónde
+  sale, con qué licencia y qué obliga, qué hay que saber antes de citarla, qué
+  hueco declara y qué fichero la sostiene. Al final, un **cuaderno de obtención**
+  para quien tenga que volver a la fuente: el endpoint, el formato, el CRS y la
+  trampa.
+- **§7.9 del contrato, que BLOQUEA:** toda capa con datos tiene su ficha, y toda
+  ficha su capa. Comprueba que **existe**, no que diga la verdad — eso no lo sabe
+  una máquina, y no hace falta: el fallo real no es la ficha mentirosa, es la que
+  se escribe «luego» y nunca se escribe. Pruebas **26 → 31**.
+
+**Lo que se añade es la síntesis, no el hecho.** La licencia autoritativa sigue
+siendo la del manifiesto, los campos siguen en §10 y el relato en este changelog;
+la ficha enlaza en vez de copiar. Es D3 aplicada a la documentación.
+
+### Lo que salió al escribirlo
+
+Un documento así se escribe para ordenar lo que ya se sabe. Este destapó tres
+cosas que no se sabían.
+
+**Primera: de las condiciones de uso solo había TRES archivadas** —la Comisión,
+la plataforma PCI y la CNMC—. Las del **IGN, Puertos del Estado y Adif** se
+afirmaban en el changelog **sin una sola cita**. Ya están las cuatro.
+
+**Segunda, y es una deuda: la licencia del IGN fija la FORMA del reconocimiento,
+no solo la libertad de uso.** La Orden FOM/2807/2015 es CC-BY 4.0 —eso estaba
+bien comprobado— pero su punto 4 exige, para obra derivada, la fórmula literal
+**«Obra derivada de BTN Continua CC-BY 4.0 ign.es»**, y su punto 5 obliga a
+repetirla **en los metadatos**. El manifiesto de las **13 capas** que citan al
+IGN dice otra cosa. **Adif** exige igualmente un literal: **«© Administrador de
+infraestructuras ferroviarias»**. Queda anotado en la ficha, pendiente de
+corregir, y dicho aquí en vez de callado. La licencia se comprobó antes de
+extraer, como manda `datos/LICENCIA-DATOS.md`; lo que no se hizo fue leer **cómo**
+obliga a citar.
+
+**Tercera: el archivo guardaba 34 citas reescritas.** La regla de finales de
+línea del repositorio protegía el PDF y el ZIP y **dejaba pasar el HTML, el XML y
+el JSON**, que son la mitad de `fuentes/`. Un servidor que sirve CRLF y un git que
+lo normaliza a LF producen un fichero **que ya no es el que se descargó**: el
+metadato de Puertos del Estado se servía con 39.516 bytes y el repositorio
+guardaba 38.775. Se lee igual y no cuadra byte a byte, que en un archivo de citas
+es la diferencia entre una copia y **la** cita. Sus bytes verdaderos sobrevivían
+solo en la copia de trabajo: quien clonara se los llevaba alterados. Con
+`fuentes/** -text`, los 61 ficheros no binarios vuelven a cuadrar.
+
+### Dónde NO se lee una licencia
+
+Dos avisos que costaron media tarde y volverán:
+
+- El **`GetCapabilities` de Puertos del Estado** dice `Fees: NONE` y
+  `AccessConstraints: NONE`… con `ProviderName: OSGeo`. Es la **plantilla de
+  GeoServer sin tocar**, no una declaración del organismo. La licencia buena está
+  en el registro CSW, y dice «No se aplican condiciones de acceso y uso. CC BY 4.0
+  Puertos del Estado».
+- El **`GetCapabilities` de Adif** no trae ninguno de los dos campos. Su licencia
+  también está en el CSW.
+
+### Corregido
+
+- **Un número propio, en el documento que existe para eso.** Las citas con URL
+  del atlas son **8.497**, no 5.693: el recuento anterior se quedaba en el array
+  `fuentes` y no bajaba a los `__f` ni a `claves[].fuente`. **Las 8.497 están
+  archivadas** — §7.7 no tiene un solo aviso pendiente, y ahora está medido.
+
+---
+
+## datos-v2026.08.23 — El atlas tenía el transporte entero vacío
+
+Tres capas y **una rama nueva del árbol**. Era el hueco más grande que quedaba:
+por los puertos de interés general pasa la mayor parte del comercio exterior
+español, y hasta hoy no había nada.
+
+### Añadido
+
+- **`puertos` — 164 registros.** Las zonas de servicio de **43 puertos de interés
+  general**, gestionados por 28 Autoridades Portuarias, del WFS INSPIRE de
+  Puertos del Estado (**CC BY 4.0** declarado por el propio servicio).
+- **`rte-t` — 77 registros.** Los nodos españoles del **Anexo II del Reglamento
+  (UE) 2024/1679**: 49 nodos urbanos, 38 aeropuertos, 42 puertos marítimos, 1
+  puerto interior y 28 terminales ferrocarril-carretera.
+- **`ferrocarril` — 326 registros, 24.136 km.** La red de titularidad estatal,
+  del WFS INSPIRE de **Adif**, versión 2026/01.
+
+**Un puerto no es un registro.** La Ley de Puertos le delimita una zona de
+servicio **terrestre** y **dos de aguas** —la I abrigada, donde se opera; la II
+exterior, de espera y maniobra—, así que 43 puertos dan 164 recintos. Y por eso
+en el mapa un puerto ocupa mucho más mar que tierra.
+
+**La red básica no es «más importante» que la global.** Son los dos plazos del
+Reglamento: **2030** y **2050**. Un calendario con fuerza legal, no una escala.
+
+### Lo que se decidió no interpretar
+
+El servicio de puertos rotula cada recinto con un campo que vale «DEUP» o
+«Desafectacion» y **no documenta qué distingue**. No es un matiz: desafectar es
+**sacar** suelo del dominio público portuario, y son **48 de 164** — si esos
+polígonos fueran el suelo retirado, publicarlos como puerto diría lo contrario
+de la verdad. La duda viene de la propia norma, donde una orden ministerial
+aprueba a la vez «la delimitación … y la desafectación», y hay espacios
+desafectados que después se **reincorporan**.
+
+Lo resuelve el publicador y no una suposición del atlas: el conjunto se titula
+«Zonas de servicio portuarias de España». **El campo va verbatim y el atlas
+declara que no lo interpreta.**
+
+### Tres trampas técnicas, contadas porque volverán
+
+- **El PDF del DOUE no se puede parsear** («rotated text», el mismo muro del
+  PERTE) y **el texto plano tampoco vale**: aplasta las columnas, y «A Coruña X
+  Global Básica» no dice cuál valor es el aeropuerto y cuál el puerto. Con cinco
+  columnas eso es ambigüedad fatal. Lo resuelve el **espejo del BOE**, que sirve
+  la tabla en `<td>` de verdad.
+- **El vínculo línea↔tramo de Adif está escrito en los dos sentidos y no son
+  equivalentes.** La lista de la línea reclama **188 tramos por duplicado** —a
+  alguno lo reclaman **siete** líneas—, y coser por ahí daba **47.357 km** de red
+  donde hay 24.136. **Lo delató el total, no el código**: la red de Adif no llega
+  a 25.000 km.
+- **El GML de Adif viene en LAT LON.** El CRS se declara como URN
+  (`urn:ogc:def:crs:EPSG::4258`), y eso obliga al orden de ejes de la autoridad.
+  Copiarlas tal cual habría puesto la red ferroviaria española en el golfo de
+  Guinea.
+
+### Corregido
+
+- **Dos avisos del IGN quedan pagados.** Un **cero suyo no prueba ausencia**: el
+  servicio devuelve 200 con la colección vacía cuando se le aprieta, y en el
+  primer barrido «Albacete» y «Santander» salieron como no encontrados. Y **la
+  media de los vértices de un municipio no está dentro del municipio**: Castelló
+  de la Plana incluye las **islas Columbretes**, a 50 km mar adentro, y el
+  promedio se va al agua. Es §6.6 —«el centroide de un derecho multiparte puede
+  caer donde no hay derecho ninguno»— aplicada a un municipio.
+- **Orden de operaciones en la geometría de puertos:** simplificar → redondear →
+  tirar astillas → **orientar**. Orientar antes de redondear no vale, porque el
+  redondeo a 5 decimales puede **voltear el signo** del área de un anillo casi
+  degenerado. Se orienta lo que se publica, no lo que se calcula.
+- **El patrón de `codigo_linea` nació sin admitir letras.** De las 326 líneas hay
+  exactamente una, «0613G». La cazó §7.1: un patrón que solo describe el caso
+  mayoritario es una comprobación que miente.
+
+### Huecos
+
+- **48 recintos portuarios** llevan un acto que el atlas no interpreta, dicho
+  arriba y en cada ficha.
+- **24 astillas descartadas** en `puertos`: partes que tras redondear a 5
+  decimales quedan con menos de un metro cuadrado. Entre todas, **1,89 m² de
+  2.200 km²**.
+- **29 líneas de Adif** de las 355 no tienen ningún tramo que las declare y
+  quedan fuera.
+- **Las 2.682 estaciones y bifurcaciones de Adif NO entran**: mezclan estaciones
+  de viajeros con nudos técnicos («BIF. CANAL DEL DUERO») y piden criterio
+  propio. Su GML **sí queda archivado**, para que levantarlas no exija volver a
+  pedirlo.
+- **Ni ancho de vía, ni electrificación, ni alta velocidad, ni número de vías.**
+  Existen en el servicio de Adif, en capas que esta pasada no lee, y el esquema
+  los prohíbe por su nombre: escribirlos de memoria sería inventar los datos más
+  citables de la capa.
+- **35 de los 77 nodos RTE-T llevan una equivalencia declarada** entre el nombre
+  del Reglamento y el municipio del IGN. No la ha hecho un emparejador: va una a
+  una con su motivo, para poder discutirse.
+
+---
+
+## datos-v2026.08.22 — Una capa entera se pintaba del color de reserva
+
+Corrección. **Ninguna capa cambia de registros**; lo que cambia es que dos de
+ellos se puedan ver.
+
+### Corregido
+
+- **`cables-submarinos`** — sus dos categorías nacieron **sin `color`** en la
+  release del 08.17, así que los seis aterrizajes llevaban **una release entera**
+  pintándose con el color de reserva, indistinguibles de cualquier otra capa.
+  `aterrizaje` ya tiene el suyo, de la familia teal de la rama `conectividad` y
+  separado de los violetas de `centros-datos` y los azules de `hidrogeno-red`.
+
+### Añadido
+
+- **`validar.py` comprueba el color** (§9, **avisa y no bloquea**). La exigencia
+  estaba escrita **desde la 1.9** y nadie la verificaba nunca, que es exactamente
+  lo que §8 llama «prosa disfrazada de garantía» — y el precio se pagó tres veces:
+  la primera la cuenta `app/src/mapa.js` («Cuatro capas, indistinguibles»), la
+  última fue esta.
+  - **Avisa y no bloquea** a propósito: el dato es correcto y lo único que se
+    pierde es distinguir la capa. Bloquear pararía la publicación de un registro
+    bueno.
+  - **Una vez por categoría, no por registro.** Una capa de 1.382 parques daría
+    1.382 avisos idénticos, que es la manera más fácil de que un aviso deje de
+    leerse.
+  - **Mira lo que se USA, no lo declarado.** `cables-submarinos:trazado` sigue
+    **sin color, y es deliberado**: el color es «con el que el mapa la pinta», y
+    una categoría que ningún registro usa no pinta nada — elegirlo hoy sería
+    decidir un diseño para algo que no existe. El aviso saltará el día que alguien
+    la use, que es cuando hace falta.
+  - Pruebas **25 → 26**, con el fixture que ejercita justo ese caso.
+
+### Huecos
+
+- Los de la 08.21 siguen abiertos y sin cambios: las **1.959 fotovoltaicas** que
+  la BTN no nombra, y que **por esa fuente no habrá potencia** de ningún parque.
+
+---
+
+## datos-v2026.08.21 — Un recurso es un campo; una instalación, un recinto
+
+Capas dieciocho y diecinueve. Con ellas **el manifiesto se queda sin ninguna
+rama en gris por primera vez** desde que existe.
+
+### Añadido
+
+- **`parques-eolicos` — 1.382 registros.** Los recintos que la BTN del IGN
+  clasifica como TIPO 07 «PARQUE EÓLICO», con nombre y contorno.
+- **`plantas-solares` — 1.250 registros.** 1.206 fotovoltaicas (TIPO 05) y 44
+  termosolares (TIPO 08), en una capa con dos categorías.
+
+### Retirado
+
+- **`recurso-eolico` y `recurso-solar`** dejan de existir. Nunca publicaron un
+  registro, así que renombrarlas salió gratis: **§8 protege los ids con datos**,
+  y a un id sin datos no lo cita nadie. Precedente exacto: `h2med` →
+  `hidrogeno-red`. Esa regla, usada ya dos veces sin estar escrita, entra en §8.
+
+**No es un renombrado: es un cambio de objeto.** «Recurso» es cuánto sopla el
+viento — un **campo continuo**, que existe como ráster y no como registros.
+Convertirlo en zonas lo tendría que hacer el atlas. Y la salida que el propio
+plan daba por buena, la zonificación ambiental del MITECO «en shapefile y
+vectorial», **resultó falsa al comprobarla**: dentro del ZIP hay dos GeoTIFF y un
+léeme que dice «los ráster clasificados». La vía de escape tenía el mismo defecto
+que la vía original.
+
+**Los dos cambios que pesan más que el id.** De `dotacion` a **`actividad`**: el
+viento es una condición permanente del territorio, pero **un parque se
+desmantela**. Y de `ilustrativo` a **`verificado`**: eran trazos imaginados a
+mano y son perímetros de fuente primaria, en `geo_precision: exacta`. Cambiar
+solo el título habría dejado el mismo error escrito de otra forma.
+
+**Evidencia independiente.** Los **2.632 recintos caen dentro de una provincia
+española, ni uno fuera**, contrastando los polígonos del IGN contra los de
+`generacion-electrica-provincia`. Y el reparto cuadra con la generación que
+publica el MITECO: **cinco de las seis provincias punteras en eólica coinciden**,
+cuatro de seis en solar. Las diferencias son las que deben salir — A Coruña tiene
+**173 parques y genera menos que Zaragoza con 144** —, porque recintos no es
+potencia. Que es justo lo que el esquema prohíbe escribir.
+
+**La geometría NO se simplifica**, al revés que el tendido de la release
+anterior, y el contraste enseña cuándo simplificar sale gratis. Allí la BTN pone
+un vértice por torre y quitarlos costó el **0,017 %** de la longitud. Aquí el
+contorno **es** el dato: a 25 m se ahorraría el 61 % de los vértices, pero
+costaría el **0,23 %** de superficie y **dejaría 29 parques convertidos en
+cuadrados**.
+
+### Corregido
+
+- **Desambiguador de slugs** — lo cazó el propio validador por §7.2. Usaba un
+  contador por nombre, así que el sufijo «-2» que inventa chocaba con **«Planta
+  Solar Fede 2», que se llama así de verdad**. Ahora comprueba contra el conjunto
+  de lo realmente usado. `red-electrica` se regeneró y sale **byte a byte
+  idéntico**: allí el fallo estaba latente y nunca disparó, así que su release no
+  necesita reedición.
+- `manifest.json` — la nota `_registro_por_adelantado` hablaba de «cinco capas en
+  preparación» y ya no queda ninguna. Se conserva como nota histórica, porque su
+  motivo sigue siendo bueno y la puerta sigue abierta.
+
+### Huecos
+
+- **Fotovoltaica: 1.206 de 3.165 recintos.** Parece un desastre y es el **76 % de
+  la superficie**, porque las anónimas son las pequeñas. Las 1.959 que faltan no
+  llevan nombre en la BTN y `nombre` es obligatorio. **Cuando el hueco es de censo
+  y no de magnitud hay que decir las dos cifras**, porque una sola engaña en la
+  dirección que le convenga a quien la elija.
+- **Eólica: 7 recintos sin nombre** quedan fuera. Son el 0 % de la superficie.
+- **Termosolar: 1 de 45.**
+- **No hay potencia, y no la habrá por esta fuente.** `potencia_mw` está prohibido
+  en los dos esquemas: es la primera cifra que cualquiera espera de un parque
+  eólico y la BTN no la da. Quien la publica es el promotor (`corporativa`, R3) o
+  un registro administrativo de instalaciones, que sería otra fuente y otra capa.
+- **Tampoco titular, ni fecha de puesta en servicio.** La BTN trae `f_alta`, que
+  es cuándo el IGN capturó el recinto y no cuándo la planta arrancó.
+- **Sigue sin publicarse el RECURSO**, y esta release no lo resuelve: lo cambia de
+  pregunta. Si algún día alguien quiere el campo de viento, sigue siendo ráster.
+
+---
+
+## datos-v2026.08.20 — R3 no se discute: se cambia de emisor
+
+Decimoséptima capa. `red-electrica` llevaba en gris desde el primer día por un
+motivo **impecable y aun así equivocado**, y eso es lo que esta release cuenta.
+
+### Añadido
+
+- **`red-electrica` — 659 registros.** Dos de tendido y 657 de subestación, todo
+  de la **Base Topográfica Nacional del IGN**, tema Energía (GeoPackage nacional,
+  descarga directa, licencia de la Orden FOM/2807/2015 «compatible con CC-BY
+  4.0»).
+  - **Tendido de 400 kV** — 553 tramos, **14.904,9 km**.
+  - **Tendido de 220 kV** — 1.231 tramos, **16.249,3 km**.
+  - **657 subestaciones** de las 718 en las que termina un tramo de esa tensión.
+
+**Por qué se levantó el bloqueo.** El motivo escrito era cierto entero: el
+mallado lo publica Red Eléctrica, que es `corporativa`, y **R3** no la deja
+sostener un `confirmado`. Debajo había una premisa que nadie llegó a escribir —
+*que no lo publica nadie más*—, y esa era falsa. **Una frase que da por cerrado
+el mundo tiene que decir dónde miró.**
+
+**Por qué son DOS tendidos y no 1.784.** Las 18.505 líneas de la BTN traen
+`nombre` a nulo, **todas**. Un tramo no es un objeto con identidad: es el trozo
+que quedó entre dos hitos de captura. Nombrarlos por sus extremos habría
+fabricado 1.784 nombres que nadie ha dado nunca.
+
+**El filtro de subestaciones sale de la fuente, no del atlas.** La norma de
+captura del IGN obliga a que «las líneas eléctricas deben finalizar en
+transformador, subestación eléctrica, central eléctrica, vértice de otra línea
+eléctrica o torre de alta tensión». Así que la pregunta es la única que no
+interpreta: **¿cae un extremo de línea de 220 o 400 kV dentro de este recinto?**
+Sin el filtro entrarían las 2.766 nombradas, incluida la tracción de Adif.
+
+**Evidencia independiente, para que cualquiera la repita.** Las cinco
+interconexiones de `electricidad-interconexiones` están construidas desde
+documentos del **MITECO**, no del IGN, y las cinco caen sobre la subestación que
+les toca: Adrall a **0,5 km** con el nombre idéntico, Gatika a **1,6 km**, Beariz
+a 3,1, Orcoyen a 6,5. Y el «Puerto de la Cruz» cuya ficha advertía «es el LUGAR
+que el instrumento nombra, **no la subestación**» resulta tener su subestación a
+**0,7 km**, llamada igual que el paso de montaña de Cádiz.
+
+**La geometría del tendido va simplificada a 25 m**, y por eso es
+`generalizada`: 117.306 vértices pasan a 17.034 (**–85 %**) y la longitud pierde
+el **0,017 %** (31.154,2 → 31.148,9 km). La BTN captura un vértice por torre, y
+un tramo recto de cuarenta torres no tiene cuarenta formas. Las subestaciones no
+se simplifican: son el perímetro del objeto y se quedan en `exacta`.
+
+### Corregido
+
+- `PLAN.md` — afirmaba que la **zonificación ambiental para renovables** del
+  MITECO está «en shapefile» y «es vectorial». **No lo es.** Comprobado
+  descargando el ZIP: dentro vienen `Clas_ISA_eol_c.tiff` y `Clas_ISA_eol_pb.tiff`,
+  y el propio léeme del Ministerio dice «los **ráster clasificados**». La que el
+  plan daba por salida honesta para `recurso-eolico`/`recurso-solar` tenía el
+  mismo defecto que la vía que venía a sustituir.
+- `PLAN.md` — el epígrafe seguía diciendo «las **cinco** ramas que siguen en
+  gris» cuando ya eran tres, y ahora dos.
+
+### Huecos
+
+- **61 subestaciones** cumplen el criterio y **se quedan fuera porque la BTN no
+  las nombra**, y `nombre` es obligatorio. No se omiten en silencio: van dichas
+  aquí, en el manifiesto y en §10.
+- **`longitud_medida_km` va `parcial`, no `confirmado`.** El IGN no publica
+  ninguna longitud: el número lo mide el atlas. **Medir sobre un dato primario no
+  convierte la medida en primaria** — un `confirmado` ahí incumpliría R2.
+- **La BTN no dice de quién es cada línea**, y el esquema prohíbe `titular` y
+  `propietario` por su nombre. Ese dato solo lo publica el operador, que es
+  `corporativa`: escribirlo devolvería la capa al muro por la puerta de atrás.
+- **La BTN no dice si el tendido está energizado.** Por eso `activo` **no
+  aplica** en §6.5: un `false` por falta de dato es la mentira que R7 evita.
+- **`recurso-eolico` y `recurso-solar` siguen en gris**, y tras esta pasada con
+  **más** motivo, no menos. La alternativa que sí existe —los recintos de 1.389
+  parques eólicos, 3.165 fotovoltaicas y 45 termosolares, que la misma BTN trae
+  como polígono— no es recurso sino instalación, y renombrar la rama es decisión
+  de producto.
+
+---
+
+## datos-v2026.08.19 — La cabecera del manifiesto decía ser de otra release
+
+Corrección sin cambios en los datos. **Ninguna capa se toca**; lo que se arregla
+es lo que el manifiesto decía de sí mismo.
+
+### Corregido
+
+- `manifest.json` — la cabecera se había quedado tres releases atrás:
+  `schema_version` decía **1.18.0** con el contrato en la **1.21.0**, y `release`
+  decía **2026.08.15** estando ya en la 08.18. El campo `_estado` era peor:
+  hablaba de «doce capas con datos y siete en preparación» cuando son **dieciséis
+  y tres**. En un fichero cuyo propio comentario dice que un manifiesto que
+  anunciara capas inexistentes «sería la primera mentira del atlas, y sería sobre
+  sí mismo», esa era justo la avería que no podía tener.
+- `app/preparar-datos.mjs` — **guarda nueva**: compara la release que el
+  manifiesto declara con la etiqueta que está sirviendo y **avisa** si no cuadran.
+  No rompe, porque el dato servido es el de la etiqueta y está bien; lo que está
+  mal es la cabecera, y eso se corrige, no se bloquea.
+
+**De dónde salió el fallo:** de actualizar la entrada de cada capa una a una y
+nunca la cabecera, tres releases seguidas. Es la tercera vez en el mismo día que
+la lección se repite —la herramienta que ya tiene los dos números delante es la
+que debe notar que no coinciden—, después del `Content-Type` de un HEAD en
+`vigilar.py` y del «ningún municipio» en `consultar.py`.
+
+---
+
+## datos-v2026.08.18 — El agua embalsada no es el vaso, es lo que hay dentro
+
+Entra **`agua-embalsada`**, la decimosexta capa. **308 embalses** con su capacidad
+y su reserva, verificados uno a uno contra la cuenca que les corresponde:
+**49.237 hm³ de capacidad y 34.092 embalsados** en el parte del 4 de agosto de
+2026.
+
+**La capa existe porque la pregunta estaba mal formulada.** La ruta obvia era el
+shapefile del Inventario de Presas y Embalses del SNCZI, y está tras un
+**ALTCHA** —un CAPTCHA de prueba de trabajo que el Ministerio puso a propósito y
+que no se salta—. Otras cinco vías fallaron: URLs viejas a 404, no existe WFS de
+embalses, el ArcGIS REST del Ministerio no sirve esa capa, el PDF resumen agrega
+por cuenca. **La sexta fue darse cuenta de que el shapefile no era el dato:**
+«agua embalsada» no es la geometría del vaso, es el agua que hay dentro, y eso el
+MITECO lo publica en abierto y sin formulario en el histórico del **Boletín
+Hidrológico Semanal** — 719.725 partes desde 1988.
+
+### Añadido
+
+- **`agua-embalsada`** — 308 embalses (292 vigentes, 16 históricos), 73 de uso
+  hidroeléctrico declarado.
+- **Cada punto está verificado contra su demarcación.** El Boletín no lleva
+  coordenadas: la geometría se cose por nombre contra el Nomenclátor del IGN, y
+  como un nombre de embalse **no es único en España**, se le pregunta al servicio
+  del propio Ministerio en qué cuenca cae cada punto. Esa vuelta cazó **seis
+  emparejamientos falsos**, el mejor de ellos un «San Lorenzo» del Ebro que
+  resultaba ser el de Tenerife.
+- **La normalización de nombres es de cuatro lenguas**, y sus reglas salieron de
+  mirar las etiquetas reales: nueve prefijos (`Embalse`, `Pantà`, `Presa`,
+  `Pantano`, `Encoro`, `Balsa`, `Charca`, `Embassament`, `Bassa`) y el sufijo
+  vasco **`urtegia`** con su genitivo (`Añarbeko urtegia` → Añarbe).
+- **Tres embalses rescatados de un falso descarte.** Aldeadávila, Saucelle y
+  Cedillo caían fuera de toda demarcación española porque **el cauce que embalsan
+  es la frontera con Portugal**. Se comprobó mirando la vecindad y entran con su
+  clave explicándolo.
+
+### Huecos
+
+**De los 401 embalses del Boletín se publican 308.** Los 93 que faltan suman
+**7.243 hm³ — el 13 % de la capacidad** — y no se omiten en silencio:
+
+| Motivo | Cuántos |
+|---|---|
+| Sin correspondencia en el Nomenclátor del IGN | 58 |
+| Casan con más de un topónimo y no se puede decidir | 29 |
+| Casaban de nombre con un embalse de **otra cuenca** | 6 |
+
+Los mayores que quedan fuera, para que se vea qué falta:
+
+| Embalse | hm³ | Motivo |
+|---|---|---|
+| Ricobayo | 1.145 | ambiguo |
+| Grado, El | 400 | sin topónimo |
+| Puente Nuevo | 281 | ambiguo |
+| Guadalhorce-Guadalteba | 279 | ambiguo |
+| Aguilar | 247 | sin topónimo |
+| Bao | 238 | sin topónimo |
+
+- **Dieciséis registros son `historico`, no vigentes:** su último parte es
+  anterior a 2026 y la serie llega a agosto. Un dato que dejó de alimentarse no
+  es una lectura de hoy — y no se borra, se marca.
+- **La superficie del vaso no se publica**, y está prohibida en el esquema: vive
+  en el shapefile que esta capa no usa y mide el vaso lleno, no el agua.
+- **`porcentaje_llenado` está prohibido por derivado**, igual que `activo` en R7.
+  Lo calcula quien lo pinte.
+
+---
+
+## datos-v2026.08.17 — Los cables no se pueden dibujar; los aterrizajes sí
+
+Entra **`cables-submarinos`**, la decimoquinta capa. **Seis aterrizajes**, cada
+uno con el acto administrativo que lo autoriza y su topónimo del IGN.
+
+**Nace distinta de su propio boceto.** El contrato la imaginaba `mixta`, con
+`sistemas[]`, `destinos[]` y un trazado que dibujar. Las fuentes obligan a otra
+cosa: **el recorrido de un cable submarino no tiene fuente con licencia
+compatible** —el mapa de TeleGeography, la referencia obvia, está bajo
+CC BY-NC-SA y `datos/LICENCIA-DATOS.md` lo veta—, y lo que sí publica una fuente
+primaria es **dónde toca tierra**, porque ocupar dominio público
+marítimo-terrestre exige un acto administrativo. Un registro por aterrizaje, en
+puntos. La categoría `trazado` queda declarada y **sin usar**.
+
+### Añadido
+
+- **`cables-submarinos`** — seis aterrizajes:
+
+  | Sistema | Titular | Dónde | Acto |
+  |---|---|---|---|
+  | Grace Hopper | Telxius | Playa Atxabiribil, **Sopela** | CNC02/21/48/0001 |
+  | *(sin nombre en el acto)* | Edge Network | Isla de la Virgen del Mar, **Santander** | CNC02/23/39/0009 |
+  | Cádiz–Ceuta | GTD | Playa de Benítez, **Ceuta** | BOE-B-2024-12549 |
+  | PENBAL-4 | Telefónica | Platja de la Malva-rosa, **València** | CNC02/17/46/0009 |
+  | Canalink | Canarias Submarine Link | Puerto de **Santa Cruz de la Palma** | BOE-B-2011-23242 |
+  | Canalink | Canarias Submarine Link | Puerto de **Granadilla** | BOE-B-2013-3436 |
+
+- **La acotación no la elige el gusto, la obliga lo encontrado.** Los actos de
+  Costas cubren TODO cable que ocupe dominio público marítimo-terrestre, y ahí
+  dentro hay un cable de fibra atado al puente de Txatxarramendi y
+  canalizaciones que cruzan las rías del Bidasoa y de Oriñón. Sin criterio, la
+  capa se llena de cruces de ría. El que separa sale del propio acto: **entra el
+  aterrizaje de un cable que une territorios separados por mar**.
+
+- **Un cable que cruza aguas españolas y no aterriza aquí no entra.** Lo decidió
+  el **Europe India Gateway**: su resolución de impacto ambiental
+  (BOE-A-2010-2040) describe 15.000 km por aguas de Galicia, el Estrecho y el mar
+  de Alborán… y toca tierra en **Gibraltar**. Se archiva, se cita y se queda
+  fuera.
+
+### Corregido
+
+- `consultar.py contraste` — **no caer en ningún municipio no es lo mismo que
+  caer en otro.** Lo segundo es una contradicción; lo primero es que no hay
+  segundo dato con el que comparar, y en la costa es lo normal: el IGN sitúa la
+  etiqueta de una playa en la orilla y los polígonos municipales acaban en la
+  costa. Sin esta guarda, esta capa daría dos falsos «¡REVISAR!» en cada pasada.
+
+### Huecos
+
+- **Esta capa no puede afirmar que están todos, y lo dice en su manifiesto.** La
+  Ley 11/2022 obliga a los titulares a comunicar sus cables al Ministerio de
+  Transformación Digital, pero **el Ministerio no publica la lista**: su punto de
+  contacto único solo ofrece el formulario. No existe registro contra el que
+  cuadrar, así que se publica lo que un acto administrativo nombra y sitúa.
+- **El aterrizaje de Santander no tiene sistema.** El expediente autoriza la
+  ocupación y no bautiza el cable: sin nombre y sin destino en todo el anuncio.
+  Va con fuente `tipo: hueco` y R4 baja el registro a `parcial`. Poner ahí un
+  nombre sacado de la prensa sería justo lo que esta capa evita.
+- **Tres pistas localizadas y sin comprobar:** PENCAN-X, Península–Gran Canaria
+  (RD 1124/2024, modificado por RD 268/2026); el ramal de Canalink Base 4 a
+  Fuerteventura (RD 973/2025); y el aterrizaje de Sagunto (CNC02/25/46/0013). Los
+  tres son subvenciones o solicitudes: hay que comprobar si **sitúan** el
+  aterrizaje o solo lo financian.
+- **El lado peninsular del cable Cádiz–Ceuta.** El acto archivado es el de la
+  parte de Ceuta; el de Cádiz será otro expediente.
+
+---
+
+## datos-v2026.08.16 — El idioma, y el mapa de un solo color era falso
+
+Entra **`idioma`**, la decimocuarta capa y la última del horizonte acordado.
+**22 registros**: veinte Estados y dos organizaciones internacionales, cada uno
+con su artículo citado **literal** y el texto entero archivado.
+
+**No es lo que su nombre sugiere, y la causa es una licencia.** «El idioma como
+activo» pedía demolingüística —los seiscientos millones de hablantes, país por
+país— y esa ruta está cerrada: el informe del Instituto Cervantes dejó de
+publicarse con ese nombre en 2024, no hay conjunto de datos suyo en
+`datos.gob.es`, y el aviso legal de `cervantes.org` dice que el acceso «no otorga
+a los usuarios ningún derecho» sobre los contenidos, solo «uso exclusivo y
+personal». Republicar esa tabla bajo CC BY 4.0 con permiso comercial es lo que
+`datos/LICENCIA-DATOS.md` prohíbe. Tercer muro de licencia del atlas, tras el
+ShareAlike de la CNMC y el NonCommercial de TeleGeography.
+
+Lo que sí se puede republicar es el **texto legal**: el artículo 13 del TRLPI
+excluye de la propiedad intelectual las disposiciones legales y los actos de los
+organismos públicos. Una constitución no tiene dueño. Así que la capa cartografía
+el **estatuto jurídico** del idioma: dónde es lengua oficial, por qué norma, y en
+qué organizaciones internacionales es lengua de trabajo.
+
+### Añadido
+
+- **`idioma`** — 22 registros. El reparto, que es el hallazgo:
+
+  | Estatuto | Cuántos | Quiénes |
+  |---|---|---|
+  | Oficial por la Constitución | 7 | Colombia, Costa Rica, Guatemala, El Salvador, Honduras, Panamá, Cuba, R. Dominicana |
+  | Cooficialidad acotada | 6 | España, Perú, Ecuador, Venezuela, Nicaragua |
+  | **Sin norma que la nombre** | **3** | **Argentina, Chile, Uruguay** |
+  | Oficial con remisión a la ley | 2 | Guinea Ecuatorial, Unión Europea |
+  | Cooficialidad estatal plena | 1 | Bolivia (castellano + 36 lenguas indígenas) |
+  | Bilingüe | 1 | Paraguay (con el guaraní) |
+  | **Lengua nacional, no oficial** | **1** | **México** |
+  | Lengua oficial y de trabajo | 1 | ONU |
+
+- **Cuatro de los veinte países** que cualquier mapa pinta de un solo color no
+  dicen lo que ese color afirma. **México** —el país con más hispanohablantes del
+  mundo— **no declara idioma oficial**: el español es «lengua nacional», a la par
+  que las indígenas y «con la misma validez», por el art. 4 de la Ley General de
+  Derechos Lingüísticos de 2003. **Argentina, Chile y Uruguay** no nombran la
+  lengua en absoluto.
+
+- **La lengua no se llama igual en todas partes.** Once textos dicen «el
+  **español**» y ocho dicen «el **castellano**». Va en campo propio
+  (`nombre_en_la_norma`), no en nota al pie: en un documento constitucional esa
+  palabra la eligió alguien, y en el caso español lleva discutida desde 1978
+  porque «castellano» sitúa la lengua entre las españolas en vez de por encima.
+
+- **Guinea Ecuatorial no nombra el portugués.** La frase que circula en todas
+  partes —«sus lenguas oficiales son español, francés y portugués»— no está en su
+  Ley Fundamental, que dice «el Español, el Francés **y las que la Ley
+  determine**». El portugués es oficial por ley ordinaria de 2007. Diferencia de
+  rango, conservada.
+
+### Cómo se publica un negativo
+
+Archivando **el texto en el que la cosa NO está**, para que el lector compruebe
+la ausencia él mismo. Los tres registros mudos citan su constitución entera y
+cuentan cómo se comprobó:
+
+- **Con control positivo sobre los acentos.** El fichero argentino viene en
+  ISO-8859-1 y leerlo como UTF-8 rompe la ñ de «español» y fabrica un cero falso.
+  Leído bien trae 47 ñ y 606 ó, encuentra «Nación» 132 veces y «Constitución» 43
+  — y aun así, cero menciones a la lengua.
+- **Mirando la fecha del documento.** El PDF que sirve hoy la Cámara de Diputados
+  chilena da la respuesta correcta y está fechado en **2003**, con la numeración
+  anterior a la reforma de 2005. Un negativo se puede fabricar de dos maneras:
+  leyendo mal el texto, o leyendo bien un texto viejo.
+
+### Corregido
+
+- `vigilar.py` — el detector de soft-404 usaba el `Content-Type` de un **HEAD**, y
+  ese no es de fiar: el servidor del Tribunal Supremo de Elecciones de Costa Rica
+  responde `text/html` al HEAD y `application/pdf` al GET de la misma URL. La
+  guardia acusaba a una fuente sana. Ahora confirma con GET antes de acusar.
+
+### Huecos
+
+- **El `debate_url` de la capa.** `analisis` se define «enlazada al hilo de El
+  Tercio donde se defiende» y ese hilo **no existe todavía**. No se inventa: el
+  atlas es autosuficiente por D1 y la capa se publica igual.
+- **La OEA y la Unión Africana**, donde el español es lengua oficial, **no
+  entran**. `oas.org` devuelve 403 a toda captura automática y el Protocolo de
+  Enmiendas al Acta Constitutiva de la UA se sirve como escaneo sin capa de
+  texto. Se sabe lo que dicen y no se publican.
+- **Tres ediciones anteriores a una reforma que no toca el artículo citado**, y se
+  dice: Venezuela (PDF de 2005, sin la enmienda de 2009), El Salvador (2014) y
+  República Dominicana (2015, sin la reforma de 2024).
+- **La captura de Nicaragua se hizo saltando la verificación TLS.** Toda la
+  infraestructura oficial nicaragüense está caída y la única copia accesible se
+  sirve desde un dominio del Estado con el certificado caducado. Lo que sostiene
+  la cita es que el documento se identifica solo: «LA GACETA DIARIO OFICIAL,
+  Managua, Martes 18 de Febrero de 2025», Ley n.º 1234, número 32.
+- **La geometría no está confirmada, y no puede estarlo.** Los puntos son
+  capitales de Natural Earth: dominio público y excelente, pero una compilación
+  cartográfica, no un emisor oficial. Su fuente va tipada `corporativa` a
+  propósito, para que **R3 impida por sí sola** que nadie la marque nunca como
+  confirmada.
+
+---
+
+## datos-v2026.08.15 — Cincuenta y siete planes, y un documento que no era una tabla
+
+Entra **`perte`**: los planes de inversión del PERTE que un documento público
+sitúa. Decimotercera capa, **57 registros**, **1.134,7 M€** de presupuesto
+financiable y **269,1 M€** de subvención propuesta.
+
+### Qué acota «acotado»
+
+La capa venía declarada con esa palabra desde el primer día y **nadie había
+decidido qué recorta**. Recorta esto: **entra lo que un documento público
+sitúa**, y el PRTR publica muchísimo dinero y casi nada de geografía.
+
+| Descartado | Por qué |
+|---|---|
+| Lista de los **100 mayores perceptores** (obligatoria por el art. 25 bis del Reglamento MRR) | Nombre, NIF e importe. **Sin ubicación** |
+| **Mapa del PRTR de MITECO** | Sitúa, pero es un **Power BI incrustado**: no publica conjunto de datos que citar |
+| **BDNS** | Concesiones sin ubicación de la inversión |
+
+Queda el listado de la Propuesta de Resolución Definitiva del **PERTE VEC —
+Sección B, convocatoria 2024**, que trae **provincia y municipio fila a fila**.
+
+### El hallazgo: el documento no es una tabla
+
+Parece una tabla de doce columnas y es **un registro por comisiones de
+verificación** — seis, de mayo a octubre de 2025. Un expediente puede aparecer en
+más de una, y **la aparición posterior REVISA a la anterior**. Contar filas da
+61; los expedientes vigentes son **57**. Publicar 61 habría puesto cuatro
+fábricas fantasma en el mapa y sumado su dinero dos veces.
+
+**Que esa lectura es la buena no es una interpretación: lo demuestran los TOTALES
+del propio documento, que cuadran al céntimo en las seis comisiones** (las tres
+primeras imprimen acumulado; las tres últimas, el total de su comisión). La
+prueba fina: BeePlanet pasa de 447.269 € a 626.177 € de subvención entre dos
+comisiones, y el acumulado del documento sube **exactamente esos 178.908 €**.
+
+### Añadido
+
+- `perte` — 57 registros, del plan de **343 M€ de Stellantis en Figueruelas** al
+  de **1,3 M€ de una fábrica de motos en Utrera**. Sin recortes por tamaño: un
+  corte por importe sería una opinión disfrazada de criterio.
+- Dos fuentes archivadas: el PDF del Ministerio y el registro de procedencia de
+  los 44 puntos municipales del Nomenclátor.
+- Una comprobación nueva en el CI: **`codigo_plan` no se repite** (23 pruebas).
+
+### Dos trampas que habrían falseado dinero, y cómo se cazaron
+
+**El extractor de PDF mete espacios dentro de los números** —«1.653.242 ,00» y
+«1.157. 269,00»— y coserlos con grupos de captura no basta: `re.sub` consume el
+dígito que la siguiente coincidencia necesita, así que reparaba un separador y
+dejaba el otro roto. Efecto: la fila de HIMOINSA **desaparecía y sus importes se
+los quedaba la fila de al lado** — peor que perderla, porque nada se ve vacío. Lo
+delató el cuadre contra los totales, no la vista.
+
+**Y pedir municipios por nombre al IGN devuelve cero** para Valladolid, Elgoibar
+o Abadiño, que existen. La vía buena es por recuadro de provincia filtrando
+`tipo=Municipio`, y **hay que paginar**: con `limit=3000` el servicio devolvió
+199 de 219 municipios en Álava **sin avisar**. La guarda que compara lo devuelto
+con `numberMatched` saltó y evitó publicar una capa con municipios que faltaban.
+
+### Lo que encontró la verificación, y no la lectura del código
+
+Dos cosas, y las dos aparecieron *después* de dar la capa por hecha.
+
+**`beneficiario` no era el beneficiario.** El PDF imprime la razón social y el
+título del plan **pegados, sin separador**, y el campo los llevaba juntos: un
+campo que no significaba lo que decía. Lo enseñó la ficha abierta en el
+navegador, no el validador. Lo único que los delimita es la forma societaria al
+final del nombre de la empresa —cubre 54 de 57, y las otras tres son variantes
+raras del propio listado («SOCIEDAD LIMITADA», «S .L.» con espacio,
+«S.L.UNIPERSONAL»)—. Ahora son 57 de 57, y nace `titulo_plan`.
+
+**Y el municipio se escribe de tres maneras distintas.** El contraste devolvió
+los 57 puntos al callejero del IGN y **tres no caían en el municipio que
+declaraban**. No eran puntos malos: eran formas del mismo nombre. El Ministerio
+usa la variante del INE con el artículo pospuesto («Porriño, O»,
+«Hospitalet de Llobregat, L'»); el Nomenclátor rotula el punto de otra forma
+(«Sagunto», «Oltza Zendea»); y el nombre canónico —el del **polígono**— es un
+tercero («Sagunt/Sagunto», «Cendea de Olza/Oltza Zendea»). Se publica el del
+polígono, que es contra el que se comprueba, y la forma del listado queda dicha
+en la ficha de cada registro afectado.
+
+### Huecos
+
+- **La resolución de concesión, que no es esta.** El documento se titula
+  «Propuesta de Resolución **Definitiva**» y aun así **no concede**: la resolución
+  se notifica por el registro electrónico, que exige identificación y no es
+  públicamente citable. Por eso los campos se llaman `subvencion_propuesta` y
+  `prestamo_propuesto`, y el esquema **prohíbe** `subvencion` a secas.
+- **El punto es el del municipio, no el de la fábrica.** El listado sitúa por
+  nombre de municipio y no publica coordenada. `geo_precision: municipio`, que
+  es exactamente lo que es.
+- **Dos municipios no casan de nombre entre las dos fuentes.** El Ministerio
+  escribe «Cendea de Olza/Oltza Zendea» y «Sagunto/Sagunt»; el Nomenclátor,
+  «Oltza Zendea» y «Sagunto». Van emparejados **a mano y por escrito**, con su
+  motivo, en vez de adivinados por parecido.
+- **Ninguna cifra de empleo**, prohibida en el esquema como en las otras dos
+  capas donde aparecía: es previsión del solicitante y nadie la comprueba
+  después.
+- **Las demás convocatorias del PERTE siguen fuera** —VEC sección A, Chip, ERHA—
+  mientras no publiquen su listado con municipio. No es desinterés: es la regla
+  de entrada.
+
+---
+
+## datos-v2026.08.14 — La subasta que España ganó y no firmó
+
+Ninguna capa nueva. Entra **una fuente** —los resultados de la subasta IF24 del
+Banco Europeo del Hidrógeno— y con ella dos claves en el registro de Huelva de
+`hidrogeno-produccion`. Es una release pequeña con un hallazgo que no lo es.
+
+### El hallazgo
+
+De **61 ofertas** evaluadas, la Comisión invitó a firmar a **15** el 20 de mayo
+de 2025. Al exigírseles una **garantía de finalización**, varias renunciaron;
+CINEA fue llamando a la lista de reserva por estricto orden de precio. El 20 de
+enero de 2026 firmaron **seis**, por 270,6 millones.
+
+En la tabla final hay **25 proyectos invitados en algún momento, y 16 son
+españoles**. De esos 16:
+
+- **firmaron 3** — H2CRI (Green Devco), NOON (Iberdrola Clientes) y GH2Move-VLC
+  (Diverxia): **155 MWe** entre los tres;
+- **se retiraron 13**: **1.191 MWe**.
+
+Sobrevivió el **12 %** de la capacidad española invitada. Y **las dos ofertas más
+baratas de toda Europa eran españolas** —0,20 y 0,25 €/kg, VILLAMARTIN H2 y
+PUERTO SERRANO H2, ambas de Galena Renovables— y **las dos se retiraron**.
+
+**Uno de los retirados toca una capa de este atlas.** «Tharsis-ELY-1», coordinado
+por *Cepsa Sustainable Fuels, S.L.* —Cepsa es el nombre anterior de Moeve—,
+ofertó 80 MWe a 0,80 €/kg y figura como retirado. THARSIS es como la ficha del
+PCI 9.15.4 llama a su Fase 2. El registro de Huelva lo dice ahora en su ficha.
+
+### Añadido
+
+- Fuente: los resultados oficiales de la subasta IF24, archivados.
+- `hidrogeno-produccion:huelva-moeve` — dos claves nuevas y su fuente. Capa a
+  **1.1.0**.
+
+### Lo que esta release NO hace, y es la decisión más importante
+
+**La subasta no se convierte en capa, y no por falta de calidad de la fuente.**
+Es primaria, oficial, completa y trae hasta la capacidad ofertada en MWe de cada
+proyecto. Lo que no trae es **dónde está cada uno**: publica nombre de proyecto,
+coordinador, país y cifras, y nada más.
+
+Varios nombres invitan a adivinar —VILLAMARTIN, PUERTO SERRANO, TORDESILLASH2,
+ARANDAH2, Arteixo, Los Barrios— y **adivinar es exactamente lo prohibido**. Ya se
+comprobó en esta misma casa lo que cuesta: los tres parajes llamados «El
+Espartal» del nomenclátor están en La Rioja y Navarra, a 120 km del centro de
+datos que los mencionaba. Un mapa no se construye con topónimos deducidos de un
+nombre comercial.
+
+Así que es la primera vez que el atlas se topa con una fuente **excelente y no
+cartografiable**. Se archiva, se cita desde donde toca y se deja escrito por qué
+no hay capa. Si algún día una resolución sitúa esos proyectos, la fuente ya está
+guardada.
+
+### Huecos
+
+- **Dónde está cada proyecto de la subasta.** Ver arriba: la fuente no lo publica.
+- **A qué parte del proyecto de Huelva corresponde la oferta retirada.** El
+  emparejamiento entre «Tharsis-ELY-1» (80 MWe) y la Fase 2 del PCI (200 MW) lo
+  hace el atlas por nombre y promotor, no la fuente, y las capacidades no
+  coinciden. La clave va como `parcial`: **la retirada es un hecho firme; su
+  encaje exacto en este proyecto, no**.
+- **Por qué se retiró cada uno.** La página nombra la garantía de finalización
+  como causa general y no desglosa proyecto por proyecto. No se atribuye motivo a
+  ninguno en particular.
+
+---
+
+## datos-v2026.08.13 — Siete electrolizadores, y la diferencia entre un proyecto y una ambición
+
+Entra **`hidrogeno-produccion`**: las plantas de electrólisis españolas que están
+en la lista de la Unión. Duodécima capa. **Siete registros, no cinco**, y esa es
+la primera cosa que hay que explicar.
+
+### El hallazgo
+
+**Un registro obliga a publicar, no a certificar.** La plataforma de
+transparencia PCI-PMI es fuente primaria —lo fijó la release anterior: existe por
+el artículo 23 del TEN-E— pero lo que publica de cada proyecto lo redacta **su
+promotor**. En la capa anterior eso apenas se notaba, porque el promotor era
+Enagás bajo mandato del Consejo de Ministros. Aquí son empresas privadas, y su
+texto trae tres cosas mezcladas: **el proyecto, la ambición y el argumento de
+venta**.
+
+El caso que obligó a escribir la regla cabe en un párrafo:
+
+> «El grupo EDP tiene la **ambición** de desarrollar **1 GW** de electrólisis en
+> la región de Asturias para 2030, **si las condiciones de mercado son
+> favorables**. El proyecto Asturias H2 Valley comprende un electrolizador de
+> **150 MW** en su fase inicial.»
+
+La cifra que circula es la primera. **La que publica el atlas es la segunda**, y
+la primera está en su ficha, entera y con su «si». Es la enmienda 1.17 del
+contrato: al campo numérico va la cifra del proyecto definido; la ambición y la
+ampliación futura van a `claves` verbatim y con su condicional intacto; la
+evaluación promocional —«un impacto positivo significativo en el empleo», «el
+38 % del mercado español»— **no se publica en absoluto**.
+
+**Y son siete plantas, no cinco proyectos.** Dos de los cinco nombran y sitúan
+dos plantas cada uno: el valle asturiano (Aboño y el futuro centro de Soto de
+Ribera) y ValdoEume (Mugardos, 77 MW, y As Pontes, 100 MW). La plataforma dibuja
+siete puntos, uno por planta, y el registro es del objeto que la fuente define
+(§6.6).
+
+### Añadido
+
+- `hidrogeno-produccion` — siete registros: Huelva (Moeve, 1.000 MW), Aboño
+  (EDP, 150), Soto de Ribera (EDP, sin cifra), Mugardos (Triskelion, 77), As
+  Pontes (H2Pole, 100), Catalina (500) y ErasmoPower2X (650). **2.477 MW
+  publicados.**
+- Una fuente nueva archivada: la captura de los cinco proyectos 9.15.x en la
+  plataforma PCI-PMI.
+
+### Lo que se comprobó, y salió bien
+
+**Las dos distancias que la fuente declara cuadran con sus propios puntos**, y
+eso es lo que confirma qué planta es cada punto: Aboño y Soto están a **29,3 km**
+en línea recta contra los «unos 40 km» que declara la ficha —distancia por
+carretera—; Mugardos y As Pontes, a **28,0 km**, unidas según la ficha por un
+hidroducto de 36 km. Un tubo mide más que la recta.
+
+Esa comprobación deshizo además un falso hallazgo. El punto de Ribera de Arriba
+parecía contradecir a su propia ficha, que sitúa el proyecto «en Carreño y
+Gijón». Con los dos puntos a la vista se ve que uno **es** Aboño (cae en Gijón) y
+el otro es Soto de Ribera, que la misma descripción nombra. **No había
+contradicción: había una consulta mal acotada.**
+
+### Corregido
+
+- Nada de releases anteriores. La enmienda 1.17 **describe** cómo se leía ya
+  `hidrogeno-red`; no la enmienda, porque allí no había ambiciones que separar.
+
+### Huecos
+
+- **La potencia de Soto de Ribera.** Sus 500 MW son los de un «futuro centro» de
+  una segunda fase, no los de un proyecto definido. Es el primer hueco del atlas
+  que **crea una regla de redacción y no la ausencia de la fuente**: la cifra
+  existe, está en su clave, y no se escribe donde diría otra cosa.
+- **La producción del valle ValdoEume.** La ficha da 27.000 t/año para la primera
+  fase de las **dos** plantas juntas. Repartirla sería inventarla; escribirla
+  entera en cada una la duplicaría. Se queda en clave y el campo se omite.
+- **La producción de ErasmoPower2X se publica como techo**, porque así la declara
+  la fuente: «hasta 80.000 toneladas». El campo va como `parcial`.
+- **Ninguna cifra de inversión ni de empleo**, y no por descuido: los dos campos
+  están **prohibidos** en el esquema. El artículo 23 permite no publicar coste
+  por sensibilidad comercial, y las cifras que circulan —245 M€ para
+  ErasmoPower2X— son de nota de prensa.
+- **Dos sumas de la propia fuente que no cierran.** El valle asturiano dice que
+  su segunda fase «aportará 1 GW» y la desglosa en 350 + 500 = 850. Y la ficha de
+  Huelva tiene una frase a medio corregir en el original, con la decisión de
+  inversión a la vez «prevista» y «tomada». Se transcriben tal cual: son la
+  prueba de qué clase de texto es una ficha de registro.
+- **Un punto que no cae en ningún término municipal**: el de Mugardos queda en la
+  ría, a 1,34 km de la villa — y a 1,5 km de la planta de Reganosa que este mismo
+  atlas publica en `gas-regasificacion`, del mismo grupo promotor.
+
+---
+
+## datos-v2026.08.12 — La red de hidrógeno, y el trazado de lo que aún no existe
+
+Entra **`hidrogeno-red`** con diez registros y **3.268 km dibujados**. Undécima
+capa. Sustituye a la casilla que el horizonte llamaba «H2Med», y el renombre es
+la primera cosa que hay que explicar.
+
+### El hallazgo
+
+**El H2Med es la parte pequeña.** De los 3.268 km, **2.634 son la red troncal
+española** —dos ejes, de Gijón a Barcelona por el norte y de Gijón a Huelva por
+el oeste— que no es el H2Med y que casi nadie nombra. BarMar son 382 y CelZa
+252. Llamar «Corredor H2Med» a esta capa habría sido inexacto desde el primer
+día, así que el id se cambió antes de publicar nada.
+
+**Y el corredor tiene dos piezas que el relato público olvida.** El Acuerdo del
+Consejo de Ministros de 30 de julio de 2024 habilita a Enagás para **cinco**
+proyectos, no tres: los dos últimos son **cavernas de sal** para almacenamiento
+estacional, una en Cantabria (272 GWh útiles en 2030) y otra en la cuenca
+vasco-cantábrica (164 GWh en 2032). Ninguna nota de prensa del H2Med las
+menciona; las nombra el BOE, con su número de proyecto.
+
+**La exclusión española creció de uno a cinco entre las dos listas de la Unión.**
+La primera lista (2024/1041) dejaba fuera del PIC un solo tramo interior:
+Guitiriz–Zamora. La vigente (2026/764) deja fuera cinco: Coruña-Zamora,
+Huelva-Algeciras, Zamora-Haro, Guitiriz-Zamora y la conexión Castilla-La
+Mancha–Madrid. Son dos hechos con fuente y ninguna conclusión: el atlas los
+registra y el debate va a El Tercio.
+
+### Añadido
+
+- `hidrogeno-red` — diez registros: los tres hidroductos (9.1.2 CelZa, 9.1.3 red
+  troncal, 9.1.4 BarMar), las cinco estaciones de compresión que la ficha técnica
+  nombra y los dos almacenamientos (9.24.1 y 9.24.2).
+- Cuatro fuentes nuevas archivadas: el Acuerdo del Consejo de Ministros
+  (BOE-A-2024-19047), el Reglamento TEN-E 2022/869, la consulta a la plataforma
+  de transparencia PCI-PMI y los términos de reutilización de esa plataforma.
+
+### La fuente, y por qué se puede usar
+
+La geometría sale de la **plataforma de transparencia PCI-PMI** de la Comisión,
+que **no es una web de divulgación**: existe por el **artículo 23 del TEN-E**,
+que obliga a publicar «información general actualizada, por ejemplo,
+**información geográfica**, para cada proyecto de la lista de la Unión». Es el
+registro, no la nota sobre el registro.
+
+**Y por una vez la licencia sale verde.** La política de reutilización de la
+Comisión (Decisión 2011/833/UE) es CC BY 4.0. Después de que la licencia matara
+la potencia instalada de la CNMC (CC BY-SA) y el mallado de Red Eléctrica, esta
+vez la puerta estaba abierta. Se acotó la captura a la capa `ENERGY/PCI`: el
+mismo visor sirve una capa `PLATTS`, de S&P Global, que es de tercero y no entra.
+
+### Lo que la fuente advierte, y lo que obligó a cambiar
+
+La plataforma dice de su propia geometría que **«no prejuzga y puede no coincidir
+con el trazado final del proyecto»**. Ninguno de los cinco valores de
+`geo_precision` decía eso, así que nace **`proyectada`** (contrato 1.16.0). No es
+un sinónimo elegante de `ilustrativa`: la distinción es de **tiempo**, no de
+detalle. Las otras dicen cuánto se ha afinado un contorno; esta dice que **el
+terreno todavía no puede desmentirlo**, porque el tubo no está construido. Sobre
+una geometría `proyectada` no se mide.
+
+### La trampa que casi entra
+
+La plataforma sirve un campo de longitud (`SHAPE.LEN`) **en metros de Web
+Mercator**, inflados por la latitud entre un 26 % y un 38 %. Ahí BarMar «mide»
+518 km; sobre el elipsoide mide 382, coherente con los «unos 400 km» que declara
+su propia ficha técnica. De ahí sale la regla **R10**: lo declarado cuadra con lo
+dibujado al 15 %, medido sobre el elipsoide. El esquema prohíbe además
+`shape_len` por su nombre. Las tres longitudes publicadas cuadran: 7,0 %, 5,9 % y
+4,6 %.
+
+### Corregido
+
+- `espacios-maritimos:plataforma-continental-canarias` — **su ficha no se podía
+  abrir**, y llevaba así desde que se publicó. El visor solo cableaba el clic
+  sobre puntos y rellenos, nunca sobre trazados, y esa era la única línea del
+  atlas. No lo destapó una revisión del código: lo destapó preguntarse si la capa
+  nueva funcionaría. Los datos no cambian; lo que cambia es que ahora se pueden
+  leer.
+
+### Huecos
+
+- **La potencia de tres de las cinco estaciones de compresión.** La ficha técnica
+  las nombra (Villar de Arnedo, Tivissa, Zamora) y no las dimensiona. Solo llevan
+  cifra las dos de los interconectores: 30 MW en Zamora y 60 MW en Barcelona.
+- **El coste de los proyectos.** El artículo 23 obliga a publicarlo «excepto toda
+  información sensible desde el punto de vista comercial», y en la práctica la
+  plataforma no lo da. Las cifras que circulan son de nota de prensa, que R3 no
+  admite. El campo está **prohibido** en el esquema, no simplemente ausente.
+- **Qué estación es cuál, en la red troncal.** La plataforma publica esos tres
+  puntos como «otros activos de hidrógeno», sin nombre propio. Los nombres salen
+  de la descripción del proyecto —que nombra exactamente tres— y el
+  emparejamiento es del atlas: Villar de Arnedo cae en su propio municipio y los
+  otros dos quedan por eliminación. Los tres registros van `parcial` y lo dicen en
+  su ficha.
+- **Dos nombres no coinciden con su municipio, y se publica el desacuerdo.** La
+  fuente sitúa una compresora «en Zamora» y otra «de Tivissa»; sus puntos caen en
+  **Coreses** y en **Móra la Nova** (y el tercero, en **Molacillos**). Se conserva
+  el nombre de la fuente —es el único con el que identifica cada estación— y cada
+  ficha dice dónde cae su punto, contrastado contra el callejero del IGN.
+- **Un punto para tres provincias.** La fuente describe 9.24.2 sobre «la cuenca
+  vasco-cantábrica, incluyendo Burgos, Guipúzcoa y Álava» y publica una sola
+  coordenada, en Amurrio. El punto sitúa el proyecto; no delimita la caverna.
+- **«Under consideration» no cabe en el vocabulario.** El estado que la Comisión
+  da a 9.24.2 es anterior al de los otros cuatro y no es ninguno de los cinco
+  valores de `fase`. Se deja en `tramitacion` marcada como parcial y la palabra
+  literal se conserva en `estado_pci`, para no fingir una precisión que el
+  vocabulario no tiene.
+- **Los cinco electrolizadores españoles no entran** (9.15.4 a 9.15.8: Huelva,
+  Asturias, ValdoEume, Catalina y ErasmoPower2X), aunque la misma fuente los
+  sirve con geometría y promotor. Son producción, no red, y de promotores
+  distintos; el acto que da el perímetro de esta capa no habilita a Enagás para
+  ellos. Es trabajo ya localizado para otra capa, no un olvido.
+
+---
+
+## datos-v2026.08.11 — Seis centros de datos, y por qué no puede haber más
+
+Entra **`centros-datos`**: la capa más pequeña del atlas, con seis registros.
+Décima capa.
+
+### El hallazgo
+
+**España no tiene registro público de centros de datos.** No es que cueste
+encontrarlo: no existe.
+
+- La **base europea** del artículo 12 de la Directiva 2023/1791 obliga a reportar
+  a todo centro de ≥500 kW — y se publica **agregada por Estado miembro**. Ni
+  instalación, ni ubicación.
+- **MITECO** no lleva censo propio: remite a reportar a esa base europea.
+- Las cifras que cita toda la prensa —439 MW instalados en 2025, 2.537 previstos
+  para 2030, «25 GW solicitados de los que solo 3 son reales»— las publica
+  **SpainDC, la patronal**: `corporativa` por §6.1, y R3 no la admite.
+
+Así que la capa se levanta con lo único que nombra, sitúa y dimensiona centros
+concretos: **actos administrativos**. Y de ahí sale su tamaño.
+
+### La cifra
+
+Los cinco centros del PIGA «Expansión Región AWS en Aragón» declaran, según el
+propio acto, **10.848,2 GWh/año** a plena capacidad. Contra la capa de generación
+por provincia de la release anterior —las dos cifras primarias, ninguna
+interpretada— eso equivale al **48 % de todo lo que Aragón generó en 2024** y al
+**71 % de lo que generó la provincia de Zaragoza**.
+
+El atlas pone los dos números en el mismo mapa y no concluye nada. Para eso está
+el hilo de El Tercio.
+
+### Añadido
+
+- `centros-datos` — seis registros, todos del mismo acto (INAGA, resolución de 16
+  de julio de 2025, BOA n.º 150): **CAR** (Zaragoza, 143,2 ha, 3.279,7 GWh/año),
+  **VDG1** y **VDG2** (Villanueva de Gállego, 13,1 y 83,3 ha, 756,9 y 2.775),
+  **WQA** (Huesca, Parque Tecnológico Walqa, 56,7 ha, 2.270,6), **BDE** (El Burgo
+  de Ebro, 43,7 ha, 1.766) y el centro **ya existente** de El Burgo de Ebro, que
+  el acto menciona al situar el proyectado a 400 m de él.
+
+### Lo que el lector tiene que saber antes de usar estas cifras
+
+- **Ninguno de los cinco consume nada todavía.** Es la demanda declarada a plena
+  capacidad de centros que no existen: van con `fase: tramitacion` y la nota lo
+  dice antes que el número.
+- **El sexto solo tiene nombre.** Del centro existente el acto dice que existe y
+  nada más: superficie, consumo y fecha de servicio son hueco declarado. Se
+  registra igual — el atlas prefiere un registro con tres huecos a callar lo que
+  sabe que está ahí.
+- **La geometría se queda en `municipio`**, que §6.6 reconoce como resultado
+  legítimo. El acto sitúa por polígono industrial —«Empresarium», «Walqa», «El
+  Espartal»— y el Nomenclátor del IGN no nombra ninguno de los tres: los únicos
+  «El Espartal» que existen están en La Rioja y Navarra, a 120 km.
+
+### Lo que se dejó fuera, y por qué
+
+- **Los 26 proyectos de centros de datos de Cataluña** (unos 2.000 MW, siete
+  polos). Los anunció la Generalitat en **nota de prensa**, no en un acto: no
+  están autorizados ni localizados por expediente alguno. Obligó a escribir la
+  enmienda de §6.1 del contrato — **el comunicado de un gobierno no es fuente
+  primaria; lo es el acto**. Es la primera vez que el atlas tiene que rechazar
+  una fuente pública, y la trampa es peor que la privada porque parece oficial.
+- **Los tres solicitantes que el BOE sí nombra.** El primer concurso de capacidad
+  de acceso de demanda desanonimiza sus códigos en la última tabla:
+  **CPD4GREEN, SAU** (nudo Brazatortas 400), **Benbros DC, SL** (Francolí 220) y
+  **ACS DC Infra, SLU** (Nuevo Vigo 220). **Los tres, excluidos.** Los 928 MW
+  fueron a acero verde (Hydnum, 500 MW), cobre, gases industriales, Stellantis y
+  Moeve — ni un megavatio a un centro de datos, porque el criterio principal
+  puntúa CO₂ evitado por MW. No entran en la capa: esa resolución define una
+  solicitud en un nudo, no un centro en un sitio.
+- **La acometida de ACS DC LA PUEBLA** (BOE-B-2026-24883), por lo mismo: ese acto
+  define una línea de 400 kV en Villamayor de Gállego, y el centro se llama «La
+  Puebla», que es otro municipio.
+
+### Huecos
+
+- **La potencia TI en MW** — la cifra con la que se compara el sector. Ningún acto
+  la publica; el esquema la **prohíbe** para que no entre un día desde un informe
+  de mercado.
+- **Todo lo que no sea el nombre**, en el centro existente de El Burgo de Ebro.
+- **Los centros de datos de Madrid y Cataluña**, que son la mayoría del parque
+  español y hoy no tienen en esta capa un solo acto archivado.
+- Siguen abiertos los de releases anteriores: red de transporte, interconexiones
+  en servicio, potencia instalada renovable por provincia.
+
+---
+
+## datos-v2026.08.10 — La generación por provincia, y una casilla que no se podía cumplir
+
+Entra **`generacion-electrica-provincia`**: las 52 provincias con su mezcla de
+generación eléctrica de 2024, ocho tecnologías en producción neta. Es la primera
+**coropleta** del atlas y llega con nueve capas en total.
+
+### El hallazgo
+
+La casilla del horizonte decía «renovable **instalada** por provincia», y ese
+dato **no lo sostiene ninguna fuente primaria con licencia compatible**. Las tres
+puertas, y las tres cerradas por motivos distintos:
+
+- **MITECO** desagrega por provincia la **generación** (GWh), no la potencia (MW).
+  Es primaria y sirve — para otra cosa que la que la casilla prometía.
+- **La CNMC** publica potencia instalada y es **el regulador**, o sea primaria de
+  manual. Queda fuera igualmente por dos razones independientes: solo llega a
+  **comunidad autónoma**, y sus **204 conjuntos, sin una excepción, van bajo
+  CC BY-SA 4.0** — ShareAlike, contagiosa, prohibida por `datos/LICENCIA-DATOS.md`.
+- **Red Eléctrica** llega a provincia y es sociedad cotizada: `corporativa` por
+  §6.1, y R3 no la deja sostener un `confirmado`.
+
+Hasta hoy el atlas solo había chocado con una licencia contagiosa en fuente
+**privada** (TeleGeography, en los cables submarinos). **También pasa con las
+públicas**, y por eso la respuesta del catálogo de la CNMC se archiva como prueba
+y no como recuerdo.
+
+### Añadido
+
+- `generacion-electrica-provincia` — 52 registros, uno por provincia, con
+  `nuclear_gwh` · `eolica_gwh` · `solar_fv_gwh` · `solar_termica_gwh` ·
+  `mareomotriz_gwh` · `combustibles_gwh` · `cogeneracion_gwh` · `hidraulica_gwh`
+  y su `total_gwh`, todos `confirmado` sobre la Estadística de la Industria de la
+  Energía Eléctrica 2024 de MITECO (operación 23103 del IOE).
+- Geometría de límites provinciales del **Instituto Geográfico Nacional**
+  (Orden FOM/2807/2015, compatible con CC BY 4.0), generalizada por el atlas.
+
+### Lo que el lector tiene que saber antes de usar estas cifras
+
+- **Son provisionales, y lo dicen.** El propio fichero de MITECO se titula «DATOS
+  PROVISIONALES A FECHA 27/11/2025». Va en el campo `caracter_dato`, no en una
+  nota al pie.
+- **Los 52 no suman el total nacional de la misma publicación:** 270.400,35 GWh
+  netos frente a los 279.398,17 de su hoja «Nacional», y 8.700,38 de la
+  diferencia son de solar fotovoltaica. **No es un fallo del emparejamiento**: las
+  cinco provincias extrapeninsulares cuadran al céntimo con la hoja
+  «Extrapeninsular», así que el hueco es peninsular. La fuente no lo explica y el
+  atlas no lo suple: se publica lo que hay por provincia, sin repartir el resto
+  entre nadie. Va escrito en las 52 fichas.
+- **Con estas cifras no se puede calcular la cuota renovable.** La fuente no
+  desglosa biomasa ni residuos: van dentro de «Combustibles» y «Cogeneración».
+  Por eso el atlas no publica ninguna, y el esquema **prohíbe** un campo
+  `renovable_gwh`.
+- **El borde de cada provincia está simplificado.** La respuesta del IGN son
+  1.188.710 vértices y 186 MB; se publican 63.501. Estrena `geo_precision:
+  generalizada` (contrato 1.14), que existe precisamente para no llamar «trazado
+  a mano alzada» a cartografía oficial afinada. **No sirve para medir**; su
+  procedencia, sí. Ni un solo anillo se perdió: 5.236 de origen, 5.236
+  publicados.
+
+### Cómo se comprobó que cada cifra está en su provincia
+
+- La **nuclear sale mayor que cero en exactamente cuatro provincias** —Cáceres,
+  Guadalajara, Tarragona y Valencia—, que es el mapa de los reactores en
+  servicio. La eólica encabeza en Zaragoza, la hidráulica en Ourense y Salamanca,
+  la termosolar en Badajoz y Sevilla.
+- Los **33 puntos del atlas que declaran provincia** caen todos dentro del
+  polígono de la suya. Es el primer cruce que dos capas del atlas pueden hacerse.
+- El recuadro de cada provincia publicada queda **dentro de la tolerancia** del
+  que el IGN dio: la peor desviación es 0,00139° en Badajoz, con 0,002 de margen.
+
+### Huecos
+
+- **Potencia instalada por provincia** — declarada como hueco en las 52 fichas,
+  con sus tres motivos. Sigue sin fuente primaria de licencia compatible.
+- **Biomasa y residuos** — no desglosados por la fuente; se quedan dentro de
+  «Combustibles» y «Cogeneración».
+- **Los 8.997,82 GWh que faltan** para cuadrar con la hoja nacional. Sin explicar
+  por la fuente y sin repartir por el atlas.
+- Siguen abiertos los de la release anterior: la **red de transporte** (licencia)
+  y las **interconexiones ya en servicio** (solo las publica REE).
+
+---
+
+## datos-v2026.08.9 — Las interconexiones eléctricas, y la mitad que no se sitúa
+
+Entra **`electricidad-interconexiones`**: cinco enlaces que cruzan una frontera,
+con Portugal, Francia (dos), Andorra y Marruecos. Ocho capas.
+
+### El hallazgo
+
+**La lista de proyectos de interés común que se cita en todas partes está
+derogada.** El Reglamento Delegado (UE) 2024/1041 lo sustituye el **Reglamento
+Delegado (UE) 2026/764, de 1 de diciembre de 2025**, publicado en el DOUE el 9 de
+abril de 2026 y en vigor desde el 29.
+
+Se archivan las dos y se comparan sobre las copias: para España la lista **sí
+cambia** —sale «LOS GUAJARES», entran «CHR IRENE» y «PSP CONSO II»—. Las cuatro
+interconexiones eléctricas siguen igual en ambas, así que **el contenido de esta
+capa no habría cambiado**; lo que habría cambiado es el instrumento citado. Se
+cita el vigente y la derogada se archiva con ese nombre.
+
+### La decisión de geometría
+
+**Un enlace tiene dos extremos y el atlas solo puede situar uno.** Ningún
+instrumento publica el trazado, y la subestación de enfrente —Cantegrit, Beni
+Harchane, la frontera andorrana— está en un país cuyo nomenclátor este atlas no
+ha comprobado. Una recta entre las dos sería un esquema; una recta hasta una
+coordenada extranjera que no se puede citar sería inventar la mitad.
+
+Así que el registro es **un punto en el extremo español** y el de fuera va
+**nombrado y sin coordenada**, en un campo obligatorio para que la mitad que
+falta se lea en la ficha.
+
+Y el punto no es la subestación: es **el lugar que el instrumento nombra**. En
+cuatro de los cinco casos la subestación todavía no existe, así que la precisión
+es `paraje`, no `exacta`.
+
+### Añadido
+
+- **`electricidad-interconexiones` — 5 registros**, todos `proyectada`.
+- El **Reglamento Delegado (UE) 2026/764**, su antecesor derogado y un extracto
+  del **Plan de desarrollo de la red de transporte 2021-2026** (MITECO, Acuerdo
+  de Consejo de Ministros), más la copia del NGBE que sitúa los cinco puntos.
+- Contrato **1.13.0**.
+
+### Corregido
+
+- **El municipio de Olza.** El contraste con el IGN cazó que su nombre oficial es
+  «Cendea de Olza/Oltza Zendea». Se usa la forma del IGN.
+- **Un punto mal elegido, antes de publicarse.** La búsqueda por recuadro devolvía
+  «Cortijo del Puerto de la Cruz» —una edificación a 600 m del paso de montaña que
+  da nombre a la subestación— porque la coincidencia era por subcadena. Así se
+  elige mal un punto sin enterarse; la captura exige ahora etiqueta exacta.
+
+### Huecos
+
+- **Las interconexiones YA EN SERVICIO no están en esta capa.** El plan las nombra
+  de pasada —habla de un «tercer eje» con Marruecos, y sus tablas citan Arkale,
+  Hernani-Argia y Baixas-Vic— pero no las inventaría con sus extremos. Quien
+  publica ese inventario es **Red Eléctrica, sociedad cotizada**, y por R3 no
+  sostiene un confirmado. Declaradas, no omitidas.
+- **El estado de ejecución no se sabe.** Lo que se publica es lo que dicen los
+  instrumentos de planificación, no un parte de obra: ninguna fuente archivada
+  acredita en qué punto está hoy cada enlace. Las cinco van `proyectada` y
+  ninguna pasa de `parcial`.
+- **La red de transporte sigue sin publicarse, y es por licencia.** El mallado lo
+  publica Red Eléctrica y no hay cartografía compatible con CC BY 4.0.
+  `red-electrica` se retitula «Red eléctrica (transporte)» y sigue declarada y
+  vacía.
+- **Fontefría no se sitúa.** El NGBE no nombra ese lugar y la subestación no
+  existe; el registro del enlace con Portugal se sitúa en Beariz, que sí está
+  nombrado, y lo dice.
+- **La capacidad de intercambio no se publica.** Ni la de cada enlace ni el
+  famoso porcentaje de interconexión: la cifra la da Red Eléctrica y esta tanda
+  no ha archivado ninguna fuente reguladora que la sostenga.
+
+### Y una nota sobre el archivo
+
+El Plan de desarrollo de la red de transporte son **535 páginas y 355 MB**. No
+cabe en GitHub y no tiene sentido guardarlo entero, así que se archiva un
+**extracto de las catorce páginas que sostienen la cita**, sin retocar, con las
+páginas y la URL del completo dichas dentro del propio fichero. Son 27 MB porque
+las fichas de actuación llevan sus mapas embebidos. Recortarlo más habría sido
+citar algo que nadie puede comprobar.
+
+---
+
+## datos-v2026.08.8 — Los derechos mineros, y el punto → polígono que NO se hace
+
+Entra **`minerales-derechos`**: 106 derechos del Catastro Minero con su
+perímetro. Es la **primera capa del atlas con `geo_precision: exacta`**, y lo es
+por un motivo estrecho — la geometría *es* el derecho que la fuente define.
+
+### El hallazgo, y es feo
+
+**La exportación en CSV del Catastro Minero trunca las coordenadas a 424
+caracteres.** De los 106 derechos que interesan, **38 vienen cortados** y en
+**29 lo que se pierde es una esquina real**, no el vértice de cierre —
+comprobado comparando el fragmento truncado contra el primer vértice.
+
+Un polígono al que le falta una esquina **cierra igual y parece correcto**. Es
+el peor fallo que este atlas puede cometer, y lo sirve la fuente.
+
+El mismo endpoint con `extension=SHP` devuelve el shapefile completo, y su
+`.prj` declara **ETRS89 con TOWGS84 a ceros** — confirmando por la fuente lo
+que F1 dedujo midiendo 2.426 vértices. **Toda la geometría de esta capa sale del
+shapefile; ninguna del CSV**, y está comprobado registro a registro.
+
+### Lo que NO se hace, y por qué
+
+PLAN.md preveía subir `minerales-proyectos` de punto a polígono con este mismo
+catastro. **No se hace.** El catastro define *derechos*, no minas, y qué derecho
+«es» un proyecto no lo contesta ningún documento: **TOLSA tiene 54 derechos solo
+en Madrid**, Solvay seis en Granada, Iberian Resources cuatro entre Badajoz y
+Cáceres. Elegir uno sería una atribución sin fuente.
+
+Se publican las dos capas, se solapan en el mapa, y **el lector ve el solape**,
+que sí es un hecho.
+
+### Añadido
+
+- **`minerales-derechos` — 106 registros**: 55 vigentes, 17 en tramitación,
+  **34 extinguidos**. Regla de selección mecánica y declarada: los derechos cuyo
+  titular es un promotor que el atlas ya registra.
+- **Ocho shapefiles provinciales** archivados en `fuentes/`.
+- Contrato **1.12.0**, con la enmienda de §6.6: «del objeto mismo» quiere decir
+  del objeto que la fuente define **y de ningún otro**.
+
+### Corregido
+
+- **Nueve registros con el anillo exterior al revés**, cazados por §7.4 antes de
+  publicarse. Agrupé los anillos por índice; el shapefile los distingue por
+  **orientación** (exterior horario, hueco antihorario — al revés que RFC 7946).
+  Con eso bien, «LA MONAGUERA» resulta ser **tres piezas disjuntas** y «DEMASÍA A
+  CARABAÑA» tiene **un hueco de verdad**.
+- **Mojibake silencioso.** El `.dbf` trae la página de códigos sin declarar
+  (0x00) y el contenido en UTF-8: leerlo como latin-1 —lo que manda el formato de
+  1998— convierte «CARABAÑA» en «CARABAÃ‘A» sin lanzar un solo error.
+- **Ortografía.** La exportación en shapefile **quita las tildes agudas** de los
+  campos de vocabulario y de parte de los nombres («Concesion de Explotacion»,
+  «SANTA LUCIA»), aunque conserva la eñe. La prosa se toma del CSV, que las
+  escribe bien; la geometría, solo del shapefile. Cada exportación sirve para lo
+  que hace bien, y las dos se citan en cada ficha.
+
+### Lo que apareció al cruzar las dos exportaciones
+
+**El catastro se contradice consigo mismo en dos derechos.** «DON PEPE» figura
+como *Trámite/otorgamiento* en el CSV y como *Otorgado* en el shapefile; «UGENA
+1 (3365-TO)», como *Otorgado* en uno y **Caducado** en el otro. No es un fallo de
+lectura: son dos exportaciones del mismo registro, descargadas el mismo día.
+
+Los dos bajan a `situacion__v: parcial` y lo dicen en su ficha. **El atlas
+registra el desacuerdo; no lo resuelve** — y no lo habría visto nunca leyendo una
+sola de las dos copias.
+
+### Huecos
+
+- **`superficie_declarada` no concuerda con el perímetro, y se publica igual.**
+  Cada unidad vale ~0,30 km² con el código «C» y ~0,22 km² con el código «H»,
+  que el catastro rotula «hectáreas» (0,01 km²). El atlas **no elige** entre dos
+  datos de la misma fuente: publica el perímetro, que es el que esa fuente
+  dibuja, y deja el campo verbatim, sin `__v`, con su desacuerdo dicho.
+- **Solo ocho provincias**, las que tienen proyectos registrados. TOLSA o Solvay
+  pueden tener derechos en otras; no se insinúa que no los tengan.
+- **Un derecho no dice que haya mina.** Por eso `activo` figura como «no aplica»
+  en §6.5: se puede tener una concesión décadas sin abrir nada.
+- **Qué derecho corresponde a cada proyecto sigue sin saberse**, y esta release
+  no lo insinúa: no hay ningún campo que los enlace.
+
+---
+
+## datos-v2026.08.7 — Las aguas sin delimitar, y las dos leyes que no dibujan nada
+
+Entra **`espacios-maritimos`** y con ella **se cierra F3**. Seis capas
+publicadas.
+
+### El hallazgo
+
+**Ni la ley marroquí 37-17 ni la 38-17 contienen una sola coordenada.** Se
+comprobó sobre el texto íntegro del Boletín Oficial marroquí n.º 6870, ahora
+archivado: la 37-17 fija el mar territorial en 12 millas «desde las líneas de
+base» y remite sus coordenadas a un reglamento posterior; la 38-17, en su
+artículo 11, manda delimitar la zona económica exclusiva «a fin de alcanzar un
+resultado equitativo, en particular con los Estados cuyas costas son adyacentes
+o están frente a las del Reino de Marruecos» — contempla **acuerdo**, no
+trazado unilateral.
+
+Seis años de titulares dicen que Marruecos dibujó una línea sobre aguas
+canarias. Los instrumentos no dibujan ninguna línea. Va en la ficha, con la cita.
+
+### Añadido
+
+- **`espacios-maritimos` — 4 registros.** La zona sin delimitación acordada
+  Canarias–Marruecos (ilustrativa), el límite exterior de la plataforma
+  continental al oeste de Canarias (448 puntos fijos), el contorno perimetral de
+  las aguas canarias (Ley 44/2010) y el Monte Tropic.
+- **Siete fuentes primarias**, todas archivadas: el BO marroquí, la nota verbal
+  marroquí ante la ONU, la respuesta española, el resumen ejecutivo de la CLCS,
+  la Ley 44/2010, el RD 2510/1977 y el gazetteer GEBCO/SCUFN.
+- Contrato **1.11.0**: la capa en §10, su `categoria` en §9, su fila en §6.5 y
+  el primer `ambito: mundo` con geometría real.
+
+### Corregido
+
+- **`espacios-maritimos:contorno-aguas-canarias` · geometría** — el anillo del
+  Anexo I recorre el archipiélago en sentido **horario**; RFC 7946 pide
+  antihorario para el exterior. Invertido al construirlo.
+- **Una suposición de la tanda anterior**, que estaba escrita en dos sitios: se
+  dio por hecho que un polígono ilustrativo obligaría a la capa entera a ser
+  `ilustrativo` por R5. **No es así** — R5 va de la capa hacia la geometría y no
+  al revés. Por eso esta capa es `verificado` y contiene una zona `ilustrativa`.
+- **La otra suposición**: se dio por perdido cualquier instrumento marroquí.
+  Estaba en `sgg.gov.ma`.
+
+### Huecos
+
+- **El perímetro de la zona sin delimitar.** Ningún instrumento lo dibuja. Lo
+  que se publica es un **esquema del corredor** entre el archipiélago y la costa
+  africana, con su fuente `hueco`: **no delimita el alcance de la superposición
+  de derechos**, que se extiende mucho más al suroeste. Trazar una línea mediana
+  sería dictar el resultado que los dos Estados dejan a un acuerdo (D5).
+- **Las leyes de las costras del Monte Tropic.** Las cifras de telurio y cobalto
+  que circulan vienen de campañas científicas que este atlas no ha archivado, y
+  **no se publican**. Del monte se registra su nombre y su posición, con la
+  autoridad que lo nombra.
+- **La Comisión no ha emitido recomendaciones** sobre la presentación española
+  de 2014. Un límite depositado no es un límite reconocido, y la ficha lo dice.
+- **Marruecos y España no discuten dónde va una línea, sino qué instrumento
+  aplica.** Marruecos funda su objeción en la Ley 44/2010; España responde que
+  «no define líneas de base y no ha sido en modo alguno empleada» y remite al RD
+  2510/1977. El desacuerdo queda registrado, no resuelto.
+- **Los dos ficheros grandes se archivan enteros.** El BO marroquí (165 páginas)
+  y el resumen ejecutivo (40) pesan 4,5 MB cada uno. Un boletín recortado a las
+  tres páginas que interesan deja de ser el boletín.
+
+---
+
+## datos-v2026.08.6 — Dieciséis dominios, y la última regla que era solo prosa
+
+Entra la capa **`minerales-dominios`** y, con ella, **R8 deja de ser una regla
+sin diente**. Desde el contrato 1.10 no queda ninguna: las nueve reglas de §6.4
+las comprueba el CI.
+
+### Añadido
+
+- **`minerales-dominios` — 16 dominios**, migrados de la demo v4. Primera capa
+  de polígonos del atlas. Faja Pirítica · Estaño–litio de Galicia · Wolframio
+  del oeste · Litio–wolframio de Extremadura · Ossa-Morena · Oro del noroeste ·
+  Fluorita de Asturias · Zinc cantábrico · Magnesita de Eugui · Potasas del
+  Bages · Mercurio de Almadén · Wolframio de Alcudia · Tierras raras del Campo
+  de Montiel · Celestina de Granada · Arcillas especiales del Tajo · Sierra de
+  Cartagena.
+- **R8 con diente.** Un dominio `desarrollo` o `historico` no puede contener una
+  mina en producción. Es la **única regla que compara dos capas**, así que vive
+  fuera de la validación por fichero: se comprueba cuando ambas entran en la
+  misma pasada, que es siempre en CI.
+- Contrato **1.10.0**: R8 entra en la tabla de §6.4, `caracter` y `categoria`
+  dejan de ser dos campos con los mismos cinco valores, y §9 estrena los colores
+  de la capa.
+
+### Corregido
+
+- **`oro-del-noroeste` · geometría** — el anillo venía en sentido **horario**
+  desde la demo. RFC 7946 pide antihorario para el exterior, y hay visores que
+  pintan del revés lo que reciben así. Invertido al migrar.
+
+### Huecos
+
+- **Los dieciséis perímetros, todos.** Ninguno tiene cartografía de fuente
+  primaria: son trazados a mano alzada, cada uno con su fuente `tipo: hueco`
+  diciéndolo, y por R4 ninguno pasa de `no_verificado`. **La capa entera es el
+  hueco declarado**, no un adorno con una nota al pie.
+- **El ascenso a cartografía del IGME no se ha hecho**, y no se puede hacer de
+  uno en uno: R5 es regla de **capa**, no de registro, así que verificar la Faja
+  Pirítica obligaría a verificar las quince restantes o a partir la capa en dos.
+  Queda pendiente y dicho.
+- **Los `distritos` son nombres, no coordenadas.** Riotinto, Tharsis o Reocín
+  figuran como texto; quien quiera su posición la busca en `minerales-proyectos`
+  o en el nomenclátor. Enumerarlos sin coordenada es honesto; fabricársela, no.
+- **«Mina Circular» no cae dentro de ningún dominio.** No incumple nada —R8
+  gobierna lo que un dominio SÍ contiene— pero es el choque entre un trazado a
+  mano alzada y un centroide municipal en el mismo mapa, y queda anotado antes
+  de que parezca un dato.
+
+---
+
+## datos-v2026.08.5 — El color deja de vivir en el código
+
+Release **solo de vocabulario**: ningún registro cambia. Cada categoría de §9
+lleva ahora su **`color`**, y con eso el mapa deja de pintar tres capas del
+mismo gris.
+
+### Corregido
+
+- **`vocabularios.json` · `categoria`** — las diez categorías de las cuatro
+  capas publicadas ganan `color`. Lo destapó tener cuatro capas encendidas a la
+  vez: la paleta vivía cableada en el visor y solo conocía las tres categorías
+  de `minerales-proyectos`, así que nuclear, gas y el tablero caían todos en el
+  gris de reserva. Cuatro capas, indistinguibles en el mapa.
+
+El color es **dato**, no decisión del programa, por el mismo motivo que el
+rótulo y el orden: el vocabulario dice de sí mismo que el visor «no reordena, no
+traduce y no elige colores». Consecuencia asumida: **cambiar un color exige una
+release**, como cualquier cambio de vocabulario.
+
+### Contrato
+
+Sube a **1.9.0**: §9 documenta el campo `color` y su consecuencia.
+
+---
+
+## datos-v2026.08.4 — Gas y regasificación, y la cifra que nadie publica
+
+Cuarta capa. Con ella **F3 cumple su criterio de hecho**: las tres capas que
+pedía por su nombre —límites y soberanía, nuclear, gas y regasificación— están
+publicadas, y ninguna ficha tiene prensa sosteniendo un confirmado.
+
+### Añadido
+
+- **`gas-regasificacion`** — las siete plantas de GNL del sistema gasista:
+  Barcelona, Cartagena, Huelva, Bilbao, Sagunto, Mugardos y El Musel.
+
+### Huecos
+
+El hallazgo de esta tanda es lo que **no se pudo escribir**:
+
+- **La capacidad de almacenamiento en m³ de GNL no está en ninguna fuente
+  alcanzable.** Es la cifra que aparece en cualquier artículo sobre las
+  terminales españolas, y no la publica ni el informe de supervisión del sistema
+  gasista de la CNMC —descargado y revisado entero— ni las páginas de los
+  operadores. Los dos campos de capacidad se declaran en el contrato y **nacen
+  vacíos**, con su hueco en las siete fichas.
+- **Enagás es una sociedad cotizada.** PLAN.md decía «fuentes Enagás/CNMC» sin
+  notarlo: por §6.1 lo que Enagás publica sobre sí misma es `corporativa` y por
+  **R3** no puede sostener un confirmado. Queda escrito en §10.
+
+### Lo que sí quedó acreditado, y no lo compila nadie
+
+- **Los topes de El Musel**, el único cuya capacidad está fijada por
+  instrumento: 45 GWh/día (Orden TED/578/2023) y 11.744 GWh/año (resolución de
+  26 de julio de 2024). Por eso su categoría es `logistica_gnl`: se construyó
+  como regasificadora, se hibernó y opera como centro logístico.
+- **Los días de 2025 por debajo del mínimo técnico**, planta a planta: Musel 27,
+  Huelva 17, Mugardos 15, Barcelona 9, Cartagena 5, y **cero** en Bilbao y
+  Sagunto.
+- **Dos municipios que la prensa redondea:** la planta «de Huelva» está en
+  **Palos de la Frontera** y la «de Bilbao» en **Zierbena**, y lo acredita en
+  ambos casos una resolución del BOE.
+
+### Geometría
+
+Precisión de **municipio** en las siete, dicho en cada ficha: **el Nomenclátor
+del IGN no nombra ninguna terminal**. Se barrieron los siete puertos —67
+topónimos en Barcelona, 648 en la ría de Ferrol— y las únicas coincidencias eran
+palabras que contienen «gas» por casualidad: *Pocilgas*, *Refradigas*, *Arangas*.
+
+El contraste geográfico cazó de paso que el municipio se llama oficialmente
+**«Sagunt/Sagunto»**, no «Sagunto» a secas.
+
+### Contrato
+
+Sube a **1.8.0**: §10 con el apartado de la capa, §9 con su `categoria` y §6.5
+con su fila en la tabla de `activo`.
+
+---
+
+## datos-v2026.08.3 — El tablero: ocho territorios, ningún veredicto
+
+Tercera capa, y la que da al atlas su carácter. El árbol **El tablero** estaba
+vacío desde F0.
+
+D5 fijó la doctrina hace tiempo: *el atlas registra que la reclamación existe y
+quién la sostiene; no dicta veredicto*. Esta capa es esa frase convertida en
+datos, con **dos campos simétricos** —`administrado_por` y `reclamado_por`— con
+los que Gibraltar y Ceuta se describen con la misma estructura, y una
+`categoria` de dos valores que dice **quién reclama, no quién tiene razón**.
+
+### Añadido
+
+- **`limites-soberania`** — ocho registros: `gibraltar`, `ceuta`, `melilla`,
+  `penon-velez-gomera`, `penon-alhucemas`, `islas-chafarinas`, `perejil` y
+  `olivenza`.
+
+Es además la primera capa del árbol `tablero`, y por tanto la primera que
+ejercita la rama «no aplica» de §6.5: su `activo` es `null` y el filtro de
+explotación no la esconde nunca.
+
+### Huecos
+
+Esta capa es, sobre todo, un inventario de argumentos sin documento:
+
+- **Ninguno de los tratados que se citan está archivado.** Utrecht (1713),
+  Badajoz (1801) y el artículo 105 del Acta Final de Viena (1815) aparecen en
+  cada discusión sobre Gibraltar y Olivenza, y no se ha localizado texto de
+  **emisor autorizado** de ninguno. Van como huecos, y lo que sostienen queda
+  `no_verificado`.
+- **Tampoco hay instrumento marroquí archivado** para las reclamaciones sobre
+  Ceuta, Melilla, las plazas de soberanía o Perejil. Se registra que la
+  reclamación existe; no que esté acreditada.
+- **La lista de Territorios No Autónomos de la ONU no se pudo archivar**: el
+  servidor responde 202 sin contenido a las descargas automáticas.
+- **Las plazas de soberanía no tienen estatuto que citar**, a diferencia de
+  Ceuta y Melilla. Su régimen concreto queda pendiente.
+- **`perejil` es el único `no_verificado` global** de la capa. De la isla lo
+  único documentado es dónde está: quién la administra, con qué título y qué se
+  acordó en 2002 no tienen texto público localizable.
+- **Las aguas sin delimitar quedan fuera de esta tanda** —Canarias–Marruecos y
+  su cruce con el monte Tropic—: piden polígono `ilustrativo`, activan **R5**
+  sobre la capa y merecen su propia discusión cartográfica.
+
+### Lo que sí quedó acreditado
+
+Los **Estatutos de Autonomía de Ceuta y Melilla** (LO 1/1995 y 2/1995, texto
+consolidado del BOE), la **posición oficial española sobre Gibraltar** (MAEC) y
+la **Decisión (UE) 2026/1732 del Consejo** — que responde lo que F3 pedía
+verificar sobre el acuerdo UE–Reino Unido: **firmado el 14 de julio de 2026 y en
+aplicación provisional desde el 15, sin ratificar**, y sin alterar la posición
+de ninguna parte sobre la soberanía. Comprobado sobre la copia archivada.
+
+### Dos hallazgos de geometría
+
+- **El Nomenclátor del IGN no nombra Gibraltar.** Tres resultados por etiqueta,
+  todos falsos amigos en Huelva y Badajoz; 69 topónimos en el recuadro del
+  Peñón, ninguno es Gibraltar. Su punto va puesto a mano y declarado
+  `ilustrativa`: es la única coordenada de la capa sin fuente cartográfica.
+- **«Melilla» estuvo a punto de quedarse en Huelva.** La consulta por nombre
+  devuelve primero un homónimo onubense. Se eligió por posición — es la clase de
+  error que no da ningún aviso y deja el dato a 400 km con aspecto de correcto.
+
+### Contrato
+
+Sube a **1.7.0**: §10 con el apartado de `limites-soberania` y §9 con su
+`categoria`. No toca §6.5, que ya declaraba el tablero como «no aplica».
+
+---
+
+## datos-v2026.08.2 — Nuclear: siete reactores, y un calendario sin documento
+
+Segunda capa del atlas, y la primera que estrena el mecanismo **sin ser la
+primera**: `nuclear` entró por el manifiesto y apareció en el visor sin tocar
+una línea de código de panel, que era el criterio con el que se cerró F2.
+
+Ocho documentos nuevos en `fuentes/`: las **seis órdenes ministeriales del BOE**
+que renuevan la autorización de explotación de cada central, la ficha de
+**MITECO** con potencia, tecnología y titulares, y los topónimos del **IGN** que
+sostienen la geometría.
+
+### Añadido
+
+- **`nuclear`** — siete registros, uno **por reactor** y no por central:
+  `almaraz-i`, `almaraz-ii`, `asco-i`, `asco-ii`, `cofrentes`, `vandellos-ii` y
+  `trillo-i`. Cada grupo tiene su propia autorización, su fecha y su potencia:
+  son siete hechos, no cinco.
+
+Los dos reactores de un mismo emplazamiento **comparten coordenada**, y se dice
+en la ficha: separarlos exigiría una fuente que sitúe cada edificio y no la hay.
+Los siete pasan el contraste de municipio contra los límites del IGN.
+
+### Huecos
+
+Esta capa es, sobre todo, un inventario de lo que se da por sabido sin documento:
+
+- **El «calendario de cierre de 2019» no tiene fuente pública.** Se cita en todas
+  partes como un hecho —Almaraz 2027 y 2028, Ascó 2030 y 2032, Cofrentes 2030,
+  Vandellós II y Trillo 2035— pero procede de un **Protocolo de intenciones
+  privado** entre Enresa y los titulares, y lo único localizable son notas de
+  prensa. Así que **`cierre_acordado` va vacío en cinco de los siete**, con su
+  hueco declarado, en lugar de rellenarse con la fecha que circula.
+- **Solo dos lo llevan confirmado**, y por una razón concreta: sus propias
+  órdenes llaman a la fecha de expiración «fecha de cese definitivo de
+  explotación». Cofrentes lo dice literalmente y Ascó I también.
+- **Tres órdenes no dan fecha de expiración**: dicen «validez de diez años» desde
+  una fecha. Ascó II, Vandellós II y Trillo I llevan por eso su
+  `autorizacion_hasta` como **`parcial`**, con una clave que reproduce el texto:
+  es aritmética, no es una cita, y ni siquiera consta si el último día es el 1 o
+  el 2 de octubre de 2031.
+- **La prórroga de Almaraz no mueve ninguna fecha.** El CSN informó
+  favorablemente en julio de 2026, pero **MITECO no ha resuelto**: lo autorizado
+  sigue siendo el 1 de noviembre de 2027 para el grupo I y el 31 de octubre de
+  2028 para el II. Queda como clave `no_verificado` con su hueco, y por **R4**
+  eso impide el confirmado global de ambos. El «efecto dominó» sobre Ascó I y
+  Cofrentes que anticipan los titulares es previsión en prensa: no toca nada.
+- **El CSN y el BOE discrepan en un día** sobre Ascó I —2 de octubre de 2030
+  frente al 1—. Se publica la de la orden, que es el instrumento, y la
+  discrepancia queda escrita en la ficha.
+- **Las centrales cerradas quedan fuera de esta tanda**: Garoña (2017),
+  Vandellós I (1989) y Zorita (2006) necesitan su propia pasada de archivo
+  —fecha de cese, estado de desmantelamiento, ENRESA— y meterlas a medias sería
+  peor que no meterlas.
+
+### Contrato
+
+Sube a **1.6.0**. §10 da su apartado a `nuclear` con **dos campos de fecha**
+—`autorizacion_hasta`, de la orden del BOE, y `cierre_acordado`, del calendario—
+porque son hechos distintos y en España no coinciden: Vandellós II está
+autorizado hasta 2030 y su cierre acordado se cita en 2035. Con un solo campo
+habría que elegir cuál es «la» fecha, y quien mire el mapa no sabría cuál ve.
+§9 añade su vocabulario de categoría y §6.5 su fila en la tabla de `activo`.
+
+---
+
+## datos-v2026.08.1 — La geometría deja de ser una promesa
+
+La release anterior declaró su propia deuda: los once puntos eran aproximación
+al municipio **sin fuente cartográfica primaria**, y ninguna coordenada servía
+para medir. Esta la salda hasta donde la evidencia da, y dice dónde no da.
+
+Dos documentos entran en `fuentes/`: la respuesta del **Nomenclátor Geográfico
+Básico de España** (IGN) para los ocho topónimos usados, y un extracto del
+**Catastro Minero** (MITECO) con los 23 derechos que corroboran dónde cae cada
+cosa. Se archiva la respuesta del servicio con su URL de consulta, no un resumen:
+la coordenada tiene que poder comprobarse sin fiarse de nadie.
+
+**Segunda release del mismo mes**, de ahí el sufijo `.1` que estrena el contrato
+en §8. `datos-v2026.08` no se mueve ni se reescribe.
+
+### Corregido
+
+Ocho registros pasan de `geo_precision: municipio` a **`paraje`**, con la
+coordenada del topónimo del IGN, su `geo_fuente__f` a la fuente archivada y el
+CRS declarado en `geo_fuente`:
+
+- **`aguablanca`** — −6.2708, 38.0805 → **−6.1767, 37.9541**. *Paraje
+  «Aguablanca». **Se movía 16,2 km**: el punto viejo caía sobre un portal del
+  casco urbano de Monesterio. Corrobora el catastro, con la reserva «AGUA
+  BLANCA» de Río Narcea Recursos S.A., el promotor que reconoce el DOUE.*
+- **`p6-metals`** — −6.0491, 39.1836 → **−6.10629, 39.07752**. *Vértice
+  geodésico «La Parrilla», 12,7 km al sur. Tres concesiones de wolframio de
+  Iberian Resources Spain S.L. a menos de dos kilómetros.*
+- **`matamulas`** — −3.363, 38.638 → **−3.2633, 38.61987**. *Montaña «Cerro de
+  Matamulas», 8,9 km. Los permisos «MATAMULAS» y «REMATAMULAS-2» (este, de
+  tierras raras) de Quantum Minería caen ahí.*
+- **`escuzar`** — −3.749, 37.087 → **−3.80218, 37.0517**. *«Minas de Escúzar»,
+  6,1 km. La concesión de estroncio «CARBONERO 2» de Solvay Minerales, a 150 m.*
+- **`las-navas`** — −6.3927, 39.7896 → **−6.37231, 39.8385**. *«Mina las Navas»,
+  5,7 km. Único de los ocho sin corroboración en el catastro.*
+- **`montevives`** — −3.66, 37.11 → **−3.69098, 37.10274**. *Vértice geodésico
+  «Montevives», 2,9 km. Tres concesiones de estroncio a menos de 300 m.*
+- **`mina-doade`** — −8.2846, 42.4665 → **−8.31852, 42.46576**. *Lugar de Doade,
+  2,8 km. Es el sitio que da nombre al proyecto, no la labor minera.*
+- **`sepiolita-madrid`** — −3.6083, 40.4043 → **−3.59808, 40.4129**. *«Sepiolita»,
+  1,3 km. El Grupo Minero Victoria son seis concesiones de TOLSA en ese entorno.*
+
+Los once puntos —también los tres que no se movieron— se comprobaron por
+punto-en-polígono contra los límites administrativos del IGN: **los once caen
+dentro del municipio que la ficha declaraba**.
+
+### Degradado
+
+- **`las-cruces` baja de `confirmado` a `parcial`.** No es un cambio de
+  geometría: es lo que la pasada de geometría descubrió. El topónimo «Las
+  Cruces» del IGN cae en **Guillena** y la concesión «LAS CRUCES» de Cobre las
+  Cruces S.A. es **multiparte** y toca **Salteras**; la ficha dice **Gerena**, y
+  ese campo nunca tuvo fuente. No se elige entre los tres términos ni se inventa
+  la lista: se declara el hueco, y **R4** hace el resto. Se sabe lo mismo que
+  ayer; lo que hay hoy es constancia de que algo está sin resolver.
+
+### Huecos
+
+- **La geometría de tres registros sigue en `municipio`**, y ahora se sabe por qué:
+  - **`circular`** — es una planta industrial, no una mina. Ni derecho minero en
+    el emplazamiento ni topónimo: 179 revisados en el entorno, ninguno pertinente.
+  - **`el-moto`** — **957 topónimos barridos** en 30×25 km alrededor de Abenójar,
+    ni uno dice «Moto». Existe la concesión «SOL I (EL MOTO)» (wolframio,
+    otorgada, en Abenójar), pero es un perímetro de 4,3×3,7 km: un punto sacado de
+    ahí no sería mejor dato, solo mejor vestido.
+  - **`las-cruces`** — el conflicto de municipio de arriba. Falta la autorización
+    ambiental o la resolución de la Junta que enumere los términos afectados.
+- **`matamulas` sigue `no_verificado` global** pese a ganar sus dos primeras
+  fuentes primarias. Lo que le falta es el expediente —resolución de la Junta,
+  sentencia del TSJ, casación— y el catastro no lo sustituye.
+- **Señales levantadas, no resueltas.** Tres promotores donde la ficha y el
+  catastro no coinciden: `montevives` (la ficha dice Canteras Industriales; las
+  concesiones están a nombre de particulares de la familia Fajardo Álvarez),
+  `el-moto` (Abenojar Tungsten en el DOUE; Mining Hill's en el catastro) y
+  `mina-doade` (Recursos Minerales de Galicia en el DOUE; el permiso de litio
+  colindante es de Solid Mines España). Titular y operador pueden ser distintos;
+  hoy no está verificado. Y los tres permisos de `matamulas` figuran
+  **caducados**, dato que no se traslada a `fase`: un permiso caducado no dice
+  por sí solo si el proyecto está parado o cerrado.
+
+### Contrato
+
+Sube a **1.3.0**. `geo_fuente` admite `__v`/`__f` (§5) y la geometría deja de ser
+el único dato del atlas cuya procedencia no se podía comprobar. Nuevo **§6.6**
+con la tabla de qué precisión concede cada clase de fuente, y nueva regla **R9**:
+una `geo_precision` de `exacta` o `paraje` exige fuente primaria. Entra con
+diente y con dos fixtures —18 pruebas—, no declarada y pendiente.
+
+Dos cosas del contrato salieron de tocar la fuente, no de escribirlo:
+
+- **El CRS, resuelto por evidencia.** La malla legal de cuadrículas mineras de
+  20″ (Ley 22/1973, art. 76) está confeccionada en **ED50**, y los 2.426 vértices
+  de los 306 derechos de sección C de Badajoz caen a un desfase mediano de
+  −4,45″ en latitud y +4,84″ en longitud de esa malla —137 m y 118 m—, que es
+  exactamente la transformación ED50→ETRS89. Luego lo que publica el MITECO **ya
+  está en ETRS89**, igual que el NGBE. No había reproyección que hacer, y ese era
+  el riesgo de 200 m con el que se abrió la tanda.
+- **Un punto representativo no hereda la precisión de su polígono** (§6.6). La
+  reserva «AGUA BLANCA» son 95 cuadrículas (~28 km²) y la concesión «LAS CRUCES»
+  tiene cuatro piezas disjuntas: su centroide cae donde no hay concesión.
+  Consecuencia dicha entera: **mientras la capa sea de puntos, `exacta` es
+  inalcanzable por construcción**. Se llega ascendiendo a polígono, no
+  reetiquetando el punto — y eso es F3.
+
+Licencias comprobadas **antes** de extraer, como ordena `datos/LICENCIA-DATOS.md`:
+IGN bajo licencia declarada compatible con CC BY 4.0; catastro minero bajo el
+régimen de reutilización de la Ley 37/2007, con atribución y sin ShareAlike ni
+NonCommercial.
+
+---
+
+## datos-v2026.08 — Minerales críticos: la primera colección
+
+Primera release del atlas. Migra los registros de la demo de referencia al
+formato canónico, **con una pasada de verificación documental que corrigió
+bastante de lo que la demo daba por bueno**.
+
+Tres documentos entran en `fuentes/`, y son los que sostienen todo lo demás:
+la **Decisión (UE) 2025/840** de la Comisión (DOUE de 30.4.2025) con su anexo,
+y dos volúmenes del **Panorama Minero del IGME** (Estroncio 2021 y Arcillas
+especiales 2021).
+
+### Añadido
+
+- **`minerales-proyectos`** — 11 registros: los 7 proyectos españoles de la
+  primera lista CRMA, 3 de producción singular y 1 en disputa.
+- **`minerales-proyectos:escuzar`** — registro NUEVO. No existía en la demo.
+
+### Corregido
+
+- **`el-moto` · promotor** — hueco → **Abenojar Tungsten S.L.** El anexo del
+  DOUE lo nombra sin ambigüedad. *Uno de los cuatro huecos de partida, cerrado
+  con fuente primaria y no con una atribución plausible.*
+- **`montevives` · municipio** — Escúzar → **Las Gabias y Alhendín**. El IGME
+  sitúa Montevives ahí y describe Escúzar como un yacimiento **distinto**, a
+  7 km, con otro titular (Solvay Minerales S.A.). La demo fundía los dos en una
+  ficha; aquí se separan en dos registros.
+- **`sepiolita-madrid` · nombre** — «Sepiolita de Vicálvaro» → **Sepiolita de
+  Madrid**. El informe del IGME no menciona Vicálvaro en ningún momento: habla
+  del Grupo Minero Victoria.
+- **`p6-metals` · nombre y materias** — el proyecto se llama oficialmente
+  **P6 Metals**; «La Parrilla» es la mina, y la demo los tenía al revés. El
+  anexo reconoce **solo wolframio**: el estaño no figura.
+- **`las-cruces` · materias y latitud** — el anexo reconoce **solo cobre** (no
+  zinc, plomo ni plata). La latitud pasa de 37,7275 a **37,5275**: la de la demo
+  caía unos 22 km al norte del municipio.
+- **`circular` · materias** — el anexo reconoce cobre, níquel y PGM. **Oro,
+  plata y estaño no figuran** y salen del registro.
+- **`aguablanca`, `mina-doade`, `las-navas` · promotor** — confirmados con la
+  razón social exacta del DOUE. La vinculación de Doade con el Grupo Samca, que
+  circula en prensa, **no está en el anexo** y no se recoge.
+
+### Degradado
+
+- **Cinco registros bajan de `confirmado` a `parcial`** (`circular`,
+  `mina-doade`, `p6-metals`, `montevives`, `sepiolita-madrid`). No es un cambio
+  de datos: es la regla **R4** haciendo su trabajo la primera vez que toca datos
+  reales. Los cinco declaran un hueco, y un hueco reconocido impide el
+  confirmado global. `confirmado` queda reservado a lo que tiene primaria **y
+  nada declarado como pendiente**.
+
+### Huecos
+
+Se publican como huecos, no como rellenos:
+
+- **`matamulas` — el registro entero.** Único sin una sola fuente primaria, y
+  por eso el único `no_verificado` global. Falta la resolución de la Junta que
+  deniega la autorización, la sentencia del TSJ de Castilla-La Mancha y el
+  estado del recurso de casación ante el Tribunal Supremo.
+- **«España, único productor de estroncio de la UE»** y **«único productor de
+  sepiolita a escala industrial en la UE»** — dos afirmaciones de cabecera de la
+  demo que **la fuente primaria consultada NO sostiene**. El IGME habla de
+  «posición prominente como país productor» y no compara con la Unión Europea.
+  Quedan registradas como claves no verificadas, con su hueco.
+- **«Mayor yacimiento del mundo»** (sepiolita) y **«25 % de la demanda europea»**
+  (P6 Metals) — repetidas en prensa, sin fuente técnica localizada.
+- **Las cifras de CirCular** (410 M€ · 350 empleos · 60.000 t/año) y **el
+  calendario de Doade** (2027-2028, 500.000 t/año) — anuncios del promotor.
+- **La geometría de los 11 registros.** `geo_precision: municipio` con
+  `geo_fuente` que lo dice: aproximación al municipio, **sin fuente cartográfica
+  primaria**. Sustituirla por el catastro minero o el Nomenclátor del IGN es
+  trabajo pendiente, y hasta entonces ninguna coordenada sirve para medir.
+
+### Contrato
+
+Sube a **1.2.0**: campo opcional `nombre_oficial`. Salió de esta misma pasada —
+el nombre oficial difiere del corriente en cinco de los siete proyectos
+españoles, y sin él una ficha no se puede contrastar contra el DOUE.

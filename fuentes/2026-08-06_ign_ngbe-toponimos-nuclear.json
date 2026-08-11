@@ -1,0 +1,126 @@
+{
+  "_": "Copia archivada de la respuesta del servicio OGC API-Features del Instituto Geográfico Nacional para los topónimos del Nomenclátor Geográfico Básico de España que sostienen la geometría de la capa nuclear del Atlas Estratégico de España.",
+  "emisor": "Instituto Geográfico Nacional (IGN) — Centro Nacional de Información Geográfica",
+  "servicio": "https://api-features.ign.es/collections/namedplace",
+  "fecha_captura": "2026-08-06",
+  "crs": "EPSG:4258 (ETRS89). A cinco decimales coincide con WGS84: no se aplica transformación.",
+  "licencia": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0. Obliga a reconocer al IGN como origen.",
+  "nota": "Tres emplazamientos no salen por etiqueta exacta porque el NGBE los nombra en catalán («Central Nuclear d'Ascó», «Central Nuclear Vandellòs II») o con el ordinal del instrumento («Central Nuclear de Trillo I»). Se localizaron por recuadro, y la consulta usada queda escrita en cada entrada.",
+  "consultas": [
+    {
+      "registros_atlas": "almaraz-i / almaraz-ii",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Central+Nuclear+de+Almaraz&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "tipo": "Construcción/instalación abierta",
+          "fecha": "2023-07-07",
+          "codigo_ngbe": "2.2.1",
+          "etiqueta": "Central Nuclear de Almaraz",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2146045",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -5.69470183799996,
+            39.8076781460001
+          ]
+        }
+      }
+    },
+    {
+      "registros_atlas": "asco-i / asco-ii",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?bbox=0.40%2C41.10%2C0.75%2C41.30&limit=1000&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "tipo": "Edificación",
+          "fecha": "2023-07-07",
+          "codigo_ngbe": "2.2.2",
+          "etiqueta": "Central Nuclear d'Ascó",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2013800",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            0.56848136900004,
+            41.2005006130001
+          ]
+        }
+      }
+    },
+    {
+      "registros_atlas": "cofrentes",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Central+Nuclear+de+Cofrentes&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Edificación",
+          "tiponombre": "identificador_geografico",
+          "etiqueta": "Central Nuclear de Cofrentes",
+          "fecha": "2023-07-21",
+          "codigo_ngbe": "2.2.2",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2207333",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -1.05078122499992,
+            39.213928249
+          ]
+        }
+      }
+    },
+    {
+      "registros_atlas": "trillo-i",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?bbox=-2.80%2C40.60%2C-2.45%2C40.80&limit=1000&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Construcción/instalación abierta",
+          "tiponombre": "identificador_geografico",
+          "etiqueta": "Central Nuclear de Trillo I",
+          "fecha": "2023-07-07",
+          "codigo_ngbe": "2.2.1",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2057106",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.62390142399994,
+            40.7012943450001
+          ]
+        }
+      }
+    },
+    {
+      "registros_atlas": "vandellos-ii",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?bbox=0.70%2C40.85%2C1.05%2C41.05&limit=1000&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "etiqueta": "Central Nuclear Vandellòs II",
+          "tipo": "Edificación",
+          "fecha": "2023-07-07",
+          "codigo_ngbe": "2.2.2",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2048662",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            0.865478600000074,
+            40.9514772210001
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6823 @@
+{
+ "_captura": {
+  "fecha": "2026-08-06",
+  "plataforma": "PCI-PMI Transparency Platform (CINEA / Comisión Europea)",
+  "base_legal": "Reglamento (UE) 2022/869 (TEN-E), artículo 23",
+  "visor": "https://ec.europa.eu/energy/infrastructure/transparency_platform/map-viewer/main.html",
+  "servicio": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer",
+  "where": "PCI_CODE IN ('9.1.2','9.1.3','9.1.4','9.24.1','9.24.2') AND PCI_LIST_ACTIVE=1",
+  "outSR": 4326,
+  "aviso_de_la_fuente": "The GIS representation of projects displayed in this TP does not prejudge and may not coincide with the final route of the projects.",
+  "reutilizacion": "Information displayed at the viewer is downloadable and it can be reused if reference is mentioned. (Decisión 2011/833/UE: CC BY 4.0)",
+  "nota": "Solo se captura la capa ENERGY/PCI, documento de la Comisión. La capa ENERGY/PLATTS del mismo visor es de S&P Global y NO se toca."
+ },
+ "capas": {
+  "9": {
+   "nombre": "Hydrogen storage",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/9/query?where=PCI_CODE%20IN%20%28%279.1.2%27%2C%279.1.3%27%2C%279.1.4%27%2C%279.24.1%27%2C%279.24.2%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "PCI_ID": "PCI_ID",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "NATURE_CODE": "NATURE_CODE"
+    },
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 6105,
+       "INFRA": 29,
+       "PCI_CODE": "9.24.1",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.24",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": " H2 storage North – 1",
+       "PROJECT_FULL_TITLE": " H2 storage North – 1",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The project consists of the development of a Salt Cavern for H2 seasonal storage in the Cantabria as part of the national Spanish hydrogen system.<br>&nbsp;</p><p>The key infrastructure components H2 storage North-1 will have the following technical specifications:<br>- Injection capacity: 41 GWh/d in 2030 (82 GWh/d with full development).<br>- Withdrawal capacity: 41 GWh/d in 2030 (82 GWh/d with full development).<br>- Working gas volume of 272 GWh is expected by 2030. In later development stages the working gas volume will reach up to 544 GWh<br>&nbsp;</p><p>The underground hydrogen storage capacity is expected to increase from 77 mcm to 154 mcm under normal conditions.&nbsp;</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.24.1-es-s-m-24-h2-storage-n1",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223496/CEF2027",
+       "PCI_ID": 1434,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -3.9889388887397894,
+       "y": 43.377144444249545
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6106,
+       "INFRA": 29,
+       "PCI_CODE": "9.24.2",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.24",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "H2 storage North – 2",
+       "PROJECT_FULL_TITLE": "H2 storage North – 2",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The project consists of the development of a Salt Cavern for H2 seasonal storage in the Basque- Cantabrian Basin including the following provinces: Burgos, Guipúzcoa and Álava as part of the national Spanish hydrogen system.<br>&nbsp;</p><p>The key infrastructure components of H2 storage North-2 will have the following technical specifications:<br>- Injection capacity: 20.5 GWh/d in 2032 (82 GWh/d with full development).<br>- Withdrawal capacity: 20.5 GWh/d in 2032 (82 GWh/d with full development).<br>- A working gas volume of 164 GWh is expected by 2032. In a later development stage, the working gas volume is expected to reach up to 656 GWh<br>&nbsp;</p><p>The underground hydrogen storage capacity is expected to increase from 46 mcm to 184 mcm under normal conditions.</p>",
+       "IMPLEMENTATION_STATUS": 1,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2031",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1435,
+       "IMPLEMENTATION_STATUS_DESCR": "Under consideration ",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -3.0049218166223755,
+       "y": 42.979067510874835
+      }
+     }
+    ]
+   }
+  },
+  "10": {
+   "nombre": "Other hydrogen assets",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/10/query?where=PCI_CODE%20IN%20%28%279.1.2%27%2C%279.1.3%27%2C%279.1.4%27%2C%279.24.1%27%2C%279.24.2%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "PCI_ID": "PCI_ID",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "NATURE_CODE": "NATURE_CODE"
+    },
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 6187,
+       "INFRA": 30,
+       "PCI_CODE": "9.1.2",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Hydrogen interconnector Portugal – Spain",
+       "PROJECT_FULL_TITLE": "Hydrogen interconnector Portugal – Spain",
+       "COUNTRY_CONCERNED": "ES, PT",
+       "TECHNICAL_DESCR": "<p>H2Med/CelZa is part of H2Med project.</p><p>&nbsp;The project consists in developing an interconnection between Celorico da Beira (PT) and Zamora (ES). Its objectives cover transportation of renewable hydrogen (approx. 0.75 Mt/y) from Portugal to Spain by 2032. The infrastructure consists of a pipeline with a length of ca. 185 km in the Portuguese section and 86 km in Spain with a diameter of 28\" (711 mm) and a compressor station of 30 MW in Zamora.&nbsp;</p><p>The project H2Med/CelZa together with H2Med/BarMar interconnection project will enable the emergence of one of the major hydrogen corridors via the Mediterranean identified in the REPower EU.</p><p>&nbsp;The expected transmission capacity is 0.75 Mt/y.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES) ; REN - Gasodutos, S.A. (PT)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.1.2-ptes-s-m-24-h2med celza",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223608/CEF2027",
+       "PCI_ID": 1395,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -5.63385702207952,
+       "y": 41.559297129665545
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6364,
+       "INFRA": 30,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -5.667107317904834,
+       "y": 41.58415565093915
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6365,
+       "INFRA": 30,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": 0.6710387809689237,
+       "y": 41.079684435035354
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6366,
+       "INFRA": 30,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -2.0710691996260215,
+       "y": 42.30309260281937
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6176,
+       "INFRA": 30,
+       "PCI_CODE": "9.1.4",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "BarMar (ES, FR)",
+       "PROJECT_FULL_TITLE": "Hydrogen interconnector Spain - France [currently known as ‘BarMar’]",
+       "COUNTRY_CONCERNED": "ES, FR",
+       "TECHNICAL_DESCR": "<p>The Hydrogen Interconnector Spain – France [currently known as BarMar] aims at interconnecting future hydrogen infrastructure between Spain and France through an offshore hydrogen pipeline.</p><p>&nbsp;The project concerns the following infrastructure:</p><p>&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New compressor station in Barcelona with capacity of 60 MW;<br>&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New offshore interconnector Barcelona-Marseille consisting of approximately 400 km pipeline with a 1050 mm diameter.<br>&nbsp;</p><p>The project will enable the transport of 2 Mt/y of hydrogen and contributes to the emergence of one of the major hydrogen import corridors via the Mediterranean Sea identified in the REPowerEU plan.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)  ; Teréga SA (FR) ; NaTran (FR) ; Open Grid Europe (DE)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.1.4-fres-s-m-24-h2med barmar",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223599/CEF2027",
+       "PCI_ID": 1397,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": 2.1555300000932034,
+       "y": 41.33761800026914
+      }
+     }
+    ]
+   }
+  },
+  "11": {
+   "nombre": "Hydrogen pipeline",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/11/query?where=PCI_CODE%20IN%20%28%279.1.2%27%2C%279.1.3%27%2C%279.1.4%27%2C%279.24.1%27%2C%279.24.2%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "PCI_ID": "PCI_ID",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "SHAPE.LEN": "SHAPE.LEN",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "NATURE_CODE": "NATURE_CODE"
+    },
+    "geometryType": "esriGeometryPolyline",
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "SHAPE.LEN",
+      "type": "esriFieldTypeDouble",
+      "alias": "SHAPE.LEN"
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 5955,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.2",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Hydrogen interconnector Portugal – Spain",
+       "PROJECT_FULL_TITLE": "Hydrogen interconnector Portugal – Spain",
+       "COUNTRY_CONCERNED": "ES, PT",
+       "TECHNICAL_DESCR": "<p>H2Med/CelZa is part of H2Med project.</p><p>&nbsp;The project consists in developing an interconnection between Celorico da Beira (PT) and Zamora (ES). Its objectives cover transportation of renewable hydrogen (approx. 0.75 Mt/y) from Portugal to Spain by 2032. The infrastructure consists of a pipeline with a length of ca. 185 km in the Portuguese section and 86 km in Spain with a diameter of 28\" (711 mm) and a compressor station of 30 MW in Zamora.&nbsp;</p><p>The project H2Med/CelZa together with H2Med/BarMar interconnection project will enable the emergence of one of the major hydrogen corridors via the Mediterranean identified in the REPower EU.</p><p>&nbsp;The expected transmission capacity is 0.75 Mt/y.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES) ; REN - Gasodutos, S.A. (PT)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.1.2-ptes-s-m-24-h2med celza",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223608/CEF2027",
+       "PCI_ID": 1395,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 221226.234639828,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -7.375840760220342,
+          40.66105327131881
+         ],
+         [
+          -7.3743171088023125,
+          40.661866932952414
+         ],
+         [
+          -7.373537117810808,
+          40.66326614973242
+         ],
+         [
+          -7.368905785989875,
+          40.66702729305862
+         ],
+         [
+          -7.3565861051305035,
+          40.6714671572357
+         ],
+         [
+          -7.344584284151263,
+          40.68364257480914
+         ],
+         [
+          -7.339577700883338,
+          40.68529331427911
+         ],
+         [
+          -7.336003671778786,
+          40.69059446167602
+         ],
+         [
+          -7.332133463633485,
+          40.705449543011206
+         ],
+         [
+          -7.3089941887262455,
+          40.71351274407013
+         ],
+         [
+          -7.3017365845614615,
+          40.72481260793916
+         ],
+         [
+          -7.288869653624278,
+          40.72803691085317
+         ],
+         [
+          -7.28701470802106,
+          40.736446146974004
+         ],
+         [
+          -7.282943465898321,
+          40.7555666587582
+         ],
+         [
+          -7.278502254422455,
+          40.759625741061676
+         ],
+         [
+          -7.276084647244388,
+          40.775207154191875
+         ],
+         [
+          -7.274713762425255,
+          40.77845823886491
+         ],
+         [
+          -7.274160712823981,
+          40.78194952486909
+         ],
+         [
+          -7.268544461837319,
+          40.790638351679675
+         ],
+         [
+          -7.267214766570632,
+          40.80078023178428
+         ],
+         [
+          -7.2500049753081335,
+          40.810368051728574
+         ],
+         [
+          -7.2503184433248204,
+          40.82329007973904
+         ],
+         [
+          -7.253137318058853,
+          40.828153569290706
+         ],
+         [
+          -7.25284497662097,
+          40.832645613859235
+         ],
+         [
+          -7.250684941587694,
+          40.83878896723897
+         ],
+         [
+          -7.243640430384753,
+          40.84803265309983
+         ],
+         [
+          -7.235864182992391,
+          40.85993638469576
+         ],
+         [
+          -7.2360015012633685,
+          40.8609690741813
+         ],
+         [
+          -7.2294273452482285,
+          40.868236774284036
+         ],
+         [
+          -7.215775277769566,
+          40.881815695028635
+         ],
+         [
+          -7.20936511459945,
+          40.8908083858784
+         ],
+         [
+          -7.209810422960514,
+          40.90058585803759
+         ],
+         [
+          -7.2107226136225,
+          40.91537382794244
+         ],
+         [
+          -7.212957730745545,
+          40.9168722727757
+         ],
+         [
+          -7.210504306838804,
+          40.919092241093225
+         ],
+         [
+          -7.208822855561344,
+          40.92077300878916
+         ],
+         [
+          -7.206260732810253,
+          40.923982295706736
+         ],
+         [
+          -7.204909489654823,
+          40.92578476304711
+         ],
+         [
+          -7.200061618934681,
+          40.9318529662623
+         ],
+         [
+          -7.19944516983389,
+          40.93286148989033
+         ],
+         [
+          -7.199204795935196,
+          40.933197496325256
+         ],
+         [
+          -7.198396915847371,
+          40.933321273165774
+         ],
+         [
+          -7.1978283397646985,
+          40.933490486140734
+         ],
+         [
+          -7.1970533101684975,
+          40.93544237377768
+         ],
+         [
+          -7.1968296260694755,
+          40.936907387662316
+         ],
+         [
+          -7.196676418397771,
+          40.938666275101085
+         ],
+         [
+          -7.197211445099514,
+          40.940159669092296
+         ],
+         [
+          -7.197116398850883,
+          40.94080742022443
+         ],
+         [
+          -7.196561146580526,
+          40.94230821978988
+         ],
+         [
+          -7.1960292109816635,
+          40.94376601978106
+         ],
+         [
+          -7.195420879956077,
+          40.9458782396907
+         ],
+         [
+          -7.193277334398155,
+          40.95282593698086
+         ],
+         [
+          -7.192689775116917,
+          40.954438929815275
+         ],
+         [
+          -7.192043822647255,
+          40.95703965527766
+         ],
+         [
+          -7.191679015013718,
+          40.9593912593348
+         ],
+         [
+          -7.1921089352339695,
+          40.960458022841806
+         ],
+         [
+          -7.1931553243179485,
+          40.96240326880871
+         ],
+         [
+          -7.194725745622925,
+          40.96418358211811
+         ],
+         [
+          -7.195637633552691,
+          40.965549677872744
+         ],
+         [
+          -7.196932246014267,
+          40.96700321370068
+         ],
+         [
+          -7.196973796689412,
+          40.96708993308782
+         ],
+         [
+          -7.197327580197769,
+          40.96940337368549
+         ],
+         [
+          -7.198065430321,
+          40.969668584038885
+         ],
+         [
+          -7.198025984398554,
+          40.97210459115275
+         ],
+         [
+          -7.1976354121843995,
+          40.97471357585292
+         ],
+         [
+          -7.197931858024787,
+          40.97804857266559
+         ],
+         [
+          -7.197789230710496,
+          40.980817374040456
+         ],
+         [
+          -7.197543507344286,
+          40.983767707825166
+         ],
+         [
+          -7.196912164176087,
+          40.98623815218975
+         ],
+         [
+          -7.19583438076958,
+          40.98764144724528
+         ],
+         [
+          -7.194628248770215,
+          40.988531412826696
+         ],
+         [
+          -7.193154939839024,
+          40.98964813969356
+         ],
+         [
+          -7.191634995768183,
+          40.991595170187324
+         ],
+         [
+          -7.191525441727696,
+          40.991774706330226
+         ],
+         [
+          -7.190186594424881,
+          40.993672937086686
+         ],
+         [
+          -7.188672604387734,
+          40.99979927092595
+         ],
+         [
+          -7.188517369218449,
+          41.00028789508788
+         ],
+         [
+          -7.188365276356008,
+          41.00088409681163
+         ],
+         [
+          -7.187810042051927,
+          41.00234442669453
+         ],
+         [
+          -7.1886197403299095,
+          41.0030015237736
+         ],
+         [
+          -7.187842463148871,
+          41.00490044270291
+         ],
+         [
+          -7.187059003762006,
+          41.0083392212352
+         ],
+         [
+          -7.186425751673841,
+          41.00999940770813
+         ],
+         [
+          -7.186090034184179,
+          41.01134160531753
+         ],
+         [
+          -7.185528455977561,
+          41.01260504819756
+         ],
+         [
+          -7.184250486603242,
+          41.01508825289862
+         ],
+         [
+          -7.183394478375724,
+          41.018268917713016
+         ],
+         [
+          -7.182718641651522,
+          41.020421021974514
+         ],
+         [
+          -7.181756244148291,
+          41.023573176987625
+         ],
+         [
+          -7.181789276997925,
+          41.029690796307094
+         ],
+         [
+          -7.181440012913765,
+          41.03148216172264
+         ],
+         [
+          -7.1802999789529975,
+          41.034493086680534
+         ],
+         [
+          -7.179215132093379,
+          41.0372170877274
+         ],
+         [
+          -7.178115377691631,
+          41.03982449388402
+         ],
+         [
+          -7.176644293887417,
+          41.04260658380861
+         ],
+         [
+          -7.175850326906703,
+          41.04461128484386
+         ],
+         [
+          -7.173424176750306,
+          41.04931211373186
+         ],
+         [
+          -7.171064617807579,
+          41.05360024697049
+         ],
+         [
+          -7.170519397922305,
+          41.05503518774373
+         ],
+         [
+          -7.168956329327937,
+          41.056342109078535
+         ],
+         [
+          -7.165081517316779,
+          41.06288620498126
+         ],
+         [
+          -7.16167650892787,
+          41.06895817197904
+         ],
+         [
+          -7.1612437078104945,
+          41.07061691414377
+         ],
+         [
+          -7.162472338116166,
+          41.07233937025207
+         ],
+         [
+          -7.1630588086392875,
+          41.07376978071903
+         ],
+         [
+          -7.157857731129193,
+          41.08592377086591
+         ],
+         [
+          -7.153205950957463,
+          41.08978421098499
+         ],
+         [
+          -7.147694709434273,
+          41.09781216499973
+         ],
+         [
+          -7.14612043974663,
+          41.099724279234735
+         ],
+         [
+          -7.1433016638273115,
+          41.1045584701824
+         ],
+         [
+          -7.1371666681034345,
+          41.11036603967937
+         ],
+         [
+          -7.136133194996623,
+          41.12141728509211
+         ],
+         [
+          -7.136026696126431,
+          41.12339231674396
+         ],
+         [
+          -7.136163592189207,
+          41.125090718716365
+         ],
+         [
+          -7.134582663290347,
+          41.12653538372836
+         ],
+         [
+          -7.132331845412767,
+          41.12642407512117
+         ],
+         [
+          -7.129783572886759,
+          41.12604386402222
+         ],
+         [
+          -7.127455171111359,
+          41.12653565710059
+         ],
+         [
+          -7.1249716967617145,
+          41.12632210905527
+         ],
+         [
+          -7.123162100808968,
+          41.127479520052795
+         ],
+         [
+          -7.120863647966834,
+          41.12928366378758
+         ],
+         [
+          -7.119089962167592,
+          41.12829396510374
+         ],
+         [
+          -7.116258036709128,
+          41.12835997795942
+         ],
+         [
+          -7.113105743274272,
+          41.12686980914592
+         ],
+         [
+          -7.109829721282063,
+          41.12660638468468
+         ],
+         [
+          -7.105574614681907,
+          41.12748661883172
+         ],
+         [
+          -7.10679168097491,
+          41.13225667712191
+         ],
+         [
+          -7.10574212622786,
+          41.13470831812828
+         ],
+         [
+          -7.1093737903427545,
+          41.13783891215226
+         ],
+         [
+          -7.1108125213220035,
+          41.14019050197627
+         ],
+         [
+          -7.112229803227223,
+          41.14150366214073
+         ],
+         [
+          -7.113441659291594,
+          41.14391234578943
+         ],
+         [
+          -7.111972251743698,
+          41.1458059209564
+         ],
+         [
+          -7.110319700167258,
+          41.146913640934784
+         ],
+         [
+          -7.107183717443,
+          41.14873174485508
+         ],
+         [
+          -7.106995798868718,
+          41.14915934711394
+         ],
+         [
+          -7.1069939366611345,
+          41.14916244719529
+         ],
+         [
+          -7.106788215274541,
+          41.14962709517142
+         ],
+         [
+          -7.106229959936187,
+          41.150681192087
+         ],
+         [
+          -7.105125734619251,
+          41.15167256531448
+         ],
+         [
+          -7.104832196625435,
+          41.15217672091598
+         ],
+         [
+          -7.104928336123798,
+          41.15423625187723
+         ],
+         [
+          -7.106075718303591,
+          41.15727938200239
+         ],
+         [
+          -7.107077992022277,
+          41.15816928672098
+         ],
+         [
+          -7.10801421980463,
+          41.158895158682306
+         ],
+         [
+          -7.108473948820967,
+          41.16016167202557
+         ],
+         [
+          -7.1086836739987564,
+          41.16067608015316
+         ],
+         [
+          -7.10907812783327,
+          41.16279279831394
+         ],
+         [
+          -7.108691301593844,
+          41.16558443118039
+         ],
+         [
+          -7.1082542388687715,
+          41.16804717300098
+         ],
+         [
+          -7.107706810026202,
+          41.16885917623735
+         ],
+         [
+          -7.107168941054878,
+          41.17024934486664
+         ],
+         [
+          -7.106608902560685,
+          41.17183073432756
+         ],
+         [
+          -7.105730669114746,
+          41.17252694201614
+         ],
+         [
+          -7.105304128356575,
+          41.17350034196564
+         ],
+         [
+          -7.10543833306678,
+          41.17407599193002
+         ],
+         [
+          -7.1058402923254755,
+          41.17490503824041
+         ],
+         [
+          -7.105716226899911,
+          41.17544738313732
+         ],
+         [
+          -7.104948569777255,
+          41.17639203917786
+         ],
+         [
+          -7.103380306225572,
+          41.17897408513545
+         ],
+         [
+          -7.102786588094735,
+          41.1804110868015
+         ],
+         [
+          -7.10243070881685,
+          41.181464287713375
+         ],
+         [
+          -7.10177892807762,
+          41.18310228780782
+         ],
+         [
+          -7.1009200856653925,
+          41.185070897880635
+         ],
+         [
+          -7.100693948267332,
+          41.1858758491414
+         ],
+         [
+          -7.100279389238447,
+          41.18710038019763
+         ],
+         [
+          -7.100231079639107,
+          41.18820192715385
+         ],
+         [
+          -7.10082834072543,
+          41.18918159677247
+         ],
+         [
+          -7.1019629039461085,
+          41.19009826268389
+         ],
+         [
+          -7.10284109517125,
+          41.19123627315523
+         ],
+         [
+          -7.103795403345318,
+          41.19210124730804
+         ],
+         [
+          -7.104702701782279,
+          41.192861556317624
+         ],
+         [
+          -7.105943725245607,
+          41.193509111759866
+         ],
+         [
+          -7.107343675954059,
+          41.19379161304434
+         ],
+         [
+          -7.1081269961020395,
+          41.19431934401714
+         ],
+         [
+          -7.1095990563749645,
+          41.196531184760815
+         ],
+         [
+          -7.109332291769874,
+          41.197537912323035
+         ],
+         [
+          -7.106743947195676,
+          41.19940669492582
+         ],
+         [
+          -7.105487734119193,
+          41.20035446124834
+         ],
+         [
+          -7.104723069284736,
+          41.20134813192963
+         ],
+         [
+          -7.104756022184295,
+          41.20250566090242
+         ],
+         [
+          -7.103539632322707,
+          41.20425789808034
+         ],
+         [
+          -7.1021014052982965,
+          41.20495411790444
+         ],
+         [
+          -7.10038544703583,
+          41.20620684102596
+         ],
+         [
+          -7.099554715603808,
+          41.20757799526937
+         ],
+         [
+          -7.0992322617393215,
+          41.210152456267586
+         ],
+         [
+          -7.098556169893542,
+          41.21181558127763
+         ],
+         [
+          -7.097083044218693,
+          41.215439022717085
+         ],
+         [
+          -7.09608957668472,
+          41.21700411294125
+         ],
+         [
+          -7.093981964636494,
+          41.218475185318475
+         ],
+         [
+          -7.09469430799554,
+          41.22057760624887
+         ],
+         [
+          -7.095862276866715,
+          41.22343311010488
+         ],
+         [
+          -7.09566281494103,
+          41.227321486028
+         ],
+         [
+          -7.095841241916014,
+          41.22970472368389
+         ],
+         [
+          -7.0949909505669915,
+          41.230891847685406
+         ],
+         [
+          -7.095331812708265,
+          41.23488144027203
+         ],
+         [
+          -7.094726112848176,
+          41.23927779629479
+         ],
+         [
+          -7.091240863344834,
+          41.24251960396034
+         ],
+         [
+          -7.091301728696906,
+          41.24732380181893
+         ],
+         [
+          -7.089311639644017,
+          41.25350771233465
+         ],
+         [
+          -7.088910099000236,
+          41.25791897613501
+         ],
+         [
+          -7.087461113751986,
+          41.261106637254755
+         ],
+         [
+          -7.088096732900937,
+          41.267320507326254
+         ],
+         [
+          -7.090780954665445,
+          41.26985559387596
+         ],
+         [
+          -7.09144441170675,
+          41.2719267389216
+         ],
+         [
+          -7.089708907900337,
+          41.27370538971137
+         ],
+         [
+          -7.088742914441026,
+          41.27521938274412
+         ],
+         [
+          -7.089214577575901,
+          41.27771726890952
+         ],
+         [
+          -7.088252789130436,
+          41.279515406869635
+         ],
+         [
+          -7.082181795675594,
+          41.2823730247607
+         ],
+         [
+          -7.082248052716011,
+          41.284242168335645
+         ],
+         [
+          -7.078855383585833,
+          41.29020318287928
+         ],
+         [
+          -7.079310716247174,
+          41.29360847732619
+         ],
+         [
+          -7.07595312093897,
+          41.296012126856276
+         ],
+         [
+          -7.08168908860688,
+          41.30116274921391
+         ],
+         [
+          -7.083189578761946,
+          41.30276480875947
+         ],
+         [
+          -7.08530899557133,
+          41.30436294599446
+         ],
+         [
+          -7.091062268384893,
+          41.306520423017034
+         ],
+         [
+          -7.093892646046091,
+          41.30822801185759
+         ],
+         [
+          -7.096092055136612,
+          41.317088326051696
+         ],
+         [
+          -7.097040264648219,
+          41.319676381149314
+         ],
+         [
+          -7.098727845130876,
+          41.32171419667606
+         ],
+         [
+          -7.0986005538551,
+          41.32466464996628
+         ],
+         [
+          -7.100084508720726,
+          41.32910732482919
+         ],
+         [
+          -7.101017869080711,
+          41.33124364395601
+         ],
+         [
+          -7.10272466542558,
+          41.33308157084843
+         ],
+         [
+          -7.111227916682418,
+          41.346326656203004
+         ],
+         [
+          -7.104177758669589,
+          41.35685787896421
+         ],
+         [
+          -7.105231557956357,
+          41.36022342273717
+         ],
+         [
+          -7.107167428291966,
+          41.36344393414393
+         ],
+         [
+          -7.099874373911126,
+          41.374372077324416
+         ],
+         [
+          -7.097466491894335,
+          41.38116902995047
+         ],
+         [
+          -7.087505012623311,
+          41.407336726330165
+         ],
+         [
+          -7.07584691761449,
+          41.41628562173098
+         ],
+         [
+          -7.068715432424037,
+          41.41995661569168
+         ],
+         [
+          -7.061257835429283,
+          41.42423740483323
+         ],
+         [
+          -7.0605868549974895,
+          41.4329636782835
+         ],
+         [
+          -7.064635796443285,
+          41.4408197379858
+         ],
+         [
+          -7.064302498116672,
+          41.44829369232946
+         ],
+         [
+          -7.0645996428463675,
+          41.451943697057125
+         ],
+         [
+          -7.0634086151201645,
+          41.453760627902646
+         ],
+         [
+          -7.056529051671394,
+          41.458022825716036
+         ],
+         [
+          -7.053448347676459,
+          41.45966937969343
+         ],
+         [
+          -7.04919478438195,
+          41.462414189013955
+         ],
+         [
+          -7.04240715002778,
+          41.46664649597411
+         ],
+         [
+          -7.032953742610058,
+          41.47069409208404
+         ],
+         [
+          -7.024422473797813,
+          41.48057600284508
+         ],
+         [
+          -7.016976552206803,
+          41.48945595206288
+         ],
+         [
+          -7.013554504573583,
+          41.495915934743536
+         ],
+         [
+          -7.0185681575827985,
+          41.50067226816569
+         ],
+         [
+          -7.01594879777508,
+          41.50594463417792
+         ],
+         [
+          -7.010777066428665,
+          41.51466726675387
+         ],
+         [
+          -6.998193594387797,
+          41.53079638530393
+         ],
+         [
+          -7.000429343026501,
+          41.53585303171701
+         ],
+         [
+          -7.000507673424308,
+          41.53716745002147
+         ],
+         [
+          -6.999837238269919,
+          41.53902935384144
+         ],
+         [
+          -6.998742032936771,
+          41.54195459080333
+         ],
+         [
+          -6.998246944434218,
+          41.543685659248126
+         ],
+         [
+          -6.99784685816287,
+          41.54721014410813
+         ],
+         [
+          -6.998010768362859,
+          41.552797391286504
+         ],
+         [
+          -6.99497829581385,
+          41.55545977216754
+         ],
+         [
+          -6.987412796780406,
+          41.55971468372785
+         ],
+         [
+          -6.982103465092059,
+          41.56294108473299
+         ],
+         [
+          -6.976654368121906,
+          41.565639325914766
+         ],
+         [
+          -6.973128537225621,
+          41.5726726209539
+         ],
+         [
+          -6.969176152994739,
+          41.574142830326316
+         ],
+         [
+          -6.968863171864913,
+          41.59281850012578
+         ],
+         [
+          -6.954903933559684,
+          41.600250513919434
+         ],
+         [
+          -6.9412631372429034,
+          41.6019447680757
+         ],
+         [
+          -6.918466875942053,
+          41.60204553611764
+         ],
+         [
+          -6.907861852584618,
+          41.60291033414791
+         ],
+         [
+          -6.903570153111365,
+          41.60346691293676
+         ],
+         [
+          -6.898408148722887,
+          41.60582752582678
+         ],
+         [
+          -6.893483522351584,
+          41.60517594276762
+         ],
+         [
+          -6.867221890366329,
+          41.61137991831833
+         ],
+         [
+          -6.856734268731691,
+          41.609338029933674
+         ],
+         [
+          -6.853227280896788,
+          41.60928350713766
+         ],
+         [
+          -6.845643355620214,
+          41.6075779021907
+         ],
+         [
+          -6.840593900255346,
+          41.6087162338559
+         ],
+         [
+          -6.835103272372984,
+          41.61048020931739
+         ],
+         [
+          -6.833438833390388,
+          41.60988436023279
+         ],
+         [
+          -6.828215544136595,
+          41.611708865922324
+         ],
+         [
+          -6.824655360765505,
+          41.612166816325505
+         ],
+         [
+          -6.81054630682708,
+          41.610479281769585
+         ],
+         [
+          -6.797134972573184,
+          41.6117252088526
+         ],
+         [
+          -6.787368169902341,
+          41.61519179982535
+         ],
+         [
+          -6.783037627276193,
+          41.61420921693498
+         ],
+         [
+          -6.766567347121894,
+          41.61100986310403
+         ],
+         [
+          -6.753103189234344,
+          41.60868035671485
+         ],
+         [
+          -6.746799521341163,
+          41.608425354062554
+         ],
+         [
+          -6.731587410794025,
+          41.61138642986767
+         ],
+         [
+          -6.717240544952092,
+          41.61502877872222
+         ],
+         [
+          -6.704442542644993,
+          41.61377270824244
+         ],
+         [
+          -6.699157962237671,
+          41.61444493500793
+         ],
+         [
+          -6.694603750783887,
+          41.61508314823843
+         ],
+         [
+          -6.687100537338959,
+          41.61616246381227
+         ],
+         [
+          -6.677444113362004,
+          41.61789430375191
+         ],
+         [
+          -6.672669891918727,
+          41.61924214907992
+         ],
+         [
+          -6.666724051749269,
+          41.621182112959154
+         ],
+         [
+          -6.661211175292294,
+          41.62314226070578
+         ],
+         [
+          -6.6534546782597515,
+          41.620405780237185
+         ],
+         [
+          -6.647005239847103,
+          41.622475381284175
+         ],
+         [
+          -6.637769760124068,
+          41.62094952672591
+         ],
+         [
+          -6.6339450803939926,
+          41.62125627420615
+         ],
+         [
+          -6.633208128586025,
+          41.621475785222195
+         ],
+         [
+          -6.632047689393588,
+          41.6218179910903
+         ],
+         [
+          -6.629671337344955,
+          41.621963883784815
+         ],
+         [
+          -6.627656782675283,
+          41.62202929880996
+         ],
+         [
+          -6.62575324270678,
+          41.622447468692926
+         ],
+         [
+          -6.62458064391863,
+          41.62262330720577
+         ],
+         [
+          -6.623893296182387,
+          41.62212202616654
+         ],
+         [
+          -6.620998343126939,
+          41.62060483220814
+         ],
+         [
+          -6.62032063521198,
+          41.62018226382246
+         ],
+         [
+          -6.620033556105062,
+          41.619680452755034
+         ],
+         [
+          -6.617384319229314,
+          41.61852207492776
+         ],
+         [
+          -6.615984709880659,
+          41.61809240917371
+         ],
+         [
+          -6.614665540174163,
+          41.61758192926763
+         ],
+         [
+          -6.613953054881274,
+          41.61780254208246
+         ],
+         [
+          -6.61375748805067,
+          41.61763872101676
+         ],
+         [
+          -6.613148839919806,
+          41.61769395802155
+         ],
+         [
+          -6.611933892752558,
+          41.617788279882795
+         ],
+         [
+          -6.611269736821945,
+          41.617303265167074
+         ],
+         [
+          -6.608391680178703,
+          41.61703795022385
+         ],
+         [
+          -6.607736961948496,
+          41.61715331767472
+         ],
+         [
+          -6.60471871062877,
+          41.61726138418707
+         ],
+         [
+          -6.603768609265144,
+          41.617356468250165
+         ],
+         [
+          -6.601493307804505,
+          41.61752906417324
+         ],
+         [
+          -6.598630615047554,
+          41.61744580683358
+         ],
+         [
+          -6.595872160999563,
+          41.617493788293366
+         ],
+         [
+          -6.593266715197288,
+          41.617224331834024
+         ],
+         [
+          -6.588988740184923,
+          41.61723399585698
+         ],
+         [
+          -6.585788168591757,
+          41.6169943887747
+         ],
+         [
+          -6.584228121929992,
+          41.61774058406092
+         ],
+         [
+          -6.583463021412642,
+          41.61810556388726
+         ],
+         [
+          -6.581903075362185,
+          41.619765635237606
+         ],
+         [
+          -6.581129844193173,
+          41.62041942873661
+         ],
+         [
+          -6.579416854862714,
+          41.62114414419427
+         ],
+         [
+          -6.577858785392928,
+          41.62166392416783
+         ],
+         [
+          -6.573796892935643,
+          41.62294282104225
+         ],
+         [
+          -6.5723048622156455,
+          41.623406151099246
+         ],
+         [
+          -6.571337884202782,
+          41.62367392712406
+         ],
+         [
+          -6.569047256585064,
+          41.62416443117344
+         ],
+         [
+          -6.567050034908822,
+          41.62458886978707
+         ],
+         [
+          -6.566114393726339,
+          41.62485911269042
+         ],
+         [
+          -6.562896592446012,
+          41.626608379723535
+         ],
+         [
+          -6.5609049924268055,
+          41.62782164925547
+         ],
+         [
+          -6.56015027104422,
+          41.628184671779636
+         ],
+         [
+          -6.559018600398762,
+          41.62881219572982
+         ],
+         [
+          -6.557681751847454,
+          41.62941871995288
+         ],
+         [
+          -6.556203633336238,
+          41.63003586074156
+         ],
+         [
+          -6.555296641224787,
+          41.63007180792035
+         ],
+         [
+          -6.55448628268507,
+          41.63025350882845
+         ],
+         [
+          -6.552747199990588,
+          41.630000650119136
+         ],
+         [
+          -6.550723539997204,
+          41.630458856719905
+         ],
+         [
+          -6.549834912145117,
+          41.630454182145414
+         ],
+         [
+          -6.54304601386133,
+          41.63064587567984
+         ],
+         [
+          -6.541977901717142,
+          41.630544217667385
+         ],
+         [
+          -6.540849228749765,
+          41.63082584467549
+         ],
+         [
+          -6.5315125439285,
+          41.63126695006054
+         ],
+         [
+          -6.526251265819654,
+          41.631342302243354
+         ],
+         [
+          -6.526203608397205,
+          41.63134239221522
+         ],
+         [
+          -6.521373394063947,
+          41.6324165591358
+         ],
+         [
+          -6.5173457911993715,
+          41.632930500922065
+         ],
+         [
+          -6.512838856282365,
+          41.63413260018174
+         ],
+         [
+          -6.509198792919577,
+          41.63426413125906
+         ],
+         [
+          -6.505465608397839,
+          41.63606312019984
+         ],
+         [
+          -6.504820495852963,
+          41.63743174594565
+         ],
+         [
+          -6.504393843703718,
+          41.63887400292079
+         ],
+         [
+          -6.504238657941739,
+          41.63962824485711
+         ],
+         [
+          -6.504618126979003,
+          41.64258650110371
+         ],
+         [
+          -6.5040904952086676,
+          41.6444929087288
+         ],
+         [
+          -6.488000243742057,
+          41.65766082622321
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 5957,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.2",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Hydrogen interconnector Portugal – Spain",
+       "PROJECT_FULL_TITLE": "Hydrogen interconnector Portugal – Spain",
+       "COUNTRY_CONCERNED": "ES, PT",
+       "TECHNICAL_DESCR": "<p>H2Med/CelZa is part of H2Med project.</p><p>&nbsp;The project consists in developing an interconnection between Celorico da Beira (PT) and Zamora (ES). Its objectives cover transportation of renewable hydrogen (approx. 0.75 Mt/y) from Portugal to Spain by 2032. The infrastructure consists of a pipeline with a length of ca. 185 km in the Portuguese section and 86 km in Spain with a diameter of 28\" (711 mm) and a compressor station of 30 MW in Zamora.&nbsp;</p><p>The project H2Med/CelZa together with H2Med/BarMar interconnection project will enable the emergence of one of the major hydrogen corridors via the Mediterranean identified in the REPower EU.</p><p>&nbsp;The expected transmission capacity is 0.75 Mt/y.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES) ; REN - Gasodutos, S.A. (PT)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.1.2-ptes-s-m-24-h2med celza",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223608/CEF2027",
+       "PCI_ID": 1395,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 115113.080612397,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -6.488000243742057,
+          41.65766082622321
+         ],
+         [
+          -6.487720732043088,
+          41.66000421193162
+         ],
+         [
+          -6.484284606012723,
+          41.66343325498831
+         ],
+         [
+          -6.482147852616689,
+          41.66777053707488
+         ],
+         [
+          -6.470314189072114,
+          41.67288754679731
+         ],
+         [
+          -6.46286278236796,
+          41.67658956029506
+         ],
+         [
+          -6.459552394426224,
+          41.67940496883118
+         ],
+         [
+          -6.4586315377167045,
+          41.68275106020215
+         ],
+         [
+          -6.45600677903413,
+          41.68368033016042
+         ],
+         [
+          -6.4549988081998855,
+          41.6869846016965
+         ],
+         [
+          -6.452202595265565,
+          41.68890556573532
+         ],
+         [
+          -6.447370410926872,
+          41.6900342571587
+         ],
+         [
+          -6.439361542995064,
+          41.69064570907985
+         ],
+         [
+          -6.436786833948542,
+          41.68990435332364
+         ],
+         [
+          -6.431679015937983,
+          41.69039346506291
+         ],
+         [
+          -6.428407452284534,
+          41.69318144620675
+         ],
+         [
+          -6.420712522188328,
+          41.69477518493727
+         ],
+         [
+          -6.412029533314473,
+          41.696581789309164
+         ],
+         [
+          -6.411660339207444,
+          41.699524080908006
+         ],
+         [
+          -6.409376030339442,
+          41.702434449827436
+         ],
+         [
+          -6.404728554894536,
+          41.70549103576483
+         ],
+         [
+          -6.40128702998935,
+          41.70766149110975
+         ],
+         [
+          -6.398272403371779,
+          41.709260858303395
+         ],
+         [
+          -6.3913051140455925,
+          41.71089452192408
+         ],
+         [
+          -6.385110148589982,
+          41.70902166517879
+         ],
+         [
+          -6.382555666010406,
+          41.70681282912318
+         ],
+         [
+          -6.375619387426121,
+          41.704999366906264
+         ],
+         [
+          -6.37160267393946,
+          41.705904188012106
+         ],
+         [
+          -6.366628630346063,
+          41.707611027028804
+         ],
+         [
+          -6.353699172173511,
+          41.710305112964654
+         ],
+         [
+          -6.349130204094573,
+          41.709068025958395
+         ],
+         [
+          -6.3443550762511585,
+          41.71103458120044
+         ],
+         [
+          -6.336910026924263,
+          41.7136115581411
+         ],
+         [
+          -6.324727596063924,
+          41.70742984275928
+         ],
+         [
+          -6.316930479909192,
+          41.69642494915706
+         ],
+         [
+          -6.303946718577731,
+          41.6892045261027
+         ],
+         [
+          -6.302060436144133,
+          41.687577396189965
+         ],
+         [
+          -6.284375831355039,
+          41.68487419882211
+         ],
+         [
+          -6.281767569334363,
+          41.683184901253455
+         ],
+         [
+          -6.27898124325803,
+          41.68298534483683
+         ],
+         [
+          -6.274534639195489,
+          41.68375945381537
+         ],
+         [
+          -6.25805196768016,
+          41.677160152055386
+         ],
+         [
+          -6.244667590071332,
+          41.67657478708285
+         ],
+         [
+          -6.235927028170934,
+          41.67239270311918
+         ],
+         [
+          -6.226459139910834,
+          41.668534951964205
+         ],
+         [
+          -6.22059267398161,
+          41.66674165433315
+         ],
+         [
+          -6.197879260706169,
+          41.65842378594968
+         ],
+         [
+          -6.194849150726359,
+          41.6553229482068
+         ],
+         [
+          -6.1913800753896915,
+          41.653947385743244
+         ],
+         [
+          -6.188564480404796,
+          41.65380988694656
+         ],
+         [
+          -6.186278891437498,
+          41.654225094078605
+         ],
+         [
+          -6.181209421608099,
+          41.65350275069463
+         ],
+         [
+          -6.178695679423286,
+          41.65416880775014
+         ],
+         [
+          -6.1655454000825625,
+          41.64875815383104
+         ],
+         [
+          -6.158685887929204,
+          41.64601566192533
+         ],
+         [
+          -6.148053674364756,
+          41.644822931326615
+         ],
+         [
+          -6.135811509131258,
+          41.64391430479496
+         ],
+         [
+          -6.1278221642855355,
+          41.63649275214364
+         ],
+         [
+          -6.124340526907924,
+          41.63008382611921
+         ],
+         [
+          -6.1198709969410245,
+          41.62246433403451
+         ],
+         [
+          -6.116075331896334,
+          41.6182781081096
+         ],
+         [
+          -6.10685631200425,
+          41.612246238078995
+         ],
+         [
+          -6.106355860559458,
+          41.6085161578382
+         ],
+         [
+          -6.096699700687183,
+          41.603193239230706
+         ],
+         [
+          -6.084913681988663,
+          41.594297300936184
+         ],
+         [
+          -6.08288150237314,
+          41.58765774078146
+         ],
+         [
+          -6.079790870197684,
+          41.58380666577008
+         ],
+         [
+          -6.079018413376437,
+          41.58311334829346
+         ],
+         [
+          -6.0712217490743114,
+          41.57499724183812
+         ],
+         [
+          -6.065601334396336,
+          41.57140373381485
+         ],
+         [
+          -6.04825507197419,
+          41.56477780388903
+         ],
+         [
+          -6.0316859537824135,
+          41.553921839256894
+         ],
+         [
+          -6.02568299962553,
+          41.553083910143826
+         ],
+         [
+          -6.021456304042875,
+          41.55627893320872
+         ],
+         [
+          -6.018843131830831,
+          41.55842767726699
+         ],
+         [
+          -6.012282461324752,
+          41.56413293305769
+         ],
+         [
+          -6.006628310416282,
+          41.56463639603415
+         ],
+         [
+          -5.996468121109444,
+          41.56782068192051
+         ],
+         [
+          -5.989583035716581,
+          41.568025459692066
+         ],
+         [
+          -5.986297396360946,
+          41.57006525179388
+         ],
+         [
+          -5.978573757006569,
+          41.568577955265404
+         ],
+         [
+          -5.976547755105252,
+          41.56861778101993
+         ],
+         [
+          -5.971190608789265,
+          41.57450525174765
+         ],
+         [
+          -5.970315673058737,
+          41.57606342624992
+         ],
+         [
+          -5.970067597903159,
+          41.578024170740576
+         ],
+         [
+          -5.968728603276619,
+          41.58015271076765
+         ],
+         [
+          -5.960804550680665,
+          41.580953688766954
+         ],
+         [
+          -5.957682709235615,
+          41.58032345214781
+         ],
+         [
+          -5.9502862812234865,
+          41.581579671838504
+         ],
+         [
+          -5.946301349233236,
+          41.58055250519368
+         ],
+         [
+          -5.927279930028823,
+          41.57815809495477
+         ],
+         [
+          -5.915135479040368,
+          41.57006581095608
+         ],
+         [
+          -5.90965488444142,
+          41.56656257617697
+         ],
+         [
+          -5.908209912865869,
+          41.5652412767534
+         ],
+         [
+          -5.903509097256045,
+          41.5651698316864
+         ],
+         [
+          -5.899107143056402,
+          41.56384697601922
+         ],
+         [
+          -5.89573866106524,
+          41.56182530114831
+         ],
+         [
+          -5.892561599281379,
+          41.55954489277872
+         ],
+         [
+          -5.892437681179505,
+          41.55676877189
+         ],
+         [
+          -5.891301308751838,
+          41.5543988541375
+         ],
+         [
+          -5.889433958312836,
+          41.55306256093289
+         ],
+         [
+          -5.886338159926206,
+          41.55183325181974
+         ],
+         [
+          -5.881998644028685,
+          41.54922640777248
+         ],
+         [
+          -5.870143603275316,
+          41.54703583533328
+         ],
+         [
+          -5.867882614672097,
+          41.54556942093882
+         ],
+         [
+          -5.865212546763222,
+          41.542488762312516
+         ],
+         [
+          -5.855337703713101,
+          41.54072948730012
+         ],
+         [
+          -5.8475245283760575,
+          41.54135676917895
+         ],
+         [
+          -5.839507834321503,
+          41.54517837215557
+         ],
+         [
+          -5.829390685096564,
+          41.54966666667333
+         ],
+         [
+          -5.819912270377977,
+          41.55255840813678
+         ],
+         [
+          -5.808662559378792,
+          41.55787220176384
+         ],
+         [
+          -5.80621479665496,
+          41.558312739222195
+         ],
+         [
+          -5.798337521132498,
+          41.558815805918684
+         ],
+         [
+          -5.790283873980376,
+          41.558561164855114
+         ],
+         [
+          -5.773774254803151,
+          41.56029347178717
+         ],
+         [
+          -5.771694564190574,
+          41.56026117191653
+         ],
+         [
+          -5.759687762951425,
+          41.55913200929623
+         ],
+         [
+          -5.755318103186236,
+          41.56008082322544
+         ],
+         [
+          -5.739718398340053,
+          41.56038539723956
+         ],
+         [
+          -5.73375576686135,
+          41.56053960913661
+         ],
+         [
+          -5.724844099255511,
+          41.56076951407007
+         ],
+         [
+          -5.706218210067335,
+          41.561247791816854
+         ],
+         [
+          -5.702168929058336,
+          41.560784694280194
+         ],
+         [
+          -5.697930071185047,
+          41.56104294013536
+         ],
+         [
+          -5.694944045129498,
+          41.5609543791307
+         ],
+         [
+          -5.686705456419941,
+          41.56091947495067
+         ],
+         [
+          -5.685020978718325,
+          41.55931220401682
+         ],
+         [
+          -5.668640041408915,
+          41.55932262417856
+         ],
+         [
+          -5.6506865798384585,
+          41.559512938706504
+         ],
+         [
+          -5.635113695991714,
+          41.55862107708927
+         ],
+         [
+          -5.63385702207952,
+          41.559297129665545
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6085,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 281768.081448175,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -6.380555962289017,
+          38.70895731986174
+         ],
+         [
+          -6.190892618075482,
+          38.6231899233013
+         ],
+         [
+          -6.080740261892237,
+          38.70331945229543
+         ],
+         [
+          -5.750902199946864,
+          38.69676130987186
+         ],
+         [
+          -5.278325502684596,
+          38.65433567419928
+         ],
+         [
+          -4.9933645998458696,
+          38.694209966115764
+         ],
+         [
+          -4.560729751655297,
+          38.980831679889
+         ],
+         [
+          -4.159572055174912,
+          38.7506159908267
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6086,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 329485.40064214804,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -5.787464543800516,
+          43.46214772230002
+         ],
+         [
+          -5.670862415031302,
+          43.407897320929415
+         ],
+         [
+          -5.590003416882334,
+          43.40612837878768
+         ],
+         [
+          -5.438274974004647,
+          43.362385406958246
+         ],
+         [
+          -5.318047990350404,
+          43.38398373470631
+         ],
+         [
+          -5.205985142136653,
+          43.38540043398487
+         ],
+         [
+          -5.130950921799508,
+          43.439890378795305
+         ],
+         [
+          -4.938952987316601,
+          43.45104384730692
+         ],
+         [
+          -4.845095233157424,
+          43.41676581798167
+         ],
+         [
+          -4.632318253751471,
+          43.37389295707181
+         ],
+         [
+          -4.391176562312626,
+          43.35280515196441
+         ],
+         [
+          -4.247337865370208,
+          43.38943301673804
+         ],
+         [
+          -4.16731344344264,
+          43.38196672302135
+         ],
+         [
+          -4.1293468567301055,
+          43.36366702613678
+         ],
+         [
+          -4.119896076884594,
+          43.31085252381941
+         ],
+         [
+          -4.024439170602737,
+          43.32524876795141
+         ],
+         [
+          -3.976569285805155,
+          43.37058363676206
+         ],
+         [
+          -3.877948920927719,
+          43.391763907276
+         ],
+         [
+          -3.7624626758112063,
+          43.39571777717586
+         ],
+         [
+          -3.529857328665974,
+          43.347940425038104
+         ],
+         [
+          -3.4756767969637274,
+          43.32573546374388
+         ],
+         [
+          -3.3571993209528834,
+          43.32045388078542
+         ],
+         [
+          -3.2913420757592746,
+          43.34303675986158
+         ],
+         [
+          -3.2331996017515636,
+          43.30751441221466
+         ],
+         [
+          -3.0858150801095614,
+          43.34488908796
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6087,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 198523.787861189,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -3.0893308741291765,
+          43.34449434483299
+         ],
+         [
+          -3.035395496261281,
+          43.2770796490602
+         ],
+         [
+          -2.9830034042885396,
+          43.249149120043654
+         ],
+         [
+          -2.8637686008824628,
+          43.180404857090494
+         ],
+         [
+          -2.8070673336109344,
+          43.200374466886316
+         ],
+         [
+          -2.7160883933747852,
+          43.19808353222412
+         ],
+         [
+          -2.6181449908106487,
+          43.174462417830895
+         ],
+         [
+          -2.5086847227733977,
+          43.12807288104784
+         ],
+         [
+          -2.4401420628526007,
+          43.07958133593648
+         ],
+         [
+          -2.4663004200212146,
+          43.06125627112091
+         ],
+         [
+          -2.455007939333057,
+          43.02556348221289
+         ],
+         [
+          -2.476463807330487,
+          42.98822490482694
+         ],
+         [
+          -2.588252685552264,
+          42.961521438086464
+         ],
+         [
+          -2.6804956021055446,
+          42.917428495166135
+         ],
+         [
+          -2.7523237837026904,
+          42.904207048877744
+         ],
+         [
+          -2.774540423236124,
+          42.828171936816396
+         ],
+         [
+          -2.8347035038635515,
+          42.74224130485188
+         ],
+         [
+          -2.867274102005569,
+          42.70908515731708
+         ],
+         [
+          -2.8602537231444205,
+          42.654459165075366
+         ],
+         [
+          -2.8283922739523044,
+          42.65149168417824
+         ],
+         [
+          -2.830418372871675,
+          42.61573127224847
+         ],
+         [
+          -2.871853783392591,
+          42.58643009794955
+         ],
+         [
+          -2.8825570563909713,
+          42.56565572792798
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6088,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 268041.48734376096,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -2.882876123606833,
+          42.56558162076623
+         ],
+         [
+          -2.7313877303360203,
+          42.504852175689464
+         ],
+         [
+          -2.623545002935332,
+          42.43013074083188
+         ],
+         [
+          -2.2117670548568165,
+          42.353783080005506
+         ],
+         [
+          -1.9327663966731055,
+          42.26160935704223
+         ],
+         [
+          -1.898223893176213,
+          42.20806317423771
+         ],
+         [
+          -1.7683307765534197,
+          42.12901616894873
+         ],
+         [
+          -1.7071339488329993,
+          42.04276510412764
+         ],
+         [
+          -1.4777840702262866,
+          41.93651511612352
+         ],
+         [
+          -1.313970995174895,
+          41.77132934127841
+         ],
+         [
+          -1.0137276769399246,
+          41.59854485491869
+         ],
+         [
+          -0.9673535903966348,
+          41.57974792180739
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6089,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 208407.02223194603,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -0.9611097125721328,
+          41.5812649067682
+         ],
+         [
+          -0.6798957806998324,
+          41.48379940820799
+         ],
+         [
+          -0.4720630082434493,
+          41.2774255247022
+         ],
+         [
+          -0.0560402231050958,
+          41.17125558666207
+         ],
+         [
+          0.23735674778704566,
+          41.04920255012015
+         ],
+         [
+          0.5307338937591431,
+          41.09515556497316
+         ],
+         [
+          0.6650415086562145,
+          41.057242587702255
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6090,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 197338.049810797,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          0.6651568676100447,
+          41.057147212131646
+         ],
+         [
+          0.8106587530802338,
+          41.01276457773275
+         ],
+         [
+          0.9499847290569085,
+          41.03763966784981
+         ],
+         [
+          1.1906818541430917,
+          41.144125607251574
+         ],
+         [
+          1.4035596164390713,
+          41.213207710776814
+         ],
+         [
+          1.5268304264491706,
+          41.247375852798136
+         ],
+         [
+          1.6811862232423138,
+          41.35230093271666
+         ],
+         [
+          1.7983954343788495,
+          41.41634225692089
+         ],
+         [
+          1.944482422237947,
+          41.46861317368238
+         ],
+         [
+          2.0626308004444724,
+          41.350269658885495
+         ],
+         [
+          2.130487429559204,
+          41.32115174213642
+         ],
+         [
+          2.1620512866606028,
+          41.33958184827967
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6091,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 275342.716107684,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          0.6651052504138252,
+          41.05728751884785
+         ],
+         [
+          0.6528193453108216,
+          40.983248248963186
+         ],
+         [
+          0.7024825378084122,
+          40.87248915395296
+         ],
+         [
+          0.5241233667547883,
+          40.720899957896286
+         ],
+         [
+          0.24252405043907033,
+          40.55163526007509
+         ],
+         [
+          0.09502906655981629,
+          40.295927167906676
+         ],
+         [
+          0.00586049033596551,
+          40.121689647897085
+         ],
+         [
+          -0.13916621509497804,
+          39.930739295033874
+         ],
+         [
+          -0.1204002668759132,
+          39.840852721771505
+         ],
+         [
+          -0.24818544266704187,
+          39.71340970806516
+         ],
+         [
+          -0.2972663903166242,
+          39.674315202981624
+         ],
+         [
+          -0.2935241292172133,
+          39.60726710494791
+         ],
+         [
+          -0.40997863424251363,
+          39.59113987976966
+         ],
+         [
+          -0.4582974970191022,
+          39.5344455540587
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6092,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 320587.700791288,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -0.462104019102346,
+          39.53128440201261
+         ],
+         [
+          -0.5156632651742952,
+          39.50010044602221
+         ],
+         [
+          -0.5592404830130827,
+          39.462393089280596
+         ],
+         [
+          -0.5284195137870047,
+          39.42042270823349
+         ],
+         [
+          -0.5564223601689547,
+          39.33207640580551
+         ],
+         [
+          -0.5416740390231988,
+          39.303595474978906
+         ],
+         [
+          -0.5588216677663836,
+          39.20707229772075
+         ],
+         [
+          -0.587696753136375,
+          39.12900502067405
+         ],
+         [
+          -0.584829022627301,
+          39.016476065135365
+         ],
+         [
+          -0.617999619022297,
+          38.96098493781624
+         ],
+         [
+          -0.5761255871992773,
+          38.873624325195955
+         ],
+         [
+          -0.5578676129171976,
+          38.78862205671449
+         ],
+         [
+          -0.6889242481572114,
+          38.712770038258775
+         ],
+         [
+          -0.5996039366003995,
+          38.65177682103003
+         ],
+         [
+          -0.6094037487647195,
+          38.531781067203
+         ],
+         [
+          -0.5838458066673708,
+          38.43973352490822
+         ],
+         [
+          -0.6907207269101744,
+          38.2990749282787
+         ],
+         [
+          -0.9357843631664872,
+          38.13014337102874
+         ],
+         [
+          -0.9058416372678165,
+          37.98354558933303
+         ],
+         [
+          -0.8702437938734666,
+          37.916471363141056
+         ],
+         [
+          -0.884510052088283,
+          37.816804664707774
+         ],
+         [
+          -0.8986576051248478,
+          37.721973916796884
+         ],
+         [
+          -0.9503745179401611,
+          37.644286208120946
+         ],
+         [
+          -0.9281288080257901,
+          37.58377167082747
+         ],
+         [
+          -0.9508050660827834,
+          37.56507196203868
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6093,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 334040.86846538,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -3.2755362713358207,
+          39.385968231872326
+         ],
+         [
+          -3.233498046343459,
+          39.36172810315747
+         ],
+         [
+          -3.18727994865602,
+          39.356646100069405
+         ],
+         [
+          -3.107994780918515,
+          39.340103523670415
+         ],
+         [
+          -3.0915007996137294,
+          39.32307850409628
+         ],
+         [
+          -3.0023146083254946,
+          39.31684712425457
+         ],
+         [
+          -2.9386041722692293,
+          39.31719812493285
+         ],
+         [
+          -2.9151662443609343,
+          39.281992857246834
+         ],
+         [
+          -2.895982318124999,
+          39.28747151408559
+         ],
+         [
+          -2.764165575203936,
+          39.247264799810345
+         ],
+         [
+          -2.7396990017351652,
+          39.253902482999415
+         ],
+         [
+          -2.723832348129288,
+          39.2421298970471
+         ],
+         [
+          -2.660554603595952,
+          39.24389014310845
+         ],
+         [
+          -2.634179781189926,
+          39.237976865281894
+         ],
+         [
+          -2.5243201509234545,
+          39.24583570072587
+         ],
+         [
+          -2.376976851173194,
+          39.20374306971836
+         ],
+         [
+          -2.3224116258320318,
+          39.17829559513041
+         ],
+         [
+          -2.308866055426934,
+          39.18439160383329
+         ],
+         [
+          -2.25976021276589,
+          39.14599093786984
+         ],
+         [
+          -2.172463506405239,
+          39.10114078896437
+         ],
+         [
+          -2.1177589739230593,
+          39.066211263831484
+         ],
+         [
+          -2.0099999641169717,
+          39.023371840228386
+         ],
+         [
+          -1.9873119641809174,
+          39.02679829314853
+         ],
+         [
+          -1.9850811194453681,
+          38.997179684952236
+         ],
+         [
+          -1.8823537181744128,
+          38.927571464677094
+         ],
+         [
+          -1.7681546375874424,
+          38.920449654888465
+         ],
+         [
+          -1.699384096638619,
+          38.88530853722418
+         ],
+         [
+          -1.6493714082915514,
+          38.913009775307195
+         ],
+         [
+          -1.5864494037972174,
+          38.92805886978897
+         ],
+         [
+          -1.434212136277993,
+          38.89686629679853
+         ],
+         [
+          -1.17282945124547,
+          38.88564976105676
+         ],
+         [
+          -1.1531437494480214,
+          38.878179829268326
+         ],
+         [
+          -1.0966242580708565,
+          38.88665242317524
+         ],
+         [
+          -0.9607597792431029,
+          38.82572684930167
+         ],
+         [
+          -0.9080598076730179,
+          38.815149336854645
+         ],
+         [
+          -0.6182007006104489,
+          38.95675682072103
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6080,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 102752.642044497,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -6.908195859682008,
+          37.1712756232785
+         ],
+         [
+          -6.871318712915082,
+          37.197058931231915
+         ],
+         [
+          -6.717213820970707,
+          37.21267370294478
+         ],
+         [
+          -6.511220411940623,
+          37.23790968925779
+         ],
+         [
+          -6.390505883835619,
+          37.249002138040126
+         ],
+         [
+          -6.276313452578397,
+          37.27464545497277
+         ],
+         [
+          -6.220749815375937,
+          37.48464177827656
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6081,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 180890.270310081,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -6.220376648918709,
+          37.4840969418963
+         ],
+         [
+          -6.209556258065182,
+          37.54070450797551
+         ],
+         [
+          -6.176144505338885,
+          37.66945165472102
+         ],
+         [
+          -6.166737445599944,
+          37.767671849231284
+         ],
+         [
+          -6.219822015587552,
+          37.83507752871397
+         ],
+         [
+          -6.216660941120802,
+          37.90777459991474
+         ],
+         [
+          -6.216589385816838,
+          38.02865956508096
+         ],
+         [
+          -6.263910920100395,
+          38.085009765305735
+         ],
+         [
+          -6.347656090272884,
+          38.51098584599362
+         ],
+         [
+          -6.368713447643974,
+          38.58479011084877
+         ],
+         [
+          -6.343263289007666,
+          38.68785965067985
+         ],
+         [
+          -6.38426235904901,
+          38.710618325982864
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6082,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 439604.534096661,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -6.384281798591765,
+          38.71059863787899
+         ],
+         [
+          -6.354828997679397,
+          38.84680891832081
+         ],
+         [
+          -6.292561839874388,
+          38.89361623625291
+         ],
+         [
+          -6.3308580606854745,
+          39.034343041036536
+         ],
+         [
+          -6.260553382284337,
+          39.118716966844396
+         ],
+         [
+          -6.15081492127499,
+          39.50721994784508
+         ],
+         [
+          -6.154774932202629,
+          39.58237899896983
+         ],
+         [
+          -6.130021527561939,
+          39.75396897603396
+         ],
+         [
+          -6.172795259871235,
+          39.77912005894065
+         ],
+         [
+          -6.179005883860584,
+          40.0135913468809
+         ],
+         [
+          -6.092838563729606,
+          40.06381816279908
+         ],
+         [
+          -5.889519537216722,
+          40.32537294774132
+         ],
+         [
+          -5.820478306923323,
+          40.53937951724465
+         ],
+         [
+          -5.825877741431306,
+          40.832248978699475
+         ],
+         [
+          -5.726436719727761,
+          40.98642614806162
+         ],
+         [
+          -5.635838514255119,
+          41.558277275023364
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6083,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 318710.12120645,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -5.636055918231965,
+          41.558267625025906
+         ],
+         [
+          -5.671303916332201,
+          41.68591153979695
+         ],
+         [
+          -5.759664260328631,
+          41.769212644334864
+         ],
+         [
+          -5.733183990979615,
+          41.79533514791417
+         ],
+         [
+          -5.638069573688042,
+          41.943692205055285
+         ],
+         [
+          -5.618366523625814,
+          42.048722015949934
+         ],
+         [
+          -5.661946708599982,
+          42.10698974492327
+         ],
+         [
+          -5.627567801791025,
+          42.21964418192073
+         ],
+         [
+          -5.646735710167149,
+          42.385131945737584
+         ],
+         [
+          -5.696027640635891,
+          42.45641518073274
+         ],
+         [
+          -5.665268815064554,
+          42.519544277981765
+         ],
+         [
+          -5.716429103882075,
+          42.56137516494158
+         ],
+         [
+          -5.687743751683237,
+          42.60978167200706
+         ],
+         [
+          -5.685231488125347,
+          42.760248898234714
+         ],
+         [
+          -5.646259341656811,
+          42.80817300769392
+         ],
+         [
+          -5.727182600789645,
+          42.89476230684539
+         ],
+         [
+          -5.741970678674909,
+          42.99117478571701
+         ],
+         [
+          -5.802011474337685,
+          43.019181849946406
+         ],
+         [
+          -5.819666367348714,
+          43.16602826710957
+         ],
+         [
+          -5.851730792675894,
+          43.20346796813676
+         ],
+         [
+          -5.8419296393268745,
+          43.25055916106291
+         ],
+         [
+          -5.823970221027763,
+          43.27339176984979
+         ],
+         [
+          -5.7710009138742615,
+          43.29417267890628
+         ],
+         [
+          -5.715448282830674,
+          43.36139665003051
+         ],
+         [
+          -5.719210836872316,
+          43.39635831400703
+         ],
+         [
+          -5.787482247798145,
+          43.46211771031398
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6084,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.3",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Internal hydrogen infrastructure in Spain",
+       "PROJECT_FULL_TITLE": "Internal hydrogen infrastructure in Spain",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Spanish hydrogen backbone includes two main axes of pipelines of a total approximate length of 2,800 km:</p><p>Axis 1: Gijón - Santander - Bilbao - Guipúzcoa - Haro - Zaragoza - Tivissa - Tarragona - Barcelona; Tivissa - Montesa, Montesa – Cartagena, Alcazar de San Juan-Montesa of approximately 1,750 km. This axis also includes the Villar de Arnedo compressor station and the Tivissa compressor station.</p><p>Axis 2: Gijón (Musel) - Zamora - Almendralejo - Huelva; Almendralejo - Puertollano, of approximately 1,050 km. This axis also includes the Zamora compressor station.</p><p>The Spanish Hydrogen Backbone will include the compression stations to ensure the proper flow of hydrogen through the network, as well as different types of valve positions (regulation and metering stations).</p><p>The Central Scenario which emerged from Enagás’ 2023 Call for Interest is aligned with an export level of 2 MT/y (216 GWh/d) via BarMar and an estimated national consumption of approximately 1 MT/y for the 2030–2032 period.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)",
+       "COMMISSIONING_DATE": "31/12/2029",
+       "CEF_ACTIONS": "9.1.3-es-s-m-24-h2 backbone studies",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223497/CEF2027",
+       "PCI_ID": 1396,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 18945.850225899903,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -5.787501457372177,
+          43.462160550204246
+         ],
+         [
+          -5.761998390660588,
+          43.47981263098219
+         ],
+         [
+          -5.725060819614433,
+          43.5166460797289
+         ],
+         [
+          -5.700359828975621,
+          43.56579338211032
+         ]
+        ]
+       ]
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6681,
+       "INFRA": 26,
+       "PCI_CODE": "9.1.4",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.1",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "BarMar (ES, FR)",
+       "PROJECT_FULL_TITLE": "Hydrogen interconnector Spain - France [currently known as ‘BarMar’]",
+       "COUNTRY_CONCERNED": "ES, FR",
+       "TECHNICAL_DESCR": "<p>The Hydrogen Interconnector Spain – France [currently known as BarMar] aims at interconnecting future hydrogen infrastructure between Spain and France through an offshore hydrogen pipeline.</p><p>&nbsp;The project concerns the following infrastructure:</p><p>&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New compressor station in Barcelona with capacity of 60 MW;<br>&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New offshore interconnector Barcelona-Marseille consisting of approximately 400 km pipeline with a 1050 mm diameter.<br>&nbsp;</p><p>The project will enable the transport of 2 Mt/y of hydrogen and contributes to the emergence of one of the major hydrogen import corridors via the Mediterranean Sea identified in the REPowerEU plan.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Enagás Infraestructuras de Hidrógeno (ES)  ; Teréga SA (FR) ; NaTran (FR) ; Open Grid Europe (DE)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.1.4-fres-s-m-24-h2med barmar",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223599/CEF2027",
+       "PCI_ID": 1397,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 517781.361919573,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          4.868240464793316,
+          43.411219057034
+         ],
+         [
+          4.873259143876526,
+          43.4077784560875
+         ],
+         [
+          4.873955829600197,
+          43.40730294217807
+         ],
+         [
+          4.88364508520417,
+          43.400823646247986
+         ],
+         [
+          4.884002979403244,
+          43.400588920300486
+         ],
+         [
+          4.8843670782660045,
+          43.40035932488682
+         ],
+         [
+          4.88473724435016,
+          43.400134948178675
+         ],
+         [
+          4.885113333925344,
+          43.39991587377888
+         ],
+         [
+          4.885495207752604,
+          43.39970218594281
+         ],
+         [
+          4.885882720304946,
+          43.39949396696742
+         ],
+         [
+          4.886275721563652,
+          43.39929129392788
+         ],
+         [
+          4.886674066001661,
+          43.399094243246076
+         ],
+         [
+          4.887077598210441,
+          43.398902893301404
+         ],
+         [
+          4.887486169069641,
+          43.39871731202945
+         ],
+         [
+          4.887899619577474,
+          43.398537573892035
+         ],
+         [
+          4.888317796122004,
+          43.398363744864895
+         ],
+         [
+          4.888740537006519,
+          43.39819589288108
+         ],
+         [
+          4.889167683229166,
+          43.3980340799981
+         ],
+         [
+          4.889599072194906,
+          43.397878368272345
+         ],
+         [
+          4.890034538613736,
+          43.39772881714814
+         ],
+         [
+          4.89047391899222,
+          43.39758548084683
+         ],
+         [
+          4.890917046243798,
+          43.39744841881009
+         ],
+         [
+          4.8913637523834455,
+          43.39731767872918
+         ],
+         [
+          4.89181386583295,
+          43.39719331221022
+         ],
+         [
+          4.892267216810761,
+          43.39707536628855
+         ],
+         [
+          4.892723632840335,
+          43.39696388473439
+         ],
+         [
+          4.893182941445096,
+          43.396858911968756
+         ],
+         [
+          4.8936449665552795,
+          43.39676048523109
+         ],
+         [
+          4.894109535694343,
+          43.396668643716886
+         ],
+         [
+          4.894576469199268,
+          43.39658342270366
+         ],
+         [
+          4.895045591000188,
+          43.39650485289758
+         ],
+         [
+          4.907201105639696,
+          43.39455904424983
+         ],
+         [
+          4.907676911804652,
+          43.3944792459496
+         ],
+         [
+          4.9081504587066735,
+          43.39439260016006
+         ],
+         [
+          4.908621562191124,
+          43.39429914079515
+         ],
+         [
+          4.909090039001695,
+          43.39419890503034
+         ],
+         [
+          4.9095557031870865,
+          43.394091930691985
+         ],
+         [
+          4.910018374185984,
+          43.3939782621319
+         ],
+         [
+          4.910477869640341,
+          43.39385794108899
+         ],
+         [
+          4.910934011683734,
+          43.39373101517519
+         ],
+         [
+          4.911386621551406,
+          43.3935975359172
+         ],
+         [
+          4.911835519580371,
+          43.39345755288173
+         ],
+         [
+          4.9122805332940205,
+          43.39331112411986
+         ],
+         [
+          4.9127214857242585,
+          43.39315830376447
+         ],
+         [
+          4.913158207089534,
+          43.39299915378025
+         ],
+         [
+          4.913590524014975,
+          43.39283373613054
+         ],
+         [
+          4.914018267617292,
+          43.39266211408284
+         ],
+         [
+          4.914441272606488,
+          43.392484356125856
+         ],
+         [
+          4.91485937279423,
+          43.39230053074697
+         ],
+         [
+          4.915272403788818,
+          43.39211071100217
+         ],
+         [
+          4.915680203893509,
+          43.391914971904846
+         ],
+         [
+          4.916082613208183,
+          43.39171338716206
+         ],
+         [
+          4.916479476324279,
+          43.391506038966384
+         ],
+         [
+          4.916870636036669,
+          43.3912930062459
+         ],
+         [
+          4.917255939631682,
+          43.39107437380322
+         ],
+         [
+          4.917635237989064,
+          43.39085022578789
+         ],
+         [
+          4.9180083810901,
+          43.39062065091876
+         ],
+         [
+          4.918375221611068,
+          43.39038573922011
+         ],
+         [
+          4.918735621211481,
+          43.39014558202176
+         ],
+         [
+          4.919089431669284,
+          43.38990027195932
+         ],
+         [
+          4.919436521830467,
+          43.38964990819646
+         ],
+         [
+          4.9197767515578175,
+          43.389394585980455
+         ],
+         [
+          4.920109988798961,
+          43.38913440708705
+         ],
+         [
+          4.920436103298252,
+          43.388869471986986
+         ],
+         [
+          4.920754968393167,
+          43.388599885068324
+         ],
+         [
+          4.921066458319645,
+          43.38832575072015
+         ],
+         [
+          4.921370450906714,
+          43.388047177902024
+         ],
+         [
+          4.9216668293734855,
+          43.3877642749216
+         ],
+         [
+          4.9219554751422425,
+          43.38747715204631
+         ],
+         [
+          4.922236276821977,
+          43.38718592215599
+         ],
+         [
+          4.922509125716474,
+          43.38689069813178
+         ],
+         [
+          4.9227739140279505,
+          43.386591596773236
+         ],
+         [
+          4.9230305375517736,
+          43.38628873488149
+         ],
+         [
+          4.923278898371628,
+          43.385982229912216
+         ],
+         [
+          4.923518895876206,
+          43.38567220389261
+         ],
+         [
+          4.923750439335632,
+          43.38535877624035
+         ],
+         [
+          4.92397343712177,
+          43.38504207029216
+         ],
+         [
+          4.924187802996332,
+          43.384722208733955
+         ],
+         [
+          4.924393450721064,
+          43.38439931817085
+         ],
+         [
+          4.924590303939178,
+          43.38407352390449
+         ],
+         [
+          4.924778283598897,
+          43.38374495515602
+         ],
+         [
+          4.924957315140061,
+          43.38341373919036
+         ],
+         [
+          4.9251273311890555,
+          43.38308000523348
+         ],
+         [
+          4.925288261677273,
+          43.38274388381954
+         ],
+         [
+          4.925440049112499,
+          43.382405506791265
+         ],
+         [
+          4.925582629714407,
+          43.38206500729967
+         ],
+         [
+          4.9257159495840375,
+          43.38172251784573
+         ],
+         [
+          4.925839958415752,
+          43.38137817223892
+         ],
+         [
+          4.925954604107253,
+          43.38103210494451
+         ],
+         [
+          4.926059845336042,
+          43.380684451083646
+         ],
+         [
+          4.926155638084692,
+          43.38033534773906
+         ],
+         [
+          4.926241948217182,
+          43.3799849306908
+         ],
+         [
+          4.926318740699225,
+          43.37963333768068
+         ],
+         [
+          4.926385984988151,
+          43.379280707106425
+         ],
+         [
+          4.926443655931078,
+          43.378927174104525
+         ],
+         [
+          4.926491731070143,
+          43.37857287773201
+         ],
+         [
+          4.926530189744079,
+          43.378217957702105
+         ],
+         [
+          4.9265590220714515,
+          43.377862553078224
+         ],
+         [
+          4.926578210984217,
+          43.377506800968355
+         ],
+         [
+          4.926587752889152,
+          43.377150841748396
+         ],
+         [
+          4.926587644193003,
+          43.37679481514449
+         ],
+         [
+          4.926577882200812,
+          43.37643885892737
+         ],
+         [
+          4.926558474099123,
+          43.37608311413553
+         ],
+         [
+          4.926529426176079,
+          43.37572771789332
+         ],
+         [
+          4.926490750109845,
+          43.375372809939975
+         ],
+         [
+          4.9203413373239835,
+          43.32517740986667
+         ],
+         [
+          4.917358063706441,
+          43.300791584198976
+         ],
+         [
+          4.917153273872804,
+          43.29947965893462
+         ],
+         [
+          4.916968072702275,
+          43.29860978221037
+         ],
+         [
+          4.916628075638573,
+          43.29734952007328
+         ],
+         [
+          4.916016672374745,
+          43.29560958077455
+         ],
+         [
+          4.915659413284551,
+          43.29476881519949
+         ],
+         [
+          4.915135561624936,
+          43.29368458478591
+         ],
+         [
+          4.9141179967834905,
+          43.29190238716534
+         ],
+         [
+          4.913322369716141,
+          43.29071674423582
+         ],
+         [
+          4.912202943107989,
+          43.28925992712946
+         ],
+         [
+          4.911164842779129,
+          43.28807096385302
+         ],
+         [
+          4.910116489977928,
+          43.286995316908744
+         ],
+         [
+          4.9086725856009625,
+          43.28567672281455
+         ],
+         [
+          4.907400112119519,
+          43.28464027484771
+         ],
+         [
+          4.906126843629077,
+          43.28370311667612
+         ],
+         [
+          4.904755061393011,
+          43.28278917187923
+         ],
+         [
+          4.9029236471586275,
+          43.281701187985085
+         ],
+         [
+          4.901459216277418,
+          43.280927339069585
+         ],
+         [
+          4.899671376622542,
+          43.28008566291575
+         ],
+         [
+          4.897854085701091,
+          43.2793315420393
+         ],
+         [
+          4.896237289767888,
+          43.27874149488638
+         ],
+         [
+          4.894537342178723,
+          43.278196481961096
+         ],
+         [
+          4.892325723186888,
+          43.27759408589861
+         ],
+         [
+          4.890599384891327,
+          43.27720346589624
+         ],
+         [
+          4.888260910306641,
+          43.27677936808591
+         ],
+         [
+          4.2141843522369475,
+          43.16925293699564
+         ],
+         [
+          4.198053268747403,
+          43.166626148830915
+         ],
+         [
+          4.196398086005498,
+          43.16632868979246
+         ],
+         [
+          4.19465757319307,
+          43.16595306292665
+         ],
+         [
+          4.193148274158334,
+          43.16557784981126
+         ],
+         [
+          4.191559743715569,
+          43.1651258789465
+         ],
+         [
+          4.189625426567076,
+          43.164489222738744
+         ],
+         [
+          4.188470343130367,
+          43.16407307372431
+         ],
+         [
+          4.186975268019839,
+          43.16347421626822
+         ],
+         [
+          4.171295617604968,
+          43.156864746796174
+         ],
+         [
+          4.1696477516410555,
+          43.15620770223536
+         ],
+         [
+          4.167959013230005,
+          43.155608881708424
+         ],
+         [
+          4.166221742437436,
+          43.15506652016926
+         ],
+         [
+          4.164474344936654,
+          43.15459122171934
+         ],
+         [
+          4.162686328313682,
+          43.15417469072423
+         ],
+         [
+          4.160873245999333,
+          43.15382100197343
+         ],
+         [
+          4.1590392158708696,
+          43.15353095673093
+         ],
+         [
+          4.157188401619637,
+          43.15330521386887
+         ],
+         [
+          4.155325004666227,
+          43.15314428723607
+         ],
+         [
+          4.153453254278974,
+          43.15304853975165
+         ],
+         [
+          4.151577400387514,
+          43.15301819126337
+         ],
+         [
+          4.119376344898867,
+          43.15305459122884
+         ],
+         [
+          4.1177533182508625,
+          43.153031794313684
+         ],
+         [
+          4.116132938039708,
+          43.15296025325805
+         ],
+         [
+          4.11451793424548,
+          43.15284008585372
+         ],
+         [
+          4.1129110287635875,
+          43.15267149628338
+         ],
+         [
+          4.111313808917066,
+          43.15245843330786
+         ],
+         [
+          4.111313322030172,
+          43.152458352699306
+         ],
+         [
+          3.925147377034188,
+          43.12180542888022
+         ],
+         [
+          3.9229365602378925,
+          43.12138602485606
+         ],
+         [
+          3.9212234613129877,
+          43.120986215254675
+         ],
+         [
+          3.9190445194379353,
+          43.120376911294905
+         ],
+         [
+          3.9172614183961807,
+          43.11978830315461
+         ],
+         [
+          3.915373616013127,
+          43.119072360786916
+         ],
+         [
+          3.9133716745884013,
+          43.11819588123417
+         ],
+         [
+          3.9117940829308253,
+          43.11741084377203
+         ],
+         [
+          3.910064695753183,
+          43.11644541496327
+         ],
+         [
+          3.872031692100081,
+          43.0923510100908
+         ],
+         [
+          3.8642651042919747,
+          43.08744312808875
+         ],
+         [
+          3.863028906578354,
+          43.08669305578471
+         ],
+         [
+          3.829764056248803,
+          43.06737701982078
+         ],
+         [
+          3.828553316790357,
+          43.06664219777562
+         ],
+         [
+          3.827386454643606,
+          43.06587017218228
+         ],
+         [
+          3.826265590730997,
+          43.0650623500341
+         ],
+         [
+          3.8251927678214956,
+          43.06422020068254
+         ],
+         [
+          3.818236367873158,
+          43.05851950867327
+         ],
+         [
+          3.817171302814424,
+          43.05768293784865
+         ],
+         [
+          3.8163717608890573,
+          43.05710596110903
+         ],
+         [
+          3.814910984354407,
+          43.05610437613291
+         ],
+         [
+          3.8149109313538117,
+          43.05610434200084
+         ],
+         [
+          3.785796660556285,
+          43.03760183111322
+         ],
+         [
+          3.7807675816770123,
+          43.03441726618142
+         ],
+         [
+          3.7794478819644617,
+          43.0335359523266
+         ],
+         [
+          3.7781879759138453,
+          43.03260875511199
+         ],
+         [
+          3.7769908243723953,
+          43.03163785318591
+         ],
+         [
+          3.775859234575276,
+          43.030625530303794
+         ],
+         [
+          3.774147116610669,
+          43.02852178716201
+         ],
+         [
+          3.7733419081124784,
+          43.02759752381127
+         ],
+         [
+          3.772461518709838,
+          43.02671093394131
+         ],
+         [
+          3.7715092191687476,
+          43.02586530404644
+         ],
+         [
+          3.771040708222187,
+          43.025497387317685
+         ],
+         [
+          3.770488539868198,
+          43.025063769022346
+         ],
+         [
+          3.769403269902081,
+          43.024309302282944
+         ],
+         [
+          3.767892847074943,
+          43.023406924277765
+         ],
+         [
+          3.767055284853491,
+          43.022952573676996
+         ],
+         [
+          3.765801278937677,
+          43.02235534191734
+         ],
+         [
+          3.764500065655362,
+          43.021815220203564
+         ],
+         [
+          3.757080849181097,
+          43.01895044583782
+         ],
+         [
+          3.755434743915129,
+          43.01813411692497
+         ],
+         [
+          3.7540952956393876,
+          43.01740224171026
+         ],
+         [
+          3.7526931817877256,
+          43.016541380920714
+         ],
+         [
+          3.7526931099225247,
+          43.016541334944066
+         ],
+         [
+          3.7102261531810385,
+          42.9894883771354
+         ],
+         [
+          3.7075706873871153,
+          42.98784181384852
+         ],
+         [
+          3.7062632667461903,
+          42.9871147571309
+         ],
+         [
+          3.704913044975226,
+          42.9864311788057
+         ],
+         [
+          3.6932630078545357,
+          42.98080900922063
+         ],
+         [
+          3.6908358372119348,
+          42.97959884905484
+         ],
+         [
+          3.6882654463669935,
+          42.97822634599787
+         ],
+         [
+          3.6861350090257172,
+          42.977021281125815
+         ],
+         [
+          3.6838655618857628,
+          42.97565618291074
+         ],
+         [
+          3.6816528146099397,
+          42.97424182683438
+         ],
+         [
+          3.6794987515766673,
+          42.972779480674504
+         ],
+         [
+          3.677405297875627,
+          42.97127045428229
+         ],
+         [
+          3.675374324697539,
+          42.9697161009121
+         ],
+         [
+          3.673407650232529,
+          42.96811781526507
+         ],
+         [
+          3.6715070297886916,
+          42.96647702627355
+         ],
+         [
+          3.6669552509726806,
+          42.9622746216828
+         ],
+         [
+          3.665728320279551,
+          42.96127603110962
+         ],
+         [
+          3.6644894177386025,
+          42.96035979981817
+         ],
+         [
+          3.663170389067584,
+          42.959465602105716
+         ],
+         [
+          3.6631702013196907,
+          42.959465481140555
+         ],
+         [
+          3.532763564561366,
+          42.87600645024839
+         ],
+         [
+          3.5291100839614966,
+          42.87366357481518
+         ],
+         [
+          3.5277164088836344,
+          42.87265947269299
+         ],
+         [
+          3.5167784303560112,
+          42.86360707197071
+         ],
+         [
+          3.515926618159202,
+          42.86286472201917
+         ],
+         [
+          3.514888399252759,
+          42.86205928277561
+         ],
+         [
+          3.5138213120862916,
+          42.861326039250606
+         ],
+         [
+          3.5034553439007117,
+          42.85467053790077
+         ],
+         [
+          3.501942617793182,
+          42.85375318097734
+         ],
+         [
+          3.5003828109816086,
+          42.85294867129642
+         ],
+         [
+          3.490583647400926,
+          42.84859824382348
+         ],
+         [
+          3.4890772867554958,
+          42.84786112522845
+         ],
+         [
+          3.487462489573835,
+          42.84692784577828
+         ],
+         [
+          3.4811808232185646,
+          42.84289277287833
+         ],
+         [
+          3.4811827411217013,
+          42.842891093944665
+         ],
+         [
+          3.4811808232185646,
+          42.84289277287833
+         ],
+         [
+          3.3985260505957915,
+          42.78970148477244
+         ],
+         [
+          3.3973664423450027,
+          42.78892014079664
+         ],
+         [
+          3.3963779281215256,
+          42.78820006592223
+         ],
+         [
+          3.395565966089023,
+          42.787564545137755
+         ],
+         [
+          3.394486875633773,
+          42.78665088926449
+         ],
+         [
+          3.392952314176629,
+          42.78519521430963
+         ],
+         [
+          3.392213854097301,
+          42.7844129471491
+         ],
+         [
+          3.391316190091777,
+          42.78337722072465
+         ],
+         [
+          3.39056649118993,
+          42.78242109769309
+         ],
+         [
+          3.3898845953291374,
+          42.781467914300244
+         ],
+         [
+          3.3515841955553194,
+          42.721626701803785
+         ],
+         [
+          3.3515841955553194,
+          42.72162670114381
+         ],
+         [
+          3.3332562757502404,
+          42.69849089322574
+         ],
+         [
+          3.332484165678706,
+          42.69740265777968
+         ],
+         [
+          3.33215052060238,
+          42.696839816700304
+         ],
+         [
+          3.3317601190681065,
+          42.696066891978994
+         ],
+         [
+          3.331269785348391,
+          42.69479258698252
+         ],
+         [
+          3.328819080641998,
+          42.685996770045904
+         ],
+         [
+          3.3279377659746143,
+          42.6844992190798
+         ],
+         [
+          3.3272746377167155,
+          42.68317592011245
+         ],
+         [
+          3.3267907233580245,
+          42.6820417341562
+         ],
+         [
+          3.3264397946956437,
+          42.681091389142
+         ],
+         [
+          3.3020414922901495,
+          42.60963369272154
+         ],
+         [
+          3.302041491391819,
+          42.6096336887547
+         ],
+         [
+          3.3016108974351113,
+          42.608619388173175
+         ],
+         [
+          3.3009352718149922,
+          42.60733760416827
+         ],
+         [
+          3.2959762040357066,
+          42.599288072150664
+         ],
+         [
+          3.295340502241723,
+          42.59801553112493
+         ],
+         [
+          3.29483625092331,
+          42.59671125101052
+         ],
+         [
+          3.2883691606152965,
+          42.57722734268616
+         ],
+         [
+          3.288081252363357,
+          42.57624096301031
+         ],
+         [
+          3.2878144751818743,
+          42.57491019932672
+         ],
+         [
+          3.2876828441449875,
+          42.573568429855946
+         ],
+         [
+          3.287673275290572,
+          42.572559382250944
+         ],
+         [
+          3.2877713704212836,
+          42.570322131056905
+         ],
+         [
+          3.2877077104103423,
+          42.568855378967825
+         ],
+         [
+          3.287501986328824,
+          42.567395771997596
+         ],
+         [
+          3.2871552662735444,
+          42.56595081726071
+         ],
+         [
+          3.287155267171875,
+          42.56595082123039
+         ],
+         [
+          3.2730464387105873,
+          42.52449025987789
+         ],
+         [
+          3.2727454985988214,
+          42.52348454123781
+         ],
+         [
+          3.272466060561714,
+          42.522126918206865
+         ],
+         [
+          3.2723278251108336,
+          42.52076628826771
+         ],
+         [
+          3.272316000586773,
+          42.51972746369125
+         ],
+         [
+          3.272424782076089,
+          42.51835655516512
+         ],
+         [
+          3.278141153894416,
+          42.487060361723316
+         ],
+         [
+          3.2782345104120054,
+          42.48633454683616
+         ],
+         [
+          3.2782989636353173,
+          42.485331007127805
+         ],
+         [
+          3.2782972801924894,
+          42.48459302312749
+         ],
+         [
+          3.278231458834965,
+          42.483598432765895
+         ],
+         [
+          3.2780155900789256,
+          42.48222083828607
+         ],
+         [
+          3.2642709592950783,
+          42.4165801347566
+         ],
+         [
+          3.26048107580754,
+          42.39639689919501
+         ],
+         [
+          3.260311595154449,
+          42.39512957614909
+         ],
+         [
+          3.2602414070863674,
+          42.3942521583002
+         ],
+         [
+          3.2602088737000523,
+          42.393059580812626
+         ],
+         [
+          3.260232800327643,
+          42.39210008199375
+         ],
+         [
+          3.260337690315133,
+          42.390819940329806
+         ],
+         [
+          3.260455285175739,
+          42.38995432378259
+         ],
+         [
+          3.2631840687681977,
+          42.37278018932482
+         ],
+         [
+          3.2631840687681977,
+          42.37278019197944
+         ],
+         [
+          3.263321330445325,
+          42.371188782695235
+         ],
+         [
+          3.2632703142219968,
+          42.368599471690125
+         ],
+         [
+          3.263304943377906,
+          42.36752400823856
+         ],
+         [
+          3.2634856269208994,
+          42.3660960839253
+         ],
+         [
+          3.263818925247479,
+          42.364683346027334
+         ],
+         [
+          3.26404217815516,
+          42.363985475721094
+         ],
+         [
+          3.2644108036286275,
+          42.36303799324828
+         ],
+         [
+          3.2651143003787584,
+          42.36160634277705
+         ],
+         [
+          3.2655016799804293,
+          42.36094915380932
+         ],
+         [
+          3.266086477840488,
+          42.36007350781844
+         ],
+         [
+          3.2671283151609405,
+          42.35874981498076
+         ],
+         [
+          3.2676673968578798,
+          42.35815434889117
+         ],
+         [
+          3.268386428174217,
+          42.35743371486149
+         ],
+         [
+          3.2691510382114517,
+          42.3567393752274
+         ],
+         [
+          3.2697963968946997,
+          42.356205217251485
+         ],
+         [
+          3.2711975046332458,
+          42.35517819177837
+         ],
+         [
+          3.27226972117994,
+          42.35449430803415
+         ],
+         [
+          3.273033068185889,
+          42.354054000940394
+         ],
+         [
+          3.2745462263830887,
+          42.35328149107973
+         ],
+         [
+          3.2758777838573594,
+          42.3526973876798
+         ],
+         [
+          3.277169639389377,
+          42.35220839367668
+         ],
+         [
+          3.2792853623262967,
+          42.35149473189304
+         ],
+         [
+          3.282075285257008,
+          42.35059540805369
+         ],
+         [
+          3.2820758233478697,
+          42.3505951312125
+         ],
+         [
+          3.283435075882388,
+          42.349895189095676
+         ],
+         [
+          3.285208684426513,
+          42.34907925529849
+         ],
+         [
+          3.286764126324124,
+          42.3484446251287
+         ],
+         [
+          3.3020547397456457,
+          42.34278161119592
+         ],
+         [
+          3.3040441622485877,
+          42.34212552410586
+         ],
+         [
+          3.3120973925823893,
+          42.33967724032521
+         ],
+         [
+          3.3144985569974854,
+          42.338839572272775
+         ],
+         [
+          3.315897499796194,
+          42.33827544379502
+         ],
+         [
+          3.3344503945793225,
+          42.330396682785214
+         ],
+         [
+          3.335963285078554,
+          42.329717277809166
+         ],
+         [
+          3.337429900662538,
+          42.32898415314424
+         ],
+         [
+          3.3388467828174826,
+          42.32819903894855
+         ],
+         [
+          3.3402105862171965,
+          42.32736379085607
+         ],
+         [
+          3.3415180939947073,
+          42.326480378709235
+         ],
+         [
+          3.3427662222336125,
+          42.325550889238166
+         ],
+         [
+          3.3439520271547236,
+          42.324577516786704
+         ],
+         [
+          3.3450727114042804,
+          42.323562558686376
+         ],
+         [
+          3.3512028831750778,
+          42.317703510207345
+         ],
+         [
+          3.352259045031046,
+          42.31651493599268
+         ],
+         [
+          3.353185376972241,
+          42.3152681567536
+         ],
+         [
+          3.3537914163955,
+          42.314299550792015
+         ],
+         [
+          3.3542772702169237,
+          42.31338942583687
+         ],
+         [
+          3.3546262737896586,
+          42.31263147177623
+         ],
+         [
+          3.3550191995898753,
+          42.31160411713343
+         ],
+         [
+          3.3553293932473753,
+          42.31056128389736
+         ],
+         [
+          3.3555227205779814,
+          42.30968295370962
+         ],
+         [
+          3.3556597100655545,
+          42.30879880702288
+         ],
+         [
+          3.3557447697431515,
+          42.307732727885494
+         ],
+         [
+          3.355725535016301,
+          42.3063090318171
+         ],
+         [
+          3.3555548748752546,
+          42.3048909108365
+         ],
+         [
+          3.355233868196693,
+          42.30348722489909
+         ],
+         [
+          3.354764527206814,
+          42.3021067430558
+         ],
+         [
+          3.354316914667062,
+          42.301091801900654
+         ],
+         [
+          3.3482640312483376,
+          42.2886265847054
+         ],
+         [
+          3.347926732723783,
+          42.2879720121701
+         ],
+         [
+          3.3470202571436305,
+          42.286400092702344
+         ],
+         [
+          3.347926732723783,
+          42.2879720121701
+         ],
+         [
+          3.347926728232198,
+          42.28797200419553
+         ],
+         [
+          3.325755865049023,
+          42.249500766046054
+         ],
+         [
+          3.3251200428808283,
+          42.24857411120301
+         ],
+         [
+          3.3168969339402543,
+          42.237396789044794
+         ],
+         [
+          3.316896932143627,
+          42.237396783724094
+         ],
+         [
+          3.3005293006801923,
+          42.213110961297566
+         ],
+         [
+          3.2998540828952225,
+          42.21223869583308
+         ],
+         [
+          3.2869200109753782,
+          42.19655543897018
+         ],
+         [
+          3.2859083956760426,
+          42.195171820951025
+         ],
+         [
+          3.285908391184457,
+          42.195171812964716
+         ],
+         [
+          3.285347608885201,
+          42.194221207735076
+         ],
+         [
+          3.2847348222158432,
+          42.19296151676172
+         ],
+         [
+          3.284331924217647,
+          42.191921418943025
+         ],
+         [
+          3.2652500708525034,
+          42.13630076033286
+         ],
+         [
+          3.264971694624032,
+          42.13528940525639
+         ],
+         [
+          3.26477162723387,
+          42.134267842327134
+         ],
+         [
+          3.264650519960513,
+          42.13323942526189
+         ],
+         [
+          3.264608768961048,
+          42.13220753197519
+         ],
+         [
+          3.2643689762723755,
+          42.00828583387812
+         ],
+         [
+          3.2643886960894926,
+          42.01851973728737
+         ],
+         [
+          3.26435905976995,
+          42.00313737302776
+         ],
+         [
+          3.2643388018619723,
+          42.00242721620204
+         ],
+         [
+          3.2642413651963667,
+          42.00138682985437
+         ],
+         [
+          3.26398326843547,
+          41.99999771321174
+         ],
+         [
+          3.2586222566688052,
+          41.97758804387089
+         ],
+         [
+          3.258217894416707,
+          41.976208299002366
+         ],
+         [
+          3.25760914118295,
+          41.97472932018801
+         ],
+         [
+          3.257174776996991,
+          41.973880398743205
+         ],
+         [
+          3.256799597415201,
+          41.97323684967018
+         ],
+         [
+          3.2436259699619177,
+          41.952834657179366
+         ],
+         [
+          3.2429914692155206,
+          41.951919846979784
+         ],
+         [
+          3.2424058817363126,
+          41.95117588798065
+         ],
+         [
+          3.241781764616231,
+          41.950460079291986
+         ],
+         [
+          3.2411182680490884,
+          41.9497751250153
+         ],
+         [
+          3.240391479780248,
+          41.949092875245945
+         ],
+         [
+          3.2394758198246376,
+          41.94832218383739
+         ],
+         [
+          3.235447806429988,
+          41.94521564903991
+         ],
+         [
+          3.2345162912096073,
+          41.94439587574976
+         ],
+         [
+          3.2336519582943537,
+          41.943536071197805
+         ],
+         [
+          3.232609307100265,
+          41.942332709016654
+         ],
+         [
+          3.231902511736425,
+          41.94137561988432
+         ],
+         [
+          3.231104529286387,
+          41.94009185379055
+         ],
+         [
+          3.2304367791963546,
+          41.93874817595236
+         ],
+         [
+          3.2300310640814276,
+          41.93771672105451
+         ],
+         [
+          3.2297281306080694,
+          41.93673919330105
+         ],
+         [
+          3.229540206643871,
+          41.935963394144984
+         ],
+         [
+          3.229358596937837,
+          41.93489696421758
+         ],
+         [
+          3.2292495567336896,
+          41.9334660872645
+         ],
+         [
+          3.229246726142236,
+          41.92795463318082
+         ],
+         [
+          3.229138009331611,
+          41.92679354192716
+         ],
+         [
+          3.2288900392788937,
+          41.92546344970563
+         ],
+         [
+          3.2239635884292523,
+          41.90855041220583
+         ],
+         [
+          3.221291796653347,
+          41.89554061623886
+         ],
+         [
+          3.2209860236053647,
+          41.894251331222875
+         ],
+         [
+          3.220727386956979,
+          41.89337265222763
+         ],
+         [
+          3.220291908860052,
+          41.892131959996554
+         ],
+         [
+          3.219800175565092,
+          41.890958945694294
+         ],
+         [
+          3.219371249779861,
+          41.89006133512285
+         ],
+         [
+          3.2186400238335593,
+          41.88872585433283
+         ],
+         [
+          3.2177134753983636,
+          41.88726997701368
+         ],
+         [
+          3.2095081908296645,
+          41.87576722089482
+         ],
+         [
+          3.2087454780343334,
+          41.874586581745426
+         ],
+         [
+          3.2080603150008304,
+          41.87337967696928
+         ],
+         [
+          3.207588308709497,
+          41.87243559807777
+         ],
+         [
+          3.2070949979729337,
+          41.87131754775148
+         ],
+         [
+          3.1976804390979883,
+          41.848256430722245
+         ],
+         [
+          3.197111076091124,
+          41.84703687388459
+         ],
+         [
+          3.196464437308579,
+          41.84583905328947
+         ],
+         [
+          3.1957420022756393,
+          41.84466570185621
+         ],
+         [
+          3.1949454256890255,
+          41.843519503825355
+         ],
+         [
+          3.194076532027075,
+          41.84240307466666
+         ],
+         [
+          3.1931373083632346,
+          41.84131896507663
+         ],
+         [
+          3.192129902569331,
+          41.84026965226044
+         ],
+         [
+          3.1910566206206794,
+          41.83925752920419
+         ],
+         [
+          3.189527363715296,
+          41.83796986806284
+         ],
+         [
+          3.1832840617109,
+          41.83301914110766
+         ],
+         [
+          3.1818456190908195,
+          41.831731183766436
+         ],
+         [
+          3.180516910174312,
+          41.830378913017725
+         ],
+         [
+          3.1795954866278238,
+          41.829325636228745
+         ],
+         [
+          3.1787406776512315,
+          41.82824140216066
+         ],
+         [
+          3.1715123423950438,
+          41.8182330428307
+         ],
+         [
+          3.1703526407194564,
+          41.81683326605179
+         ],
+         [
+          3.1690811571814814,
+          41.8154889229683
+         ],
+         [
+          3.167702616919517,
+          41.81420500301866
+         ],
+         [
+          3.152712940914803,
+          41.80110163029607
+         ],
+         [
+          3.1515071457836488,
+          41.800158683788545
+         ],
+         [
+          3.150294373437705,
+          41.799296429921924
+         ],
+         [
+          3.1493669275855423,
+          41.79868736995793
+         ],
+         [
+          3.1480093414259067,
+          41.79786809071259
+         ],
+         [
+          3.1317620168369156,
+          41.78912972027016
+         ],
+         [
+          3.0892649341940692,
+          41.767690652888874
+         ],
+         [
+          3.087381315265298,
+          41.76680187107177
+         ],
+         [
+          3.0859225446686662,
+          41.766193262852795
+         ],
+         [
+          3.0845345828760102,
+          41.765674114822716
+         ],
+         [
+          3.0834128026818286,
+          41.765293176232284
+         ],
+         [
+          3.0818651321097414,
+          41.76482356369295
+         ],
+         [
+          3.0499940511811463,
+          41.75618461191731
+         ],
+         [
+          3.0479069638405356,
+          41.755505452169444
+         ],
+         [
+          3.046329365894747,
+          41.754910992095354
+         ],
+         [
+          3.044407085272796,
+          41.75408491097688
+         ],
+         [
+          3.0425079892699665,
+          41.7531461490267
+         ],
+         [
+          3.0412410853433274,
+          41.75244368014326
+         ],
+         [
+          3.0402514850566584,
+          41.75184970506617
+         ],
+         [
+          3.001417144644257,
+          41.727642432274145
+         ],
+         [
+          3.0001014729774576,
+          41.726780481881605
+         ],
+         [
+          2.9982902016667246,
+          41.725442123298926
+         ],
+         [
+          2.9972595591513675,
+          41.72459117781726
+         ],
+         [
+          2.996510039014276,
+          41.72392279885419
+         ],
+         [
+          2.9854465909942904,
+          41.713046766964894
+         ],
+         [
+          2.9842436731670055,
+          41.711953472892525
+         ],
+         [
+          2.9829298376566404,
+          41.71093438791001
+         ],
+         [
+          2.981347076194636,
+          41.70989619508528
+         ],
+         [
+          2.9803885459386765,
+          41.709348227944886
+         ],
+         [
+          2.979611301995297,
+          41.70894460324339
+         ],
+         [
+          2.9779963287438047,
+          41.708207578095234
+         ],
+         [
+          2.976309083332765,
+          41.707567921814544
+         ],
+         [
+          2.9754416009241544,
+          41.70728586780713
+         ],
+         [
+          2.9742145965691624,
+          41.70693787218316
+         ],
+         [
+          2.97230317837558,
+          41.70650417321245
+         ],
+         [
+          2.970454962052153,
+          41.70620500218993
+         ],
+         [
+          2.96952051473068,
+          41.70609648326488
+         ],
+         [
+          2.9682159821734224,
+          41.70599228719234
+         ],
+         [
+          2.966220357701753,
+          41.7059348570537
+         ],
+         [
+          2.9643312662362646,
+          41.70599560894147
+         ],
+         [
+          2.9622595616465506,
+          41.70616767705487
+         ],
+         [
+          2.960843205006075,
+          41.70624453374636
+         ],
+         [
+          2.958997335082166,
+          41.706250202762014
+         ],
+         [
+          2.9575330003206797,
+          41.706179504675255
+         ],
+         [
+          2.9556569101722823,
+          41.70598918474691
+         ],
+         [
+          2.9538066420967515,
+          41.70568879073205
+         ],
+         [
+          2.9519936765633927,
+          41.70528018619714
+         ],
+         [
+          2.9502292703610333,
+          41.70476590822374
+         ],
+         [
+          2.948944430671413,
+          41.70431274781368
+         ],
+         [
+          2.947667076643039,
+          41.70378986804813
+         ],
+         [
+          2.9461016293097906,
+          41.70304039894257
+         ],
+         [
+          2.9449600188057157,
+          41.7024075591329
+         ],
+         [
+          2.9438702869075826,
+          41.70172529604871
+         ],
+         [
+          2.927043465417004,
+          41.69054298791382
+         ],
+         [
+          2.9259238582474674,
+          41.68986995625704
+         ],
+         [
+          2.92477246958152,
+          41.689258274918146
+         ],
+         [
+          2.9239452882914927,
+          41.6888632959142
+         ],
+         [
+          2.922697506802267,
+          41.68833184266604
+         ],
+         [
+          2.9215180134443286,
+          41.687895104736285
+         ],
+         [
+          2.920531073069233,
+          41.68757306923283
+         ],
+         [
+          2.9193108267401047,
+          41.687229301958574
+         ],
+         [
+          2.9182748114010413,
+          41.686979391187045
+         ],
+         [
+          2.8875039645745795,
+          41.680638953213375
+         ],
+         [
+          2.886204912638847,
+          41.68034137673926
+         ],
+         [
+          2.884930381117087,
+          41.67998923391086
+         ],
+         [
+          2.8837061184203363,
+          41.6795910741561
+         ],
+         [
+          2.8828716715562845,
+          41.67928420377647
+         ],
+         [
+          2.881847388214814,
+          41.67886387995978
+         ],
+         [
+          2.880910625934854,
+          41.67843705600218
+         ],
+         [
+          2.8683551409066905,
+          41.672171592713994
+         ],
+         [
+          2.866589097973853,
+          41.67143645375196
+         ],
+         [
+          2.865405626875834,
+          41.67102013633255
+         ],
+         [
+          2.8645266011158212,
+          41.67074842621198
+         ],
+         [
+          2.863182917283499,
+          41.67039026480962
+         ],
+         [
+          2.8622494527189506,
+          41.67018034697472
+         ],
+         [
+          2.86088813136435,
+          41.669928052250924
+         ],
+         [
+          2.8594859708003053,
+          41.66973314725324
+         ],
+         [
+          2.8339049752378447,
+          41.66714398972313
+         ],
+         [
+          2.832050248823553,
+          41.666900463270395
+         ],
+         [
+          2.831133863029154,
+          41.66673800710424
+         ],
+         [
+          2.829788210089761,
+          41.66644675826459
+         ],
+         [
+          2.8280080672002486,
+          41.66596029104837
+         ],
+         [
+          2.8262847059215024,
+          41.665369966962245
+         ],
+         [
+          2.8250535818926212,
+          41.66486925190629
+         ],
+         [
+          2.824248782127877,
+          41.66450270880761
+         ],
+         [
+          2.8234637650623466,
+          41.664112792223264
+         ],
+         [
+          2.822344651966247,
+          41.66349614688231
+         ],
+         [
+          2.8208891215928453,
+          41.66257298515506
+         ],
+         [
+          2.8092150850809996,
+          41.65423134490525
+         ],
+         [
+          2.8083676099503774,
+          41.65359306881112
+         ],
+         [
+          2.8076164701508524,
+          41.65297221427799
+         ],
+         [
+          2.807023660216747,
+          41.652437144150895
+         ],
+         [
+          2.7854855406752805,
+          41.636224778263426
+         ],
+         [
+          2.7843737039329706,
+          41.63532730381181
+         ],
+         [
+          2.783351238781658,
+          41.63438339491206
+         ],
+         [
+          2.7825355164013725,
+          41.63352356089745
+         ],
+         [
+          2.7815683497423187,
+          41.63234248525284
+         ],
+         [
+          2.78077660070204,
+          41.63118978491875
+         ],
+         [
+          2.7801695650470997,
+          41.63013951173192
+         ],
+         [
+          2.7795528841809576,
+          41.628823368797526
+         ],
+         [
+          2.7770306394419846,
+          41.62225203522388
+         ],
+         [
+          2.776771398227386,
+          41.621586135093104
+         ],
+         [
+          2.756661656581553,
+          41.56588331969558
+         ],
+         [
+          2.7563489952519595,
+          41.565067487085095
+         ],
+         [
+          2.7558280523372454,
+          41.563883624150726
+         ],
+         [
+          2.754989564851049,
+          41.56227853279021
+         ],
+         [
+          2.7542574396911195,
+          41.56108119767208
+         ],
+         [
+          2.7532309581721512,
+          41.55961844731209
+         ],
+         [
+          2.731676626734767,
+          41.53105460503612
+         ],
+         [
+          2.7316763967660433,
+          41.53105429905968
+         ],
+         [
+          2.7316757356059793,
+          41.53105342282395
+         ],
+         [
+          2.7310336485869944,
+          41.53037470370129
+         ],
+         [
+          2.727816091648411,
+          41.52723316006002
+         ],
+         [
+          2.7270059639757482,
+          41.52639410695622
+         ],
+         [
+          2.7260282492986097,
+          41.52522354868014
+         ],
+         [
+          2.7251728546204426,
+          41.524000100846116
+         ],
+         [
+          2.7246146379096303,
+          41.523052130066496
+         ],
+         [
+          2.7241299159654826,
+          41.52208159618489
+         ],
+         [
+          2.720387592882339,
+          41.513386172917116
+         ],
+         [
+          2.7196582264486286,
+          41.51204954475896
+         ],
+         [
+          2.718685256672825,
+          41.510620724753814
+         ],
+         [
+          2.71812870184531,
+          41.50992517169324
+         ],
+         [
+          2.7174783332576826,
+          41.50918983492253
+         ],
+         [
+          2.706032228079535,
+          41.49692611120117
+         ],
+         [
+          2.7053066588245556,
+          41.49606525611129
+         ],
+         [
+          2.704943115120635,
+          41.49558670281147
+         ],
+         [
+          2.704942693810763,
+          41.49558618270291
+         ],
+         [
+          2.7037343070400155,
+          41.494096310825576
+         ],
+         [
+          2.7027657632636113,
+          41.49304047096419
+         ],
+         [
+          2.7020475799569006,
+          41.49232089571062
+         ],
+         [
+          2.701205836077793,
+          41.49153825699474
+         ],
+         [
+          2.700175940062458,
+          41.490653552867805
+         ],
+         [
+          2.699027655075782,
+          41.48975382415416
+         ],
+         [
+          2.6981315963596715,
+          41.48910514403702
+         ],
+         [
+          2.6972414593378935,
+          41.488503982934034
+         ],
+         [
+          2.6959278735591883,
+          41.48768575280265
+         ],
+         [
+          2.629942614844304,
+          41.44978189366831
+         ],
+         [
+          2.6288645844010956,
+          41.44918654828064
+         ],
+         [
+          2.6275702665869,
+          41.44852855730661
+         ],
+         [
+          2.6260336138517797,
+          41.44782515769663
+         ],
+         [
+          2.6240400330473737,
+          41.447024127803026
+         ],
+         [
+          2.4437964309879696,
+          41.379816745013514
+         ],
+         [
+          2.441824835551826,
+          41.379134447000894
+         ],
+         [
+          2.440278926576047,
+          41.37867322896157
+         ],
+         [
+          2.438255984336577,
+          41.378160660276926
+         ],
+         [
+          2.3610450661159623,
+          41.36048055768128
+         ],
+         [
+          2.356229073011988,
+          41.35937865805598
+         ],
+         [
+          2.354595135426538,
+          41.35907375079723
+         ],
+         [
+          2.329957335878083,
+          41.35549826676219
+         ],
+         [
+          2.328143998442192,
+          41.35528910003212
+         ],
+         [
+          2.3267142012084108,
+          41.35519925628945
+         ],
+         [
+          2.3249387762707876,
+          41.35517693019453
+         ],
+         [
+          2.3079389500362715,
+          41.35568499294364
+         ],
+         [
+          2.306518191650885,
+          41.35568822821343
+         ],
+         [
+          2.305548349808908,
+          41.35565368000106
+         ],
+         [
+          2.3041577532575324,
+          41.3555523642754
+         ],
+         [
+          2.2922145401640566,
+          41.35442733469994
+         ],
+         [
+          2.2911989902437675,
+          41.35437728817501
+         ],
+         [
+          2.28990935983876,
+          41.35435946888135
+         ],
+         [
+          2.2887905620512745,
+          41.354386356956965
+         ],
+         [
+          2.27894618356742,
+          41.355042846695625
+         ],
+         [
+          2.277108634737991,
+          41.35511476367906
+         ],
+         [
+          2.275728631120422,
+          41.35509866607926
+         ],
+         [
+          2.274352162373498,
+          41.35502257919229
+         ],
+         [
+          2.2731167956015255,
+          41.354902620689074
+         ],
+         [
+          2.2710204133926477,
+          41.35463319402916
+         ],
+         [
+          2.269646591082573,
+          41.35451467175802
+         ],
+         [
+          2.268041428332282,
+          41.35445319510166
+         ],
+         [
+          2.2664225689688795,
+          41.354471868043746
+         ],
+         [
+          2.2226670319529593,
+          41.35688645576114
+         ],
+         [
+          2.2174894292178817,
+          41.35713539587349
+         ],
+         [
+          2.2160806992741633,
+          41.357131236236995
+         ],
+         [
+          2.214476187802468,
+          41.35704921602723
+         ],
+         [
+          2.2128128887819547,
+          41.356878816807836
+         ],
+         [
+          2.2114323515651098,
+          41.35666752377251
+         ],
+         [
+          2.2011534507918062,
+          41.354532491009195
+         ],
+         [
+          2.1995138098026183,
+          41.35409251806996
+         ],
+         [
+          2.1946320303754057,
+          41.3525509038813
+         ],
+         [
+          2.1932489940454687,
+          41.35204899693397
+         ],
+         [
+          2.1917795397851565,
+          41.35142226933527
+         ],
+         [
+          2.1906237736288205,
+          41.350851836165404
+         ],
+         [
+          2.1863613206062684,
+          41.348539391276574
+         ],
+         [
+          2.184826646859721,
+          41.347826106715594
+         ],
+         [
+          2.183513634206163,
+          41.34730677372215
+         ],
+         [
+          2.183526192653819,
+          41.34728450089417
+         ],
+         [
+          2.163432722192712,
+          41.34084822392634
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  }
+ }
+}

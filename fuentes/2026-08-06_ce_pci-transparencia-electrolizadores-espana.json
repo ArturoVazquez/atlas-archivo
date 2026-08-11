@@ -1,0 +1,1027 @@
+{
+ "_captura": {
+  "fecha": "2026-08-06",
+  "plataforma": "PCI-PMI Transparency Platform (CINEA / Comisión Europea)",
+  "base_legal": "Reglamento (UE) 2022/869 (TEN-E), artículo 23",
+  "visor": "https://ec.europa.eu/energy/infrastructure/transparency_platform/map-viewer/main.html",
+  "servicio": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer",
+  "where": "PCI_CODE IN ('9.15.4','9.15.5','9.15.6','9.15.7','9.15.8') AND PCI_LIST_ACTIVE=1",
+  "outSR": 4326,
+  "aviso_de_la_fuente": "The GIS representation of projects displayed in this TP does not prejudge and may not coincide with the final route of the projects.",
+  "reutilizacion": "Information displayed at the viewer is downloadable and it can be reused if reference is mentioned. (Decisión 2011/833/UE: CC BY 4.0)",
+  "nota": "Los cinco proyectos ESPAÑOLES de electrólisis del grupo 9.15 de la lista de la Unión. La descripción técnica de cada uno la redacta su promotor y el registro la publica sin certificarla: el artículo 23 obliga a publicar, no a comprobar."
+ },
+ "capas": {
+  "7": {
+   "nombre": "Electrolyser",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/7/query?where=PCI_CODE%20IN%20%28%279.15.4%27%2C%279.15.5%27%2C%279.15.6%27%2C%279.15.7%27%2C%279.15.8%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "PCI_ID": "PCI_ID",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "NATURE_CODE": "NATURE_CODE"
+    },
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 6308,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.4",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Valle andaluz del hidrógeno verde electrolyser - Huelva",
+       "PROJECT_FULL_TITLE": "Valle andaluz del hidrógeno verde electrolyser - Huelva",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p style=\"text-align:justify;\">The <i>Andalusian Green Hydrogen Valley - Huelva</i> is Moeve’s strategic initiative to deploy 1,000 MW of electrolysis capacity in southern Spain, next to its Energy Parks in Huelva. Since 2022, the project has advanced significantly, supported by key industrial agreements.</p><p style=\"text-align:justify;\">In Huelva, renewable hydrogen will decarbonise the transport sector through the production of biofuels, SAF — where Moeve held 38% of the Spanish market in 2024 — and hydrogen derivatives for maritime fuels, as well as meeting internal demand at the Energy Park. Hydrogen injection into the gas grid is also being assessed to support other industrial users.</p><p style=\"text-align:justify;\">The 1,000 MW planned in Huelva will be developed in phases: • <strong>Phase 1:</strong> 400 MW – COD 2028 (ONUBA, e‑ammonia) • <strong>Phase 2:</strong> 200 MW – COD 2030 (THARSIS, e‑methanol and eSAF) • <strong>Phase 3:</strong> 400 MW – COD 2030 (under development) The FID for ONUBA is expected in Q1 2026.</p><p style=\"text-align:justify;\">The Final Investment Decision (FID) for 300 MW of ONUBA Subproject was taken is scheduled for Q1in February 2026, which may lead to adjustments in the planned dates.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "Moeve S.A. (previously known as Cepsa) (ES) ",
+       "COMMISSIONING_DATE": "12/2030",
+       "CEF_ACTIONS": "9.15.4-es-s-m-24-hyandalusia-studiesi",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223699/CEF2027",
+       "PCI_ID": 1414,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -6.898463999679027,
+       "y": 37.18576900013822
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6310,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.5",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": " Asturias H2 valley electrolyser",
+       "PROJECT_FULL_TITLE": " Asturias H2 valley electrolyser",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p style=\"text-align:justify;\">EDP Group has the ambition of developing 1 GW of electrolysis in the region of Asturias by 2030, if market conditions are favourable.</p><p>The Asturias H2 Valley project comprises a 150 MW electrolyser in its initial phase. Its purpose is to generate and distribute green hydrogen, utilising electricity sourced from renewable power facilities (including onshore wind, solar, and hydro). The hydrogen will be supplied to local consumers, including a refuelling station. The project is situated in the town of Aboño, which falls within the municipalities of Carreño and Gijón in Asturias (Spain). Notably, this location is adjacent to an existing coal power plant. The first operational phase is scheduled to commence by the end of 2027, and all necessary environmental and grid connection permits have already been secured.</p><p>The second phase of the project will be divided between two hubs: the Aboño H2 hub (which adds 350 MW of electrolysis to the initial phase) and the future Soto H2 hub (with 500 MW of electrolysis situated at EDP’s thermal power plant in Soto de Ribera, approximately 40 km away from Aboño). These two hubs will be interconnected by a high-capacity hydrogen pipeline that aligns with the European Hydrogen Backbone initiative. In total, this second phase will contribute 1 GW of electrolysis capacity, with an estimated yearly production of 0.126 Mt/y of hydrogen split equally between the two locations (Soto and Aboño).</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "H2 Aboño, S.A. (EDP Group) (ES)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.15.5-es-s-m-24-picast",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223631/CEF2027",
+       "PCI_ID": 1415,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -5.88282499976698,
+       "y": 43.31579700000392
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 6311,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.5",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": " Asturias H2 valley electrolyser",
+       "PROJECT_FULL_TITLE": " Asturias H2 valley electrolyser",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p style=\"text-align:justify;\">EDP Group has the ambition of developing 1 GW of electrolysis in the region of Asturias by 2030, if market conditions are favourable.</p><p>The Asturias H2 Valley project comprises a 150 MW electrolyser in its initial phase. Its purpose is to generate and distribute green hydrogen, utilising electricity sourced from renewable power facilities (including onshore wind, solar, and hydro). The hydrogen will be supplied to local consumers, including a refuelling station. The project is situated in the town of Aboño, which falls within the municipalities of Carreño and Gijón in Asturias (Spain). Notably, this location is adjacent to an existing coal power plant. The first operational phase is scheduled to commence by the end of 2027, and all necessary environmental and grid connection permits have already been secured.</p><p>The second phase of the project will be divided between two hubs: the Aboño H2 hub (which adds 350 MW of electrolysis to the initial phase) and the future Soto H2 hub (with 500 MW of electrolysis situated at EDP’s thermal power plant in Soto de Ribera, approximately 40 km away from Aboño). These two hubs will be interconnected by a high-capacity hydrogen pipeline that aligns with the European Hydrogen Backbone initiative. In total, this second phase will contribute 1 GW of electrolysis capacity, with an estimated yearly production of 0.126 Mt/y of hydrogen split equally between the two locations (Soto and Aboño).</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "H2 Aboño, S.A. (EDP Group) (ES)",
+       "COMMISSIONING_DATE": "31/12/2032",
+       "CEF_ACTIONS": "9.15.5-es-s-m-24-picast",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223631/CEF2027",
+       "PCI_ID": 1415,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": "Studies",
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -5.721403000151749,
+       "y": 43.55164800028046
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9783,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.6",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Valdo Eume electrolyser",
+       "PROJECT_FULL_TITLE": "Valdo Eume electrolyser",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p style=\"text-align:justify;\">Reganosa and Forestal del Atlántico, part of the Gadisa Group, are promoting the ValdoEume hydrogen valley initiative, which includes a first phase of 177 MW with a production of up to 27,000 t/y of RFNBO hydrogen with two electrolysis plants located in the municipalities of Mugardos (Triskelion facility with 77 MW) and As Pontes (H2Pole facility with 100 MW) connected by a 36 km hydrogen pipeline.</p><p style=\"text-align:justify;\">&nbsp;In the next stages of implementation, ValdoEume will be able to expand to a total electrolysis capacity of up to 500 MW to produce 75,000 t/y of renewable hydrogen in 2035.</p><p style=\"text-align:justify;\">The renewable hydrogen generated in the valley will be used for e-methanol production (as Forestal del Atlántico currently imports this raw material), mobility, and injection into the new H2Med hydrogen network via the Coruña-Zamora pipeline. This will help to consolidate a major energy hub in the northwest of the Iberian Peninsula and reinforce Spain’s position as a strategic node for renewable hydrogen in Europe.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "H2Pole, S.L. (Reganosa Group) (ES) ; Forestal del Atlántico (ES)",
+       "COMMISSIONING_DATE": "2035",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1491,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -7.890639187626215,
+       "y": 43.45460886389394
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9784,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.6",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Valdo Eume electrolyser",
+       "PROJECT_FULL_TITLE": "Valdo Eume electrolyser",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p style=\"text-align:justify;\">Reganosa and Forestal del Atlántico, part of the Gadisa Group, are promoting the ValdoEume hydrogen valley initiative, which includes a first phase of 177 MW with a production of up to 27,000 t/y of RFNBO hydrogen with two electrolysis plants located in the municipalities of Mugardos (Triskelion facility with 77 MW) and As Pontes (H2Pole facility with 100 MW) connected by a 36 km hydrogen pipeline.</p><p style=\"text-align:justify;\">&nbsp;In the next stages of implementation, ValdoEume will be able to expand to a total electrolysis capacity of up to 500 MW to produce 75,000 t/y of renewable hydrogen in 2035.</p><p style=\"text-align:justify;\">The renewable hydrogen generated in the valley will be used for e-methanol production (as Forestal del Atlántico currently imports this raw material), mobility, and injection into the new H2Med hydrogen network via the Coruña-Zamora pipeline. This will help to consolidate a major energy hub in the northwest of the Iberian Peninsula and reinforce Spain’s position as a strategic node for renewable hydrogen in Europe.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "H2Pole, S.L. (Reganosa Group) (ES) ; Forestal del Atlántico (ES)",
+       "COMMISSIONING_DATE": "2035",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1491,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -8.236954240141072,
+       "y": 43.46268492970076
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9788,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.7",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Catalina electrolyser",
+       "PROJECT_FULL_TITLE": "Catalina electrolyser ",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Catalina project will deploy a 500 MW electrolyser integrated with approximately 1.1 GW of dedicated renewable generation (onshore wind and solar PV). This configuration will enable the production of around 48,000 tons per year of green hydrogen during the first decade of operation. The project also envisions a future expansion to reach up to 2 GW of electrolyser capacity.</p><p>&nbsp;Catalina has secured grid connection for export (~130 MW) and for import (~200 MW), reinforcing its integration with the national electricity system.</p><p>&nbsp;Located in Aragón, Spain, the project aims to establish a hydrogen industrial hub in the Andorra region, fostering the development of complementary industries as hydrogen offtakers and creating a significant positive impact on employment in this rural area.</p><p>The electrolyser will be connected via a 40 km dedicated hydrogen pipeline to the Spanish Hydrogen Backbone (PCI 9.1.3), ensuring sufficient capacity to transport hydrogen produced by the plant at its ultimate scale of up to 2 GW.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "CI ETF I Renato Ptx Holdco, S.L.U.  (ES)",
+       "COMMISSIONING_DATE": "11/2030",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1492,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -0.40322471096598655,
+       "y": 41.00051657608013
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9729,
+       "INFRA": 27,
+       "PCI_CODE": "9.15.8",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "ErasmoPower2X electrolyser",
+       "PROJECT_FULL_TITLE": "ErasmoPower2X electrolyser",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>ErasmoPower2X is an innovative green hydrogen and e-methanol project development in Saceruela, Ciudad Real, Spain, aligned with Spanish and EU climate and energy goals. It will produce up to 80,000 tons of green hydrogen annually, supported by a 650 MW electrolysis plant, 1.2 GW solar photovoltaic installation, 890 MW of wind PPAs, and opportunity to use an integrated battery to improve the business case. Integrated into the national hydrogen backbone, developed by Enagás Infraestructuras and located at &lt;1km from the plants location, it decarbonizes steel and petro-chemical industries, stimulates economic growth, security of supply of energy and reindustrialisation.</p><p>The project will connect with the Spanish H2 Med Backbone, which is part of the European H2 backbone.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "ERASMO P2X S.L. (ES)",
+       "COMMISSIONING_DATE": "2030",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1493,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -4.577021982127027,
+       "y": 38.99011997104234
+      }
+     }
+    ]
+   }
+  },
+  "10": {
+   "nombre": "Other hydrogen assets",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/10/query?where=PCI_CODE%20IN%20%28%279.15.4%27%2C%279.15.5%27%2C%279.15.6%27%2C%279.15.7%27%2C%279.15.8%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "PCI_ID": "PCI_ID",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "NATURE_CODE": "NATURE_CODE"
+    },
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 9730,
+       "INFRA": 30,
+       "PCI_CODE": "9.15.7",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "Catalina electrolyser",
+       "PROJECT_FULL_TITLE": "Catalina electrolyser ",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>The Catalina project will deploy a 500 MW electrolyser integrated with approximately 1.1 GW of dedicated renewable generation (onshore wind and solar PV). This configuration will enable the production of around 48,000 tons per year of green hydrogen during the first decade of operation. The project also envisions a future expansion to reach up to 2 GW of electrolyser capacity.</p><p>&nbsp;Catalina has secured grid connection for export (~130 MW) and for import (~200 MW), reinforcing its integration with the national electricity system.</p><p>&nbsp;Located in Aragón, Spain, the project aims to establish a hydrogen industrial hub in the Andorra region, fostering the development of complementary industries as hydrogen offtakers and creating a significant positive impact on employment in this rural area.</p><p>The electrolyser will be connected via a 40 km dedicated hydrogen pipeline to the Spanish Hydrogen Backbone (PCI 9.1.3), ensuring sufficient capacity to transport hydrogen produced by the plant at its ultimate scale of up to 2 GW.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "CI ETF I Renato Ptx Holdco, S.L.U.  (ES)",
+       "COMMISSIONING_DATE": "11/2030",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1492,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "x": -0.40322471096598655,
+       "y": 41.00051657608013
+      }
+     }
+    ]
+   }
+  },
+  "11": {
+   "nombre": "Hydrogen pipeline",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/11/query?where=PCI_CODE%20IN%20%28%279.15.4%27%2C%279.15.5%27%2C%279.15.6%27%2C%279.15.7%27%2C%279.15.8%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "PCI_ID": "PCI_ID",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "SHAPE.LEN": "SHAPE.LEN",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "NATURE_CODE": "NATURE_CODE"
+    },
+    "geometryType": "esriGeometryPolyline",
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "SHAPE.LEN",
+      "type": "esriFieldTypeDouble",
+      "alias": "SHAPE.LEN"
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 6680,
+       "INFRA": 26,
+       "PCI_CODE": "9.15.8",
+       "ISHIGHWAY": null,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "CLUSTER_CODE": "9.15",
+       "SECTOR_ABBREVIATION": "H",
+       "CORRIDOR_CODE": "HI West",
+       "CORRIDOR_NUMBER": 21,
+       "PROJECT_FICHE_SHORT_TITLE": "ErasmoPower2X electrolyser",
+       "PROJECT_FULL_TITLE": "ErasmoPower2X electrolyser",
+       "COUNTRY_CONCERNED": "ES",
+       "TECHNICAL_DESCR": "<p>ErasmoPower2X is an innovative green hydrogen and e-methanol project development in Saceruela, Ciudad Real, Spain, aligned with Spanish and EU climate and energy goals. It will produce up to 80,000 tons of green hydrogen annually, supported by a 650 MW electrolysis plant, 1.2 GW solar photovoltaic installation, 890 MW of wind PPAs, and opportunity to use an integrated battery to improve the business case. Integrated into the national hydrogen backbone, developed by Enagás Infraestructuras and located at &lt;1km from the plants location, it decarbonizes steel and petro-chemical industries, stimulates economic growth, security of supply of energy and reindustrialisation.</p><p>The project will connect with the Spanish H2 Med Backbone, which is part of the European H2 backbone.</p>",
+       "IMPLEMENTATION_STATUS": 3,
+       "PROMOTERS": "ERASMO P2X S.L. (ES)",
+       "COMMISSIONING_DATE": "2030",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "PCI_ID": 1493,
+       "IMPLEMENTATION_STATUS_DESCR": "Permitting",
+       "SHAPE.LEN": 2632.7460459848703,
+       "PCI_LIST_ACTIVE": 1,
+       "STUDIES_OR_WORKS": null,
+       "NATURE_CODE": "PCI"
+      },
+      "geometry": {
+       "paths": [
+        [
+         [
+          -4.578956976605231,
+          38.991346153380384
+         ],
+         [
+          -4.579312019551586,
+          38.991665905148984
+         ],
+         [
+          -4.577389279890517,
+          38.99323718116594
+         ],
+         [
+          -4.573250987514957,
+          38.98942469733752
+         ],
+         [
+          -4.573188550111132,
+          38.989382482555115
+         ],
+         [
+          -4.573123480643511,
+          38.989358902732384
+         ],
+         [
+          -4.573057710489988,
+          38.989359112898754
+         ],
+         [
+          -4.572712621775304,
+          38.98936836999272
+         ],
+         [
+          -4.572627973526078,
+          38.98936677733695
+         ],
+         [
+          -4.572580543377362,
+          38.98934745599677
+         ],
+         [
+          -4.572528369225676,
+          38.98929222131689
+         ],
+         [
+          -4.572544405051829,
+          38.98921112421373
+         ],
+         [
+          -4.572540221597546,
+          38.98912247077936
+         ],
+         [
+          -4.572492452783992,
+          38.98901011370828
+         ],
+         [
+          -4.572399078300094,
+          38.98894085968051
+         ],
+         [
+          -4.572269388522535,
+          38.98888022036945
+         ],
+         [
+          -4.572190353845504,
+          38.98880500680009
+         ],
+         [
+          -4.572159635056059,
+          38.98872043752242
+         ],
+         [
+          -4.572167266244403,
+          38.988641031585516
+         ],
+         [
+          -4.572176353601807,
+          38.9885942610532
+         ],
+         [
+          -4.572193478186076,
+          38.98850666746593
+         ],
+         [
+          -4.572177438766667,
+          38.98842030615745
+         ],
+         [
+          -4.571858524264412,
+          38.98814844871445
+         ],
+         [
+          -4.5717879023100325,
+          38.98812657986504
+         ],
+         [
+          -4.57169260722804,
+          38.988132466021554
+         ],
+         [
+          -4.571612623031777,
+          38.98808494594207
+         ],
+         [
+          -4.571588573334984,
+          38.98801158395938
+         ],
+         [
+          -4.571602816123831,
+          38.987929319326184
+         ],
+         [
+          -4.571578929022113,
+          38.987875437430326
+         ],
+         [
+          -4.569364400387078,
+          38.98580320096051
+         ],
+         [
+          -4.569286388891174,
+          38.9857408635795
+         ],
+         [
+          -4.568980222381096,
+          38.98549621213309
+         ],
+         [
+          -4.568453491620982,
+          38.98507530501092
+         ],
+         [
+          -4.568110630728167,
+          38.98480132314679
+         ],
+         [
+          -4.568238363975048,
+          38.984749453386314
+         ],
+         [
+          -4.567705514789537,
+          38.984250795654
+         ],
+         [
+          -4.567643089063808,
+          38.98425259581327
+         ],
+         [
+          -4.567615062525265,
+          38.98424496224383
+         ],
+         [
+          -4.567579315865166,
+          38.984219694368925
+         ],
+         [
+          -4.56756452600232,
+          38.98419729221794
+         ],
+         [
+          -4.567558644732156,
+          38.98416332657177
+         ],
+         [
+          -4.567560803383815,
+          38.98414869763932
+         ],
+         [
+          -4.567569438888612,
+          38.98412344998017
+         ],
+         [
+          -4.56492267507484,
+          38.981646371120846
+         ],
+         [
+          -4.565010715362573,
+          38.9815515791978
+         ]
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  }
+ }
+}

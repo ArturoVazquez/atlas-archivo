@@ -1,0 +1,310 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "tiponombre": "identificador_geografico",
+    "tipo": "Playa",
+    "etiqueta": "Playa del Salto",
+    "fecha": "2023-07-20",
+    "codigo_ngbe": "6.2.2",
+    "fuente": "MITMA.IGN.BTN25"
+   },
+   "id": "2619832",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.8936157229999,
+     27.8286743180001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tiponombre": "identificador_geografico",
+    "tipo": "Núcleos de población",
+    "etiqueta": "Tamaduste",
+    "fecha": "2025-09-18",
+    "codigo_ngbe": "2.1.10",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2641148",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.89689738,
+     27.82440208
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tiponombre": "identificador_geografico",
+    "tipo": "Entidad singular",
+    "etiqueta": "Tamaduste",
+    "fecha": "2025-09-18",
+    "codigo_ngbe": "2.1.9",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2872051",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.89689738,
+     27.82440208
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Barrio",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-07-06",
+    "codigo_ngbe": "2.1.8",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.BTN25"
+   },
+   "id": "1961911",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.73748776199994,
+     41.504516472
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Edificación",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-07-22",
+    "codigo_ngbe": "2.2.2",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.BTN25"
+   },
+   "id": "2307197",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.41027755699992,
+     38.0510866150001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Núcleos de población",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2025-09-09",
+    "codigo_ngbe": "2.1.10",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2638789",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.68272606,
+     28.01029717
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Municipio",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-06-29",
+    "codigo_ngbe": "1.3",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2710503",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.3700270519,
+     28.3552352426
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Capital de municipio",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2025-07-06",
+    "codigo_ngbe": "2.1.3",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2814423",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.37015258,
+     28.35525824
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Entidad singular",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2025-09-09",
+    "codigo_ngbe": "2.1.9",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2863520",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.68272606,
+     28.01029717
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Entidad singular",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-06-29",
+    "codigo_ngbe": "2.1.9",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2871639",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.3700270519,
+     28.3552352426
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Entidad singular",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-06-29",
+    "codigo_ngbe": "2.1.9",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2871915",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.7647318561,
+     28.7055966319
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vértice Geodésico",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-06-30",
+    "codigo_ngbe": "2.3.1",
+    "etiqueta": "Candelaria",
+    "fuente": "MITMA.IGN.Red Geodésica"
+   },
+   "id": "3307995",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.663382259,
+     39.49925591
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Municipio",
+    "tiponombre": "nombre_alternativo_2",
+    "fecha": "2025-06-11",
+    "codigo_ngbe": "1.3",
+    "etiqueta": "Sagunto",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2711978",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.27853754,
+     39.68004221
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Capital de municipio",
+    "tiponombre": "nombre_alternativo_2",
+    "fecha": "2025-06-11",
+    "codigo_ngbe": "2.1.3",
+    "etiqueta": "Sagunto",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2815909",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.27853754,
+     39.68004221
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Entidad singular",
+    "tiponombre": "nombre_alternativo_2",
+    "fecha": "2025-06-11",
+    "codigo_ngbe": "2.1.9",
+    "etiqueta": "Sagunto",
+    "fuente": "MITMA.IGN.NGMEP"
+   },
+   "id": "2875085",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.27853754,
+     39.68004221
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Paraje",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-07-27",
+    "codigo_ngbe": "4.2.2",
+    "etiqueta": "Sagunto",
+    "fuente": "MITMA.IGN.BTN25"
+   },
+   "id": "554988",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.96050961799995,
+     37.3455198120001
+    ]
+   }
+  }
+ ],
+ "_": "Captura del Nomenclátor Geográfico Básico de España (IGN) para los aterrizajes de cables-submarinos añadidos el 2026-08-09: «Playa del Salto» y «Tamaduste» (Valverde, El Hierro — el amarre herreño de Canalink Base 6; el proyecto del expediente la llama «Playa de El Salto de Tamaduste»), «Candelaria» (Tenerife, amarre tinerfeño del mismo sistema, que el acto sitúa solo por término municipal) y «Sagunto» (Valencia, expediente CNC02/25/46/0013, también solo por término municipal). Consultas por etiqueta exacta, limit=100."
+}

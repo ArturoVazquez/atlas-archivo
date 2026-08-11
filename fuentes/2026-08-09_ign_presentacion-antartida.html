@@ -1,0 +1,660 @@
+<!DOCTYPE html> <html class="aui ltr" dir="ltr" lang="es-ES"> <head> <title>Presentación - Instituto Geogr&aacute;fico Nacional</title> <meta http-equiv="Cache-Control" content="max-age=3600"/> <meta http-equiv="last-modified" content="Fri, 14 Dec 2016 12:58:00 GMT" /> <meta content="IE=edge" http-equiv="X-UA-Compatible"/> <meta name="google-site-verification" content="ISK5_ZcnAXEJIbCj7RnAFYGbEPPyiwlFq58BfGEEg28"/> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <meta content="initial-scale=1.0, width=device-width" name="viewport" /> <meta http-equiv="expires" content="no-cache"/> <meta http-equiv="pragma" content="no-cache"/> <meta name="author" content="Instituto Geogr&aacute;fico Nacional"/> <meta name="title" content="Geoportal oficial del Instituto Geogr&aacute;fico Nacional de Espa&ntilde;a"/> <meta name="Description" content="El Portal Web del Instituto Geogr&aacute;fico Nacional tiene car&aacute;cter divulgativo y orientativo, y pretende poner a disposici&oacute;n de cualquier usuario interesado datos, aplicaciones, servicios y recursos geogr&aacute;ficos."/> <meta name="keywords" content="IGN, CNIG, Instituto Geogr&aacute;fico Nacional, comprar mapas de Espa&ntilde;a, Buscar mapas, buscar mapas de Espa&ntilde;a, buy maps of Spain, maps of spain, buy maps, Cartograf&iacute;a, Registro Cartogr&aacute;fico, Metadatos, Centro de Descargas, Tienda de mapas, Tienda Virtual,ortofotos,Sismolog&iacute;a, Geodesia, GPS, Registro Cartogr&aacute;fico, Iberpix, SIGNA, IDEE, Atlas Nacional de Espa&ntilde;a, ANE, Teledetecci&oacute;n, CORINE, Ortofotos, PNOA, SIOSE, PNT, PNOT,Terremotos,Sismo, Lorca, El Hierro, Parques Nacionales,Alerta terremotos, Tsunamis, Maremotos, Cat&aacute;logo S&iacute;smico,Sism&oacute;grafo, Aceler&oacute;grafo, Red S&iacute;smica, Observatorio sismol&oacute;gico, Observatorio geof&iacute;sico, Peligrosidad S&iacute;smica, Riesgo S&iacute;smico, Norma Sismorresistente, Sismicidad, riesgo volc&aacute;nico,vulcanolog&iacute;a, volc&aacute;n, peligrosidad volc&aacute;nica,alerta volc&aacute;nica, Campo magn&eacute;tico, Geomagnetismo, Gravimetr&iacute;a,Camino de Santiago" /> <meta content="width=device-width, user-scalable=1, initial-scale = 1, minimum-scale = 1" name="viewport"/> <meta name="rating" content="General"/> <meta name="robots" content="FOLLOW,INDEX"/> <meta name="revisit-after" content="1 weeks"/> <meta property="og:type" content="website"/> <meta property="og:title" content="Instituto Geogr&aacute;fico Nacional"/> <meta property="og:description" content="El Portal Web del Instituto Geogr&aacute;fico Nacional tiene car&aacute;cter divulgativo y orientativo, y pretende poner a disposici&oacute;n de cualquier usuario interesado datos, aplicaciones, servicios y recursos geogr&aacute;ficos"/> <meta property="og:url" content="http://www.ign.es" /> <meta property="og:site_name" content="Geoportal oficial del Instituto Geogr&aacute;fico Nacional de Espa&ntilde;a"/> <meta property="og:image" content="http://www.ign.es/web/resources/docs/IGNCnig/IGN-Difusion.jpg"/> <meta property="og:locale" content="es_ES"/> <meta data-name="twitter:card" content="summary" itemprop="resumen"/> <meta data-name="twitter:site" content="@IGNSpain" itemprop="sitio"/> <meta data-name="twitter:title" content="InstitutoGeogr&aacute;ficoNacional" itemprop="titulo"/> <meta data-name="twitter:description" content="El Portal Web del Instituto Geogr&aacute;fico Nacional tiene car&aacute;cter divulgativo y orientativo, y pretende poner a disposici&oacute;n de cualquier usuario interesado datos, aplicaciones, servicios y recursos geogr&aacute;ficos" itemprop="description"/> <meta data-name="twitter:creator" content="@IGNSpain" itemprop="sitio"/> <meta data-name="twitter:image" content="http://www.ign.es/web/resources/docs/IGNCnig/IGN-Difusion.jpg" itemprop="image"/> <meta data-name="geo.region" content="ES-M" itemprop="region"/> <meta data-name="geo.placename" content="Madrid" itemprop="location"/> <meta data-name="geo.position" content="40.404460;-3.710000" itemprop="position"/> <meta data-name="ICBM" content="40.404460, -3.710000" itemprop="ICBM"/> <meta data-name="DC.title" content="InstitutoGeogr&aacute;ficoNacional" itemprop="titulo"/> <!-- Google analitycs --> <script type="text/javascript" src="/Urc-theme/js/jquery.js"></script> <!-- GA3--> <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18205901-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+    
+    //Registrar descargas de ficheros zip y pdf
+	$(function(){
+		$('a[href*=".pdf"],a[href*=".zip"],a[target="_blank"]').click(function(){
+		
+		var nombreDocumento = $(this).attr("href");
+		_gaq.push(['_trackEvent','Descargado',nombreDocumento]);
+		})});
+</script> <!-- GA4--> <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8K315FYNK"></script> <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-N8K315FYNK');
+	</script> <!--<link itemprop="Shortcut Icon" href="https://www.ign.es/Urc-theme/images/favicon.ico" />--> <link rel="Shortcut Icon" href="https://www.ign.es/Urc-theme/images/favicon.ico" /> <!-- jquery --> <script type="text/javascript" src="/Urc-theme/js/jquery.js" async="async"></script> <!-- fontawesome 3.2.1 --> <link rel="stylesheet" type="text/css" href="/Urc-theme/css/font-awesome.min.css" /> <link rel="stylesheet" type="text/css" href="/Urc-theme/css/font-awesome-ie7.min.css" /> <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'/> <!-- icheck plugin change the checkbox,radio buttons default style --> <link rel="stylesheet" type="text/css" href="/Urc-theme/css/icheck-blue.css" /> <!-- slider dots--> <link rel="stylesheet" type="text/css" href="/Urc-theme/css/slider-dots.css" /> <!-- <target name="validate-xml"> <xmlvalidate lenient="no"> <fileset dir="dev/web" includes="*.xml"> </fileset> </xmlvalidate> </target> --> <link href="https://www.ign.es/Urc-theme/images/favicon.ico" rel="Shortcut Icon" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;presentacion-antartida" rel="canonical" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;presentacion-antartida" hreflang="x-default" rel="alternate" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;presentacion-antartida" hreflang="es-ES" rel="alternate" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ca&#x2f;presentacion-antartida" hreflang="ca-ES" rel="alternate" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;eu&#x2f;presentacion-antartida" hreflang="eu-ES" rel="alternate" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;gl&#x2f;presentacion-antartida" hreflang="gl-ES" rel="alternate" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ca_AD&#x2f;presentacion-antartida" hreflang="ca-AD" rel="alternate" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;en&#x2f;presentacion-antartida" hreflang="en-GB" rel="alternate" /> <link class="lfr-css-file" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;Urc-theme&#x2f;css&#x2f;aui&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;Urc_WAR_Urctheme&#x26;languageId&#x3d;es_ES&#x26;b&#x3d;6203&#x26;t&#x3d;1714037841000" rel="stylesheet" type="text/css" /> <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;html&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;Urc_WAR_Urctheme&#x26;languageId&#x3d;es_ES&#x26;b&#x3d;6203&#x26;t&#x3d;1714037841000" rel="stylesheet" type="text/css" /> <link href="https://www.ign.es/web/html/portlet/journal_content/css/main.css?browserId=other&amp;themeId=Urc_WAR_Urctheme&amp;languageId=es_ES&amp;b=6203&amp;t=1785940385000" rel="stylesheet" type="text/css" /> <link href="https://www.ign.es/web/html/portlet/journal/css/main.css?browserId=other&amp;themeId=Urc_WAR_Urctheme&amp;languageId=es_ES&amp;b=6203&amp;t=1785940385000" rel="stylesheet" type="text/css" /> <script type="text/javascript">
+	
+		var Liferay = {
+			Browser: {
+				acceptsGzip: function() {
+					return false;
+				},
+				getMajorVersion: function() {
+					return 0.0;
+				},
+				getRevision: function() {
+					return "";
+				},
+				getVersion: function() {
+					return "";
+				},
+				isAir: function() {
+					return false;
+				},
+				isChrome: function() {
+					return false;
+				},
+				isFirefox: function() {
+					return false;
+				},
+				isGecko: function() {
+					return false;
+				},
+				isIe: function() {
+					return false;
+				},
+				isIphone: function() {
+					return false;
+				},
+				isLinux: function() {
+					return false;
+				},
+				isMac: function() {
+					return false;
+				},
+				isMobile: function() {
+					return false;
+				},
+				isMozilla: function() {
+					return false;
+				},
+				isOpera: function() {
+					return false;
+				},
+				isRtf: function() {
+					return false;
+				},
+				isSafari: function() {
+					return false;
+				},
+				isSun: function() {
+					return false;
+				},
+				isWap: function() {
+					return false;
+				},
+				isWapXhtml: function() {
+					return false;
+				},
+				isWebKit: function() {
+					return false;
+				},
+				isWindows: function() {
+					return false;
+				},
+				isWml: function() {
+					return false;
+				}
+			},
+
+			Data: {
+				NAV_SELECTOR: '#navigation',
+
+				isCustomizationView: function() {
+					return false;
+				},
+
+				notices: [
+					null
+
+					
+
+					
+				]
+			},
+
+			ThemeDisplay: {
+				
+					getLayoutId: function() {
+						return "1026";
+					},
+					getLayoutURL: function() {
+						return "https://www.ign.es/web/ign/portal/presentacion-antartida";
+					},
+					getParentLayoutId: function() {
+						return "1025";
+					},
+					isPrivateLayout: function() {
+						return "false";
+					},
+					isVirtualLayout: function() {
+						return false;
+					},
+				
+
+				getBCP47LanguageId: function() {
+					return "es-ES";
+				},
+				getCDNBaseURL: function() {
+					return "https://www.ign.es";
+				},
+				getCDNDynamicResourcesHost: function() {
+					return "https://www.ign.es";
+				},
+				getCDNHost: function() {
+					return "https://www.ign.es";
+				},
+				getCompanyId: function() {
+					return "10155";
+				},
+				getCompanyGroupId: function() {
+					return "10195";
+				},
+				getDefaultLanguageId: function() {
+					return "es_ES";
+				},
+				getDoAsUserIdEncoded: function() {
+					return "";
+				},
+				getLanguageId: function() {
+					return "es_ES";
+				},
+				getParentGroupId: function() {
+					return "10182";
+				},
+				getPathContext: function() {
+					return "/web";
+				},
+				getPathImage: function() {
+					return "https://www.ign.es/web/image";
+				},
+				getPathJavaScript: function() {
+					return "/web/html/js";
+				},
+				getPathMain: function() {
+					return "/web/c";
+				},
+				getPathThemeImages: function() {
+					return "https://www.ign.es/Urc-theme/images";
+				},
+				getPathThemeRoot: function() {
+					return "/Urc-theme";
+				},
+				getPlid: function() {
+					return "482328";
+				},
+				getPortalURL: function() {
+					return "https://www.ign.es";
+				},
+				getPortletSetupShowBordersDefault: function() {
+					return true;
+				},
+				getScopeGroupId: function() {
+					return "10182";
+				},
+				getScopeGroupIdOrLiveGroupId: function() {
+					return "10182";
+				},
+				getSessionId: function() {
+					
+						
+						
+							return "";
+						
+					
+				},
+				getSiteGroupId: function() {
+					return "10182";
+				},
+				getURLControlPanel: function() {
+					return "/web/group/control_panel?refererPlid=482328";
+				},
+				getURLHome: function() {
+					return "https\x3a\x2f\x2fwww\x2eign\x2ees\x2fweb\x2fweb\x2fign\x2fportal\x2finicio";
+				},
+				getUserId: function() {
+					return "10159";
+				},
+				getUserName: function() {
+					
+						
+						
+							return "";
+						
+					
+				},
+				isAddSessionIdToURL: function() {
+					return false;
+				},
+				isFreeformLayout: function() {
+					return false;
+				},
+				isImpersonated: function() {
+					return false;
+				},
+				isSignedIn: function() {
+					return false;
+				},
+				isStateExclusive: function() {
+					return false;
+				},
+				isStateMaximized: function() {
+					return false;
+				},
+				isStatePopUp: function() {
+					return false;
+				}
+			},
+
+			PropsValues: {
+				NTLM_AUTH_ENABLED: false
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		
+
+		Liferay.AUI = {
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=Urc_WAR_Urctheme&colorSchemeId=01&languageId=es_ES&b=6203&t=1639407164000';
+			},
+			getCombine: function() {
+				return false;
+			},
+			getComboPath: function() {
+				return 'https://www.ign.es/web/combo/?browserId=other&minifierType=&languageId=es_ES&b=6203&t=1639407164000&';
+			},
+			getFilter: function() {
+				
+					
+					
+					
+						return 'raw';
+					
+				
+			},
+			getJavaScriptRootPath: function() {
+				return '/web/html/js';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=Urc_WAR_Urctheme&colorSchemeId=01&languageId=es_ES&b=6203&t=1639407164000';
+			}
+		};
+
+		Liferay.authToken = 'CnnGyMoT';
+
+		
+
+		Liferay.currentURL = '\x2fweb\x2fpresentacion-antartida';
+		Liferay.currentURLEncoded = '%2Fweb%2Fpresentacion-antartida';
+	
+</script> <script src="https://www.ign.es/web/html/js/aui/aui/aui.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-base-html5-shiv/aui-base-html5-shiv.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/browser_selectors.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/modules.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/aui_sandbox.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/arraylist-add/arraylist-add.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/arraylist-filter/arraylist-filter.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/arraylist/arraylist.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/array-extras/array-extras.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/array-invoke/array-invoke.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/attribute-base/attribute-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/attribute-complex/attribute-complex.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/attribute-core/attribute-core.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/attribute-observable/attribute-observable.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/attribute-extras/attribute-extras.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/base-base/base-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/base-pluginhost/base-pluginhost.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/classnamemanager/classnamemanager.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/datatype-xml-format/datatype-xml-format.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/datatype-xml-parse/datatype-xml-parse.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/dom-base/dom-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/dom-core/dom-core.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/dom-screen/dom-screen.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/dom-style/dom-style.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-base/event-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-custom-base/event-custom-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-custom-complex/event-custom-complex.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-delegate/event-delegate.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-focus/event-focus.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-hover/event-hover.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-key/event-key.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-mouseenter/event-mouseenter.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-mousewheel/event-mousewheel.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-outside/event-outside.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-resize/event-resize.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-simulate/event-simulate.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/event-synthetic/event-synthetic.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/intl/intl.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/io-base/io-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/io-form/io-form.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/io-queue/io-queue.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/io-upload-iframe/io-upload-iframe.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/io-xdr/io-xdr.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/json-parse/json-parse.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/json-stringify/json-stringify.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-base/node-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-core/node-core.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-event-delegate/node-event-delegate.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-event-simulate/node-event-simulate.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-focusmanager/node-focusmanager.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-pluginhost/node-pluginhost.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-screen/node-screen.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/node-style/node-style.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/oop/oop.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/plugin/plugin.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/pluginhost-base/pluginhost-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/pluginhost-config/pluginhost-config.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/querystring-stringify-simple/querystring-stringify-simple.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/queue-promote/queue-promote.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/selector-css2/selector-css2.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/selector-css3/selector-css3.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/selector-native/selector-native.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/selector/selector.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/widget-base/widget-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/widget-htmlparser/widget-htmlparser.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/widget-skin/widget-skin.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/widget-uievents/widget-uievents.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/yui-throttle/yui-throttle.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-base-core/aui-base-core.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-base-lang/aui-base-lang.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-classnamemanager/aui-classnamemanager.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-component/aui-component.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-debounce/aui-debounce.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-delayed-task-deprecated/aui-delayed-task-deprecated.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-event-base/aui-event-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-event-input/aui-event-input.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-form-validator/aui-form-validator.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-node-base/aui-node-base.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-node-html5/aui-node-html5.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-selector/aui-selector.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/aui/aui-timer/aui-timer.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/dependency.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/events.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/language.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/liferay.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/util.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/portal.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/portlet.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/portlet_sharing.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/workflow.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/form.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/form_placeholders.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/icon.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/menu.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/notice.js?t=1639407164000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/js/liferay/poller.js?t=1639407164000" type="text/javascript"></script> <script type="text/javascript">
+	
+		
+
+			
+
+			
+				Liferay.Portlet.list = ['56_INSTANCE_LOxICOCDkm4b', '15'];
+			
+		
+
+		
+
+		
+	
+</script> <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'G-N8K315FYNK']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+    
+    //Registrar descargas de ficheros zip y pdf
+	$(function(){
+		$('a[href*=".pdf"],a[href*=".zip"],a[target="_blank"]').click(function(){
+		
+		var nombreDocumento = $(this).attr("href");
+		_gaq.push(['_trackEvent','Descargado',nombreDocumento]);
+		})});
+</script> <script src="https://www.ign.es/web/html/portlet/journal/js/main.js?browserId=other&amp;languageId=es_ES&amp;b=6203&amp;t=1785940385000" type="text/javascript"></script> <script src="https://www.ign.es/web/html/portlet/journal/js/navigation.js?browserId=other&amp;languageId=es_ES&amp;b=6203&amp;t=1785940385000" type="text/javascript"></script> <link class="lfr-css-file" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;Urc-theme&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;Urc_WAR_Urctheme&#x26;languageId&#x3d;es_ES&#x26;b&#x3d;6203&#x26;t&#x3d;1714037841000" rel="stylesheet" type="text/css" /> <style type="text/css">
+		.igncnig-direct-links.div-actualidad-ign:not(.visitas, #aniversario) h3, .div-actualidad-ign.visitas h2 {
+     font-size:22px !important;
+     text-transform: uppercase !important;
+     text-align: center;
+}
+ .site-search .gsib_b {
+     height: 20px !important;
+}
+ .site-search .gsc-input-box {
+     border: 1px solid white;
+}
+ @media (max-width: 769px) {
+     #home-noticias-carousel .slick-slide img {
+         height: 300px;
+         object-fit: cover;
+    }
+     #banner .site-search {
+         left: 0;
+    }
+     #content {
+         margin-top: 0;
+    }
+	#___gcse_0 {
+		 right: 0 !important;
+		 width: 100% !important;
+	}
+	form.gsc-search-box {
+		max-width: 100% !important;
+	}
+	form.gsc-search-box tbody {
+		display: inline-table;
+		width: 100%;
+	}
+	.footer-text-section.aenor {
+		display: none !important;
+	}
+	.footer-text-section .wai {
+		display: flex;
+		align-items: center;
+	}
+	.aenor-mob {
+	  display: block !important;
+	  width: 50px;
+	  margin-left: 5px;
+	}
+}
+ @media (max-width: 1254px) {
+     #content {
+         margin-top: 0px !important;
+    }
+}
+ @media (max-width: 969px) {
+     #banner .site-search {
+         float: right !important;
+    	 z-index: 9999;
+    	 right: 50px;
+		 left: 0;
+    }
+	#___gcse_0 {
+		 right: 50px;
+	}
+     #igncnig-search-social {
+         height: 40px;
+    }
+}
+ @media (max-width: 549px) {
+	#home-noticias-carousel {
+		margin-top: 28px;
+	}
+ }
+@media (max-width: 400px) {
+	body[data-id="/inicio"] #column-1 {
+    display: block !important;
+  }
+  #home-noticias-carousel {
+    display: block !important;
+  }
+  .IGN-IMG-HOME .portfolio-ul li {
+    padding-bottom: 0 !important;
+    height: max-content !important;
+    width: 100% !important;
+  }
+  .home-geoportal.mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  #aniversario.mobile {
+    display: block;
+    margin-top: -20px;
+  }
+}
+@media (max-width: 768px) {
+  .secciones:has(#home-areas-actividad-carousel) {
+    display: none;
+  }
+  .home-geoportal.nomobile {
+    display: none;
+  }
+}
+	</style> <style type="text/css">
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_56_INSTANCE_LOxICOCDkm4b_ .portlet-borderless-container {
+border-width:;
+border-style:
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style> </head> <body class=" yui3-skin-sam controls-visible guest-site signed-out public-page site dockbar-split" data-id="/presentacion-antartida"> <div class="container-fluid" id="wrapper"> <!-- make header sticky --> <div class="hidden-sticky"></div> <div class="sticky"> <header id="banner" role="banner" > <div class="containe clearfix"> <div id="mobileLangContainer" class="site-language-mobile"> <div id="lupaBusqueda"> <img alt="B&uacute;squeda movil" src="/IGNCNIG/Imagenes/Utils/searchIconWhite.png" /> </div> <ul class="langMobile"> <li> <span class="lang-show taglib-language-list-text" lang="es-ES">ES </span> </li> <li> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;ca_ES" class="taglib-language-list-text" lang="ca-ES" >CA</a> </li> <li> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;eu_ES" class="taglib-language-list-text" lang="eu-ES" >EU</a> </li> <li> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;gl_ES" class="taglib-language-list-text" lang="gl-ES" >GL</a> </li> <li> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;ca_AD" class="taglib-language-list-text" lang="ca-AD" >VA</a> </li> <li> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;en_GB" class="taglib-language-list-text last" lang="en-GB" >EN</a> </li> </ul> </div> <div id="langContainer" class="site-language pull-right"> <span class="taglib-language-list-text" lang="es-ES">Castellano</span> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;ca_ES" class="taglib-language-list-text" lang="ca-ES" >Catalá </a> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;eu_ES" class="taglib-language-list-text" lang="eu-ES" >Euskera </a> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;gl_ES" class="taglib-language-list-text" lang="gl-ES" >Galego </a> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;ca_AD" class="taglib-language-list-text" lang="ca-AD" >Valencià </a> <a href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;presentacion-antartida&#x3f;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fweb&#x25;2Fpresentacion-antartida&#x26;_82_languageId&#x3d;en_GB" class="taglib-language-list-text last" lang="en-GB" >English </a> </div> <div id="heading" class="pull-left" > <div class="w100 mauto cb" > <div id="logoFomento"> <!-- Logo temporal <style type="text/css">	
+											#heading #logoFomento img {width: 350px; max-width: 350px;}
+											@media (max-width: 1300px) {
+												#heading #logoIgn {width: 40%;margin-left: 165px;} 
+											}
+										</style> <img src="https://www.ign.es/IGNCNIG/Imagenes/Contenidos/IGN-Logo-Fomento_2.png" alt="Logos IGNCNIG" usemap="#map_logo" /> <map name="map_logo"> <area alt="COP25" title="COP25" href="https://www.miteco.gob.es/es/cop25/" target="_blank" shape="rect" coords="355, 5, 451, 55" /> <area alt="Agenda 2030" title="Agenda 2030" href="https://www.agenda2030.gob.es/es" target="_blank" shape="rect" coords="305, 5, 349, 55" /> <area alt="Ministerio de Fomento" title="Ministerio de Fomento" href="https://www.fomento.gob.es/" target="_blank" shape="rect" coords="3, 5, 298, 55" /> </map> Logo temporal --> <a href="https://www.mitma.gob.es/" target="_blank" > <img alt="Ministerio de Transportes y Movilidad sostenible" title="Ministerio de Transportes y Movilidad sostenible" height="16" src="https://www.ign.es/IGNCNIG/Imagenes/Contenidos/Logo WEB IGN 150 anv.png" /> </a> <!--<a href="https://spanish-presidency.consilium.europa.eu/" title="Presidencia Espa&ntilde;ola de la Uni&oacute;n Europea" target="_blank"> <img class="logo-presidencia" alt="Presidencia espa&ntilde;ola de la Uni&oacute;n Europea" src="/IGNCNIG/Imagenes/Contenidos/Logo-presidencia-europea.png"> </a>--> <!--<a href="https://www.constitucion40.com/" target="_blank" title="40 aniversario de la constituci&oacute;n"> <img alt="40 aniversario de la constituci&oacute;n" height="16" src="https://www.ign.es/IGNCNIG/Imagenes/Contenidos/IGN-Logo-Constitucion.png" /> </a>--> </div> <div id="logoIgn-mobile" class="tar"> <a href="/web/ign/portal/inicio" > Instituto <span style="color:#ffffff;">Geogr&aacute;fico</span> Nacional<br/> <span class="slogo" >Organismo Aut&oacute;nomo Centro Nacional de Informaci&oacute;n Geogr&aacute;fica</span> </a> </div> <div id="logoIgn" class="tac"> <a href="/web/ign/portal/inicio" > <img alt="Instituto Geogr&aacute;fico Nacional" src="https://www.ign.es/IGNCNIG/Imagenes/Contenidos/IGN-Header-Tittle.png" /> </a> </div> <div id="socialLinks" > <div class="social-icons-row-fluid clearfix"> <ul> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.facebook.com/IGNSpain/" style="color:lightgray" target="_blank" title="Seguir en Facebook"><span aria-hidden="true" class="icon-facebook">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://twitter.com/IGNSpain" target="_blank" title="Seguir en twitter"><svg height="1.8em" style="position: relative; top: 3px; margin-right: 10px;" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> <style type="text/css">svg{fill:#d3d3d3}
+	</style> <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg> <span class="sr-only ">(se abrirá nueva ventana) </span></a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.instagram.com/ignspain/" style="color:lightgray" target="_blank" title="Seguir en Instagram"><span aria-hidden="true" class="icon-instagram">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.linkedin.com/company/instituto-geografico-nacional-cnig-spain/" style="color:lightgray" target="_blank" title="Seguir en linkedin"><span aria-hidden="true" class="icon-linkedin">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.pinterest.es/IGNSpain/" style="color:lightgray" target="_blank" title="Seguir en Pinterest"><span aria-hidden="true" class="icon-pinterest">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.youtube.com/user/IGNSpain" style="color:lightgray" target="_blank" title="Seguir en Youtube"><span aria-hidden="true" class="icon-youtube">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="/web/ign/portal/social-rss" style="color:lightgray" target="_self" title="RSS"><span aria-hidden="true" class="icon-rss">&nbsp;</span> <span class="sr-only ">Ir a redes sociales y canales RSS</span> </a></li> </ul> </div> </div> </div> </div> <div id="igncnig-search-social" > <style> .aui #navigation .navbar-inner, .aui #banner, .aui .pull-right .navbar .nav > .active > a, .aui .pull-right .navbar .nav > .active > a:hover, .aui .pull-right .navbar .nav > .active > a:focus {background: #fff} @media screen\9 { .aui #navigation .navbar-inner{ background:#383b3d !important; } } </style> <div class="pull-left" id="cnig-nav-container"> <div class="navbar" id="navigation"> <div class="navbar-inner"> <nav class="menu_sidebar nav" id="cssmenu"> <ul aria-label="Páginas del sitio web" class="nav nav-menu" role="menubar"> <li class=" li-parent" id="layout_1" role="presentation"> <a aria-labelledby="layout_1" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;inicio" role="menuitem"><span> Inicio</span></a> </li> <li class=" li-parent" id="layout_382" role="presentation"> <a aria-labelledby="layout_382" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;qsm" aria-haspopup='true' role="menuitem"><span> Quiénes somos</span></a> <ul class="child-menu" role="menu" style="width:180%;left:0;"> <li class="false" id="layout_384" role="presentation"> <a aria-labelledby="layout_384" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;qsm-estructura-funciones" role="menuitem">Organización</a> </li> <li class="false" id="layout_392" role="presentation"> <a aria-labelledby="layout_392" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-visitas" role="menuitem">Nuestras instalaciones</a> </li> <li class="false" id="layout_386" role="presentation"> <a aria-labelledby="layout_386" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;qsm-marco-normativo" role="menuitem">Normativa</a> </li> <li class="false" id="layout_387" role="presentation"> <a aria-labelledby="layout_387" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;qsm-nuestra-historia" role="menuitem">Historia</a> </li> <li class="false" id="layout_912" role="presentation"> <a aria-labelledby="layout_912" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;150-aniversario-del-ign" role="menuitem">150 aniversario del IGN</a> </li> <li class="false" id="layout_390" role="presentation"> <a aria-labelledby="layout_390" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;qsm-cnig" role="menuitem">CNIG</a> </li> </ul> </li> <li class="active nav-item li-parent" id="layout_27" aria-selected='true' role="presentation"> <a aria-labelledby="layout_27" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;menu-actividades" aria-haspopup='true' role="menuitem"><span> Actividades</span></a> <ul class="child-menu" role="menu" style="width:282%;left:0;"> <li class="false" id="layout_64" role="presentation"> <a aria-labelledby="layout_64" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ast-area-astronomia" target="_blank" role="menuitem">Astronomia y desarrollos tecnológicos</a> </li> <li class="false" id="layout_332" role="presentation"> <a aria-labelledby="layout_332" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ane-area-ane" role="menuitem">Atlas Nacional de España</a> </li> <li class="false" id="layout_330" role="presentation"> <a aria-labelledby="layout_330" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;cbg-area-cartografia" role="menuitem">Cartografía y datos geográficos</a> </li> <li class="false" id="layout_73" role="presentation"> <a aria-labelledby="layout_73" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ctc-area-cartoteca" role="menuitem">Biblioteca, Cartoteca y Archivo Topográfico</a> </li> <li class="false" id="layout_23" role="presentation"> <a aria-labelledby="layout_23" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;gds-area-geodesia" role="menuitem">Geodesia</a> </li> <li class="false" id="layout_224" role="presentation"> <a aria-labelledby="layout_224" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;gmt-area-geomagnetismo" role="menuitem">Geomagnetismo</a> </li> <li class="false" id="layout_423" role="presentation"> <a aria-labelledby="layout_423" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;sis-area-sismicidad" role="menuitem">Información sísmica</a> </li> <li class="false" id="layout_408" role="presentation"> <a aria-labelledby="layout_408" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ide-area-nodo-ide-ign" role="menuitem">Infraestructuras de Datos Espaciales</a> </li> <li class="false" id="layout_67" role="presentation"> <a aria-labelledby="layout_67" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;obs-area-observacion-territorio" target="_self" role="menuitem">Observación del territorio</a> </li> <li class="false" id="layout_74" role="presentation"> <a aria-labelledby="layout_74" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;rcc-area-rcc" role="menuitem">Registro cartográfico, delimitaciones territoriales y Toponimia</a> </li> <li class="false" id="layout_1024" role="presentation"> <a aria-labelledby="layout_1024" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;vigilancia-volcanica" role="menuitem">Vigilancia volcánica</a> </li> </ul> </li> <li class=" li-parent" id="layout_318" role="presentation"> <a aria-labelledby="layout_318" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;servicios-ciudadano" aria-haspopup='true' role="menuitem"><span> Servicios</span></a> <ul class="child-menu" role="menu" style="width:350%;left:0;"> <li class="false" id="layout_899" role="presentation"> <a aria-labelledby="layout_899" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;archivo-datos-geofisicos" role="menuitem">Archivo Nacional de Datos Geofísicos</a> </li> <li class="false" id="layout_388" role="presentation"> <a aria-labelledby="layout_388" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-becas" role="menuitem">Becas, Formación y Empleo público</a> </li> <li class="false" id="layout_181" role="presentation"> <a aria-labelledby="layout_181" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-coleccion-instrumentos" target="_self" role="menuitem">Colección de instrumentos</a> </li> <li class="false" id="layout_1126" role="presentation"> <a aria-labelledby="layout_1126" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;concurso-de-narrativa-breve-2026" role="menuitem">Concurso de Narrativa Breve 2026</a> </li> <li class="false" id="layout_389" role="presentation"> <a aria-labelledby="layout_389" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;qsm-perfil-del-contratante" role="menuitem">Contratación</a> </li> <li class="false" id="layout_433" role="presentation"> <a aria-labelledby="layout_433" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-servicio-documentacion" role="menuitem">Documentación geográfica</a> </li> <li class="false" id="layout_735" role="presentation"> <a aria-labelledby="layout_735" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;exposiciones-virtuales" role="menuitem">Exposiciones virtuales</a> </li> <li class="false" id="layout_957" role="presentation"> <a aria-labelledby="layout_957" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ferias-libro" role="menuitem">Ferias del libro</a> </li> <li class="false" id="layout_619" role="presentation"> <a aria-labelledby="layout_619" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;laboratorio-de-control-de-calidad" role="menuitem">Laboratorio de control de calidad</a> </li> <li class="false" id="layout_943" role="presentation"> <a aria-labelledby="layout_943" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;laboratorio-de-magnetismo-de-materiales-y-magnetismo-ambiental" role="menuitem">Laboratorio de Magnetismo de Materiales y Magnetismo Ambiental</a> </li> <li class="false" id="layout_1064" role="presentation"> <a aria-labelledby="layout_1064" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;servicios-ciudadano&#x2f;plan-bim" role="menuitem">Plan de Incorporación de la Metodología BIM</a> </li> <li class="false" id="layout_626" role="presentation"> <a aria-labelledby="layout_626" href="https&#x3a;&#x2f;&#x2f;www&#x2e;cnig&#x2e;es&#x2f;puntosVenta" target="_blank" role="menuitem">Puntos de atención y venta</a> </li> <li class="false" id="layout_722" role="presentation"> <a aria-labelledby="layout_722" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;recursos-educativos4" role="menuitem">Recursos educativos</a> </li> <li class="false" id="layout_981" role="presentation"> <a aria-labelledby="layout_981" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;covid-19&#x2f;recursos" role="menuitem">Recursos del IGN</a> </li> <li class="false" id="layout_443" role="presentation"> <a aria-labelledby="layout_443" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-registro-cartografico" role="menuitem">Registro cartográfico</a> </li> <li class="false" id="layout_434" role="presentation"> <a aria-labelledby="layout_434" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-salas-exposiciones" role="menuitem">Salas de exposiciones</a> </li> <li class="false" id="layout_442" role="presentation"> <a aria-labelledby="layout_442" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;ic-fototeca" role="menuitem">Servicio de Fototeca</a> </li> <li class="false" id="layout_953" role="presentation"> <a aria-labelledby="layout_953" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;servicio-de-posicionamiento-en-tiempo-real" role="menuitem">Servicio de Posicionamiento en Tiempo Real</a> </li> <li class="false" id="layout_834" role="presentation"> <a aria-labelledby="layout_834" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;visitas-al-real-observatorio-de-madrid" role="menuitem">Visitas al Real Observatorio de Madrid</a> </li> <li class="false" id="layout_985" role="presentation"> <a aria-labelledby="layout_985" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;visitas-ign" role="menuitem">Visitas al Instituto Geográfico Nacional</a> </li> </ul> </li> <li class=" li-parent" id="layout_725" role="presentation"> <a aria-labelledby="layout_725" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;publicaciones-ign" aria-haspopup='true' role="menuitem"><span> Publicaciones</span></a> <ul class="child-menu" role="menu" style="width:110%;left:0;"> <li class="false" id="layout_726" role="presentation"> <a aria-labelledby="layout_726" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;boletin-de-actualidad" role="menuitem">Boletín de actualidad</a> </li> <li class="false" id="layout_730" role="presentation"> <a aria-labelledby="layout_730" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;documentacion-ign" role="menuitem">Calendarios</a> </li> <li class="false" id="layout_763" role="presentation"> <a aria-labelledby="layout_763" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;folletos" role="menuitem">Folletos</a> </li> <li class="false" id="layout_736" role="presentation"> <a aria-labelledby="layout_736" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;historias" role="menuitem">Historias interactivas</a> </li> <li class="false" id="layout_727" role="presentation"> <a aria-labelledby="layout_727" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;libros-digitales1" role="menuitem">Libros digitales</a> </li> <li class="false" id="layout_729" role="presentation"> <a aria-labelledby="layout_729" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;memorias-de-actividades" role="menuitem">Memorias anuales</a> </li> <li class="false" id="layout_794" role="presentation"> <a aria-labelledby="layout_794" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;publicaciones-en-papel" role="menuitem">Publicaciones en papel</a> </li> <li class="false" id="layout_1000" role="presentation"> <a aria-labelledby="layout_1000" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;memorias_historicas" role="menuitem">Memorias históricas</a> </li> </ul> </li> <li class=" li-parent" id="layout_584" role="presentation"> <a aria-labelledby="layout_584" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;noticias" role="menuitem"><span> Noticias</span></a> </li> <li class=" li-parent" id="layout_391" role="presentation"> <a aria-labelledby="layout_391" href="https&#x3a;&#x2f;&#x2f;www&#x2e;ign&#x2e;es&#x2f;web&#x2f;ign&#x2f;portal&#x2f;menu-contactar" role="menuitem"><span> Contactar</span></a> </li> <li class="sign-in li-parent" id="layout_$nav_item.getLayoutId()" role="presentation"> <!----> <!-- whether to make signin popup or not --> <!-- <a data-redirect="false" href="https://www.ign.es/web/c/portal/login?p_l_id=482328" id="sign-in" rel="nofollow">Acceder</a> --> </li> </ul> <div class="nav-mobile"><img alt="Menu movil" src="/Urc-theme/images/menu_mobile.png"/></div> </nav> <!--<span id="textoMENUNavigation">MENU</span> <div id="lupaBusqueda"> <img alt="B&uacute;queda movil" src="/IGNCNIG/Imagenes/Utils/searchIconWhite.png" /> </div>--> </div> </div> </div> <!-- igncnign: search uncomment when indexing ---> <div class="site-search pull-right"> <script>
+  (function() {
+    var cx = '001649875520509517946:xgta5bqepiq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  }
+  
+
+
+  
+  
+  )();
+</script> <gcse:search></gcse:search> </div> </div> <div class="admin-menu"> </div> </div> </header> </div> <ul aria-label="Camino de migas" class="breadcrumb breadcrumb-horizontal"> <li class="first breadcrumb-truncate"><a href="https://www.ign.es/web/ign/portal/menu-actividades" >Actividades</a><span class="divider">/</span></li><li><a href="https://www.ign.es/web/ign/portal/vigilancia-volcanica" >Vigilancia volcánica</a><span class="divider">/</span></li><li class="current-parent breadcrumb-truncate"><a href="https://www.ign.es/web/ign/portal/isla-decepcion-antartida" >Isla Decepción - Antártida</a><span class="divider">/</span></li><li class="active last breadcrumb-truncate"><a href="https://www.ign.es/web/ign/portal/presentacion-antartida" >Presentación</a><span class="divider">/</span></li> </ul> <div id="content" style="padding:0"> <div class="columns-1" id="main-content" role="main"> <div class="portlet-layout row-fluid"> <div class="portlet-column portlet-column-only span12" id="column-1"> <div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1"> <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_56_INSTANCE_LOxICOCDkm4b_" > <span id="p_56_INSTANCE_LOxICOCDkm4b"></span> <div class="portlet-borderless-container" style=""> <div class="portlet-body"> <div class="journal-content-article"> <style type="text/css">.capa-foto{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	max-width: min-content;
+	margin: 0 auto;
+}
+.pie-foto{font-style: italic;display: block;text-align: center;margin-bottom: 40px;}
+.enlacesExpo{
+	transition: 0.3s;
+}
+.enlacesExpo span{
+	font-size: 15px;
+}
+.enlacesExpo:hover{
+	background-color: #FF8C00;
+}
+</style> <div class="ign-cnig-content" id="contenidoVigilancia"> <h1>Vigilancia volcánica en la Antártida</h1> <div style="text-align: right"><a href="https://www.ign.es/resources/docs/IGNCnig/VLC-Teoria-IslaDecepcion-Antartida.pdf" target="_blank" title="Más información"><strong class="enlacesExpo">Más información </strong> </a></div> <h2>El Instituto Geográfico Nacional, responsable de la vigilancia volcánica en Isla Decepción (Antártida)</h2> <p>Desde junio de 2004 (Real Decreto 1476/2004, de 18 de junio) el IGN tiene como nueva competencia la "Observación, vigilancia y comunicación de la actividad volcánica y determinación de riesgos asociados". Desde esta fecha, en el IGN se inicia una nueva área de trabajo, la Vigilancia y Alerta Volcánica, ampliando las labores de los diferentes Servicios de Red Sísmica, Geodesia, Geomagnetismo y Gravimetría, así como del Centro Geofísico de Canarias, todas ella enfocadas a la vigilancia volcánica en el archipiélago canario.</p> <p>El Plan Estatal de Protección Civil ante el Riesgo Volcánico (B.O.E. nº. 36 de 11 de febrero de 2013) señala al Instituto Geográfico Nacional responsable de la “organización del sistema de seguimiento e información sobre fenómenos volcánicos al ser el órgano competente para la planificación y gestión de los sistemas de vigilancia y comunicación de la actividad volcánica en el territorio español”.</p> <p>Por estas razones, al existir en la Administración General del Estado un organismo (IGN) con responsabilidad sobre la alerta y vigilancia volcánica, el 3 de septiembre de 2020, los entonces Ministerios de Transportes, Movilidad y Agenda Urbana (MITMA) y de Ciencia e Innovación, firmaron un Protocolo de Actuación por el que MITMA, a través del IGN, se hizo cargo desde ese momento de las labores de inspección y valoración de la actividad y alerta volcánica en la isla Decepción, en la Antártida, aportando su experiencia en la gestión de emergencias volcánicas, como las ocurridas a raíz de las erupciones de El Hierro en 2011 o la más reciente en La Palma en 2021, asumiendo el reto de hacerlo ahora en un ambiente extremo como es la Antártida.</p> <p>Para dar cumplimiento a ese Protocolo de Actuación, la actual Subdirección General de Vigilancia, Alerta y Estudios Geofísicos, mediante el Real Decreto 253/2024, de 12 de marzo, tiene como una de sus funciones: “La planificación y gestión de los sistemas de vigilancia, comunicación y alerta a las instituciones de la actividad volcánica y determinación de los peligros asociados en territorio español y en el entorno de bases antárticas españolas, así como la realización de trabajos y estudios en el campo de la volcanología y de la alerta temprana de procesos eruptivos”.</p> <p>Aprovechando la experiencia adquirida por las Universidades de Granada y Cádiz y haciendo uso de las infraestructuras sísmicas y geodésicas que con considerable esfuerzo han mantenido estas instituciones durante años, en la campaña 2020-2021 el IGN comienza, con la colaboración de dichas universidades, el despliegue de nueva instrumentación y la continuación en las observaciones y en las labores de vigilancia volcánica realizadas hasta el momento. El objetivo es dotar a isla Decepción de la instrumentación que permita por una parte atender las labores de vigilancia volcánica y, por otra, proporcionar datos de calidad, continuos y de libre acceso durante todo el año a la comunidad científica, permitiendo así completar sus investigaciones.</p> <p style="margin-bottom:30px !important;">Las actuaciones del IGN en las labores de vigilancia y alerta volcanológica están concentradas en las principales técnicas de monitorización: Sismología, Deformación (GNSS e InSAR), Geoquímica, Termografía y WebCam. Al mismo tiempo, las actuaciones en los sistemas de alimentación eléctrica y comunicaciones resultan imprescindibles para conseguir los objetivos señalados.</p> <h2>Situación de las Bases Antárticas Españolas en el archipiélago de las Shetland del Sur</h2> <p style="margin-bottom:20px !important;">Aunque a lo largo de la historia esta zona de los Mares del Sur fue frecuentemente visitada por navegantes españoles, según se recoge en documentos escritos y mapas de la época, se puede considerar el año 1985 como el inicio de la presencia científica de España en el continente antártico, con la invitación al Consejo Superior de Investigaciones Científicas (CSIC), por parte de las autoridades argentinas, a acudir a su base Decepción. Desde el año 1988, personal científico y técnico del IGN ha participado en numerosas campañas antárticas, desarrollando en la zona labores propias o colaborando con los distintos grupos de investigación desplegados. En la campaña 1987-1988, España instaló el embrión de lo que sería su base antártica Juan Carlos I (BJCI), en isla Livingston, inaugurada en enero de 1988 y en la campaña 1989-90 se instaló un primer refugio militar, que se convertiría posteriormente en la actual base antártica española Gabriel de Castilla (BGdC) en isla Decepción.</p> <div class="capa-foto"><img alt="Carta de los Mares del Cabo de Hornos" src="https://www.ign.es/resources/actividades/volcanologia/I-Decepcion-Antartida/Poster_Mapa_antiguo_Antartida_br.jpg" style="max-height:460px;max-width:309px;" title="Carta de los Mares del Cabo de Hornos" /> <span class="pie-foto">Carta de los Mares del Cabo de Hornos, elaborada en 1861 en Madrid por la Dirección de Hidrografía, referida al meridiano de San Fernando (Archivo Instituto Geográfico Nacional).</span></div> <p>En la actualidad, el Comité Polar Español (CPE), adscrito al Ministerio de Ciencia, Innovación y Universidades, es la autoridad española encargada de coordinar las actividades de I+D+I de España en las zonas polares. En La Antártida, estas actividades se desarrollan mediante campañas científicas de una duración aproximada de 4 meses, en el periodo de verano austral.</p> <p style="margin-bottom:20px !important;">España cuenta con dos bases antárticas: la Base Antártica Juan Carlos I (BJCI) y la Base Antártica Gabriel de Castilla (BGdC),​​​​​​​ que forman la Infraestructura Científico-Técnica Singular. Ambas bases se sitúan en el archipiélago de las Shetland del Sur, en la isla Livingston e isla Decepción respectivamente. Las dos bases solo permanecen operativas habitualmente entre los meses de diciembre a marzo.</p> <div class="capa-foto"><img alt="Situación de las Bases Antárticas Españolas Juan Carlos I y Gabriel de Castilla en el archipiélago de las Shetland del Sur" src="https://www.ign.es/resources/actividades/volcanologia/I-Decepcion-Antartida/situacion-bases.jpg" style="max-height:554px;max-width:859px;" title="Situación de las Bases Antárticas Españolas Juan Carlos I y Gabriel de Castilla en el archipiélago de las Shetland del Sur" /> <span class="pie-foto">Situación de las Bases Antárticas Españolas Juan Carlos I y Gabriel de Castilla en el archipiélago de las Shetland del Sur.</span></div> <p style="margin-bottom:20px !important;">La BJCI I fue inaugurada en 1988 y está gestionada por la Unidad de Tecnología Marina del Consejo Superior de Investigaciones Científicas (UTM-CSIC). La BGdC fue inaugurada en 1990 y su gestión corresponde al Ejército de Tierra (ET).</p> <div class="capa-foto"><img alt="Base antártica Juan Carlos I" src="https://www.ign.es/resources/actividades/volcanologia/I-Decepcion-Antartida/BJCI.jpg" style="max-height:497px;max-width:886px;" title="Base antártica Juan Carlos I" /> <span class="pie-foto">Base antártica Juan Carlos I (BJCI), situada en isla Livingston y gestionada por la Unidad de Tecnología Marina del Consejo Superior de Investigaciones Científicas (UTM-CSIC).</span></div> <div class="capa-foto"><img alt="Base antártica Gabriel de Castilla" src="https://www.ign.es/resources/actividades/volcanologia/I-Decepcion-Antartida/cientificos-IGN.jpg" style="max-height:527px;max-width:938px;" title="Base antártica Gabriel de Castilla" /> <span class="pie-foto" style="margin-bottom:0;">Base antártica Gabriel de Castilla (BGdC), situada en isla Decepción y gestionada por el Ejército de Tierra (ET).</span></div> <h2>Colaboración con SEGEMAR (Argentina)</h2> <p style="margin-bottom:40px;">A través de un convenio de colaboración firmado por las dos instituciones, el IGN colabora con el grupo de vigilancia volcánica del Servicio Geológico Minero Argentino (SEGEMAR), que es la institución que gestiona la Base Antártica Argentina Decepción. SEGEMAR tiene instrumentación de vigilancia volcánica desplegada en Decepción, cuyos datos son transmitidos vía satélite en tiempo real a sus instalaciones en Buenos Aires. Fruto de la colaboración establecida, se han conectado los sistemas de adquisición y tratamiento de datos de IGN y SEGEMAR, de tal forma que todos los datos de las estaciones de vigilancia de ambas instituciones están siendo compartidos en tiempo real, alcanzándose un gran nivel de cooperación.</p> <div style="text-align: right; margin-bottom:1rem;"><a href="https://www.ign.es/resources/docs/IGNCnig/VLC-Teoria-IslaDecepcion-Antartida.pdf" target="_blank" title="Más información"><strong class="enlacesExpo">Más información </strong> </a></div> </div> </div> <div class="entry-links"> </div> </div> </div> </div> </div> </div> </div> </div> <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form> </div> <div class="w100 fl cb"> <footer id="footers-wrap" role="contentinfo"> <div id="foot-section-1" > <div id="footer-text"> <div class="footer-text-section w50 fl"> <p><a class="1" href="https://www.ign.es/web/ign/portal/preguntas-frecuentes" >Preguntas frecuentes</a></p> <p><a class="2" href="https://www.ign.es/web/ign/portal/sistema-cartografico-nacional" target="_blank">Sistema Cartográfico Nacional</a></p> <p><a class="3" href="https://www.ign.es/web/ign/portal/plan-cartografico-nacional" target="_blank">Plan Cartográfico Nacional</a></p> <p><a class="4" href="https://www.ign.es/web/ign/portal/info-organos-colegiados" target="_self">Órganos colegiados</a></p> <div class="wai" style="padding-top: 5px;"> <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank"> <img height="32" width="88" src="https://www.w3.org/WAI/wcag21/wcag2.1AA-blue-v.png" title="Conformidad con el Nivel Doble-A, de las Directrices de Accesibilidad para el Contenido Web 2.1 del W3C-WAI" alt="Conformidad con el Nivel Doble-A, de las Directrices de Accesibilidad para el Contenido Web 2.1 del W3C-WAI"><span class="sr-only "> (se abrirá nueva ventana)</span></a> <div class="aenor-mob"> <a href="https://www.ign.es/resources/red-sismica/GEM-2021-0003-RedSismicaNacional.pdf" target="_blank"> <img src="https://www.ign.es/resources/red-sismica/Sello-AENOR-gestion-emergencias.png" title="Certificado de AENOR para el Sistema de gestión de emergencias en la sala de alerta sísmica y de maremotos del IGN" alt="Certificado de AENOR para el Sistema de gestión de emergencias en la sala de alerta sísmica y de maremotos del IGN" style=""><span class="sr-only "> (se abrirá nueva ventana)</span></a> </div> </div></div> <div class="footer-text-section w50 fl"> <p><a class="5" href="https://www.ign.es/web/ign/portal/info-enlaces-relacionados" target="_self">Enlaces relacionados</a></p> <p><a class="6" href="https://www.ign.es/web/ign/portal/info-aviso-legal" >Aviso legal</a></p> <p><a class="7" href="https://www.ign.es/web/ign/portal/politica-datos" >Política de datos</a></p> <p><a class="8" href="https://www.ign.es/web/ign/portal/info-accesibilidad" >Accesibilidad</a></p> <p><a class="9" href="https://www.ign.es/web/ign/portal/usabilidad" >Usabilidad</a></p> <p><a class="10" href="https://www.ign.es/web/ign/portal/mapa-web" >Mapa web</a></p> </div> <div class="footer-text-section w50 fl aenor"> <a href="https://www.ign.es/resources/red-sismica/GEM-2021-0003-RedSismicaNacional.pdf" target="_blank"> <img src="https://www.ign.es/resources/red-sismica/Sello-AENOR-gestion-emergencias.png" alt="Certificado de AENOR para el Sistema de gestión de emergencias en la sala de alerta sísmica y de maremotos del IGN" title="Certificado de AENOR para el Sistema de gestión de emergencias en la sala de alerta sísmica y de maremotos del IGN"><span class="sr-only "> (se abrirá nueva ventana)</span> </a> </div> </div> <!--<div class="wai"> <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"> <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA-blue" alt="Icono de conformidad con el Nivel Doble-A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI"> </a> </div>--> </div> <div id="foot-section-2" ><div id="footer-ign"> <p class="footer-ign-title">©&nbsp;Instituto <span style="color:#fff;">Geográfico</span> Nacional</p> <p class="footer-ign-description">C/ General Ibáñez de Íbero 3, 28003 Madrid - España<br /> +34 91 597 94 22<br /> ign@transportes.gob.es</p> </div></div> <div class="w100 fl cb"><div id="socialLinks-mobile" class="tac" ><div class="social-icons-row-fluid clearfix"> <ul> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.facebook.com/IGNSpain/" style="color:lightgray" target="_blank" title="Seguir en Facebook"><span aria-hidden="true" class="icon-facebook">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://twitter.com/IGNSpain" target="_blank" title="Seguir en twitter"><svg height="1.8em" style="position: relative; top: 3px; margin-right: 10px;" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"> <style type="text/css">svg{fill:#d3d3d3}
+	</style> <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg> <span class="sr-only ">(se abrirá nueva ventana) </span></a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.instagram.com/ignspain/" style="color:lightgray" target="_blank" title="Seguir en Instagram"><span aria-hidden="true" class="icon-instagram">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.linkedin.com/company/instituto-geografico-nacional-cnig-spain/" style="color:lightgray" target="_blank" title="Seguir en linkedin"><span aria-hidden="true" class="icon-linkedin">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.pinterest.es/IGNSpain/" style="color:lightgray" target="_blank" title="Seguir en Pinterest"><span aria-hidden="true" class="icon-pinterest">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="https://www.youtube.com/user/IGNSpain" style="color:lightgray" target="_blank" title="Seguir en Youtube"><span aria-hidden="true" class="icon-youtube">&nbsp;</span> <span class="sr-only ">(se abrirá nueva ventana)</span> </a></li> <li><a class="tooltip-trigger" data-placement="bottom" data-toggle="tooltip" href="/web/ign/portal/social-rss" style="color:lightgray" target="_self" title="RSS"><span aria-hidden="true" class="icon-rss">&nbsp;</span> <span class="sr-only ">Ir a redes sociales y canales RSS</span> </a></li> </ul> </div></div></div> </footer> </div> <div id="capa_galleta" style="display:none"> <div> <div id="txt_galleta">Este sitio web utiliza Cookies propias y de terceros para recopilar informaci&oacute;n con la finalidad de mejorar nuestros servicios. <a href="https://www.ign.es/web/ign/portal/info-aviso-legal" target="_blanck">M&aacute;s informaci&oacute;n</a></div> <div id="acepto_galleta" onclick="ponerCookie();">Aceptar</div> </div> </div> <script>
+    function getCookie(c_name){
+        var c_value = document.cookie;
+        var c_start = c_value.indexOf(" " + c_name + "=");
+        if (c_start == -1){
+            c_start = c_value.indexOf(c_name + "=");
+        }
+        if (c_start == -1){
+            c_value = null;
+        }else{
+            c_start = c_value.indexOf("=", c_start) + 1;
+            var c_end = c_value.indexOf(";", c_start);
+            if (c_end == -1){
+                c_end = c_value.length;
+            }
+            c_value = unescape(c_value.substring(c_start,c_end));
+        }
+        return c_value;
+    }
+     
+    function setCookie(c_name,value,exdays){
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate() + exdays);//cambiar por exdate.setDate(exdate.getDate() + exdays);para que sean dias en vez de milisegundos
+        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+        document.cookie=c_name + "=" + c_value;
+    }
+    
+    function ponerCookie(){
+        setCookie('IGNCnig_acepto','1',365);
+        $('#capa_galleta').hide();
+    }
+    if(getCookie('IGNCnig_acepto')!="1"){
+    	$('#capa_galleta').show();
+    }
+    
+    $('#cookies-policy-close').bind('click',function(event){
+    	$('#capa_galleta').hide();	
+    	
+    });
+    
+</script> </div> <!-- Este estaba en head --> <!--La carga de ficheros javascript con atributo async son los necesarios para que no haya ning&uacute;n error a fecha de 24/05/2017--> <!-- bootstrap --> <script type="text/javascript" src="/Urc-theme/js/bootstrap.min.js" async="async"></script> <!--css3 slider (home slider) --> <script type="text/javascript" src="/Urc-theme/js/jquery.cslider.js"></script> <!-- modernizr --> <script type="text/javascript" src="/Urc-theme/js/modernizr.custom.js" async="async"></script> <!-- icheck (styling the default checkbox) --> <script type="text/javascript" src="/Urc-theme/js/icheck.min.js"></script> <!-- parallax plugin --> <script type="text/javascript" src="/Urc-theme/js/jquery.stellar.js"></script> <!-- pagination --> <script type="text/javascript" src="/Urc-theme/js/pagination.js" async="async"></script> <!-- flexslider --> <script type="text/javascript" src="/Urc-theme/js/jquery.flexslider-min.js"></script> <script type="text/javascript" src="/Urc-theme/js/jquery.flexslider.js" ></script> <script type="text/javascript" src="/Urc-theme/js/jquery.cleanSlider.js" async="async"></script> <!--<script type="text/javascript" src="/Urc-theme/js/trozos_jquery.js" async="async"></script>--> <!--Scroll slider--> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js" async="async"></script> <script type="text/javascript">
+// <![CDATA[
+
+	Liferay.Util.addInputFocus();
+
+	
+
+	
+		
+		
+
+			
+
+			
+		
+	
+
+// ]]>
+</script> <script type="text/javascript">
+// <![CDATA[
+
+			Liferay.Portlet.onLoad(
+				{
+					canEditTitle: false,
+					columnPos: 0,
+					isStatic: 'end',
+					namespacedId: 'p_p_id_56_INSTANCE_LOxICOCDkm4b_',
+					portletId: '56_INSTANCE_LOxICOCDkm4b',
+					refreshURL: '\x2fweb\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d482328\x26p_p_id\x3d56_INSTANCE_LOxICOCDkm4b\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fweb\x252Fpresentacion-antartida'
+				}
+			);
+		AUI().use('aui-base', 'liferay-menu', 'liferay-notice', 'liferay-poller', 'liferay-session', function(A) {(function() {
+	Liferay.Util.addInputType();
+
+	Liferay.Portlet.ready(
+		function(portletId, node) {
+			Liferay.Util.addInputType(node);
+		}
+	);
+
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+})();(function() {
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					sessionLength: 30,
+					redirectOnExpire: false,
+					redirectUrl: 'https\x3a\x2f\x2fwww\x2eign\x2ees\x2fweb\x2fweb\x2fign\x2fportal\x2finicio',
+					warningLength: 1
+				}
+			);
+
+			
+		})();});
+// ]]>
+</script> <script src="https://www.ign.es/Urc-theme/js/main.js?browserId=other&amp;languageId=es_ES&amp;b=6203&amp;t=1714037841000" type="text/javascript"></script> <script type="text/javascript">
+		
+			
+
+			
+		
+	</script> <!-- --> <!-- modify twitter iframe styles --> <script async="async" type="text/javascript">
+		AUI().ready('aui-body', function(A){ 
+        $('#twitter-widget-0').contents().find("footer").html("");
+		$('#twitter-widget-0').contents().find(".timeline-Header-title").html("");
+		$('#lupaBusqueda').click(function(){
+			$('#banner .site-search').css('display')=="none" ? $('#banner .site-search').slideDown() : $('#banner .site-search').slideUp();
+		});
+     });
+            $('#yui3-css-stamp').prependTo('body');
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+                        var hasClassBox = [].some.call(mutation.addedNodes, function(el) {
+                            if (el.classList != undefined) { return el.classList.contains('gstl_50'); }
+                            else { return false; }
+                        });
+                        if (hasClassBox && ($('#btnBuscar').length == 0)) {
+                            $('<input value="Buscar" id="btnBuscar" aria-label="Buscar" name="btnBuscar" type="submit" hidden class="hidden">').insertAfter($('#gsc-i-id1'));
+                        }
+                        var hasClassTwitter = [].some.call(mutation.addedNodes, function(el) {
+                            if (el.classList != undefined) {return el.classList.contains('twitter-timeline') }
+                            else { return false; }
+                        });
+                        if (hasClassTwitter) {
+                            $('#twitter-widget-0').prop('title', 'Cronolog&iacute;a de Twitter');
+                        }
+                    }
+                });
+            });
+
+            var config = {
+                attributes: true, childList: true, characterData: true, subtree: true,
+            };
+
+            observer.observe(document.body, config);
+
+	var wai = $('.wai');
+	$('.wai').remove();		
+	wai.appendTo($('.footer-text-section').first());
+	
+	  </script> <!-- tunning language list --> <script async="async" type="text/javascript">
+		AUI().ready('aui-body', function(){
+			var x = document.getElementsByClassName("taglib-language-list-text");
+			for (var i = 0; i < x.length; i++) {
+				var li = x[i].outerHTML;
+				x[i].outerHTML = "<li>"+li.replace('\u00E1','\u00E0')+"</li>";		
+			}
+			var y = document.getElementById("langContainer");
+			var ul = y.innerHTML;
+			y.innerHTML = "<ul>"+ul+"</ul>";
+		});		
+	</script> </body></html> 

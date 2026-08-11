@@ -1,0 +1,88 @@
+{
+ "_": "Copia archivada de la respuesta del servicio OGC API-Features del Instituto Geográfico Nacional para los topónimos que sostienen la geometría de la capa centros-datos del Atlas Estratégico de España.",
+ "emisor": "Instituto Geográfico Nacional (IGN) — Centro Nacional de Información Geográfica",
+ "servicio": "https://api-features.ign.es/collections/namedplace",
+ "fecha_captura": "2026-08-06",
+ "crs": "EPSG:4258 (ETRS89). A cinco decimales coincide con WGS84: no se aplica transformación.",
+ "licencia": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0. Obliga a reconocer al IGN como origen.",
+ "nota": "Se consulta el MUNICIPIO y no el paraje, a conciencia. El acto sitúa cada emplazamiento por su polígono industrial —«Empresarium» en Zaragoza, «Parque Tecnológico Walqa» en Huesca, «El Espartal» en El Burgo de Ebro— y el nomenclátor NO nombra ninguno de los tres: «Walqa» y «Empresarium» no devuelven nada, y los tres «El Espartal» que existen están en La Rioja y Navarra, a más de 120 km. Forzar un paraje con esos resultados es exactamente como se coló un cortijo a 600 m del paso de montaña que se buscaba al construir las interconexiones. Quedarse en `municipio` es un resultado legítimo (§6.6).",
+ "consultas": [
+  {
+   "etiqueta_consultada": "Zaragoza",
+   "resultados_totales": 10,
+   "tipos_devueltos": [
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    "Capital de municipio",
+    "Capital de provincia",
+    "Entidad singular",
+    "Municipio",
+    "Paraje",
+    "Provincia",
+    "Vértice Geodésico"
+   ],
+   "elegido": {
+    "tipo": "Municipio",
+    "etiqueta": "Zaragoza",
+    "coordenadas": [
+     -0.87732,
+     41.65621
+    ]
+   }
+  },
+  {
+   "etiqueta_consultada": "Huesca",
+   "resultados_totales": 8,
+   "tipos_devueltos": [
+    "Capital de municipio",
+    "Capital de provincia",
+    "Entidad singular",
+    "Municipio",
+    "Paraje",
+    "Provincia",
+    "Vértice Geodésico"
+   ],
+   "elegido": {
+    "tipo": "Municipio",
+    "etiqueta": "Huesca",
+    "coordenadas": [
+     -0.40902,
+     42.14063
+    ]
+   }
+  },
+  {
+   "etiqueta_consultada": "Villanueva de Gállego",
+   "resultados_totales": 3,
+   "tipos_devueltos": [
+    "Capital de municipio",
+    "Entidad singular",
+    "Municipio"
+   ],
+   "elegido": {
+    "tipo": "Municipio",
+    "etiqueta": "Villanueva de Gállego",
+    "coordenadas": [
+     -0.82173,
+     41.76777
+    ]
+   }
+  },
+  {
+   "etiqueta_consultada": "El Burgo de Ebro",
+   "resultados_totales": 3,
+   "tipos_devueltos": [
+    "Capital de municipio",
+    "Entidad singular",
+    "Municipio"
+   ],
+   "elegido": {
+    "tipo": "Municipio",
+    "etiqueta": "El Burgo de Ebro",
+    "coordenadas": [
+     -0.74121,
+     41.57265
+    ]
+   }
+  }
+ ]
+}

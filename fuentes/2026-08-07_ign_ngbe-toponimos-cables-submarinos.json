@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "_": "Captura del Nomenclátor Geográfico Básico de España (IGN) para los aterrizajes de `cables-submarinos`. Se consulta por RECUADRO y no por etiqueta: la búsqueda exacta devuelve 0 para Arrietara y Malvarrosa, que existen.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo": "Playa",
+        "tiponombre": "nombre_alternativo_2",
+        "etiqueta": "Playa Atxabiribil",
+        "fecha": "2023-07-07",
+        "codigo_ngbe": "6.2.2",
+        "fuente": "C.A. País Vasco"
+      },
+      "id": "1672659",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.99700759299992,
+          43.3886720030001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tipo": "Isla",
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Isla de la Virgen del Mar",
+        "fecha": "2023-07-20",
+        "codigo_ngbe": "6.2.3",
+        "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "1669108",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.87750347199994,
+          43.4791254370001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "etiqueta": "Playa de Benítez",
+        "fecha": "2023-07-05",
+        "codigo_ngbe": "6.2.2",
+        "tipo": "Playa",
+        "tiponombre": "identificador_geografico",
+        "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "2445579",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.33747136,
+          35.89516089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tiponombre": "identificador_geografico",
+        "fecha": "2023-07-20",
+        "tipo": "Playa",
+        "codigo_ngbe": "6.2.2",
+        "etiqueta": "Platja de la Malva-rosa",
+        "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "2193170",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.322814663999907,
+          39.4785141510001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "etiqueta": "Puerto de Santa Cruz de La Palma",
+        "fecha": "2023-06-27",
+        "codigo_ngbe": "3.2.1",
+        "tipo": "Puerto",
+        "tiponombre": "identificador_geografico",
+        "fuente": "MITMA.Puertos del Estado"
+      },
+      "id": "2638520",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.766886971778987,
+          28.67981581131458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tiponombre": "identificador_geografico",
+        "fecha": "2023-06-27",
+        "tipo": "Puerto",
+        "codigo_ngbe": "3.2.1",
+        "etiqueta": "Puerto de Granadilla",
+        "fuente": "MITMA.Puertos del Estado"
+      },
+      "id": "2638546",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.491396171004503,
+          28.081440617089147
+        ]
+      }
+    }
+  ]
+}

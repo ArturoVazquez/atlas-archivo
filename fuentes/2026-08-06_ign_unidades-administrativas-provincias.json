@@ -1,0 +1,807 @@
+{
+ "_": "Registro de procedencia de la geometría provincial del servicio OGC API-Features del Instituto Geográfico Nacional, que sostiene la capa generacion-electrica-provincia del Atlas Estratégico de España.",
+ "emisor": "Instituto Geográfico Nacional (IGN) — Centro Nacional de Información Geográfica",
+ "servicio": "https://api-features.ign.es/collections/administrativeunit/items?limit=60&nationallevel=https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/3rdOrder&f=json",
+ "fecha_captura": "2026-08-06",
+ "crs": "EPSG:4258 (ETRS89). A cinco decimales coincide con WGS84: no se aplica transformación.",
+ "licencia": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0. Obliga a reconocer al IGN como origen.",
+ "por_que_no_esta_la_geometria": "Este fichero NO guarda las coordenadas: la respuesta completa son 1.188.710 vértices y 186 MB, desproporcionados para el archivo documental (fuentes/ va ya por 46 MB). Lo que se archiva es lo que permite COMPROBAR la derivación: el identificador de cada unidad, su recuento de anillos y vértices, y su recuadro envolvente a cinco decimales. El polígono publicado en datos/ está generalizado (Douglas-Peucker, ~200 m), así que su recuadro debe caer dentro de esta tolerancia respecto al de aquí; si no cae, la generalización movió territorio y eso es un fallo, no un detalle. La consulta es reproducible: el servicio y sus parámetros están arriba, literales.",
+ "nota": "El IGN devuelve 53 unidades de tercer orden. Cincuenta y dos son provincias y entran en la capa. La 53ª, «Territorios no asociados a ninguna provincia» (nationalcode 34205400000), NO entra: la estadística de MITECO no tiene hoja para ella, así que no hay dato que ponerle. Se excluye por ausencia de fuente, no por criterio.",
+ "unidades": [
+  {
+   "nameunit": "Araba/Álava",
+   "nationalcode": "34160100000",
+   "codnut2": "ES21",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 2,
+   "vertices": 7974,
+   "bbox": [
+    -3.28677,
+    42.47236,
+    -2.23269,
+    43.21719
+   ]
+  },
+  {
+   "nameunit": "Albacete",
+   "nationalcode": "34080200000",
+   "codnut2": "ES42",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 8839,
+   "bbox": [
+    -2.88289,
+    38.02184,
+    -0.91579,
+    39.42308
+   ]
+  },
+  {
+   "nameunit": "Alacant/Alicante",
+   "nationalcode": "34100300000",
+   "codnut2": "ES52",
+   "codnut3": null,
+   "poligonos": 56,
+   "anillos": 56,
+   "vertices": 35943,
+   "bbox": [
+    -1.09416,
+    37.84378,
+    0.23407,
+    38.88739
+   ]
+  },
+  {
+   "nameunit": "Almería",
+   "nationalcode": "34010400000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 94,
+   "anillos": 94,
+   "vertices": 19617,
+   "bbox": [
+    -3.14019,
+    35.93765,
+    -1.63012,
+    37.91625
+   ]
+  },
+  {
+   "nameunit": "Ávila",
+   "nationalcode": "34070500000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 9587,
+   "bbox": [
+    -5.73756,
+    40.08193,
+    -4.16023,
+    41.16425
+   ]
+  },
+  {
+   "nameunit": "Badajoz",
+   "nationalcode": "34110600000",
+   "codnut2": "ES43",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 11716,
+   "bbox": [
+    -7.33567,
+    37.94103,
+    -4.64758,
+    39.45179
+   ]
+  },
+  {
+   "nameunit": "Illes Balears",
+   "nationalcode": "34040700000",
+   "codnut2": "ES53",
+   "codnut3": null,
+   "poligonos": 446,
+   "anillos": 446,
+   "vertices": 101704,
+   "bbox": [
+    1.15724,
+    38.64039,
+    4.32778,
+    40.09457
+   ]
+  },
+  {
+   "nameunit": "Barcelona",
+   "nationalcode": "34090800000",
+   "codnut2": "ES51",
+   "codnut3": null,
+   "poligonos": 4,
+   "anillos": 7,
+   "vertices": 35743,
+   "bbox": [
+    1.3604,
+    41.19275,
+    2.77758,
+    42.32296
+   ]
+  },
+  {
+   "nameunit": "Burgos",
+   "nationalcode": "34070900000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 5,
+   "anillos": 7,
+   "vertices": 7846,
+   "bbox": [
+    -4.33533,
+    41.45078,
+    -2.5174,
+    43.19875
+   ]
+  },
+  {
+   "nameunit": "Cáceres",
+   "nationalcode": "34111000000",
+   "codnut2": "ES43",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 10331,
+   "bbox": [
+    -7.54133,
+    39.03149,
+    -4.95295,
+    40.48665
+   ]
+  },
+  {
+   "nameunit": "Cádiz",
+   "nationalcode": "34011100000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 23,
+   "anillos": 23,
+   "vertices": 41132,
+   "bbox": [
+    -6.47374,
+    36.00028,
+    -5.08679,
+    37.05245
+   ]
+  },
+  {
+   "nameunit": "Castelló/Castellón",
+   "nationalcode": "34101200000",
+   "codnut2": "ES52",
+   "codnut3": null,
+   "poligonos": 22,
+   "anillos": 22,
+   "vertices": 21629,
+   "bbox": [
+    -0.8463,
+    39.7147,
+    0.69031,
+    40.78863
+   ]
+  },
+  {
+   "nameunit": "Ciudad Real",
+   "nationalcode": "34081300000",
+   "codnut2": "ES42",
+   "codnut3": null,
+   "poligonos": 2,
+   "anillos": 2,
+   "vertices": 8256,
+   "bbox": [
+    -5.04695,
+    38.34245,
+    -2.63789,
+    39.57676
+   ]
+  },
+  {
+   "nameunit": "Córdoba",
+   "nationalcode": "34011400000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 2,
+   "anillos": 2,
+   "vertices": 12195,
+   "bbox": [
+    -5.58592,
+    37.18407,
+    -4.00094,
+    38.72909
+   ]
+  },
+  {
+   "nameunit": "A Coruña",
+   "nationalcode": "34121500000",
+   "codnut2": "ES11",
+   "codnut3": null,
+   "poligonos": 1069,
+   "anillos": 1069,
+   "vertices": 92037,
+   "bbox": [
+    -9.30152,
+    42.45903,
+    -7.66172,
+    43.79238
+   ]
+  },
+  {
+   "nameunit": "Cuenca",
+   "nationalcode": "34081600000",
+   "codnut2": "ES42",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 7105,
+   "bbox": [
+    -3.17023,
+    39.22648,
+    -1.14255,
+    40.65869
+   ]
+  },
+  {
+   "nameunit": "Girona",
+   "nationalcode": "34091700000",
+   "codnut2": "ES51",
+   "codnut3": null,
+   "poligonos": 715,
+   "anillos": 715,
+   "vertices": 111969,
+   "bbox": [
+    1.7243,
+    41.65077,
+    3.33255,
+    42.49557
+   ]
+  },
+  {
+   "nameunit": "Granada",
+   "nationalcode": "34011800000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 2,
+   "anillos": 2,
+   "vertices": 11347,
+   "bbox": [
+    -4.32813,
+    36.69352,
+    -2.20779,
+    38.08409
+   ]
+  },
+  {
+   "nameunit": "Guadalajara",
+   "nationalcode": "34081900000",
+   "codnut2": "ES42",
+   "codnut3": null,
+   "poligonos": 2,
+   "anillos": 2,
+   "vertices": 10285,
+   "bbox": [
+    -3.5411,
+    40.15246,
+    -1.53564,
+    41.32763
+   ]
+  },
+  {
+   "nameunit": "Gipuzkoa",
+   "nationalcode": "34162000000",
+   "codnut2": "ES21",
+   "codnut3": null,
+   "poligonos": 11,
+   "anillos": 11,
+   "vertices": 10796,
+   "bbox": [
+    -2.60272,
+    42.89525,
+    -1.72934,
+    43.39591
+   ]
+  },
+  {
+   "nameunit": "Huelva",
+   "nationalcode": "34012100000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 14598,
+   "bbox": [
+    -7.52305,
+    36.78972,
+    -6.12156,
+    38.20821
+   ]
+  },
+  {
+   "nameunit": "Huesca",
+   "nationalcode": "34022200000",
+   "codnut2": "ES24",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 30034,
+   "bbox": [
+    -0.93417,
+    41.34781,
+    0.77131,
+    42.92439
+   ]
+  },
+  {
+   "nameunit": "Jaén",
+   "nationalcode": "34012300000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 10904,
+   "bbox": [
+    -4.28764,
+    37.37828,
+    -2.43495,
+    38.53253
+   ]
+  },
+  {
+   "nameunit": "León",
+   "nationalcode": "34072400000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 2,
+   "vertices": 6315,
+   "bbox": [
+    -7.07707,
+    42.02923,
+    -4.73388,
+    43.2382
+   ]
+  },
+  {
+   "nameunit": "Lleida",
+   "nationalcode": "34092500000",
+   "codnut2": "ES51",
+   "codnut3": null,
+   "poligonos": 2,
+   "anillos": 4,
+   "vertices": 45309,
+   "bbox": [
+    0.32004,
+    41.2742,
+    1.85506,
+    42.86145
+   ]
+  },
+  {
+   "nameunit": "La Rioja",
+   "nationalcode": "34172600000",
+   "codnut2": "ES23",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 3,
+   "vertices": 3878,
+   "bbox": [
+    -3.13427,
+    41.91903,
+    -1.6787,
+    42.64426
+   ]
+  },
+  {
+   "nameunit": "Lugo",
+   "nationalcode": "34122700000",
+   "codnut2": "ES11",
+   "codnut3": null,
+   "poligonos": 31,
+   "anillos": 31,
+   "vertices": 16345,
+   "bbox": [
+    -7.99973,
+    42.3257,
+    -6.81405,
+    43.76164
+   ]
+  },
+  {
+   "nameunit": "Madrid",
+   "nationalcode": "34132800000",
+   "codnut2": "ES30",
+   "codnut3": null,
+   "poligonos": 2,
+   "anillos": 3,
+   "vertices": 21212,
+   "bbox": [
+    -4.57908,
+    39.88472,
+    -3.05298,
+    41.16584
+   ]
+  },
+  {
+   "nameunit": "Málaga",
+   "nationalcode": "34012900000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 12207,
+   "bbox": [
+    -5.61178,
+    36.31028,
+    -3.76597,
+    37.2822
+   ]
+  },
+  {
+   "nameunit": "Murcia",
+   "nationalcode": "34143000000",
+   "codnut2": "ES62",
+   "codnut3": null,
+   "poligonos": 99,
+   "anillos": 99,
+   "vertices": 34723,
+   "bbox": [
+    -2.34418,
+    37.37375,
+    -0.64798,
+    38.75508
+   ]
+  },
+  {
+   "nameunit": "Navarra",
+   "nationalcode": "34153100000",
+   "codnut2": "ES22",
+   "codnut3": null,
+   "poligonos": 3,
+   "anillos": 3,
+   "vertices": 13967,
+   "bbox": [
+    -2.50008,
+    41.90989,
+    -0.72407,
+    43.31484
+   ]
+  },
+  {
+   "nameunit": "Ourense",
+   "nationalcode": "34123200000",
+   "codnut2": "ES11",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 5844,
+   "bbox": [
+    -8.36634,
+    41.80723,
+    -6.73395,
+    42.5786
+   ]
+  },
+  {
+   "nameunit": "Asturias",
+   "nationalcode": "34033300000",
+   "codnut2": "ES12",
+   "codnut3": null,
+   "poligonos": 702,
+   "anillos": 702,
+   "vertices": 45997,
+   "bbox": [
+    -7.18249,
+    42.88254,
+    -4.51045,
+    43.66653
+   ]
+  },
+  {
+   "nameunit": "Palencia",
+   "nationalcode": "34073400000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 6,
+   "anillos": 7,
+   "vertices": 3962,
+   "bbox": [
+    -5.03189,
+    41.75817,
+    -3.88962,
+    43.06099
+   ]
+  },
+  {
+   "nameunit": "Las Palmas",
+   "nationalcode": "34053500000",
+   "codnut2": "ES70",
+   "codnut3": null,
+   "poligonos": 119,
+   "anillos": 119,
+   "vertices": 60759,
+   "bbox": [
+    -15.83465,
+    27.7345,
+    -13.33496,
+    29.41645
+   ]
+  },
+  {
+   "nameunit": "Pontevedra",
+   "nationalcode": "34123600000",
+   "codnut2": "ES11",
+   "codnut3": null,
+   "poligonos": 681,
+   "anillos": 681,
+   "vertices": 37932,
+   "bbox": [
+    -8.94945,
+    41.86885,
+    -7.86143,
+    42.86016
+   ]
+  },
+  {
+   "nameunit": "Salamanca",
+   "nationalcode": "34073700000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 6130,
+   "bbox": [
+    -6.93171,
+    40.23892,
+    -5.08984,
+    41.29422
+   ]
+  },
+  {
+   "nameunit": "Santa Cruz de Tenerife",
+   "nationalcode": "34053800000",
+   "codnut2": "ES70",
+   "codnut3": null,
+   "poligonos": 955,
+   "anillos": 955,
+   "vertices": 108755,
+   "bbox": [
+    -18.16118,
+    27.63772,
+    -16.11857,
+    28.85758
+   ]
+  },
+  {
+   "nameunit": "Cantabria",
+   "nationalcode": "34063900000",
+   "codnut2": "ES13",
+   "codnut3": null,
+   "poligonos": 79,
+   "anillos": 81,
+   "vertices": 18354,
+   "bbox": [
+    -4.85178,
+    42.75805,
+    -3.14963,
+    43.51369
+   ]
+  },
+  {
+   "nameunit": "Segovia",
+   "nationalcode": "34074000000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 3319,
+   "bbox": [
+    -4.72465,
+    40.63298,
+    -3.20693,
+    41.58608
+   ]
+  },
+  {
+   "nameunit": "Sevilla",
+   "nationalcode": "34014100000",
+   "codnut2": "ES61",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 2,
+   "vertices": 11340,
+   "bbox": [
+    -6.53851,
+    36.84219,
+    -4.65335,
+    38.19742
+   ]
+  },
+  {
+   "nameunit": "Soria",
+   "nationalcode": "34074200000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 3171,
+   "bbox": [
+    -3.55044,
+    41.05651,
+    -1.77537,
+    42.14671
+   ]
+  },
+  {
+   "nameunit": "Tarragona",
+   "nationalcode": "34094300000",
+   "codnut2": "ES51",
+   "codnut3": null,
+   "poligonos": 32,
+   "anillos": 32,
+   "vertices": 27773,
+   "bbox": [
+    0.15907,
+    40.52297,
+    1.65315,
+    41.58261
+   ]
+  },
+  {
+   "nameunit": "Teruel",
+   "nationalcode": "34024400000",
+   "codnut2": "ES24",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 8325,
+   "bbox": [
+    -1.80573,
+    39.84678,
+    0.2935,
+    41.35439
+   ]
+  },
+  {
+   "nameunit": "Toledo",
+   "nationalcode": "34084500000",
+   "codnut2": "ES42",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 12450,
+   "bbox": [
+    -5.40618,
+    39.25842,
+    -2.90823,
+    40.31834
+   ]
+  },
+  {
+   "nameunit": "València/Valencia",
+   "nationalcode": "34104600000",
+   "codnut2": "ES52",
+   "codnut3": null,
+   "poligonos": 3,
+   "anillos": 3,
+   "vertices": 15813,
+   "bbox": [
+    -1.52881,
+    38.68655,
+    -0.02479,
+    40.21168
+   ]
+  },
+  {
+   "nameunit": "Valladolid",
+   "nationalcode": "34074700000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 3,
+   "anillos": 3,
+   "vertices": 3265,
+   "bbox": [
+    -5.52089,
+    41.09402,
+    -3.98044,
+    42.31184
+   ]
+  },
+  {
+   "nameunit": "Bizkaia",
+   "nationalcode": "34164800000",
+   "codnut2": "ES21",
+   "codnut3": null,
+   "poligonos": 24,
+   "anillos": 25,
+   "vertices": 10694,
+   "bbox": [
+    -3.45033,
+    42.98165,
+    -2.4126,
+    43.45725
+   ]
+  },
+  {
+   "nameunit": "Zamora",
+   "nationalcode": "34074900000",
+   "codnut2": "ES41",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 4812,
+   "bbox": [
+    -7.03404,
+    41.11717,
+    -5.22887,
+    42.25419
+   ]
+  },
+  {
+   "nameunit": "Zaragoza",
+   "nationalcode": "34025000000",
+   "codnut2": "ES24",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 3,
+   "vertices": 7229,
+   "bbox": [
+    -2.17367,
+    40.93622,
+    0.38569,
+    42.74405
+   ]
+  },
+  {
+   "nameunit": "Ceuta",
+   "nationalcode": "34185100000",
+   "codnut2": "ES63",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 2758,
+   "bbox": [
+    -5.38206,
+    35.87074,
+    -5.27829,
+    35.91798
+   ]
+  },
+  {
+   "nameunit": "Melilla",
+   "nationalcode": "34195200000",
+   "codnut2": "ES64",
+   "codnut3": null,
+   "poligonos": 1,
+   "anillos": 1,
+   "vertices": 1218,
+   "bbox": [
+    -2.9703,
+    35.26549,
+    -2.92319,
+    35.3203
+   ]
+  },
+  {
+   "nameunit": "Territorios no asociados a ninguna provincia",
+   "nationalcode": "34205400000",
+   "codnut2": null,
+   "codnut3": null,
+   "poligonos": 10,
+   "anillos": 10,
+   "vertices": 3267,
+   "bbox": [
+    -5.42179,
+    35.17045,
+    -1.76418,
+    43.3432
+   ]
+  }
+ ]
+}

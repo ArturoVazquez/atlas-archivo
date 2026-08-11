@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  Si usas el atlas o sus datos, cítalo. Los datos son CC BY 4.0: la
+  atribución no es cortesía, es la licencia.
+type: dataset
+title: Atlas Estratégico de España
+abstract: >-
+  Capa de inteligencia geoespacial pública sobre los activos estratégicos de
+  España: minerales críticos, energía, conectividad, transporte, ciencia y el
+  tablero de límites y soberanía. Cada dato lleva fuente, fecha y estado de
+  verificación; lo que falta se declara como hueco, y la doctrina la comprueba
+  la integración continua en cada cambio.
+authors:
+  - family-names: Vázquez
+    given-names: Arturo
+repository-code: https://github.com/ArturoVazquez/atlas-archivo
+url: https://atlas.eltercioviejo.com
+license: CC-BY-4.0
+version: datos-v2026.08.37
+date-released: "2026-08-11"
+keywords:
+  - España
+  - infraestructuras estratégicas
+  - minerales críticos
+  - energía
+  - geoespacial
+  - datos abiertos

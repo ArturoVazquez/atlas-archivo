@@ -1,0 +1,1033 @@
+{
+ "_": "Consultas al NGBE (api-features.ign.es) para las capas gas-almacenamiento, bases de utilización conjunta y estaciones de seguimiento espacial. Capturado el 2026-08-09.",
+ "consultas": [
+  {
+   "etiqueta": "Brihuega",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Brihuega&limit=50&f=json",
+   "numberMatched": 3,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Brihuega",
+      "fecha": "2025-06-11",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2707805",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.87016937,
+       40.75890439
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Capital de municipio",
+      "etiqueta": "Brihuega",
+      "fecha": "2025-06-11",
+      "codigo_ngbe": "2.1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2811604",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.87016937,
+       40.75890439
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Entidad singular",
+      "etiqueta": "Brihuega",
+      "fecha": "2025-06-11",
+      "codigo_ngbe": "2.1.9",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2835152",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.87016937,
+       40.75890439
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Almonte",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Almonte&limit=50&f=json",
+   "numberMatched": 4,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Almonte",
+      "fecha": "2025-07-06",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2721416",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.51821258,
+       37.26230997
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Capital de municipio",
+      "etiqueta": "Almonte",
+      "fecha": "2025-07-06",
+      "codigo_ngbe": "2.1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2811940",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.51821258,
+       37.26230997
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Entidad singular",
+      "etiqueta": "Almonte",
+      "fecha": "2025-07-04",
+      "codigo_ngbe": "2.1.9",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2835904",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.51821258,
+       37.26230997
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Paraje",
+      "etiqueta": "Almonte",
+      "fecha": "2023-07-27",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "561561",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -5.88519299399991,
+       37.1881101750001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Sabiñánigo",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Sabi%C3%B1%C3%A1nigo&limit=50&f=json",
+   "numberMatched": 3,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Municipio",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-29",
+      "codigo_ngbe": "1.3",
+      "etiqueta": "Sabiñánigo",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2708281",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.364510736,
+       42.51789564
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Capital de municipio",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-29",
+      "codigo_ngbe": "2.1.3",
+      "etiqueta": "Sabiñánigo",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2812162",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.364510736,
+       42.51789564
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad singular",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-29",
+      "codigo_ngbe": "2.1.9",
+      "etiqueta": "Sabiñánigo",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2836662",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.364510736,
+       42.51789564
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Vinaròs",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Vinar%C3%B2s&limit=50&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Base Naval de Rota",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Base+Naval+de+Rota&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Base Aérea de Morón",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Base+A%C3%A9rea+de+Mor%C3%B3n&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Base Militar de Rota",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Base+Militar+de+Rota&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Estación Espacial de Robledo",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Estaci%C3%B3n+Espacial+de+Robledo&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Estación de Cebreros",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Estaci%C3%B3n+de+Cebreros&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Estación Espacial de Cebreros",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Estaci%C3%B3n+Espacial+de+Cebreros&limit=20&f=json",
+   "numberMatched": 1,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Estación Espacial de Cebreros",
+      "fecha": "2023-07-04",
+      "codigo_ngbe": "2.2.1",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2083076",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.36840663699991,
+       40.4541022070001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Estación Espacial de Maspalomas",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Estaci%C3%B3n+Espacial+de+Maspalomas&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Estación de Seguimiento de Satélites de Maspalomas",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Estaci%C3%B3n+de+Seguimiento+de+Sat%C3%A9lites+de+Maspalomas&limit=20&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "sitio": "rota",
+   "bbox": "-6.508020846,36.46695048,-6.208020845999999,36.76695048",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-6.508020846%2C36.46695048%2C-6.208020845999999%2C36.76695048&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-6.508020846%2C36.46695048%2C-6.208020845999999%2C36.76695048&limit=1000&offset=985&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-6.508020846%2C36.46695048%2C-6.208020845999999%2C36.76695048&limit=1000&offset=1189&f=json"
+   ],
+   "numberMatched": 1191,
+   "barridos": 1191,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2022-10-07",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Base Aeronaval de Rota",
+      "fuente": "MDEFENSA"
+     },
+     "id": "2434108",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.346002800426792,
+       36.6420741488108
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Puerto",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-24",
+      "codigo_ngbe": "3.2.1",
+      "etiqueta": "Puerto de la Base Naval de Rota",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2434157",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.33038368099994,
+       36.619507996
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Instalación portuaria",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-05",
+      "codigo_ngbe": "3.2.2",
+      "etiqueta": "Base Naval de Puntales",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2434595",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.26062153199996,
+       36.5070833560001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Núcleos de población",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-16",
+      "codigo_ngbe": "2.1.10",
+      "etiqueta": "Poblado Naval",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2531098",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.284201189,
+       36.61566428
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Núcleos de población",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2021-11-26",
+      "codigo_ngbe": "2.1.10",
+      "etiqueta": "Base Naval",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "4009004",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.33324659,
+       36.63810042
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "moron",
+   "bbox": "-5.601848802,36.97221466,-5.301848801999999,37.272214659999996",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.601848802%2C36.97221466%2C-5.301848801999999%2C37.272214659999996&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.601848802%2C36.97221466%2C-5.301848801999999%2C37.272214659999996&limit=1000&offset=989&f=json"
+   ],
+   "numberMatched": 1441,
+   "barridos": 1441,
+   "aciertos": []
+  },
+  {
+   "sitio": "robledo",
+   "bbox": "-4.388261978,40.35079633,-4.088261977999999,40.65079633",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-4.388261978%2C40.35079633%2C-4.088261977999999%2C40.65079633&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-4.388261978%2C40.35079633%2C-4.088261977999999%2C40.65079633&limit=1000&offset=987&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-4.388261978%2C40.35079633%2C-4.088261977999999%2C40.65079633&limit=1000&offset=1987&f=json"
+   ],
+   "numberMatched": 2000,
+   "barridos": 2000,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Barrio",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-06",
+      "codigo_ngbe": "2.1.8",
+      "etiqueta": "La Estación",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2068027",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.14269953399992,
+       40.5911256050001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad menor de población",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-05",
+      "codigo_ngbe": "2.1.6",
+      "etiqueta": "La Estación",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2068746",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.159811626735297,
+       40.538906150552194
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2019-09-03",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "Estación de Zarzalejo",
+      "fuente": "C.A. Madrid"
+     },
+     "id": "2068824",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.15789689099995,
+       40.53869646
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-04",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "Estación Espacial de Cebreros",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2083076",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.36840663699991,
+       40.4541022070001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-21",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "Estación de Seguimiento y Adquisición de Datos de la NASA",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2083395",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.24841081799991,
+       40.429687959
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-20",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "Estación de Seguimiento Espacial Fresnedillas-Navalagamella",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2083954",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.16998097499993,
+       40.4550786890001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad singular",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-16",
+      "codigo_ngbe": "2.1.9",
+      "etiqueta": "La Estación",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2818540",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.359811701,
+       40.58586173
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad singular",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-18",
+      "codigo_ngbe": "2.1.9",
+      "etiqueta": "La Estación",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2849982",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.26848976,
+       40.57139675
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad singular",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-18",
+      "codigo_ngbe": "2.1.9",
+      "etiqueta": "La Estación y Pajares",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2850162",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.164617403,
+       40.5398836
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Núcleos de población",
+      "etiqueta": "La Estación y Pajares",
+      "fecha": "2025-09-18",
+      "codigo_ngbe": "2.1.10",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "4000545",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.164617403,
+       40.5398836
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Núcleos de población",
+      "etiqueta": "La Estación",
+      "fecha": "2025-09-16",
+      "codigo_ngbe": "2.1.10",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "4007077",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.359811701,
+       40.58586173
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Núcleos de población",
+      "etiqueta": "La Estación",
+      "fecha": "2021-11-27",
+      "codigo_ngbe": "2.1.10",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "4018381",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.26848976,
+       40.57139675
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "maspalomas",
+   "bbox": "-15.72288107,27.77498769,-15.422881069999999,28.074987689999997",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-15.72288107%2C27.77498769%2C-15.422881069999999%2C28.074987689999997&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-15.72288107%2C27.77498769%2C-15.422881069999999%2C28.074987689999997&limit=1000&offset=999&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-15.72288107%2C27.77498769%2C-15.422881069999999%2C28.074987689999997&limit=1000&offset=1977&f=json"
+   ],
+   "numberMatched": 2069,
+   "barridos": 2069,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.2.1",
+      "fuente": "MITMA.IGN.BTN25",
+      "tiponombre": "identificador_geografico",
+      "etiqueta": "Estación Espacial de Agüimes",
+      "tipo": "Construcción/instalación abierta",
+      "fecha": "2023-07-07"
+     },
+     "id": "2625200",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.443786621,
+       27.879699707
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "5.5",
+      "fuente": "MITMA.IGN.BTN25",
+      "tiponombre": "identificador_geografico",
+      "etiqueta": "Fuentes de los Quintanas",
+      "tipo": "Hidrónimo puntual",
+      "fecha": "2023-07-22"
+     },
+     "id": "2625258",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.5667114259999,
+       27.9224853530001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "tiponombre": "identificador_geografico",
+      "etiqueta": "La Quintanilla",
+      "tipo": "Paraje",
+      "fecha": "2023-07-21"
+     },
+     "id": "2625855",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.5451049799999,
+       27.82208252
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Subestación de Barranco Seco",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-07"
+     },
+     "id": "2627591",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.4401855469999,
+       28.07373047
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Subestación de San Mateo",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-07"
+     },
+     "id": "2627593",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.5438232419999,
+       28.0089111340001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Subestación de Telde",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-07"
+     },
+     "id": "2627595",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.4364013669999,
+       27.988281251
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Subestación Eléctrica Barranco de Tirajana",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-22"
+     },
+     "id": "2627598",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.4387207029999,
+       27.8062744150001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.NGBE",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Subestación de Carrizal",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-06-28"
+     },
+     "id": "2627605",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.4234008789999,
+       27.9141235360001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "moron-ancho",
+   "bbox": "-5.890000000000001,36.879999999999995,-5.33,37.44",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.890000000000001%2C36.879999999999995%2C-5.33%2C37.44&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.890000000000001%2C36.879999999999995%2C-5.33%2C37.44&limit=1000&offset=995&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.890000000000001%2C36.879999999999995%2C-5.33%2C37.44&limit=1000&offset=1982&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.890000000000001%2C36.879999999999995%2C-5.33%2C37.44&limit=1000&offset=2960&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.890000000000001%2C36.879999999999995%2C-5.33%2C37.44&limit=1000&offset=3960&f=json"
+   ],
+   "numberMatched": 4695,
+   "barridos": 4695,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Subcentral de Aviación Civil",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-07"
+     },
+     "id": "2388249",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -5.88409368999993,
+       37.3112794500001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Aeródromo",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2022-12-12",
+      "codigo_ngbe": "3.1.2",
+      "etiqueta": "Base Aérea de Morón ",
+      "fuente": "MDEFENSA"
+     },
+     "id": "2401677",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -5.61334000912138,
+       37.17218866304389
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Núcleos de población",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2021-11-27",
+      "codigo_ngbe": "2.1.10",
+      "etiqueta": "Base Aérea",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "4029015",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -5.60280588,
+       37.16361805
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-21",
+      "codigo_ngbe": "4.2.2",
+      "etiqueta": "Huerta del Militar",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "555235",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -5.74157664199993,
+       37.3931275460001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "maspalomas-sur",
+   "bbox": "-15.75,27.630000000000003,-15.45,27.93",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-15.75%2C27.630000000000003%2C-15.45%2C27.93&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-15.75%2C27.630000000000003%2C-15.45%2C27.93&limit=1000&offset=986&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-15.75%2C27.630000000000003%2C-15.45%2C27.93&limit=1000&offset=1037&f=json"
+   ],
+   "numberMatched": 1038,
+   "barridos": 1038,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Estación de Seguimiento Espacial de Maspalomas",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-21"
+     },
+     "id": "2625195",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.6334838859999,
+       27.7642822270001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Estación de Seguimiento Espacial de Maspalomas",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-21"
+     },
+     "id": "2625197",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.6350097659999,
+       27.7655029300001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Estación de Seguimiento Espacial de Maspalomas",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-21"
+     },
+     "id": "2625199",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.6416015619999,
+       27.7689208990001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Hidrónimo puntual",
+      "etiqueta": "Fuentes de los Quintanas",
+      "codigo_ngbe": "5.5",
+      "fecha": "2023-07-22"
+     },
+     "id": "2625258",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.5667114259999,
+       27.9224853530001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Paraje",
+      "etiqueta": "La Quintanilla",
+      "codigo_ngbe": "4.2.2",
+      "fecha": "2023-07-21"
+     },
+     "id": "2625855",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.5451049799999,
+       27.82208252
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Vértice Geodésico",
+      "etiqueta": "INTA Maspalomas",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3301167",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -15.63327758,
+       27.7638297
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

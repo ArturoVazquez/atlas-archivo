@@ -1,0 +1,126 @@
+{
+  "_": "Copia archivada de la respuesta del servicio OGC API-Features del Instituto Geográfico Nacional para los topónimos del Nomenclátor Geográfico Básico de España que sostienen la geometría de la capa electricidad-interconexiones del Atlas Estratégico de España.",
+  "emisor": "Instituto Geográfico Nacional (IGN) — Centro Nacional de Información Geográfica",
+  "servicio": "https://api-features.ign.es/collections/namedplace",
+  "fecha_captura": "2026-08-06",
+  "crs": "EPSG:4258 (ETRS89). A cinco decimales coincide con WGS84: no se aplica transformación.",
+  "licencia": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0. Obliga a reconocer al IGN como origen.",
+  "nota": "Dos de los cinco NO salen por etiqueta exacta y se confirmaron por recuadro, que es la salida que documenta `pipeline/consultar.py` para el cero silencioso del IGN: «Olza» (el NGBE lo tiene como EATIM dentro de Oltza Zendea) y «Puerto de la Cruz» (que el NGBE clasifica como paso de montaña, no como instalación). Las subestaciones NO están en el nomenclátor, y es lógico: cuatro de las cinco actuaciones están PROYECTADAS y su subestación todavía no existe. Lo que se sitúa es el LUGAR que el instrumento nombra, y por eso la precisión es «paraje» y no «exacta».",
+  "consultas": [
+    {
+      "registro_atlas": "interconexion-portugal-beariz",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?limit=100&etiqueta=Beariz&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "etiqueta": "Beariz",
+          "tipo": "Entidad singular",
+          "fecha": "2023-06-29",
+          "codigo_ngbe": "2.1.9",
+          "fuente": "MITMA.IGN.NGMEP"
+        },
+        "id": "2852562",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -8.273015461,
+            42.46705567
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "interconexion-francia-navarra",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?limit=1000&bbox=-1.90%2C42.78%2C-1.60%2C42.95&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "tipo": "EATIM",
+          "fecha": "2025-09-09",
+          "codigo_ngbe": "1.4",
+          "etiqueta": "Olza",
+          "fuente": "MITMA.IGN.NGMEP"
+        },
+        "id": "2803165",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -1.779839062,
+            42.84639925
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "interconexion-francia-vizcaya",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?limit=100&etiqueta=Gatika&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "tipo": "Municipio",
+          "fecha": "2025-06-17",
+          "codigo_ngbe": "1.3",
+          "etiqueta": "Gatika",
+          "fuente": "MAETD.REL"
+        },
+        "id": "2712281",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -2.87388373,
+            43.36307977
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "interconexion-andorra",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?limit=100&etiqueta=Adrall&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "tipo": "Entidad singular",
+          "fecha": "2025-09-16",
+          "codigo_ngbe": "2.1.9",
+          "etiqueta": "Adrall",
+          "fuente": "MITMA.IGN.NGMEP"
+        },
+        "id": "2837987",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.400819099,
+            42.32670049
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "interconexion-marruecos",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?limit=1000&bbox=-5.70%2C36.00%2C-5.40%2C36.20&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tiponombre": "identificador_geografico",
+          "tipo": "Paso de montaña",
+          "fecha": "2023-07-25",
+          "codigo_ngbe": "4.1.3",
+          "etiqueta": "Puerto de la Cruz",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2445129",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -5.61297710999992,
+            36.0798944840001
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1234 @@
+[
+ {
+  "nodo": "A Coruña",
+  "fila": [
+   "ES",
+   "A Coruña",
+   "X",
+   "Global",
+   "Básica",
+   "",
+   ""
+  ],
+  "municipio_ign": "A Coruña",
+  "lon": -8.41219,
+  "lat": 43.36502,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Albacete",
+  "fila": [
+   "",
+   "Albacete",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Albacete",
+  "lon": -1.8921,
+  "lat": 39.00811,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Alcázar de San Juan",
+  "fila": [
+   "",
+   "Alcázar de San Juan",
+   "",
+   "",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Alcázar de San Juan",
+  "lon": -3.29406,
+  "lat": 39.29082,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Alcúdia",
+  "fila": [
+   "",
+   "Alcúdia",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Alcúdia",
+  "lon": 3.15528,
+  "lat": 39.86133,
+  "equivalencia": "coincide"
+ },
+ {
+  "nodo": "Algeciras",
+  "fila": [
+   "",
+   "Algeciras",
+   "X",
+   "",
+   "Básica (Bahía de Algeciras)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Algeciras",
+  "lon": -5.46304,
+  "lat": 36.11454,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Alicante",
+  "fila": [
+   "",
+   "Alicante",
+   "X",
+   "Básica",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Alacant/Alicante",
+  "lon": -0.47569,
+  "lat": 38.29509,
+  "equivalencia": "forma oficial bilingüe, valenciano primero"
+ },
+ {
+  "nodo": "Área Metropolitana de Almería",
+  "fila": [
+   "",
+   "Área Metropolitana de Almería",
+   "X",
+   "Global",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Almería",
+  "lon": -2.38629,
+  "lat": 36.78704,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "Antequera (Bobadilla)",
+  "fila": [
+   "",
+   "Antequera (Bobadilla)",
+   "",
+   "",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Antequera",
+  "lon": -4.56519,
+  "lat": 37.01255,
+  "equivalencia": "Bobadilla es un anejo de Antequera, no un municipio"
+ },
+ {
+  "nodo": "Arrecife",
+  "fila": [
+   "",
+   "Arrecife",
+   "",
+   "Global (Lanzarote)",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Arrecife",
+  "lon": -13.54447,
+  "lat": 28.96484,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Avilés",
+  "fila": [
+   "",
+   "Avilés",
+   "",
+   "Global (Asturias)",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Avilés",
+  "lon": -5.92271,
+  "lat": 43.56618,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Badajoz",
+  "fila": [
+   "",
+   "Badajoz",
+   "X",
+   "Global",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Badajoz",
+  "lon": -6.79892,
+  "lat": 38.89004,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Área Metropolitana de Barcelona",
+  "fila": [
+   "",
+   "Área Metropolitana de Barcelona",
+   "X",
+   "Básica",
+   "Básica",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Barcelona",
+  "lon": 2.14029,
+  "lat": 41.40789,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "Área Metropolitana de Bilbao",
+  "fila": [
+   "",
+   "Área Metropolitana de Bilbao",
+   "X",
+   "Básica",
+   "Básica",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Bilbao",
+  "lon": -2.91854,
+  "lat": 43.25615,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "Burgos",
+  "fila": [
+   "",
+   "Burgos",
+   "X",
+   "Global",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Burgos",
+  "lon": -3.68448,
+  "lat": 42.349,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Cáceres",
+  "fila": [
+   "",
+   "Cáceres",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Cáceres",
+  "lon": -6.43656,
+  "lat": 39.41967,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Cádiz",
+  "fila": [
+   "",
+   "Cádiz",
+   "X",
+   "",
+   "Global (Bahía de Cádiz)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Cádiz",
+  "lon": -6.28912,
+  "lat": 36.52502,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Carboneras",
+  "fila": [
+   "",
+   "Carboneras",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Carboneras",
+  "lon": -1.90755,
+  "lat": 36.99719,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Cartagena",
+  "fila": [
+   "",
+   "Cartagena",
+   "X",
+   "",
+   "Básica",
+   "",
+   ""
+  ],
+  "municipio_ign": "Cartagena",
+  "lon": -0.96247,
+  "lat": 37.59211,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Castellón",
+  "fila": [
+   "",
+   "Castellón",
+   "X",
+   "",
+   "Básica",
+   "",
+   ""
+  ],
+  "municipio_ign": "Castelló de la Plana/Castellón de la Plana",
+  "lon": 0.5087,
+  "lat": 39.90336,
+  "equivalencia": "forma oficial bilingüe completa"
+ },
+ {
+  "nodo": "Ceuta",
+  "fila": [
+   "",
+   "Ceuta",
+   "X",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Ceuta",
+  "lon": -5.32632,
+  "lat": 35.8947,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Córdoba",
+  "fila": [
+   "",
+   "Córdoba",
+   "X",
+   "",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Córdoba",
+  "lon": -4.74027,
+  "lat": 37.81986,
+  "equivalencia": null
+ },
+ {
+  "nodo": "El Hierro",
+  "fila": [
+   "",
+   "El Hierro",
+   "",
+   "Global",
+   "Global (La Estaca)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Valverde",
+  "lon": -17.92993,
+  "lat": 27.8002,
+  "equivalencia": "el Reglamento nombra la ISLA; su aeropuerto y su puerto están en Valverde"
+ },
+ {
+  "nodo": "El Penedés El Vendrell",
+  "fila": [
+   "",
+   "El Penedés El Vendrell",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "El Vendrell",
+  "lon": 1.52227,
+  "lat": 41.20023,
+  "equivalencia": "el Reglamento junta la comarca y el municipio"
+ },
+ {
+  "nodo": "Elche",
+  "fila": [
+   "",
+   "Elche",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Elx/Elche",
+  "lon": -0.60261,
+  "lat": 38.2185,
+  "equivalencia": "forma oficial bilingüe, valenciano primero"
+ },
+ {
+  "nodo": "Ferrol",
+  "fila": [
+   "",
+   "Ferrol",
+   "X",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Ferrol",
+  "lon": -8.29609,
+  "lat": 43.5131,
+  "equivalencia": "coincide, pero se declara porque el puerto se llama «Ferrol y su ría»"
+ },
+ {
+  "nodo": "Figueras",
+  "fila": [
+   "",
+   "Figueras",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Figueres",
+  "lon": 2.97246,
+  "lat": 42.27477,
+  "equivalencia": "exónimo castellano; el IGN rotula en catalán"
+ },
+ {
+  "nodo": "Gijón",
+  "fila": [
+   "",
+   "Gijón",
+   "X",
+   "",
+   "Básica",
+   "",
+   ""
+  ],
+  "municipio_ign": "Gijón",
+  "lon": -5.6636,
+  "lat": 43.54245,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Gerona",
+  "fila": [
+   "",
+   "Gerona",
+   "X",
+   "Global",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Girona",
+  "lon": 2.8315,
+  "lat": 41.98878,
+  "equivalencia": "exónimo castellano; el IGN rotula el municipio en catalán"
+ },
+ {
+  "nodo": "Granada",
+  "fila": [
+   "",
+   "Granada",
+   "X",
+   "Global",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Granada",
+  "lon": -3.61059,
+  "lat": 37.17925,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Huelva",
+  "fila": [
+   "",
+   "Huelva",
+   "X",
+   "",
+   "Básica",
+   "",
+   ""
+  ],
+  "municipio_ign": "Huelva",
+  "lon": -6.91254,
+  "lat": 37.19105,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Huesca",
+  "fila": [
+   "",
+   "Huesca",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Huesca",
+  "lon": -0.41393,
+  "lat": 42.1472,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Ibiza",
+  "fila": [
+   "",
+   "Ibiza",
+   "",
+   "Global",
+   "Global (Eivissa)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Eivissa",
+  "lon": 1.43728,
+  "lat": 38.90562,
+  "equivalencia": "exónimo; el IGN rotula el municipio en catalán"
+ },
+ {
+  "nodo": "Jaén",
+  "fila": [
+   "",
+   "Jaén",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Jaén",
+  "lon": -3.75202,
+  "lat": 37.82425,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Jerez",
+  "fila": [
+   "",
+   "Jerez",
+   "X",
+   "Global",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Jerez de la Frontera",
+  "lon": -5.85555,
+  "lat": 36.62297,
+  "equivalencia": "el Reglamento abrevia el nombre del municipio"
+ },
+ {
+  "nodo": "La Savina (Formentera)",
+  "fila": [
+   "",
+   "La Savina (Formentera)",
+   "",
+   "",
+   "Global (Cala Sabina)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Formentera",
+  "lon": 1.455,
+  "lat": 38.71454,
+  "equivalencia": "La Savina es el puerto; el municipio es Formentera"
+ },
+ {
+  "nodo": "Área Metropolitana de Las Palmas de Gran Canaria",
+  "fila": [
+   "",
+   "Área Metropolitana de Las Palmas de Gran Canaria",
+   "X",
+   "Básica (Las Palmas)",
+   "Básica (Las Palmas)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Las Palmas de Gran Canaria",
+  "lon": -15.45714,
+  "lat": 28.0891,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "León",
+  "fila": [
+   "",
+   "León",
+   "X",
+   "Global",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "León",
+  "lon": -5.56948,
+  "lat": 42.57304,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Linares",
+  "fila": [
+   "",
+   "Linares",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Linares",
+  "lon": -3.64602,
+  "lat": 38.09601,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Lleida/Lérida",
+  "fila": [
+   "",
+   "Lleida/Lérida",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Lleida",
+  "lon": 0.62265,
+  "lat": 41.61647,
+  "equivalencia": "forma bilingüe; el IGN rotula el municipio en catalán"
+ },
+ {
+  "nodo": "Logroño",
+  "fila": [
+   "",
+   "Logroño",
+   "X",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Logroño",
+  "lon": -2.44539,
+  "lat": 42.46637,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Los Cristianos (Tenerife)",
+  "fila": [
+   "",
+   "Los Cristianos (Tenerife)",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Arona",
+  "lon": -16.69404,
+  "lat": 28.03284,
+  "equivalencia": "Los Cristianos es un núcleo del municipio de Arona"
+ },
+ {
+  "nodo": "Lugo",
+  "fila": [
+   "",
+   "Lugo",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Lugo",
+  "lon": -7.50135,
+  "lat": 43.00145,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Área Metropolitana de Madrid",
+  "fila": [
+   "",
+   "Área Metropolitana de Madrid",
+   "X",
+   "Básica (Barajas)",
+   "",
+   "",
+   "Básica (Norte y Sur)"
+  ],
+  "municipio_ign": "Madrid",
+  "lon": -3.68447,
+  "lat": 40.50006,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "Mahon (Menorca)",
+  "fila": [
+   "",
+   "Mahon (Menorca)",
+   "",
+   "Global",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Maó",
+  "lon": 4.24849,
+  "lat": 39.92105,
+  "equivalencia": "exónimo; el IGN rotula el municipio en catalán"
+ },
+ {
+  "nodo": "Málaga",
+  "fila": [
+   "",
+   "Málaga",
+   "X",
+   "Básica",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Málaga",
+  "lon": -4.39906,
+  "lat": 36.75097,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Marbella",
+  "fila": [
+   "",
+   "Marbella",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Marbella",
+  "lon": -4.86871,
+  "lat": 36.50362,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Melilla",
+  "fila": [
+   "",
+   "Melilla",
+   "X",
+   "Global",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Melilla",
+  "lon": -2.93533,
+  "lat": 35.29447,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Monforte de Lemos",
+  "fila": [
+   "",
+   "Monforte de Lemos",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Monforte de Lemos",
+  "lon": -7.50286,
+  "lat": 42.50705,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Motril",
+  "fila": [
+   "",
+   "Motril",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Motril",
+  "lon": -3.49018,
+  "lat": 36.72498,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Murcia",
+  "fila": [
+   "",
+   "Murcia",
+   "X",
+   "Global",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Murcia",
+  "lon": -1.17717,
+  "lat": 37.88821,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Ourense",
+  "fila": [
+   "",
+   "Ourense",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Ourense",
+  "lon": -7.90339,
+  "lat": 42.34714,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Oviedo",
+  "fila": [
+   "",
+   "Oviedo",
+   "X",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Oviedo",
+  "lon": -5.85749,
+  "lat": 43.33897,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Palma de Mallorca",
+  "fila": [
+   "",
+   "Palma de Mallorca",
+   "X",
+   "Básica",
+   "Básica",
+   "",
+   ""
+  ],
+  "municipio_ign": "Palma",
+  "lon": 2.85515,
+  "lat": 39.28287,
+  "equivalencia": "el municipio se llama solo «Palma» desde 2016"
+ },
+ {
+  "nodo": "Pamplona",
+  "fila": [
+   "",
+   "Pamplona",
+   "X",
+   "Global",
+   "",
+   "",
+   "Global (Noain)"
+  ],
+  "municipio_ign": "Pamplona/Iruña",
+  "lon": -1.64504,
+  "lat": 42.81227,
+  "equivalencia": "forma oficial bilingüe, castellano primero"
+ },
+ {
+  "nodo": "Pasajes",
+  "fila": [
+   "",
+   "Pasajes",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Pasaia",
+  "lon": -1.9031,
+  "lat": 43.34063,
+  "equivalencia": "exónimo; el IGN rotula el municipio en euskera"
+ },
+ {
+  "nodo": "Pontevedra",
+  "fila": [
+   "",
+   "Pontevedra",
+   "",
+   "",
+   "Global (Marín y Ría de Pontevedra)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Pontevedra",
+  "lon": -8.6303,
+  "lat": 42.41627,
+  "equivalencia": "coincide; el puerto es «Marín y Ría de Pontevedra», que es otro municipio"
+ },
+ {
+  "nodo": "Puerto del Rosario (Fuerteventura)",
+  "fila": [
+   "",
+   "Puerto del Rosario (Fuerteventura)",
+   "",
+   "Global (Fuerteventura)",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Puerto del Rosario",
+  "lon": -13.95424,
+  "lat": 28.50857,
+  "equivalencia": "la isla va entre paréntesis"
+ },
+ {
+  "nodo": "Sagunto",
+  "fila": [
+   "",
+   "Sagunto",
+   "",
+   "",
+   "Global",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Sagunt/Sagunto",
+  "lon": -0.26153,
+  "lat": 39.69545,
+  "equivalencia": "forma oficial bilingüe"
+ },
+ {
+  "nodo": "Salamanca",
+  "fila": [
+   "",
+   "Salamanca",
+   "X",
+   "Global",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Salamanca",
+  "lon": -5.68531,
+  "lat": 40.95565,
+  "equivalencia": null
+ },
+ {
+  "nodo": "San Cibrao",
+  "fila": [
+   "",
+   "San Cibrao",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Cervo",
+  "lon": -7.42891,
+  "lat": 43.68307,
+  "equivalencia": "San Cibrao es una parroquia del municipio de Cervo"
+ },
+ {
+  "nodo": "San Sebastián de la Gomera",
+  "fila": [
+   "",
+   "San Sebastián de la Gomera",
+   "",
+   "Global",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "San Sebastián de la Gomera",
+  "lon": -17.1381,
+  "lat": 28.09159,
+  "equivalencia": null
+ },
+ {
+  "nodo": "San Sebastián-Donostia",
+  "fila": [
+   "",
+   "San Sebastián-Donostia",
+   "X",
+   "Global",
+   "",
+   "",
+   "Global (Lezo)"
+  ],
+  "municipio_ign": "Donostia/San Sebastián",
+  "lon": -1.99625,
+  "lat": 43.30355,
+  "equivalencia": "forma bilingüe, invertida respecto al IGN"
+ },
+ {
+  "nodo": "Santa Cruz de la Palma (La Palma)",
+  "fila": [
+   "",
+   "Santa Cruz de la Palma (La Palma)",
+   "",
+   "Global (La Palma)",
+   "Global (Santa Cruz de la Palma)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Santa Cruz de la Palma",
+  "lon": -17.77167,
+  "lat": 28.69565,
+  "equivalencia": "la isla va entre paréntesis; ojo con la caja de «la», que el IGN escribe en minúscula"
+ },
+ {
+  "nodo": "Área Metropolitana de Santa Cruz de Tenerife",
+  "fila": [
+   "",
+   "Área Metropolitana de Santa Cruz de Tenerife",
+   "X",
+   "Global (Los Rodeos), Básica (Reina Sofia)",
+   "Básica (incl Granadilla)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Santa Cruz de Tenerife",
+  "lon": -16.20688,
+  "lat": 28.5357,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "Santander",
+  "fila": [
+   "",
+   "Santander",
+   "X",
+   "Global",
+   "Básica",
+   "",
+   "Global (Torrelavega)"
+  ],
+  "municipio_ign": "Santander",
+  "lon": -3.81392,
+  "lat": 43.47373,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Santiago de Compostela",
+  "fila": [
+   "",
+   "Santiago de Compostela",
+   "X",
+   "Global",
+   "",
+   "",
+   ""
+  ],
+  "municipio_ign": "Santiago de Compostela",
+  "lon": -8.53069,
+  "lat": 42.92311,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Área Metropolitana de Sevilla",
+  "fila": [
+   "",
+   "Área Metropolitana de Sevilla",
+   "X",
+   "Básica",
+   "Básica",
+   "Básica",
+   "Básica"
+  ],
+  "municipio_ign": "Sevilla",
+  "lon": -5.96126,
+  "lat": 37.38674,
+  "equivalencia": "área metropolitana: se apunta al municipio central"
+ },
+ {
+  "nodo": "Tarifa",
+  "fila": [
+   "",
+   "Tarifa",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Tarifa",
+  "lon": -5.62982,
+  "lat": 36.02898,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Tarragona-Reus",
+  "fila": [
+   "",
+   "Tarragona-Reus",
+   "X",
+   "Global (Reus)",
+   "Básica (Tarragona)",
+   "",
+   ""
+  ],
+  "municipio_ign": "Tarragona",
+  "lon": 1.28087,
+  "lat": 41.13057,
+  "equivalencia": "el nodo son DOS municipios —el puerto en Tarragona, el aeropuerto en Reus—; se apunta al primero y se dice en la ficha"
+ },
+ {
+  "nodo": "Toledo",
+  "fila": [
+   "",
+   "Toledo",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Toledo",
+  "lon": -4.03961,
+  "lat": 39.86752,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Tudela",
+  "fila": [
+   "",
+   "Tudela",
+   "",
+   "",
+   "",
+   "",
+   "Global"
+  ],
+  "municipio_ign": "Tudela",
+  "lon": -1.63896,
+  "lat": 42.07323,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Valencia",
+  "fila": [
+   "",
+   "Valencia",
+   "X",
+   "Básica",
+   "Básica",
+   "",
+   "Básica (Fonteta de Saint Lluís) Global (Silla)"
+  ],
+  "municipio_ign": "València",
+  "lon": -0.33321,
+  "lat": 39.44818,
+  "equivalencia": "el IGN rotula el municipio en valenciano"
+ },
+ {
+  "nodo": "Valladolid",
+  "fila": [
+   "",
+   "Valladolid",
+   "X",
+   "Global",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Valladolid",
+  "lon": -4.77095,
+  "lat": 41.62857,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Vigo",
+  "fila": [
+   "",
+   "Vigo",
+   "X",
+   "Global",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Vigo",
+  "lon": -8.83082,
+  "lat": 42.21236,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Vilagarcia",
+  "fila": [
+   "",
+   "Vilagarcia",
+   "",
+   "",
+   "Global",
+   "",
+   ""
+  ],
+  "municipio_ign": "Vilagarcía de Arousa",
+  "lon": -8.77469,
+  "lat": 42.59815,
+  "equivalencia": "el Reglamento abrevia y pierde la tilde"
+ },
+ {
+  "nodo": "Vitoria-Gasteiz",
+  "fila": [
+   "",
+   "Vitoria-Gasteiz",
+   "X",
+   "Global",
+   "",
+   "",
+   "Básica (Jundiz)"
+  ],
+  "municipio_ign": "Vitoria-Gasteiz",
+  "lon": -2.66608,
+  "lat": 42.85033,
+  "equivalencia": null
+ },
+ {
+  "nodo": "Zaragoza",
+  "fila": [
+   "",
+   "Zaragoza",
+   "X",
+   "Global",
+   "",
+   "",
+   "Básica"
+  ],
+  "municipio_ign": "Zaragoza",
+  "lon": -0.90802,
+  "lat": 41.63857,
+  "equivalencia": null
+ }
+]

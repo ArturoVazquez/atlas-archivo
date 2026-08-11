@@ -1,0 +1,1220 @@
+{
+ "_": "Consultas por etiqueta al NGBE para las ICTS del Mapa 2025-2028. Capturado el 2026-08-09.",
+ "consultas": [
+  {
+   "etiqueta": "Gran Telescopio de Canarias",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Gran+Telescopio+de+Canarias&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Gran Telescopio Canarias",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Gran+Telescopio+Canarias&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Observatorio del Roque de los Muchachos",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+del+Roque+de+los+Muchachos&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Observatorio del Teide",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+del+Teide&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Observatorio de Calar Alto",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+de+Calar+Alto&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Observatorio Astronómico de Calar Alto",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+Astron%C3%B3mico+de+Calar+Alto&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Observatorio del Pico Veleta",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+del+Pico+Veleta&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Radiotelescopio de Pico Veleta",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Radiotelescopio+de+Pico+Veleta&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Instituto de Radioastronomía Milimétrica",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Instituto+de+Radioastronom%C3%ADa+Milim%C3%A9trica&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Observatorio de Yebes",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+de+Yebes&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Centro Astronómico de Yebes",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Centro+Astron%C3%B3mico+de+Yebes&limit=10&f=json",
+   "numberMatched": 1,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Centro Astronómico de Yebes",
+      "fecha": "2023-07-22",
+      "codigo_ngbe": "2.2.1",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2072136",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -3.08850062099992,
+       40.5239268050001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Observatorio Astrofísico de Javalambre",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Observatorio+Astrof%C3%ADsico+de+Javalambre&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Sincrotrón Alba",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Sincrotr%C3%B3n+Alba&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Sincrotrón ALBA",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Sincrotr%C3%B3n+ALBA&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Palacio de Doñana",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Palacio+de+Do%C3%B1ana&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Reserva Biológica de Doñana",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Reserva+Biol%C3%B3gica+de+Do%C3%B1ana&limit=10&f=json",
+   "numberMatched": 1,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Espacio protegido restante",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-28",
+      "codigo_ngbe": "4.3.2",
+      "etiqueta": "Reserva Biológica de Doñana",
+      "fuente": "MITMA.IGN.NGBE"
+     },
+     "id": "568247",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -6.50293049799996,
+       37.0026861440001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Plataforma Solar de Almería",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Plataforma+Solar+de+Almer%C3%ADa&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Laboratorio Subterráneo de Canfranc",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Laboratorio+Subterr%C3%A1neo+de+Canfranc&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Centro Nacional de Investigación sobre la Evolución Humana",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Centro+Nacional+de+Investigaci%C3%B3n+sobre+la+Evoluci%C3%B3n+Humana&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Centro de Experiencias Hidrodinámicas de El Pardo",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Centro+de+Experiencias+Hidrodin%C3%A1micas+de+El+Pardo&limit=10&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "sitio": "roque-muchachos",
+   "ancla": "Garafía",
+   "centro": [
+    -17.94508111,
+    28.82990164
+   ],
+   "bbox": "-18.06508111,28.70990164,-17.82508111,28.94990164",
+   "patron": "observator|telescopi|roque de los",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-18.06508111%2C28.70990164%2C-17.82508111%2C28.94990164&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-18.06508111%2C28.70990164%2C-17.82508111%2C28.94990164&limit=1000&offset=505&f=json"
+   ],
+   "numberMatched": 509,
+   "barridos": 509,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Curso artificial de agua",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-20",
+      "codigo_ngbe": "5.3",
+      "etiqueta": "Galería Roque de los Árboles",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2631072",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -17.8400268549999,
+       28.7800903330001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-21",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Observatorio Roque de los Muchachos ",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2631768",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -17.885009765,
+       28.75732422
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-21",
+      "codigo_ngbe": "4.2.2",
+      "etiqueta": "Roque de los Árboles",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2632001",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -17.8455200199999,
+       28.7960815440001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Montaña",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-25",
+      "codigo_ngbe": "4.1.2",
+      "etiqueta": "Roque de los Muchachos",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2632002",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -17.8848876949999,
+       28.7542724620001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Montaña",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2018-10-03",
+      "codigo_ngbe": "4.1.2",
+      "etiqueta": "Roque de los Muchachos",
+      "fuente": "MFOMENTO.IGN.NGCE"
+     },
+     "id": "2638514",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -17.8833007809999,
+       28.7501220720001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Vértice Geodésico",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "etiqueta": "Roque de los Muchachos",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3300894",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -17.88530523,
+       28.75471266
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "teide-izana",
+   "ancla": "La Orotava",
+   "centro": [
+    -16.52471685,
+    28.38907419
+   ],
+   "bbox": "-16.644716850000002,28.269074189999998,-16.40471685,28.50907419",
+   "patron": "observator|izaña",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-16.644716850000002%2C28.269074189999998%2C-16.40471685%2C28.50907419&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-16.644716850000002%2C28.269074189999998%2C-16.40471685%2C28.50907419&limit=1000&offset=985&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-16.644716850000002%2C28.269074189999998%2C-16.40471685%2C28.50907419&limit=1000&offset=1313&f=json"
+   ],
+   "numberMatched": 1318,
+   "barridos": 1318,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Curso artificial de agua",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-20",
+      "codigo_ngbe": "5.3",
+      "etiqueta": "Galería Izaña Nueva",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2635037",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.451599121,
+       28.3024902350001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Curso artificial de agua",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-20",
+      "codigo_ngbe": "5.3",
+      "etiqueta": "Galería Izaña Vieja",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2635038",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.4514770509999,
+       28.302307129
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Montaña",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-26",
+      "codigo_ngbe": "4.1.2",
+      "etiqueta": "Montaña de los Pozos de Izaña",
+      "fuente": "C.A. Canarias"
+     },
+     "id": "2636742",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.5029907229999,
+       28.3067016610001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Observatorio Astronómico del Teide",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2637056",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.5104980469999,
+       28.2982788090001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Observatorio Meteorológico de Izaña",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2637058",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.4990844729999,
+       28.309082032
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Núcleos de población",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-10",
+      "codigo_ngbe": "2.1.10",
+      "etiqueta": "Izaña",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2640440",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.50234633,
+       28.30697512
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad singular",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-09-10",
+      "codigo_ngbe": "2.1.9",
+      "etiqueta": "Izaña",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2871721",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.50234633,
+       28.30697512
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Vértice Geodésico",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "etiqueta": "Observatorio",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3300995",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.51133099,
+       28.30133636
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Vértice Geodésico",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "etiqueta": "Izaña",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3300996",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.50298309,
+       28.30656314
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "calar-alto",
+   "ancla": "Gérgal",
+   "centro": [
+    -2.537981157,
+    37.1206132
+   ],
+   "bbox": "-2.657981157,37.000613200000004,-2.417981157,37.2406132",
+   "patron": "observator|calar",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.657981157%2C37.000613200000004%2C-2.417981157%2C37.2406132&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.657981157%2C37.000613200000004%2C-2.417981157%2C37.2406132&limit=1000&offset=994&f=json"
+   ],
+   "numberMatched": 1092,
+   "barridos": 1092,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Barrio",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-06",
+      "codigo_ngbe": "2.1.8",
+      "etiqueta": "El Calar Alto",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2398201",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.55609082899991,
+       37.2222898910001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-21",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Observatorio Astronómico Hispano-Alemán Calar Alto",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "2398211",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.54998731999996,
+       37.2233274900001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Entidad singular",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-29",
+      "codigo_ngbe": "2.1.9",
+      "etiqueta": "El Calar Alto",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2817867",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.53900107699991,
+       37.1209104850001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Vértice Geodésico",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "etiqueta": "Calar Alto",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3300164",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.548710639,
+       37.22159989
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Montaña",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2018-10-03",
+      "codigo_ngbe": "4.1.2",
+      "etiqueta": "Calar Alto",
+      "fuente": "MFOMENTO.IGN.NGCE"
+     },
+     "id": "566225",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -2.54858351399992,
+       37.2219236810001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "pico-veleta",
+   "ancla": "Monachil",
+   "centro": [
+    -3.539745992,
+    37.1322797
+   ],
+   "bbox": "-3.659745992,37.0122797,-3.4197459919999997,37.252279699999995",
+   "patron": "observator|radiotelesc|veleta|IRAM",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.659745992%2C37.0122797%2C-3.4197459919999997%2C37.252279699999995&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.659745992%2C37.0122797%2C-3.4197459919999997%2C37.252279699999995&limit=1000&offset=986&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.659745992%2C37.0122797%2C-3.4197459919999997%2C37.252279699999995&limit=1000&offset=1567&f=json"
+   ],
+   "numberMatched": 1569,
+   "barridos": 1569,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Camino y vía pecuaria",
+      "etiqueta": "Cañada Real de Padul al Pico del Veleta",
+      "codigo_ngbe": "3.3.2",
+      "fecha": "2023-07-25"
+     },
+     "id": "2408100",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -3.49731480099996,
+       37.0772709720001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "javalambre",
+   "ancla": "Arcos de las Salinas",
+   "centro": [
+    -1.042999714,
+    39.99248882
+   ],
+   "bbox": "-1.1629997140000001,39.87248882,-0.922999714,40.112488819999996",
+   "patron": "observator|javalambre",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.1629997140000001%2C39.87248882%2C-0.922999714%2C40.112488819999996&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.1629997140000001%2C39.87248882%2C-0.922999714%2C40.112488819999996&limit=1000&offset=990&f=json"
+   ],
+   "numberMatched": 1007,
+   "barridos": 1007,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Montaña",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2018-10-03",
+      "codigo_ngbe": "4.1.2",
+      "etiqueta": "Javalambre",
+      "fuente": "MFOMENTO.IGN.NGCE"
+     },
+     "id": "2122868",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.02478026799992,
+       40.0971069320001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Vértice Geodésico",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "etiqueta": "Javalambre",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3306784",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.024744734,
+       40.09699321
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Vértice Geodésico",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-06-30",
+      "codigo_ngbe": "2.3.1",
+      "etiqueta": "Javalambre Bis",
+      "fuente": "MITMA.IGN.Red Geodésica"
+     },
+     "id": "3306787",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.999379528,
+       40.09608852
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Alineación montañosa",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2018-10-03",
+      "codigo_ngbe": "4.1.1",
+      "etiqueta": "Sierra de Javalambre",
+      "fuente": "MFOMENTO.IGN.NGCE"
+     },
+     "id": "415086",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.04107665099991,
+       40.0864868190001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26",
+      "codigo_ngbe": "4.2.2",
+      "etiqueta": "Prado de Javalambre",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "415404",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.00628656399994,
+       40.0789185310001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "alba",
+   "ancla": "Cerdanyola del Vallès",
+   "centro": [
+    2.14068408,
+    41.49103986
+   ],
+   "bbox": "2.02068408,41.37103986,2.2606840800000003,41.61103986",
+   "patron": "sincrotr|alba",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=2.02068408%2C41.37103986%2C2.2606840800000003%2C41.61103986&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=2.02068408%2C41.37103986%2C2.2606840800000003%2C41.61103986&limit=1000&offset=992&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=2.02068408%2C41.37103986%2C2.2606840800000003%2C41.61103986&limit=1000&offset=1407&f=json"
+   ],
+   "numberMatched": 1418,
+   "barridos": 1418,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Edificación",
+      "etiqueta": "Ca n'Albareda",
+      "fecha": "2023-07-07",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "1998912",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       2.04309083400005,
+       41.399719238
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Núcleos de población",
+      "etiqueta": "Palaudalba",
+      "fecha": "2025-09-16",
+      "codigo_ngbe": "2.1.10",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2528571",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       2.198704269,
+       41.58971298
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "canfranc",
+   "ancla": "Canfranc",
+   "centro": [
+    -0.5157960332,
+    42.7507171163
+   ],
+   "bbox": "-0.6357960332,42.630717116300005,-0.3957960332,42.8707171163",
+   "patron": "laborator|subterr|somport",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-0.6357960332%2C42.630717116300005%2C-0.3957960332%2C42.8707171163&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-0.6357960332%2C42.630717116300005%2C-0.3957960332%2C42.8707171163&limit=1000&offset=896&f=json"
+   ],
+   "numberMatched": 913,
+   "barridos": 913,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MFOMENTO.IGN.NGCE",
+      "tipo": "Paso de montaña",
+      "etiqueta": "Puerto de Somport",
+      "codigo_ngbe": "4.1.3",
+      "fecha": "2018-10-03"
+     },
+     "id": "1786818",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.525391131999925,
+       42.7957146210001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Túnel Internacional Somport",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-22"
+     },
+     "id": "1787520",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.526977987999942,
+       42.773314767
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Túnel de Somport",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2023-07-20"
+     },
+     "id": "1787758",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.518127795999931,
+       42.7490839010001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "C.A. Aragón",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Monasterio y Hospital de Santa Cristina de Somport",
+      "codigo_ngbe": "2.2.1",
+      "fecha": "2024-06-11"
+     },
+     "id": "4038719",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.5250735414702482,
+       42.789580249507054
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Construcción/instalación abierta",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2024-06-11",
+      "codigo_ngbe": "2.2.1",
+      "etiqueta": "Monasterio y Hospital de Santa Cristina de Somport",
+      "fuente": "C.A. Aragón"
+     },
+     "id": "4038719",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.5250735414702482,
+       42.789580249507054
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "cenieh-burgos",
+   "ancla": "Burgos",
+   "centro": [
+    -3.702175883,
+    42.34058464
+   ],
+   "bbox": "-3.822175883,42.220584640000006,-3.5821758829999997,42.46058464",
+   "patron": "evoluci[oó]n humana|CENIEH",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.822175883%2C42.220584640000006%2C-3.5821758829999997%2C42.46058464&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.822175883%2C42.220584640000006%2C-3.5821758829999997%2C42.46058464&limit=1000&offset=1000&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.822175883%2C42.220584640000006%2C-3.5821758829999997%2C42.46058464&limit=1000&offset=1701&f=json"
+   ],
+   "numberMatched": 1721,
+   "barridos": 1721,
+   "aciertos": []
+  },
+  {
+   "sitio": "clpu-salamanca",
+   "ancla": "Villamayor",
+   "centro": [
+    -5.696169954,
+    40.99968736
+   ],
+   "bbox": "-5.816169954,40.879687360000005,-5.576169954,41.11968736",
+   "patron": "l[aá]ser|pulsados",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.816169954%2C40.879687360000005%2C-5.576169954%2C41.11968736&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-5.816169954%2C40.879687360000005%2C-5.576169954%2C41.11968736&limit=1000&offset=987&f=json"
+   ],
+   "numberMatched": 1503,
+   "barridos": 1503,
+   "aciertos": []
+  },
+  {
+   "sitio": "lnf-ciemat",
+   "ancla": "Madrid",
+   "centro": [
+    -3.691978194,
+    40.41902552
+   ],
+   "bbox": "-3.811978194,40.29902552,-3.5719781939999997,40.539025519999996",
+   "patron": "CIEMAT|fusi[oó]n",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.811978194%2C40.29902552%2C-3.5719781939999997%2C40.539025519999996&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.811978194%2C40.29902552%2C-3.5719781939999997%2C40.539025519999996&limit=1000&offset=995&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.811978194%2C40.29902552%2C-3.5719781939999997%2C40.539025519999996&limit=1000&offset=1611&f=json"
+   ],
+   "numberMatched": 1621,
+   "barridos": 1621,
+   "aciertos": []
+  },
+  {
+   "sitio": "icar-mazarron",
+   "ancla": "Mazarrón",
+   "centro": [
+    -1.316492441,
+    37.59735501
+   ],
+   "bbox": "-1.436492441,37.477355010000004,-1.1964924410000002,37.71735501",
+   "patron": "at[uú]n|oceanogr|acuicultura|IEO",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.436492441%2C37.477355010000004%2C-1.1964924410000002%2C37.71735501&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.436492441%2C37.477355010000004%2C-1.1964924410000002%2C37.71735501&limit=1000&offset=994&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.436492441%2C37.477355010000004%2C-1.1964924410000002%2C37.71735501&limit=1000&offset=1031&f=json"
+   ],
+   "numberMatched": 1032,
+   "barridos": 1032,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "tiponombre": "identificador_geografico",
+      "etiqueta": "Centro Oceanográfico de Murcia",
+      "tipo": "Edificación",
+      "fecha": "2026-03-17"
+     },
+     "id": "2366432",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.23431476799993,
+       37.5764769370001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Santa Cruz de Tenerife",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Santa+Cruz+de+Tenerife&limit=100&f=json",
+   "numberMatched": 6,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Santa Cruz de Tenerife",
+      "fecha": "2025-07-06",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2710530",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -16.2544857,
+       28.4700052
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Sevilla",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Sevilla&limit=100&f=json",
+   "numberMatched": 13,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Sevilla",
+      "fecha": "2025-07-06",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2710938",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -5.994477382,
+       37.38863668
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Zaragoza",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Zaragoza&limit=100&f=json",
+   "numberMatched": 10,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Zaragoza",
+      "fecha": "2025-10-07",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2712881",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.8773178611,
+       41.6562079121
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Barcelona",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Barcelona&limit=100&f=json",
+   "numberMatched": 9,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Barcelona",
+      "fecha": "2025-07-06",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2705811",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       2.177439664,
+       41.38228986
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Madrid",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Madrid&limit=100&f=json",
+   "numberMatched": 10,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP",
+      "tiponombre": "identificador_geografico",
+      "etiqueta": "Madrid",
+      "tipo": "Municipio",
+      "fecha": "2025-07-06"
+     },
+     "id": "2709184",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -3.691978194,
+       40.41902552
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Valladolid",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Valladolid&limit=100&f=json",
+   "numberMatched": 8,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Valladolid",
+      "fecha": "2026-02-04",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2712205",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -4.728687251915037,
+       41.65252015086407
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Murcia",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Murcia&limit=100&f=json",
+   "numberMatched": 11,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Murcia",
+      "fecha": "2025-06-12",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2709416",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.13020828,
+       37.98345552
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Canfranc",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Canfranc&limit=100&f=json",
+   "numberMatched": 4,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "etiqueta": "Canfranc",
+      "fecha": "2025-10-06",
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP"
+     },
+     "id": "2708198",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.5157960332,
+       42.7507171163
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

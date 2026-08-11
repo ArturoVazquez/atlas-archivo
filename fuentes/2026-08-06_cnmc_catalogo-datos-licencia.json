@@ -1,0 +1,23 @@
+{
+ "_": "Copia archivada de la respuesta del catálogo de datos abiertos de la CNMC (CKAN, action/package_search con faceta de licencia). Se archiva porque es la PRUEBA de por qué la potencia eléctrica instalada de la CNMC NO entra en el atlas: sus 204 conjuntos, sin excepción, van bajo CC BY-SA 4.0 — licencia ShareAlike, contagiosa, incompatible con la CC BY 4.0 del atlas (datos/LICENCIA-DATOS.md). No es un juicio sobre la calidad del dato: la CNMC es el regulador y su dato es primario. Es la licencia.",
+ "emisor": "Comisión Nacional de los Mercados y la Competencia (CNMC)",
+ "servicio": "https://catalogodatos.cnmc.es/api/3/action/package_search?rows=0&facet.field=[\"license_id\"]",
+ "fecha_captura": "2026-08-06",
+ "nota": "La CNMC publica potencia instalada por tecnología, pero solo desagregada por COMUNIDAD AUTÓNOMA, no por provincia. Aunque la licencia lo permitiera, no habría servido para una capa provincial. Las dos razones son independientes y las dos bastan.",
+ "conjuntos_totales": 204,
+ "por_licencia": {
+  "CC-BY-SA-4.0": 204
+ },
+ "respuesta_facetas": {
+  "license_id": {
+   "title": "license_id",
+   "items": [
+    {
+     "name": "CC-BY-SA-4.0",
+     "display_name": "Creative Commons Attribution Share-Alike 4.0",
+     "count": 204
+    }
+   ]
+  }
+ }
+}

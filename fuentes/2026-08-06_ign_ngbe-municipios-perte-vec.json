@@ -1,0 +1,281 @@
+{
+ "_": "Registro de procedencia de la geometría de la capa `perte` del Atlas Estratégico de España. El documento del Ministerio da el municipio POR SU NOMBRE y no por coordenada: estos son los puntos con los que se sitúa cada plan, y de dónde salen.",
+ "emisor": "Instituto Geográfico Nacional (IGN) — Nomenclátor Geográfico Básico de España",
+ "servicio": "https://api-features.ign.es/collections/namedplace/items?bbox=<recuadro de la provincia>&tipo=Municipio&limit=150&offset=<n>&f=json",
+ "fecha_captura": "2026-08-06",
+ "crs": "EPSG:4258 (ETRS89). A cinco decimales coincide con WGS84: no se aplica transformación.",
+ "licencia": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0. Obliga a reconocer al IGN como origen.",
+ "por_que_por_recuadro": "Se probaron antes dos vías y las dos fallan EN SILENCIO. `administrativeunit?nameunit=...` devuelve 0 para Valladolid, Elgoibar o Abadiño, que existen. Y la consulta por etiqueta exacta no casa las formas bilingües. La vía buena es pedir los topónimos de tipo Municipio dentro del recuadro de cada provincia.",
+ "hay_que_paginar": "El servicio TOPA muy por debajo del `limit` que se le pide: con limit=3000 devolvió 199 de 219 municipios en Álava, sin avisar. Se pagina con offset y se comprueba que lo devuelto llegue a `numberMatched`; si no llega, no se publica.",
+ "dos_nombres_que_no_casan": {
+  "Navarra | Cendea de Olza/Oltza Zendea": "Oltza Zendea",
+  "València/Valencia | Sagunto/Sagunt": "Sagunto"
+ },
+ "nota_dos_nombres": "El Ministerio escribe la forma bilingüe larga y el Nomenclátor la corta. Es el mismo municipio, no un parecido, y por eso el emparejamiento va escrito a mano en vez de adivinado por similitud.",
+ "puntos": {
+  "Araba/Álava|Amurrio": {
+   "lon": -3.00102,
+   "lat": 43.05266,
+   "etiqueta_ngbe": "Amurrio",
+   "por_excepcion": false
+  },
+  "Araba/Álava|Vitoria-Gasteiz": {
+   "lon": -2.67234,
+   "lat": 42.84682,
+   "etiqueta_ngbe": "Vitoria-Gasteiz",
+   "por_excepcion": false
+  },
+  "Asturias|San Martín del Rey Aurelio": {
+   "lon": -5.6049,
+   "lat": 43.27535,
+   "etiqueta_ngbe": "San Martín del Rey Aurelio",
+   "por_excepcion": false
+  },
+  "Badajoz|Mérida": {
+   "lon": -6.34572,
+   "lat": 38.91666,
+   "etiqueta_ngbe": "Mérida",
+   "por_excepcion": false
+  },
+  "Barcelona|Barberà del Vallès": {
+   "lon": 2.12478,
+   "lat": 41.51554,
+   "etiqueta_ngbe": "Barberà del Vallès",
+   "por_excepcion": false
+  },
+  "Barcelona|Barcelona": {
+   "lon": 2.17744,
+   "lat": 41.38229,
+   "etiqueta_ngbe": "Barcelona",
+   "por_excepcion": false
+  },
+  "Barcelona|Hospitalet de Llobregat, L'": {
+   "lon": 2.09977,
+   "lat": 41.35923,
+   "etiqueta_ngbe": "L'Hospitalet de Llobregat",
+   "por_excepcion": false
+  },
+  "Barcelona|Manresa": {
+   "lon": 1.82691,
+   "lat": 41.72296,
+   "etiqueta_ngbe": "Manresa",
+   "por_excepcion": false
+  },
+  "Barcelona|Martorell": {
+   "lon": 1.93082,
+   "lat": 41.47435,
+   "etiqueta_ngbe": "Martorell",
+   "por_excepcion": false
+  },
+  "Barcelona|Parets del Vallès": {
+   "lon": 2.23379,
+   "lat": 41.57319,
+   "etiqueta_ngbe": "Parets del Vallès",
+   "por_excepcion": false
+  },
+  "Barcelona|Sallent": {
+   "lon": 1.89466,
+   "lat": 41.82413,
+   "etiqueta_ngbe": "Sallent",
+   "por_excepcion": false
+  },
+  "Barcelona|Sant Salvador de Guardiola": {
+   "lon": 1.76717,
+   "lat": 41.6787,
+   "etiqueta_ngbe": "Sant Salvador de Guardiola",
+   "por_excepcion": false
+  },
+  "Barcelona|Santpedor": {
+   "lon": 1.83944,
+   "lat": 41.78309,
+   "etiqueta_ngbe": "Santpedor",
+   "por_excepcion": false
+  },
+  "Barcelona|Viladecavalls": {
+   "lon": 1.95415,
+   "lat": 41.55495,
+   "etiqueta_ngbe": "Viladecavalls",
+   "por_excepcion": false
+  },
+  "Bizkaia|Abadiño": {
+   "lon": -2.60819,
+   "lat": 43.1525,
+   "etiqueta_ngbe": "Abadiño",
+   "por_excepcion": false
+  },
+  "Bizkaia|Amorebieta-Etxano": {
+   "lon": -2.73212,
+   "lat": 43.2203,
+   "etiqueta_ngbe": "Amorebieta-Etxano",
+   "por_excepcion": false
+  },
+  "Burgos|Burgos": {
+   "lon": -3.70218,
+   "lat": 42.34058,
+   "etiqueta_ngbe": "Burgos",
+   "por_excepcion": false
+  },
+  "Cantabria|Ampuero": {
+   "lon": -3.41742,
+   "lat": 43.34239,
+   "etiqueta_ngbe": "Ampuero",
+   "por_excepcion": false
+  },
+  "Gipuzkoa|Andoain": {
+   "lon": -2.01998,
+   "lat": 43.21942,
+   "etiqueta_ngbe": "Andoain",
+   "por_excepcion": false
+  },
+  "Gipuzkoa|Astigarraga": {
+   "lon": -1.94922,
+   "lat": 43.27998,
+   "etiqueta_ngbe": "Astigarraga",
+   "por_excepcion": false
+  },
+  "Gipuzkoa|Elgoibar": {
+   "lon": -2.41716,
+   "lat": 43.21431,
+   "etiqueta_ngbe": "Elgoibar",
+   "por_excepcion": false
+  },
+  "Girona|Riudellots de la Selva": {
+   "lon": 2.80153,
+   "lat": 41.89361,
+   "etiqueta_ngbe": "Riudellots de la Selva",
+   "por_excepcion": false
+  },
+  "Jaén|Linares": {
+   "lon": -3.63611,
+   "lat": 38.0938,
+   "etiqueta_ngbe": "Linares",
+   "por_excepcion": false
+  },
+  "Jaén|Martos": {
+   "lon": -3.9659,
+   "lat": 37.72283,
+   "etiqueta_ngbe": "Martos",
+   "por_excepcion": false
+  },
+  "La Rioja|Alfaro": {
+   "lon": -1.75009,
+   "lat": 42.17931,
+   "etiqueta_ngbe": "Alfaro",
+   "por_excepcion": false
+  },
+  "La Rioja|Logroño": {
+   "lon": -2.4391,
+   "lat": 42.46631,
+   "etiqueta_ngbe": "Logroño",
+   "por_excepcion": false
+  },
+  "Madrid|Aranjuez": {
+   "lon": -3.60352,
+   "lat": 40.03219,
+   "etiqueta_ngbe": "Aranjuez",
+   "por_excepcion": false
+  },
+  "Madrid|Madrid": {
+   "lon": -3.69198,
+   "lat": 40.41903,
+   "etiqueta_ngbe": "Madrid",
+   "por_excepcion": false
+  },
+  "Murcia|San Javier": {
+   "lon": -0.83475,
+   "lat": 37.8055,
+   "etiqueta_ngbe": "San Javier",
+   "por_excepcion": false
+  },
+  "Navarra|Cendea de Olza/Oltza Zendea": {
+   "lon": -1.74705,
+   "lat": 42.81625,
+   "etiqueta_ngbe": "Oltza Zendea",
+   "por_excepcion": true
+  },
+  "Navarra|Galar": {
+   "lon": -1.6993,
+   "lat": 42.76215,
+   "etiqueta_ngbe": "Galar",
+   "por_excepcion": false
+  },
+  "Navarra|Orkoien": {
+   "lon": -1.69589,
+   "lat": 42.82293,
+   "etiqueta_ngbe": "Orkoien",
+   "por_excepcion": false
+  },
+  "Palencia|Villamuriel de Cerrato": {
+   "lon": -4.51434,
+   "lat": 41.94961,
+   "etiqueta_ngbe": "Villamuriel de Cerrato",
+   "por_excepcion": false
+  },
+  "Pontevedra|Mos": {
+   "lon": -8.64013,
+   "lat": 42.19134,
+   "etiqueta_ngbe": "Mos",
+   "por_excepcion": false
+  },
+  "Pontevedra|Porriño, O": {
+   "lon": -8.62078,
+   "lat": 42.16178,
+   "etiqueta_ngbe": "O Porriño",
+   "por_excepcion": false
+  },
+  "Sevilla|Sevilla": {
+   "lon": -5.99448,
+   "lat": 37.38864,
+   "etiqueta_ngbe": "Sevilla",
+   "por_excepcion": false
+  },
+  "Sevilla|Utrera": {
+   "lon": -5.78124,
+   "lat": 37.18318,
+   "etiqueta_ngbe": "Utrera",
+   "por_excepcion": false
+  },
+  "Soria|San Esteban de Gormaz": {
+   "lon": -3.20545,
+   "lat": 41.57409,
+   "etiqueta_ngbe": "San Esteban de Gormaz",
+   "por_excepcion": false
+  },
+  "Valladolid|Valladolid": {
+   "lon": -4.72869,
+   "lat": 41.65252,
+   "etiqueta_ngbe": "Valladolid",
+   "por_excepcion": false
+  },
+  "València/Valencia|Paterna": {
+   "lon": -0.43944,
+   "lat": 39.50078,
+   "etiqueta_ngbe": "Paterna",
+   "por_excepcion": false
+  },
+  "València/Valencia|Sagunto/Sagunt": {
+   "lon": -0.27854,
+   "lat": 39.68004,
+   "etiqueta_ngbe": "Sagunto",
+   "por_excepcion": true
+  },
+  "València/Valencia|València": {
+   "lon": -0.37739,
+   "lat": 39.4699,
+   "etiqueta_ngbe": "València",
+   "por_excepcion": false
+  },
+  "Zaragoza|Figueruelas": {
+   "lon": -1.17367,
+   "lat": 41.76537,
+   "etiqueta_ngbe": "Figueruelas",
+   "por_excepcion": false
+  },
+  "Zaragoza|Zaragoza": {
+   "lon": -0.87732,
+   "lat": 41.65621,
+   "etiqueta_ngbe": "Zaragoza",
+   "por_excepcion": false
+  }
+ }
+}

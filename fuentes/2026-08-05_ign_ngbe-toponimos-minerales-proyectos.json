@@ -1,0 +1,194 @@
+{
+  "_": "Copia archivada de la respuesta del servicio OGC API-Features del Instituto Geográfico Nacional para los topónimos del Nomenclátor Geográfico Básico de España (NGBE) que sostienen la geometría de la capa minerales-proyectos del Atlas Estratégico de España.",
+  "emisor": "Instituto Geográfico Nacional (IGN) — Centro Nacional de Información Geográfica",
+  "servicio": "https://api-features.ign.es/collections/namedplace",
+  "fecha_captura": "2026-08-05",
+  "crs": "EPSG:4258 (ETRS89). A cinco decimales coincide con WGS84: no se aplica transformación.",
+  "licencia": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0. Obliga a reconocer al IGN como origen.",
+  "consultas": [
+    {
+      "registro_atlas": "minerales-proyectos:aguablanca",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Aguablanca&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Paraje",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-07-27",
+          "etiqueta": "Aguablanca",
+          "codigo_ngbe": "4.2.2",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "530477",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.17669682399992,
+            37.9541014200001
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:las-navas",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Mina+las+Navas&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Construcción/instalación abierta",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-07-07",
+          "etiqueta": "Mina las Navas",
+          "codigo_ngbe": "2.2.1",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2127845",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.3723146179999,
+            39.8385007990001
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:mina-doade",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Doade&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "etiqueta": "Doade",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2025-09-16",
+          "codigo_ngbe": "2.1.9",
+          "tipo": "Entidad singular",
+          "fuente": "MITMA.IGN.NGMEP"
+        },
+        "id": "2852570",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -8.318520292,
+            42.46576441
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:p6-metals",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=La+Parrilla&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "etiqueta": "La Parrilla",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-06-30",
+          "codigo_ngbe": "2.3.1",
+          "tipo": "Vértice Geodésico",
+          "fuente": "MITMA.IGN.Red Geodésica"
+        },
+        "id": "3308464",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.106287476,
+            39.07752162
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:montevives",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Montevives&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Vértice Geodésico",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-06-30",
+          "etiqueta": "Montevives",
+          "codigo_ngbe": "2.3.1",
+          "fuente": "MITMA.IGN.Red Geodésica"
+        },
+        "id": "3300311",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -3.690980108,
+            37.10273501
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:escuzar",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Minas+de+Esc%C3%BAzar&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Construcción/instalación abierta",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-07-07",
+          "etiqueta": "Minas de Escúzar",
+          "codigo_ngbe": "2.2.1",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2407200",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -3.80218462399995,
+            37.05169685
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:sepiolita-madrid",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Sepiolita&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "etiqueta": "Sepiolita",
+          "tipo": "Construcción/instalación abierta",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-07-20",
+          "codigo_ngbe": "2.2.1",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "2086914",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -3.59808329599991,
+            40.4129030540001
+          ]
+        }
+      }
+    },
+    {
+      "registro_atlas": "minerales-proyectos:matamulas",
+      "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Cerro+de+Matamulas&limit=100&f=json",
+      "objeto_ngbe": {
+        "type": "Feature",
+        "properties": {
+          "tipo": "Montaña",
+          "tiponombre": "identificador_geografico",
+          "fecha": "2023-07-25",
+          "etiqueta": "Cerro de Matamulas",
+          "codigo_ngbe": "4.1.2",
+          "fuente": "MITMA.IGN.BTN25"
+        },
+        "id": "503619",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -3.26330498899995,
+            38.6198733040001
+          ]
+        }
+      }
+    }
+  ]
+}

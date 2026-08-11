@@ -1,0 +1,229 @@
+{
+ "_": "Barridos del NGBE buscando las seis desaladoras de Acuamed, con el municipio ancla FILTRADO por tipo=Municipio y validado por recuadro de provincia (la primera pasada cayó en homónimos de Madrid, Huesca y León y quedó descartada). Capturado el 2026-08-09.",
+ "consultas": [
+  {
+   "sitio": "torrevieja",
+   "municipio_ancla": "Torrevieja",
+   "centro": [
+    -0.683382913,
+    37.97767803
+   ],
+   "bbox": "-0.8833829129999999,37.77767803,-0.48338291299999997,38.17767803",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-0.8833829129999999%2C37.77767803%2C-0.48338291299999997%2C38.17767803&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-0.8833829129999999%2C37.77767803%2C-0.48338291299999997%2C38.17767803&limit=1000&offset=996&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-0.8833829129999999%2C37.77767803%2C-0.48338291299999997%2C38.17767803&limit=1000&offset=1987&f=json"
+   ],
+   "numberMatched": 2052,
+   "barridos": 2052,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "tipo": "Construcción/instalación abierta",
+      "etiqueta": "Estación Desaladora el Mojón",
+      "fecha": "2023-06-22",
+      "codigo_ngbe": "2.2.1",
+      "fuente": "MITMA.IGN.NGBE"
+     },
+     "id": "2332922",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.771911721999913,
+       37.8430785840001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2026-03-27",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Desalinizadora San Pedro del Pinatar I",
+      "fuente": "Región de Murcia"
+     },
+     "id": "4039958",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.771450081783142,
+       37.842775486888065
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2026-03-27",
+      "codigo_ngbe": "2.2.2",
+      "etiqueta": "Desalinizadora San Pedro del Pinatar II",
+      "fuente": "Región de Murcia"
+     },
+     "id": "4039959",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.7705850892557579,
+       37.84289439421664
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "aguilas",
+   "municipio_ancla": "Águilas",
+   "centro": [
+    -1.582179976,
+    37.40417865
+   ],
+   "bbox": "-1.7821799759999999,37.204178649999996,-1.382179976,37.60417865",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.7821799759999999%2C37.204178649999996%2C-1.382179976%2C37.60417865&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.7821799759999999%2C37.204178649999996%2C-1.382179976%2C37.60417865&limit=1000&offset=996&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.7821799759999999%2C37.204178649999996%2C-1.382179976%2C37.60417865&limit=1000&offset=1909&f=json"
+   ],
+   "numberMatched": 1911,
+   "barridos": 1911,
+   "aciertos": []
+  },
+  {
+   "sitio": "mazarron",
+   "municipio_ancla": "Mazarrón",
+   "centro": [
+    -1.316492441,
+    37.59735501
+   ],
+   "bbox": "-1.516492441,37.39735501,-1.1164924410000001,37.797355010000004",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.516492441%2C37.39735501%2C-1.1164924410000001%2C37.797355010000004&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.516492441%2C37.39735501%2C-1.1164924410000001%2C37.797355010000004&limit=1000&offset=995&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.516492441%2C37.39735501%2C-1.1164924410000001%2C37.797355010000004&limit=1000&offset=1987&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-1.516492441%2C37.39735501%2C-1.1164924410000001%2C37.797355010000004&limit=1000&offset=2607&f=json"
+   ],
+   "numberMatched": 2608,
+   "barridos": 2608,
+   "aciertos": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tiponombre": "identificador_geografico",
+      "fuente": "MITMA.IGN.BTN25",
+      "tipo": "Edificación",
+      "etiqueta": "Planta Desaladora Virgen del Milagro",
+      "codigo_ngbe": "2.2.2",
+      "fecha": "2023-07-21"
+     },
+     "id": "2366427",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -1.30218574499992,
+       37.5742797060001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "sitio": "carboneras",
+   "municipio_ancla": "Carboneras",
+   "centro": [
+    -1.895097785,
+    36.99678677
+   ],
+   "bbox": "-2.095097785,36.79678677,-1.695097785,37.19678677",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.095097785%2C36.79678677%2C-1.695097785%2C37.19678677&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.095097785%2C36.79678677%2C-1.695097785%2C37.19678677&limit=1000&offset=995&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.095097785%2C36.79678677%2C-1.695097785%2C37.19678677&limit=1000&offset=1626&f=json"
+   ],
+   "numberMatched": 1627,
+   "barridos": 1627,
+   "aciertos": []
+  },
+  {
+   "sitio": "el-ejido",
+   "municipio_ancla": "El Ejido",
+   "centro": [
+    -2.812740429,
+    36.77484375
+   ],
+   "bbox": "-3.0127404290000004,36.57484375,-2.612740429,36.974843750000005",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.0127404290000004%2C36.57484375%2C-2.612740429%2C36.974843750000005&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-3.0127404290000004%2C36.57484375%2C-2.612740429%2C36.974843750000005&limit=1000&offset=995&f=json"
+   ],
+   "numberMatched": 1735,
+   "barridos": 1735,
+   "aciertos": []
+  },
+  {
+   "sitio": "cuevas-almanzora",
+   "municipio_ancla": "Cuevas del Almanzora",
+   "centro": [
+    -1.88134408529205,
+    37.2970562166088
+   ],
+   "bbox": "-2.08134408529205,37.0970562166088,-1.68134408529205,37.497056216608804",
+   "urls": [
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.08134408529205%2C37.0970562166088%2C-1.68134408529205%2C37.497056216608804&limit=1000&offset=0&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.08134408529205%2C37.0970562166088%2C-1.68134408529205%2C37.497056216608804&limit=1000&offset=999&f=json",
+    "https://api-features.ign.es/collections/namedplace/items?bbox=-2.08134408529205%2C37.0970562166088%2C-1.68134408529205%2C37.497056216608804&limit=1000&offset=1994&f=json"
+   ],
+   "numberMatched": 2673,
+   "barridos": 2673,
+   "aciertos": []
+  },
+  {
+   "etiqueta": "Aguamarga",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Aguamarga&limit=30&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Agua Amarga",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Agua+Amarga&limit=30&f=json",
+   "numberMatched": 13,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26",
+      "codigo_ngbe": "4.2.2",
+      "etiqueta": "Agua Amarga",
+      "fuente": "MITMA.IGN.BTN25"
+     },
+     "id": "521830",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.520385673999954,
+       38.2960813880001
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "etiqueta": "Desaladora de Alicante",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Desaladora+de+Alicante&limit=30&f=json",
+   "numberMatched": 0,
+   "features": []
+  },
+  {
+   "etiqueta": "Desalinizadora de Alicante",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Desalinizadora+de+Alicante&limit=30&f=json",
+   "numberMatched": 0,
+   "features": []
+  }
+ ]
+}
