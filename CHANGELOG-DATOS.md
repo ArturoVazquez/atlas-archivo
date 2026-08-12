@@ -32,6 +32,70 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.41 — La segunda película, y la gráfica que rotulaba el gas en hectómetros
+
+El atlas llevaba desde la `.36` con **una sola película**: la reserva semanal de
+los embalses. Esta release estrena la segunda, y es la que hace **visible** el
+hallazgo de la `.39` — el gasoducto del Magreb no está parado, está al revés.
+Ahora se ve en una gráfica: la línea de importación cayendo a cero en 2021 y la
+de exportación levantándose después.
+
+### Añadido
+
+- **`gas-interconexiones` estrena serie**: el **flujo mensual** de Medgaz y del
+  Magreb-Europa, **269 partes cada una desde enero de 2004**, de la estadística
+  de CORES ya archivada. La del Magreb lleva **dos columnas** —importación y
+  exportación— porque una sola contaría media historia.
+- **Los campos que la sostienen**: `importacion_mes_gwh` y, donde aplica,
+  `exportacion_mes_gwh`, con su `fecha_dato`. R11 los ata a la gráfica: el
+  último punto y el campo de la ficha no pueden decir cifras distintas, y se
+  comprobó por contraste —alterando el último punto a mano, el CI bloquea.
+
+### La mordedura que estuvo a punto de publicarse
+
+El dibujante de gráficas estaba **cableado a la primera película**. Rotulaba
+**«hm³»**, **«agua embalsada · capacidad»** y **«partes semanales»** viniera lo
+que viniera, porque la única serie que existía era de embalses. La película del
+gas habría salido publicada afirmando, en su leyenda y en su descripción
+accesible, que Medgaz importó **10.365 hectómetros cúbicos** en mayo.
+
+No se descubrió leyendo el código sino **mirando la página construida antes de
+publicarla**. De ahí que el contrato gane tres descriptores que el dato declara
+y la gráfica obedece —`unidades`, `etiquetas` y `paso`— con una regla que vale
+para lo que venga: **si la serie no lo declara, la gráfica calla en vez de
+rellenarlo**.
+
+### Y una distinción que el contrato no hacía: estado o flujo
+
+El agua embalsada es un **estado**: una lectura en un instante, que se compara
+entre fechas pero **no se suma**. El gas que entra en un mes es un **flujo**: se
+suma, y su fecha es el **primer día del período que resume**, no un instante en
+que se midiera nada. Dos series con la misma forma y sentidos distintos son una
+invitación a sumar lo que no se suma, así que ahora cada una lo dice en
+`magnitud`.
+
+### Contrato
+
+- **1.37.0 → 1.38.0** (aditiva). §4.1 gana `magnitud`, `unidades`, `etiquetas` y
+  `paso`; y `fuente.archivo` **admite lista** — sigue habiendo UNA fuente (un
+  emisor, una operación estadística) pero su materialización puede venir partida
+  porque el emisor la publica así: CORES saca entradas y salidas en dos libros.
+  Lo prohibido sigue igual: **empalmar emisores u operaciones distintas para
+  cubrir tramos distintos del tiempo**. Las **369 series del agua se reescriben**
+  con sus descriptores — siete líneas añadidas por fichero, ni una tocada.
+  **No nace ninguna regla `R*`.**
+
+### Huecos
+
+- **Cuatro de las seis interconexiones NO tienen película, y es deliberado.**
+  Badajoz, Tuy, Irún y Larrau tienen su columna a cero desde octubre de 2014
+  porque su flujo se imputa al VIP. Una gráfica de doce años de ceros contables
+  **se leería como doce años sin gas**, que es falso — y en un dibujo gana lo que
+  se ve. Solo tienen serie las dos conexiones cuyo dato mensual sigue siendo
+  real. Cada una de las cuatro lo declara en su ficha.
+- **La exportación empieza en 2010**, no en 2004: la estadística de salidas
+  arranca ahí. Los años anteriores van con la columna a `null` — hueco, no cero.
+
 ## datos-v2026.08.40 — El dato que sí existe, publicado a medias
 
 Ninguna capa nueva: esta release **corrige lo que el atlas afirmaba sobre lo

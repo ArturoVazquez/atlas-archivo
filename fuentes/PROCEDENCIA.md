@@ -469,7 +469,11 @@ límite jurisdiccional y ningún acto dice a qué término pertenece el cruce.
 (ITP-00018 Larrau, ITP-00033 Irún, ITP-00052 Tuy, ITP-00064 Badajoz) se publica
 como el hecho que es: hace la capa cruzable con los datos europeos de capacidad
 sin tocar el contenido que ENTSOG prohíbe redistribuir.
-**Archivado** · 10 ficheros · **El resto** · CHANGELOG `datos-v2026.08.39` · §10
+**Película** · Medgaz y el Magreb-Europa tienen serie mensual de flujo desde
+2004 (269 partes). Las otras cuatro NO, y es deliberado: su columna está a cero
+desde 2014 por la agrupación en VIP, y doce años de ceros contables se leerían
+como doce años sin gas.
+**Archivado** · 10 ficheros · **El resto** · CHANGELOG `datos-v2026.08.41` · §10
 
 ## residuos-radiactivos
 
