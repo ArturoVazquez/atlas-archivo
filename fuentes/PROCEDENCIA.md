@@ -427,6 +427,50 @@ discrepancia de un día entre la ficha del CSN y la orden del BOE, que **no
 cambia el dato pero queda dicha**.
 **Archivado** · 8 ficheros · **El resto** · CHANGELOG `datos-v2026.08.2` · §10
 
+## gas-interconexiones
+
+**De dónde** · **CORES** — su metodología estadística fija el perímetro (los
+puntos de entrada y salida del sistema) y sus series mensuales dan el flujo ·
+**BOE**, los actos localizados de cada conexión · **IECA (Junta de Andalucía)**,
+DERA G10, para la geometría de Medgaz y del Magreb · **IGN**, Nomenclátor, para
+las otras cuatro.
+**Licencia** · CORES, atribución de fórmula fija «Fuente CORES (www.cores.es)» ·
+Textos legales sin dueño · Ley 37/2007 · IECA, CC BY 4.0 · IGN.
+**Qué hay que saber** · **El perímetro no lo elige el atlas: lo fija la
+estadística oficial.** Son seis conexiones físicas porque eso es lo que enumera
+la metodología de CORES, que es Plan Estadístico Nacional y por tanto primaria —
+no fuente corporativa. **Los dos VIP no son registros**: desde octubre de 2014 la
+normativa europea agrupa las cuatro conexiones europeas en VIP Ibérico y VIP
+Pirineos, que son puntos virtuales sin ubicación. Y esa agrupación tiene una
+consecuencia que hay que leer antes de citar nada: **desde 2014 no existe dato
+oficial de flujo por punto físico para Francia y Portugal** — los ceros de
+Badajoz, Tuy, Irún y Larrau en la serie son de contabilidad, no de caudal.
+**Dos emisores para la geometría, y por un motivo** · **No existe ningún
+conjunto de ámbito estatal, con licencia abierta, que sitúe estos puntos.**
+Comprobado uno a uno: ENTSOG prohíbe expresamente redistribuir y derivar, y sus
+campos de coordenadas no son geografía sino lienzo de su esquema (Larrau saldría
+en el Pacífico); la CNMC tiene un SIG georreferenciado de la red pero es de
+acceso restringido por certificado y VPN; Enagás es «todos los derechos
+reservados»; y OpenStreetMap, que los cubre todos, es ODbL y su contagio lo
+descarta. Lo que sí hay: el **DERA andaluz** traza las dos conexiones del sur
+—y su punto de Medgaz cae 1,7 km al este del aeropuerto de Almería, que cuadra
+con la prosa del acto—, y el **Nomenclátor** da el resto.
+**Huecos** · Los 6 registros declaran alguno. **Cuatro conexiones no tienen acto
+propio localizado** (Larrau, Irún, Tuy y Badajoz): son anteriores a la Ley
+34/1998 y en los BOE de aquellos años **la sección de anuncios no lleva
+identificador por documento** — la información pública del tramo Villalba-Tuy de
+1996 vive dentro de un registro agregado y no se puede citar por sí sola. Lo que
+las sostiene es el perímetro estadístico y, donde los hay, actos posteriores
+sobre la misma conducción. Además: **ninguna capacidad se publica** en fuente
+vigente (la planificación que la traía es de 2008 y da Medgaz «en
+construcción»), y **el municipio de Larrau va vacío** porque el paso está en el
+límite jurisdiccional y ningún acto dice a qué término pertenece el cruce.
+**Un identificador que se cita sin arrastrar licencia** · El `codigo_entsog`
+(ITP-00018 Larrau, ITP-00033 Irún, ITP-00052 Tuy, ITP-00064 Badajoz) se publica
+como el hecho que es: hace la capa cruzable con los datos europeos de capacidad
+sin tocar el contenido que ENTSOG prohíbe redistribuir.
+**Archivado** · 10 ficheros · **El resto** · CHANGELOG `datos-v2026.08.39` · §10
+
 ## residuos-radiactivos
 
 **De dónde** · **MITECO**, el **7.º Plan General de Residuos Radiactivos**

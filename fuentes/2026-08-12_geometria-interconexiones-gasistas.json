@@ -1,0 +1,188 @@
+{
+ "_": "Copia archivada de la geometría de las seis interconexiones gasistas internacionales del Atlas Estratégico de España. Son DOS emisores, y por un motivo que la capa declara: no existe ningún conjunto de ámbito estatal, bajo licencia abierta, que sitúe los puntos de conexión gasista de España.",
+ "fecha_captura": "2026-08-12",
+ "crs": "EPSG:4326 / EPSG:4258 según el emisor. A cinco decimales ETRS89 y WGS84 coinciden: no se aplica transformación.",
+ "licencias": {
+  "IECA": "Creative Commons Reconocimiento 4.0 (CC BY 4.0), declarada en las restricciones de acceso del propio servicio del IECA y en la ficha INSPIRE de G10.",
+  "IGN": "Licencia de uso de los productos y servicios del IGN (Orden FOM/2807/2015), declarada compatible con CC BY 4.0."
+ },
+ "nota": "Lo que NO se usó, y por qué, para que nadie repita la búsqueda: ENTSOG prohíbe expresamente redistribuir y derivar, y sus campos «pointTpMapX/Y» no son coordenadas geográficas sino lienzo de su esquema —Larrau saldría en el Pacífico—; la CNMC tiene un SIG georreferenciado de la red pero es de acceso restringido por certificado y VPN; Enagás es «todos los derechos reservados»; y OpenStreetMap, que cubre los seis, es ODbL y su contagio lo hace incompatible con la licencia de salida de este atlas. Dos de los seis puntos salen del DERA andaluz, único conjunto oficial abierto que traza las conexiones internacionales; los otros cuatro, del Nomenclátor, con la precisión que eso permite y no más.",
+ "consultas": [
+  {
+   "registros_atlas": "medgaz",
+   "emisor": "Instituto de Estadística y Cartografía de Andalucía (IECA) — Datos Espaciales de Referencia de Andalucía, G10 Infraestructuras energéticas",
+   "consulta": "http://www.ideandalucia.es/services/DERA_g10_infra_energetica/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=DERA_g10_infra_energetica:g10_18_Gasoducto&outputFormat=application/json&count=200&srsName=EPSG:4326",
+   "criterio": "del trazado «Conexión internacional MEDGAZ», el vértice en tierra española (primero de la línea)",
+   "punto_tomado": [
+    -2.3501,
+    36.84585
+   ],
+   "objeto": {
+    "propiedades": {
+     "id_dera": 11010800000210,
+     "codigo": 19,
+     "nombre": "Conexión internacional MEDGAZ",
+     "uso": "Transporte"
+    },
+    "vertices": 6,
+    "geometria_tipo": "MultiLineString",
+    "extremos": [
+     [
+      -2.35010194,
+      36.84584676
+     ],
+     [
+      -1.64452128,
+      36.39553453
+     ]
+    ]
+   }
+  },
+  {
+   "registros_atlas": "magreb-europa",
+   "emisor": "Instituto de Estadística y Cartografía de Andalucía (IECA) — Datos Espaciales de Referencia de Andalucía, G10 Infraestructuras energéticas",
+   "consulta": "http://www.ideandalucia.es/services/DERA_g10_infra_energetica/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=DERA_g10_infra_energetica:g10_18_Gasoducto&outputFormat=application/json&count=200&srsName=EPSG:4326",
+   "criterio": "del trazado «Conexión internacional Magreb», el vértice del extremo español (último de la línea)",
+   "punto_tomado": [
+    -5.83811,
+    36.12459
+   ],
+   "objeto": {
+    "propiedades": {
+     "id_dera": 11010800000150,
+     "codigo": 168,
+     "nombre": "Conexión internacional Magreb",
+     "uso": "Transporte"
+    },
+    "vertices": 89,
+    "geometria_tipo": "MultiLineString",
+    "extremos": [
+     [
+      -5.93465326,
+      35.73012101
+     ],
+     [
+      -5.83810914,
+      36.12458548
+     ]
+    ]
+   }
+  },
+  {
+   "registros_atlas": "larrau",
+   "emisor": "Instituto Geográfico Nacional (IGN) — Nomenclátor Geográfico Básico de España",
+   "consulta": "https://api-features.ign.es/collections/namedplace/items?bbox=-1.10,42.90,-0.95,43.02&limit=300&f=json",
+   "criterio": "de los homónimos, el de tipo «Paso de montaña»",
+   "punto_tomado": [
+    -0.9931,
+    42.97388
+   ],
+   "objeto_ngbe": {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Puerto de Larrau",
+     "tipo": "Paso de montaña",
+     "fecha": "2023-07-25",
+     "codigo_ngbe": "4.1.3",
+     "fuente": "MITMA.IGN.BTN25"
+    },
+    "id": "1764057",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -0.993102773999908,
+      42.9738767640001
+     ]
+    }
+   }
+  },
+  {
+   "registros_atlas": "irun",
+   "emisor": "Instituto Geográfico Nacional (IGN) — Nomenclátor Geográfico Básico de España",
+   "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Irun&limit=30&f=json",
+   "criterio": "de los homónimos, el de tipo «Municipio»",
+   "punto_tomado": [
+    -1.7888,
+    43.33771
+   ],
+   "objeto_ngbe": {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.3",
+     "fuente": "MAETD.REL",
+     "tipo": "Municipio",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Irun",
+     "fecha": "2025-07-05"
+    },
+    "id": "2708091",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.788803185,
+      43.33771112
+     ]
+    }
+   }
+  },
+  {
+   "registros_atlas": "tuy",
+   "emisor": "Instituto Geográfico Nacional (IGN) — Nomenclátor Geográfico Básico de España",
+   "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Tui&limit=30&f=json",
+   "criterio": "de los homónimos, el de tipo «Municipio»",
+   "punto_tomado": [
+    -8.64431,
+    42.0465
+   ],
+   "objeto_ngbe": {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Tui",
+     "tipo": "Municipio",
+     "fecha": "2025-07-06",
+     "codigo_ngbe": "1.3",
+     "fuente": "MITMA.IGN.NGMEP"
+    },
+    "id": "2710123",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -8.644314493,
+      42.04649983
+     ]
+    }
+   }
+  },
+  {
+   "registros_atlas": "badajoz",
+   "emisor": "Instituto Geográfico Nacional (IGN) — Nomenclátor Geográfico Básico de España",
+   "consulta": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Badajoz&limit=30&f=json",
+   "criterio": "de los homónimos, el de tipo «Municipio»",
+   "punto_tomado": [
+    -6.9697,
+    38.8789
+   ],
+   "objeto_ngbe": {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tipo": "Municipio",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Badajoz",
+     "fecha": "2025-07-05"
+    },
+    "id": "2705594",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -6.969698521,
+      38.87890178
+     ]
+    }
+   }
+  }
+ ]
+}

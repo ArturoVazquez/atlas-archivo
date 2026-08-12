@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.36.0 · **Fecha:** 2026-08-12
+**Versión del contrato:** 1.37.0 · **Fecha:** 2026-08-12
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -1078,6 +1078,44 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > tienen autorizaciones, fechas y potencias distintas: son dos hechos, no uno.
 > Comparten coordenada, y eso se dice — separarlos en el mapa exigiría una
 > fuente que sitúe cada edificio, y no la hay (§6.6).
+
+**gas-interconexiones** *(1.37)* (`actividad`, puntos, verificado):
+`municipio` (– *admite null*) · `provincia` (✔) · `pais_vecino` (✔; +`__v`,`__f`) ·
+`extremo_exterior` (nombrado, sin coordenada) · `nombre_estadistico` ·
+`codigo_entsog` (– *admite null*) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
+`claves[]`
+
+> **`nombre_estadistico` existe porque el mismo tubo tiene tres nombres.** Para
+> CORES es «Zahara de los Atunes»; para la CNMC, «la interconexión de Tarifa»;
+> para el BOE, «el gasoducto Magreb-Europa». Sin este campo, cruzar la
+> estadística con los actos fabrica duplicados o huecos — y el fallo sería
+> silencioso, que es el peor.
+>
+> **`fase: produccion` dice que opera, NO en qué sentido.** El Magreb-Europa está
+> en producción **exportando** a Marruecos desde que dejó de importar. El sentido
+> es un hecho de la estadística, con su fecha, y vive en `claves`; meterlo en la
+> fase obligaría a inventar valores que no corresponden a un campo del que se
+> deriva `activo`. Por eso la CATEGORÍA sí tiene un valor propio,
+> `flujo_invertido`: llamarlo «en servicio» a secas escondería lo más importante
+> que tiene, y «parado» sería sencillamente falso.
+>
+> **`municipio` admite null, y es el caso de Larrau.** El punto es un paso de
+> montaña en el límite jurisdiccional, y ningún acto archivado dice a qué término
+> municipal pertenece el cruce. Rellenarlo por cercanía sería el relleno por
+> verosimilitud que el principio 1 prohíbe.
+>
+> **`codigo_entsog` es un identificador, no un dato de ENTSOG.** Los datos de
+> ENTSOG no se pueden redistribuir —sus condiciones prohíben expresamente
+> derivar—, pero un identificador es un hecho y citarlo no arrastra licencia. Se
+> publica solo para que la capa sea cruzable con los datos europeos de capacidad
+> por quien tenga derecho a usarlos.
+>
+> **Los VIP no son registros.** Desde octubre de 2014 la normativa europea agrupa
+> las cuatro conexiones europeas en dos puntos **virtuales**. No tienen
+> ubicación: darles geometría sería inventarla. Y su consecuencia se declara en
+> cada ficha — **desde esa fecha no hay dato oficial de flujo por punto físico**
+> para Francia y Portugal, así que el cero de Badajoz o Tuy en la serie significa
+> «se cuenta en otro sitio», no «no pasa nada».
 
 **residuos-radiactivos** *(1.36)* (`dotacion`, puntos, verificado):
 `municipio` (✔) · `provincia` (✔) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
@@ -2158,6 +2196,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.37.0** | 2026-08-12 | **Aditiva, y cierra un hueco que llevaba abierto desde la release `.9`.** Nace `gas-interconexiones` (§10): las **seis conexiones físicas** de gas de España con el exterior. Lo que la hace posible es de dónde sale el perímetro: la **metodología estadística de CORES** —Plan Estadístico Nacional, luego primaria y no corporativa— enumera los puntos de entrada y salida del sistema, y esa lista ES el perímetro. **Es exactamente lo que `electricidad-interconexiones` no pudo hacer**: su hueco `f9` dice desde hace un mes que las interconexiones ya en servicio no están «porque no se ha localizado un instrumento que las inventaríe con sus extremos; el que lo publica es Red Eléctrica, fuente corporativa». En gas ese instrumento existe. **El hallazgo que la capa publica y que casi nadie tiene claro: el gasoducto Magreb-Europa no está parado, está INVERTIDO.** Leído mes a mes en la serie oficial: octubre de 2021 fue el último con importación (4.314,8 GWh), noviembre es un cero limpio — y el mismo mes Medgaz sube de 7.236 a 8.132 GWh —, mientras que por ese mismo tubo España **exportó 10.375 GWh a Marruecos en 2025** y sigue haciéndolo en 2026. De ahí la categoría propia `flujo_invertido`: «en servicio» a secas escondería el hecho, y «parado» sería falso. §10 estrena tres campos con doctrina: **`nombre_estadistico`**, porque el mismo tubo se llama «Zahara de los Atunes» en la estadística, «interconexión de Tarifa» en el regulador y «Magreb-Europa» en el BOE, y cruzar por el nombre fabricaría duplicados en silencio; **`codigo_entsog`**, que publica el IDENTIFICADOR y nada más —los datos de ENTSOG prohíben expresamente redistribuirse y derivarse, pero un identificador es un hecho y citarlo no arrastra licencia—; y **`municipio` que admite null**, que es el caso de Larrau, un paso de montaña en el límite jurisdiccional que ningún acto asigna a término municipal. **Los dos VIP no son registros**: son puntos virtuales de mercado sin ubicación, y su existencia obliga a declarar en cada ficha que **desde octubre de 2014 no hay dato oficial de flujo por punto físico** para Francia y Portugal — el cero de Badajoz o Tuy significa «se cuenta en otro sitio», no «no pasa nada». Y queda anotado un **«no existe» con nombres**: ningún conjunto de ámbito estatal con licencia abierta sitúa estos puntos (ENTSOG prohíbe derivar y sus campos de coordenadas son lienzo de su esquema, no geografía; el SIG de la CNMC va por certificado y VPN; Enagás es todos los derechos reservados; OSM es ODbL), así que la geometría sale del **DERA andaluz** para las dos del sur y del **Nomenclátor** para las otras cuatro, con la precisión declarada registro a registro. **No nace ninguna regla `R*`.** |
 | **1.36.0** | 2026-08-12 | **Aditiva, y la primera capa del segundo horizonte.** Nace `residuos-radiactivos` (§10): las instalaciones del ciclo del combustible que **no** son reactores — los seis ATI en servicio, los cuatro ATI-100 autorizados y sin construir, el almacén previsto en Vandellós I, El Cabril, la fábrica de Juzbado y el **ATC de Villar de Cañas, que entra como histórico**. Es la mitad del ciclo que `nuclear` no contaba, y **el registro de una cancelación es su pieza central**: el 7.º PGRR declara literalmente que «se considera inviable disponer de una instalación de dicha naturaleza», y tres actos distintos la entierran — el plan, el Acuerdo que deja sin efecto la designación de 2011 (`BOE-A-2024-806`) y la Orden TED/547/2024 que declara conclusos los procedimientos. Publicar ese almacén como vivo habría sido el error que el atlas existe para no cometer; omitirlo, el contrario. **La lección que la capa deja escrita, y que vale para cualquier instalación futura: autorizar no es existir.** Los ATI se autorizan como modificación de diseño de su central, en **dos pasos** —ejecución y montaje primero, puesta en servicio después— y **casi nunca llega el segundo al BOE**: los cuatro ATI-100 tienen acto de 2024-25 y van en `desarrollo`, con hueco declarado sobre si ya operan (el plan los esperaba para 2026). Por lo mismo, **las fechas de operación de los seis ATI en servicio son las que declara el plan, no las de un acto archivado**, y cada ficha lo dice. **`capacidad` nace como TEXTO** y no como número: Trillo mide en contenedores, José Cabrera en posiciones de losa y El Cabril en celdas y metros cúbicos — un campo común obligaría a convertir entre unidades que no lo son sin suponer. **Un ATD no es un registro**: el plan lo define como el ATI de su central más una instalación complementaria, así que darle ficha propia contaría dos veces el mismo edificio. Y dos hallazgos de la fuente que ningún resumen traía: **la autorización de El Cabril no caduca por fecha sino por volumen** de celdas («hasta que se complete el volumen disponible»), y **su propio acto no la llama El Cabril** ni cita el municipio, sino «instalación nuclear de almacenamiento de residuos radiactivos sólidos de sierra Albarrana». **No nace ninguna regla `R*`.** |
 | **1.35.0** | 2026-08-10 | **Aditiva, y la primera que cambia la CLASE de lo que el atlas publica.** Nacen las **series temporales** (§4.1): la película de un registro junto a su foto. Un fichero por registro en `datos/series/<capa>/<slug>.json` —el troceo es el visor estático: la gráfica pide UN fichero—, con tres reglas que son doctrina: **solo hay película donde hay negativo** (la serie exige su histórico completo en una fuente primaria archivada; nada de reconstruir ni empalmar), **los huecos se quedan huecos** (la interpolación es el dato inventado con mejor coartada), y **R11 — la foto y la película no se contradicen** (§7.11, bloquea): el último punto debe cuadrar con el campo de la ficha que la serie declara, y la última fecha con su `fecha_dato` — la comprobación que impide que el dossier diga una cifra y la gráfica termine en otra. La capacidad viaja EN la serie y no como constante, porque cambia (Contreras, 874→361 hm³ en 2019). La primera serie es la reserva semanal de `agua-embalsada` desde 1988, cuyo histórico ya estaba en `fuentes/` desde la release `.18`. **No releva a la ficha**: los campos instantáneos siguen en la capa con su verificación, y R7 sigue prohibiendo derivados también en la gráfica. |
 | **1.34.0** | 2026-08-09 | **Aditiva.** `cables-submarinos` crece de 6 a 9 aterrizajes y su `emplazamiento` **admite `null`**: el esquema exigía playa o puerto porque todos los actos conocidos la nombraban, y han aparecido dos que no — el anuncio del BOC de **Canalink Base 6** (Tenerife-El Hierro) sitúa por términos municipales, y el de **Sagunto** (CNC02/25/46/0013) también. Cuando el acto no baja de ahí, `emplazamiento` va a `null` y `geo_precision` a `municipio`, que es exactamente lo que la precisión existe para declarar. El amarre herreño del Base 6 sí tiene playa —el proyecto básico de la propia información pública la nombra («Playa de El Salto de Tamaduste», «Playa del Salto» en el Nomenclátor)— y entra en `paraje` con el mismo trato que el nombre de Grace Hopper en Sopela. **Primer expediente canario de la capa**: en Canarias el DPM-T lo tramita el Gobierno canario y su anuncio no lleva código CNC — la referencia es la del propio BOC. **No nace ninguna regla `R*`.** |

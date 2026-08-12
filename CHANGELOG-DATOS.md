@@ -32,6 +32,110 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.39 — El Magreb no está parado: está al revés
+
+Segunda capa del **segundo horizonte**, y la que **cierra un hueco que su
+hermana declaraba desde la release `.9`**. `electricidad-interconexiones` dice
+en cada una de sus fichas que las interconexiones ya en servicio no están en el
+atlas «porque no se ha localizado un instrumento que las inventaríe con sus
+extremos; el que lo publica es Red Eléctrica, fuente corporativa». En gas ese
+instrumento existe, y es estadística oficial.
+
+### Añadido
+
+- **Nace `gas-interconexiones`** (30 capas), rama `energia`. Las **seis
+  conexiones físicas** de gas con el exterior: Medgaz (Argelia), Magreb-Europa
+  (Marruecos), Larrau e Irún (Francia), Tuy y Badajoz (Portugal).
+- **El perímetro no lo elige el atlas**: la metodología estadística de **CORES**
+  —Plan Estadístico Nacional, por tanto primaria y no corporativa— enumera los
+  puntos de entrada y salida del sistema, y esa lista es el perímetro. Seis
+  conexiones físicas, ni una más.
+- **10 fuentes nuevas archivadas**: la metodología y las dos series mensuales de
+  CORES, seis actos del BOE y la geometría de los seis puntos.
+
+### El hallazgo: el gasoducto del Magreb no está parado
+
+Se repite en todas partes que el Magreb-Europa «cerró» en 2021. La serie oficial
+dice otra cosa, y se lee mes a mes:
+
+- **Octubre de 2021 fue el último con importación**: 4.314,8 GWh. En
+  **noviembre, cero** — y cero todos los meses desde entonces.
+- **El mismo mes, Medgaz absorbe el desplazamiento**: de 7.236,3 GWh en octubre
+  a 8.131,6 en noviembre.
+- **Y por ese mismo tubo España exporta a Marruecos**: **10.375 GWh en 2025**, y
+  sigue en 2026 (822 GWh en enero, 780,8 en mayo, el último publicado).
+
+De ahí que la capa le dé **categoría propia, `flujo_invertido`**: llamarlo «en
+servicio» a secas escondería lo más importante que tiene, y llamarlo «parado»
+sería sencillamente falso. Lo que el atlas **no** publica es POR QUÉ dejó de
+importar: ninguna fuente archivada aquí lo dice, y esa explicación se debate en
+El Tercio, no se registra como dato.
+
+### Lo que esta capa NO afirma, y por qué
+
+- **Los dos VIP no son registros.** Desde octubre de 2014 la normativa europea
+  agrupa las cuatro conexiones europeas en VIP Ibérico y VIP Pirineos, que son
+  puntos **virtuales**: un acuerdo de mercado, no un tubo. Darles geometría
+  sería inventarla.
+- **Y por eso mismo, desde 2014 no hay dato oficial de flujo por punto físico
+  para Francia y Portugal.** El cero de Badajoz, Tuy, Irún o Larrau en la serie
+  significa «se cuenta en otro sitio», **no** «no pasa nada». Cada ficha lo
+  dice.
+- **Ninguna capacidad se publica.** La única planificación vinculante que la
+  traía es la de **2008-2016**, cuyos datos son de enero de 2008 — allí Medgaz
+  figura «en construcción». Usarla sería publicar una cifra caducada con aspecto
+  de vigente.
+
+### La geometría, o un «no existe» con nombres
+
+**No hay ningún conjunto de ámbito estatal, con licencia abierta, que sitúe los
+puntos de conexión gasista de España.** Comprobado uno a uno, y queda escrito
+para que nadie repita la búsqueda:
+
+- **ENTSOG** prohíbe expresamente redistribuir y derivar — y sus campos
+  `pointTpMapX`/`pointTpMapY`, que parecen coordenadas, son el lienzo de su
+  esquema: **Larrau saldría en el Pacífico**.
+- **La CNMC sí tiene** un SIG georreferenciado de la red de gas, pero es de
+  acceso restringido por certificado digital y VPN.
+- **Enagás** es «todos los derechos reservados», y además corporativa.
+- **OpenStreetMap** los cubre los seis y es **ODbL**: su contagio lo hace
+  incompatible con la licencia de salida de este atlas. Es la tentación
+  evidente, y por eso se dice en voz alta que no se usa.
+
+Lo que sí hay: el **DERA de la Junta de Andalucía** (CC BY 4.0) traza las dos
+conexiones del sur — y su punto de Medgaz cae **1,7 km al este del aeropuerto de
+Almería**, que cuadra con la prosa del acto: dos fuentes oficiales
+independientes de acuerdo. Para las otras cuatro, el **Nomenclátor del IGN**,
+con la precisión que eso permite y no más.
+
+**Y un hallazgo pequeño que resolvió Larrau**: el BOE no habla de «la
+interconexión de Larrau» sino del **«gasoducto Puerto de Larrau-Villar de
+Arnedo»**, y el Nomenclátor tiene «Puerto de Larrau» como paso de montaña. El
+punto sale del nombre que le da su propio acto.
+
+### Contrato
+
+- **1.36.0 → 1.37.0** (aditiva). §10 estrena `nombre_estadistico` (el mismo tubo
+  tiene tres nombres oficiales distintos, y cruzar por el nombre fabricaría
+  duplicados **en silencio**), `codigo_entsog` (se publica el identificador y
+  nada más: los datos de ENTSOG no se pueden redistribuir, pero un identificador
+  es un hecho) y `municipio` **que admite null**. **No nace ninguna regla `R*`.**
+
+### Huecos
+
+- **Cuatro conexiones no tienen acto propio localizado** — Larrau, Irún, Tuy y
+  Badajoz. Son anteriores a la Ley 34/1998, y en los BOE de aquellos años **la
+  sección de anuncios no lleva identificador por documento**: la información
+  pública del tramo Villalba-Tuy de 1996 vive dentro de un registro agregado y
+  no se puede citar por sí sola. Lo que las sostiene es el perímetro estadístico
+  y, donde los hay, actos posteriores sobre la misma conducción.
+- **El municipio de Larrau va vacío**: el paso está en el límite jurisdiccional
+  y ningún acto dice a qué término pertenece el cruce. Los actos sitúan
+  posiciones del gasoducto (Gallués, Lumbier), no el cruce mismo.
+- **Ninguna capacidad**, por lo dicho arriba.
+- **Por qué el Magreb dejó de importar en noviembre de 2021** no lo dice ninguna
+  fuente archivada. El atlas registra el hecho; la causa, no.
+
 ## datos-v2026.08.38 — La otra mitad del ciclo: dónde va lo que las centrales dejan
 
 Primera capa del **segundo horizonte**, el banco de filones que quedó verificado
