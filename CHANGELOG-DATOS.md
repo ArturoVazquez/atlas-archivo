@@ -32,6 +32,117 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.38 — La otra mitad del ciclo: dónde va lo que las centrales dejan
+
+Primera capa del **segundo horizonte**, el banco de filones que quedó verificado
+contra el acto el mismo día. `nuclear` contaba los siete reactores en operación;
+lo que se hace con su combustible cuando sale de la piscina no lo contaba nadie.
+Ahora sí: catorce instalaciones, de las cuales **ocho existen, cinco no existen
+todavía y una no existirá nunca** — y esa última es la pieza que explica la
+forma de todas las demás.
+
+### Añadido
+
+- **Nace `residuos-radiactivos`** (29 capas), rama `energia`, hermana de
+  `nuclear`. El perímetro y los datos salen del **7.º Plan General de Residuos
+  Radiactivos**, aprobado por Acuerdo del Consejo de Ministros de 27 de
+  diciembre de 2023 (`BOE-A-2024-440`), con cada acto de autorización
+  localizado archivado en la ficha que lo cita. **14 documentos nuevos en
+  `fuentes/`**: el plan completo de MITECO y trece del BOE.
+- **Los seis ATI en servicio** — Trillo (2002, un edificio de hormigón para
+  hasta 80 contenedores, el primero de España y el único que no es una losa a
+  la intemperie), José Cabrera (2009, **16 posiciones y todas ocupadas**: el
+  único lleno), Ascó (2013, ampliado en 2022 de 16 a 18 contenedores por losa),
+  Santa María de Garoña (2018), Almaraz (2018, 20 contenedores) y Cofrentes
+  (2021, 24).
+- **El Cabril**, el único almacén DEFINITIVO del país, con lo que queda libre a
+  31 de diciembre de 2022: las celdas de baja y media actividad al **82,11 %**.
+- **La fábrica de elementos combustibles de Juzbado**, el otro extremo del
+  ciclo, cuya autorización se renovó el mes pasado (Orden TED/775/2026, en vigor
+  desde el 5 de julio de 2026 y por diez años) — **el acto más reciente de toda
+  la capa**.
+- **Los cuatro ATI-100** de Vandellós II, Ascó, Cofrentes y Almaraz, en fase
+  `desarrollo` y no `produccion`: ver más abajo.
+- **El almacén previsto en Vandellós I** (2027), para los residuos que hoy
+  siguen en Francia procedentes del reproceso de esa central.
+- **El ATC de Villar de Cañas, como registro HISTÓRICO.** Designado por Acuerdo
+  de Consejo de Ministros de 30 de diciembre de 2011 y **abandonado** por el de
+  27 de diciembre de 2023: el plan dice literalmente que «se considera inviable
+  disponer de una instalación de dicha naturaleza» ante «la falta del consenso
+  social, político e institucional». Su muerte tiene **tres actos, no uno** — el
+  plan, la resolución que deja sin efecto la designación (`BOE-A-2024-806`) y la
+  **Orden TED/547/2024**, que declara conclusos los procedimientos de
+  autorización previa y de construcción. Y una nota que casi nadie tiene clara:
+  allí **sí se construyó algo** —terrenos comprados, viveros de empresas,
+  oficinas y naves industriales—, y el acuerdo insta a Enresa a cederlo gratis
+  al Estado, a Castilla-La Mancha o a entidades locales de Cuenca.
+
+### Lo que esta capa NO afirma, y por qué
+
+- **Autorizar no es existir, y aquí la distancia es de años.** Los ATI se
+  autorizan como *modificación de diseño* de su central, en **dos pasos**:
+  ejecución y montaje primero, puesta en servicio después. **Al BOE llega casi
+  siempre solo el primero.** Por eso los cuatro ATI-100 —con acto de 2024 y
+  2025— van en fase `desarrollo`: lo que está archivado autoriza la obra, no
+  declara la instalación en pie. El plan esperaba que operasen en 2026; si ha
+  ocurrido, a este atlas no le consta, y su ficha lo dice en vez de suponerlo.
+- **Y por lo mismo, las fechas de operación de los seis ATI en servicio son las
+  que declara el plan, no las de un acto.** Cada ficha lleva ese hueco escrito.
+- **Un ATD no es una instalación nueva.** Tras caer el ATC, el plan crea un
+  «Almacén Temporal Descentralizado» en cada uno de los siete emplazamientos —
+  pero lo define como «su ATI, al que se le añade una instalación complementaria,
+  así como medidas adicionales». Darles ficha propia habría contado **dos veces
+  el mismo edificio**: son siete nombres para seis almacenes que ya están en la
+  capa y uno que no existe.
+- **La web del CSN se equivoca, y manda el plan.** Su página de almacenamiento
+  temporal individualizado lista Vandellós II —que **no tiene ninguno**, y el
+  propio plan la señala como «la única central que actualmente no dispone de
+  almacenamiento en seco»— y omite Almaraz, que sí. La capa sigue al 7.º PGRR.
+
+### Dos cosas que dice la fuente y sorprenden
+
+- **La autorización de El Cabril no caduca por fecha, sino por volumen.** La
+  orden de 2001 dice que vale «hasta que se complete el volumen disponible para
+  el almacenamiento en las celdas». No hay vencimiento que anotar.
+- **Y esa misma orden no la llama El Cabril**, ni cita el municipio: la nombra
+  «instalación nuclear de almacenamiento de residuos radiactivos sólidos de
+  sierra Albarrana». Que está en Hornachuelos (Córdoba) lo dice el plan, no su
+  propia autorización.
+
+### Contrato
+
+- **1.35.0 → 1.36.0** (aditiva). §10 estrena la ficha de la capa, con tres
+  decisiones anotadas: `fase` como el campo que separa lo autorizado de lo
+  existente, `capacidad` **como texto y no como número** (Trillo mide en
+  contenedores, José Cabrera en posiciones, El Cabril en celdas y m³: un campo
+  común obligaría a convertir entre unidades que no lo son sin suponer), y el
+  ATD que no es registro. **No nace ninguna regla `R*`.**
+
+### Huecos
+
+- **Estructural, y es el de arriba**: la puesta en servicio de los ATI no se
+  publica sistemáticamente. Las fechas vienen del plan.
+- **La ampliación de El Cabril** —el propio plan concluye que las 28 celdas
+  actuales obligan a tener nuevas en **2028**, doce en una primera fase y unas
+  quince después— **no tiene acto de autorización localizado**. Se registra la
+  necesidad declarada, no una obra autorizada.
+- **El almacén de Vandellós I no tiene ningún acto**: ni previa, ni
+  construcción, ni puesta en servicio. Lo único que lo sostiene es la previsión
+  del plan, y por eso su fase es `tramitacion` y no `desarrollo` — que haya obra
+  en curso no consta.
+- **Cuatro actos antiguos no aparecen en el BOE** pese a buscarlos: los que
+  autorizaron los ATI de Trillo (2002), José Cabrera (2009) y Ascó (2013), y la
+  puesta en servicio del de Garoña (2018).
+- **La geometría de El Cabril no es la de la instalación.** El Nomenclátor del
+  IGN no nombra el centro de ENRESA: se toma el barrio homónimo que le da nombre
+  y sobre el que se asienta, con la precisión declarada en `paraje` — y los
+  otros ocho «El Cabril» del país descartados por recuadro. El ATC va en
+  `municipio` por el motivo más simple: **nunca se construyó, así que no hay
+  nada que el Nomenclátor pueda nombrar**.
+- Los ATI heredan la coordenada de su central, y en Ascó, Almaraz y Cofrentes el
+  ATI y su ATI-100 comparten punto: son dos instalaciones en el mismo recinto y
+  el Nomenclátor no las separa (§6.6, el mismo trato que Almaraz I y II).
+
 ## datos-v2026.08.37 — El vigía cobra su primera pieza: la concesión de Valdelentisco
 
 **Primera release del circuito de guardia completo**: `otear` señaló el acto en

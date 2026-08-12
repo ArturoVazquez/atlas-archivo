@@ -427,6 +427,39 @@ discrepancia de un día entre la ficha del CSN y la orden del BOE, que **no
 cambia el dato pero queda dicha**.
 **Archivado** · 8 ficheros · **El resto** · CHANGELOG `datos-v2026.08.2` · §10
 
+## residuos-radiactivos
+
+**De dónde** · **MITECO**, el **7.º Plan General de Residuos Radiactivos**
+(Acuerdo del Consejo de Ministros de 27 de diciembre de 2023) — de él salen el
+perímetro, las fechas de operación y las capacidades · **BOE**, el acuerdo que
+lo publica y los actos de autorización de cada instalación · **IGN**,
+Nomenclátor.
+**Licencia** · MITECO, reutilización citando la fuente, sin no-comercial ni
+compartir-igual · Textos legales sin dueño · Ley 37/2007 · IGN.
+**Qué hay que saber** · **Autorizado no es existente.** Los cuatro ATI-100
+tienen acto que autoriza «la ejecución y montaje»; la autorización de PUESTA EN
+SERVICIO es un paso posterior y distinto, y no se ha localizado ninguno. Por eso
+van en fase `desarrollo` y no `produccion`: es el campo que impide leer un
+permiso de obra como un edificio en pie. **Un ATD no es una instalación**: el
+plan lo define como el ATI de su central más una instalación complementaria, así
+que darle ficha propia contaría dos veces el mismo edificio. **Y la capacidad va
+en palabras, no en cifra**: cada instalación la mide en lo suyo —contenedores,
+posiciones, celdas, metros cúbicos— y forzar una unidad común obligaría a
+convertir, es decir, a inventar.
+**Huecos** · Los 14 registros declaran alguno. El estructural: **la puesta en
+servicio de los ATI casi nunca llega al BOE** —se autorizan como modificación de
+diseño de su central, en dos pasos— así que las fechas de operación son las que
+declara el plan, no las de un acto archivado. Además: la ampliación de El Cabril
+prevista para 2028 no tiene acto localizado; el almacén de Vandellós I **no
+tiene ningún acto**, solo la previsión del plan para 2027; y si los ATI-100 han
+entrado ya en servicio —el plan lo esperaba para 2026— a este atlas no le
+consta.
+**Dos cosas que la fuente dice y sorprenden** · El acto de explotación de El
+Cabril **no la llama El Cabril** («instalación nuclear de almacenamiento de
+residuos radiactivos sólidos de sierra Albarrana») ni cita el municipio; y su
+autorización **no caduca por fecha sino por volumen** de celdas ocupadas.
+**Archivado** · 14 ficheros · **El resto** · CHANGELOG `datos-v2026.08.38` · §10
+
 ## electricidad-interconexiones
 
 **De dónde** · **DOUE**, Reglamento Delegado (UE) 2026/764, lista de la Unión ·

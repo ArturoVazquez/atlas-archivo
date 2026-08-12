@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.35.0 · **Fecha:** 2026-08-10
+**Versión del contrato:** 1.36.0 · **Fecha:** 2026-08-12
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -1079,6 +1079,41 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > Comparten coordenada, y eso se dice — separarlos en el mapa exigiría una
 > fuente que sitúe cada edificio, y no la hay (§6.6).
 
+**residuos-radiactivos** *(1.36)* (`dotacion`, puntos, verificado):
+`municipio` (✔) · `provincia` (✔) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
+`anio_operacion` (+`__v`,`__f`) · `capacidad` (+`__v`,`__f`) ·
+`titular` (+`__v`,`__f`) · `claves[]`
+
+> **`fase` es aquí el campo que impide la mentira más fácil de esta capa.**
+> «Autorizar la ejecución y montaje» de un almacén y «tener un almacén» son dos
+> hechos con años de distancia, y el segundo casi nunca llega al BOE: los ATI se
+> autorizan como **modificación de diseño** de su central, en dos pasos —
+> ejecución y montaje primero, puesta en servicio después—, y lo que se publica
+> es el primero. De modo que los cuatro ATI-100 con acto archivado van en
+> `desarrollo` y no en `produccion`, y su ficha lo dice con todas las letras.
+> Publicarlos como existentes sería el error simétrico al de registrar como vivo
+> un almacén cancelado.
+>
+> **`capacidad` es texto, y a propósito.** Cada instalación mide lo suyo en lo
+> suyo: Trillo en contenedores, José Cabrera en posiciones de losa, El Cabril en
+> celdas y en metros cúbicos. Un campo numérico común obligaría a convertir entre
+> unidades que no lo son sin suponer, y suponer es lo que el principio 1 prohíbe.
+> Quien quiera comparar, que lea la frase de la fuente.
+>
+> **Un ATD no es un registro.** El 7.º PGRR define el Almacén Temporal
+> Descentralizado de cada central como «su ATI, al que se le añade una
+> instalación complementaria, así como medidas adicionales». No es una
+> instalación distinta: es el mismo edificio con un envoltorio de doctrina. Darle
+> ficha propia contaría dos veces lo mismo — la misma trampa que §6.6 evita con
+> los reactores que comparten emplazamiento, vista desde el otro lado.
+>
+> **Y una instalación cancelada sigue siendo un registro.** El ATC de Villar de
+> Cañas nunca se construyó y se abandonó en 2023, pero va en la capa como
+> `estado_registro: historico`: su cancelación es el hecho que explica por qué
+> hay catorce almacenes repartidos donde debía haber uno. «Nada se borra» (§8) no
+> vale solo para lo que dejó de ser verdad: también para lo que nunca llegó a
+> serlo, cuando su no-existencia está acreditada por acto.
+
 **gas-regasificacion** *(1.8)* (`dotacion`, puntos, verificado):
 `operador` (✔; +`__v`,`__f`) · `municipio` (✔) · `provincia` (✔) ·
 **`fase`** (✔, vocabulario; +`__v`,`__f`) · `puesta_en_servicio` (+`__v`,`__f`) ·
@@ -2123,6 +2158,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.36.0** | 2026-08-12 | **Aditiva, y la primera capa del segundo horizonte.** Nace `residuos-radiactivos` (§10): las instalaciones del ciclo del combustible que **no** son reactores — los seis ATI en servicio, los cuatro ATI-100 autorizados y sin construir, el almacén previsto en Vandellós I, El Cabril, la fábrica de Juzbado y el **ATC de Villar de Cañas, que entra como histórico**. Es la mitad del ciclo que `nuclear` no contaba, y **el registro de una cancelación es su pieza central**: el 7.º PGRR declara literalmente que «se considera inviable disponer de una instalación de dicha naturaleza», y tres actos distintos la entierran — el plan, el Acuerdo que deja sin efecto la designación de 2011 (`BOE-A-2024-806`) y la Orden TED/547/2024 que declara conclusos los procedimientos. Publicar ese almacén como vivo habría sido el error que el atlas existe para no cometer; omitirlo, el contrario. **La lección que la capa deja escrita, y que vale para cualquier instalación futura: autorizar no es existir.** Los ATI se autorizan como modificación de diseño de su central, en **dos pasos** —ejecución y montaje primero, puesta en servicio después— y **casi nunca llega el segundo al BOE**: los cuatro ATI-100 tienen acto de 2024-25 y van en `desarrollo`, con hueco declarado sobre si ya operan (el plan los esperaba para 2026). Por lo mismo, **las fechas de operación de los seis ATI en servicio son las que declara el plan, no las de un acto archivado**, y cada ficha lo dice. **`capacidad` nace como TEXTO** y no como número: Trillo mide en contenedores, José Cabrera en posiciones de losa y El Cabril en celdas y metros cúbicos — un campo común obligaría a convertir entre unidades que no lo son sin suponer. **Un ATD no es un registro**: el plan lo define como el ATI de su central más una instalación complementaria, así que darle ficha propia contaría dos veces el mismo edificio. Y dos hallazgos de la fuente que ningún resumen traía: **la autorización de El Cabril no caduca por fecha sino por volumen** de celdas («hasta que se complete el volumen disponible»), y **su propio acto no la llama El Cabril** ni cita el municipio, sino «instalación nuclear de almacenamiento de residuos radiactivos sólidos de sierra Albarrana». **No nace ninguna regla `R*`.** |
 | **1.35.0** | 2026-08-10 | **Aditiva, y la primera que cambia la CLASE de lo que el atlas publica.** Nacen las **series temporales** (§4.1): la película de un registro junto a su foto. Un fichero por registro en `datos/series/<capa>/<slug>.json` —el troceo es el visor estático: la gráfica pide UN fichero—, con tres reglas que son doctrina: **solo hay película donde hay negativo** (la serie exige su histórico completo en una fuente primaria archivada; nada de reconstruir ni empalmar), **los huecos se quedan huecos** (la interpolación es el dato inventado con mejor coartada), y **R11 — la foto y la película no se contradicen** (§7.11, bloquea): el último punto debe cuadrar con el campo de la ficha que la serie declara, y la última fecha con su `fecha_dato` — la comprobación que impide que el dossier diga una cifra y la gráfica termine en otra. La capacidad viaja EN la serie y no como constante, porque cambia (Contreras, 874→361 hm³ en 2019). La primera serie es la reserva semanal de `agua-embalsada` desde 1988, cuyo histórico ya estaba en `fuentes/` desde la release `.18`. **No releva a la ficha**: los campos instantáneos siguen en la capa con su verificación, y R7 sigue prohibiendo derivados también en la gráfica. |
 | **1.34.0** | 2026-08-09 | **Aditiva.** `cables-submarinos` crece de 6 a 9 aterrizajes y su `emplazamiento` **admite `null`**: el esquema exigía playa o puerto porque todos los actos conocidos la nombraban, y han aparecido dos que no — el anuncio del BOC de **Canalink Base 6** (Tenerife-El Hierro) sitúa por términos municipales, y el de **Sagunto** (CNC02/25/46/0013) también. Cuando el acto no baja de ahí, `emplazamiento` va a `null` y `geo_precision` a `municipio`, que es exactamente lo que la precisión existe para declarar. El amarre herreño del Base 6 sí tiene playa —el proyecto básico de la propia información pública la nombra («Playa de El Salto de Tamaduste», «Playa del Salto» en el Nomenclátor)— y entra en `paraje` con el mismo trato que el nombre de Grace Hopper en Sopela. **Primer expediente canario de la capa**: en Canarias el DPM-T lo tramita el Gobierno canario y su anuncio no lleva código CNC — la referencia es la del propio BOC. **No nace ninguna regla `R*`.** |
 | **1.33.0** | 2026-08-09 | **Aditiva, y la primera que no protege el dato sino a quien lo lee.** Nace la comprobación **§7.10** (bloquea): toda `url` de fuente y todo `debate_url` han de ser `http`/`https`. Sale de una auditoría de ataques sobre el propio visor, no de un incidente: se comprobó que un `url` con esquema `javascript:` **atravesaba las dos defensas que parecían cubrirlo** —el `"format": "uri"` del esquema lo acepta porque `javascript:alert(1)` es una URI perfectamente válida, y el escapado convierte comillas pero no toca el esquema de una URL— y llegaba intacto al `href` de la ficha, que desde la 1.29 no es solo un panel sino **4.548 páginas HTML servidas por el dominio del atlas**. §9 gana la otra mitad del mismo hallazgo, como **aviso**: el `color` de una categoría tiene forma comprobada (hex de 3, 4, 6 u 8 dígitos), porque un valor con un `;` dentro viaja hasta un atributo `style` y allí abre una declaración nueva. **Ningún registro cambia** y ningún dato publicado incumplía ninguna de las dos: los 8.658 enlaces del atlas son http/https y sus 61 colores, `#RRGGBB`. **No nace ninguna regla `R*`:** no es doctrina sobre el dato, es higiene de lo que se publica con él. |
