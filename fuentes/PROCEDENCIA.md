@@ -542,16 +542,30 @@ y medir sobre un dato primario no convierte la medida en primaria.
 ## generacion-electrica-provincia
 
 **De dónde** · **MITECO**, Estadística de la Industria de la Energía Eléctrica
-2024 (provisional a 27-11-2025) · **IGN**, unidades administrativas.
+2024 (provisional a 27-11-2025) · **IGN**, unidades administrativas · **MITECO**,
+registro **Electra**, para poder decir con precisión qué falta.
 **Licencia** · Ley 37/2007 · IGN.
 **Qué hay que saber** · Es **generación, no potencia instalada**, y la diferencia
-la impuso una licencia: la potencia por territorio la publica la CNMC bajo **CC
-BY-SA**, incompatible. La `categoria` es la **tecnología dominante**, un derivado
+la impuso una licencia. La `categoria` es la **tecnología dominante**, un derivado
 que el CI comprueba contra el argmax de las cifras del propio registro.
-**Huecos** · Los 52, el mismo: **la potencia instalada por provincia no la
-publica ninguna fuente primaria con licencia compatible.**
+**Huecos** · Los 52, el mismo, y desde la `.40` **mejor explicado**: la potencia
+**sí se publica instalación por instalación** —el registro Electra de MITECO,
+71.000 instalaciones con potencia neta y bruta, diario, licencia compatible—
+pero su exportación **corta la geografía en comunidad autónoma**: sin provincia,
+sin municipio, sin tecnología. Y la provincia **existe en el registro de
+origen**, porque el buscador de Electra filtra por las 52. Es un dato
+**publicado a medias**, no un dato que no exista — y sumar las instalaciones por
+provincia exigiría asignarles una que la fuente no da, o sea fabricarla. Las
+otras tres puertas siguen cerradas y se recomprobaron: la estadística provincial
+da GWh; la **CNMC** es CC BY-SA en sus 204 conjuntos **sin una excepción** (y su
+material más granular vive fuera del portal, sin licencia declarada); y **REE**
+llega a provincia pero es corporativa **y prohíbe el uso comercial**.
+**Qué habría que pedir** · A la Subdirección General de Energías Renovables del
+MITECO: que la exportación de Electra lleve **provincia, municipio y
+tecnología** — los tres campos por los que su propio buscador ya filtra. No es
+un dato nuevo: es dejar de recortar el publicado.
 **Geometría** · `generalizada`: los 186 MB del IGN no se publican tal cual.
-**Archivado** · 2 ficheros · **El resto** · CHANGELOG `datos-v2026.08.10` · §10
+**Archivado** · 3 ficheros · **El resto** · CHANGELOG `datos-v2026.08.40` · §10
 
 ## hidrogeno-produccion
 

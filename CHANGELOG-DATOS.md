@@ -32,6 +32,89 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.40 — El dato que sí existe, publicado a medias
+
+Ninguna capa nueva: esta release **corrige lo que el atlas afirmaba sobre lo
+que no se puede saber**. El hueco «potencia instalada por provincia» lleva
+declarado desde la `.10` en las 52 fichas de `generacion-electrica-provincia`,
+y su primer motivo escrito era que **MITECO desagrega generación y no
+potencia**. Eso ha dejado de ser cierto.
+
+### Corregido
+
+- **`generacion-electrica-provincia` · el hueco de potencia, reescrito en las
+  52 fichas.** MITECO **sí** publica la potencia instalación por instalación:
+  el registro **Electra** —exportación del registro administrativo de
+  instalaciones de producción— trae potencia **neta y bruta** de más de 71.000
+  instalaciones, se actualiza a diario y su licencia de reutilización es
+  compatible (Ley 37/2007: citar la fuente, sin no-comercial ni
+  compartir-igual). Lo que no trae es **la geografía**: corta en **comunidad
+  autónoma**, sin provincia, sin municipio y sin tecnología.
+- **Y la provincia existe en el registro de origen**: el propio buscador de
+  Electra filtra por las 52. Es un dato **publicado a medias**, no un dato que
+  no exista — y esa distinción cambia qué hay que pedir y a quién.
+- **`nuclear` · qué potencia es la que publica el atlas.** Los siete reactores
+  ganan una clave: la cifra es la **bruta**. Electra publica las dos y su bruta
+  coincide con la del atlas **al kilovatio** —Ascó I 1.032.500 kW contra
+  1.032,5 MW, Cofrentes 1.092.020 contra 1.092,02—; la **neta**, que descuenta
+  el consumo de la propia central, es entre 30 y 60 MW menor. Dos números que
+  se llaman «la potencia» y no son el mismo.
+- **`nuclear:trillo-i` · dos fuentes del mismo ministerio no dicen lo mismo.**
+  La ficha de centrales de MITECO da **1.066,0 MW**; su registro Electra,
+  **1.067,49**. **1,49 MW** de diferencia, y es el único de los siete donde
+  discrepan. El atlas no elige: mantiene la cifra que venía citando, publica el
+  desacuerdo y **baja `potencia_mw` a «parcialmente verificado»** — la misma
+  doctrina que ya se aplicó cuando el Catastro Minero se contradijo consigo
+  mismo.
+
+### Lo que sigue sin poder hacerse, y por qué
+
+**Sumar las instalaciones de Electra por provincia exigiría asignarles una que
+la fuente no da.** Eso sería fabricar el dato, no obtenerlo. Las otras tres
+puertas siguen cerradas, y se volvieron a comprobar una a una:
+
+- La estadística provincial de MITECO **desagrega generación en GWh**, no
+  potencia.
+- La **CNMC** da potencia, pero solo por comunidad autónoma y bajo **CC BY-SA
+  4.0**, licencia que este atlas no puede aceptar. Comprobado de nuevo sobre su
+  catálogo entero: **los 204 conjuntos la llevan, sin una sola excepción**. Su
+  material más granular (el libro de cuadros mensual) vive fuera del portal de
+  datos, **sin licencia declarada** y bajo un «Reservados todos los derechos»:
+  peor, no mejor.
+- **Red Eléctrica** llega a provincia y es corporativa — y su aviso legal
+  **prohíbe expresamente el uso comercial**, así que falla por partida doble.
+
+### Qué habría que pedir, y a quién
+
+Lo que falta son **tres columnas que ya existen en la base de datos de
+origen**, y ese es el argumento: no se pide un dato nuevo, se pide que se deje
+de recortar el publicado. A la **Subdirección General de Energías Renovables**
+del MITECO, titular del registro: que la exportación de Electra incorpore
+**provincia, municipio y tecnología** —los tres campos por los que su propio
+buscador ya filtra— y que se rellene `IdInstalacion`, hoy vacía, que es lo que
+impide unir sus dos hojas por algo más firme que el nombre. Queda anotado en
+`AGENDA.md`.
+
+### Una nota de método, porque el error fue mío
+
+El primer cruce emparejó las centrales **por prefijo del nombre**, y eso
+asignó la potencia de Almaraz I a Almaraz II y la de Ascó I a Ascó II:
+aparecieron **cuatro desacuerdos donde solo hay uno**. Lo delató el propio
+resultado —tres discrepancias sospechosamente redondas— y se rehízo el
+emparejamiento a mano, reactor a reactor, con la cifra medida al lado. En
+Electra hay además homónimos que no son la central: «ALMARAZ» a secas son
+huertos solares de 10 a 100 kW. **Casar por nombre es exactamente como se
+fabrica un dato falso que parece razonable**, que es el peor fallo que este
+proyecto puede cometer.
+
+### Huecos
+
+- **Sin cambios en los demás.** El de la potencia sigue abierto: mejor
+  explicado, no cerrado.
+- **PRETOR**, el registro público que sí promete listados por provincia
+  exportables a Excel, está **tras un captcha** y no se ha podido verificar.
+  Queda anotado como comprobación manual.
+
 ## datos-v2026.08.39 — El Magreb no está parado: está al revés
 
 Segunda capa del **segundo horizonte**, y la que **cierra un hueco que su
