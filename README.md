@@ -56,4 +56,25 @@ necesita para comprobar de dónde sale un dato, con qué doctrina se publicó y
 qué puede hacer con él.
 
 El atlas es obra de una sola persona: lo cura y lo mantiene **Arturo David
-Vázquez Paumard**. Cómo citarlo está en [`CITATION.cff`](CITATION.cff).
+Vázquez Paumard**.
+
+## Cómo citar
+
+El atlas tiene DOI: **[10.5281/zenodo.21918595](https://doi.org/10.5281/zenodo.21918595)**.
+Es el «de concepto» — resuelve siempre a la última edición depositada—, y cada
+release recibe además el suyo propio.
+
+> Vázquez Paumard, A. D. — *Atlas Estratégico de España*, release
+> `datos-v2026.08.42`. https://doi.org/10.5281/zenodo.21918595 —
+> https://atlas.eltercioviejo.com — datos CC BY 4.0.
+
+La forma legible por máquina está en [`CITATION.cff`](CITATION.cff) (de ahí sale
+el botón «Cite this repository» de GitHub). Cada registro del atlas tiene además
+**página y dirección propias** en el visor —`/ficha/<capa>/<registro>/`, con su
+cita ya compuesta—, que es la manera de citar un dato concreto sin citar el
+atlas entero.
+
+**Y hay que decir de qué responde ese DOI**, porque un DOI promete permanencia:
+lo que Zenodo archiva de cada edición es este repositorio —el **aparato de
+citación**: fuentes archivadas, procedencia, contrato y changelog—, no las capas
+de datos, que se sirven desde el visor y se descargan capa a capa.
