@@ -32,6 +32,97 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.48 — Los 401, y la pregunta que estaba mal hecha
+
+`agua-embalsada` pasa de 396 a **401 registros: todos los del histórico del
+Boletín Hidrológico**. Entran los cinco «Sistema…» del Pirineo, que llevaban
+seis releases declarados como hueco y que ayer mismo se estudiaron y se dieron
+por imposibles **con la pregunta equivocada**.
+
+### La pregunta estaba mal hecha
+
+El estudio del día anterior (en `PLAN.md`) buscó en ocho sitios **de qué lagos
+se compone cada sistema**, no lo encontró en ninguno, y concluyó que sin eso no
+había geometría honesta. Todo cierto. Y todo irrelevante:
+
+> **No hace falta saber qué agrega un conjunto si la administración le asigna
+> una coordenada al conjunto.**
+
+Y se la asigna. El modelo de datos de la propia BD-Embalses —un PDF de dos
+páginas que acompaña al histórico— remite al **Anuario de Aforos**; el parte
+semanal de la Confederación del Ebro da a cada sistema un **código de estación**;
+y la **Red Oficial de Estaciones de Aforo** publica cada estación con su punto,
+su volumen, su río y su término municipal. Los cinco están ahí.
+
+### Añadido
+
+| Sistema | Boletín | Estación ROEA | Volumen | Cómo se identificó |
+|---|---|---|---|---|
+| Capdella | 50 hm³ | 9854 | 50,0 | «CAPDELLA ( SISTEMA )» |
+| Valle de Arán | 22 | **9853** | 22,0 | sin nombre — ver abajo |
+| Aguas Limpias | 18 | 9833 | 17,8 | «AGUAS LIMPIAS ( SISTEMA )» |
+| Alto Caldarés | 18 | **9834** | 17,5 | sin nombre — ver abajo |
+| Lagos Espot | 10 | 9855 | 10,0 | «ESPOT ( SISTEMA )» |
+
+**Dos fichas del ROEA vienen sin nombre**, y su identificación se apoya en todo
+lo demás y va con `geo_fuente__v: parcial`:
+
+- **9853 → Valle de Arán.** Estación de embalse de la C.H. Ebro sobre el **río
+  Ruda** —en pleno valle—, término de **Alto Aneu**, de **ENDESA**, con 22,0 hm³
+  contra los 22 del Boletín, el mismo período de medición (1958-1995) y el mismo
+  sistema de explotación «Segre - Noguera Pallaresa» que sus vecinas Capdella y
+  Espot, que sí llevan nombre.
+- **9834 → Alto Caldarés.** Estación de embalse sobre el **río Caldarés**,
+  término de **Panticosa** —que es exactamente lo que nombra el Boletín—, de
+  **EASA**, con 17,5 hm³ contra 18.
+
+**El punto es el de la estación, no el de un vaso**, y cada ficha lo dice en su
+primera clave. Un sistema son varios lagos repartidos por un valle: ninguno de
+ellos es «el» sitio, y el conjunto sí tiene uno oficial.
+
+**Y una salvedad que también va escrita:** las fichas del ROEA de estas cinco
+figuran como **BAJA**, con medición terminada en 1995, mientras el Boletín
+publica su reserva cada semana. Es el estado de la ficha del Anuario, no del
+embalse — el punto y el volumen que da siguen siendo los del conjunto y
+coinciden con los que el Boletín publica hoy.
+
+### Cambiado
+
+- **`sistemaescarra-ebro` se muda a su estación** (la 9832, «ESCARRA
+  ( SISTEMA )») y pasa de `paraje` a `exacta`. Con eso **deja de estar encima de
+  «Embalse de Escarra»**: hasta ayer los dos compartían coordenada exacta y
+  parecían un error; ahora hay cien metros entre el lago y la estación del
+  sistema, y la clave de cada uno explica que son la misma agua en dos filas de
+  la fuente. El duplicado que la `.47` decidió no deshacer se ha deshecho solo,
+  y por el lado correcto: publicando mejor, no borrando.
+- **`/agua/` se queda sin sección de ausentes.** La lista está vacía por primera
+  vez y la sección no se pinta; su guarda sigue en pie para el día que el Boletín
+  estrene una fila que el atlas no sepa situar.
+
+### Lo que esta release deja como método
+
+**Cuando un objeto no se puede describir, pregúntale a quién lo mide.** Se
+buscaron ocho fuentes que dijeran de qué se compone un sistema y ninguna lo
+decía; la que resolvió no describe el objeto en absoluto — solo dice dónde está
+el aparato que lo mide. Era la pregunta más fácil y se hizo la última.
+
+De propina, la estación **9861 «SAN LORENZO MONGAY»** confirma por su cuenta la
+identificación que la `.47` había hecho por evidencia negativa unas horas antes.
+
+### Huecos
+
+- **Ninguno de cobertura**: por primera vez, todo lo que el Boletín publica está
+  en el mapa. **Pero 401 de 401 no es la reserva de España** — el Boletín no
+  cuenta todo lo embalsado del país, y la cifra del Ministerio es algo mayor.
+  La página lo dice donde se lee el total.
+- **La composición de los cinco sistemas sigue sin publicarse.** Ahora se sabe
+  dónde están; sigue sin saberse qué lagos agregan. Si alguna vez aparece, la
+  ficha ganará esa lista y no cambiará el punto.
+- **Las 368 anclas del Nomenclátor siguen sin repasar** contra el Inventario de
+  Presas — lo único que queda vivo de toda esta tanda.
+
+---
+
 ## datos-v2026.08.47 — Ocho lagos que no se habían callado
 
 `agua-embalsada` **394 → 396** y el **99,9 % de la capacidad embalsada**. Entran

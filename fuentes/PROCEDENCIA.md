@@ -635,7 +635,9 @@ ambición queda en `claves`, verbatim y con su condicional intacto.
 **De dónde** · **MITECO**, histórico del **Boletín Hidrológico Semanal**
 1988-2026 (Dirección General del Agua) · **IGN**, Nomenclátor · **MITECO**,
 **Inventario de Presas y Embalses** del SNCZI (desde la `.44`) · **IECA (Junta
-de Andalucía)**, DERA grupo 3 «Hidrografía», solo para identificar (`.46`).
+de Andalucía)**, DERA grupo 3 «Hidrografía», solo para identificar (`.46`) ·
+**MITECO**, Red Oficial de Estaciones de Aforo, para situar los cinco sistemas
+del Pirineo (`.48`).
 **Licencia** · Ley 37/2007 · IGN · IECA, CC BY 4.0.
 **Qué hay que saber** · **La capa registra el agua, no el vaso.** La geometría
 del embalse está tras el CAPTCHA del SNCZI; el agua embalsada está en abierto y
@@ -643,10 +645,9 @@ sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
 contra el Nomenclátor, normalizando nueve prefijos en cuatro lenguas y el sufijo
 vasco `urtegia`, y **cada punto se verifica** preguntando al Ministerio en qué
 demarcación cae. Esa vuelta cazó seis emparejamientos falsos.
-**Alcance** · 396 de 401 embalses del Boletín, el 99,9 % de la capacidad; los 5
-restantes van declarados en el changelog con su motivo, y **nombrados y sumados en
-`/agua/`** (118 hm³): son los cinco «Sistema…» del Pirineo, y de ellos se sabe
-el agua y no de qué lagos se componen. El barrido del
+**Alcance** · **los 401 del Boletín, el 100 %**, desde la `.48`. Ojo al leerlo:
+el Boletín no cuenta todo lo embalsado de España, así que 401 de 401 **no es la
+reserva nacional** — la del Ministerio es algo mayor. El barrido del
 Nomenclátor es **doble**: tipo «Embalse» (2026-08-07) y su ampliación a «Masa de
 agua» y «Conjunto de masas de agua» (2026-08-09) — los embalses que el Boletín
 llama por su lago (los estanys e ibones pirenaicos regulados) viven en esos
@@ -662,6 +663,14 @@ recrecimiento—, se ancla en **la más alta desde cimientos**, que es la princi
 por construcción. **Del Inventario se archiva solo el fichero de presas**: el de
 vasos se descartó porque su punto habría que calcularlo del polígono, y el
 centro del recuadro de un embalse sinuoso cae en tierra.
+**Un conjunto se sitúa por su estación, no por sus piezas** *(.48)*. Los cinco
+«Sistema…» del Pirineo agregan lagos regulados de un valle y **ninguna fuente
+publica de cuáles**; se buscó en ocho sitios y se dieron por imposibles. La
+pregunta estaba mal hecha: la **Red Oficial de Estaciones de Aforo** le asigna a
+cada sistema una estación de embalse con su punto, su volumen y su río, y con
+eso no hace falta saber qué agrega. Dos de esas fichas vienen SIN NOMBRE (9853 y
+9834) y se identifican por río, término, titular y volumen — van `parcial`. El
+punto es el de la estación, no el de un vaso, y las fichas lo dicen.
 **El Boletín agregó ocho lagos en 2006, y la capa lo dice** *(.47)*. El 26 de
 septiembre de 2006 se cierran los partes individuales de ocho lagos regulados
 del Pirineo y la semana siguiente nacen cinco filas con nombre de sistema que
