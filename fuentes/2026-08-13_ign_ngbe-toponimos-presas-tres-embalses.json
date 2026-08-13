@@ -1,0 +1,402 @@
+{
+ "_": "Topónimos del Nomenclátor Geográfico Básico de España que IDENTIFICAN tres embalses del Boletín Hidrológico que el atlas no podía situar: el IGN nombra la PRESA y el EMBALSE por separado y con nombres distintos, y ahí está el puente. Captura acotada a los tres recuadros, y filtrada a los tipos que nombran agua o presas — el barrido completo del NGBE vive en las capturas de las releases .18 y .32.",
+ "fecha_captura": "2026-08-13",
+ "crs": "EPSG:4326",
+ "consultas": [
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-3.36666%2C38.60227999999999%2C-3.1866600000000003%2C38.78228&limit=1000&f=json",
+   "topónimos_devueltos": 519
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-6.89804%2C37.62217999999999%2C-6.71804%2C37.80218&limit=1000&f=json",
+   "topónimos_devueltos": 635
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-5.32721%2C37.734719999999996%2C-5.14721%2C37.91472&limit=1000&f=json",
+   "topónimos_devueltos": 331
+  }
+ ],
+ "toponimos": [
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Vertedero Municipal Barranco Elola",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -3.35712,
+   "lat": 38.73767
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Balsa de la Pilraca",
+   "tipo": "Masa de agua",
+   "lon": -3.36591,
+   "lat": 38.71448
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Molino Harinero de Peseta",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -3.302,
+   "lat": 38.67529
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Puente del Alamillo",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -3.24371,
+   "lat": 38.71552
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Embalse de Mari Sánchez",
+   "tipo": "Embalse",
+   "lon": -3.27618,
+   "lat": 38.69287
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Embalse de la Jarilla",
+   "tipo": "Embalse",
+   "lon": -3.19897,
+   "lat": 38.73291
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Presa de la Cabezuela",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -3.27661,
+   "lat": 38.69232
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Balsa de Mari Sánchez",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -3.22308,
+   "lat": 38.73993
+  },
+  {
+   "para": "La Cabezuela / Mari Sánchez (Jabalón, Ciudad Real)",
+   "etiqueta": "Embalse de Miguelillo",
+   "tipo": "Embalse",
+   "lon": -3.2395,
+   "lat": 38.60712
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de los Confesonarios",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.8855,
+   "lat": 37.79108
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Charca de la Corta",
+   "tipo": "Masa de agua",
+   "lon": -6.88342,
+   "lat": 37.79169
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de Perrunal",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.85809,
+   "lat": 37.70752
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse del Tamujoso",
+   "tipo": "Embalse",
+   "lon": -6.89423,
+   "lat": 37.72888
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse del Teliaran-La Hoya",
+   "tipo": "Embalse",
+   "lon": -6.88678,
+   "lat": 37.66809
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Puente de Pedro Ortega",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.79559,
+   "lat": 37.79248
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Puente de San Fernando",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.83612,
+   "lat": 37.7851
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Puente de la Rivera",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.83331,
+   "lat": 37.78632
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Puente de la Juliana",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.81561,
+   "lat": 37.78607
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Vieja",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.78912,
+   "lat": 37.75549
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Angostura",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.72009,
+   "lat": 37.76691
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Corta de San Miguel",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.74841,
+   "lat": 37.76251
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Romanita",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.85382,
+   "lat": 37.76611
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Puente de la Angelita",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.78259,
+   "lat": 37.7829
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de Aguas Teñidas",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.83612,
+   "lat": 37.78412
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de San Miguel",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.75879,
+   "lat": 37.76093
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Puente de Olivargas",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.81671,
+   "lat": 37.78027
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse de la Cueva de la Mora",
+   "tipo": "Embalse",
+   "lon": -6.83441,
+   "lat": 37.79248
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse Monte Félix-Toril",
+   "tipo": "Embalse",
+   "lon": -6.79901,
+   "lat": 37.78693
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse de San Miguel",
+   "tipo": "Embalse",
+   "lon": -6.76569,
+   "lat": 37.78369
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Algaida",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.84302,
+   "lat": 37.71069
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Olivargas",
+   "tipo": "Embalse",
+   "lon": -6.81079,
+   "lat": 37.72632
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse de Puerto León",
+   "tipo": "Embalse",
+   "lon": -6.83868,
+   "lat": 37.71912
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Depósito de Almagrera",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.86969,
+   "lat": 37.65228
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Monolito Virgen de la Cabeza",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.85828,
+   "lat": 37.6247
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Antena del Infoca",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.86469,
+   "lat": 37.65051
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Charca de Barriga Verde",
+   "tipo": "Masa de agua",
+   "lon": -6.85651,
+   "lat": 37.65393
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Minas de Tinto y Santa Rosa",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.80402,
+   "lat": 37.63892
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Morita",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.81592,
+   "lat": 37.6377
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Calañesa",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.82953,
+   "lat": 37.6355
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de Peñas Pardas",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.8233,
+   "lat": 37.63648
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de la Gloria",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.78809,
+   "lat": 37.63788
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Mina de los Bueyes",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -6.78119,
+   "lat": 37.63251
+  },
+  {
+   "para": "Olivargas / Sotiel (Huelva)",
+   "etiqueta": "Embalse del Asperón",
+   "tipo": "Embalse",
+   "lon": -6.8407,
+   "lat": 37.63409
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Embalse del Bembézar",
+   "tipo": "Embalse",
+   "lon": -5.21002,
+   "lat": 37.90332
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Cortijo de la Cobatilla",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.23199,
+   "lat": 37.86713
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Seminario de Santa María de los Ángeles",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.23102,
+   "lat": 37.85669
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Puente de Algeciras",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.31189,
+   "lat": 37.83728
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Puente de Oro",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.2597,
+   "lat": 37.84808
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Puente del Madroño",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.29791,
+   "lat": 37.91052
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Puente de los Porqueros",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.29419,
+   "lat": 37.90253
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Estación de Hornachuelos",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.20581,
+   "lat": 37.77393
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Embalse del Retortillo Derivación",
+   "tipo": "Embalse",
+   "lon": -5.31,
+   "lat": 37.74628
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Embalse de Bembézar Derivación",
+   "tipo": "Embalse",
+   "lon": -5.23743,
+   "lat": 37.82568
+  },
+  {
+   "para": "Hornachuelos / Bembézar Derivación (Córdoba)",
+   "etiqueta": "Subestación Eléctrica los Cabezos",
+   "tipo": "Construcción/instalación abierta",
+   "lon": -5.2868,
+   "lat": 37.74091
+  }
+ ]
+}

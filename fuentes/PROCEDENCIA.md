@@ -634,24 +634,25 @@ ambición queda en `claves`, verbatim y con su condicional intacto.
 
 **De dónde** · **MITECO**, histórico del **Boletín Hidrológico Semanal**
 1988-2026 (Dirección General del Agua) · **IGN**, Nomenclátor · **MITECO**,
-**Inventario de Presas y Embalses** del SNCZI (desde la `.44`).
-**Licencia** · Ley 37/2007 · IGN.
+**Inventario de Presas y Embalses** del SNCZI (desde la `.44`) · **IECA (Junta
+de Andalucía)**, DERA grupo 3 «Hidrografía», solo para identificar (`.46`).
+**Licencia** · Ley 37/2007 · IGN · IECA, CC BY 4.0.
 **Qué hay que saber** · **La capa registra el agua, no el vaso.** La geometría
 del embalse está tras el CAPTCHA del SNCZI; el agua embalsada está en abierto y
 sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
 contra el Nomenclátor, normalizando nueve prefijos en cuatro lenguas y el sufijo
 vasco `urtegia`, y **cada punto se verifica** preguntando al Ministerio en qué
 demarcación cae. Esa vuelta cazó seis emparejamientos falsos.
-**Alcance** · 391 de 401 embalses del Boletín, el 99,6 % de la capacidad; los 10
+**Alcance** · 394 de 401 embalses del Boletín, el 99,8 % de la capacidad; los 7
 restantes van declarados en el changelog con su motivo, y **nombrados y sumados en
-`/agua/`** (231 hm³): de ellos se sabe el agua y no dónde están. El barrido del
+`/agua/`** (129 hm³): de ellos se sabe el agua y no dónde están. El barrido del
 Nomenclátor es **doble**: tipo «Embalse» (2026-08-07) y su ampliación a «Masa de
 agua» y «Conjunto de masas de agua» (2026-08-09) — los embalses que el Boletín
 llama por su lago (los estanys e ibones pirenaicos regulados) viven en esos
 tipos, no en «Embalse».
 **Dos anclas, y cada ficha dice la suya** · Hasta la `.44` todos los puntos
 venían del Nomenclátor (`geo_precision: paraje`: el topónimo es primario para el
-NOMBRE del lugar, no para el perímetro). Los 22 que entraron en la `.44` y la `.45` vienen
+NOMBRE del lugar, no para el perímetro). Los 25 que entraron entre la `.44` y la `.46` vienen
 del **Inventario de Presas y Embalses**, que publica la coordenada de la presa:
 eso es `exacta` (§6.6), y su `geo_fuente` avisa de que el punto es la presa y el
 vaso se extiende aguas arriba. Cuando un embalse tiene varias presas
@@ -660,6 +661,14 @@ recrecimiento—, se ancla en **la más alta desde cimientos**, que es la princi
 por construcción. **Del Inventario se archiva solo el fichero de presas**: el de
 vasos se descartó porque su punto habría que calcularlo del polígono, y el
 centro del recuadro de un embalse sinuoso cae en tierra.
+**Una fuente puede probar una identidad sin dar un dato** *(.46)*. Tres embalses
+estaban fuera porque el Boletín y el Inventario los llaman distinto, y ninguna
+búsqueda por nombre junta dos nombres que no se parecen. Los une una tercera
+fuente: el **Nomenclátor** rotula «Presa de la Cabezuela» y «Embalse de Mari
+Sánchez» a sesenta metros, y el **DERA** registra la presa de Huelva como
+«SOTIEL / OLIVARGAS», con los dos nombres a la vez. Ninguna de las dos aporta
+una cifra a la ficha; aportan lo que faltaba, que era la identidad — y van
+citadas y archivadas como cualquier otra.
 **Ojo** · El esquema prohíbe `porcentaje_llenado` **por derivado**: sale de
 dividir las dos cifras que la capa ya publica. Y el **WFS de demarcaciones
 que usó la primera tanda ya no existe** (404 con su URL registrada en

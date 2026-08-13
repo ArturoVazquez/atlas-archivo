@@ -32,6 +32,92 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.46 — Tres embalses que se llamaban de otra manera
+
+`agua-embalsada` **391 → 394** y del 99,6 % al **99,8 % de la capacidad
+embalsada**. Los tres que entran son los que la `.45` dejó anotados como «sin
+candidato», y el motivo de que no lo tuvieran era siempre el mismo: **el Boletín
+y el Inventario los llaman de forma distinta**, y ninguna búsqueda por nombre
+puede juntar dos nombres que no se parecen. Lo que hace falta es una tercera
+fuente que los nombre a los dos.
+
+### Añadido
+
+- **La Cabezuela** (43 hm³, Ciudad Real) — y la puente la pone el **Nomenclátor**,
+  que rotula las dos cosas **a sesenta metros una de otra**: «Presa de la
+  Cabezuela» y «Embalse de Mari Sánchez». El Boletín nombra el embalse por su
+  presa; el Inventario, por el embalse, y lo registra como «MARISANCHEZ» con
+  42,84 hm³ sobre el Jabalón.
+- **Olivargas** (29 hm³, Huelva) — el Boletín la llama Olivargas y el Inventario
+  del Ministerio, «SOTIEL». La prueba de que son la misma presa **no la da
+  ninguno de los dos**: la da el **DERA de la Junta de Andalucía**, que la
+  registra con los dos nombres en el mismo rótulo, «SOTIEL / OLIVARGAS».
+- **Hornachuelos** (12 hm³, Córdoba, histórico: mudo desde 2012) — la
+  identificación más débil de las tres, y por eso se cuenta entera. **Ninguna
+  fuente lo llama Hornachuelos**: el Boletín lo nombra por su municipio, como ya
+  hacía con Catllar («Pantà del Gaià», release `.32`). Lo que sostiene la
+  identidad es la convergencia: el azud de derivación del Bembézar tiene 12,01
+  hm³ contra los 12 del Boletín, está en el término de Hornachuelos, y el
+  embalse del Bembézar propiamente dicho ya se publica aparte con sus 347 —
+  así que no hay confusión posible entre los dos.
+
+Los tres van con `geo_fuente__v: parcial` y su clave contando la evidencia
+entera, que es lo que la `.32` hizo con las once identificaciones no literales
+de entonces.
+
+### Dos fuentes nuevas, y las dos por lo mismo
+
+Entran al archivo el **DERA grupo 3 «Hidrografía»** del IECA (CC BY 4.0,
+declarada en las restricciones del propio servicio WFS) y una captura acotada
+del **Nomenclátor** sobre los tres recuadros. Ninguna de las dos aporta un dato
+de la ficha: aportan **la identidad**, que es el dato que faltaba.
+
+Y con eso queda dicho algo que este atlas no había necesitado escribir todavía:
+**una fuente puede servir para probar que dos nombres son la misma cosa, sin
+aportar ni una cifra.** Es tan cita como cualquier otra y va con su copia
+archivada.
+
+### Por qué el Nomenclátor no los tenía, y sí los tenía
+
+La `.32` barrió el Nomenclátor por los tipos «Embalse», «Masa de agua» y
+«Conjunto de masas de agua» y declaró estos tres como sin topónimo. Era cierto
+para lo que buscó: **el IGN rotula la presa de la Cabezuela bajo el tipo
+«Construcción/instalación abierta»**, que no estaba en la lista. Y Olivargas sí
+figura como «Embalse», pero con la etiqueta desnuda —«Olivargas», sin «Embalse
+de»— y a 1,7 km de su presa.
+
+La lección, que vale para cualquier capa: **un barrido por tipos es un barrido
+por lo que el emisor decidió llamar a cada cosa**, y eso no siempre coincide con
+lo que la cosa es.
+
+### Cambiado
+
+- **`/agua/` pasa de contar 10 ausentes a contar 7**, 129 hm³. Y se cae uno de
+  los tres motivos de la tabla: ya no queda ningún embalse «sin candidato».
+
+### Huecos
+
+**Quedan 7 de los 401 del Boletín, 129 hm³ — el 0,23 % de la capacidad**, y
+ahora por solo dos motivos:
+
+| Motivo | Cuántos | Quiénes |
+|---|---|---|
+| No son un embalse: el Boletín suma varios vasos bajo un nombre de sistema | 5 | Capdella, Valle de Arán, Aguas Limpias, Alto Caldarés, Lagos Espot |
+| Hay candidato y la evidencia lo desmiente | 2 | Fresneda, San Lorenzo |
+
+- **Los cinco «Sistema…» no van a entrar** mientras el Boletín los publique
+  sumados: no hay una presa que les corresponda porque no son un objeto.
+- **Fresneda y San Lorenzo siguen fuera y siguen siendo la mejor explicación de
+  la regla.** En San Lorenzo el nombre apunta a una presa de La Rioja que el
+  Inventario da como proyecto, y la capacidad y el estar en explotación apuntan
+  a «San Lorenzo Mongay», en Lleida. Dos evidencias que señalan a sitios
+  distintos no son una identificación.
+- **Las 368 anclas del Nomenclátor siguen sin repasar** contra el Inventario.
+  Sigue valiendo lo que dijo la `.44` cuando Las Cogotas apareció a 157 km de
+  donde debía: una desviación de tres kilómetros no la caza nadie.
+
+---
+
 ## datos-v2026.08.45 — Cuatro más, y los diez que faltan dejan de ser un porcentaje
 
 Continuación directa de la `.44`, y sale de una pregunta: **¿se puede hacer algo

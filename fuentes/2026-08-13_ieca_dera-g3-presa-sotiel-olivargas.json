@@ -1,0 +1,30 @@
+{
+ "_": "La prueba de que «Olivargas» y «Sotiel» son la misma presa: el DERA de la Junta de Andalucía la registra con LOS DOS NOMBRES en el mismo rótulo. El Boletín Hidrológico la llama Olivargas; el Inventario de Presas del Ministerio, Sotiel. Sin este registro, la identificación sería un parecido.",
+ "fecha_captura": "2026-08-13",
+ "url": "http://www.ideandalucia.es/services/DERA_g3_hidrografia/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=DERA_g3_hidrografia:g03_12_Presa&outputFormat=application/json&cql_filter=nombre%20LIKE%20%27%25OLIVARGAS%25%27",
+ "licencia": "IECA, Creative Commons Reconocimiento 4.0 (CC BY 4.0), declarada en las restricciones de acceso del propio servicio WFS.",
+ "crs": "EPSG:25830 (ETRS89 / UTM 30N), el del servicio",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "g03_12_Presa.10302100000216",
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      164299.15729116,
+      4180711.32904381
+     ]
+    ]
+   },
+   "geometry_name": "geom",
+   "properties": {
+    "id_dera": 10302100000216,
+    "codigo": 1222,
+    "nombre": "SOTIEL / OLIVARGAS",
+    "tipo": "Presa principal",
+    "estado": "Explotación"
+   }
+  }
+ ]
+}
