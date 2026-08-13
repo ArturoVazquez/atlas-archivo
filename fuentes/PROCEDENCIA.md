@@ -140,10 +140,18 @@ capa `PLATTS`, de S&P Global, que es de tercero y no entra.
 ShareAlike ni NonCommercial. Cubre el Catastro Minero, el Boletín Hidrológico,
 la estadística eléctrica y los anuncios de Costas.
 
-> **Lo que este atlas NO hace con MITECO.** El Inventario de Presas y Embalses
-> del SNCZI está tras un **ALTCHA**, un CAPTCHA de prueba de trabajo puesto a
-> propósito. **No se salta.** La capa de agua embalsada existe porque se
-> encontró otra puerta abierta, no porque se forzara esa.
+> **El ALTCHA del Inventario de Presas y Embalses, y cómo se cruzó** *(.44)*.
+> Durante seis releases esta ficha decía que el Inventario estaba tras un
+> **ALTCHA** —un CAPTCHA de prueba de trabajo puesto a propósito— y que **no se
+> salta**; la capa de agua embalsada existe porque se encontró otra puerta
+> abierta, no porque se forzara esa. Sigue sin saltarse: **lo descargó Arturo
+> con un navegador**, que es lo que el ALTCHA pide y lo que ningún guion de este
+> repositorio hace. Camino, por si vuelve a hacer falta: la página de descargas
+> del IDE (`inventario-presas-embalses.html`) enlaza a
+> `gis.miteco.gob.es/descargas/app/DescargaFichero?f=`, y la prueba de trabajo
+> se resuelve sola antes del botón. Por guion, esa URL devuelve la página del
+> ALTCHA con un **200** — un 404 disfrazado de éxito, la trampa que esta casa ya
+> tiene fichada.
 
 ## El archivo está completo
 
@@ -625,7 +633,8 @@ ambición queda en `claves`, verbatim y con su condicional intacto.
 ## agua-embalsada
 
 **De dónde** · **MITECO**, histórico del **Boletín Hidrológico Semanal**
-1988-2026 (Dirección General del Agua) · **IGN**, Nomenclátor.
+1988-2026 (Dirección General del Agua) · **IGN**, Nomenclátor · **MITECO**,
+**Inventario de Presas y Embalses** del SNCZI (desde la `.44`).
 **Licencia** · Ley 37/2007 · IGN.
 **Qué hay que saber** · **La capa registra el agua, no el vaso.** La geometría
 del embalse está tras el CAPTCHA del SNCZI; el agua embalsada está en abierto y
@@ -633,11 +642,23 @@ sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
 contra el Nomenclátor, normalizando nueve prefijos en cuatro lenguas y el sufijo
 vasco `urtegia`, y **cada punto se verifica** preguntando al Ministerio en qué
 demarcación cae. Esa vuelta cazó seis emparejamientos falsos.
-**Alcance** · 369 de 401 embalses del Boletín; los 32 restantes van declarados
-en el changelog con su motivo. El barrido del Nomenclátor es **doble**: tipo
-«Embalse» (2026-08-07) y su ampliación a «Masa de agua» y «Conjunto de masas de
-agua» (2026-08-09) — los embalses que el Boletín llama por su lago (los estanys
-e ibones pirenaicos regulados) viven en esos tipos, no en «Embalse».
+**Alcance** · 387 de 401 embalses del Boletín, el 99,5 % de la capacidad; los 14
+restantes van declarados en el changelog con su motivo. El barrido del
+Nomenclátor es **doble**: tipo «Embalse» (2026-08-07) y su ampliación a «Masa de
+agua» y «Conjunto de masas de agua» (2026-08-09) — los embalses que el Boletín
+llama por su lago (los estanys e ibones pirenaicos regulados) viven en esos
+tipos, no en «Embalse».
+**Dos anclas, y cada ficha dice la suya** · Hasta la `.44` todos los puntos
+venían del Nomenclátor (`geo_precision: paraje`: el topónimo es primario para el
+NOMBRE del lugar, no para el perímetro). Los 18 que entraron en la `.44` vienen
+del **Inventario de Presas y Embalses**, que publica la coordenada de la presa:
+eso es `exacta` (§6.6), y su `geo_fuente` avisa de que el punto es la presa y el
+vaso se extiende aguas arriba. Cuando un embalse tiene varias presas
+—principal, diques de collado, la vieja que quedó inundada bajo el
+recrecimiento—, se ancla en **la más alta desde cimientos**, que es la principal
+por construcción. **Del Inventario se archiva solo el fichero de presas**: el de
+vasos se descartó porque su punto habría que calcularlo del polígono, y el
+centro del recuadro de un embalse sinuoso cae en tierra.
 **Ojo** · El esquema prohíbe `porcentaje_llenado` **por derivado**: sale de
 dividir las dos cifras que la capa ya publica. Y el **WFS de demarcaciones
 que usó la primera tanda ya no existe** (404 con su URL registrada en

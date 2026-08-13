@@ -32,6 +32,109 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.44 — La puerta que llevaba seis releases cerrada, y un punto que estaba a 157 km
+
+`agua-embalsada` pasa de **369 a 387 registros** y del 98,4 % al **99,5 % de la
+capacidad embalsada de España**. No hay dato nuevo del agua: el Boletín publica
+la de estos dieciocho desde hace años. **Lo que faltaba era el punto.**
+
+### La puerta
+
+Desde la release `.18`, la ficha de procedencia de esta capa decía —seis
+releases seguidas— que el **Inventario de Presas y Embalses** del SNCZI estaba
+tras un **ALTCHA**, un CAPTCHA de prueba de trabajo puesto a propósito, y que
+**no se salta**. Sigue sin saltarse: **lo descargó Arturo con un navegador**,
+que es exactamente lo que el ALTCHA pide y lo que ningún guion de este repo
+hace.
+
+Queda escrito el camino, porque volverá a hacer falta: la página de descargas
+del IDE enlaza a `gis.miteco.gob.es/descargas/app/DescargaFichero?f=`, y la
+prueba de trabajo se resuelve sola antes del botón. **Por guion, esa misma URL
+devuelve la página del ALTCHA con un `200`** — un 404 disfrazado de éxito. Se
+descubrió mirando los primeros bytes: `<!DO`, no `PK`.
+
+**Licencia comprobada antes que los datos**, como manda la lección de la `.25`:
+el aviso legal de MITECO invoca la **Ley 37/2007** y el **RD 1495/2011 art. 7**,
+el mismo régimen con el que esta casa ya publica el Boletín, el Catastro Minero,
+Electra y los anuncios de Costas.
+
+### Añadido
+
+- **18 embalses**, uno histórico (Villafranca, mudo desde 2008), **268 hm³ de
+  capacidad**: Arenoso (167), San Salvador (137), Villar del Rey (131), Enciso,
+  Laverné, Castro, Casasola, Víboras, Sequeiros, Santa Eulalia, Llerena, Ibiur,
+  Villafranca, Algar, Valdepatao, Las Parras, Urdiceto y Terroba. Con ellos, las
+  **18 películas** que les faltaban: la capa pasa de 369 a 387 series y de
+  683.892 a 704.036 partes.
+- **Una segunda clase de ancla, y cada ficha dice la suya.** Los 369 anteriores
+  se anclan en el Nomenclátor (`paraje`: un topónimo es primario para el NOMBRE
+  del lugar, no para el perímetro). Estos 18 se anclan en la **coordenada de la
+  presa** que publica el Inventario, y eso es `exacta` por §6.6 — con su
+  `geo_fuente` diciendo qué se está señalando: *el punto es la presa; el vaso se
+  extiende aguas arriba*.
+- **Cuando un embalse tiene varias presas**, se ancla en **la más alta desde
+  cimientos**. Un dique de collado es más bajo que la presa principal por
+  construcción, no por casualidad, y lo mismo vale para la presa vieja que quedó
+  «Inundada» bajo su recrecimiento. Seis de los dieciocho lo necesitaron.
+  Cuando el Inventario no publica esa altura —viene corrupta en algún
+  registro—, decide cuál está en explotación; y si ninguna de las dos cosas
+  resuelve, el guion revienta en vez de elegir.
+
+### Corregido
+
+- **`agua-embalsada:castrodelascogotas-duero` · geometría —
+  `[-6,16302, 41,58087]` → `[-4,69719, 40,72453]`.** El embalse de Las Cogotas
+  está en Ávila, sobre el Adaja, y la ficha lo situaba **a 157 km, en Zamora**,
+  encima del embalse de Castro, que es otro. El ancla venía de un topónimo del
+  Nomenclátor y nadie lo había desmentido porque **no había con qué**: hasta
+  ahora la única fuente de geometría de esta capa era esa. El contraste con el
+  Inventario lo cazó en la primera pasada — misma demarcación, 58,6 hm³ que
+  cuadran con los 58 del Boletín, y la presa de bóveda en el sitio correcto.
+  La ficha conserva el error contado en una clave: **un dato corregido sin
+  decir qué decía antes no es una corrección, es un borrado**.
+
+### Lo que enseña esta release sobre emparejar por nombre
+
+Es la segunda vez en el mismo día. Emparejando los 401 embalses del Boletín con
+las 3.208 presas del Inventario **solo por el nombre**, salieron **siete parejas
+falsas**: «La Cierva» con «La Cierva» a 442 km, «Bárcena» con «Bárcena» a 214.
+Filtrando además por **demarcación** —que las dos fuentes declaran— caen tres, y
+las que quedan lejos resultan ser las de verdad: Alcántara a 33 km, Cedillo a
+28, Mequinenza a 26, que son embalses de decenas de kilómetros de cola donde el
+centro del agua y la presa están genuinamente lejos.
+
+La comprobación que da derecho a publicar esto: reproyectados los 272 embalses
+que ambas fuentes comparten, la distancia **mediana entre las dos anclas es de
+2,34 km**, con 209 por debajo de 5 km. No es cero y no debía serlo — el
+Nomenclátor rotula un lugar y el Inventario sitúa una presa.
+
+### Huecos
+
+**Quedan 14 de los 401 del Boletín, 268 hm³ — el 0,47 % de la capacidad.** Ni
+uno en silencio, y ahora por dos motivos distintos:
+
+| Motivo | Cuántos | Quiénes |
+|---|---|---|
+| No son una presa: el Boletín agrega varios vasos bajo un nombre de sistema | 5 | Capdella, Valle de Arán, Aguas Limpias, Alto Caldarés, Lagos Espot |
+| No casan con ninguna presa del Inventario sin adivinar la identidad | 9 | La Cabezuela, Olivargas, Fresneda, Lechago, Hornachuelos, San Lorenzo, Las Fitas, Nagore, San Antón |
+
+- **El caso que mejor explica la regla es San Lorenzo** (Ebro, 10 hm³). El
+  Inventario trae dos candidatos: «San Lorenzo» en La Rioja, de 8,5 hm³, que
+  registra como **proyecto**; y «San Lorenzo Mongay» en Lleida, de 9,51, en
+  explotación. El Boletín dice 10 y lleva informando desde 2017. Cualquiera de
+  los dos sería una historia creíble, y por eso no entra ninguno: **la
+  verosimilitud no es una fuente**.
+- **Sigue sin publicarse el vaso**, solo el agua y ahora la presa. El fichero de
+  vasos del Inventario se descargó y **se descartó a conciencia**: su punto
+  habría que calcularlo del polígono, y el centro del recuadro de un embalse
+  sinuoso cae en tierra.
+- **Los 369 anclados en el Nomenclátor no se han revisado uno a uno.** Las Cogotas
+  salió porque estaba a 157 km; una desviación de tres kilómetros no la caza
+  este contraste, y tampoco la caza nadie. Repasar la capa entera contra el
+  Inventario es trabajo de otra release.
+
+---
+
 ## datos-v2026.08.43 — El primer refresco de la película, y lo que cuesta una semana
 
 **Nada nuevo entra y no cambia una sola regla**: es el primer **refresco
