@@ -645,8 +645,14 @@ datos.gob.es, capabilities rotos en disco): la verificación de cuenca se hace
 ahora contra el **ArcGIS REST público del mismo Ministerio**
 (`wms.mapama.gob.es/arcgis/rest/services/25830/aguaHidroDemarcaciones`), que
 devuelve 404 a ratos sobre URLs que existen — se reintenta, no se concluye.
-**Archivado** · 3 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18` y
-`.32` · §10
+**Refresco** · Es la única capa con parte semanal, y su archivo se **reemplaza**:
+el histórico viene entero cada vez (11 MB, 1988-2026), así que la copia nueva
+sustituye a la anterior en lugar de acumularse — las copias de ediciones pasadas
+viven en su etiqueta de Git y en su depósito de Zenodo. Y cada ficha lleva **su**
+parte: 25 embalses dejaron de informar hace años y conservan su fecha, que es lo
+único cierto de ellos.
+**Archivado** · 3 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18`,
+`.32` y `.43` · §10
 
 ## cables-submarinos
 

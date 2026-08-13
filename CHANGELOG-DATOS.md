@@ -32,6 +32,66 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.43 — El primer refresco de la película, y lo que cuesta una semana
+
+**Nada nuevo entra y no cambia una sola regla**: es el primer **refresco
+rutinario** de `agua-embalsada` desde que la capa tiene serie, y sirve para
+comprobar que la foto y la película se mueven juntas. El parte del **11 de
+agosto** del Boletín Hidrológico Semanal, contra el del 4 que la capa venía
+publicando.
+
+### Corregido
+
+- **`agua-embalsada` (1.0.0 → 1.0.1, parche: corrección de valores).** 344 de
+  las 369 fichas traen cifra nueva; **ninguna capacidad cambia**. La reserva de
+  esos 344 pasa de **38.435 a 37.537 hm³** —898 menos en siete días, sobre una
+  capacidad de 55.135—: 184 embalses bajan, 18 suben y 142 se quedan donde
+  estaban. Las caídas gordas son las de siempre en agosto y todas del oeste:
+  Almendra −58, Alcántara −56, Valdecañas −42, La Serena −36.
+- **Las 369 series ganan su parte**, 344 con punto nuevo y 25 sin él. El
+  histórico pasa de **683.892 a 684.236 partes**, y **R11 cuadra a la primera**:
+  la última cifra de cada película es la que dice su ficha.
+
+### Los 25 embalses mudos, que son el detalle que importa
+
+Veinticinco fichas **no se tocan**, y no por descuido: esos embalses dejaron de
+informar al Boletín hace años —algunos en 2003, 2006, 2011— y su `fecha_dato` se
+quedó anclada a su última cifra. **Un embalse mudo no hereda la fecha de los que
+sí hablan.** Habría sido cómodo estampar el 11 de agosto en las 369 y publicar
+un parte redondo; sería falso en veinticinco de ellas, y la ficha de Escarra
+seguiría diciendo lo que el Ministerio dijo en 2006 con fecha de esta semana.
+
+Lo que sí cambia en las veinticinco es `fecha_verificacion`: **se comprobó que
+siguen calladas**, y eso es una pasada de verificación con su resultado —el
+mismo dato de antes, confirmado hoy—, no un dato sin revisar.
+
+### El archivo se REEMPLAZA, y conviene decirlo
+
+El histórico del Boletín se archiva entero cada vez (11,3 MB, 1988-2026), así
+que la copia nueva **sustituye** a la vieja en `fuentes/` en lugar de acumularse:
+guardar una copia semanal de la misma base engordaría el repositorio en medio
+giga al año para conservar lo que la copia nueva ya contiene. La copia de cada
+edición anterior **no se pierde**: vive en su etiqueta de Git y en su depósito de
+Zenodo, que es exactamente para lo que sirven.
+
+**Y el refresco toca cuatro sitios, no dos** —queda escrito porque volverá cada
+mes—: la capa, las 369 series, la fuente archivada y **el `archivo` que cita el
+fixture de `pipeline/pruebas/`**, que si no se mueve deja tres pruebas en rojo
+por §7.7 (fichero archivado inexistente). Las tres cayeron en esta tanda y así se
+descubrió.
+
+### Huecos
+
+- Los mismos de siempre, y ninguno se ha movido: **32 embalses del Boletín
+  siguen sin ficha** (sin topónimo en el Nomenclátor, o agrupaciones sin vaso
+  propio), y la capa registra **el agua, no el vaso** — la geometría de la presa
+  sigue tras el CAPTCHA del SNCZI.
+- **El porcentaje de llenado se sigue sin publicar**, y esta entrada lo cita en
+  prosa a conciencia: sale de dividir dos cifras que la capa ya da, y R7 prohíbe
+  el campo derivado, no el comentario.
+
+---
+
 ## datos-v2026.08.42 — La red que no estaba en el fichero que yo podía bajar
 
 Última capa del **segundo horizonte**, y la que más se resistió. No por los
