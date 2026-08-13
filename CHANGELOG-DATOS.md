@@ -32,6 +32,105 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.47 — Ocho lagos que no se habían callado
+
+`agua-embalsada` **394 → 396** y el **99,9 % de la capacidad embalsada**. Entran
+los dos que llevaban tres releases descritos como «hay candidato y la evidencia
+lo desmiente». Pero lo que esta release corrige de verdad no son dos ausencias:
+es **una afirmación falsa que el atlas llevaba publicando desde la `.18`**.
+
+### Corregido: el parte no se cerró, se agregó
+
+Ocho fichas decían, cada una en su clave, «este parte dejó de alimentarse». Las
+ocho traían la misma fecha: **26 de septiembre de 2006**. Y la semana siguiente,
+el **3 de octubre de 2006**, el Boletín estrena cinco filas nuevas con nombre de
+sistema.
+
+No es una coincidencia y dos de las correspondencias son exactas:
+
+| Deja de publicarse | | Empieza a publicarse | |
+|---|---|---|---|
+| Escarra | 5 hm³ | **Sistema Escarra** | 5 hm³ |
+| Respomuso | 18 hm³ | **Sistema Aguas Limpias** | 18 hm³ |
+
+Respomuso está sobre el **río Aguas Limpias**. Los otros seis —Mar, Saburó,
+Bachimaña, Tort, Negro y Bramatuero Alto— son lagos regulados de la Vall Fosca,
+Espot y el alto Caldarés, y sus valles dan nombre a los otros tres sistemas.
+
+**El Boletín no dejó de medirlos: dejó de publicarlos por separado.** La clave
+de las ocho fichas pasa a decir eso, que es lo que ocurrió. Cada una conserva su
+última cifra **individual**, que es lo último que se supo de ese vaso por su
+cuenta, y ahora dice también que su agua se sigue midiendo dentro de su sistema.
+
+Un dato que llevaba veinte años siendo cierto y una explicación que llevaba tres
+semanas siendo engañosa: **el error no estaba en la cifra, estaba en el porqué**.
+
+### Añadido
+
+- **Fresneda** (19 hm³, Ciudad Real). El Nomenclátor tiene **exactamente dos**
+  «Embalse de la Fresneda» en España, y por eso la `.32` lo dejó fuera: uno en
+  la cuenca del Ebro y otro sobre el Jándula. **Lo que los separa es la
+  demarcación**, que el Boletín sí da — dice Guadalquivir, y el Jándula
+  desemboca en el Guadalquivir. El Inventario corrobora con una presa a ocho
+  metros del topónimo. **Desacuerdo declarado y no tapado:** el Inventario le da
+  13,2 hm³ y el Boletín 19; se publica la del Boletín, que es quien mide el agua
+  cada semana.
+- **San Lorenzo** (10 hm³, Lleida). El Boletín castellaniza el nombre y ahí se
+  perdía. **La evidencia que decide es NEGATIVA:** alrededor de la presa riojana
+  del Cárdenas, el Nomenclátor devuelve 174 topónimos y **ni un embalse** — el
+  Inventario la registra como proyecto y sobre el terreno no hay vaso. Alrededor
+  de la de Lleida hay un racimo entero: «Pantà de Sant Llorenç de Montgai», su
+  central hidroeléctrica, su apeadero y su pueblo. El parte semanal de la
+  Confederación del Ebro la lista además entre los embalses catalanes, junto a
+  Camarasa y Terradets.
+
+**Que una fuente no diga nada donde debería decirlo es una prueba**, y es la
+primera vez que este atlas la usa para decidir una identidad.
+
+### Sobre el duplicado de Escarra, y por qué no se deshace
+
+El atlas publica **dos registros en la misma coordenada**: «Embalse de Escarra»,
+histórico con su cifra de 2006, y el sistema que lo sustituyó, vivo con la de
+esta semana. Es la misma agua dos veces, y entró así porque el emparejador de la
+`.32` trató el nombre nuevo como un registro nuevo.
+
+Deshacerlo pedía una de dos cosas, y ninguna se hace:
+
+- **Borrar uno.** El atlas no borra registros, y ninguno de los dos es falso:
+  son dos filas de la fuente y cada una dice algo distinto y cierto.
+- **Empalmarlos en una sola serie.** Habría que afirmar que la fila «Escarra» y
+  la fila «Sistema Escarra» son la misma película, y eso es una inferencia mía,
+  no un dato de nadie. §4.1 prohíbe empalmar para cubrir tramos distintos del
+  tiempo, y aunque aquí el emisor y la operación son los mismos, la decisión
+  seguiría siendo mía.
+
+Lo que sí se hace: el agregado **deja de llamarse «Embalse de Sistema Escarra»**
+—que era un nombre fabricado por el prefijo automático— y pasa a «Sistema
+Escarra»; y **cada uno de los dos explica en su ficha por qué comparten punto**.
+Un mapa más limpio a costa de una verdad no es un trato que este atlas haga.
+
+### Huecos
+
+**Quedan 5 de los 401 del Boletín, 118 hm³ — el 0,21 % de la capacidad**, y
+todos por el mismo motivo: son los cinco «Sistema…» del Pirineo.
+
+**Se estudió añadirlos y la respuesta es no, por geometría.** Un sistema es un
+conjunto de lagos repartidos por un valle, y **ninguna fuente publica de cuáles
+se compone cada uno**. Anclarlo en uno de sus lagos y llamar a eso `paraje`
+sería ascender de rango sin que ascienda la evidencia (§6.6) — funciona con
+Sistema Escarra porque ese es un sistema de uno, y no funcionaría con Capdella,
+que agrega varios.
+
+*Lo que los sacaría del hueco:* que la Confederación del Ebro, o cualquier acto
+de concesión hidroeléctrica, publique la composición de cada sistema. Entonces
+la geometría honesta existiría y habría que decidir cómo se dibuja un conjunto.
+
+- **Las 368 anclas del Nomenclátor siguen sin repasar** contra el Inventario de
+  Presas. La `.44` cazó a Las Cogotas a 157 km de donde debía; tres kilómetros
+  no los caza nadie.
+
+---
+
 ## datos-v2026.08.46 — Tres embalses que se llamaban de otra manera
 
 `agua-embalsada` **391 → 394** y del 99,6 % al **99,8 % de la capacidad

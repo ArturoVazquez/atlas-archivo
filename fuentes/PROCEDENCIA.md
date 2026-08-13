@@ -643,16 +643,17 @@ sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
 contra el Nomenclátor, normalizando nueve prefijos en cuatro lenguas y el sufijo
 vasco `urtegia`, y **cada punto se verifica** preguntando al Ministerio en qué
 demarcación cae. Esa vuelta cazó seis emparejamientos falsos.
-**Alcance** · 394 de 401 embalses del Boletín, el 99,8 % de la capacidad; los 7
+**Alcance** · 396 de 401 embalses del Boletín, el 99,9 % de la capacidad; los 5
 restantes van declarados en el changelog con su motivo, y **nombrados y sumados en
-`/agua/`** (129 hm³): de ellos se sabe el agua y no dónde están. El barrido del
+`/agua/`** (118 hm³): son los cinco «Sistema…» del Pirineo, y de ellos se sabe
+el agua y no de qué lagos se componen. El barrido del
 Nomenclátor es **doble**: tipo «Embalse» (2026-08-07) y su ampliación a «Masa de
 agua» y «Conjunto de masas de agua» (2026-08-09) — los embalses que el Boletín
 llama por su lago (los estanys e ibones pirenaicos regulados) viven en esos
 tipos, no en «Embalse».
 **Dos anclas, y cada ficha dice la suya** · Hasta la `.44` todos los puntos
 venían del Nomenclátor (`geo_precision: paraje`: el topónimo es primario para el
-NOMBRE del lugar, no para el perímetro). Los 25 que entraron entre la `.44` y la `.46` vienen
+NOMBRE del lugar, no para el perímetro). Los 27 que entraron entre la `.44` y la `.47` vienen
 del **Inventario de Presas y Embalses**, que publica la coordenada de la presa:
 eso es `exacta` (§6.6), y su `geo_fuente` avisa de que el punto es la presa y el
 vaso se extiende aguas arriba. Cuando un embalse tiene varias presas
@@ -661,6 +662,15 @@ recrecimiento—, se ancla en **la más alta desde cimientos**, que es la princi
 por construcción. **Del Inventario se archiva solo el fichero de presas**: el de
 vasos se descartó porque su punto habría que calcularlo del polígono, y el
 centro del recuadro de un embalse sinuoso cae en tierra.
+**El Boletín agregó ocho lagos en 2006, y la capa lo dice** *(.47)*. El 26 de
+septiembre de 2006 se cierran los partes individuales de ocho lagos regulados
+del Pirineo y la semana siguiente nacen cinco filas con nombre de sistema que
+los agregan (Escarra 5 hm³ → «Sistema Escarra» 5; Respomuso 18 → «Sistema Aguas
+Limpias» 18). No dejaron de medirse: dejaron de publicarse por separado. Las
+ocho fichas conservan su última cifra INDIVIDUAL y lo cuentan. Los cinco
+sistemas siguen sin publicarse porque **ninguna fuente dice de qué lagos se
+compone cada uno**, y anclarlos en uno solo fingiría que un valle entero cabe
+en un punto.
 **Una fuente puede probar una identidad sin dar un dato** *(.46)*. Tres embalses
 estaban fuera porque el Boletín y el Inventario los llaman distinto, y ninguna
 búsqueda por nombre junta dos nombres que no se parecen. Los une una tercera
