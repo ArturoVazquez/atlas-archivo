@@ -32,6 +32,99 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.42 — La red que no estaba en el fichero que yo podía bajar
+
+Última capa del **segundo horizonte**, y la que más se resistió. No por los
+datos: por el portal que los guarda.
+
+### Añadido
+
+- **Nace `conducciones-combustible`** (31 capas), rama `energia`: **11.112 km de
+  gasoducto y 4.106 km de oleoducto**, del levantamiento de la **Base
+  Topográfica Nacional** del IGN, objeto `0701L Conducción de combustible`.
+- **Dos registros y no 3.106.** La BTN trae el campo `nombre` **a NULL en todas**
+  sus conducciones. Bautizarlas por sus extremos fabricaría nombres que nadie ha
+  dado, así que se publica lo que la fuente sí distingue —el tipo— agregando sus
+  tramos. Es la misma decisión que hizo que el tendido eléctrico fueran dos
+  registros y no 1.784, y el campo `n_tramos` dice cuántos objetos hay detrás
+  para que la agregación se lea como decisión y no como descuido.
+
+### Lo que más vale de esta capa es que estuvo a punto de no existir
+
+El filón se había dado por **viable** leyendo las especificaciones del IGN: el
+objeto existe, el atributo que separa gas de petróleo existe, la licencia es la
+que el atlas ya usa. Todo cierto. Y al medir **los datos**, falso:
+
+- La **BTN100** —la versión que se podía descargar sin navegador— traía **1.390
+  km** de gasoducto. La red de transporte española ronda los 11.000.
+- Se midió su distancia a las instalaciones que el atlas ya publica: la planta
+  de Huelva a **233 km**, el Magreb-Europa a **282**, Medgaz a **191**, Bilbao a
+  **117**, Barcelona a **87**. No era una red incompleta: era una **muestra
+  fragmentaria**.
+- Publicarla como «los gasoductos de España» habría sido una afirmación falsa
+  **con cartografía oficial detrás**, que es la peor clase.
+
+Se cerró el filón con su medida y se pidió la **BTN Continua**, que no se deja
+descargar por guion: hizo falta un navegador. Esa sí tiene la red — **11.116 km**
+que cuadran con la red de transporte, y que pasan **a menos de 5 km de las siete
+plantas de GNL y de las seis interconexiones** que el atlas publica.
+
+**La lección, escrita porque volverá:** una especificación dice lo que un fichero
+**puede** contener, no lo que contiene. La diferencia se mide.
+
+### Lo que esta capa NO dice, y por qué
+
+- **Ni titular, ni presión, ni diámetro, ni si conduce hoy.** La BTN es una carta
+  topográfica: mide dónde está el eje y de eso responde. Quien publica el mallado
+  con esos atributos es el operador —fuente corporativa, que por R3 no sostiene
+  un confirmado—, y **no se sustituye un dato por su parecido**. El esquema los
+  prohíbe explícitamente, igual que `fase`: un «no está en servicio» por falta de
+  dato es justo la mentira que R7 evita.
+- **Casi toda la red va enterrada** — el 99 % de los tramos se declara
+  subterráneo. Es una red que se dibuja y no se ve.
+- **No hay una fecha única de actualización.** El IGN actualiza «por objeto
+  geográfico y/o capa» y la fecha vive en cada tramo: el grueso es de 2018, con
+  revisiones sueltas hasta 2024. Publicar un año único fabricaría una precisión
+  temporal que la fuente no da.
+
+### La longitud, y por qué se llama como se llama
+
+`longitud_medida_km`, no `longitud_km`: **el IGN no publica ninguna longitud**.
+La mide el atlas, y por eso va «parcialmente verificada» — medir sobre un dato
+primario no convierte la medida en primaria. Y **mide sobre la geometría ya
+simplificada**, no sobre la original: si midiera la original, la ficha diría una
+cifra que el mapa no dibuja.
+
+La simplificación va a **5 metros**, no a los 25 del tendido eléctrico, y se
+eligió por lo que **cuesta**, no por lo que ahorra. Se probaron cuatro
+tolerancias:
+
+| Tolerancia | Vértices que caen | Longitud que se pierde |
+|---|---|---|
+| 5 m | 87 % | **0,035 %** |
+| 10 m | 90 % | 0,094 % |
+| 15 m | 91 % | 0,166 % |
+| 25 m | 93 % | 0,333 % |
+
+A 25 m la pérdida era veinte veces mayor que la que costó simplificar el
+tendido, porque **estas conducciones curvan más que una línea de alta tensión**,
+que va recta entre torres. A 5 m la pérdida vuelve al mismo orden.
+
+### Contrato
+
+- **1.38.0 → 1.39.0** (aditiva). §10 estrena `n_tramos` y `longitud_medida_km`,
+  y un esquema que existe sobre todo para **prohibir**: `titular`, `propietario`,
+  `operador`, `presion_bar`, `diametro_mm` y `fase`. **No nace ninguna regla
+  `R*`.**
+
+### Huecos
+
+- Los dos registros declaran los mismos, y son los de arriba: **sin titular, sin
+  presión, sin diámetro, sin servicio y sin fecha única**.
+- **Lo que esta capa NO cierra:** el atlas no puede decir qué parte de estos
+  11.112 km es red de transporte y cuál de distribución. La BTN no lo distingue,
+  y quien sí lo hace es el operador.
+
 ## datos-v2026.08.41 — La segunda película, y la gráfica que rotulaba el gas en hectómetros
 
 El atlas llevaba desde la `.36` con **una sola película**: la reserva semanal de

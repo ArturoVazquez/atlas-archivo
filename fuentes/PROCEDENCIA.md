@@ -427,6 +427,40 @@ discrepancia de un día entre la ficha del CSN y la orden del BOE, que **no
 cambia el dato pero queda dicha**.
 **Archivado** · 8 ficheros · **El resto** · CHANGELOG `datos-v2026.08.2` · §10
 
+## conducciones-combustible
+
+**De dónde** · **IGN — BTN Continua**, tema Energía, objeto `0701L Conducción
+de combustible`, con su atributo `TIPO_0701` (01 oleoducto / 02 gasoducto).
+**Licencia** · IGN, ver arriba · atribución exigida: `Obra derivada de BTN
+Continua CC-BY 4.0 ign.es`
+**Qué hay que saber** · **DOS registros y no 3.106.** La BTN trae el campo
+`nombre` **a NULL en todas** sus conducciones, así que bautizarlas por sus
+extremos fabricaría nombres que nadie ha dado — es la misma decisión que hizo
+que el tendido eléctrico fueran dos registros y no 1.784. Se publica lo que la
+fuente sí distingue, que es el tipo. **La cobertura se midió ANTES de construir
+nada**, y esa medición tumbó primero a la BTN100: traía 1.390 km de gasoducto y
+no llegaba ni a Huelva, ni a Bilbao, ni a cinco de las seis interconexiones —
+era una muestra, no la red. La BTN Continua da **11.116 km** de gasoducto, que
+cuadran con la red de transporte española, y pasa **a menos de 5 km de las
+siete plantas de GNL y de las seis interconexiones** que el atlas ya publica.
+**La geometría va simplificada a 5 m** y no a los 25 del tendido: se probaron
+cuatro tolerancias y se eligió por lo que CUESTA, no por lo que ahorra — a 25 m
+se comía el 0,33 % de la longitud, veinte veces más que en el tendido, porque
+estas conducciones curvan más que una línea que va recta entre torres.
+**Huecos** · Los dos registros declaran los mismos. **La BTN no publica
+titular, presión, diámetro ni si la conducción está en servicio**: es una carta
+topográfica y responde de dónde está el eje. Quien sí publica el mallado con
+esos atributos es el operador, fuente corporativa que por R3 no sostiene un
+confirmado — y no se sustituye un dato por su parecido. **Y no hay fecha única
+de actualización**: vive en el `f_alta` de cada tramo (el grueso es de 2018,
+con revisiones sueltas hasta 2024), así que publicar un año único fabricaría
+una precisión temporal que la fuente no da.
+**La longitud la mide el atlas** · El IGN no publica ninguna. Por eso el campo
+se llama `longitud_medida_km`, va `parcial` y mide sobre la geometría **ya
+simplificada**: si midiera la original, la ficha diría una cifra que el mapa no
+dibuja.
+**Archivado** · 2 ficheros · **El resto** · CHANGELOG `datos-v2026.08.42` · §10
+
 ## gas-interconexiones
 
 **De dónde** · **CORES** — su metodología estadística fija el perímetro (los
