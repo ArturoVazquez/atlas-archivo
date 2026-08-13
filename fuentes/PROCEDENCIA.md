@@ -642,15 +642,16 @@ sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
 contra el Nomenclátor, normalizando nueve prefijos en cuatro lenguas y el sufijo
 vasco `urtegia`, y **cada punto se verifica** preguntando al Ministerio en qué
 demarcación cae. Esa vuelta cazó seis emparejamientos falsos.
-**Alcance** · 387 de 401 embalses del Boletín, el 99,5 % de la capacidad; los 14
-restantes van declarados en el changelog con su motivo. El barrido del
+**Alcance** · 391 de 401 embalses del Boletín, el 99,6 % de la capacidad; los 10
+restantes van declarados en el changelog con su motivo, y **nombrados y sumados en
+`/agua/`** (231 hm³): de ellos se sabe el agua y no dónde están. El barrido del
 Nomenclátor es **doble**: tipo «Embalse» (2026-08-07) y su ampliación a «Masa de
 agua» y «Conjunto de masas de agua» (2026-08-09) — los embalses que el Boletín
 llama por su lago (los estanys e ibones pirenaicos regulados) viven en esos
 tipos, no en «Embalse».
 **Dos anclas, y cada ficha dice la suya** · Hasta la `.44` todos los puntos
 venían del Nomenclátor (`geo_precision: paraje`: el topónimo es primario para el
-NOMBRE del lugar, no para el perímetro). Los 18 que entraron en la `.44` vienen
+NOMBRE del lugar, no para el perímetro). Los 22 que entraron en la `.44` y la `.45` vienen
 del **Inventario de Presas y Embalses**, que publica la coordenada de la presa:
 eso es `exacta` (§6.6), y su `geo_fuente` avisa de que el punto es la presa y el
 vaso se extiende aguas arriba. Cuando un embalse tiene varias presas

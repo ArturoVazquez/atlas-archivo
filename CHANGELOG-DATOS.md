@@ -32,6 +32,87 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.45 — Cuatro más, y los diez que faltan dejan de ser un porcentaje
+
+Continuación directa de la `.44`, y sale de una pregunta: **¿se puede hacer algo
+con los catorce que quedaban fuera?** Con cuatro sí, y el motivo de que no
+entraran antes era **del emparejador, no de la fuente**.
+
+### Añadido
+
+- **`agua-embalsada` 387 → 391 registros** (1.1.0 → 1.2.0), del 99,5 % al
+  **99,6 % de la capacidad embalsada**. Entran **Lechago** (18 hm³, Teruel),
+  **Nagore** (5, Navarra), **San Antón** (5, Navarra) y **Las Fitas** (9,
+  Huesca), con sus cuatro películas.
+
+### El emparejador comparaba cadenas donde tenía que comparar palabras
+
+Los cuatro estaban en el Inventario desde el primer día. No se vieron por dos
+motivos, y los dos son de método:
+
+- **La `.44` emparejó contra el fichero de VASOS y ancla en el de PRESAS.** Son
+  dos ficheros distintos del mismo Inventario y **no tienen los mismos
+  registros**: Nagore y San Antón están en el de presas y no en el de vasos.
+  Buscar en un sitio y publicar desde otro es la clase de descuido que no avisa.
+- **El artículo invertido y el paréntesis.** El Boletín dice «Las Fitas» y el
+  Inventario «Fitas, Las»: como cadenas normalizadas, `lasfitas` ≠ `fitaslas`.
+  Y Lechago figura como «RIO JILOCA (REGULACION) **(LECHAGO)**», porque el
+  Inventario nombra la presa por su función y deja el embalse entre paréntesis.
+  Comparando **juegos de palabras** —sin artículos, sin orden— los dos casan.
+
+Las tres primeras se confirman solas: la capacidad del Inventario cuadra con la
+del Boletín (18,16 contra 18; 4,71 contra 5; 5,09 contra 5). **Las Fitas** entra
+por el precedente de Terroba: nombre y cauce cuadran y su capacidad viene
+corrupta en la fuente (8.085.000.000), así que no hay con qué contrastar y se
+dice en su ficha.
+
+Y un aviso que el filtro de demarcación se ganó otra vez: **hay dos «San
+Antón»**, uno en el Cantábrico Oriental y otro en el Guadalquivir. Sin ese
+filtro, la elección habría sido a cara o cruz.
+
+### Los diez que quedan, contados en vez de resumidos
+
+Hasta hoy la ausencia se decía en porcentaje —«el 99,5 % de la capacidad»—, que
+es una manera educada de no decirlo. **Ahora `/agua/` los nombra uno a uno**,
+con su demarcación, su capacidad y el motivo, y suma lo que falta: **231 hm³**.
+De ellos se sabe el agua —la publica el Boletín cada semana, igual que la de los
+demás— y **no se sabe dónde están**.
+
+| Motivo | Cuántos | Quiénes |
+|---|---|---|
+| No son un embalse: el Boletín suma varios vasos bajo un nombre de sistema | 5 | Capdella, Valle de Arán, Aguas Limpias, Alto Caldarés, Lagos Espot |
+| Ninguna presa del Inventario casa con su nombre ni con su cauce | 3 | La Cabezuela, Olivargas, Hornachuelos |
+| Hay candidato y la evidencia lo desmiente | 2 | Fresneda, San Lorenzo |
+
+**No entran como registros sin geometría, y conviene decir por qué.** Un atlas
+es un mapa: un registro que no se puede pintar rompe lo que la capa promete. Y
+para contarlos no hace falta publicarlos — hace falta declararlos, que es
+exactamente lo que esta casa hace con todo lo que le falta.
+
+La página lleva **dos guardas** para que esa cuenta no pueda pudrirse sola: si
+alguno de los diez llegara a publicarse y se olvidara sacarlo de la lista,
+revienta el build; y si publicados más ausentes no suman los **401** del
+histórico, también — que es la única manera de perder uno en silencio.
+
+**San Lorenzo sigue siendo el caso que enseña la regla.** El nombre apunta a una
+presa de La Rioja que el Inventario da como proyecto; la capacidad y el estar en
+explotación apuntan a «San Lorenzo Mongay», en Lleida. Dos evidencias que
+señalan a sitios distintos no son una identificación: son una historia creíble.
+
+### Huecos
+
+- **Los diez de la tabla**, 231 hm³, el 0,41 % de la capacidad. Cinco no
+  entrarán nunca mientras el Boletín los publique sumados.
+- **La vía no está agotada para tres de ellos.** La Cabezuela, Olivargas y
+  Hornachuelos son de cuencas cuyas **Confederaciones Hidrográficas** publican
+  sus propios listados y geoportales, y una Confederación es organismo público
+  — fuente primaria. No se ha mirado.
+- **Las 368 anclas del Nomenclátor siguen sin repasar** contra el Inventario. Lo
+  que dijo la `.44` sigue valiendo: Las Cogotas salió porque estaba a 157 km, y
+  una desviación de tres kilómetros no la caza nadie.
+
+---
+
 ## datos-v2026.08.44 — La puerta que llevaba seis releases cerrada, y un punto que estaba a 157 km
 
 `agua-embalsada` pasa de **369 a 387 registros** y del 98,4 % al **99,5 % de la
