@@ -32,6 +32,60 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.58 — El atlas aprende a decir qué contiene cada capa
+
+**Sale de intentar montar un catálogo de las 31 capas y descubrir que no se
+podía escribir.** El manifiesto sabía cómo se llama cada capa, de qué rama
+cuelga, cuántos registros tiene y qué licencia obliga — y **no sabía decir qué
+es**. Se buscó ese texto donde debería estar y no estaba en ningún sitio.
+
+### Añadido
+
+- **`resumen` en las 31 capas** *(contrato §3, 1.43.0)*: una línea que dice qué
+  contiene, obligatoria en toda capa con `fichero`. La más larga mide **97
+  caracteres** de los 140 que caben.
+- **`/biblioteca/`**, el catálogo de todo lo publicado: las 31 capas con sus
+  registros, su reparto de verificación, sus huecos y su película; los partes; y
+  el archivo público. Es una página de `app/`, **no un dato**, y **ninguna de
+  sus cifras está escrita a mano**: todas se cuentan al construir, desde esta
+  release. La lección de la `.51` aplicada a una página que es toda recuentos.
+
+### Por qué no valía nada de lo que ya había
+
+- Las **notas `_` del manifiesto son prosa de taller**: explican decisiones
+  —«Era `recurso-eolico`, y se renombra sin coste porque…»— y **diez de las
+  treinta y una no tenían ninguna**.
+- **`fuentes/PROCEDENCIA.md`** contesta de dónde sale una capa, que es otra
+  pregunta.
+- Y el **`titulo`** es un rótulo de tres palabras.
+
+La consecuencia estaba a la vista y nadie la había mirado: **«Conducciones de
+combustible · 2 registros» no le dice nada a nadie**, ni en un catálogo, ni en
+el panel del mapa, ni en su propio índice de fichas.
+
+### Qué clase de campo es, y qué se le puede exigir
+
+**No es un dato y no lleva aparato de verificación**, exactamente igual que
+`titulo`: es cómo la casa presenta su capa, se escribe a mano y no se deriva de
+nada. Por eso §7.8 solo puede exigir **tres cosas comprobables** —que exista,
+que quepa y que no sea el título otra vez— y la cuarta, que diga algo
+verdadero, la sostiene quien lo escribe. Pruebas **41 → 46**, con una que existe
+solo para garantizar que **una rama en gris no lo exige**: todavía no contiene
+nada que contar.
+
+### Huecos
+
+- **El catálogo enseña seis columnas y hay una séptima que no está**: cuándo
+  toca revisar cada capa. El manifiesto declara `cadencia_revision_dias` y hoy
+  **no lo mira nadie**; ponerlo en la biblioteca exige decidir qué se hace
+  cuando una vence, y esa decisión no se toma en la misma release que estrena
+  la página.
+- **El marco de las páginas estáticas está ahora en tres sitios.** Cada
+  generador se trae su propia cabecera y su pie, y con la biblioteca ya son
+  tres copias. Se asume a sabiendas —extraerlo obligaba a tocar los dos
+  generadores existentes en mitad de una release— y queda anotado para la
+  cuarta página, o para el día que el marco cambie de verdad.
+
 ## datos-v2026.08.57 — La segunda película sale del libro que ya estaba en casa
 
 **El atlas tenía 31 capas y una sola con película semanal.** Buscando si alguna

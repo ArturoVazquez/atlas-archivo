@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.42.0 · **Fecha:** 2026-08-14
+**Versión del contrato:** 1.43.0 · **Fecha:** 2026-08-14
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -109,6 +109,7 @@ fichero y su entrada aquí. La app construye el panel desde el manifiesto.
     {
       "id": "minerales-proyectos",
       "titulo": "Minerales críticos — proyectos",
+      "resumen": "Proyectos de extracción y transformación de minerales críticos con expediente localizado.",
       "arbol": "minerales",
       "grupo": "actividad",
       "ambito": "espana",
@@ -134,6 +135,7 @@ fichero y su entrada aquí. La app construye el panel desde el manifiesto.
 
 | Campo | Valores / notas |
 |---|---|
+| `resumen` | **(1.43)** UNA línea que dice **qué contiene la capa**, en castellano llano y como máximo 140 caracteres. **Obligatorio en toda capa con `fichero`**; se omite en una rama en preparación, que todavía no contiene nada. Nace de un hueco que solo se ve cuando se intenta hacer un catálogo: el atlas sabía cómo se llama cada capa y de dónde sale, y **no sabía decir qué es**. Las notas `_` del manifiesto no servían —son prosa de taller, explican decisiones («Era `recurso-eolico`, y se renombra…») y diez capas no tenían ninguna—. **No es un dato y no lleva aparato de verificación**, igual que `titulo`: es cómo la casa presenta su propia capa, y por eso se escribe a mano y no se deriva. Lo que sí exige el contrato es que **exista, quepa y no repita el título**: un resumen que solo dice el nombre otra vez es una casilla rellenada, no una respuesta. |
 | `arbol` | **(1.1)** dominio bajo el que cuelga la capa en el panel: `minerales` · `energia` · `conectividad` · `tablero` · `intangibles`. Es la organización visible (D3). |
 | `grupo` | `dotacion` (lo que tiene) · `actividad` (lo que se trabaja). Abierto a nuevos grupos por versión menor. |
 | `ambito` | **(1.1)** `espana` (por defecto si se omite) · `mundo`. Relaja la comprobación de bbox de §7.4: una capa de ámbito mundo no se valida contra el recuadro de España. |
@@ -832,7 +834,11 @@ ser prosa y pasa a ser test:
    `archivo` existente en `fuentes/` (aviso, no bloqueo, durante la v1).
 8. **Manifiesto** *(1.1)*: cada capa con `fichero` apunta a un fichero que existe;
    el `atlas.capa` de la colección coincide con el `id` del manifiesto; una capa
-   `en_preparacion` no declara `fichero` (regla del horizonte, §3).
+   `en_preparacion` no declara `fichero` (regla del horizonte, §3). Y *(1.43)*
+   toda capa con `fichero` trae **`resumen`**: existe, cabe en 140 caracteres y
+   **no es el título otra vez** — lo único comprobable de una línea escrita a
+   mano. Que además diga algo verdadero lo sostiene quien la escribe, como el
+   `titulo`.
 9. **Procedencia** *(1.26)*: toda capa con `fichero` tiene su ficha en
    `fuentes/PROCEDENCIA.md`, y toda ficha tiene su capa. Se reconoce una ficha
    por su encabezado de nivel 2 en kebab-case, que es la forma de un `id` — los
@@ -2325,6 +2331,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.43.0** | 2026-08-14 | **Aditiva, y de las que solo se ven cuando alguien intenta USAR el atlas entero de una vez.** §3 estrena **`resumen`**: una línea por capa que dice **qué contiene**, obligatoria en toda capa con `fichero`. Sale de intentar montar un catálogo de las 31 capas y descubrir que **no se podía escribir**: el manifiesto sabía cómo se llama cada capa, de qué rama cuelga, cuántos registros tiene y qué licencia obliga — y **no sabía decir qué es**. Se buscó el texto donde debería estar y no estaba: las notas `_` del manifiesto **son prosa de taller** —explican decisiones («Era `recurso-eolico`, y se renombra sin coste porque…»), no contenido— y **diez de las treinta y una no tenían ninguna**; `fuentes/PROCEDENCIA.md` contesta de dónde sale, que es otra pregunta; y el `titulo` es un rótulo de tres palabras. La consecuencia estaba a la vista y nadie la había mirado: **una capa llamada «Conducciones de combustible» con dos registros no le dice nada a nadie**, ni en un catálogo, ni en el panel del mapa, ni en su propio índice de fichas. **No es un dato y no lleva aparato de verificación**, exactamente igual que `titulo`: es cómo la casa presenta su capa, se escribe a mano y no se deriva de nada — de ahí que §7.8 solo pueda exigir tres cosas comprobables (que exista, que quepa en 140 caracteres y que no sea el título otra vez), y que la cuarta, que diga algo verdadero, la sostenga quien lo escribe. Pruebas **41 → 46**, y una existe solo para garantizar que **una rama en gris no lo exige** — todavía no contiene nada que contar. **No nace ninguna regla `R*`**: no es doctrina sobre los datos, es el mínimo para que el atlas pueda presentarse a sí mismo. |
 | **1.42.0** | 2026-08-14 | **Aditiva, y cierra un hueco que llevaba abierto desde la 1.35 por una razón que conviene retener: no faltaba la comprobación, faltaba **el dato que la hace decidible**. §4.1 declaraba huérfana a la serie sin ficha, pero nadie declaraba nada de la **ficha sin serie**, así que perder un fichero de película pasaba el CI en verde y solo lo cazaba una guarda del generador de `/agua/` —que vive en `app/` y no en el contrato—. La regla obvia era imposible de escribir porque es **falsa**: «toda capa con `series` las tiene todas» rompe `gas-interconexiones`, que publica 6 registros y 2 series a propósito. §3 gana por eso **`series_completas`**, que dice cuál de los dos casos es cada capa, y §4.1 gana la regla en su reverso, que bloquea. Lo destapó la auditoría exhaustiva del 2026-08-14; se había descartado una vez por imposible, y lo imposible era la regla, no el cierre. **No nace ninguna regla `R*`.** |
 | **1.41.0** | 2026-08-14 | **Aditiva, y estrena una CLASE de dato.** Hasta hoy una capa solo podía publicar hechos de sus registros; §4 le da **`atlas.conjunto`**, para los hechos que la fuente publica **del conjunto** y no de ninguno de ellos. El caso que lo pide: el Boletín Hidrológico da el agua embalse a embalse y da además, en el mismo parte, la **energía hidroeléctrica almacenada** en todos ellos — que no es de Alcántara ni de Buendía, es de los 401 a la vez. Lleva **el mismo aparato que una ficha** (`__v`, `__f`, `fuentes` propias, `fecha_dato`) porque un hecho del conjunto no es más blando que uno de un registro, y **R7 rige igual**. Se descartaron las dos salidas obvias: un **registro nacional** obligaría a una capa que el panel enseñaría con una geometría que no significa nada, o a meterlo entre los 401 y corromper el recuento que la capa declara; y el **manifiesto** es un registro de capas, no datos — sin `__v`, `__f` ni `fuentes`, una cifra escrita ahí no se podría citar. La cautela que nace con el mecanismo: **un hecho del conjunto se refiere a ALGÚN conjunto, y no tiene por qué ser el que la capa publica** — la producción hidroeléctrica del mismo parte incluye centrales fluyentes ajenas a la capa, y se publica diciéndolo. §10 le da a `agua-embalsada` sus siete campos de conjunto, y anota que **`hidroelectrico` es del Boletín y no una deducción**: constante en 38 años, reparte los 401 en 108 y 293, y sumando por ella salen **las mismas cifras que publica el Ministerio**, comprobado al dígito. Prohibida en el bloque cualquier **equivalencia en hm³** de los GWh: exigiría el salto de cada central, y el salto no es la altura de la presa. **No nace ninguna regla `R*`.** *(De paso: el encabezado del documento se había quedado en 1.39.0 cuando §13 ya registraba la 1.40.0 — corregido aquí.)* |
 | **1.40.0** | 2026-08-14 | **Aditiva, y de navegación.** §3 estrena `pagina` en la entrada de capa: dónde vive la página que cuenta esa capa entera, si la tiene. Nace de un fallo real de descubribilidad — `/agua/` llevaba un día publicada y **desde la portada del atlas no había manera de llegar**: se alcanzaba desde Método, desde el índice de la capa y desde el bloque sin JavaScript, que es como decir desde ningún sitio. La alternativa era un enlace por página en la barra del visor, que con tres capas convierte un instrumento en un menú. Al declararlo el manifiesto, el enlace sale **en el panel de la capa** —donde el lector ya ha mostrado interés por ella— sin que el código conozca capas por su nombre, que es la misma razón por la que `series` vive ahí desde la 1.35. De paso muere una tabla escrita a mano en `generar-fichas.mjs` que hacía este trabajo contradiciendo esa regla. **No nace ninguna regla `R*`.** |
