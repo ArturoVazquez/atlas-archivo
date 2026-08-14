@@ -32,6 +32,99 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.57 — La segunda película sale del libro que ya estaba en casa
+
+**El atlas tenía 31 capas y una sola con película semanal.** Buscando si alguna
+otra podía tenerla, resultó que **el dato llevaba archivado en el repo desde el
+12 de agosto, sin usar**: los libros de CORES que la `.41` bajó para
+`gas-interconexiones` tienen **cuatro hojas** y aquella release gastó una. La
+tercera reparte el gas **planta a planta** desde enero de 2004, y sus siete
+columnas cuadran una a una con los siete registros de `gas-regasificacion`.
+
+No hizo falta bajar nada. Hizo falta abrir el libro entero.
+
+### Añadido
+
+- **`gas-regasificacion` estrena película**: el **flujo mensual** de las siete
+  plantas de GNL, con **entradas y salidas**, hasta mayo de 2026. Cada una trae
+  su propia historia, que es la de su puesta en servicio — Barcelona, Bilbao,
+  Cartagena y Huelva desde el primer mes; Sagunto desde 2006-02; Mugardos desde
+  2007-05; **Musel solo desde 2020**, con 77 puntos.
+- **Los campos que la sostienen**: `importacion_mes_gwh`, `exportacion_mes_gwh`
+  y su `fecha_dato`, más las dos fuentes de CORES (una por libro, como ya hace
+  la capa hermana). **Los valores no se copiaron a mano**: se leen del último
+  punto de cada serie, así que R11 cuadra por construcción.
+- **`nombre_estadistico` en los siete**, que declara **en el dato** cuál es su
+  columna del libro. Las columnas coinciden con los *slugs* y no con los
+  nombres —«Bilbao» es Bahía de Bizkaia Gas, «Sagunto» es Saggas—, así que donde
+  se parecen es casualidad y no contrato.
+- **`series_completas`** en el manifiesto: las siete la tienen, luego una que
+  faltara es un defecto y no una omisión legítima. Probado escondiendo la de
+  Musel — el validador bloquea.
+- **`pipeline/seriar-gas.py`**, el extractor. Lee los `.xlsx` con la biblioteca
+  estándar y trae dos guardas: **el propio libro hace de juez** (la suma de lo
+  extraído tiene que dar su columna de total en los 269 meses y en los dos
+  libros) y el emparejamiento columna→ficha **revienta** en vez de adivinar.
+- **Y las dos series de la `.41` dejan de ser irreproducibles.** Aquella release
+  no dejó guion: el dato estaba en el repo y la forma de sacarlo, en ningún
+  sitio. Este extractor las regenera **idénticas**, campo a campo y los 269
+  puntos — que es además la prueba de que lee bien el libro *antes* de escribir
+  siete series nuevas. La comparación cazó un detalle que se habría colado: el
+  título de la fuente cambia según la serie use un libro o los dos.
+
+### Corregido
+
+- **`gas-regasificacion` no atribuía el Nomenclátor.** Las siete coordenadas
+  derivan del NGBE del IGN (CC BY 4.0) y la atribución de la capa no lo decía
+  desde que nació. Es obligación de licencia, no cortesía.
+- **Las siete fichas fechaban su verificación en 2026-08-06** mientras el
+  manifiesto pasaba a 2026-08-14: la capa afirmaba una verificación que ninguna
+  ficha respaldaba. Ahora la respaldan — se les ha añadido dato confirmado de
+  fuente primaria, que es verificar.
+
+### La mordedura, y quién la vio
+
+**La serie de Musel publicaba 192 meses de nada**: de enero de 2004 a diciembre
+de 2019, una fecha y dos nulos. La estadística no le abre columna hasta 2020
+porque la planta no existía, y publicar esos puntos era afirmar que aquellos
+meses salió un parte vacío. §4.1 lo dice con todas las letras: **el hueco de un
+parte entero es la ausencia del punto, no un punto de nulos.**
+
+No lo vio el código ni el validador. Lo vio **mirar la gráfica construida**, que
+se anunciaba como «2020-2026 · 77 partes mensuales» cuando el fichero decía 269.
+Es la misma comprobación que salvó la `.41` —donde el dibujante rotulaba «hm³»
+viniera lo que viniera— y por segunda vez encuentra lo que no encuentra nadie
+más. Un valor nulo **suelto** sí es un punto legítimo: ahí el parte existe y le
+falta una cifra, que es otra cosa.
+
+### Contrato
+
+**Sin cambios: sigue en 1.42.0.** Todo lo que hacía falta ya existía —
+`magnitud` y `fuente.archivo` como lista (1.38), `series_completas` (1.42). Una
+release que estrena película sin tocar el contrato es la señal de que el
+contrato se escribió bien.
+
+### Huecos
+
+- **El gas entra a España por cuatro caminos y el atlas publica dos.** Estas
+  siete plantas y, en la capa hermana, los dos gasoductos africanos. Faltan las
+  **cisternas** —gas por carretera, con columna propia en el mismo libro y
+  ninguna capa donde vivir— y el reparto por punto físico de Francia y Portugal,
+  que desde octubre de 2014 se imputa a los VIP. Se declaran; no se inventa una
+  capa para alojarlos.
+- **La cadencia es mensual y con desfase.** CORES publicó el 13 de julio de 2026
+  los datos hasta **mayo**. Quien cite «el último mes» está citando mayo.
+- **No hay página del gas.** Esta release publica el dato; el parte mensual es
+  una decisión de diseño que se toma viéndolo vivo, y todavía no se ha tomado.
+  Las siete películas se ven hoy en sus fichas.
+- **Observado y no tocado**, dos cosas que aparecieron trabajando aquí y que no
+  son de esta release: `minerales-proyectos` y `cables-submarinos` tienen fichas
+  verificadas **después** de la fecha que declara su manifiesto —va al revés que
+  el defecto corregido arriba—, y la nota `_estado` del manifiesto sigue
+  empezando por «VEINTIOCHO capas» cuando son **31**. Lo segundo es justo lo que
+  la `.51` aprendió a evitar: una cifra en prosa que envejece aparte del dato, y
+  cuya salida no es actualizarla sino **dejar de nombrarla**.
+
 ## datos-v2026.08.56 — Los doce últimos, encontrados buscando al revés
 
 **Cierra el último hueco de la capa.** Doce embalses tenían su posición

@@ -263,17 +263,42 @@ porque contar plantas y medir superficie dan respuestas distintas.
 ## gas-regasificacion
 
 **De dónde** · **CNMC**, informe de supervisión del sistema gasista 2025 ·
-**BOE**, cinco resoluciones y órdenes por planta.
+**BOE**, cinco resoluciones y órdenes por planta · **CORES**, sus dos series
+mensuales de entradas y salidas, que desde la `.57` dan **la película de cada
+planta** · **IGN**, Nomenclátor, para las siete coordenadas.
 **Licencia** · Textos legales sin dueño (BOE); el informe de la CNMC se **cita**,
-no se copia su conjunto de datos.
+no se copia su conjunto de datos · CORES, atribución de **fórmula fija** «Fuente
+CORES (www.cores.es)» · IGN (NGBE), CC BY 4.0.
 **Qué hay que saber** · **Enagás es sociedad cotizada**, o sea fuente
 `corporativa`, y por R3 **no puede sostener un `confirmado`**. Lo primario aquí
-es el BOE y la CNMC.
+es el BOE, la CNMC y CORES.
+**El desglose por planta llevaba archivado y sin usar** · Los libros de CORES
+que la `.41` bajó para `gas-interconexiones` tienen **cuatro hojas**, y aquella
+release gastó una. La tercera reparte el gas **planta a planta** desde enero de
+2004, y sus siete columnas cuadran una a una con estos siete registros. No hizo
+falta bajar nada: hizo falta abrir el libro entero.
+**El emparejamiento se declara, no se deduce** · Las columnas del libro
+coinciden con los **slugs** y no con los nombres —«Bilbao» es Bahía de Bizkaia
+Gas, «Sagunto» es Saggas, «Mugardos» es Reganosa—, así que donde se parecen es
+casualidad. Cada ficha lleva su `nombre_estadistico` y `seriar-gas.py` revienta
+si una columna no encuentra ficha o al revés. **Emparejar por parecido de
+nombres es lo que más falla**, y en esta casa costó una release entera
+aprenderlo con los embalses.
+**Y las plantas exportan** · Recargas de buques, puestas en frío y suministro
+directo a barcos consumidores. Poco al lado de lo que entra —1.449 GWh contra
+19.632 en mayo de 2026— pero real, así que la serie lleva **dos columnas** y su
+fuente son los **dos** libros.
 **Huecos** · Los 7 registros declaran el mismo: **la capacidad de almacenamiento
 en m³ y la de emisión en Nm³/h no las publica nadie en documento accesible** — y
 son justo las cifras que todo el mundo repite. Los campos existen vacíos para que
-el hueco tenga dónde alojarse.
-**Archivado** · 6 ficheros · **El resto** · CHANGELOG `datos-v2026.08.4` · §10
+el hueco tenga dónde alojarse. Y uno de la película: **Musel empieza en 2020**,
+no en 2004, porque hasta entonces la estadística no le abre columna — la planta
+no existía. Su serie tiene 77 puntos y no 269, que es lo que manda §4.1: el hueco
+de un parte entero es la ausencia del punto, no una fila de nulos.
+**Archivado** · 6 ficheros propios, más los **dos libros de CORES** que ya
+archivó `gas-interconexiones`: la misma copia sirve a las dos capas, que es para
+lo que se archiva.
+**El resto** · CHANGELOG `datos-v2026.08.4` y `datos-v2026.08.57` · §10
 
 ## icts
 
