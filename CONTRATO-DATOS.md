@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.43.0 · **Fecha:** 2026-08-14
+**Versión del contrato:** 1.44.0 · **Fecha:** 2026-08-15
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -322,6 +322,47 @@ reglas:
   capa con su verificación; la serie añade profundidad, no sustituye campos.
   Y los derivados siguen prohibidos por R7: el porcentaje de llenado lo
   calcula quien lo pinte, también en la gráfica.
+
+---
+
+## 4.2 · Los documentos de conjunto *(1.44)*
+
+`datos/conjuntos/<id>.json` — **hechos de un sistema que no es un conjunto de
+registros situados**. Es la casa que le faltaba a la cautela que §4 dejó escrita
+al nacer `atlas.conjunto`:
+
+> *un hecho del conjunto se refiere a **ALGÚN** conjunto, y no tiene por qué ser
+> el que la capa publica*
+
+**El caso que lo pide, medido:** en mayo de 2026 entraron a España **31.312,6
+GWh** de gas natural y el atlas solo podía dar cuenta de **29.997,6**. Los
+**1.314,9 GWh** que faltaban —el 4,2 %— entraron por los dos **VIP**, puntos
+virtuales de mercado que la normativa europea creó en 2014 y que **no son un
+sitio**: no tienen coordenada, no la tendrán nunca, y por eso ninguna capa
+puede alojarlos sin publicar una geometría que no significa nada. Con las
+**cisternas** —gas por carretera— pasa lo mismo por otro camino.
+
+Lleva **el mismo aparato que una ficha**, ni más blando ni más fuerte:
+`fecha_dato`, `fuentes` propias, `__v` y `__f` en **cada** cifra, y `claves`
+para lo que no cabe en un número. Y **R7 rige igual**: prohibido escribir un
+total que sea la suma de lo ya publicado — el total de gas entrado lo calcula
+la página, no el dato.
+
+| Campo | Valores / notas |
+|---|---|
+| `atlas.conjunto` | el `id` del documento, en kebab-case, igual que el fichero. |
+| `sobre` | **qué sistema describe**, en una línea. Es el campo que la cautela pedía: en vez de dejar el alcance a la interpretación de quien lo hospede, **el conjunto declara de qué conjunto habla**. |
+| `titulo` y `resumen` | como los de una capa (§3), y con el mismo tope de 140 en el resumen: un conjunto se publica en el mismo catálogo. |
+| `capas` | qué capas del atlas **sitúan las piezas de ese sistema que sí tienen lugar**. Enlaza en vez de duplicar (D3): el documento publica lo que no está en ningún sitio, y señala dónde está lo demás. Cada id ha de existir en el manifiesto. |
+| cifras | cada una con su `__v` y su `__f`, como en cualquier ficha. |
+| `claves` y `fuentes` | idénticas a las de un registro (§6). |
+
+**Por qué no es una capa** y por qué no se resolvió metiéndolo en una: un
+registro del atlas tiene geometría, y la geometría de un punto virtual de
+mercado no existe. Inventarle una —el centro de España, la sede del operador—
+sería exactamente el dato fabricado que R2 persigue. **Por qué no es el
+manifiesto**: allí no hay `__v`, `__f` ni `fuentes`, así que una cifra escrita
+ahí no se podría citar; ese argumento ya se dejó escrito en 1.41 y sigue valiendo.
 
 ---
 
@@ -2331,6 +2372,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.44.0** | 2026-08-15 | **Aditiva, y le da casa a una cautela que llevaba tres días escrita sin sitio donde alojar lo que describía.** Al nacer `atlas.conjunto` (1.41) quedó anotado que *un hecho del conjunto se refiere a ALGÚN conjunto, y no tiene por qué ser el que la capa publica* — y no se dijo dónde vive ese hecho cuando **ninguna capa** es la suya. §4.2 estrena **`datos/conjuntos/<id>.json`**, con el mismo aparato que una ficha. **El caso que lo pide se puede medir:** en mayo de 2026 entraron a España 31.312,6 GWh de gas y el atlas solo podía dar cuenta de 29.997,6 — los **1.314,9 que faltaban, el 4,2 %**, entraron por los dos **VIP**, que la normativa europea creó en 2014 como puntos VIRTUALES de mercado y que **no tienen coordenada ni la tendrán**. Meterlos en una capa exigiría inventarles una geometría, que es el dato fabricado que R2 persigue; meterlos en el manifiesto los dejaría sin `__v`, `__f` ni `fuentes`, o sea incitables — el mismo argumento que ya cerró esas dos puertas en 1.41. Campos propios: **`sobre`**, que es la cautela convertida en dato (el conjunto declara de qué conjunto habla, en vez de dejarlo a quien lo hospede), y **`capas`**, que señala dónde están las piezas del sistema que sí tienen lugar — enlaza en vez de duplicar, que es D3. **R7 rige igual**: prohibido escribir el total, que es suma de lo publicado y lo calcula quien lo pinte. `comprobar_conjunto()` se generaliza para servir a los dos casos en vez de escribir la misma doctrina dos veces. Pruebas **46 → 50**. **No nace ninguna regla `R*`.** |
 | **1.43.0** | 2026-08-14 | **Aditiva, y de las que solo se ven cuando alguien intenta USAR el atlas entero de una vez.** §3 estrena **`resumen`**: una línea por capa que dice **qué contiene**, obligatoria en toda capa con `fichero`. Sale de intentar montar un catálogo de las 31 capas y descubrir que **no se podía escribir**: el manifiesto sabía cómo se llama cada capa, de qué rama cuelga, cuántos registros tiene y qué licencia obliga — y **no sabía decir qué es**. Se buscó el texto donde debería estar y no estaba: las notas `_` del manifiesto **son prosa de taller** —explican decisiones («Era `recurso-eolico`, y se renombra sin coste porque…»), no contenido— y **diez de las treinta y una no tenían ninguna**; `fuentes/PROCEDENCIA.md` contesta de dónde sale, que es otra pregunta; y el `titulo` es un rótulo de tres palabras. La consecuencia estaba a la vista y nadie la había mirado: **una capa llamada «Conducciones de combustible» con dos registros no le dice nada a nadie**, ni en un catálogo, ni en el panel del mapa, ni en su propio índice de fichas. **No es un dato y no lleva aparato de verificación**, exactamente igual que `titulo`: es cómo la casa presenta su capa, se escribe a mano y no se deriva de nada — de ahí que §7.8 solo pueda exigir tres cosas comprobables (que exista, que quepa en 140 caracteres y que no sea el título otra vez), y que la cuarta, que diga algo verdadero, la sostenga quien lo escribe. Pruebas **41 → 46**, y una existe solo para garantizar que **una rama en gris no lo exige** — todavía no contiene nada que contar. **No nace ninguna regla `R*`**: no es doctrina sobre los datos, es el mínimo para que el atlas pueda presentarse a sí mismo. |
 | **1.42.0** | 2026-08-14 | **Aditiva, y cierra un hueco que llevaba abierto desde la 1.35 por una razón que conviene retener: no faltaba la comprobación, faltaba **el dato que la hace decidible**. §4.1 declaraba huérfana a la serie sin ficha, pero nadie declaraba nada de la **ficha sin serie**, así que perder un fichero de película pasaba el CI en verde y solo lo cazaba una guarda del generador de `/agua/` —que vive en `app/` y no en el contrato—. La regla obvia era imposible de escribir porque es **falsa**: «toda capa con `series` las tiene todas» rompe `gas-interconexiones`, que publica 6 registros y 2 series a propósito. §3 gana por eso **`series_completas`**, que dice cuál de los dos casos es cada capa, y §4.1 gana la regla en su reverso, que bloquea. Lo destapó la auditoría exhaustiva del 2026-08-14; se había descartado una vez por imposible, y lo imposible era la regla, no el cierre. **No nace ninguna regla `R*`.** |
 | **1.41.0** | 2026-08-14 | **Aditiva, y estrena una CLASE de dato.** Hasta hoy una capa solo podía publicar hechos de sus registros; §4 le da **`atlas.conjunto`**, para los hechos que la fuente publica **del conjunto** y no de ninguno de ellos. El caso que lo pide: el Boletín Hidrológico da el agua embalse a embalse y da además, en el mismo parte, la **energía hidroeléctrica almacenada** en todos ellos — que no es de Alcántara ni de Buendía, es de los 401 a la vez. Lleva **el mismo aparato que una ficha** (`__v`, `__f`, `fuentes` propias, `fecha_dato`) porque un hecho del conjunto no es más blando que uno de un registro, y **R7 rige igual**. Se descartaron las dos salidas obvias: un **registro nacional** obligaría a una capa que el panel enseñaría con una geometría que no significa nada, o a meterlo entre los 401 y corromper el recuento que la capa declara; y el **manifiesto** es un registro de capas, no datos — sin `__v`, `__f` ni `fuentes`, una cifra escrita ahí no se podría citar. La cautela que nace con el mecanismo: **un hecho del conjunto se refiere a ALGÚN conjunto, y no tiene por qué ser el que la capa publica** — la producción hidroeléctrica del mismo parte incluye centrales fluyentes ajenas a la capa, y se publica diciéndolo. §10 le da a `agua-embalsada` sus siete campos de conjunto, y anota que **`hidroelectrico` es del Boletín y no una deducción**: constante en 38 años, reparte los 401 en 108 y 293, y sumando por ella salen **las mismas cifras que publica el Ministerio**, comprobado al dígito. Prohibida en el bloque cualquier **equivalencia en hm³** de los GWh: exigiría el salto de cada central, y el salto no es la altura de la presa. **No nace ninguna regla `R*`.** *(De paso: el encabezado del documento se había quedado en 1.39.0 cuando §13 ya registraba la 1.40.0 — corregido aquí.)* |

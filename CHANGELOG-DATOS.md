@@ -32,6 +32,74 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.59 — Casa para las cifras que no son de ningún sitio
+
+**Al nacer `atlas.conjunto` quedó escrita una cautela y no se le dio casa a lo
+que describía:** *un hecho del conjunto se refiere a ALGÚN conjunto, y no tiene
+por qué ser el que la capa publica*. Esta release construye esa casa, y de paso
+**el atlas pasa a poder decir por dónde entra todo el gas**, que hasta hoy no
+podía.
+
+### El hueco, medido
+
+En mayo de 2026 entraron a España **31.312,6 GWh** de gas natural y el atlas
+solo podía dar cuenta de **29.997,6**. Los **1.314,9 que faltaban —el 4,2 %—**
+entraron por los dos **VIP**, puntos virtuales que la normativa europea creó en
+2014 para agrupar comercialmente varias conexiones físicas. **No tienen
+coordenada ni la tendrán**: su sitio es un acuerdo, no un tubo.
+
+### Añadido
+
+- **§4.2 del contrato *(1.43.0 → 1.44.0)*: `datos/conjuntos/<id>.json`.** Un
+  documento de conjunto, con **el mismo aparato que una ficha** — `fecha_dato`,
+  `fuentes` propias, `__v` y `__f` en cada cifra, y `claves`. Campos propios:
+  **`sobre`**, que es la cautela convertida en dato —el conjunto declara de qué
+  conjunto habla, en vez de dejarlo a quien lo hospede—, y **`capas`**, que
+  señala dónde está situado lo que él no puede situar.
+- **El primero: `sistema-gasista-entradas`.** Los dos VIP y las cisternas, con
+  seis claves que cuentan lo que no cabe en una cifra.
+- **`/conjunto/sistema-gasista-entradas/`**, su página, y **«Los conjuntos»** en
+  la biblioteca.
+
+### Lo que el dato no escribe y la página sí calcula
+
+**El total de gas entrado no está en ningún fichero.** Es la suma de este
+documento y de las series de las dos capas que señala, y **R7 prohíbe escribir
+lo que se deriva de lo publicado**: la calcula la página, que además dice de qué
+piezas sale. Es la única cifra del atlas que no existe escrita en ninguna parte
+y que, sin embargo, contesta la pregunta entera.
+
+### Corregido
+
+- **`comprobar_conjunto()` se generaliza** en vez de duplicarse: la misma
+  doctrina —R2, R3, R6, §6.2 y la guarda de fechas futuras— sirve al
+  `atlas.conjunto` de una capa y al documento suelto. Escribirla dos veces es la
+  manera de que un día solo se corrija una.
+- **El validador ahora nombra los conjuntos en su parte final.** Una carpeta que
+  no se mirase pasaría por revisada: el silencio y el verde se leen igual.
+
+Pruebas **46 → 50**, con los tres fallos que la regla caza —no decir sobre qué
+habla, una cifra sin verificación, señalar una capa fantasma— y el caso válido.
+
+### Huecos
+
+- **El conjunto publica la foto, no la película.** VIP Ibérico tiene 95 meses de
+  historia y VIP Pirineos 140, y la serie pediría tocar el esquema de series,
+  que hoy exige `capa` y `slug`. Queda para su release.
+- **La producción hidroeléctrica nacional sigue en `agua-embalsada`**, que es el
+  caso que inspiró la cautela. Se queda porque **tiene casa y declara su
+  alcance**: el hueco de verdad eran las cifras que no tenían dónde estar.
+
+> **Nota a la release `.57`, del 2026-08-15.** Aquella entrada listaba las
+> cisternas entre sus huecos diciendo que no tenían «capa donde vivir», como si
+> fuera un impedimento estructural. **No lo era**: `atlas.conjunto` existía desde
+> la `.53` y el mecanismo para cifras sin lugar estaba inventado — lo que
+> faltaba era la casa, que llega ahora. Y la razón de fondo tampoco se dijo
+> entonces porque no se había medido: las cisternas son **1.319 GWh en 22 años,
+> el 0,025 %**, y **no aparecen desde diciembre de 2022** sin que ninguna fuente
+> diga si dejaron de circular o dejaron de contarse. Todo eso se publica ahora
+> en `sistema-gasista-entradas`, con su hueco declarado.
+
 ## datos-v2026.08.58 — El atlas aprende a decir qué contiene cada capa
 
 **Sale de intentar montar un catálogo de las 31 capas y descubrir que no se
