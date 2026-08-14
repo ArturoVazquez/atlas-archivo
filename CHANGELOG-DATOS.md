@@ -32,6 +32,60 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.56 — Los doce últimos, encontrados buscando al revés
+
+**Cierra el último hueco de la capa.** Doce embalses tenían su posición
+comprobada una sola vez porque **ningún emparejamiento por nombre podía
+encontrarlos** en el Inventario de Presas. Están los doce, y **ninguno estaba
+mal colocado**: aparecen entre **10 y 150 metros** de donde el atlas los sitúa.
+
+### Por qué el nombre no servía
+
+Los dos catálogos son del mismo ministerio y **no escriben igual el mismo
+sitio**:
+
+| el Boletín dice | el Inventario dice | qué pasa |
+|---|---|---|
+| Chandrexa · San. Estevo · **Sta Uxia** | CHANDREJA · SAN ESTEBAN · **SANTA EUGENIA** | castellaniza el topónimo gallego |
+| Villagudín | VILAGUDIN | al revés: aquí el que castellaniza es el Boletín |
+| Sant Pons · Riocobo · Torre de Abrahán | SANT PONC · RIO COVO · TORRE DE ABRAHAM | otra grafía |
+| **Catllar** | **GAIA** | **lo nombra por su río** |
+| Pto. Vallehermoso · Agavanzal, Nª Sª de | PUERTO DE VALLEHERMOSO · NUESTRA SEÑORA DEL AGAVANZAL | abreviaturas y orden |
+| Santa María de Belsué · Conde Guadalhorce | SANTA MARIA BELSUE · CONDE DE GUADALHORCE | la preposición, que sobra o falta |
+
+«Santa Uxía» y «Santa Eugenia» no se parecen en nada, y el Catllar aparece con
+el nombre de un río. **Ninguna normalización de texto salva eso.**
+
+### Lo que sí funcionó
+
+**Dejar el nombre de lado y buscar por cercanía y capacidad**: qué presa hay
+junto a este punto con esta capacidad. Los doce salieron a la primera, y cada
+uno lo confirma con **tres indicios a la vez** —la distancia, la capacidad y un
+nombre que, una vez encontrado, se reconoce—.
+
+> **La lección, y vale para cualquier catálogo que haya que cruzar:** emparejar
+> por nombre es lo primero que se intenta y lo que más falla. Una coordenada y
+> una magnitud identifican igual de bien y **no dependen del idioma**.
+
+### Añadido
+
+- **Los 359 puntos del Nomenclátor tienen ya su segunda comprobación.** Cero sin
+  contrastar, desde 12 en la `.55` y 16 en la `.54`.
+- **Dos desacuerdos de capacidad más**, que solo se veían al encontrarlos: Conde
+  de Guadalhorce (66 del Boletín contra 84) y Santa Uxía (18 contra 13,6). Como
+  los otros: la capa publica la del Boletín y declara la diferencia.
+- La **tabla de equivalencias de nombres** queda en `PROCEDENCIA.md`, que era lo
+  que la auditoría pedía para poder repetir el cruce.
+
+### Huecos
+
+De la auditoría del 2026-08-14 **no queda ninguno**. Sigue en pie solo lo que la
+fuente no permite: la energía de los partes viejos, la verificación de cuenca en
+vivo, la elección de presa donde el catálogo trae la altura corrupta, y de qué
+lagos se compone cada uno de los seis sistemas del Pirineo.
+
+---
+
 ## datos-v2026.08.55 — Cuatro de los dieciséis sí se podían contrastar
 
 **Corrige a la `.54`, publicada hace unas horas.** Aquella dijo que 16 anclas

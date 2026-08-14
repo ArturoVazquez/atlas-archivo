@@ -698,11 +698,39 @@ exactos. Los dos van ahora `exacta`, con su clave.
 la presa queda al final. Cada uno lo declara, porque una distancia así sin
 explicación parece un fallo.
 
-**Doce no se pudieron contrastar** y lo dicen en su ficha: el Inventario no
-registra presa que case con su nombre en su demarcación (Chandrexa, Sant Pons,
-Villagudín, Sta Uxia, San Estevo…). No hay motivo para dudar de esos puntos —son
-topónimos verificados contra su cuenca al darlos de alta—; lo que les falta es
-la segunda opinión.
+**Los doce últimos se cerraron buscando al revés** *(.56)*. Doce quedaron sin
+contrastar porque **ningún emparejamiento por nombre podía encontrarlos**: el
+Inventario castellaniza los topónimos gallegos (Chandreja/Chandrexa, San
+Esteban/San Estevo, **Santa Eugenia/Santa Uxía**), cambia grafías (Sant
+Ponç/Sant Pons, Covo/Cobo, Abraham/Abrahán), expande o se come partículas, y en
+un caso **nombra el embalse por su río**: el Catllar es «GAIA».
+
+La salida fue dejar el nombre de lado y **buscar por cercanía y capacidad** —qué
+presa hay junto a este punto con esta capacidad—. Los doce aparecieron **entre
+10 y 150 metros**, con tres indicios convergiendo: la distancia, la capacidad y
+un nombre que, una vez encontrado, **se reconoce**. **Ninguno estaba mal
+colocado**, y con ellos los **359 puntos del Nomenclátor tienen ya su segunda
+comprobación**.
+
+| el Boletín dice | el Inventario dice | por qué no casaba |
+|---|---|---|
+| Chandrexa | CHANDREJA | topónimo gallego castellanizado |
+| San. Estevo | SAN ESTEBAN | ídem |
+| Sta Uxia | SANTA EUGENIA | ídem — y aquí ni se parecen |
+| Villagudín | VILAGUDIN | al revés: el Boletín castellaniza |
+| Riocobo | RIO COVO | otra grafía |
+| Sant Pons | SANT PONC | otra grafía |
+| Torre de Abrahán | TORRE DE ABRAHAM | otra grafía |
+| Catllar | GAIA | **lo nombra por su río** |
+| Pto. Vallehermoso | PUERTO DE VALLEHERMOSO | abreviatura |
+| Agavanzal, Nª Sª de | NUESTRA SEÑORA DEL AGAVANZAL | abreviatura y orden |
+| Santa María de Belsué | SANTA MARIA BELSUE | sin la preposición |
+| Conde Guadalhorce | CONDE DE GUADALHORCE | con la preposición |
+
+> **La lección, para el próximo catálogo que haya que cruzar:** emparejar por
+> nombre es lo primero que se intenta y lo que más falla, porque **dos organismos
+> del mismo ministerio no escriben igual el mismo sitio**. Una coordenada y una
+> magnitud bastan para identificar, y no dependen del idioma.
 
 > **Tres trampas que este repaso dejó medidas**, porque cada una llegó a dar un
 > resultado falso antes de verse: aplanar el nombre **antes** de quitarle el
