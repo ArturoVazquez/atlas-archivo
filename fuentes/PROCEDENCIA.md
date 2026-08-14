@@ -669,6 +669,27 @@ recrecimiento—, se ancla en **la más alta desde cimientos**, que es la princi
 por construcción. **Del Inventario se archiva solo el fichero de presas**: el de
 vasos se descartó porque su punto habría que calcularlo del polígono, y el
 centro del recuadro de un embalse sinuoso cae en tierra.
+**Un topónimo no separa lo que la fuente no separa** *(.52)*. El Nomenclátor
+tiene UN «Embalse de Santolea» donde el Boletín publica TRES embalses, y lo
+mismo con Retortillo y con La Breña: siete fichas se apilaban en tres puntos, y
+el mapa enseñaba una y escondía las otras. El Inventario de Presas sí las separa
+presa a presa, y **la capacidad dice cuál es cuál** — se re-anclaron cinco, una
+de ellas (Derivación Retortillo) a **11,8 km** de donde estaba. Las dos que
+quedan compartiendo punto lo **declaran**: el Inventario registra allí presas de
+48 y 93,7 hm³ y una «Cañón de Santolea» en construcción con 0,082, y ninguna
+cuadra con los 5 y los 82 del Boletín. Antes que elegir a ojo, se dice.
+
+**`NMN_CAPAC` del Inventario NO está en una sola unidad** *(.52)*. Medido sobre
+los registros ya anclados en él —identidad cierta, sin adivinar—: da
+**8.136.000.000** para Soto Terroba y **8.085.000.000** para Las Fitas, que es
+exactamente lo que sale de leer sus 8,136 y 8,085 hm³ como metros cúbicos.
+Cualquier comparación masiva contra este campo tiene que guardarse de eso o
+fabricará desacuerdos de miles de millones por ciento. Los desacuerdos reales
+—Fresneda, Laverne, Víboras y Las Parras— van declarados en su ficha, con la
+cifra de las dos fuentes y sin elegir por el lector: **la capa publica la del
+Boletín**, que es su fuente para el agua y la única que permite comparar
+capacidad y reserva entre sí.
+
 **Un conjunto se sitúa por su estación, no por sus piezas** *(.48)*. Los **seis**
 «Sistema…» del Pirineo agregan lagos regulados de un valle y **ninguna fuente
 publica de cuáles**; se buscó en ocho sitios y se dieron por imposibles. La

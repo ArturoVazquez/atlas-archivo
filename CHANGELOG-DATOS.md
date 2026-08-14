@@ -32,6 +32,104 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.52 — Seis puntos que estaban donde no era, y veinte líneas rectas
+
+La tanda que la auditoría dejó abierta: lo que exigía **juicio**, no barrido.
+Ninguna cifra de agua cambia — **cambia dónde se dibujan seis embalses** y lo
+que veinte fichas dicen de sí mismas.
+
+### Corregido — el Lago Negro estaba a 50 km
+
+`negrolago-ebro` se anclaba en el «Ibón Negro» del Nomenclátor, en el valle de
+Chistau (Huesca). La guarda que caza estos fallos —emparejar por nombre **y**
+demarcación— no pudo: **los dos candidatos están en el Ebro**.
+
+Lo cazó el contraste con el Inventario de Presas, y con **cuatro indicios que
+convergen y de los que ninguno vale solo**: un «LAGO NEGRO» represado en Espot
+(Lleida) con 6,6 hm³ contra los 6 del Boletín; misma demarcación; a menos de
+cinco kilómetros de Tort, Mar y Saburo —los otros tres lagos que el Boletín
+cerró el mismo día de 2006—; y **represado**, que es lo que hace que un lago
+aparezca en el Boletín. Está además a unos setecientos metros del punto donde
+este atlas sitúa el «Sistema Lagos Espot».
+
+El desempate entre sus **dos presas** resultó no necesitar regla nueva: están a
+250 m una de otra y su altura desde cimientos —11 m contra 3— **no viene
+corrupta**, así que la regla de la `.44` (la más alta, que es la principal por
+construcción) resuelve el caso sola.
+
+### Corregido — siete fichas apiladas en tres puntos
+
+El Nomenclátor tiene **un** topónimo donde el Boletín publica varios embalses,
+así que siete fichas compartían tres coordenadas: el mapa enseñaba una y
+**escondía las otras**. El Inventario de Presas sí las separa presa a presa, y
+**la capacidad dice cuál es cuál**. Se re-anclan cinco:
+
+| ficha | se mueve |
+|---|---|
+| `derivacionretortillo-guadalquivir` | **11,8 km** |
+| `puentedesantolea-ebro` | 3,6 km |
+| `retortillo-guadalquivir` | 1,1 km |
+| `brenaiila-guadalquivir` | 222 m |
+| `brenala-guadalquivir` | 104 m |
+
+Las **dos que siguen compartiendo punto lo declaran**: el Inventario registra
+allí presas de 48 y 93,7 hm³ y una «Cañón de Santolea» en construcción con
+0,082, y **ninguna cuadra** con los 5 y los 82 del Boletín. Antes que elegir a
+ojo, se dice.
+
+### Añadido — veinte líneas rectas que nadie explicaba
+
+**20 embalses vigentes llevan más de dos años publicando la misma cifra**, y
+suman 167 hm³ del parte semanal. El más quieto es **San José (Duero): 2.015
+partes, la serie ENTERA**, treinta y ocho años sin variar una vez — y esa cifra
+es exactamente su capacidad. Le siguen Rábanos (1.627) y Villagonzalo (1.414).
+
+Cada uno lo declara ahora en su ficha, **sin interpretarlo**: ninguna fuente
+dice si el vaso está de verdad estable, si la lectura se arrastra o si el dato
+entra por convenio. Lo único afirmable es que **la gráfica sale recta porque la
+fuente lo es**, no porque el atlas la haya suavizado — eso lo prohíbe R7.
+
+El parte lo dice también, y **calculado por fecha**: la página de 1995 informa
+de sus 25 embalses y 388 partes, no de los de hoy. Sale gratis, del mismo
+recorrido que ya hacía.
+
+### Añadido — las lápidas que faltaban, y las que envejecían
+
+Tres históricos (`brenala`, `catllar`, `guillena`) no tenían **la clave que
+explica su silencio**, aunque sí otras. Y la fórmula que usaban los demás
+llevaba dentro «la serie llega a agosto de 2026»: **14 fichas dejan de nombrar
+el mes**, porque eso envejece con cada refresco.
+
+Las ocho lápidas de los lagos del Pirineo decían «nacen **cinco** filas nuevas»
+donde nacieron **seis**, todas el 3 de octubre de 2006. Es el mismo error de
+recuento que la `.51` corrigió en la prosa, alcanzando ahora a los datos.
+
+### Añadido — los desacuerdos de capacidad que sí son ciertos
+
+Comparando **solo los registros ya anclados en el Inventario** —identidad
+cierta, sin adivinar— salen seis desacuerdos, y **dos son basura de la fuente**:
+`NMN_CAPAC` da **8.136.000.000** para Soto Terroba y **8.085.000.000** para Las
+Fitas, que es exactamente leer sus 8,136 y 8,085 hm³ como metros cúbicos. **El
+campo no está en una sola unidad**, y queda anotado en PROCEDENCIA y en AGENDA:
+un barrido masivo que no se guarde de eso fabricará desacuerdos de miles de
+millones por ciento.
+
+Los cuatro reales van declarados en su ficha con las dos cifras (Fresneda ya lo
+estaba; entran **Laverne** 38/43,9, **Víboras** 17/19,11 y **Las Parras**
+5/5,8). **La capa sigue publicando la del Boletín**, que es su fuente para el
+agua y la única que permite comparar capacidad y reserva entre sí.
+
+### Huecos
+
+- **Sigue abierto** lo que de verdad pedía juicio caso a caso y no se ha tocado:
+  las **25 anclas a más de 3 km** (casi todas embalses de cola kilométrica), los
+  **11 parajes incontrastables por nombre**, y los desacuerdos de capacidad en
+  los registros cuya identidad **no** es segura (Contreras, Lanuza, Águeda).
+- **Las dos Santolea** que siguen compartiendo punto, ya declarado.
+- Las anclas del Nomenclátor bajan de 367 a **361**; las `exacta` suben a **40**.
+
+---
+
 ## datos-v2026.08.51 — Lo que decían los papeles, y lo que no miraba nadie
 
 **Ni un dato cambia, y esa es justo la noticia.** Sale de una **auditoría
