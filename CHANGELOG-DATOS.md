@@ -32,6 +32,114 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.50 — Las dos mitades del agua, y la electricidad que guarda
+
+**Ningún embalse cambia de cifra.** Esta release sale de una pregunta de
+Arturo: si el parte podía decir cuánta de la bajada semanal se fue en producir
+electricidad. **No podía, y no por falta de datos**: el uso hidroeléctrico es
+*no consuntivo* —el agua pasa por la turbina y sigue río abajo, casi siempre
+hasta otro embalse que también cuenta— y el desembalse por usos no lo publica
+nadie. Restarlo arriba contaría dos veces la misma agua. Buscándolo aparecieron
+dos cosas que el Boletín **sí** publica, en el mismo parte que el agua.
+
+### Lo que ya estaba escrito y no usaba nadie
+
+`hidroelectrico` llevaba desde la `.21` **declarada en el esquema, escrita en
+§10 y poblada en los 401 registros**. El Boletín marca cada embalse como
+hidroeléctrico o de uso consuntivo, la marca es **constante en los 38 años** y
+reparte los 401 en **108 y 293**. El parte estrena su tabla.
+
+**No es una lectura del atlas: es la partición del Ministerio**, y sumando por
+ella salen sus mismas cifras. Comprobado al dígito contra el boletín n.º
+32/2026, seis de seis:
+
+| | atlas | boletín |
+|---|---|---|
+| Hidroeléctricos | 11.908 hm³ · 69,1 % · −285 | 11.908 · 69,1 % · −285 |
+| Uso consuntivo | 26.195 hm³ · 67,5 % · −627 | 26.195 · 67,5 % · −627 |
+
+Vale para **los 2.017 partes**, no solo el último: la marca no cambia en 38
+años, así que el reparto se dibuja desde 1988.
+
+### Añadido
+
+- **contrato 1.40.0 → 1.41.0, §4: `atlas.conjunto`.** Los hechos que la fuente
+  publica **del conjunto** y no de ningún registro. El caso que lo pide: la
+  energía hidroeléctrica almacenada **no es de Alcántara ni de Buendía, es de
+  los 401 a la vez**. Lleva el mismo aparato que una ficha —`__v`, `__f`,
+  `fuentes` propias, `fecha_dato`—, porque un hecho del conjunto no es más
+  blando que uno de un registro, y **R7 rige igual**.
+- **`agua-embalsada` 1.5.0 → 1.6.0** estrena el bloque con cuatro cifras del
+  boletín del 11 de agosto: **13.983 GWh almacenados** sobre 23.011 de
+  capacidad, **474,4 GWh producidos** del 3 al 9 de agosto, y **25.903 GWh en
+  el año** frente a 27.404 en el mismo período del anterior.
+
+### Las dos salidas que se descartaron, y por qué
+
+- **Un registro nacional** —una capa 32 con un punto en Madrid— obligaba a
+  enseñar en el panel del mapa una geometría que no significa nada, o a meterlo
+  entre los 401 y **corromper el recuento que la capa declara**.
+- **El manifiesto** es un registro de capas, **no datos**: sin `__v`, `__f` ni
+  `fuentes`, una cifra escrita ahí no se podría citar. Y toda cifra que el atlas
+  imprima tiene que poder citarse.
+
+### De dónde sale la energía, y por qué no hay película
+
+Del **Boletín**, no de la API de REE. REE daría quince años de serie semanal en
+JSON ligero —y cuadra al 0,24 % con el Ministerio (1.396,2 GWh frente a
+1.399,6 en la semana del 2 al 8 de febrero, que es *Hidráulica* + *turbinación
+de bombeo*)—, pero obligaría a declarar `primaria` una fuente que este atlas
+tiene por **`corporativa`** (§6.1): enmienda de contrato con precedente para las
+treinta y una capas. El Boletín es `primaria` sin discusión y ya es la fuente
+del agua.
+
+Su precio, aceptado: **MITECO no publica ningún histórico de energía** —solo la
+base de embalses— y los boletines viejos no llegan más allá de 2025. Así que
+**no hay serie** (§4.1: solo hay película donde hay negativo), la energía sale
+en el parte de su semana y los otros 2.016 llevan **su hueco declarado**. El PDF
+**se acumula** en `fuentes/`, al revés que la base de embalses, que se
+reemplaza: cada semana trae una energía que ningún otro documento repite.
+
+### Los dientes
+
+`comprobar_conjunto()` aplica R2, R3 y R6 al bloque nuevo. **Qué campos caben**
+lo cierra el esquema de la capa con su `additionalProperties: false` — una regla
+escrita en dos sitios se corrige en uno solo. Y `bloques_con_fuentes()` tapa lo
+que casi se escapa: **§7.7 y §7.10 solo recorrían `features`**, así que un
+bloque de conjunto podía publicar un `javascript:` o una cita sin archivar por
+la puerta de atrás.
+
+Dos fixtures nuevas, **35 pruebas → 37**. La primera es el error que el
+mecanismo invita a cometer: la cifra del conjunto apunta a un id que existe en
+las fuentes de la **ficha**. Las del conjunto son suyas, precisamente porque
+salen de otro documento.
+
+### Lo que no se hace, y la página lo dice
+
+- **GWh → hm³**: no. Exige el salto de cada central, y **el salto no es la
+  altura de la presa** (una central de derivación tiene saltos muchísimo
+  mayores). Prohibido en el esquema, con nombre, para que rebautizarlo no valga.
+- **La producción no explica la bajada.** Es la cifra **nacional**, que el
+  Boletín toma de REE, e incluye **centrales fluyentes** ajenas a esta capa. Se
+  publican **al lado**, no una explicando a la otra — y de ahí nace la cautela
+  que §4 deja escrita para cualquier futuro bloque de conjunto: *un hecho del
+  conjunto se refiere a ALGÚN conjunto, y no tiene por qué ser el que la capa
+  publica*.
+- **El desembalse por usos** no existe publicado. La tabla dice **dónde está**
+  el agua, nunca a qué se dedicó.
+- **El desglose de energía por demarcación**, que el boletín sí trae, pediría 16
+  geometrías de cuenca que el atlas no tiene archivadas. Anotado.
+
+### Huecos
+
+- Los mismos de siempre, más el de la energía en los 2.016 partes anteriores.
+- **Las 368 anclas del Nomenclátor siguen sin repasar** contra el Inventario de
+  Presas.
+- De paso: el encabezado del contrato se había quedado en **1.39.0** cuando §13
+  ya registraba la 1.40.0. Corregido.
+
+---
+
 ## datos-v2026.08.49 — Una capa puede tener página, y lo dice el manifiesto
 
 **Ningún registro cambia.** Esta release existe por un fallo de descubribilidad

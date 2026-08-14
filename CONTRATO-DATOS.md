@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.39.0 · **Fecha:** 2026-08-13
+**Versión del contrato:** 1.41.0 · **Fecha:** 2026-08-14
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -170,6 +170,53 @@ Cada capa es una `FeatureCollection` GeoJSON con metadatos propios en
   "features": [ ... ]
 }
 ```
+
+### `atlas.conjunto` — los hechos del CONJUNTO *(1.41)*
+
+Una capa publica **registros**, pero su fuente publica a veces hechos **del
+conjunto** que no son de ninguno de ellos. El Boletín Hidrológico da el agua
+embalse a embalse y da además, en el mismo parte, la **energía hidroeléctrica
+almacenada** en todos ellos: no es de Alcántara ni de Buendía, es de los 401 a
+la vez. `atlas.conjunto` es donde vive eso.
+
+```json
+"atlas": {
+  "capa": "agua-embalsada",
+  "schema_version": "1.41.0",
+  "verificado_a": "2026-08-14",
+  "conjunto": {
+    "fecha_dato": "2026-08-11",
+    "energia_almacenada_gwh": 13983,
+    "energia_almacenada_gwh__v": "confirmado",
+    "energia_almacenada_gwh__f": "f1",
+    "fuentes": [ { "id": "f1", "tipo": "primaria", "titulo": "…", "archivo": "fuentes/…" } ]
+  }
+}
+```
+
+**Mismo aparato que una ficha, y por el mismo motivo:** `__v` y `__f` por campo,
+`fuentes` propias con sus ids, `fecha_dato` obligatoria. Un hecho del conjunto no
+es más blando que uno de un registro, así que no se verifica más flojo. **R7 rige
+igual**: nada de derivados — el porcentaje que sale de dividir dos campos lo
+calcula quien lo pinte.
+
+**Por qué no un registro nacional.** Fue la primera salida y se descartó: un
+registro «España» con su punto obliga a inventar una capa que el panel del mapa
+enseñaría entre las demás, con una geometría que no significa nada, o a meterlo
+entre los 401 embalses y corromper el recuento que la capa declara. Un hecho del
+conjunto no es un objeto del territorio y no debe fingir que lo es.
+
+**Por qué no el manifiesto.** Porque §3 es un **registro de capas**, no datos: no
+tiene `__v` ni `__f` ni `fuentes`, así que una cifra escrita ahí no se podría
+verificar ni citar — y toda cifra que el atlas imprima tiene que poder citarse.
+
+**La cautela que hay que escribir siempre:** un hecho del conjunto se refiere a
+**algún** conjunto, y no tiene por qué ser el que la capa publica. La producción
+hidroeléctrica que trae el mismo parte incluye **centrales fluyentes** que no
+salen de ningún embalse de la capa. Se publica igual —la fuente la da ahí— pero
+la ficha y la página dicen que son **dos cosas puestas al lado, no una
+explicando a la otra**. Un bloque `conjunto` sin esa frase, cuando hace falta,
+afirma una pertenencia que nadie ha comprobado.
 
 Reglas de geometría:
 
@@ -1910,6 +1957,10 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 **agua-embalsada** *(1.21)* (`dotacion`, puntos, verificado): `demarcacion` (✔) ·
 `capacidad_hm3` (✔, +`__v`,`__f`) · `agua_actual_hm3` (+`__v`,`__f`) ·
 `fecha_dato` (✔) · `hidroelectrico` · `claves[]`
+**En `atlas.conjunto`** *(1.41)*: `fecha_dato` (✔) · `energia_almacenada_gwh` ·
+`energia_capacidad_gwh` · `produccion_semana_gwh` · `produccion_ano_gwh` ·
+`produccion_ano_anterior_gwh` · `periodo_inicio` · `periodo_fin` — todos con
+`__v` y `__f`.
 
 > **Publica el AGUA, no el vaso**, y esa distinción es toda la capa. La ruta
 > obvia —el shapefile del Inventario de Presas y Embalses del SNCZI— está tras un
@@ -1944,6 +1995,25 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > **Hay embalses cuyo último parte es de 2003.** No son actuales: van a
 > `estado_registro: historico`, que es la regla de que nada se borra aplicada a
 > una serie temporal que dejó de alimentarse.
+>
+> **`hidroelectrico` es del Boletín, no una deducción** *(1.41)*. La marca vive
+> en la propia base (`ELECTRICO_FLAG`), es **constante en los 38 años** y reparte
+> los 401 en 108 hidroeléctricos y 293 de uso consuntivo. El Ministerio publica
+> la reserva de cada familia por separado, así que el reparto no es una lectura
+> del atlas: **sumando por esta marca salen sus mismas cifras**, comprobado al
+> dígito contra el boletín n.º 32/2026 (11.908 hm³ / 69,1 % y 26.195 / 67,5 %).
+> Lo que la marca **no** dice —y la página lo escribe— es a qué se dedicó el
+> agua: el uso hidroeléctrico **no consume**, y el desembalse por usos no lo
+> publica nadie.
+>
+> **La energía del conjunto sale del PDF semanal** *(1.41)*, no del histórico
+> (§4, `atlas.conjunto`). Es la misma operación estadística del mismo emisor,
+> pero el Boletín publica el agua en una base descargable desde 1988 y la energía
+> **solo en el parte de cada semana**: por eso no hay serie (§4.1) y por eso el
+> PDF **se acumula** en `fuentes/` en vez de reemplazarse. Prohibidos en el
+> bloque, por derivados, los porcentajes de llenado energético; y **prohibida
+> cualquier equivalencia en hm³** de los GWh, que exigiría el salto de cada
+> central — y el salto no es la altura de la presa.
 
 **red-electrica** *(1.22)* (`dotacion`, **mixta**, verificado):
 `tension_kv` (✔) · `n_tramos` (✔) · `longitud_medida_km` · `claves[]`
@@ -2246,6 +2316,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.41.0** | 2026-08-14 | **Aditiva, y estrena una CLASE de dato.** Hasta hoy una capa solo podía publicar hechos de sus registros; §4 le da **`atlas.conjunto`**, para los hechos que la fuente publica **del conjunto** y no de ninguno de ellos. El caso que lo pide: el Boletín Hidrológico da el agua embalse a embalse y da además, en el mismo parte, la **energía hidroeléctrica almacenada** en todos ellos — que no es de Alcántara ni de Buendía, es de los 401 a la vez. Lleva **el mismo aparato que una ficha** (`__v`, `__f`, `fuentes` propias, `fecha_dato`) porque un hecho del conjunto no es más blando que uno de un registro, y **R7 rige igual**. Se descartaron las dos salidas obvias: un **registro nacional** obligaría a una capa que el panel enseñaría con una geometría que no significa nada, o a meterlo entre los 401 y corromper el recuento que la capa declara; y el **manifiesto** es un registro de capas, no datos — sin `__v`, `__f` ni `fuentes`, una cifra escrita ahí no se podría citar. La cautela que nace con el mecanismo: **un hecho del conjunto se refiere a ALGÚN conjunto, y no tiene por qué ser el que la capa publica** — la producción hidroeléctrica del mismo parte incluye centrales fluyentes ajenas a la capa, y se publica diciéndolo. §10 le da a `agua-embalsada` sus siete campos de conjunto, y anota que **`hidroelectrico` es del Boletín y no una deducción**: constante en 38 años, reparte los 401 en 108 y 293, y sumando por ella salen **las mismas cifras que publica el Ministerio**, comprobado al dígito. Prohibida en el bloque cualquier **equivalencia en hm³** de los GWh: exigiría el salto de cada central, y el salto no es la altura de la presa. **No nace ninguna regla `R*`.** *(De paso: el encabezado del documento se había quedado en 1.39.0 cuando §13 ya registraba la 1.40.0 — corregido aquí.)* |
 | **1.40.0** | 2026-08-14 | **Aditiva, y de navegación.** §3 estrena `pagina` en la entrada de capa: dónde vive la página que cuenta esa capa entera, si la tiene. Nace de un fallo real de descubribilidad — `/agua/` llevaba un día publicada y **desde la portada del atlas no había manera de llegar**: se alcanzaba desde Método, desde el índice de la capa y desde el bloque sin JavaScript, que es como decir desde ningún sitio. La alternativa era un enlace por página en la barra del visor, que con tres capas convierte un instrumento en un menú. Al declararlo el manifiesto, el enlace sale **en el panel de la capa** —donde el lector ya ha mostrado interés por ella— sin que el código conozca capas por su nombre, que es la misma razón por la que `series` vive ahí desde la 1.35. De paso muere una tabla escrita a mano en `generar-fichas.mjs` que hacía este trabajo contradiciendo esa regla. **No nace ninguna regla `R*`.** |
 | **1.39.0** | 2026-08-13 | **Aditiva, y cierra el último filón abierto del segundo horizonte.** Nace `conducciones-combustible` (§10): **11.112 km de gasoducto y 4.106 de oleoducto**, de la Base Topográfica Nacional, en **dos registros y no 3.106** — la BTN trae `nombre` a NULL en todas sus conducciones y bautizarlas por sus extremos fabricaría nombres que nadie ha dado, que es la misma decisión que hizo que el tendido eléctrico fueran dos y no 1.784. **Lo que más vale de esta capa es lo que estuvo a punto de no existir.** El filón se dio por VIABLE leyendo las especificaciones del IGN, y al medir los DATOS resultó falso: la **BTN100** traía 1.390 km de gasoducto y no llegaba ni a Huelva (233 km), ni a Bilbao, ni a cinco de las seis interconexiones — una muestra fragmentaria que publicada como «la red» habría sido una afirmación falsa con cartografía oficial detrás. Se cerró el filón con su medida y se pidió la **BTN Continua**, que sí la tiene: 11.116 km que cuadran con la red de transporte española y que pasan **a menos de 5 km de las siete plantas de GNL y de las seis interconexiones** que el atlas ya publica. La lección queda escrita porque volverá: **una especificación dice lo que el fichero PUEDE contener, no lo que contiene** — y la diferencia se mide, no se supone. §10 estrena `n_tramos` (cuántos objetos hay detrás de una ficha agregada) y `longitud_medida_km`, que se llama así porque el IGN no publica longitudes: la mide el atlas, va `parcial` por R2 y **mide sobre la geometría ya simplificada**, para que la ficha no diga una cifra que el mapa no dibuja. La simplificación va a **5 m y no a los 25** del tendido, elegida por lo que cuesta y no por lo que ahorra: a 25 m se comía el 0,33 % de la longitud —veinte veces más que en el tendido, porque estas conducciones curvan más que una línea recta entre torres— y a 5 m se queda en el 0,035 %, tirando aun así el 87 % de los vértices. El esquema existe sobre todo para **prohibir**: `titular`, `propietario`, `operador`, `presion_bar`, `diametro_mm` y `fase` — todo eso lo publica el operador, corporativo, y no se sustituye un dato por su parecido. **No nace ninguna regla `R*`.** |
 | **1.38.0** | 2026-08-13 | **Aditiva, y sale de una mordedura que estuvo a punto de publicarse.** La segunda película del atlas —el flujo mensual de las interconexiones gasistas— reveló que el dibujante de gráficas estaba **cableado a la primera**: rotulaba «hm³», «agua embalsada, capacidad» y «partes semanales» **viniera lo que viniera**. Una serie de gas habría salido publicada, leyenda incluida, **midiendo GWh en hectómetros cúbicos**. §4.1 gana por tanto tres descriptores que el dato declara y la gráfica obedece —`unidades`, `etiquetas` y `paso`—, con la regla de que **si la serie no los declara, la gráfica calla en vez de rellenarlos**. Gana además **`magnitud`**, que es doctrina y no adorno: `estado` es una lectura en un instante (el agua de ese día: se compara, no se suma) y `flujo` es lo acumulado en un período (los GWh de ese mes: se suma, y su fecha es el PRIMER día del período que resume, no un instante en que se midiera nada). Dos series de la misma forma con sentidos distintos son una invitación a sumar lo que no se suma. Y `fuente.archivo` **admite lista**: sigue habiendo UNA fuente —un emisor, una operación estadística— pero su materialización archivada puede venir partida porque el emisor la publica así (CORES saca entradas y salidas en dos libros, y la película del Magreb necesita los dos para enseñar el flujo en ambos sentidos); lo prohibido sigue siendo empalmar emisores u operaciones distintas para cubrir tramos distintos del tiempo. Las **369 series de `agua-embalsada` se reescriben** con sus descriptores, en el formato de un punto por línea que el generador ya usaba: **siete líneas añadidas por fichero y ni una tocada**. **No nace ninguna regla `R*`.** |

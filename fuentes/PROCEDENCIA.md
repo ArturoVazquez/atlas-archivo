@@ -695,14 +695,29 @@ datos.gob.es, capabilities rotos en disco): la verificación de cuenca se hace
 ahora contra el **ArcGIS REST público del mismo Ministerio**
 (`wms.mapama.gob.es/arcgis/rest/services/25830/aguaHidroDemarcaciones`), que
 devuelve 404 a ratos sobre URLs que existen — se reintenta, no se concluye.
+**La energía viene del boletín de la semana, y por eso no tiene película**
+*(.50)*. `atlas.conjunto` publica cuatro cifras del CONJUNTO —la energía
+almacenada teórica, su capacidad, la producción de la semana y la del año— y las
+cuatro salen del **resumen semanal en PDF**, no del histórico. Es una fuente
+distinta del mismo emisor y la misma operación: el Boletín publica el agua en
+una base descargable desde 1988 y **la energía solo en el parte de cada
+semana**. De ahí que no haya serie (§4.1: solo hay película donde hay negativo)
+y que el archivo **se acumule**, un PDF por semana, al revés que la base de
+embalses, que se reemplaza.
+**Dos cosas puestas al lado, no una explicando a la otra** · La energía
+almacenada **sí** es de estos embalses: es su agua convertida a electricidad por
+un cálculo teórico del Ministerio. La **producción** es la nacional y la firma
+REE, a quien el propio Boletín cita: incluye **centrales fluyentes** que no
+salen de ningún embalse de esta capa. La página lo dice con esas palabras.
 **Refresco** · Es la única capa con parte semanal, y su archivo se **reemplaza**:
 el histórico viene entero cada vez (11 MB, 1988-2026), así que la copia nueva
 sustituye a la anterior en lugar de acumularse — las copias de ediciones pasadas
-viven en su etiqueta de Git y en su depósito de Zenodo. Y cada ficha lleva **su**
-parte: 25 embalses dejaron de informar hace años y conservan su fecha, que es lo
-único cierto de ellos.
-**Archivado** · 3 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18`,
-`.32` y `.43` · §10
+viven en su etiqueta de Git y en su depósito de Zenodo. **El PDF del boletín es
+la excepción**: ese se añade, porque cada uno trae una energía que ningún otro
+documento repite. Y cada ficha lleva **su** parte: 25 embalses dejaron de
+informar hace años y conservan su fecha, que es lo único cierto de ellos.
+**Archivado** · 4 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18`,
+`.32`, `.43` y `.50` · §10
 
 ## cables-submarinos
 
