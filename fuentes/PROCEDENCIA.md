@@ -679,6 +679,18 @@ quedan compartiendo punto lo **declaran**: el Inventario registra allí presas d
 48 y 93,7 hm³ y una «Cañón de Santolea» en construcción con 0,082, y ninguna
 cuadra con los 5 y los 82 del Boletín. Antes que elegir a ojo, se dice.
 
+**Tres salvedades de la propia base, que ningún papel decía** *(.53)*. Las
+encontró la auditoría del 2026-08-14 y ninguna es un defecto del atlas: son
+propiedades de la fuente que había que escribir.
+**Primera: el histórico empieza en 1987**, no en 1988 como lo titula el propio
+MITECO — dos semanas de octubre con **un solo embalse**, que la página descarta
+por su umbral de panel y lo dice. **Segunda: el umbral de «más de 5 hm³»
+describe la base, no la gobierna**; hoy informan Cornalbo (3) y Rioseco (4), y
+la página los nombra en el parte donde salgan. **Tercera: hay partes viejos con
+embalses que dan agua y no capacidad** —3.290 puntos en los ochenta, ninguno
+desde 2005—, lo que infla su porcentaje de llenado; se publica tal cual (§4.1)
+y el parte de esa fecha lo advierte, contándolos.
+
 **`NMN_CAPAC` del Inventario NO está en una sola unidad** *(.52)*. Medido sobre
 los registros ya anclados en él —identidad cierta, sin adivinar—: da
 **8.136.000.000** para Soto Terroba y **8.085.000.000** para Las Fitas, que es

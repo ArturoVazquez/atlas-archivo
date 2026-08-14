@@ -32,6 +32,93 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.53 — El cerrojo que faltaba, y las salvedades que nadie escribía
+
+Cierra **todo lo que quedaba de la auditoría del 2026-08-14** salvo lo que pide
+juicio caso a caso. Ninguna cifra de agua cambia.
+
+### Añadido — `series_completas`, y por qué el hueco estuvo abierto *(contrato 1.42.0)*
+
+§4.1 vigilaba en **un solo sentido** desde la 1.35: una serie sin ficha era
+huérfana, pero **la ficha sin serie no era nada**. Perder un fichero de película
+pasaba el CI en verde, y lo único que lo cazaba era una guarda del generador de
+`/agua/` — es decir, **la completitud 401/401 la sostenía el sitio web, no los
+datos**.
+
+Yo había **rechazado** este hallazgo, y el rechazo era correcto: la regla que el
+informe proponía —«toda capa con `series` tiene serie en todos sus registros»—
+**es falsa**, porque `gas-interconexiones` publica 6 registros y 2 series a
+propósito. Lo que la conclusión erraba es que el problema no era la
+comprobación: era que **faltaba el dato que la hace decidible**.
+
+§3 gana **`series_completas`**, que dice cuál de los dos casos es cada capa, y
+§4.1 gana la regla en su reverso. Probado en negativo: escondiendo una serie el
+validador **bloquea**, restaurándola vuelve al verde, y `gas-interconexiones`
+sigue intacta en las dos pasadas. **41 pruebas.**
+
+### Corregido — cifras de prosa, y una acusación que no se sostenía
+
+- La `.44` arrancaba en «683.892 partes» cuando la `.43` ya lo había dejado en
+  **684.236**. Se **anota, no se reescribe** (precedente de la `.31`).
+- **La otra mitad de ese hallazgo era falsa.** El informe decía que la `.43`
+  erraba en «184 bajan, 18 suben, 142 se quedan, −898». Reproducido contra la
+  etiqueta: **es exacto**. Comparó un diff entre releases con una frase que
+  describe **la semana del parte** — y yo repetí su error antes de verlo. Queda
+  escrito: **un informe también se audita**.
+- El esquema decía «por eso `geo_precision` es `paraje`» con 40 de 401 ya en
+  `exacta`. Ahora dice que es el ancla **por defecto** y no fija el reparto.
+- **«719.725 partes»** sale del contrato §10 y de la nota del manifiesto: no se
+  actualiza a 720.099, **se deja de nombrar**. Igual que el recuento de anclas
+  en AGENDA, que bailó entre 368 y 369, se corrigió a 367 y dos días después ya
+  eran 361.
+- **D11** dice «faltan 32 embalses», superado por la `.48`. `DECISIONES.md` no
+  se reescribe: se anota — y la nota recuerda que **la prohibición que D11
+  impone sigue vigente por un motivo que el número nunca tocó**.
+
+### Añadido — lo que la fuente es y no decía nadie
+
+Contado desde el dato y **por fecha**, así que cada parte dice lo suyo:
+
+- **El umbral de «más de 5 hm³» describe la base, no la gobierna:** hoy la
+  contradicen Cornalbo (3) y Rioseco (4); en el parte de 1990, Cornalbo y
+  Proserpina. La página los nombra donde salgan.
+- **En los partes viejos hay embalses que dan agua sin declarar capacidad**, lo
+  que **infla el llenado**: 60 en el parte del 2 de enero de 1990, ninguno desde
+  2005. El parte de esa fecha lo advierte.
+- **El histórico empieza en 1987**, no en 1988 como lo titula el propio MITECO.
+  → PROCEDENCIA.
+
+### Añadido — las rachas, con el criterio bien puesto
+
+El informe decía **63** series congeladas y la `.52` declaró **20**. No sale
+ninguno de los dos: son criterios distintos. Quietas **ahora** son 20 —ya
+declaradas—; con alguna racha de ≥100 semanas **en su historia**, muchas más.
+Entran **104 declaraciones nuevas**, cada una con su duración y sus fechas.
+
+**Un renglón que habría mentido:** en cinco históricos la racha más larga llega
+al **último** parte, así que «y después volvió a moverse» era falso. Esos cinco
+dicen ahora que la racha no terminó — **terminó el parte**.
+
+### Cambiado — el corte de huecos de la gráfica
+
+Se calcula sobre la serie **completa** y no sobre la ya submuestreada. **Con los
+datos de hoy no cambia un píxel**, y está medido: los tres huecos reales de más
+de 45 días se cortaban igual. Lo que quita es la dependencia del alineamiento —
+y una rotura futura: en cuanto una serie pase de unos 5.000 puntos, el paso de
+submuestreo supera por sí solo los 45 días y el código viejo cortaría **todos**
+los tramos.
+
+### Huecos
+
+Queda abierto **solo lo que pide juicio caso a caso**, y va en su propia
+release: las **25 anclas a más de 3 km**, los **11 parajes incontrastables por
+nombre** y los **desacuerdos de capacidad** en registros de identidad no cierta
+(Contreras, Lanuza, Águeda…). Y lo que sigue sin poder auditarse: la energía de
+los partes viejos, la verificación de cuenca en vivo, la elección de presa donde
+`ALT_CIMIEN` viene corrupto y la composición de los seis sistemas del Pirineo.
+
+---
+
 ## datos-v2026.08.52 — Seis puntos que estaban donde no era, y veinte líneas rectas
 
 La tanda que la auditoría dejó abierta: lo que exigía **juicio**, no barrido.
@@ -815,6 +902,13 @@ Electra y los anuncios de Costas.
   Villafranca, Algar, Valdepatao, Las Parras, Urdiceto y Terroba. Con ellos, las
   **18 películas** que les faltaban: la capa pasa de 369 a 387 series y de
   683.892 a 704.036 partes.
+
+  > **Nota del 2026-08-14:** ese «683.892» es la cifra de la `.32`, no la de la
+  > release anterior. La `.43` había dejado el histórico en **684.236** —lo dice
+  > su propia entrada— al añadir el parte del 11 de agosto. El final sí es
+  > exacto (684.236 + 19.800 de las 18 series nuevas = 704.036, medido sobre las
+  > etiquetas), y ninguna serie está mal: lo que se arrastró fue el punto de
+  > partida de una frase. El registro no se reescribe, se anota.
 - **Una segunda clase de ancla, y cada ficha dice la suya.** Los 369 anteriores
   se anclan en el Nomenclátor (`paraje`: un topónimo es primario para el NOMBRE
   del lugar, no para el perímetro). Estos 18 se anclan en la **coordenada de la
