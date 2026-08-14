@@ -32,6 +32,70 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.49 — Una capa puede tener página, y lo dice el manifiesto
+
+**Ningún registro cambia.** Esta release existe por un fallo de descubribilidad
+que se vio al día siguiente de publicar `/agua/`: la página llevaba veinticuatro
+horas viva y **desde la portada del atlas no había manera de llegar**. Se
+alcanzaba desde Método, desde el índice de la capa y desde el bloque sin
+JavaScript — o sea, desde ningún sitio para quien abre el mapa.
+
+### Añadido
+
+- **contrato 1.39.0 → 1.40.0, §3: el campo `pagina`** en la entrada de capa.
+  Dónde vive la página que cuenta esa capa entera, si la tiene:
+
+  ```json
+  "pagina": { "ruta": "/agua/", "titulo": "El parte semanal" }
+  ```
+
+  Hoy solo la declara `agua-embalsada`. **No nace ninguna regla `R*`**, pero §7.8
+  gana un diente pequeño: una `pagina` a medias —sin ruta o sin título— bloquea,
+  porque produce un enlace roto o sin rótulo que nadie ve hasta que lo pulsa.
+
+### Por qué en el manifiesto y no en el código
+
+Es la misma razón por la que `series` vive ahí desde la 1.35: **el visor ofrece
+el enlace sin conocer capas por su nombre**. Al declararlo el manifiesto, la
+acción aparece sola en el panel de cualquier capa que lo traiga.
+
+Y de paso muere una contradicción que duró un día: `generar-fichas.mjs` tenía
+una **tabla escrita a mano** con `agua-embalsada` dentro para poner ese mismo
+enlace en el índice de la capa. Funcionaba y contradecía la regla de la casa
+—«añadir una capa es añadir su entrada, sin tocar código de panel»—. Ahora los
+dos sitios leen el mismo campo.
+
+### Dónde aparece el enlace, y por qué ahí
+
+- **En el panel de la capa**, junto a *Encuadrar · Solo esta · GeoJSON*. Es donde
+  el lector ya ha mostrado interés por esa capa, funciona en teléfono y **no
+  cuesta un píxel de cromo a las otras treinta**.
+- **En la barra del visor**, para quien llega a la portada sin saber que existe.
+  Hoy apunta directo a `/agua/`.
+- Y donde ya estaba: Método, el índice de la capa y la portada sin JavaScript.
+
+**La barra no crece con las capas.** El día que haya una segunda página, ese
+enlace pasará a apuntar a un índice en vez de sumarse otro: con tres, la barra
+del visor deja de ser un instrumento y se convierte en un menú. Queda escrito
+aquí y en §3 para que nadie añada el tercero.
+
+### Lo que esta release no arregla
+
+**En teléfono los enlaces de la barra están ocultos** —lo estaban ya para Método
+y El Tercio, por sitio— así que desde un móvil a la portada se sigue llegando
+solo por el panel de la capa. Cambiar esa regla es otra decisión y toca el visor
+en algo que hoy funciona; no se ha tocado.
+
+### Huecos
+
+- Los mismos: ninguno de cobertura en `agua-embalsada`, y 401 de 401 **no es la
+  reserva de España** porque el Boletín cubre solo los embalses peninsulares de
+  más de 5 hm³ — así lo describe el Ministerio, y así lo dice ahora la página.
+- **Las 368 anclas del Nomenclátor siguen sin repasar** contra el Inventario de
+  Presas.
+
+---
+
 ## datos-v2026.08.48 — Los 401, y la pregunta que estaba mal hecha
 
 `agua-embalsada` pasa de 396 a **401 registros: todos los del histórico del
