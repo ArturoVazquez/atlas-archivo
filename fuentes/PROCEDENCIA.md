@@ -679,6 +679,40 @@ quedan compartiendo punto lo **declaran**: el Inventario registra allí presas d
 48 y 93,7 hm³ y una «Cañón de Santolea» en construcción con 0,082, y ninguna
 cuadra con los 5 y los 82 del Boletín. Antes que elegir a ojo, se dice.
 
+**Las anclas del Nomenclátor, repasadas una a una** *(.54)*. Era el hueco más
+viejo de la capa: los puntos se cosieron **por nombre** y solo un error enorme
+—Las Cogotas a 157 km— se caza a ojo. El repaso coteja cada ficha con la presa
+que le corresponde en el Inventario, emparejando por **nombre y demarcación** y
+confirmando la identidad con la **capacidad**. De 359 parajes se contrastaron
+**343**: mediana **58 m**, p90 **1,9 km**.
+
+**Dos estaban mal, y una es de las gordas.** `alcantara-tajo` —3.160 hm³, el
+mayor del Tajo— se anclaba en la charca de 0,2 hm³ del pueblo de Mata de
+Alcántara; su presa se llama **José María de Oriol** y no «Alcántara», así que
+ningún emparejamiento por nombre podía dar con ella. Y `losmolinos-guadiana`
+estaba **a 194 km**: es Los Molinos de Matachel, en Badajoz, con 34,0 hm³
+exactos. Los dos van ahora `exacta`, con su clave.
+
+**Veintidós están lejos y bien**, de 3 a 15,8 km: son vasos de cola kilométrica
+—Riba-roja, Cijara, Orellana, Valdecañas— donde el topónimo rotula **el agua** y
+la presa queda al final. Cada uno lo declara, porque una distancia así sin
+explicación parece un fallo.
+
+**Dieciséis no se pudieron contrastar** y lo dicen en su ficha: el Inventario no
+registra presa que case con su nombre en su demarcación (Chandrexa, Sant Pons,
+Villagudín, Sta Uxia, San Estevo…). No hay motivo para dudar de esos puntos —son
+topónimos verificados contra su cuenca al darlos de alta—; lo que les falta es
+la segunda opinión.
+
+> **Tres trampas que este repaso dejó medidas**, porque cada una llegó a dar un
+> resultado falso antes de verse: aplanar el nombre **antes** de quitarle el
+> prefijo convierte «Embalse de **La**nuza» en «nuza»; sin tildes **«PENA» y
+> «PEÑA» son la misma palabra**, y ordenar solo por capacidad llegó a elegir una
+> presa a 188 km; y el SNCZI a veces **alarga** el nombre del Boletín («Montoro»
+> → «MONTORO III») teniendo además otra presa con el nombre corto en la misma
+> cuenca, así que buscar los extendidos solo cuando no hay exactos elige la
+> equivocada.
+
 **Tres salvedades de la propia base, que ningún papel decía** *(.53)*. Las
 encontró la auditoría del 2026-08-14 y ninguna es un defecto del atlas: son
 propiedades de la fuente que había que escribir.

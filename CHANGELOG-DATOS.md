@@ -32,6 +32,71 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.54 — El repaso de las anclas, y Alcántara en una charca
+
+Cierra **el hueco más viejo de la capa**: los 359 puntos cosidos por nombre
+contra el Nomenclátor, que solo delataban un error si era enorme. El repaso
+coteja cada ficha con su presa en el Inventario —emparejando por **nombre y
+demarcación**, confirmando con la **capacidad**— y contrasta **343 de 359**:
+mediana **58 m**, p90 **1,9 km**.
+
+### Corregido — dos anclas equivocadas, y una es de las gordas
+
+- **`alcantara-tajo`**, 3.160 hm³, **el mayor del Tajo y de los mayores de
+  España**, se anclaba en el «Embalse de Mata de Alcántara»: la charca de **0,2
+  hm³** del pueblo homónimo. Su presa se llama **José María de Oriol**, no
+  «Alcántara», así que **ningún emparejamiento por nombre podía dar con ella**;
+  la identifica su capacidad —3.162 hm³— y su cauce. Se mueve solo 7,7 km, y esa
+  es la lección: el pueblo está cerca del vaso, **así que la distancia no
+  delataba nada**.
+- **`losmolinos-guadiana`** estaba **a 194,5 km**. Es Los Molinos de Matachel,
+  en Badajoz, y el Inventario le da **34,0 hm³ exactos** contra los 34 del
+  Boletín. Los dos topónimos empiezan por «los Molinos» y están en el Guadiana:
+  ni el nombre ni la cuenca bastaban. Lo dijo la capacidad.
+
+Con estos son **cuatro** los emparejamientos falsos cazados por el mismo método
+—Las Cogotas (157 km, `.44`), el Lago Negro (50 km, `.52`) y estos dos—.
+
+### Añadido — lo que está lejos y bien, y lo que no se pudo mirar
+
+- **22 anclas entre 3 y 15,8 km lo declaran**: son vasos de cola kilométrica
+  —Riba-roja, Cijara, Orellana, Valdecañas— donde el topónimo rotula **el agua**
+  y la presa queda al final. `geo_precision: paraje` ya lo dice, pero una
+  distancia así sin explicación parece un fallo.
+- **16 no se pudieron contrastar** y lo dicen: el Inventario no registra presa
+  que case con su nombre en su demarcación (Chandrexa, Sant Pons, Villagudín,
+  Sta Uxia, San Estevo…). **No hay motivo para dudar de esos puntos** —son
+  topónimos verificados contra su cuenca al darlos de alta—; lo que les falta es
+  la segunda opinión que sí tienen los demás.
+- **30 fichas declaran su desacuerdo de capacidad** con el Inventario, con las
+  dos cifras. La capa **sigue publicando la del Boletín**, que es su fuente para
+  el agua. De Contreras sí se sabe cuál está viejo: los 852 del Inventario son
+  anteriores a la revisión a la baja de 2019, que la propia serie registra.
+
+### Tres trampas del método, medidas y escritas
+
+Ninguna es del atlas: son del emparejamiento, y **las tres dieron un resultado
+falso antes de verse**. Quedan en PROCEDENCIA para el próximo que lo intente.
+
+- Aplanar el nombre **antes** de quitarle el prefijo convierte «Embalse de
+  **La**nuza» en «nuza» — y deja fuera a Lanuza, Limonero y Llauset.
+- **Sin tildes, «PENA» y «PEÑA» son la misma palabra**, y ordenar solo por
+  capacidad llegó a elegir una presa **a 188 km**. La distancia tiene que entrar
+  en el criterio.
+- El SNCZI a veces **alarga** el nombre del Boletín («Montoro» → «MONTORO III»)
+  **y** tiene otra presa con el nombre corto en la misma cuenca, así que buscar
+  los extendidos solo cuando no hay exactos elige la equivocada.
+
+### Huecos
+
+- Los **16 sin contrastar**, ya declarados uno a uno.
+- Lo no auditable de siempre: la energía de los partes viejos, la verificación
+  de cuenca en vivo, la elección de presa donde `ALT_CIMIEN` viene corrupto y la
+  composición de los seis sistemas del Pirineo.
+- **Con esto, la auditoría del 2026-08-14 queda cerrada entera.**
+
+---
+
 ## datos-v2026.08.53 — El cerrojo que faltaba, y las salvedades que nadie escribía
 
 Cierra **todo lo que quedaba de la auditoría del 2026-08-14** salvo lo que pide
