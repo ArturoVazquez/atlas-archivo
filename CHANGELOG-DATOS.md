@@ -32,6 +32,128 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.51 — Lo que decían los papeles, y lo que no miraba nadie
+
+**Ni un dato cambia, y esa es justo la noticia.** Sale de una **auditoría
+exhaustiva de todo lo tocante a embalses**, encargada con el mandato de
+reproducirlo todo desde la fuente cruda —incluido lo ya verificado— y de buscar
+sobre todo lo que nadie había pensado en comprobar.
+
+**Los datos aguantaron la reproducción completa.** Las 401 series son copia fiel
+del MDB (cotejo punto a punto de los 720.097 puntos, cero diferencias); las seis
+cifras del reparto hidroeléctrico y las cuatro de la energía salen igual
+sumando desde cero; son 401 de 401 y el ZIP archivado es byte a byte el que
+MITECO sirve hoy; R11 cuadra en las 401; las 401 descripciones cuadran con sus
+campos; y toda la geometría traza a fuente archivada (367 parajes, 6 estaciones
+a ≤1 m, 28 presas a ≤0,7 m).
+
+Lo que no aguantó fue **lo escrito alrededor de los datos**.
+
+### Corregido — cifras de prosa que envejecieron aparte del dato
+
+- **El README decía «308 embalses».** Son **401** desde la `.48`. Es la primera
+  tabla del escaparate público y se quedaba corta en 93 registros, un 23 %.
+- **`CITATION.cff` estaba clavado en la `.42`**: versión, fecha y DOI de edición
+  **ocho ediciones** viejos, con Zenodo ya en la `.50`. Un aparato de cita que
+  envejece solo es peor que no tenerlo: quien cite se lleva una edición que no
+  es.
+- **Las dos discrepancias de recuento resultan ser la misma**, y esa es la parte
+  que vale la pena: **re-anclar no es entrar, y contar entradas no cuenta
+  anclas.** Son **28** anclas del Inventario —los 27 que entraron entre la `.44`
+  y la `.47` **más Las Cogotas**, que ya estaba publicada y se re-ancló allí al
+  descubrirse a 157 km— y **seis** «Sistema…» del Pirineo, porque Escarra ya
+  estaba en la `.47` anclado en su topónimo y la `.48` metió los otros cinco
+  re-anclándolo a él. Comprobado contra las etiquetas: la `.47` tenía 1 y la
+  `.48` tiene 6. **«Entran los cinco» del changelog de la `.48` es correcto y no
+  se toca**; lo que estaba mal era describir el conjunto.
+- **`PROCEDENCIA.md` se contradecía a sí mismo** —esto no lo vio la auditoría—:
+  un párrafo decía que los sistemas se publican desde la `.48` y el de debajo,
+  escrito en la `.47`, seguía diciendo «siguen sin publicarse».
+- Las anclas del Nomenclátor son **367**, no las «368» ni «369» que la AGENDA
+  decía en el mismo punto. Y `CLAUDE.md` pedía que las pruebas «siguieran dando
+  16/16» cuando ya iban 40; ahora no escribe la cifra, porque **una cifra al
+  lado del guion que la calcula solo puede envejecer**.
+
+### Cambiado — el ritual pasa de cuatro gestos a seis
+
+Entran **`app/release.json`** y **`CITATION.cff`**. Los dos porque los dos se
+olvidaron, y los dos comparten la propiedad peligrosa: **no rompen nada al
+olvidarse**. Sin `release.json` la web publica los datos de la edición anterior
+sin dar un solo error (pasó en la `.43`); sin `CITATION.cff` la cita apunta a
+otra edición (ocho ediciones, de la `.42` a la `.50`).
+
+### Cambiado — tres guardias que no miraban donde el contrato había crecido
+
+Tres agujeros y una sola causa: **cada comprobación nació recorriendo
+`features`** y el contrato creció por debajo.
+
+- **`vigilar.py` solo vigilaba registros.** Ni el PDF del conjunto ni las
+  fuentes de las 401 series estaban vigiladas por nadie: si esas URLs se
+  pudrían, la guardia semanal seguía en verde.
+- **§7.7 y §7.10 no alcanzaban a las series**, donde la fuente es **suya** y
+  puede no ser la de su ficha — en `agua-embalsada` no lo es. Un `javascript:`
+  ahí acaba en un `href` servido por el dominio del atlas.
+- **`comprobar_conjunto` admitía una cifra desnuda**, sin `__v`: R2 y R3 solo
+  miran lo que ya se declara confirmado y R6 solo persigue metadatos huérfanos,
+  así que un número sin nada detrás no lo reclamaba nadie. Y una fecha del
+  futuro bloqueaba en cualquier ficha y pasaba aquí.
+
+**Ninguno es doctrina nueva** —§4 ya exigía `__v` y `__f` en el conjunto, y
+§7.5, §7.7 y §7.10 ya existían—, así que **el contrato no se mueve**: era
+alcance que faltaba, no reglas que faltaran.
+
+### Corregido — el error silencioso que más preocupaba
+
+`hm3()` en `seriar.py` hacía `.replace(".", "")` **a ciegas**, dando por hecho
+que el punto siempre separa miles. El día que MITECO publique «8.5» a la
+inglesa, eso devuelve **85**: el histórico entero multiplicado por diez, en
+silencio, **cuadrando consigo mismo y pasando R11 en verde** porque la serie y
+la ficha saldrían del mismo error. Ninguna comprobación aguas abajo puede cazar
+eso.
+
+Adivinar tampoco vale —«1.234» es mil doscientos treinta y cuatro con una
+convención y uno coma dos con la otra, y nada en la celda dice cuál—, así que no
+adivina: **para**. Probado contra las **1.440.198 celdas** del MDB: cero
+rechazos, y revienta ante «8.5», «12.34» y «1,234.5».
+
+### Pruebas: 37 → 40
+
+Tres fixtures nuevas, porque una regla que nadie ejercita se pudre sin que se
+note —lo dice este mismo directorio—. Y las tres fixtures de series dejaban de
+citar un `fuentes/fixture.zip` **que no existe**: ahora se atan al archivo real,
+así que §7.7 avisará si un refresco del Boletín se deja alguna atrás. Red, en
+vez de tarea.
+
+### Un hallazgo del informe que NO se sostiene
+
+Decía que «una ficha sin serie pasa el CI en verde» y proponía cerrarlo.
+**Comprobado: `gas-interconexiones` tiene 6 registros y 2 series**, así que una
+ficha sin serie es **legítima** y una regla que bloqueara rompería esa capa. La
+completitud de `agua-embalsada` la garantiza la guarda del build de `/agua/`,
+que sí revienta. Una regla general exigiría que el manifiesto distinguiera
+«series para todos» de «series para algunos», y eso es una decisión de contrato,
+no un remiendo.
+
+### Huecos
+
+- **Lo que la auditoría no pudo auditar**, dicho en voz alta: la energía de los
+  2.016 partes viejos (los PDF anteriores a ~2 años devuelven 200 con cero
+  bytes), la verificación por demarcación en vivo (el ArcGIS del Ministerio es
+  intermitente), la elección de presa en los embalses con varias (el
+  `ALT_CIMIEN` del SNCZI viene corrupto), y Firefox/WebKit.
+- **Queda abierto, y ahora mejor descrito en AGENDA:** el juicio humano sobre
+  las **25 anclas a más de 3 km** (casi todas embalses de cola kilométrica), los
+  **11 parajes incontrastables por nombre** y los **~15 desacuerdos de capacidad
+  Boletín↔Inventario**, de los que solo Fresneda lo declara en su ficha.
+- **Sin resolver, para su propia release:** un ancla casi con seguridad
+  equivocada —`negrolago-ebro`, a unos 50 km, el patrón Cogotas—, los tres
+  «Santolea» compartiendo coordenada sin clave que lo explique, dos históricos
+  sin lápida, y **27 series congeladas** cuyo valor no se mueve desde hace más de
+  cien semanas (San José, en el Duero, lleva **la serie entera**: 2.015 partes
+  diciendo 6,0 hm³) sin que ninguna ficha lo advierta.
+
+---
+
 ## datos-v2026.08.50 — Las dos mitades del agua, y la electricidad que guarda
 
 **Ningún embalse cambia de cifra.** Esta release sale de una pregunta de

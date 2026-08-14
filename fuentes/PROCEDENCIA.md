@@ -654,7 +654,13 @@ llama por su lago (los estanys e ibones pirenaicos regulados) viven en esos
 tipos, no en «Embalse».
 **Dos anclas, y cada ficha dice la suya** · Hasta la `.44` todos los puntos
 venían del Nomenclátor (`geo_precision: paraje`: el topónimo es primario para el
-NOMBRE del lugar, no para el perímetro). Los 27 que entraron entre la `.44` y la `.47` vienen
+NOMBRE del lugar, no para el perímetro). Hoy son **367 del Nomenclátor y 34
+`exacta`**: 28 del Inventario de Presas y 6 de estación de aforo. **Ojo al
+contar** *(.51)*: 28 no son «los 27 que entraron entre la `.44` y la `.47`» —
+son esos 27 **más Las Cogotas**, que ya estaba publicada y se **re-ancló** allí
+al descubrirse a 157 km. **Re-anclar no es entrar, y contar entradas no cuenta
+anclas**; el mismo desfase se coló con los sistemas del Pirineo, ahí abajo. Los
+del Inventario vienen
 del **Inventario de Presas y Embalses**, que publica la coordenada de la presa:
 eso es `exacta` (§6.6), y su `geo_fuente` avisa de que el punto es la presa y el
 vaso se extiende aguas arriba. Cuando un embalse tiene varias presas
@@ -663,7 +669,7 @@ recrecimiento—, se ancla en **la más alta desde cimientos**, que es la princi
 por construcción. **Del Inventario se archiva solo el fichero de presas**: el de
 vasos se descartó porque su punto habría que calcularlo del polígono, y el
 centro del recuadro de un embalse sinuoso cae en tierra.
-**Un conjunto se sitúa por su estación, no por sus piezas** *(.48)*. Los cinco
+**Un conjunto se sitúa por su estación, no por sus piezas** *(.48)*. Los **seis**
 «Sistema…» del Pirineo agregan lagos regulados de un valle y **ninguna fuente
 publica de cuáles**; se buscó en ocho sitios y se dieron por imposibles. La
 pregunta estaba mal hecha: la **Red Oficial de Estaciones de Aforo** le asigna a
@@ -673,13 +679,16 @@ eso no hace falta saber qué agrega. Dos de esas fichas vienen SIN NOMBRE (9853 
 punto es el de la estación, no el de un vaso, y las fichas lo dicen.
 **El Boletín agregó ocho lagos en 2006, y la capa lo dice** *(.47)*. El 26 de
 septiembre de 2006 se cierran los partes individuales de ocho lagos regulados
-del Pirineo y la semana siguiente nacen cinco filas con nombre de sistema que
+del Pirineo y la semana siguiente nacen **seis** filas con nombre de sistema que
 los agregan (Escarra 5 hm³ → «Sistema Escarra» 5; Respomuso 18 → «Sistema Aguas
 Limpias» 18). No dejaron de medirse: dejaron de publicarse por separado. Las
-ocho fichas conservan su última cifra INDIVIDUAL y lo cuentan. Los cinco
-sistemas siguen sin publicarse porque **ninguna fuente dice de qué lagos se
-compone cada uno**, y anclarlos en uno solo fingiría que un valle entero cabe
-en un punto.
+ocho fichas conservan su última cifra INDIVIDUAL y lo cuentan. **Los seis se
+publican desde la `.48`**, anclados en su estación de aforo — este párrafo decía
+lo contrario, «siguen sin publicarse», una release después de dejar de ser
+verdad, y contradecía al párrafo de arriba en el mismo documento *(corregido en
+la `.51`)*. Sigue en pie lo que sí sigue siendo cierto: **ninguna fuente dice de
+qué lagos se compone cada uno**, y anclarlos en uno de ellos fingiría que un
+valle entero cabe en un punto.
 **Una fuente puede probar una identidad sin dar un dato** *(.46)*. Tres embalses
 estaban fuera porque el Boletín y el Inventario los llaman distinto, y ninguna
 búsqueda por nombre junta dos nombres que no se parecen. Los une una tercera
