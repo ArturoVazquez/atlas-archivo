@@ -32,6 +32,53 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.60 — Un conjunto también tiene historia
+
+**La release de ayer le dio casa a las cifras sin lugar y las dejó sin pasado.**
+El conjunto de las entradas de gas publicaba su foto —tres cifras de mayo de
+2026— y detrás había **veintidós años** que no se veían en ninguna parte: VIP
+Ibérico lleva publicándose desde marzo de 2013 y VIP Pirineos desde octubre de
+2014.
+
+### Por qué no estaba, y no era un límite técnico
+
+§4.1 decía desde la 1.35 que una serie es la película de **un registro**, y
+§7.11 lo hacía verdad: *«una serie sin ficha es huérfana»*. **Esa frase no era
+doctrina sobre el tiempo**: era el retrato de un momento en el que la única
+película posible era la de un registro, porque no existía nada más que pudiera
+tener historia. Desde la `.59` existe.
+
+### Añadido
+
+- **Contrato 1.44.0 → 1.45.0.** La identidad de una serie pasa a ser **`capa` +
+  `slug` O `conjunto`** — excluyentes, y una de las dos obligatoria: una
+  película tiene un dueño, y sin dueño no hay contra qué cuadrar.
+- **La película de `sistema-gasista-entradas`**: **269 meses**, de enero de 2004
+  a mayo de 2026, con las tres columnas —los dos VIP y las cisternas— y su
+  gráfica en la página del conjunto, dibujada por el mismo dibujante que las
+  4.666 fichas.
+- **`seriar-gas.py` sabe extraerla**, con las mismas guardas de siempre: revienta
+  si el libro deja de traer una columna, y un mes enteramente nulo no es un
+  punto.
+
+### Lo que NO cambia, y conviene decirlo
+
+**R11 no cambia ni una coma.** Sigue comparando el último punto con la foto de
+su dueño y sigue bloqueando: se comprobó alterando el último punto de VIP
+Ibérico a mano — el validador para y nombra el campo. Lo único que se tocó es
+el mensaje, que decía «la ficha» siempre y ahora nombra al dueño que toca.
+
+### Huecos
+
+- **La película empieza donde empieza el dato, no donde empieza el sistema.** El
+  primer punto es de enero de 2004 porque es donde arranca el libro de CORES;
+  los VIP no existían entonces y sus columnas están vacías hasta 2013 y 2014.
+  Los huecos se ven como huecos, que es lo que manda §4.1.
+- **Sigue sin haber hemeroteca de conjuntos**, y a diferencia del agua no hace
+  falta: la del agua existe porque `/agua/` es un parte que cambia cada semana y
+  se cita: aquí la página es una ficha, y una ficha con película enseña su
+  gráfica, como las otras 410 del atlas.
+
 ## datos-v2026.08.59 — Casa para las cifras que no son de ningún sitio
 
 **Al nacer `atlas.conjunto` quedó escrita una cautela y no se le dio casa a lo
