@@ -698,7 +698,7 @@ exactos. Los dos van ahora `exacta`, con su clave.
 la presa queda al final. Cada uno lo declara, porque una distancia así sin
 explicación parece un fallo.
 
-**Dieciséis no se pudieron contrastar** y lo dicen en su ficha: el Inventario no
+**Doce no se pudieron contrastar** y lo dicen en su ficha: el Inventario no
 registra presa que case con su nombre en su demarcación (Chandrexa, Sant Pons,
 Villagudín, Sta Uxia, San Estevo…). No hay motivo para dudar de esos puntos —son
 topónimos verificados contra su cuenca al darlos de alta—; lo que les falta es
@@ -711,7 +711,12 @@ la segunda opinión.
 > presa a 188 km; y el SNCZI a veces **alarga** el nombre del Boletín («Montoro»
 > → «MONTORO III») teniendo además otra presa con el nombre corto en la misma
 > cuenca, así que buscar los extendidos solo cuando no hay exactos elige la
-> equivocada.
+> equivocada. Y una cuarta, que costó publicar una afirmación falsa y hubo que
+> corregir el mismo día *(.55)*: **el prefijo hay que quitarlo de los DOS
+> lados**. Se le quitaba «Embalse de» al nombre del Boletín y no al del
+> Inventario, que llama a estos vasos «Ibón de Ip», «Darnius Boadella» o
+> directamente «Arcos». Cuatro de los dieciséis dados por incontrastables sí lo
+> eran, y los cuatro confirmaban su punto.
 
 **Tres salvedades de la propia base, que ningún papel decía** *(.53)*. Las
 encontró la auditoría del 2026-08-14 y ninguna es un defecto del atlas: son

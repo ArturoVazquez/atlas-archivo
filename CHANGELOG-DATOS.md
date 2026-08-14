@@ -32,6 +32,38 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.55 — Cuatro de los dieciséis sí se podían contrastar
+
+**Corrige a la `.54`, publicada hace unas horas.** Aquella dijo que 16 anclas
+«no se habían podido contrastar» con el Inventario de Presas. **De cuatro era
+falso**, y las cuatro confirman su punto:
+
+| ficha | en el Inventario | capacidad | distancia |
+|---|---|---|---|
+| `arcosdelafrontera-guadaletebarba` | «ARCOS» | 14 / 14 | 0 km |
+| `boadella-cuencasinterna` | «DARNIUS BOADELLA» | 60,18 / 61 | 0 km |
+| `ip-ebro` | «IBON DE IP» | 5 / 5 | 0,5 km |
+| `sanmartino-minosil` | «SAN MARTIN» | 9,6 / 10 | 0 km |
+
+**El fallo era del emparejamiento, no de los datos:** quitaba «Embalse de» al
+nombre del Boletín pero **no quitaba el prefijo del Inventario**, que a estos
+vasos los llama «Ibón de…», «Darnius…» o directamente por el pueblo. Es la
+**cuarta** trampa de este método, y de la misma familia que las tres que la
+`.54` dejó escritas: el error nunca estuvo en el nombre del embalse, sino en lo
+que se le quita antes de compararlo.
+
+Las cuatro fichas lo cuentan —**no se borra que se dijo**— y quedan **12**
+anclas realmente sin contrastar, cada una con su clave.
+
+### Por qué esto sale en una release y no en una corrección silenciosa
+
+Publicar «esto no se ha podido comprobar» sobre algo que sí se podía es
+exactamente el tipo de afirmación que esta capa lleva tres días persiguiendo. Se
+corrige igual que se corrigió la prosa ajena: **diciendo qué se dijo, por qué
+era falso y qué se hizo**.
+
+---
+
 ## datos-v2026.08.54 — El repaso de las anclas, y Alcántara en una charca
 
 Cierra **el hueco más viejo de la capa**: los 359 puntos cosidos por nombre
