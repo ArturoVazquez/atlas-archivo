@@ -32,6 +32,59 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.63 — El hueco que no existía
+
+La `.62` publicó las 123 estaciones geodésicas **con un hueco declarado**: la
+tabla de coordenadas del IGN no trae columna de estado, así que la posición
+estaba confirmada y **que la estación siguiera emitiendo, no**. Los 123
+registros salieron como «parcialmente verificados» por eso.
+
+Buscando más hondo, el hueco **no existía**. El mismo IGN sirve los **datos
+crudos por día** en `datos-geodesia.ign.es/ERGNSS/diario_30s/AAAA/AAAAMMDD/`, un
+fichero RINEX por estación. Aparecer ahí no es un indicio de que la estación
+funcione: **es el fichero que produjo ese día**.
+
+### Corregido
+
+- `red-geodesica` — los **123 registros pasan de `parcial` a `confirmado`**.
+  Comprobado sobre **cuatro días** repartidos de julio y agosto de 2026: las 123
+  emiten. Y el extractor **revienta** si una estación publicada no entregó
+  fichero, para que la afirmación no pueda envejecer en silencio.
+
+### El hueco de verdad era otro
+
+**La red emite más de lo que sitúa.** El día de prueba entregaron datos **126**
+estaciones y la tabla de coordenadas publica **123**: `JADR`, `MOTI` y `TAR2`
+emiten y el IGN no publica su posición, así que el atlas **no puede situarlas y
+no se las inventa**.
+
+Va declarado en la procedencia y **no en las 123 fichas**, porque es un hueco del
+**perímetro de la capa** y no de cada registro: meterlo ahí las habría degradado
+a `parcial` por algo que no dicen. Es la lección de la primera pasada aplicada al
+revés.
+
+### Una confirmación de propina
+
+Contando las cuatro cosas que el IGN publica de esta red —**132** fichas de
+estación, **117** *site logs* en formato IGS, **123** filas con coordenadas y
+**126** emitiendo— sale que las **9 que tienen ficha y no coordenadas tampoco
+emiten**. Eso confirma que la tabla de coordenadas **es la red vigente**, y no
+una lista cualquiera que alguien dejó de actualizar.
+
+### Huecos
+
+- **La sismología apareció entera, y la para la licencia.** El enrutador EIDA
+  revela que el IGN **sí sirve FDSN**, en `fdsnws.sismologia.ign.es` —otro
+  dominio, no el del portal, donde da 404—: **303 estaciones con coordenadas,
+  elevación y fechas de alta y baja** (227 activas, 76 dadas de baja), en una
+  sola petición. Todo lo que la capa necesitaba. **Pero la política de datos del
+  IGN se declara aplicable a «los productos y servicios de datos geográficos
+  definidos en» la Orden FOM/2807/2015, y la sismología no está entre ellos**: no
+  hay producto sísmico en la tabla del SCNE ni conjunto en `datos.gob.es`. Darlo
+  por CC-BY 4.0 «porque también es del IGN» sería repetir el error de las quince
+  atribuciones mal puestas. Queda como **consulta al CNIG**, con el buzón que la
+  propia licencia da para esto.
+
 ## datos-v2026.08.62 — Los 123 puntos desde los que se mide España
 
 Entra **`red-geodesica`**: las estaciones permanentes GNSS de la Red Geodésica
