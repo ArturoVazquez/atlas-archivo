@@ -32,6 +32,63 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.62 — Los 123 puntos desde los que se mide España
+
+Entra **`red-geodesica`**: las estaciones permanentes GNSS de la Red Geodésica
+Nacional (ERGNSS), que son las que materializan el sistema de referencia oficial
+del país. Es la infraestructura más discreta del atlas y la que sostiene a todas
+las demás — **cuando una ficha de este atlas dice «41,7002 N», lo dice respecto
+a estos puntos**.
+
+Es la primera capa del tercer horizonte, y se eligió por ser la de menos
+incógnitas: **la fuente ES la geometría**. El IGN publica las coordenadas ya
+calculadas, así que por una vez no hay que geocodificar nada ni pedirle un
+topónimo al Nomenclátor.
+
+### Añadido
+
+- `red-geodesica` — **123 estaciones**, con su código, su altitud elipsoidal y
+  su marco de referencia. Fuente: tabla de coordenadas ERGNSS del IGN, archivada
+  el día de citarla.
+
+### Son DOS marcos de referencia, y se dice
+
+El IGN no sirve una tabla, sirve **dos**: la Península, Baleares, Ceuta y
+Melilla en **ETRS89** (107 estaciones) y las Canarias en **REGCAN95** (16).
+**Ninguno de los dos es WGS84**, que es lo que exige RFC 7946 para un GeoJSON.
+La diferencia es de decímetros y no mueve un píxel en el mapa, pero cada
+registro **declara el suyo** en `marco_referencia` en vez de callarlo. Es la
+lección ya aprendida con los datums sin declarar de los Planes Directores de los
+PENEX: mezclar marcos sin decirlo sale barato hasta el día que no.
+
+### La fórmula de atribución, buscada hasta la fuente
+
+La licencia del IGN no concede a secas: **fija la forma del reconocimiento**, y
+remite a la tabla de productos del SCNE para el identificador exacto. Allí la
+Red ERGNSS figura con identificador **`ERGNSS`**, fecha **2025** y atribución
+`ign.es`, de donde sale la obligación literal: **«Obra derivada de ERGNSS 2025
+CC-BY 4.0 ign.es»**. Es el **cuarto producto** del IGN con fórmula propia en el
+atlas, junto a BTN, NGBE y BDLJE. No se dedujo por parecido con las otras tres:
+se abrió la tabla, que es donde ya se aprendió la lección de las quince
+atribuciones mal puestas.
+
+### Huecos
+
+- **Los 123 registros declaran el mismo, y por eso van `parcial`**: la tabla del
+  IGN **no publica estado**. No hay columna de vigencia ni fechas de alta o baja,
+  así que **la posición está confirmada y que la estación siga en servicio hoy no
+  lo está**. Declarar el hueco y marcarlos «confirmado» a la vez es exactamente
+  lo que R4 prohíbe — y el validador lo dijo antes que nadie.
+- **La Red Sísmica Nacional se queda fuera**, aunque venía en la misma propuesta.
+  Su listado publica **solo código y nombre**; las coordenadas viven detrás de un
+  POST por estación y el IGN **no sirve FDSN** (`/fdsnws/station/1/query`
+  responde 404). Es otra capa y otro trabajo, y decirlo es más honesto que
+  publicar 140 puntos geocodificados por su nombre.
+
+Queda además desmentido, por si vuelve a proponerse: las estaciones sísmicas
+**dadas de baja no están mezcladas** con las activas — viven en su propia
+pestaña.
+
 ## datos-v2026.08.61 — Por dónde entró el gas, mes a mes desde 2004
 
 **El atlas contesta una pregunta que hasta hoy no podía**: por dónde entró el

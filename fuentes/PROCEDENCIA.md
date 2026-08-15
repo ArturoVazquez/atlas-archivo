@@ -66,7 +66,7 @@ vez, y las fichas remiten a esta sección.
 
 ### Instituto Geográfico Nacional (IGN) y CNIG
 
-**Presente en 22 de las 31 capas.** Licencia **CC-BY 4.0**, establecida por la
+**Presente en 23 de las 32 capas.** Licencia **CC-BY 4.0**, establecida por la
 **Orden FOM/2807/2015, de 18 de diciembre** (BOE de 26-12-2015), cuyo artículo 4
 dice que el uso «tendrá carácter libre y gratuito, siempre que se mencione el
 origen y propiedad de los datos».
@@ -84,6 +84,7 @@ Los identificadores exactos, de la tabla de productos del propio SCNE:
 | Base Topográfica Nacional | `Obra derivada de BTN Continua CC-BY 4.0 ign.es` |
 | Nomenclátor Geográfico Básico | `Obra derivada de NGBE Continua CC-BY 4.0 ign.es` |
 | Límites municipales y provinciales | `Obra derivada de BDLJE Continua CC-BY 4.0 ign.es` |
+| Red de estaciones permanentes GNSS | `Obra derivada de ERGNSS 2025 CC-BY 4.0 ign.es` |
 
 Y su punto 5 añade una obligación que casi nadie cumple: quien genere **un
 conjunto nuevo modificando el original** debe incluir esas expresiones **también
@@ -156,8 +157,8 @@ la estadística eléctrica y los anuncios de Costas.
 
 ## El archivo está completo
 
-**Las 9.046 citas con URL de las 31 capas y del conjunto tienen su documento
-archivado aquí: el 100 %.** Son 200 documentos distintos. No queda un solo aviso
+**Las 9.415 citas con URL de las 32 capas y del conjunto tienen su documento
+archivado aquí: el 100 %.** Son 203 documentos distintos. No queda un solo aviso
 pendiente de §7.7 —la comprobación que avisa cuando una cita no está
 archivada—, y eso se midió, no se supuso.
 
@@ -1062,6 +1063,39 @@ Uruguay no nombran la lengua.
 sea de dominio público: el tipo de fuente dice **quién responde del dato**, no si
 se puede copiar.
 **Archivado** · 23 ficheros · **El resto** · CHANGELOG `datos-v2026.08.16` · §10
+
+## red-geodesica
+
+**De dónde** · **IGN**, tabla de coordenadas de las estaciones de la Red
+Geodésica Nacional de Estaciones de Referencia GNSS (ERGNSS): 123 estaciones con
+sus coordenadas geocéntricas, geográficas y UTM y su altitud elipsoidal. **La
+fuente ES la geometría** — no hay que geocodificar nada ni pedirle un topónimo
+al Nomenclátor, que es lo raro en este atlas.
+**Licencia y qué obliga** · **CC-BY 4.0** del IGN (Orden FOM/2807/2015), con
+fórmula literal. La tabla de productos del SCNE —a la que la propia licencia
+remite— da a esta red el identificador **`ERGNSS`**, la fecha **2025** y la
+atribución `ign.es`, así que la obra derivada obliga a **«Obra derivada de
+ERGNSS 2025 CC-BY 4.0 ign.es»**. Es el **cuarto producto** del IGN con fórmula
+propia en este atlas, junto a BTN, NGBE y BDLJE.
+**Qué hay que saber** · **Son DOS marcos de referencia, no uno**: el IGN sirve
+la Península, Baleares, Ceuta y Melilla en **ETRS89** (107 estaciones) y las
+Canarias en **REGCAN95** (16), en dos tablas separadas. Ninguno de los dos ES
+WGS84, que es lo que exige RFC 7946: la diferencia es de decímetros y no cambia
+un píxel del mapa, pero **cada registro declara el suyo** en
+`marco_referencia` en vez de callarlo. La latitud y la longitud vienen
+**partidas en celdas** —grados, minutos y segundos cada uno en su `<td>`, y el
+hemisferio en otro—: una fila son 16 celdas, no 6.
+**Huecos** · Los 123 registros declaran el mismo (f4) y por eso van `parcial`:
+**la tabla no publica estado**. No hay columna de vigencia ni fechas de alta o
+baja, así que la posición está confirmada y que la estación siga en servicio hoy
+no lo está. Marcarlos `confirmado` habría sido exactamente lo que R4 prohíbe.
+**Lo que NO trae esta capa** · La **Red Sísmica Nacional** iba en la misma
+propuesta y se quedó fuera con motivo: su listado publica **solo código y
+nombre**, las coordenadas viven tras un POST por estación, y el IGN **no sirve
+FDSN** (`/fdsnws/station/1/query` devuelve 404). Es otra capa y otro trabajo.
+**Archivado** · 1 fichero propio (la tabla de coordenadas); la licencia y la
+tabla de productos del SCNE se reutilizan de la `.26`, no se duplican.
+**El resto** · CHANGELOG `datos-v2026.08.62` · §10
 
 ---
 
