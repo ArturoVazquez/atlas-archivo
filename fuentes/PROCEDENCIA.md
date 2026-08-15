@@ -66,7 +66,7 @@ vez, y las fichas remiten a esta sección.
 
 ### Instituto Geográfico Nacional (IGN) y CNIG
 
-**Presente en 13 de las 22 capas.** Licencia **CC-BY 4.0**, establecida por la
+**Presente en 22 de las 31 capas.** Licencia **CC-BY 4.0**, establecida por la
 **Orden FOM/2807/2015, de 18 de diciembre** (BOE de 26-12-2015), cuyo artículo 4
 dice que el uso «tendrá carácter libre y gratuito, siempre que se mencione el
 origen y propiedad de los datos».
@@ -98,7 +98,8 @@ acceso.
 > Lo que no se hizo fue leer **cómo** obliga a citar. **Comprobar que una fuente
 > es compatible no es lo mismo que leer cómo obliga a citarla.**
 >
-> Las 13 capas llevan ya su fórmula, y **el visor la muestra**: la atribución
+> Las 13 capas de entonces llevan ya su fórmula —y las que entraron después
+> nacen con ella—, y **el visor la muestra**: la atribución
 > viaja con la fuente de MapLibre, así que aparece mientras la capa está
 > encendida y desaparece al apagarla — que es lo que pide el punto 4, «visible
 > junto con los datos, a pie de mapa». Un crédito fijo en el pie afirmaría que el
@@ -155,10 +156,17 @@ la estadística eléctrica y los anuncios de Costas.
 
 ## El archivo está completo
 
-**Las 8.497 citas con URL de las 22 capas tienen su documento archivado aquí: el
-100 %.** Son 114 documentos. No queda un solo aviso pendiente de §7.7 —la
-comprobación que avisa cuando una cita no está archivada—, y eso se midió, no se
-supuso.
+**Las 9.046 citas con URL de las 31 capas y del conjunto tienen su documento
+archivado aquí: el 100 %.** Son 200 documentos distintos. No queda un solo aviso
+pendiente de §7.7 —la comprobación que avisa cuando una cita no está
+archivada—, y eso se midió, no se supuso.
+
+En el directorio hay algunos más que citas los reclaman, y no son huérfanos: son
+las **pruebas de licencia** que sostienen este mismo fichero —el aviso legal de
+un emisor, los términos de reutilización de un portal— y los **boletines que se
+acumulan** en vez de reemplazarse, cada uno con una cifra que ningún otro
+documento repite. Un documento archivado de más es archivo; uno de menos sería
+una cita rota, y de esos no hay.
 
 ## Lo que se decidió no obtener
 
@@ -1065,7 +1073,8 @@ Para quien tenga que volver a la fuente. El endpoint, el formato y **la trampa**
 ### El IGN y su servicio OGC API-Features
 
 `https://api-features.ign.es/collections/namedplace/items` (topónimos) y
-`.../administrativeunit` (municipios y provincias). Alimenta **9 capas**.
+`.../administrativeunit` (municipios y provincias). Lo citan **17 capas**: es el
+que más geometría de referencia pone en el atlas.
 
 - **Un cero suyo NO prueba ausencia.** Bajo carga devuelve **HTTP 200 con la
   colección vacía**. En un barrido salieron como inexistentes «Albacete» y
