@@ -1,0 +1,25 @@
+# Finales de línea, y por qué importan MÁS en este repositorio que en el taller.
+#
+# Aquí vive el archivo documental: la copia de cada documento citado, guardada
+# el día de citarlo. Este repositorio es lo que Zenodo deposita y lo que alguien
+# se descarga para comprobar una cita — o sea que sus bytes SON la cita.
+#
+# Sin este fichero, `core.autocrlf` reescribe a LF todo lo que un servidor sirvió
+# con CRLF. El disco no lo delata, porque git deshace la conversión al sacar el
+# fichero; lo que queda alterado es el BLOB, que es justo lo que se publica. Así
+# se descubrió que 57 de 223 documentos archivados estaban guardados con hasta
+# 2.586 bytes de menos que el original, mientras el taller —que sí tenía esta
+# regla desde la 1.26— los guardaba intactos.
+
+# El archivo documental ENTERO fuera de la normalización.
+#
+# No basta con marcar como binarios el PDF y el ZIP: el HTML, el XML, el JSON y
+# el CSV son la mitad del archivo, y son precisamente los que un servidor sirve
+# con CRLF. Un documento que se lee igual pero no cuadra byte a byte con el
+# original ha dejado de ser una copia y es solo un parecido.
+fuentes/** -text
+
+# El resto del repositorio son documentos de texto propios, donde manda lo
+# contrario: un diff limpio, con LF en cualquier máquina.
+*.md   text eol=lf
+*.cff  text eol=lf
