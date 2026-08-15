@@ -32,6 +32,70 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.61 — Por dónde entró el gas, mes a mes desde 2004
+
+**El atlas contesta una pregunta que hasta hoy no podía**: por dónde entró el
+gas a España en un mes cualquiera de los últimos veintidós años. Necesitaba las
+tres piezas que se han ido construyendo estos días —las siete plantas de GNL,
+las seis conexiones con el exterior y el conjunto de las entradas sin lugar— y
+con cualquiera de menos, **la suma salía corta y no lo decía**.
+
+### Lo que faltaba, medido
+
+De los 269 meses del libro de CORES, el atlas solo podía reconstruir **140**.
+Los **129 anteriores a octubre de 2014** salían por debajo, hasta un **15,7 %**.
+Faltaba el gas de **Badajoz, Tuy, Irún y Larrau**.
+
+### Se revierte una decisión de la `.41`, y por qué
+
+Aquella release **no publicó** las películas de esas cuatro conexiones porque
+desde 2014 están planas en cero, y cuatro líneas muertas mienten. **El motivo
+era bueno y era ciego a la mitad de la historia**: hasta esa fecha llevaban gas
+de verdad — Larrau, 3.852 GWh en su último parte.
+
+Lo que ha cambiado no es el criterio: es que **ahora existe el conjunto**, así
+que el acantilado tiene dónde explicarse. El gas no desapareció en 2014, se fue
+a los VIP, y los VIP ya se publican. Publicar las cuatro deja de ser dibujar una
+mentira y pasa a ser **la única forma de que el histórico cuadre**.
+
+### Añadido
+
+- **Las cuatro películas que faltaban**, y con ellas `series_completas` en
+  `gas-interconexiones`: **6 registros, 6 películas**. Es la capa que hizo nacer
+  ese campo en la 1.42 justamente por ser el caso contrario.
+- **`/gas/`, `/gas/AAAA-MM/` y `/gas/partes/`** — 271 páginas. Cada parte
+  reparte el gas en sus **cuatro caminos** y dice **qué parte está situada en el
+  mapa y qué parte no**, que es lo único que este atlas puede decir y la
+  estadística no.
+- **`pipeline/seriar-gas.py --capa cuadre`**: el cuadre del sistema entero,
+  permanente. Cada hoja ya se comprobaba contra su total, y eso **no dice nada
+  del sistema** — las plantas podían cuadrar, las conexiones también, y el total
+  nacional seguir corto porque faltaba un camino. Ahora **los 269 meses cuadran**
+  con los totales del propio libro.
+
+### Una asimetría de la fuente, publicada tal cual
+
+Badajoz, Irún y Tuy siguen trayendo un **cero** cada mes hasta hoy; **Larrau
+deja de traer nada** —celda en blanco— después de septiembre de 2014. Por eso su
+`fecha_dato` es de entonces: es la última vez que la estadística dijo algo de
+él, y fingir otra cosa sería inventarse doce años.
+
+### La mordedura, y quién la vio
+
+**Los slugs son únicos dentro de una capa, no entre capas.** El parte enlazaba
+cada entrada a su ficha por el slug, y hay un «sagunto» y un «cartagena» en los
+nodos de la red transeuropea y un «barcelona» en la generación por provincia:
+tres de las seis mayores entradas apuntaban a la ficha equivocada — **la planta
+de Saggas llevaba a un nodo portuario**. Un enlace que se veía perfectamente
+correcto. La clave lleva ahora la capa, y **se vio mirando la página**, no el
+código.
+
+### Huecos
+
+- **Es el gas que ENTRA, no el que se consume.** Lo que sale del sistema no lo
+  publica esta estadística por punto y aquí no se deduce.
+- **La cadencia es mensual y con desfase**: el último parte es de mayo.
+
 ## datos-v2026.08.60 — Un conjunto también tiene historia
 
 **La release de ayer le dio casa a las cifras sin lugar y las dejó sin pasado.**
