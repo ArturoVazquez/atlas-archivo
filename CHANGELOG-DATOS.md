@@ -32,6 +32,50 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.77 — Seis filas vacías con un punto rojo
+
+La `.76` publicó `reservas-estrategicas` con sus **seis claves en blanco**: las
+escribí como `{titulo, texto}` cuando la página espera `{k, v}`. Lo vio Arturo
+en la página. **Contrato 1.50.0.**
+
+### Lo peor no es el fallo, es por qué nadie lo vio
+
+§4.2 comprobaba las claves con R2 y R3 —que estén sostenidas por una fuente
+primaria— pero **no que fueran claves**. Y el bucle que lo hace empieza así:
+
+```python
+if clave.get("verif") != "confirmado":
+    continue
+```
+
+Equivocar las cuatro llaves a la vez quitaba también `verif`, así que la clave
+**se saltaba entera**. Es la misma forma del agujero de la `.75`: el registro
+más roto era el que menos aviso daba.
+
+Ahora **BLOQUEA** si una clave no trae `k` y `v` con texto, y el mensaje dice
+qué llaves trajo en su lugar. Pruebas **60 → 62**.
+
+### Y una lección sobre `fecha_dato`
+
+La portada del conjunto decía «diciembre de 2025» — la fecha del cierre de
+existencias. Pero el documento habla a **dos fechas**, y la cifra que existe
+para corregir —la obligación en vigor, 88 días y no 92— es de **junio de 2026**.
+Estampar diciembre la hacía parecer vieja justo donde importa.
+
+Se pone **la más reciente en la portada**, y las cifras de existencias llevan
+**su fecha en el rótulo** (`Existencias de CORES (31/12/2025)`). Es la única
+manera honesta de fechar campo a campo mientras el esquema del conjunto admita
+una sola fecha para todo el documento.
+
+### Huecos
+
+- El esquema del conjunto sigue admitiendo **una sola `fecha_dato`**. Ponerla
+  por campo sería lo correcto, y es un cambio de esquema que no toca hoy.
+- La comprobación nueva exige que la clave **tenga texto**, no que el texto sea
+  bueno. Eso sigue siendo criterio de quien la escribe.
+
+---
+
 ## datos-v2026.08.76 — Los 92 días que todo el mundo repite no son los de hoy
 
 Nace **`reservas-estrategicas`**, el tercer documento suelto de
