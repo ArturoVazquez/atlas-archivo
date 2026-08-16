@@ -1464,6 +1464,105 @@ Catálogo.
 y la de descargas); las unidades administrativas del IGN ya estaban.
 **El resto** · CHANGELOG `datos-v2026.08.68` · §10
 
+## csur
+
+**De dónde** · **Ministerio de Sanidad**, *Relación de centros, servicios y
+unidades de referencia (CSUR) del Sistema Nacional de Salud designados…*,
+edición de **agosto de 2026**, y su catálogo hermano de *Patologías o
+procedimientos CSUR*. Más el **Catálogo Nacional de Hospitales 2025** del mismo
+ministerio (nombre oficial, municipio, provincia, camas y dependencia funcional)
+y el geocodificador de **CartoCiudad** del IGN para el punto de cada centro. El
+marco es el **Real Decreto 1302/2006** (BOE-A-2006-19626), en vigor y **sin una
+sola modificación en veinte años**.
+**Licencia y qué obliga** · Sanidad, aviso legal del portal: reutilización
+autorizada **para usos comerciales y no comerciales**, con tres condiciones —
+no desnaturalizar el contenido, citar la fuente y **mencionar la fecha de la
+última actualización**—; por eso `fecha_dato` no es cortesía aquí, es la
+condición de la licencia. El RD es texto legal sin dueño (art. 13 TRLPI). IGN:
+ver arriba · atribución exigida `Obra derivada de CartoCiudad 2026 CC-BY 4.0
+ign.es`.
+**La primera capa leída de un PDF, y por qué se cruzó esa raya** · El atlas
+venía esquivando el PDF: cuando una fuente solo se publicaba así, o había otra
+distribución o la capa se paraba. Aquí **no hay otra**: ni CSV, ni Excel, ni
+servicio, ni conjunto en `datos.gob.es` — 25 páginas de tablas y nada más. La
+alternativa era teclear 420 filas a mano, que es exactamente lo que este atlas
+no hace. El lector vive en `pipeline/leer_pdf.py`, no tiene dependencias y sirve
+solo para PDF de texto: **no hay OCR y no lo habrá**. Reconstruye cada tabla
+desde las **reglas** que la dibujan —los rectángulos finos que Word pinta por
+celda—, y no adivinando columnas por sangrías, que es como se cuelan los errores
+que nadie ve.
+**Tres mordeduras del formato, cada una de una pasada** · (1) **Un espacio puede
+no ser un carácter**: Word coloca algunas palabras por posición y no escribe el
+espacio, así que hay que **medir** el avance de cada cadena con los anchos reales
+de la fuente; pegando sin medir sale «Hospital U.La Paz». (2) **Y al revés**:
+cuando ajusta el interletraje parte una palabra en varios fragmentos, y meter un
+espacio entre cada uno da «H ospital» y «Comple x o». (3) **Un tipo de letra
+distinto es texto invisible**: el apóstrofo tipográfico de «Vall d’Hebrón» obligó
+a Word a cambiar de fuente, y esa fuente escribe en códigos propios que solo el
+`/ToUnicode` traduce — sin resolverlo esa celda sale **vacía y sin error**, que
+es el peor fallo posible.
+**Tres números, y solo dos cuadran** · La portada dice «**420 CSUR en 53 centros
+para 94 patologías**». Las patologías salen **exactas**, y se comprueban además
+contra el **otro** documento: el catálogo lista **116**, de las que 94 tienen
+centro, **11 tienen los criterios retirados** y **11 están declaradas «No CSUR»**
+— y el pipeline exige que toda catalogada sin designación diga por qué, o para
+la construcción. Los «53 centros» salen exactos **pero no son 53 hospitales**:
+son **53 unidades designadas**, y trece de ellas son **alianzas de dos centros**,
+así que hospitales distintos hay **46**. Y de las **420 filas rayadas**, dos son
+la **continuación de una fila partida por un salto de página**: designaciones hay
+**418**. Las dos se comprueban una a una —han de continuar una fila completa— y
+por eso la diferencia se afirma en vez de sospecharse.
+**Por qué el nombre del centro va en tabla declarada** · Por tres cosas medidas
+sobre el documento. El **Vall d’Hebrón** aparece escrito de **seis maneras**
+(apóstrofo tipográfico, acento agudo, apóstrofo recto, con y sin espacio, con D
+mayúscula). **«Hospital U. Reina Sofía» (Córdoba) y «Hospital General U. Reina
+Sofía» (Murcia)** son dos hospitales a quinientos kilómetros que una palabra
+separa: cualquier casado por parecido los funde. Y partir las alianzas por
+« y » rompe **«Ramón y Cajal»** y **«y Politécnico La Fe»**. Son **66 grafías →
+53 unidades → 46 centros**, declaradas una a una en `pipeline/tablas_csur.py`.
+**La coordenada NO sale del domicilio, y hay un caso que lo prueba** · El primer
+intento fue geocodificar la dirección del Catálogo Nacional de Hospitales. Ese
+registro le da al **Ramón y Cajal** la calle de Ayala 38, en el centro de Madrid,
+cuando el hospital está en la carretera de Colmenar Viejo, **a 3,7 km**. El punto
+sale del **topónimo del propio centro** en CartoCiudad, cuya capa de centros
+sanitarios (identificadores `SEIG_C_*`) los nombra igual que el CNH. El
+identificador va **fijado y comprobado uno a uno**, porque buscar por nombre
+devuelve helipuertos, aparcamientos, bancos de sangre, sedes secundarias y, en
+dos casos, **otro hospital distinto**. Precisión `paraje`, que es lo que §6.6
+concede a un topónimo de nomenclátor oficial: sitúa el centro, no dibuja su
+recinto.
+**El hallazgo** · Trece territorios tienen CSUR y **seis no tienen ninguno**:
+Aragón, Canarias, Extremadura, La Rioja, Ceuta y Melilla. Dentro de los trece,
+**siete hospitales reúnen más de la mitad** de las participaciones. Concentrar es
+el objetivo declarado del programa —el RD 1302/2006 existe para eso—, y a la vez
+la Ley 16/2003 promete el acceso «en condiciones de igualdad efectiva y con
+independencia del lugar del territorio nacional». Las dos cosas son ciertas a la
+vez, y solo se ven juntas en un mapa.
+**Ojo con R4, cuarta vez** · No hay fuente `hueco` por ficha, a conciencia. Lo
+que el registro no publica —**cuántos pacientes atiende cada CSUR, con qué
+medios y con qué resultados**— no es un campo vacío de estas 46 fichas: es otra
+cosa, que no se publica en ningún sitio. Un hueco por registro las habría
+degradado a `parcial` por no traer un dato que ninguna de ellas afirma. El
+límite es **de la capa** y vive aquí.
+**Huecos declarados** · La capa dice **dónde** está designado cada centro y
+**para qué**, y nada sobre **actividad ni resultados**: el ministerio no publica
+casos atendidos por CSUR. Tampoco publica **por qué** un centro fue designado y
+otro no; los informes del Comité de Designación no son públicos. Las **once
+patologías catalogadas y declaradas «No CSUR»** no traen fecha de designación
+prevista. Y el **SEM** —el único CSUR que no es un hospital— sale **sin camas ni
+dependencia funcional**, porque el Catálogo Nacional de Hospitales solo cataloga
+hospitales.
+**Dos rarezas de la fuente, dichas y no corregidas** · La lista sigue llamando
+**«Complejo Hospitalario de Toledo»** a un complejo que ya no existe: la unidad
+está en el Hospital Universitario de Toledo, abierto en 2021. Y el Catálogo
+Nacional de Hospitales escribe **«Otras Entidades u o rganismos públicos»**, con
+la palabra partida; `dependencia` lo copia literal, que es lo que permite volver
+a la fila y encontrarla.
+**Archivado** · 6 ficheros (los dos PDF de Sanidad, el aviso legal del portal,
+el RD consolidado del BOE, el Excel del Catálogo Nacional de Hospitales y las 46
+respuestas de CartoCiudad).
+**El resto** · CHANGELOG `datos-v2026.08.69` · §10
+
 ---
 
 # Cuaderno de obtención
