@@ -1563,6 +1563,85 @@ el RD consolidado del BOE, el Excel del Catálogo Nacional de Hospitales y las 4
 respuestas de CartoCiudad).
 **El resto** · CHANGELOG `datos-v2026.08.69` · §10
 
+## zonas-defensa
+
+**De dónde** · **Boletín Oficial del Estado**, acto a acto: los que señalan
+zonas de seguridad de instalaciones militares (órdenes ministeriales) y los que
+declaran zonas de interés para la Defensa Nacional (reales decretos). El marco
+lo ponen la **Ley 8/1975, de 12 de marzo** (BOE-A-1975-5292) y su **Reglamento,
+RD 689/1978** (BOE-A-1978-9612), los dos consolidados y archivados.
+**Licencia y qué obliga** · Textos legales **sin dueño**: art. 13 del TRLPI
+excluye de la propiedad intelectual las disposiciones legales y los actos de los
+organismos públicos. Se archivan enteros y se republican sin permiso, como en
+`idioma` y en `aeropuertos`.
+**No existe el fichero oficial, y la vía se agotó puerta por puerta** · El
+ministerio anuncia una capa —«**Zonas de uso prioritario para la Defensa
+Nacional**», cartografiada por el CEDEX con datos del Instituto Hidrográfico de
+la Marina y del Ministerio de Defensa— y no hay manera de bajarla: (1) su **WMS**
+responde con una **excepción .NET** (`System.NullReferenceException`), el **mismo
+servidor y el mismo fallo** que ya dejó fuera al PRTR y al inventario de montes
+—**tercera vez**—; (2) el **GeoServer** que hay detrás (`gis.miteco.gob.es`) no
+contesta desde fuera; (3) el **ZIP** que anuncia `datos.gob.es` da **404**; y (4)
+la **API OGC** del propio ministerio publica treinta colecciones y ninguna es
+esta. La excepción queda archivada como prueba. Y aunque funcionara, **no sería
+esta capa**: nace del plan de ordenación del espacio **marítimo** y mezcla zonas
+de ejercicios en la mar con las ZIDN. Fuera del ministerio tampoco hay nada:
+ni conjunto en `datos.gob.es`, ni capa en las IDE autonómicas más allá de un
+«zonas militares» andaluz de instalaciones, ni recopilación de terceros.
+**El barrido, y de cuánto es esta parte** · Búsqueda por frase exacta en el
+título, secciones I y III: «zona de seguridad» da **803** actos, **768** del ramo
+de Defensa —**598 señalamientos**, 71 supresiones, 53 modificaciones y 44
+correcciones—; «interés para la Defensa Nacional» da **76**, con **58
+declaraciones**. De esos 826 actos, **97 publican coordenadas legibles por
+máquina** y **92 verifican**. Los que no, **casi todos son de los años ochenta**
+—417 de los 768 lo son— y el BOE **solo los conserva escaneados**: su XML viene
+con el cuerpo vacío. No es que no tengan perímetro; es que no hay texto que
+leer.
+**Cómo se comprueba cada polígono, que es lo que decide qué se publica** ·
+(1) **El huso no se cree, se deduce.** Casi ningún acto anterior a 2018 dice en
+qué huso UTM están sus coordenadas: se prueban los **cinco de España** (27 a 31)
+y se exige que **exactamente uno** deje el polígono dentro de la provincia que el
+acto nombra. Si ninguno o varios encajan, ese perímetro **no se publica** —14
+cayeron ahí—. (2) **Y cuando el acto lo dice, tampoco se cree.** Dos actos
+declaran un huso que llevaría su polígono a cientos de kilómetros: la **Orden
+371/2000** (Torregorda, Cádiz) dice «huso 30» y es el **29**, y el **RD 237/2018**
+(Sant Climent Sescebes, Girona) dice «huso 30» y es el **31**. (3) Las
+**correcciones de errores se aplican**, no se publican al lado: la Orden
+DEF/182/2024 publica una X de **siete cifras** donde una coordenada UTM tiene
+seis, y su corrección la arregla; sin aplicarla salían tres «Conde de Humanes»,
+uno de ellos imposible.
+**La vigencia, que era el trabajo duro** · **El BOE no analiza estas órdenes**:
+su bloque de referencias posteriores está **vacío** incluso cuando el propio
+texto dice «queda sin efecto la Orden X». Así que el grafo se levanta de dos
+maneras y las dos hacen falta: leyendo las **derogaciones de la prosa** de cada
+acto, y resolviendo por **identidad** —una instalación no puede tener dos veces
+la misma figura viva, así que cuando dos actos la señalan, manda el nuevo—. Esa
+segunda regla existe porque los títulos dicen «se suprime la zona de seguridad
+vigente y se señala nueva zona» **sin citar el número** del acto anterior.
+**Qué se registra y qué no** · El **régimen**, no la guarnición: qué acto creó
+cada perímetro, qué figura es, desde cuándo y cuánto ocupa. **Ni una palabra** de
+misión, dotación, medios o vulnerabilidades — la misma doctrina con la que
+`bases-eeuu` registra el convenio y no lo que hay dentro. Todo lo que la capa
+publica lo publicó antes el Estado en su boletín oficial; lo que hace el atlas es
+**juntarlo y situarlo**.
+**Huecos declarados** · **La capa no dice cuántas zonas hay en España**, y no
+puede: publica las que verifican de los actos con texto legible, y son una parte.
+El grueso de lo que falta son los **actos de los ochenta**, solo escaneados.
+Tampoco entra la tercera figura de la Ley 8/1975, la **zona de acceso restringido
+a la propiedad por parte de extranjeros**, que se delimita por otro camino. Y la
+transformación **ED50 → ETRS89** de los actos anteriores a 2008 se hace con
+**tres parámetros**, no con la rejilla NTv2 del IGN: deja un resto de orden
+métrico, invisible en una franja de cientos de metros pero real, y va dicho en
+cada ficha que lo usa.
+**Ojo con R4, quinta vez** · No hay fuente `hueco` en las fichas, a conciencia.
+Que el Estado no publique un fichero de estas zonas **no es una falta de
+evidencia de cada registro**: la evidencia de cada uno es su acto, y está entera.
+El límite es **de la capa** y vive aquí.
+**Archivado** · 4 ficheros (los 97 actos con su texto íntegro en un solo
+documento, la Ley y el Reglamento consolidados, y la excepción .NET del WMS del
+ministerio como prueba de que esa vía no existe).
+**El resto** · CHANGELOG `datos-v2026.08.71` · §10
+
 ---
 
 # Cuaderno de obtención

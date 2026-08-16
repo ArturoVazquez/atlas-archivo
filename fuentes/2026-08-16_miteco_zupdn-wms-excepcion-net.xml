@@ -1,0 +1,3 @@
+<ServiceExceptionReport version="1.1.1"><ServiceException code="InvalidFormat"><![CDATA[ Referencia a objeto no establecida como instancia de un objeto.     System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en _Default.ConstruirServiceArcGISBaseUrl() en c:\apps\Jenkins\workspace\003-mapama-wms-10.8-2.0\wms\wms.aspx.cs:línea 606
+   en _Default.Page_Load(Object sender, EventArgs e) en c:\apps\Jenkins\workspace\003-mapama-wms-10.8-2.0\wms\wms.aspx.cs:línea 848 ]]></ServiceException></ServiceExceptionReport>
