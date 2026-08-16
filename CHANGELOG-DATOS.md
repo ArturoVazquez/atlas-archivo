@@ -32,6 +32,60 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.80 — El Mapa dice catorce nodos, y la red lista diecisiete
+
+Tercero y último de los enriquecimientos de `icts`, y el dato es que **dos
+cuentas oficiales no cuadran**. **Contrato 1.53.0.**
+
+Iba a desglosar las máquinas de la Red Española de Supercomputación. Al contarlas
+apareció algo mejor.
+
+| | dice | de cuándo |
+|---|---|---|
+| Anexo I del acuerdo del CPCTI | **14 nodos** | octubre de 2025 |
+| la propia RES, en su prosa | **14 nodos** | agosto de 2026 |
+| la propia RES, en su listado | **17 fichas de nodo** | agosto de 2026 |
+
+Las diecisiete son las catorce del acuerdo, una a una, más **Magerit (UPM)**,
+**Correfoc (UPF)** y **TalaIA (UIB)**. La red ha crecido y el número redondo se
+ha quedado atrás **en los dos sitios a la vez**.
+
+El listado completo, por máquina y centro: MareNostrum 5 (BSC), LaPalma (IAC),
+Altamira (UC), Picasso (UMA), Tirant (UV), Agustina (BIFI), FinisterraeIII
+(CESGA), Pirineus III (CSUC), Caléndula (SCAYLE), LUSITANIA III (COMPUTAEX),
+Cibeles (UAM), Urederra (Nasertic), Xula y Turgalium (CIEMAT), Port d'Informació
+Científica (PIC/UAB), Magerit (UPM), Correfoc (UPF) y TalaIA (UIB).
+
+**Ojo al contar máquinas:** una de esas fichas nombra **dos** —Xula y Turgalium,
+las dos en el CIEMAT—, así que los superordenadores son más que los nodos. Por
+eso el atlas publica los dos recuentos de NODOS y no un recuento de máquinas que
+la fuente no da cerrado.
+
+### Añadido
+
+- `nodos_del_mapa` (14, **confirmado** sobre el acuerdo, que es primaria) y
+  `nodos_publicados` (17, **`parcial`** porque lo sostiene la web de la propia
+  red, que es corporativa y R3 no deja que confirme nada).
+- La clave que los nombra uno a uno.
+
+**No se toca la geometría:** la ICTS es distribuida y su punto sigue en `pais`.
+
+### Corregido
+
+Los cuatro campos `proteccion_*` de la `.79` se declararon en §10 y **no
+llegaron al esquema**: una tanda abortó a medias y no repetí esa mitad. El
+esquema de `icts` no lleva `additionalProperties: false`, así que nada chistó.
+Entran ahora, con los dos nuevos.
+
+### Huecos
+
+- **El recuento de máquinas queda sin publicar.** La fuente lista nodos, no
+  máquinas, y una ficha nombra dos: contar 18 sería mío, no suyo.
+- Los 17 son **lo que la red publica hoy**, no un acto: por eso van `parcial`.
+  El Mapa se actualiza cada cuatro años y la red, cuando quiere.
+
+---
+
 ## datos-v2026.08.79 — Una ley para el cielo, y un telescopio que se queda en la isla que no es
 
 Segundo de los tres enriquecimientos de `icts`. Su mitad más útil es un hueco
