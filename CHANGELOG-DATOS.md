@@ -32,6 +32,83 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.75 — La capa más desprotegida era la que menos aviso daba
+
+El atlas se había apuntado este agujero al construir `aeropuertos` y lo dejó
+esperando su propia pasada. Es esta. **Contrato 1.48.0.**
+
+Una capa que declara `categoria` **sin entrada en `vocabularios.json`**
+desactivaba en silencio sus dos controles: §7.6 se saltaba el enum porque el
+conjunto de valores admitidos salía vacío, y §9 no tenía color contra el que
+cruzar. Justo al revés de lo que un validador debe hacer.
+
+**Tres capas llevaban así desde el 2026-08-16**, con **819 registros y nueve
+valores** sin que nada los mirara — y las tres pintándose con el gris de reserva
+`#6E6B60`, indistinguibles entre sí sobre el mapa:
+
+| capa | registros | valores |
+|---|---|---|
+| `red-carreteras` | 393 | siete clases de carretera |
+| `red-sismica` | 303 | `estacion_sismica` |
+| `red-geodesica` | 123 | `gnss_permanente` |
+
+### Añadido
+
+- `validar.py` · §7.6 **BLOQUEA** la capa que usa `categoria` y no tiene entrada
+  en el vocabulario. Bloquea y no avisa —que es lo que decía el apunte— por
+  simetría: un valor suelto fuera del vocabulario ya bloqueaba, así que una capa
+  entera fuera no puede costar menos.
+- `validar.py` · §7.6 comprueba la **forma del valor**: `[a-z0-9_]`, como el
+  color ya tenía la suya desde la 1.33. Un valor de enum no es prosa — viaja a
+  una clave de estilo del mapa y a una URL de filtro.
+- Las **tres entradas del vocabulario**, con sus nueve valores, etiquetas,
+  definiciones y colores. Pruebas **53 → 60**.
+
+### Corregido
+
+`autovía` era el **único de los 99 valores del atlas** fuera de `[a-z0-9_]`, y
+no lo escribió nadie: lo fabricaba un `.lower().replace(" ", "_")` sobre el
+rótulo de la fuente. Arreglado en el extractor (`sin_tildes`) y en los 113
+registros — **sin tocar la prosa**, que conserva su tilde donde debe. Sobrevivió
+porque su capa era justamente una de las tres que nada miraba.
+
+### La decisión de mapa que estaba sin tomar
+
+Los siete valores de `red-carreteras` van en **rampa por capacidad** —de la
+autopista de peaje a la carretera convencional— y no en orden alfabético, con
+`clase_mixta` **fuera de la rampa**, en un gris de la misma familia: no es un
+escalón, es la constancia de que el catálogo reparte esa carretera en tramos de
+clases distintas (74 de las 393).
+
+Es la rampa más larga del atlas —siete valores donde ninguna otra capa pasa de
+cuatro—, así que antes de elegir se midió la paleta entera. Dos cosas salieron
+de ahí:
+
+- **El atlas reutiliza colores entre capas a propósito**: ocho parejas idénticas
+  y una mediana de ΔE 5,8 al vecino más cercano de otra capa. Lo que hay que
+  cuidar es el escalón DENTRO de una capa, no la unicidad global — que era el
+  prejuicio con el que empecé.
+- **Dentro de una capa, lo más justo que conviven hoy son ΔE 11,5.** Seis
+  escalones ordenados no caben ahí: los contiguos quedan en **10-13**. Se acepta
+  porque en una rampa secuencial lo que se confunde son las clases **vecinas**,
+  que es donde el error cuesta menos — a dos escalones ya hay ΔE 22, y la
+  distinción que un mapa tiene que decir de un vistazo, gran capacidad contra
+  convencional, queda a **ΔE 54**.
+
+`red-sismica` se pinta en violeta y no en verde por una razón de mapa: en verde
+quedaba a ΔE 6 de los montes catalogados, y son puntos que se posan sobre esos
+polígonos.
+
+### Huecos
+
+- La comprobación nueva exige que la entrada **exista**, no que sus etiquetas y
+  definiciones sean buenas. Eso sigue siendo criterio de quien las escribe.
+- Los colores se eligen por distancia perceptual (ΔE76 sobre CIELab), que es una
+  aproximación: no modela ni el grosor de la línea ni la base del mapa, y una
+  línea fina se distingue peor que un polígono del mismo color.
+
+---
+
 ## datos-v2026.08.74 — Lo que separa un pellizco de una estrella es el signo, no los metros
 
 La `.73` puso a §7.4 a mirar si un anillo se cruza. La comprobación era buena;
