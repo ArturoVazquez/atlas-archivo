@@ -1388,6 +1388,84 @@ administrativas); los nodos de aeródromo del IGN y la tabla del SCNE ya estaban
 
 ---
 
+## montes-catalogo
+
+**De dónde** · **Ministerio para la Transición Ecológica y el Reto Demográfico**,
+*Inventario Español de Patrimonios Forestales · Catálogo de Montes de Utilidad
+Pública*, distribución **KMZ** (63 MB): 73.452 recintos con su monte, su tipo de
+afección, su superficie, su provincia y los datos de la resolución que los
+declaró y de su deslinde. Más la página del ministerio que publica la cifra
+oficial, y las unidades administrativas del **IGN** para la geometría.
+**Licencia y qué obliga** · MITECO, régimen de reutilización de la Ley 37/2007 y
+el RD 1495/2011: citar la fuente y no desnaturalizar. IGN: ver arriba ·
+atribución exigida `Obra derivada de BDLJE Continua CC-BY 4.0 ign.es`.
+**Por qué esta capa no son los montes, sino el estado de su catálogo** · Está
+medido, no supuesto. El subconjunto de utilidad pública son **3.265.353
+vértices**; la curva de simplificación da 3,09 M a 11 m, 1,21 M a 56 m y
+**760.911 a 111 m** — cuando la capa mayor del atlas, `red-carreteras`, tiene
+**114.299**. Y 111 m no es admisible: la fuente trae **884 recintos de 0,01 ha**,
+de cien metros cuadrados, que a esa tolerancia desaparecen. Publicado saldría
+entre **63 y 113 MB**, más que las 37 capas del atlas juntas (58,8 MB).
+**Y no hay distribución más ligera, agotado puerta por puerta** · El bucket del
+IEPNB se listó **entero** (140 objetos, sin truncar): para montes hay **cuatro**
+ficheros y **ninguno generalizado** —el Mapa Forestal vecino sí publica MFE200 y
+MFE400—. La página del MITECO sirve tres, **nacionales y sin partir por
+provincia** (KMZ 63 MB, shapefile 229 MB, GeoJSON 329 MB, los tres del
+25-06-2025). En `datos.gob.es` el conjunto nacional tiene **una sola
+distribución**, el XML del metadato. Y el **WMS y el WFS** del ministerio
+responden con una **excepción .NET** (`System.NullReferenceException`), el mismo
+fallo y el mismo servidor que dejó fuera al PRTR.
+**El cuadre, que es lo que sostiene el filtro** · Sumando solo los recintos
+marcados «Montes catalogados de Utilidad Pública» salen **11.178 montes y
+7.231.178 ha**, contra los «**11.359** montes» y «más de **7,18 millones** de
+hectáreas» que el ministerio publica en su página de política forestal **sin
+decir a qué fecha**. Concuerdan al **1,6 %** y al **0,7 %**. Eso valida el
+filtro y, sobre todo, **permite fechar una cifra oficial que no lleva fecha**:
+la del atlas se mide sobre un fichero cuya fecha consta.
+**El hallazgo, y el límite de la capa** · El campo que dice **qué acto declaró
+cada monte** de utilidad pública está relleno en **La Rioja (100 %)** y en el
+**País Vasco (97,3 %)**, y **vacío en las otras quince comunidades**. No es un
+campo que suela faltar: es **binario**. El Catálogo lo llevan las comunidades
+autónomas monte a monte (Ley 43/2003, art. 16) y la recopilación nacional **no
+arrastra los actos**, así que **esta capa no puede decir qué resolución declaró
+el 93 % del dominio público forestal del Estado** — y eso es precisamente lo que
+publica, medido, en `pct_con_acto`. El deslinde va por el mismo camino: consta en
+el **11,7 %**, y de forma muy desigual (Cuenca 74 %, Valencia 57 %, y 0 % en
+León, Huesca, Navarra, Burgos, Asturias, Lleida y Soria).
+**Ojo con R4, que se cobró una pasada** · No hay fuente `hueco` por ficha, a
+conciencia. Que el campo del acto esté vacío **no es una falta de evidencia del
+registro**: es un hecho que la fuente confirma, contado recinto a recinto. Un
+hueco por ficha habría degradado 46 provincias a `parcial` por afirmar algo que
+sí está comprobado. El límite es **de la capa** y vive aquí. Es la **tercera
+vez** que esta distinción —hueco de capa contra hueco de registro— se cobra un
+intento.
+**La geometría sale de la capa hermana, a propósito** · `generacion-electrica-
+provincia` ya publica las 52 provincias generalizadas por el atlas desde el
+servicio del IGN. **Dos corocromáticas del mismo territorio tienen que encajar
+vértice a vértice**, y volver a la fuente con otra tolerancia lo rompería. La
+derivación **se comprueba**: el recuadro envolvente de cada provincia se contrasta
+con el que archiva `2026-08-06_ign_unidades-administrativas-provincias.json`,
+que existe justo para esto y lo dice con estas palabras: «si no cae, la
+generalización movió territorio y eso es un fallo, no un detalle».
+**Tres rarezas de la fuente, dichas y no corregidas** · Escribe **«Caceres» sin
+tilde**; mezcla formas —«Bizkaia» y «Gipuzkoa» en euskera, pero «Alicante»,
+«Castellón» y «Valencia» en castellano, donde el IGN usa las bilingües—; y en
+Canarias y Baleares **pone islas donde debería poner provincias** (Mallorca,
+Ibiza y Formentera, Gran Canaria, Fuerteventura, Tenerife, La Palma, La Gomera y
+El Hierro). Son **54 valores para 50 provincias con montes**, y la equivalencia
+va declarada una a una en el pipeline.
+**Huecos declarados** · **Ceuta y Melilla salen con cero**, y se dice en su ficha
+que el cero de una recopilación no prueba una ausencia. La capa **no publica los
+recintos**: quien necesite el contorno de un monte concreto tiene que ir a la
+fuente. Y **la mitad del inventario queda fuera** por no ser de utilidad pública
+—29.126 recintos «Sin datos», 6.793 montes privados—: esta capa habla solo del
+Catálogo.
+**Archivado** · 3 ficheros (el KMZ del inventario, la página con la cifra oficial
+y la de descargas); las unidades administrativas del IGN ya estaban.
+**El resto** · CHANGELOG `datos-v2026.08.68` · §10
+
+---
+
 # Cuaderno de obtención
 
 Para quien tenga que volver a la fuente. El endpoint, el formato y **la trampa**

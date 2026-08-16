@@ -32,6 +32,109 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.68 — El Estado no sabe con qué acto declaró su bosque
+
+Entra **`montes-catalogo`**: el **Catálogo de Montes de Utilidad Pública** por
+provincia — **11.178 montes y 7.231.178 hectáreas** de dominio público forestal.
+Y, en el mismo mapa, **en cuántos consta el acto que los declaró**.
+
+Esta capa **no son los montes**. Iba a serlo, y las cuentas lo impidieron; lo
+que salió al buscar la salida vale más que los polígonos.
+
+### Añadido
+
+- `montes-catalogo` — **52 provincias**, con sus montes, sus recintos, su
+  superficie y el porcentaje que trae la resolución que lo declaró y el
+  deslinde. Pesa **5,9 MB**.
+- **Un conjunto** (§4.2) con el total nacional y el cuadre contra la cifra
+  oficial.
+
+### Por qué no son los polígonos
+
+Medido: el subconjunto de utilidad pública son **3.265.353 vértices**, y ni
+simplificando a **111 m** baja de **760.911** — cuando la capa mayor del atlas
+tiene **114.299**. A esa tolerancia desaparecen los **884 recintos de 0,01 ha**
+que la propia fuente trae. Publicado saldría entre **63 y 113 MB**: más que las
+37 capas del atlas juntas.
+
+Y no hay versión ligera, agotado puerta por puerta: el bucket del IEPNB listado
+**entero** (140 objetos) tiene cuatro ficheros de montes y **ninguno
+generalizado**; la página del MITECO sirve tres, nacionales y sin partir por
+provincia; `datos.gob.es` tiene **una sola distribución**, el XML del metadato; y
+el **WMS y el WFS revientan con una excepción .NET**, el mismo servidor que dejó
+fuera al PRTR.
+
+### El cuadre, que es lo que sostiene el filtro
+
+| | medido por el atlas | publicado por el ministerio |
+|---|---|---|
+| montes | **11.178** | 11.359 |
+| hectáreas | **7.231.178** | «más de 7,18 millones» |
+
+Concuerdan al **1,6 %** y al **0,7 %**. Eso valida el filtro y hace algo más
+útil: **permite fechar una cifra oficial que se publica sin fecha**. La del
+atlas se mide sobre un fichero cuya fecha consta, el **25-06-2025**.
+
+### El hallazgo
+
+El campo que dice **qué resolución declaró cada monte** de utilidad pública:
+
+| comunidad | recintos | con su acto |
+|---|---|---|
+| **La Rioja** | 927 | **100 %** |
+| **País Vasco** | 1.876 | **97,3 %** |
+| Castilla y León | 8.512 | 0,0 % |
+| Aragón | 8.243 | 0,0 % |
+| …las otras trece | | **0,0 %** |
+
+No es un campo que suela faltar: es **binario**. Dos administraciones lo
+rellenaron y quince no. El Catálogo nace del **Real Decreto de 22 de enero de
+1862**, sigue vivo, y **el Estado no puede decir con qué acto declaró el 93 % de
+su propio dominio público forestal**. El deslinde va por el mismo camino: consta
+en el **11,7 %**, con Cuenca al 74 % y León, Huesca, Navarra, Burgos, Asturias,
+Lleida y Soria a cero.
+
+Por eso el mapa se pinta **por el estado del expediente** y no por la superficie:
+la superficie está en el campo y se lee en la ficha, pero lo que un mapa puede
+decir de un vistazo, y nadie más dice, es dónde consta el papel y dónde no.
+
+### R4, por tercera vez
+
+No hay fuente `hueco` por ficha, a conciencia. Que el campo del acto esté vacío
+**no es una falta de evidencia del registro**: es un hecho que la fuente
+confirma, contado recinto a recinto, y es justo lo que la capa publica. Un hueco
+por ficha habría degradado 46 provincias a `parcial` por afirmar algo que sí está
+comprobado. **El límite es de la capa**, y vive en `PROCEDENCIA.md`.
+
+### La geometría se comprueba contra su propio archivo
+
+Sale de `generacion-electrica-provincia` a propósito —dos corocromáticas del
+mismo territorio tienen que **encajar vértice a vértice**—, y la derivación se
+verifica: el recuadro de cada provincia se contrasta con el que archiva el
+fichero del IGN, que existe justo para eso y lo dice así: «si no cae, la
+generalización movió territorio y eso es un fallo, no un detalle».
+
+### Huecos
+
+- **Ceuta y Melilla salen con cero**, y su ficha dice que el cero de una
+  recopilación no prueba una ausencia.
+- **No se publican los recintos**: quien necesite el contorno de un monte
+  concreto tiene que ir a la fuente.
+- **La mitad del inventario queda fuera** por no ser de utilidad pública —29.126
+  recintos «Sin datos» y 6.793 montes privados—: esta capa habla solo del
+  Catálogo.
+- El portal del IEPNB anuncia «actualizado el 30-04-2026» y los tres ficheros
+  del servidor son del **25-06-2025**. Manda el fichero, que es lo que se lee.
+
+### Tres rarezas de la fuente, dichas y no corregidas
+
+Escribe **«Caceres» sin tilde**; mezcla «Bizkaia» y «Gipuzkoa» en euskera con
+«Alicante», «Castellón» y «Valencia» en castellano; y en Canarias y Baleares
+**pone islas donde debería poner provincias**. Son 54 valores para 50 provincias
+con montes, y la equivalencia va declarada una a una.
+
+---
+
 ## datos-v2026.08.67 — Dónde se cruza la frontera exterior
 
 Entra **`frontera-schengen`**: los **81 pasos** por los que se cruza legalmente
