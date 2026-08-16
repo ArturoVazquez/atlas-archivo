@@ -32,6 +32,67 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.65 — Las carreteras del Estado, por fin
+
+Entra **`red-carreteras`**: las **393 carreteras de titularidad estatal**,
+**26.564 km** de los 165.756 que tiene España, por donde va el **53 % del tráfico
+total y el 65,7 % del pesado**. Era **el hueco conceptual mayor del atlas** — con
+puertos, ferrocarril y nodos transeuropeos publicados, la carretera estaba
+entera vacía, y no se había mencionado ni una vez en toda la historia del
+proyecto.
+
+### Añadido
+
+- `red-carreteras` — **393 carreteras** agrupadas de los **7.072 tramos** del
+  catálogo, con su clase, sus provincias y su longitud. Fuente: archivos de
+  geometrías del Catálogo de la RCE 2025 del ministerio.
+
+### La fuente que parecía y no era
+
+Las tres investigaciones que propusieron esta capa apuntaron al producto *Redes
+de Transporte* del CNIG. **Ése no vale, y se midió**: su WFS INSPIRE declara
+**943.679** entidades `Road` y **9.879.089** `RoadLink` — el viario entero del
+país, calles urbanas incluidas. Lo que hace red a esta red es la **titularidad
+estatal**, y quien la fija es el catálogo del ministerio.
+
+### La geometría se simplifica, y se dice
+
+1.420.848 vértices no caben en una página web. Douglas-Peucker a **10 m** deja el
+8 % — y **la tolerancia se afina sola** carretera a carretera hasta bajar del 5 %
+de desvío, porque a 10 m fijos **noventa carreteras cortas** se pasaban: quitar
+10 m de un ramal de 400 m es proporcionalmente brutal. De ahí `geo_precision:
+generalizada` y su `geo_fuente` diciendo qué se simplificó, como exige R9.
+
+También hubo que reproyectar: el catálogo viene en **ETRS89/UTM 30N**, no en
+latitud y longitud. La conversión se hace en el pipeline **sin añadir
+dependencias** —tiene una sola a propósito— y está comprobada contra puntos
+conocidos: el meridiano central del huso sale a `-3,00000` exacto.
+
+### Por qué la longitud no se llama `longitud_km`
+
+Porque ese nombre lo mira **R10**, que compara lo declarado con lo dibujado, y
+aquí serían **dos medidas distintas bajo el mismo nombre**: la del catálogo es la
+**administrativa, por puntos kilométricos**; la del trazado es la del eje.
+
+No es un rodeo a la regla, y se comprobó: **lo que R10 persigue no ocurre**. En
+el conjunto de la red las dos concuerdan al **-0,34 %** (26.563,5 km declarados
+contra 26.473,3 dibujados) y la mediana por clase no pasa del 1,5 %. Donde se
+separan es en **ramales de menos de tres kilómetros**, y esa diferencia **la trae
+la fuente**: se mantiene aunque no se simplifique nada. Cada registro lo declara
+en una clave.
+
+### Cuadre publicado
+
+La suma de las 393 da **26.563,5 km** contra los **26.564** que publica el
+ministerio. Y el catálogo cuadra consigo mismo: su geometría sin tocar mide
+26.542,8 km, un 0,08 % de su propio campo de longitud.
+
+### Huecos
+
+- **Canarias no está**, y no es un fallo: su red de carreteras no es de
+  titularidad estatal. La capa cubre península, Ceuta y Melilla, que es
+  exactamente lo que el catálogo del Estado contiene.
+
 ## datos-v2026.08.64 — Dónde se escuchan los terremotos, y desde cuándo
 
 Entra **`red-sismica`**: las **303 estaciones** de la Red Sísmica Nacional, con

@@ -66,7 +66,7 @@ vez, y las fichas remiten a esta sección.
 
 ### Instituto Geográfico Nacional (IGN) y CNIG
 
-**Presente en 23 de las 33 capas.** Licencia **CC-BY 4.0**, establecida por la
+**Presente en 23 de las 34 capas.** Licencia **CC-BY 4.0**, establecida por la
 **Orden FOM/2807/2015, de 18 de diciembre** (BOE de 26-12-2015), cuyo artículo 4
 dice que el uso «tendrá carácter libre y gratuito, siempre que se mencione el
 origen y propiedad de los datos».
@@ -157,8 +157,8 @@ la estadística eléctrica y los anuncios de Costas.
 
 ## El archivo está completo
 
-**Las 10.144 citas con URL de las 33 capas y del conjunto tienen su documento
-archivado aquí: el 100 %.** Son 206 documentos distintos. No queda un solo aviso
+**Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento
+archivado aquí: el 100 %.** Son 208 documentos distintos. No queda un solo aviso
 pendiente de §7.7 —la comprobación que avisa cuando una cita no está
 archivada—, y eso se midió, no se supuso.
 
@@ -1168,6 +1168,57 @@ mayoría.
 **Archivado** · 2 ficheros (la consulta al FDSN y el aviso legal que sostiene la
 licencia).
 **El resto** · CHANGELOG `datos-v2026.08.64` · §10
+
+## red-carreteras
+
+**De dónde** · **Ministerio de Transportes y Movilidad Sostenible**, archivos de
+geometrías del **Catálogo de la Red de Carreteras del Estado 2025**: los 7.072
+tramos con su carretera, provincia, clase, puntos kilométricos y longitud, en
+shapefile ETRS89/UTM 30N.
+**Licencia y qué obliga** · La más explícita del atlas. El aviso legal del
+ministerio autoriza «la reproducción total o parcial, modificación, distribución
+y comunicación, **para usos comerciales y no comerciales**», con tres
+obligaciones: **no desnaturalizar** el contenido, **citar la fuente** y
+**mencionar la fecha de la última actualización** — que aquí es el 31-12-2025,
+la del propio catálogo. Régimen de la Ley 37/2007.
+**Cuál NO es la fuente, y es la trampa** · Las tres investigaciones que
+propusieron esta capa apuntaron al producto *Redes de Transporte* del CNIG.
+**Ése no vale**: su WFS INSPIRE declara **943.679** entidades `tn-ro:Road` y
+**9.879.089** `tn-ro:RoadLink` — el viario entero de España con calles urbanas.
+Lo que hace red a esta red es la **titularidad estatal**, y quien la fija es el
+catálogo del ministerio: 26.564 km de los 165.756 del país, con el 53 % del
+tráfico total y el 65,7 % del pesado.
+**Qué hay que saber** · **Viene proyectado**, en ETRS89/UTM 30N, así que hay que
+reproyectar a WGS84 para el GeoJSON; la conversión se hace en el pipeline sin
+`pyproj`, y está comprobada contra puntos conocidos —el meridiano central del
+huso sale a `-3,00000` exacto—. El resultado cae donde debe: lon -8,78 a 3,17,
+lat 35,27 a 43,69. **Canarias no aparece, y no es un fallo**: su red no es del
+Estado. **El registro es la CARRETERA y no el tramo**: los 7.072 tramos se
+agrupan en las **393** carreteras que ellos mismos nombran — agrupar aquí no es
+fabricar, al contrario que en `red-electrica`, donde las líneas de la BTN venían
+sin nombre.
+**La geometría se simplifica, y se dice** · 1.420.848 vértices no caben en una
+página web. Douglas-Peucker a **10 m** deja el 8 %, y **la tolerancia se afina
+sola** carretera a carretera hasta bajar del 5 % de desvío: a 10 m fijos,
+**noventa carreteras cortas** se pasaban, porque quitar 10 m de un ramal de 400 m
+es proporcionalmente brutal. De ahí `geo_precision: generalizada` (§6.6) y su
+`geo_fuente` diciendo qué se simplificó, como exige R9.
+**Por qué la longitud no se llama `longitud_km`** · Porque ese nombre lo mira
+**R10**, que compara lo declarado con lo dibujado, y aquí serían **dos medidas
+distintas bajo el mismo nombre**: la del catálogo es la **administrativa, por
+puntos kilométricos**, y la del trazado es la del eje. No es un rodeo a la regla
+— lo que R10 persigue **queda comprobado y no ocurre**: en el conjunto de la red
+las dos concuerdan al **-0,34 %** (26.563,5 km declarados contra 26.473,3
+dibujados) y la mediana por clase no pasa del 1,5 %. Donde se separan es en
+**ramales de menos de tres kilómetros**, y esa diferencia **la trae la fuente**:
+se mantiene aunque no se simplifique nada. Cada registro lo declara en una clave.
+**Cuadre publicado** · La suma de las longitudes de las 393 da **26.563,5 km**
+contra los **26.564** que publica el ministerio en su propia página. Y el
+catálogo cuadra consigo mismo: su geometría sin tocar mide 26.542,8 km, un
+0,08 % de su campo de longitud.
+**Archivado** · 2 ficheros (el ZIP del catálogo, 24 MB, y el aviso legal que
+sostiene la licencia).
+**El resto** · CHANGELOG `datos-v2026.08.65` · §10
 
 ---
 
