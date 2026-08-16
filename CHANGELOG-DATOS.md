@@ -32,6 +32,120 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.74 — Lo que separa un pellizco de una estrella es el signo, no los metros
+
+La `.73` puso a §7.4 a mirar si un anillo se cruza. La comprobación era buena;
+**el criterio con el que conté lo que encontró, falso**. Escribí que los cruces
+del atlas son «pellizcos de decenas de metros, herencia de la simplificación o
+de la propia fuente», y que el anillo mal ordenado se delata por la **magnitud**
+del cruce. Medido de verdad, las tres cosas fallan. **Contrato 1.47.0.**
+
+**Ningún dato cambia.** Los 123 avisos son los mismos hechos, mejor contados.
+
+### Uno · No eran 118
+
+El validador **imprimía** 118 porque escribe una línea por anillo y saltaba los
+de más de 900 vértices. Lo que hay son **123 anillos y 271 cruces**.
+
+El tope se justificaba por coste, y el coste era de la implementación: comparar
+todos los lados contra todos. Una **rejilla sobre sus cajas** barre el atlas
+entero en **1,6 s** frente a **19 s**, y coincide **exactamente** con la fuerza
+bruta en los 14.588 anillos donde ambas miran — 118 = 118, cero discrepancias.
+Así que el tope no compraba nada: quitarlo sale **doce veces más barato** y ve
+**cinco anillos** que llevaban un día escondidos, uno de ellos con un trozo
+contado del revés.
+
+Y no era un riesgo futuro, como escribí. El atlas tiene **dieciséis** anillos
+por encima de 900 vértices ahora mismo, en cuatro capas. `puertos` llega a
+**9.011**.
+
+### Dos · No son «herencia de la fuente». Los fabrica el atlas
+
+El anillo de la zona de servicio de **Palma**, reconstruido desde el WFS
+archivado:
+
+| | vértices | cruces | superficie |
+|---|---|---|---|
+| como llega de Puertos del Estado | 4.954 | **0** | 105,59 ha |
+| solo redondeado a 5 decimales (§4) | 4.516 | 3, de 37-40 m | 105,56 ha |
+| como lo publica el atlas | 1.156 | el grande | 105,49 ha |
+
+Lo que hay entre la segunda fila y la tercera es **Douglas-Peucker a 2 m**, del
+propio atlas — como el registro ya declaraba en su `geo_fuente` desde el primer
+día. Y el reparto no admite excepción:
+
+| | anillos con cruce | con un trozo del revés |
+|---|---|---|
+| provincias y montes *(generaliza el atlas, ~200 m)* | 21 | **18** |
+| puertos *(generaliza el atlas, 2 m)* | 28 | **4** |
+| red eléctrica *(generaliza el atlas, 25 m)* | 10 | **1** |
+| eólicos, solares y minerales *(«no se simplifica»)* | 43 | **0** |
+
+Los **41** anillos que cuentan algo del revés están **todos** en capas que el
+atlas generaliza. Las tres que declaran que el contorno es el dato tienen
+**cero**: sus cruces los pone el redondeo, y son estrangulamientos.
+
+### Tres · Lo que distingue un defecto de un artefacto es el signo
+
+Un cruce parte el anillo en dos lóbulos. **Si giran igual**, el anillo se
+estrangula: encierra lo que debe, la superficie es correcta y lo que falla es la
+forma — **82 de los 123**. **Si giran al revés**, un trozo se cuenta restando y
+el recinto publicado deja de ser el del papel — **41**.
+
+Los metros no lo distinguen, y con el criterio de la `.73` los dos casos mayores
+se leían al revés:
+
+- **Palma**, 79 m con los lados separados por 207 vértices: «mal ordenado» según
+  aquella regla. Es un estrangulamiento, y su superficie es la buena.
+- **Lugo**, 713 m entre lados contiguos: «mal ordenado» también. Es un artefacto
+  del **0,005 %**.
+
+### Añadido
+
+- `validar.py` · §7.4 **BLOQUEA** el trozo contado del revés que pasa a la vez
+  del **1 % del recinto** y de **media hectárea**, y avisa en todo lo demás. El
+  aviso dice ahora si el anillo está **estrangulado** o **del revés**, y cuántas
+  hectáreas van mal contadas.
+- `validar.py` · §7.8 comprueba que el `schema_version` del manifiesto es el del
+  contrato. La `.73` subió el contrato a 1.46 y dejó el manifiesto en 1.45, así
+  que la biblioteca lleva un día anunciando una versión que ya no rige.
+- Dos fixtures donde había uno: `invalido-74-anillo-del-reves.geojson` bloquea y
+  `aviso-74-anillo-estrangulado.geojson` avisa. Más la prueba de la guardia del
+  manifiesto. La batería pasa de **51 a 53**.
+
+### Por qué esos dos números, que están medidos contra los dos extremos
+
+| | deformación | superficie |
+|---|---|---|
+| los 12 polígonos rotos de `zonas-defensa` en la `.71` | 5,8 % – 85 % | 2,2 – 14.674 ha |
+| lo vivo hoy que pasa el suelo de media hectárea | **0,038 %** | hasta 44,6 ha |
+| lo vivo hoy con deformación alta | 48 % – 64 % | **0,003 – 0,005 ha** |
+
+Las dos puertas hacen falta porque cada extremo se escapa por una. **La regla
+habría parado la release `.71`** con sus doce anillos rotos, la estrella del
+Retín entre ellos —3.390 ha, 53,8 %—, que tuvo que ver una persona mirando el
+mapa. Y no bloquea nada de lo vivo, con **26 veces** de margen en el porcentaje
+y **166** en las hectáreas.
+
+El error se mide contra la **suma de los dos lóbulos**, nunca contra el área
+firmada del anillo. Lo enseñó el fixture de la `.73` al pasar por la regla
+nueva: en una pajarita simétrica los lóbulos se anulan, el área sale cero y
+**293.265 ha del revés pasaban como «0,000 %»**.
+
+### Huecos
+
+- **Los 123 cruces siguen ahí**, ahora contados y clasificados. Quitarlos pide
+  rehacer la generalización **conservando topología**, que es otra obra: hoy el
+  atlas simplifica cada anillo por su cuenta y sin mirar si el resultado sigue
+  siendo simple.
+- La comprobación mira **anillos**, no polígonos: dos anillos distintos que se
+  solapen, o un hueco que se salga de su exterior, no los ve nadie.
+- El error en hectáreas es **aproximado**: se calcula sobre una proyección
+  local, buena para decidir si algo pasa del 1 % y de media hectárea, no para
+  publicarla como superficie.
+
+---
+
 ## datos-v2026.08.73 — Que lo mire el validador y no una persona
 
 La `.72` arregló dos polígonos rotos. Esta arregla **por qué nadie los vio**:
