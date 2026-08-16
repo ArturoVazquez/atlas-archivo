@@ -32,6 +32,86 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.70 — El Estado las cuenta y no las nombra
+
+Entra **`no-proliferacion-adm`**, el segundo documento suelto de
+`datos/conjuntos/` (§4.2): los **recuentos de instalaciones sensibles** que el
+Estado publica de sí mismo en la **Estrategia Nacional contra la Proliferación
+de Armas de Destrucción Masiva** —acordada por el Consejo de Seguridad Nacional
+el 16 de diciembre de 2025— **sin identificar ni una sola**.
+
+### Añadido
+
+- `no-proliferacion-adm` (§4.2) — **89 laboratorios NBS-3** (57 de investigación
+  y salud humana, 27 de sanidad animal, 5 de sanidad vegetal), **ningún NBS-4** y
+  tres previstos; **131 instalaciones químicas** con actividades de declaración
+  obligatoria y **53 operadores comerciales**; **1.259 instalaciones
+  radiactivas** (2 de primera categoría, 925 de segunda, 332 de tercera); y
+  **7 reactores en operación**.
+
+### Por qué es un conjunto y no una capa
+
+Ninguna de esas cifras tiene coordenada, y **buscarles una sería lo contrario de
+lo que este atlas hace**. El documento cuenta y no identifica: no es un descuido,
+es la forma en que un Estado habla de esto en un boletín oficial. Intentar
+«completarlo» buscando empresas sería exactamente el relleno por verosimilitud
+que el primer principio prohíbe.
+
+La única instalación que el texto nombra **todavía no existe**: uno de los tres
+laboratorios NBS-4 previstos irá al Instituto de Salud Carlos III.
+
+Y no entra ni una palabra sobre medidas de protección, vulnerabilidades o
+procedimientos —el documento las trata largamente— por la misma doctrina con la
+que `bases-eeuu` registra el régimen y no la guarnición.
+
+### Dos cruces con lo que el atlas ya publicaba
+
+1. **Cuadra.** «Hay 7 reactores en operación», dice la Estrategia. La capa
+   `nuclear` publica exactamente 7, levantada de sus propias fuentes y sin
+   conocer este documento. La construcción lo comprueba y **para si dejan de
+   coincidir**.
+2. **Y cierra un hueco declarado.** La Estrategia afirma que todas las centrales
+   en operación tienen ya su almacén de combustible gastado en el emplazamiento
+   «**salvo una**», y no dice cuál. Se deduce sin margen: de los cinco
+   emplazamientos con reactor en marcha, `residuos-radiactivos` sitúa cuatro
+   almacenes en operación —2002, 2013, 2018 y 2021— y para **Vandellós II** solo
+   un ATI-100 **en desarrollo**. La que falta es esa. Y de paso, la frase —de
+   diciembre de 2025— responde por el otro lado al hueco que esa capa llevaba
+   declarado: su entrada en servicio, que el 7.º PGRR preveía para 2026, **aún no
+   se había producido**.
+
+### Corregido
+
+- `manifest.json` · `_estado` — decía «**VEINTIOCHO capas**» cuando ya eran
+  treinta y ocho, y lo dijo durante diez releases. Deja de dar el recuento: vive
+  en la lista, que es donde se puede contar. La propia nota se lo había avisado a
+  sí misma, a propósito de otra frase que envejeció aparte del dato.
+- `pipeline/extraer-adm.py` — el separador de miles volvió a comerse las comas de
+  la prosa, el mismo fallo que se documentó en `montes-catalogo`. El ayudante
+  `mil()` está ahora también aquí, con la nota de que ha pasado dos veces.
+- **La página de conjunto sabía de gas y no lo sabía.** Con un solo conjunto
+  publicado, `pagina-conjunto.mjs` escribía « GWh» detrás de toda cifra y
+  enlazaba siempre «el parte del gas de esa fecha»: los 89 laboratorios NBS-3
+  salieron pintados como **«89,0 GWh»**. La unidad se deduce ahora del sufijo del
+  campo (`_gwh`, `_ha`, `_km`…), que es la convención del atlas y no una lista de
+  campos conocidos; el entero se pinta entero; y el enlace al parte solo aparece
+  cuando las capas señaladas tienen serie mensual, que es la razón por la que ese
+  parte existe. De paso, los rótulos: «vip iberico» pasa a **VIP Ibérico**.
+
+### Huecos
+
+- **Ninguna de las instalaciones contadas está identificada**, y no consta a este
+  atlas ningún registro público que lo haga. Es el hueco central de este
+  documento y va declarado como tal.
+- **Los recuentos son de diciembre de 2025** y el documento no dice cada cuánto
+  se revisan. No hay serie: hay una foto.
+- **Un conjunto no tiene ficha en `fuentes/PROCEDENCIA.md`**, igual que el
+  primero: §7.9 comprueba capas, y una ficha con nombre de capa inexistente
+  bloquearía el CI. Su procedencia vive en sus propias `fuentes`, con la copia
+  archivada.
+
+---
+
 ## datos-v2026.08.69 — Seis territorios sin una sola referencia nacional
 
 Entra **`csur`**: los **46 hospitales** donde el Estado concentra la atención
