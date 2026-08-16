@@ -32,6 +32,97 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.76 — Los 92 días que todo el mundo repite no son los de hoy
+
+Nace **`reservas-estrategicas`**, el tercer documento suelto de
+`datos/conjuntos/`: los días de combustible que España guarda por ley.
+**Contrato 1.49.0.**
+
+Y nace corrigiendo la cifra que sale en toda la prensa.
+
+### Dos distinciones que casi nadie hace
+
+**Una · 92 días es el régimen, no lo vigente.** Es el artículo 2 del Real
+Decreto 1716/2004. Pero la Memoria 2025 de CORES, publicada en junio de 2026,
+dice que a su fecha la obligación es de **88 días** — 46 de la industria y 42 de
+CORES. La rebaja viene del bloqueo del estrecho de Ormuz: el Consejo de
+Ministros autorizó el 17 de marzo de 2026 liberar hasta **12,3 días**, los 11,5
+millones de barriles con que España concurre a la mayor acción coordinada de la
+Agencia Internacional de la Energía de su historia, y en una primera fase se
+bajaron **4 días** a la industria. Los 8,3 restantes siguen sobre la mesa.
+
+**Dos · obligación y existencias no son lo mismo.** La obligación es el suelo
+que impone la ley; las existencias, lo que de hecho hay guardado:
+
+| a 31/12/2025 | días |
+|---|---|
+| existencias de CORES | 43,1 |
+| existencias de la industria | 63,2 |
+| **total guardado** | **106,3** |
+| obligación entonces | 92 |
+| obligación hoy | 88 |
+
+Cuando en julio de 2026 se lee que «España supera los 100 días», se habla de las
+existencias y no de la obligación.
+
+### Las tres obligaciones, no solo la del petróleo
+
+- **Productos petrolíferos:** 92 días de régimen, repartidos 42 CORES / 50
+  industria. El artículo 14 permite a los sujetos obligados pedir a CORES que
+  amplíe las existencias constituidas a su favor hasta el 100 % de su obligación.
+- **GLP:** 20 días, **íntegramente de la industria**. CORES no guarda GLP.
+- **Gas natural:** desde la Orden TED/72/2023 **ya no es una cifra fija** — los
+  objetivos europeos de llenado se convierten en días, y por eso **cambia a lo
+  largo del año**: en 2025 fue de 23,4 días el 1 de febrero, 22,7 el 1 de mayo,
+  27,4 el 1 de julio, 34,3 el 1 de septiembre y 38,6 el 1 de noviembre. CORES
+  tampoco guarda gas, aunque la Ley 8/2015 dejó la puerta abierta.
+
+### Por qué es conjunto y no capa
+
+Esta vez lo dice la fuente con todas las letras. CORES reparte sus reservas en
+**cinco zonas** —Norte, Centro, Sur, Levante y Canarias— y **ni una instalación**:
+están **arrendadas** a empresas logísticas y refinerías, y se almacenan «de
+manera indiferenciada», mezcladas con el producto que esas empresas mueven a
+diario y rotando con él. Un punto en el mapa sería inventado.
+
+La única excepción que la propia fuente señala es el **crudo**, que «se almacena
+exclusivamente en las refinerías ubicadas en el territorio nacional» — las diez
+de la capa `refinerias` — sin decir en cuáles ni cuánto.
+
+### Lo que NO se interpreta
+
+Los días de CORES y los de la industria **se suman**, porque la fuente los da en
+la misma unidad. **Los volúmenes no**: CORES publica metros cúbicos y la
+industria toneladas, y van los dos como vienen. Convertirlos pedía una densidad
+por producto que la fuente no da.
+
+Otra pareja que tampoco es la misma cosa: el **nivel físico** de las reservas de
+CORES a cierre de 2025 era de 6,6 Mm³, y lo **computable** para la obligación,
+5.648.140 m³.
+
+### Y un dato que no sabía nadie fuera del sector
+
+Tras el apagón peninsular del **28 de abril de 2025**, CORES puso reservas a
+disposición del mercado **por primera vez en su historia**. La obligación bajó 3
+días a la industria y 4 a CORES —solo en gasolinas y destilados medios— y se
+restableció el 31 de mayo de 2025 la de CORES y el 1 de enero de 2026 la de la
+industria.
+
+### Huecos
+
+- **Ni una instalación, y no por falta de búsqueda.** Están arrendadas y el
+  producto se guarda mezclado; ni la fuente lo sabe registro a registro.
+- **La obligación vigente se mueve.** Los 88 días son los de junio de 2026 y los
+  8,3 días restantes podrían liberarse en cualquier momento. El campo va fechado
+  y el conjunto lo dice; no hay serie porque CORES no publica una.
+- **Las cifras de existencias son a 31/12/2025**, que es como la fuente las
+  cierra. Las de la memoria son promedios de 2025 y no se mezclan con aquellas.
+- El extractor lleva **catorce centinelas** sobre el PDF archivado: si CORES
+  reescribe la memoria y una cifra cambia, el guion **para** en vez de publicar
+  la de ayer.
+
+---
+
 ## datos-v2026.08.75 — La capa más desprotegida era la que menos aviso daba
 
 El atlas se había apuntado este agujero al construir `aeropuertos` y lo dejó
