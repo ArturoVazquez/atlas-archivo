@@ -32,6 +32,57 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.82 — Trece registros en un punto, y ninguno lo decía
+
+Arreglar la isla del Gran Telescopio Canarias lo hizo **desaparecer del mapa**:
+al llevarlo a su paraje quedó en la coordenada exacta de `oocc` —está dentro de
+ese observatorio— y un punto encima de otro se dibuja como uno.
+**Contrato 1.55.0.**
+
+### No era un caso suelto
+
+| capa | puntos compartidos | registros | el peor |
+|---|---|---|---|
+| `icts` | 4 | 19 | **13** |
+| `perte` | 8 | 21 | 6 |
+| `red-sismica` | 5 | 10 | 2 |
+| `residuos-radiactivos` | 3 | 6 | 2 |
+| y cinco capas más | 7 | 14 | 2 |
+| **total** | **27** | **70** | |
+
+Trece registros de `icts` comparten el punto de Madrid: son los que el Mapa
+sitúa «en todo el país». En el mapa eran **un solo círculo**.
+
+### Lo que faltaba no era el mecanismo
+
+El dossier ya sabía resolverlo: al abrir un registro muestra **«También en este
+emplazamiento»** con sus vecinos pinchables. Lo que faltaba es que **nadie podía
+saber que ahí había que pinchar**.
+
+- **El visor dibuja el número** de registros que guarda cada punto. Va en una
+  fuente aparte y no como propiedad de los registros: un campo `apilados`
+  colado en las propiedades acabaría pintado como un dato más en la ficha, y no
+  es un dato del registro sino del dibujo.
+- **§7.4 avisa** con cuántos registros comparten cada coordenada, para que la
+  cifra se lea entre tandas y no dependa de que alguien mire el mapa.
+
+**Avisa y no bloquea, y no es rebaja:** no es un defecto del dato. `pais` y
+`autonomia` son convenciones declaradas, y dos cosas pueden estar de verdad en
+el mismo paraje — el telescopio está dentro del observatorio. Lo que se estaba
+perdiendo era saberlo.
+
+### Huecos
+
+- **La convención `pais` sigue poniendo trece cosas en Madrid.** Ahora se ve que
+  son trece, que es mejor que antes, pero un punto en la capital sigue
+  afirmando algo que la fuente no dice. La salida honesta —que un registro de
+  ámbito nacional no se dibuje como punto— es un cambio de esquema y de mapa
+  que no toca hoy.
+- El contador **no se pincha**: el clic sigue siendo del punto de debajo, que es
+  el que abre la ficha y ofrece a sus vecinos.
+
+---
+
 ## datos-v2026.08.81 — El telescopio se va a su isla
 
 La release anterior dejó al **Gran Telescopio Canarias dibujado en Santa Cruz de
