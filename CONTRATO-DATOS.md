@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.51.0 · **Fecha:** 2026-08-16
+**Versión del contrato:** 1.52.0 · **Fecha:** 2026-08-16
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -1438,7 +1438,9 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 `municipio` · `provincia` · `claves[]` · *(1.51)* `altitud_m` ·
 `servidumbre_acto` · `servidumbre_distancia_minima_m` ·
 `servidumbre_distancia_mayor_m` (los cuatro, +`__v`,`__f`, y **solo en los dos
-registros que tienen acto de servidumbre**)
+registros que tienen acto de servidumbre**) · *(1.52)* `proteccion_acto` ·
+`proteccion_altitud_industrias_m` · `proteccion_radio_la_palma_km` ·
+`proteccion_radio_tenerife_km` (+`__v`,`__f`, **solo en `oocc`**)
 
 > **El perímetro ES el Anexo I del acuerdo del CPCTI** que aprueba el Mapa de
 > ICTS 2025-2028 (regulado por la DA 30.ª de la Ley 14/2011): 28 ICTS que

@@ -1,0 +1,895 @@
+
+<!-- put title of this page, and language details here -->
+
+
+<!-- load general information and setup the html header information -->
+
+<!-- 
+Provide here the server root directory as "$rootDir":
+For GTC public verion this is http://www.gtc.iac.es/
+For GTC test verion this is http://161.72.123.67:8085/
+For macbook this is http://localhost:8888/GTCweb/
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>    
+
+<title>Gran Telescopio CANARIAS</title>  
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />    
+<meta name="Description" content="Gran Telescopio CANARIAS" />
+<meta name="Keywords" content="GTC, GRANTECAN, GRANTECAN SA, telescopio, Canarias, La Palma, roque, muchachos, astrofisica, astronomia, observatorio, webcam, iac, telescope, canary islands, astrophysics, astronomy, observatory" />
+
+<!-- set link for the small GTC icon -->
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+
+<!-- script for pop-up window used for webcam displays -->
+
+<script language="javascript" type="text/javascript">
+
+var popUpWin=0;
+
+function AbrirWebcam(URLStr, width, height, target)
+
+{
+	var top = (screen.height - height)/2;
+	var left = (screen.width - width)/2; 
+  if(popUpWin)
+  {
+    if(!popUpWin.closed) popUpWin.close();
+  }
+  popUpWin = window.open(URLStr, target, 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=auto,resizable=no,copyhistory=no,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');
+}
+
+</script>
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>
+<script type='text/javascript' src='https://www.gtc.iac.es/infinite-rotator.js'></script>
+
+<!-- CSS for Drop Down Tabs Menu -->
+
+<script src="https://www.gtc.iac.es/dropdowntabfiles/dropdowntabs.js" type="text/javascript">
+
+/***********************************************
+* Drop Down Tabs Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<!-- CSS for Drop Down Tabs Menu -->
+
+<link href="https://www.gtc.iac.es/dropdowntabfiles/ddcolortabs.css" rel="stylesheet" type="text/css" />
+
+<!-- CSS for page styles -->
+
+<link href="https://www.gtc.iac.es/styles/GTCweb.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<!-- top section, containing the logo and title picture 
+	 serves for both language options -->
+
+	<!--
+this code defines the top section of the page.
+to ensure that this single file serves both the spanish and english version
+of the page, a number of variables are picked up from the calling file.
+-->
+
+
+<!-- introduce a link that can be used to move to top of page -->
+
+<a name="top"></a>
+
+<!-- header section -->
+
+<div id="header">
+    <div id="intro_left">
+   	  	<h2>Gran Telescopio <span class="blue">CANARIAS</span></h2>
+  		<h4>Observatorio del Roque de los Muchachos<br />La Palma</h4>
+    </div>
+   	<div id="intro_right_gtc">
+  		<div><h1>GRANTECAN: perfil de empresa</h1></div>		
+	</div>
+</div>
+
+<!-- menu section -->
+
+<div id="menu">
+	&nbsp;&nbsp;<a href="presentation.php"><img src="https://www.gtc.iac.es/images/flagUK.png" alt="flagUK" /></a>&nbsp;&nbsp;<a href="presentation_es.php"><img src="https://www.gtc.iac.es/images/flagES.png" alt="flagES" /></a><!--
+this page creates the pull-down menus.
+to add or delete a single entry on one of the lists, edit the corresponding list below.
+to add a completely new list, first the new list title has to be added in the first block
+with id="colortab", with the link to a new drop-down menu.
+the new link has then to be expanded and detailed as a new entry under class="dropmenudiv"
+with the appropriate id code.
+to change the layout the associated style file must be edited.
+finally, for consistency, make sure that both the english and spanish version of this
+file are edited in the same way.
+-->
+
+<!-- <p>Note that the CSS for this menu style requires each menu item be wrapped in an additional <span> tag.</p> -->
+
+<div id="colortab" class="ddcolortabs">
+<ul>
+<li><a href="https://www.gtc.iac.es/GTChome_es.php" title="Home"><span>Inicio</span></a></li>
+<li><a href="https://www.gtc.iac.es/gtc/presentation_es.php" title="GRANTECAN" rel="dropmenu_gtc"><span>&nbsp;GRANTECAN&nbsp;</span></a></li>
+<li><a href="https://www.gtc.iac.es/instruments/instrumentation.php" title="Instrumentation" rel="dropmenu_inst"><span>Instrumentación</span></a></li>
+<li><a href="https://www.gtc.iac.es/observing/observing.php" title="Observing" rel="dropmenu_obs"><span>Observaciones</span></a></li>
+<li><a href="https://www.gtc.iac.es/news/news.php" title="News" rel="dropmenu_news"><span>Noticias</span></a></li>
+<li><a href="https://www.gtc.iac.es/multimedia/imageGallery_es.php" title="Outreach" rel="dropmenu_media"><span>Divulgaci&oacute;n</span></a></li>
+<!-- <li><a href="https://www.gtc.iac.es/links/links_es.php" title="Links"><span>Enlaces</span></a></li>	-->
+</ul>
+</div>
+
+<div class="ddcolortabsline">&nbsp;</div>
+
+<!--gtc drop down menu -->                                                   
+<div id="dropmenu_gtc" class="dropmenudiv" style="width: 175px;">
+<a href="https://www.gtc.iac.es/gtc/presentation_es.php">Presentaci&oacute;n</a>
+<a href="https://www.gtc.iac.es/news/news.php">Noticias</a>
+<!-- <a href="https://www.gtc.iac.es/gtc/staff_es.php">GRANTECAN Staff</a> -->
+<a href="http://gtc-phase2.gtc.iac.es/science/publications/publications.php" target="_blank">Publicaciones</a>
+<a href="https://www.gtc.iac.es/gtc/guc_es.php">Comité de Usuarios</a>
+<a href="https://www.gtc.iac.es/gtc/sc_es.php">Comité de Seguimiento</a>
+<a href="https://www.gtc.iac.es/gtc/transparency_es.php">Transparencia</a>
+<a href="https://www.gtc.iac.es/gtc/sustainability_es.php">Plan de Sostenibilidad</a>
+<a href="https://www.gtc.iac.es/gtc/jobs_es.php">Ofertas de trabajo</a>
+<a href="https://www.gtc.iac.es/gtc/tenders_es.php">Perfil del Contratante</a>
+<a href="https://www.gtc.iac.es/gtc/feder_es.php">Fondos FEDER</a>
+<a href="https://www.gtc.iac.es/gtc/fdcan_es.php">Fondos FDCAN</a>
+<a href="https://www.gtc.iac.es/gtc/rfunds_es.php">Fondos de Recuperación</a>
+<a href="https://www.gtc.iac.es/gtc/vfunds_es.php">Fondos Emergencia Volc&aacute;nica</a>
+<!-- <a href="http://gcs-support.gtc.iac.es">GCS download</a> -->
+<a href="https://www.gtc.iac.es/gtc/eduroam_es.php">EDUROAM</a>
+<a href="https://www.gtc.iac.es/gtc/cae_es.php">CAE</a>
+<a href="https://www.gtc.iac.es/gtc/legal_es.php">Aviso legal</a>
+</div>
+
+
+<!--instrument drop down menu -->                                                
+<div id="dropmenu_inst" class="dropmenudiv" style="width: 150px;">
+<a href="https://www.gtc.iac.es/instruments/instrumentation.php">Resumen</a>
+<a href="https://www.gtc.iac.es/instruments/osiris/osiris.php">OSIRIS</a>
+<a href="https://www.gtc.iac.es/instruments/osiris+/osiris+.php">OSIRIS+</a>
+<a href="https://www.gtc.iac.es/instruments/canaricam/canaricam.php">CANARICAM</a>
+<a href="https://www.gtc.iac.es/instruments/circe/circe.php">CIRCE</a>
+<a href="https://www.gtc.iac.es/instruments/emir/emir.php">EMIR</a>
+<a href="https://www.gtc.iac.es/instruments/megara/megara.php">MEGARA</a>
+<a href="https://www.gtc.iac.es/instruments/hipercam/hipercam.php">HiPERCAM</a>
+<a href="https://www.gtc.iac.es/instruments/hors/horus.php">HORS</a>
+<a href="https://www.gtc.iac.es/instruments/miradas/miradas.php">MIRADAS</a>
+<a href="https://www.gtc.iac.es/instruments/frida/frida.php">FRIDA</a>
+</div>
+
+<!--observing drop down menu -->                                                
+<div id="dropmenu_obs" class="dropmenudiv" style="width: 250px;">
+<a href="https://www.gtc.iac.es/observing/observing.php">Observando con GTC</a>
+<a href="https://www.gtc.iac.es/observing/GTCoptics.php">Decripción del GTC</a>
+<a href="https://www.gtc.iac.es/observing/calls.php">Llamada de Propuestas</a>
+<a href="http://research.iac.es/OOCC/night-cat/ddt-at-gtc/">GTC DDT</a>
+<a href="https://www.gtc.iac.es/observing/too.php">Targets of Opportunity</a>
+<a href="https://www.gtc.iac.es/observing/visitors.php">Astrónomos visitantes</a>
+<a href="https://www.gtc.iac.es/observing/toolbox.php">Toolbox</a>
+<a href="http://gtc-phase2.gtc.iac.es/science/calendar/calendar.php" target="_blank">Calendario de observaciones</a>
+<a href="http://gtc-phase2.gtc.iac.es/science/F2/" target="_blank">Acceso Phase-2</a>
+<a href="http://gtc-phase2.gtc.iac.es/science/F3/phase3start.php" target="_blank">Acceso Phase-3</a>
+<a href=" http://atmosportal.gtc.iac.es" target="_blank">GTC Meteo</a>
+<a href="https://www.gtc.iac.es/observing/weather.php">Condiciones atmosféricas en el ORM</a>
+<a href="http://gtc.sdc.cab.inta-csic.es/gtc/index.jsp" target="_blank">Archivo de datos</a>
+<a href="https://www.gtc.iac.es/observing/datareduction.php" target="_blank">Datos reducidos</a>
+<!--<a href="http://gtc-phase2.gtc.iac.es/science/publications/publications.php" target="_blank">Publicaciones científicas</a>-->
+<!--<a href="https://www.gtc.iac.es/observing/GTCstatus.php">Situación del telescopio</a>-->
+</div>
+
+<!--news drop down menu -->                                                
+<div id="dropmenu_news" class="dropmenudiv" style="width: 100px;">
+<a href="https://www.gtc.iac.es/news/news.php">Noticias</a>
+<a href="https://www.gtc.iac.es/news/posts.php">Posts</a>
+<!-- <a href="http://www.gtcdigital.net/prensa.php">GTC digital</a> -->
+</div>
+
+<!--multimedia drop down menu -->                                                
+<div id="dropmenu_media" class="dropmenudiv" style="width: 150px;">
+<a href="https://www.gtc.iac.es/multimedia/imageGallery_es.php">Galería de imágenes</a>
+<a href="https://www.gtc.iac.es/multimedia/grantecanpic.php">GRANTECANpic</a>
+<a href="http://grantecan.es">GTC en vivo</a>
+<a href="https://www.iac.es/en/observatorios-de-canarias/roque-de-los-muchachos-observatory/visits" target="_self">Visitas al GTC</a>
+<a href="https://www.gtc.iac.es/multimedia/gara_es.php">GARA</a>
+<a href="https://tinyurl.com/gtc360">Visita Virtual al GTC</a>
+<a href="https://www.gtc.iac.es/multimedia/webcams_es.php">Cámaras web</a>  
+<!--<a href="https://www.gtc.iac.es/multimedia/panoramicTour_es.php">Panoramic tour</a> -->  
+<a href="https://www.gtc.iac.es/observing/conferences.php">Congresos GTC</a>
+<a href="https://www.gtc.iac.es/multimedia/media/dossier_inauguracion.pdf" target="_blank">Dossier Inauguración</a>   
+<a href="https://www.gtc.iac.es/news/media/gtc_folleto2014.pdf" target="_blank">Ciencia con el GTC</a>  
+<a href="https://www.gtc.iac.es/multimedia/socialmedia_es.php">Redes Sociales</a>
+<!--<a href="https://www.gtc.iac.es/multimedia/media/logoGTC.svg" target="_blank">Logotipo de GRANTECAN</a> -->  
+</div>
+
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+tabdropdown.init("colortab", "auto")
+</script>
+
+
+</div>
+
+
+<!-- main contents of web page below this -->
+
+	<div id="main">
+	   	
+<!-- left column -->
+
+		<div id="main_left_obs">
+			<div class="box1_obs">
+				<h3><a href="https://www.gtc.iac.es/observing/calls.php" target="_self">Convocatoria</a></h3>
+			</div>
+			<div class="box1_obs">
+				<h3><a href="http://gtc-phase2.gtc.iac.es/science/F2/" target="_blank">Acceso Phase-2</a></h3>
+			</div>
+			<div class="box1_obs">
+				<h3><a href="http://gtc-phase2.gtc.iac.es/science/calendar/calendar.php" target="_blank">Calendario de observaciones</a></h3>
+			</div>
+			<div class="box1_obs">
+				<h3><a href="https://www.gtc.iac.es/multimedia/imageGallery_es.php" target="_self">Imágenes del GTC</a></h3>
+			</div>
+			<div class="box1_obs">
+				<h3><a href="https://www.gtc.iac.es/multimedia/webcams_es.php" target="_self">Cámaras web</a></h3>
+			</div>
+			<div class="box1_obs">
+				<h3><a href="..//multimedia/media/dossier_inauguracion.pdf" target="_blank">Dossier inauguración</a></h3>
+			</div>
+	    </div>
+
+<!-- right column -->
+
+	   	<div id="main_right_obs">
+	   	
+<!-- bulk of information -->
+
+
+<a name="index"></a>
+<div id="pageTitle">Presentando el Gran Telescopio CANARIAS</div>
+<p>&nbsp;</p>
+
+
+<a name="index"></a>
+<div id="pageTitle">GRANTECAN</div>
+<p>&nbsp;</p>
+
+<p>
+GRANTECAN, S.A. es una empresa pública fundada en 1994 para el diseño y
+la construcción del Gran Telescopio CANARIAS (GTC) de 10.4 m, situado en el
+Observatorio del Roque de los Muchachos, en la isla de La Palma.
+En 2009, con el inicio de la fase de operación científica del telescopio,
+la empresa amplió sus responsabilidades para incluir la operación del telescopio
+como un servicio a la comunidad científica en general.
+</p>
+<p>
+En la actualidad, GRANTECAN, S.A. emplea a aproximadamente 80 personas a tiempo completo.
+La empresa está formada por 4 grupos: administración, operación de ingeniería, operación 
+científica, y grupo de desarrollo. Su director es el Dr. Romano Corradi. El <a href="media/organigrama_Aug2026_Spanish.pdf" target="_self">organigrama completo</a> de GRANTECAN S.A. puede consultarse <a href="media/organigrama_Aug2026_Spanish.pdf" target="_self">aquí</a>.
+</p>
+<p>
+El proyecto GTC es apoyado activamente por el 
+<a href="http://www.micinn.es/" target="_blank" title="Secretaria de Estado de I+D+i, Ministerio de Econom&iacute;a y Competitividad">
+Gobierno español</a> 
+y el 
+<a href="http://www.gobiernodecanarias.org" target="_blank" title="Gobierno de Canarias">
+Gobierno Autonómico de las Islas Canarias</a> 
+a través de los 
+<a href="http://ec.europa.eu/regional_policy/thefunds/regional/index_en.cfm" target="_blank" title="European Regional Development Fund">
+Fondos Europeos para el Desarrollo Regional (FEDER)</a>
+proporcionado por la Unión Europea. El proyecto también incluye la participación de México por el 
+<a href="http://www.astroscu.unam.mx/" target="_blank" title="Instituto de Astronom&iacute;a de la Universidad Nacional Aut&oacute;noma de M&eacute;xico">
+Instituto de Astronomía de la Universidad Nacional Autónoma de México (IA-UNAM)</a> 
+y el
+<a href="http://www.inaoep.mx/" target="_blank" title="Instituto Nacional de Astrof&iacute;sica, &Oacute;ptica y Electr&oacute;nica">
+Instituto Nacional de Astrofísica, Óptica y Electrónica</a>, 
+y de Estados Unidos a través de la 
+<a href="http://www.astro.ufl.edu">Universidad de Florida</a>.
+</p>
+<p>
+Aparte de los edificios del telescopio en el observatorio, la sede principal 
+de la empresa se encuentra en el Centro de Astrofísica en La Palma  - "Francisco S&aacute;nchez" (<a href="http://www.iac.es/info.php?op1=25&amp;op2=128">CALP</a>),
+en Breña Baja, La Palma.
+El grupo de desarrollos se encuentra en las instalaciones del Instituto de
+Astrofísica de Canarias, en La Laguna, Tenerife.
+</p>
+<p>&nbsp;</p>
+<hr />
+
+<table cellspacing="1" cellpadding="5" >
+<tr>
+   <td><strong><u>DIRECCIÓN POSTAL - LA PALMA</u></strong></td>
+   <td>&nbsp;&nbsp;</td>
+   <td><strong><u>DIRECCIÓN FISCAL Y DE FACTURACIÓN</u></strong></td>
+</tr>
+<tr>
+   <td><strong>Gran Telescopio de Canarias, S.A.</strong><br />
+       Center for Astrophysics in La Palma<br />
+       Cuesta de San José, s/n<br />
+       38712 - Breña Baja<br />
+       S/C de Tenerife<br />
+       España</td>
+   <td></td>
+   <td><strong>Gran Telescopio de Canarias, S.A.</strong><br />
+       Instituto de Astrofísica de Canarias<br />
+       C/ Vía Láctea, S/N<br />
+       38205 - San Cristóbal de La Laguna<br />
+       S/C de Tenerife<br />
+       España</td>
+</tr>
+<tr>
+   <td>Teléfono: +34 922 425 720</td>
+   <td></td>
+   <td>Teléfono: +34 922 315 031</td>
+</tr>
+<tr>
+   <td>Fax: +34 922 425 725</td>
+   <td></td>
+   <td>Fax: +34 922 315 032</td>
+</tr>
+<tr>
+   <td>e-mail: gtc [at] gtc.iac.es</td>
+   <td></td>
+   <td>e-mail: gtc [at] gtc.iac.es</td>
+</tr>
+<tr>
+   <td><a target="_blank" href="https://www.google.com/maps/place/28%C2%B038'45.7%22N+17%C2%B046'18.6%22W/@28.6460278,-17.7740273,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d28.64603!4d-17.771828">Como se puede llegar al CALP</a> se puede encontrar
+<a target="_blank" href="https://www.google.com/maps/place/28%C2%B038'45.7%22N+17%C2%B046'18.6%22W/@28.6460278,-17.7740273,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d28.64603!4d-17.771828">aquí</a>.
+</td>
+   <td></td>
+   <td>CIF: A-38354460</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table cellspacing="1" cellpadding="5" >
+<tr>
+   <td><strong><u>DIRECCIÓN DEL TELESCOPIO</u></strong></td>
+</tr>
+<tr>
+   <td><strong>Gran Telescopio de Canarias</strong><br />
+       Observatorio del Roque de los Muchachos<br />
+       38783 - Garafía<br />
+       S/C de Tenerife<br />
+       España</td>
+</tr>
+<tr>
+   <td>Teléfono: +34 922 405 600</td>
+</tr>
+<tr>
+   <td>Fax: +34 922 405 603</td>
+</tr>
+<tr>
+   <td>e-mail: gtc [at] gtc.iac.es</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<hr />
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> Principales puntos de contacto</h2>
+<p>&nbsp;</p>
+
+<table cellspacing="1" cellpadding="5" >
+<tr bgcolor="#E2E2E2">
+   <td><strong>contacto</strong></td>
+   <td><strong>teléfono</strong></td>
+   <td><strong>email @ gtc.iac.es</strong></td>
+</tr>
+<tr bgcolor="#FFFFFF">
+   <td>Romano Corradi -<br />Director</td>
+   <td>922 425 720 ext: 727  <br/> 922 315 031 ext: 599</td>
+   <td>romano.corradi</td>
+</tr>
+<tr bgcolor="#E2E2E2">
+   <td>Lourdes González Rodríguez -<br />Jefa de Administración</td>
+   <td>922 425 720  ext: 721 <br/> 922 315 031 ext: 525</td>
+   <td>lourdes.gonzalez</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+   <td>Antonio Cabrera Lavers -<br />Jefe de Operación Científica</td>
+   <td>922 425 720 ext: 747</td>
+   <td>antonio.cabrera</td>
+</tr>
+<tr bgcolor="#E2E2E2">
+   <td>Javier Castro -<br />Jefe del Grupo de Desarrollos</td>
+   <td>922 315 031 ext: 597</td>
+   <td>javier.castro.lopez</td>
+</tr>
+<tr bgcolor="#FFFFFF">
+   <td>Luis Rodríguez García -<br />Jefe de Operaciones de Ingeniería</td>
+   <td>922 425 720 ext: 734</td>
+   <td>luis.rodriguez</td>
+</tr>
+<tr bgcolor="#E2E2E2">
+   <td>GTC sala de control</td>
+   <td>922 425 720 ext: 259 / 269 / 258</td>
+   <td></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> Visitar el telescopio</h2>
+<p>&nbsp;</p>
+
+<p>
+Las visitas nocturnas al GTC no están permitidas. Sin embargo, en horario diurno 
+y a través del Instituto de Astrofísica de Canarias (IAC) es posible solicitar dicha visita. 
+</p>
+<p>
+El IAC, dentro de sus tareas de divulgación, permite en determinadas épocas del año, 
+organizar visitas de colegios y grupos a algunos de los telescopios del Observatorio 
+del Roque de Los Muchachos (entre ellos el Gran Telescopio Canarias), a través de su 
+página web. Para más información por favor pinche aquí:
+<a href="https://www.iac.es/es/observatorios-de-canarias/observatorio-del-roque-de-los-muchachos/visitas">
+Visitas al Observatorio del Roque de Los Muchachos.</a>
+</p>
+
+
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+  
+<p>&nbsp;</p>
+<hr />
+
+<div id="pageTitle">Gran Telescopio CANARIAS (GTC)</div>
+
+<p>&nbsp;</p>
+
+
+<p>
+El Gran Telescopio CANARIAS (también conocido como GTC) fue un ambicioso
+proyecto español cuyo objetivo era el construir y operar uno de los telescopios más 
+grandes y avanzados del mundo. Bajo el liderazgo del <a href="http://www.iac.es">Instituto
+Astrofísica de Canarias (IAC)</a>, la ceremonia de la primera luz tuvo lugar
+en la madrugada del 14 de Julio de 2007. Su producción científica se inició
+en marzo de 2009, una vez que la óptica del telescopio y su 
+sistema de control estuvieron suficientemente desarrollados, y el primer 
+instrumento científico, OSIRIS, había sido instalado.
+</p>
+<img src="media/twilight.jpg" width="45%" alt="twilight picture" style="float:right; margin:10px;" />
+<p>
+El inicio de la fase científica operativa del telescopio fue la culminación de trabajo
+de diseño y desarrollo que tuvo lugar durante más de una década. Los trabajos de construcción 
+del telescopio en el
+Observatorio del Roque de Los Muchachos, La Palma, comenzaron en el año 2000. 
+El Observatorio del Roque de Los Muchachos, junto
+con el Observatorio del Teide, en Tenerife, forman el <a href="http://www.iac.es/eno.php">
+Observatorio Norte Europeo (ENO)</a>. Este observatorio ofrece excelentes condiciones de observación
+debido a la alta calidad de su cielo nocturno y a la existencia de una ley de protección contra
+contaminación lumínica.
+</p>
+<p>
+En 1994 se fundó la empresa pública GRANTECAN S.A. con el objetivo de
+diseñar y construir el Gran Telescopio CANARIAS, o GTC.
+Esta empresa recibió el apoyo
+del Gobierno Autonómico de las Islas Canarias y del Gobierno central.
+GTC también contó con un reconocimiento internacional a través de los acuerdos
+firmado con el Gobierno de México para participar en el proyecto a través del
+<a href="http://www.astroscu.unam.mx/">Instituto de Astronomía del
+Instituto de Astronomía de la Universidad Nacional Autónoma de México</a>
+y del <a href="http://www.inaoep.mx/"> Instituto Nacional de Astrofísica,
+Óptica y Electrónica de Puebla</a>.
+Además de estas instituciones también se apuntó como socio de este proyecto Estados Unidos 
+a través de la <a href="http://www.astro.ufl.edu">Universidad de Florida</a>.
+</p>
+<p>
+El objetivo final del GTC es facilitar observaciones científicas de clase mundial.
+Siendo el mayor telescopio del mundo y gracias a su ubicación en el
+Roque de los Muchachos, el telescopio permitirá el estudio de cuestiones clave
+en astrofísica, tales como la naturaleza de los agujeros negros, la historia de la 
+formación de estrellas y galaxias cuando el Universo era joven, la física de 
+planetas lejanos alrededor de otras estrellas,
+y la naturaleza de la materia oscura y la energía oscura en el universo.
+</p>
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+<hr />
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> ¿Que es el GTC?</h2>
+<p>&nbsp;</p>
+<p>
+El Gran Telescopio CANARIAS (GTC), actualmente es el telescopio óptico-infrarrojo 
+más grande, y uno de los más avanzados, del mundo.
+Su espejo primario está formado por 36 segmentos hexagonales que actúan conjuntamente
+como un solo espejo. La superficie colectora del espejo primario de GTC es equivalente a
+la de un telescopio con un espejo monolítico de un diámetro de 10.4 m.
+Gracias a su gran área colectora y a su avanzada ingeniería, el GTC se encuentra
+entre los mejores telescopios dedicados a la investigación astronómica.
+</p>
+<img src="media/telescope.jpg" width="45%" alt="telescope picture" style="float:left; margin:10px;" />
+<p>
+El GTC posee un espejo secundario y un espejo terciario que, junto con el
+espejo primario, reproducen el plano focal del telescopio en la estación focal elegida.
+Los instrumentos científicos que se pueden colocar en la estación focal detectan y analizan 
+la luz, y almacenan los datos.
+</p>
+<p>
+La montura del telescopio es una gran estructura mecánica de acero que sostiene los 
+espejos, permite movimientos de rotación del telescopio a lo largo de un eje 
+horizontal y vertical. Este movimiento es muy preciso, ya que ha de 
+mantener las estrellas proyectadas de forma estable sobre el detector.
+El telescopio está diseñado de modo que sea capaz de observar los rangos de luz 
+óptica e infrarroja.
+</p>
+<p>
+GTC es el último telescopio de la generación de 8 a 10 metros.
+Por lo tanto se ha tratado de mejorar el diseño de los predecesores, y aprender
+de sus experiencias.
+</p>
+<p>
+GTC es el telescopio más grande gracias a su enorme superficie colectora de luz de 75.7
+metros cuadrados (73 m<sup>2</sup> de área efectiva). Aparte de su gran tamaño
+existen otras características claves, como es la extra ordinaria calidad de imagen 
+que ofrece el telescopio que permite explotar la buena calidad del cielo.
+La excelente calidad de imagen es posible gracias al ajuste activo de la óptica.
+Esta óptica activa permite la alineación, la deformación y el movimiento de los segmentos individuales
+de forma que el espejo primario, así como la alineación del espejo secundario siempre
+mantienen su posición óptima independientemente de las condiciones externas
+(clima, temperatura, gravedad, defectos de fabricación, etcétera).
+</p>
+<p>
+En el futuro GTC también hará uso de una técnica llamada "óptica adaptativa" que permitirá
+al telescopio corregir la turbulencia atmosférica y por lo tanto alcanzar la mejor calidad de
+imagen posible, abriendo nuevas fronteras para la ciencia. Para todos los grandes telescopios
+la atmósfera terrestre perturba la luz y degrada la calidad de la imagen de manera drástica,
+pero gracias a la óptica adaptativa este efecto negativo puede ser contrarrestado por
+la aplicación de correcciones muy rápidas en tiempo real (alrededor de 1000 veces 
+por segundo) que hacen uso de
+un espejo deformable. Esta es una técnica muy exigente, pero las mejoras en
+calidad de la imagen y por lo tanto para la ciencia, son importantes.
+</p>
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+<hr />
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> Observar con GTC</h2>
+<p>&nbsp;</p>
+<p>
+El telescopio mismo está rodeado por una cúpula que lo protege de los elementos.
+Al mismo tiempo, la cúpula está diseñada para minimizar las turbulencias del aire cerca
+del telescopio. Cuando empieza una noche de observación lo primero que se hace es 
+abrir la cúpula,
+permitiendo que la luz de las estrellas llegue al telescopio.
+</p>
+<img src="media/controlRoomNEW.jpg" width="100%" alt="control room picture" style="float:middle; margin:10px;" />
+<p>
+El control del telescopio y de los instrumentos se hace desde la sala de control
+y está altamente automatizado. El tiempo de observación disponible es un bien valioso.
+Para optimizar su uso, las observaciones están programadas de una manera que aprovecha
+al máximo el uso del telescopio, de acuerdo con las condiciones del cielo existentes.
+La llamada observación-en-cola implica que haya muchos programas activos simultáneamente,
+y se ejecutan según su prioridad científica, teniendo en cuenta
+sus necesidades en materia de las condiciones de observación.
+</p>
+<p>
+El GTC utiliza un sistema de control de la operación muy avanzado, y altamente fiable. 
+A través de un programa de mantenimiento preventivo 
+diseñado para localizar posibles fallos antes de que ocurran, garantizando que el 
+tiempo de inactividad causado por dichos fallos en el sistema sea el mínimo.
+</p>
+<p>
+Parte del mantenimiento preventivo se enfoca en garantizar que los espejos permanecen 
+limpios para que reflejen la luz de manera óptima. ¡Esto en la práctica no es tan sencillo
+como suena! Los espejos del telescopios se limpian regularmente usando nieve 
+pulverizada de CO2.
+Y aproximadamente cada dos años los segmentos del espejo se desmontan del telescopio
+para ponerles un nuevo recubrimiento reflectante de aluminio en su superficie.
+</p>
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+<hr />
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> GTC en números</h2>
+<ul>
+  <li>Peso total del telescopio en movimiento = 400 toneladas</li>
+  <li>Peso del espejo primario = 17 toneladas</li>
+  <li>Área colectora efectiva = 73 m<sup>2</sup></li>
+  <li>Longitud focal efectiva = 169.9 m</li>
+  <li>Escala de placa = 0.82 mm / arcsec</li>
+  <li>Foco Cassegrain
+   <ul>
+      <li>Peso del equipo colgando del rotador = 2400 kg</li>
+      <li>Campo de visión = 15 minutos de arco de diámetro</li>
+   </ul>
+</li>
+<li>Foco Cassegrain doblada
+   <ul>
+      <li>Peso del equipo colgando en los rotadores = 1000 kg cada uno</li>
+      <li>Campo de visión = 5 minutos de arco de diámetro</li>
+  </ul>
+</li>
+<li>Foco Nasmyth
+   <ul>
+      <li>Peso del equipo colgando de los rotadores = 2400 kg cada uno</li>
+      <li>Peso del instrumento con un soporte de apoyo segundo = 7500 kg cada uno</li>
+      <li>Campo de visión = 20 minutos de arco de diámetro</li>
+  </ul>
+</li>
+</ul>
+
+<img src="media/orm.jpg" width="100%" alt="orm" style="float:right; margin:10px;" />
+<div class="caption">Roque de los Muchachos Observatory (Imagen gracias a Gianni Tessicini).</div>
+<p>&nbsp;</p>
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+<hr />
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> Ubicación</h2>
+<p>&nbsp;</p>
+<p>
+El GTC está situado en el Observatorio del Roque de los Muchachos en la isla de la Palma.
+Las coordenadas son: Latitud: 28º 45’ 24’’ N y Longitud: 17º 53’ 31’’ W, a una altura
+de unos 2300 metros sobre el nivel del mar.
+</p>
+<center>
+<iframe id="iframe2_es" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=28.7566+-17.8919&amp;aq=&amp;sll=28.750127,-17.891879&amp;sspn=0.019076,0.030985&amp;t=h&amp;ie=UTF8&amp;z=14&amp;ll=28.7566,-17.8919&amp;output=embed"></iframe>
+<br />
+<small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=28.7566+-17.8919&amp;aq=&amp;sll=28.750127,-17.891879&amp;sspn=0.019076,0.030985&amp;t=h&amp;ie=UTF8&amp;z=14&amp;ll=28.7566,-17.8919" style="color:#0000FF;text-align:left" target="_blank">Ver mapa grande</a></small>
+</center>
+<p>&nbsp;</p>
+<p>
+El Observatorio del Roque de los Muchachos (ORM) es uno de los lugares de observación de primera 
+clase en el mundo, y sin duda el mejor lugar en Europa para realizar observaciones astronómicas 
+en el rango óptico e
+infrarrojo. Es por esa razón que GTC se construyó en este lugar.
+El ORM está administrado por el Instituto de Astrofísica de Canarias 
+(<a href="http://www.iac.es/" target="_blank">IAC</a>).
+Más datos sobre el ORM se puede encontrar
+<a href="http://www.iac.es/eno.php?op1=2&amp;lang=en" target="_blank">aquí</a>.
+</p>
+<p>
+El ORM se caracteriza por sus condiciones climáticas generalmente buenas y estables 
+que son favorable para las observaciones astronómicas. Al estar situado por lo general 
+por encima de la capa de inversión atmosférica,
+donde las nubes tienden formase, implica que la mayoría de los días 
+el observatorio cuenta con cielos despejados.
+Pero igualmente importante es la baja turbulencia atmosférica que permite aprovechar
+la muy buena calidad de imagen del telescopio con la mínima alteración de la atmósfera.
+</p>
+<p>
+Los grandes telescopios como el GTC se construyen con el fin de estudiar los objetos 
+más débiles en el cielo.
+Obviamente, la luz de los vehículos y del alumbrado público afectan el trabajo 
+de los telescopios. Por lo tanto, con el fin de proteger los cielos nocturnos de la 
+contaminación lumínica se diseñó la Ley de Protección del Cielo. 
+Esta ley fue establecida hace varios años y ha ayudado a asegurar que el ORM
+sigue siendo un observatorio astronómico de alta calidad para los años venideros.
+</p>
+<p>
+A través de los años varios telescopios han sido construidos en el ORM, y muchos países
+han ayudado a dar forma al observatorio astronómico y a su excelencia.
+</p>
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+<hr />
+
+
+<h2><img src="https://www.gtc.iac.es/gtcicon.png" alt="icon"/> Vamos comparar</h2>
+<p>&nbsp;</p>
+
+<p>
+Cuando se dan detalles sobre tamaños y medidas de algo, a menudo es
+difícil entender las dimensiones hasta que tratamos de convertir las medidas a la escala humana.
+Por ejemplo: un bosque tan grande como diez campos de fútbol;
+una distancia tan grande que nos llevaría un año en un coche para llegar allí;
+un insecto tan pequeño que podía descansar sobre la cabeza de una aguja.
+Comparando podemos apreciar mejor la magnitud de las cosas.
+Esto es lo que ahora vamos a tratar de hacer para el caso del GTC.
+</p>
+<img src="media/gtcOsiris.jpg" width="40%" alt="osiris picture" style="float:left; margin:10px;" />
+<p>
+Un telescopio como el Gran Telescopio CANARIAS (GTC), teniendo en cuenta los requisitos 
+para su correcto funcionamiento y debido a el número de componentes que lo forman, 
+se puede comparar con un montón de cosas.
+Para tener una idea de la enorme capacidad de observación del GTC, podemos comparar 
+su poder de visión a 4 millones de ojos humanos y, con ella, podríamos distinguir
+los faros de un coche a unos 20.000 km de distancia, o a la distancia que separa 
+España de Australia.
+La estructura del telescopio tiene una altura de 41 m, 6 metros menos que la Estatua de la
+Libertad en Nueva York.
+La base del edificio que contiene la cúpula debe soportar un peso total de 500 toneladas,
+comparable a una manada de 62 elefantes.
+</p>
+<p>
+El GTC cuenta con un espejo primario de unos 10.4 m de diámetro, compuesto 
+por 36 segmentos de alrededor de 450 kg cada uno. En otras palabras, sólo uno de estos 
+segmentos de espejo tiene el peso similar al de un toro. Sin embargo, a pesar de su peso, 
+el espesor de cada segmento no exceda de 8 cm. Espejos primarios con menor diámetro en 
+general, tales como el de la Very Large Telescope (VLT), de 8.2 m, ubicado en Cerro Paranal 
+(Chile), puede tener hasta 17.5 cm de espesor, y por lo tanto el espejo GTC es muy 
+delgada para su tamaño.
+</p>
+<p>
+Una de las peculiaridades más llamativas de los espejos del GTC es la dedicación
+con el que han sido diseñados y producidos. El límite del error de pulido
+para el material vitro-cerámica no puede exceder de 15 nanómetros, o 3000 veces más pequeñas
+que un cabello humano (un nanómetro es una milésima de micra, o mm 0.000001), mientras que
+cualquier irregularidad no puede ser superior a 90 nm.
+El pulido de la superficie de los espejos alcanza esta precisión casi perfecta.
+En comparación, si el espejo fuera tan grande como la Península Ibérica, la
+"montaña" más alta sería sólo unos pocos centímetros de altura!
+</p>
+<p>
+El principal material del espejo del telescopio es el Zerodur, un material similar
+al que se utiliza para la fabricación de vitro-cerámicas.
+Una característica crucial de Zerodur es su bajo coeficiente de expansión, la cual
+implica que las variaciones de temperatura en el telescopio no tienen ningún efecto 
+en el sistema óptico.
+</p>
+<p>
+A pesar del tamaño y el gran peso del espejo segmentado, todos los componentes 
+deben estar a una misma distancia, unos de otros, de sólo 3 mm y se mantienen en su lugar 
+con una tolerancia muy alta. Esto se logra a través de un sistema de sensores y 
+posicionadores que continuamente mantiene los espejos en su posición perfecta.
+</p>
+<p>
+La construcción del GTC ha supuesto numerosas piezas y constituye un importante logro
+de ingeniería. Por ejemplo, la estructura metálica de la cúpula está compuesta de aproximadamente
+59000 piezas: unos 16000 tornillos (4000 kg), unas 43000 tuercas (1500 kg) y unos
+450 kg de arandelas.
+</p>
+<p>
+Como detalle final, se observa que los más de 400 toneladas de
+telescopio y la instrumentación está soportado en sólo una capa muy fina de lubricante.
+El telescopio "flota" en el aceite hidráulico, proporcionando un movimiento muy suave que
+requiere poca fuerza. El telescopio puede ser movido por un ligero empuje de la mano!
+</p>
+
+<p style="text-align:right"><strong><a href="#top">Back to top</a></strong></p>
+
+<hr />
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+<!-- end of bulk information -->
+
+<!-- add last change date -->
+
+	<!-- code to print the last change date for the file -->
+
+<hr align="left" style="width:210px;"/>
+<p><em>Last modified: 01 August 2026</em></p>
+        </div>
+    </div>
+
+<!-- page footer below this --> 
+
+	<div id="footer">
+	<div id="address"> &copy;
+   		<strong>GRANTECAN S.A.</strong>
+       	Cuesta de San Jos&eacute;, s/n -<br /> 38712 - Bre&ntilde;a Baja - La Palma, Espa&ntilde;a<br />
+    	Teléfono: +34 922 425 720 | Fax: +34 922 425 725<br />e-mail: gtc [at] gtc.iac.es
+	</div>
+    <div id="logo">
+        <a href="http://ec.europa.eu/regional_policy/funding/erdf_en" target="_blank" title="European Regional Development Fund">
+        <img align="middle" border="0" alt="Enlace al FEDER" src="https://www.gtc.iac.es/images/Logo-FONDOS-FEDER_small.jpg" /></a> 
+         <a href="http://www.ciencia.gob.es/Organismos-y-Centros/ICTS.html" target="_blank" title="Infraestructuras Cient&iacute;ficas y T&eacute;cnicas Singulares (ICTS)">
+ <!--       <img align="middle" border="0" alt="Enlace a las ICTS" src="https://www.gtc.iac.es/images/logoICTS_small.jpg" /></a> -->
+      <img align="middle" border="0" alt="Enlace a las ICTS" src="https://www.gtc.iac.es/images/logoICTS_new_small.jpg" /></a> 
+       <a href="http://www.ciencia.gob.es/" target="_blank" title="Ministerio de Ciencia Innovaci&oacute;n y Universidades">
+ <!--        <img align="middle" border="0" alt="Enlace al MCIU" src="https://www.gtc.iac.es/images/MCI.Gob.small.jpg" /></a> -->
+        <img align="middle" border="0" alt="Enlace al MCIU" src="https://www.gtc.iac.es/images/MCIU.Gob.small.jpg" /></a> 
+        <a href="http://www.gobiernodecanarias.org" target="_blank" title="Gobierno de Canarias">
+        <img align="middle" border="0" alt="Enlace a Gobierno de Canarias" src="https://www.gtc.iac.es/images/gobcanLogoSmall.gif" /></a> 
+        <a href="http://www.iac.es" target="_blank" title="Instituto de Astrof&iacute;sica de Canarias">
+        <img align="middle" border="0" alt="Enlace al IAC" src="https://www.gtc.iac.es/images/iacLogoSmall.gif" /></a> 
+       	<a href="http://www.astroscu.unam.mx/" target="_blank" title="Instituto de Astronom&iacute;a de la Universidad Nacional Aut&oacute;noma de M&eacute;xico">
+       	<img align="middle" border="0" alt="Enlace al IA - UNAM" src="https://www.gtc.iac.es/images/unamLogoSmall.gif" /></a> 
+       	<a href="http://www.inaoep.mx/" target="_blank" title="Instituto Nacional de Astrof&iacute;sica, &Oacute;ptica y Electr&oacute;nica">
+       	<img align="middle" border="0" alt="Enlace al INAOE" src="https://www.gtc.iac.es/images/inaoeLogoSmall.gif" /></a>
+       	<a href="http://www.astro.ufl.edu/" target="_blank" title="Department of Astronomy, University of Florida">
+       	<img align="middle" border="0" alt="Enlace al UF" src="https://www.gtc.iac.es/images/ufLogoSmall.png" /></a>
+        <a href="https://www.aixacorpore.es" target="_blank" title="Aixa">
+       	<img align="middle" border="0" alt="Enlace al Aixa" style="width: 40px; height:40px;"  src="https://www.gtc.iac.es/images/selloaixa.png" /></a>
+	</div>
+</div>
+<div id="legal">
+   	<a href="https://www.gtc.iac.es/gtc/legal_es.php" target="_self" title="Aviso Legal">aviso legal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://www.gtc.iac.es/gtc/politica_cookies_es.php" target="_self" title="Politica de cookies">politica de cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://www.gtc.iac.es/gtc/politica_privacidad_es.php" target="_self" title="Politica de privacidad">politica de privacidad</a>
+</div>
+	
+<div id="cookieConsent">
+    <div id="closeCookieConsent">x</div>
+    Utilizamos cookies y dispositivos de seguimiento propios y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de tus hábitos de navegación (por ejemplo, páginas visitadas). Puedes configurar o rechazar la utilización de cookies y dispositivos de seguimiento indic&aacute;ndolo en el siguiente selector: <a name="cookieConsentOK" id="cookieConsentOK" class="cookieConsentOK" onclick="location.reload()">Acepto</a> <a name="cookieConsentCanceled" id="cookieConsentCanceled" class="cookieConsentOK" onclick="location.reload()">Rechazar</a>
+</div>
+<script>
+var_php='#iframe2_es'
+</script>
+<script>
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+function find_iframe(){
+        //ofuscar
+        document.addEventListener('DOMContentLoaded', function() {
+        
+        //   [].forEach.call(document.querySelectorAll('#iframe, #iframe1, #iframe_es, #iframe1_es, #iframe2, #iframe2_es '), function(e) {
+            [].forEach.call(document.querySelectorAll(var_javascript), function(e) {
+            
+            var a = document.createElement('a');
+            a.innerHTML = e.innerHTML;
+            
+            e.parentNode.insertBefore(a, e);
+            e.parentNode.removeChild(e);
+           
+            a.setAttribute("href", e.dataset.url);
+            
+          })
+        
+        })
+}
+var var_javascript = var_php;
+// document.write('prueba: ' + var_javascript);
+var x = getCookie('nombre');
+var y = getCookie('rechazado');
+if (!x) {
+    find_iframe()
+$(document).ready(function(){  
+   
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 1000);
+    $(".cookieConsentOK").click(function() {
+        setCookie('nombre','acepto', 1);
+        $("#cookieConsent").fadeOut(200);
+    }); 
+    $("#cookieConsentCanceled").click(function() {
+        setCookie('rechazado', 'acepto', 1);
+        $("#cookieConsent").fadeOut(200);
+    }); 
+    $("#closeCookieConsent").click(function() {
+        setCookie('nombre', close(), 1);
+        $("#cookieConsent").fadeOut(200);
+    });
+}); 
+}else if (y){
+    find_iframe()
+
+}
+
+
+</script>
+
+
+</div>
+
+</body>
+</html>

@@ -32,6 +32,76 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.79 — Una ley para el cielo, y un telescopio que se queda en la isla que no es
+
+Segundo de los tres enriquecimientos de `icts`. Su mitad más útil es un hueco
+dicho en voz alta. **Contrato 1.52.0.**
+
+### Los Observatorios de Canarias tienen una ley para su cielo
+
+Es **el único régimen de su clase en España**, y no protege un recinto: protege
+**dos islas enteras**.
+
+- **La Palma:** «la totalidad de la isla».
+- **Tenerife:** la isla completa para estaciones radioeléctricas e industrias
+  contaminantes, y «la parte que tiene visión directa desde la isla de La Palma»
+  para el alumbrado exterior.
+- Por encima de **1.500 m** de altitud no pueden instalarse en ninguna de las dos
+  industrias, actividades o servicios potencialmente contaminadores de la
+  atmósfera (art. 21).
+- Quedan fuera del concepto las instalaciones a más de **15 km** en línea recta
+  de los observatorios de La Palma y **25 km** de los de Tenerife, medidos en
+  plano horizontal (art. 22.b).
+- Y hay un **capítulo entero, el IV, para las rutas aéreas**: cuenta como
+  interferencia la formación de nubes por condensación de los gases de escape de
+  los aviones.
+
+Como en la `.78`, **no se dibuja nada**: «la isla entera» no es una zona que
+delimitar, y la «visión directa» no la delimita ningún acto.
+
+### El Gran Telescopio Canarias está en la isla que no es, y se queda
+
+El GTC está en el Roque de los Muchachos, en Garafía (La Palma). El atlas lo
+pinta en **Santa Cruz de Tenerife — otra isla, a unos 165 km** — porque el Mapa
+de ICTS sitúa por comunidad autónoma y su `geo_precision` es `autonomia`, que
+significa exactamente eso.
+
+**No se mueve, y esa es la decisión.** R9 reserva `paraje` a una fuente
+primaria; el Nomenclátor del IGN **no tiene topónimo del telescopio** —se
+consultó por tres etiquetas distintas y las tres respuestas archivadas dicen
+`numberMatched: 0`—; y lo único que publica su posición es la web del propio
+telescopio, que es **corporativa**. Lo que sí se puede hacer es **decirlo**, y el
+registro estrena una clave que lo dice. Es la diferencia entre un dato pobre y
+un dato pobre y callado.
+
+### Lo que el validador cazó por el camino
+
+La clave del GTC nació declarada `confirmado` sobre esa fuente corporativa, y
+**R3 la paró en el primer intento**. Va como `parcial`, que es lo que la
+doctrina permite. Y el guardián de `schema_version` que estrenó la `.75` cazó un
+desfase real entre el manifiesto y el contrato en esta misma tanda.
+
+### Añadido
+
+- Cuatro campos en `oocc`: `proteccion_acto`,
+  `proteccion_altitud_industrias_m`, `proteccion_radio_la_palma_km` y
+  `proteccion_radio_tenerife_km`.
+- El enriquecedor se vuelve **repetible**: antes añadía la fuente y la clave a
+  ciegas, así que solo se podía correr una vez en la vida. Ahora reconoce lo que
+  ya escribió y lo reescribe en vez de duplicarlo.
+
+### Huecos
+
+- **El GTC sigue en Tenerife.** Se arreglará el día que una fuente primaria lo
+  sitúe; hasta entonces, su clave lo advierte.
+- **Siguen 20 registros por comunidad o por país**, que es todo lo que el Mapa
+  de ICTS da.
+- Los radios de 15 y 25 km **no son el alcance de la protección**, que es la
+  isla entera: son el límite más allá del cual una instalación deja de contar
+  como contaminadora a estos efectos.
+
+---
+
 ## datos-v2026.08.78 — El radiotelescopio estaba dibujado en Sevilla
 
 El **IRAM 30m** es una antena de treinta metros en el pico Veleta, a 2.904 m de
