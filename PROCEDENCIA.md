@@ -66,7 +66,7 @@ vez, y las fichas remiten a esta sección.
 
 ### Instituto Geográfico Nacional (IGN) y CNIG
 
-**Presente en 23 de las 32 capas.** Licencia **CC-BY 4.0**, establecida por la
+**Presente en 23 de las 34 capas.** Licencia **CC-BY 4.0**, establecida por la
 **Orden FOM/2807/2015, de 18 de diciembre** (BOE de 26-12-2015), cuyo artículo 4
 dice que el uso «tendrá carácter libre y gratuito, siempre que se mencione el
 origen y propiedad de los datos».
@@ -85,6 +85,13 @@ Los identificadores exactos, de la tabla de productos del propio SCNE:
 | Nomenclátor Geográfico Básico | `Obra derivada de NGBE Continua CC-BY 4.0 ign.es` |
 | Límites municipales y provinciales | `Obra derivada de BDLJE Continua CC-BY 4.0 ign.es` |
 | Red de estaciones permanentes GNSS | `Obra derivada de ERGNSS 2025 CC-BY 4.0 ign.es` |
+| Redes de Transporte (nodos de aeródromo) | `Obra derivada de IGR-RT 2026 CC-BY 4.0 scne.es` |
+
+Ojo con la última: su atribución es **`scne.es`** y no `ign.es`, porque el
+producto está coproducido (IGN, Gobierno Vasco y Generalitat Valenciana). El
+propio servicio lo confirma por su cuenta, declarando `AccessConstraints: CC BY
+4.0 scne.es` en sus capacidades. Copiar la fórmula de otra fila sería atribuir
+mal.
 
 Y su punto 5 añade una obligación que casi nadie cumple: quien genere **un
 conjunto nuevo modificando el original** debe incluir esas expresiones **también
@@ -157,8 +164,8 @@ la estadística eléctrica y los anuncios de Costas.
 
 ## El archivo está completo
 
-**Las 9.538 citas con URL de las 32 capas y del conjunto tienen su documento
-archivado aquí: el 100 %.** Son 204 documentos distintos. No queda un solo aviso
+**Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento
+archivado aquí: el 100 %.** Son 208 documentos distintos. No queda un solo aviso
 pendiente de §7.7 —la comprobación que avisa cuando una cita no está
 archivada—, y eso se midió, no se supuso.
 
@@ -1108,15 +1115,196 @@ misma propuesta. Su listado web publica solo código y nombre, pero **el dato
 completo SÍ existe**: el enrutador EIDA revela que el IGN sirve FDSN en
 `fdsnws.sismologia.ign.es` —otro dominio, no `www.ign.es`, donde da 404— con
 **303 estaciones, coordenadas, elevación y fechas de alta y baja** (227 activas,
-76 dadas de baja). **Lo que bloquea es la licencia:** la política de datos del
-IGN se declara aplicable a «los productos y servicios de datos geográficos
-definidos en» la Orden FOM/2807/2015, **la sismología no está entre ellos**, no
-hay producto sísmico en la tabla del SCNE y no hay conjunto en `datos.gob.es`.
-Queda como consulta al CNIG en `AGENDA.md`, no como suposición.
+76 dadas de baja). **Y se puede usar**, aunque NO por la vía de las otras
+capas del IGN: la Orden FOM/2807/2015 cubre solo los productos geográficos del
+SCNE, donde no hay ninguno sísmico, así que la fórmula «Obra derivada de … CC-BY
+4.0 ign.es» **no aplica y usarla sería reclamar una licencia que no es**. Lo que
+sí aplica es el **régimen general de la Ley 37/2007**, que el propio aviso legal
+del IGN desarrolla en su punto RISP: permite reutilizar sus documentos citando la
+fuente y la fecha, sin desnaturalizar el sentido y sin insinuar patrocinio, y
+**sin ShareAlike ni NonCommercial**. Es el mismo régimen sobre el que este atlas
+publica ya seis capas. La atribución, por tanto, es **«Instituto Geográfico
+Nacional»** con su fecha, no la fórmula del SCNE.
 **Archivado** · 3 ficheros propios (la tabla de coordenadas, el listado de datos
 diarios del 2026-08-10 que prueba la vigencia, y un site log IGS de muestra); la
 licencia y la tabla de productos del SCNE se reutilizan de la `.26`.
 **El resto** · CHANGELOG `datos-v2026.08.62` y `.63` · §10
+
+## red-sismica
+
+**De dónde** · **IGN**, servicio **FDSN** de estaciones de la red sísmica `ES`
+(*Spanish Digital Seismic Network*): coordenadas en WGS84, elevación,
+denominación del emplazamiento y **fechas de alta y de baja**, de una sola
+petición. La red tiene además DOI propio, `10.7914/SN/ES`.
+**Dónde está, que costó encontrarlo** · El portal del IGN publica un buscador
+que da **solo código y nombre**, sin coordenadas, y `www.ign.es/fdsnws/…`
+responde **404** — lo que hace pensar que el IGN no sirve FDSN. **Sí lo sirve,
+en otro dominio:** `fdsnws.sismologia.ign.es`. Se llega preguntándole al
+**enrutador de EIDA**, la federación europea, que sabe qué nodo atiende cada
+red: `orfeus-eu.org/eidaws/routing/1/query?network=ES&service=station`.
+**Licencia y qué obliga — OJO, NO es la de las demás capas del IGN** · La Orden
+FOM/2807/2015, de donde sale la fórmula «Obra derivada de *producto* CC-BY 4.0
+ign.es», cubre **solo los productos geográficos de la tabla del SCNE, y ahí no
+hay ninguno sísmico**. Usarla aquí sería reclamar una licencia que no aplica.
+Lo que sí aplica es el **régimen general de la Ley 37/2007**, que el propio
+aviso legal del IGN desarrolla en su punto RISP: reutilización permitida
+citando la fuente y la fecha, sin desnaturalizar el sentido, sin insinuar
+patrocinio y conservando los metadatos — **sin ShareAlike ni NonCommercial**.
+Atribución en el manifiesto: «Instituto Geográfico Nacional».
+**Qué hay que saber** · **Las bajas son la mitad del valor**: 76 de las 303
+estaciones tienen fecha de cierre y se publican como `historico` en vez de
+esconderse. Una red de vigilancia sin su historia no dice **cuándo se dejó de
+mirar un sitio**, que es justo lo que interesa. Y **el portal va atrasado
+respecto al servicio**: su pestaña de activas todavía lista cuatro que el FDSN
+da de baja en 2026 (E1601, E1602, E1603 y EBAJ). Manda el servicio, que es lo
+que el IGN mantiene para la federación internacional. Aquí, al contrario que en
+`red-geodesica`, **no hay lío de datums**: el formato FDSN publica en WGS84, que
+es lo que pide RFC 7946.
+**Huecos** · Los dos son de la **capa**, no de cada registro, y por eso están
+aquí y no en las 303 fichas —donde las degradarían a `parcial` por algo que no
+dicen—. Primero: **qué mide cada estación**. La consulta a nivel de estación no
+devuelve los canales, así que la capa no distingue banda ancha, corto periodo o
+acelerógrafo; el servicio lo publica a nivel de canal, que es otra consulta y
+otro volumen. Segundo: **la red `ES` no es toda la sismología del IGN**. Las
+antárticas (Decepción, Livingston) y algunas volcánicas que el portal sí lista
+**no están en esta red** — van con otro código, y ninguna estación de `ES` cae
+en el hemisferio sur.
+**Ámbito** · Va como `mundo` por **una sola estación**: `VPORT`, en Vila do
+Porto (Santa María, Azores), Portugal. El ámbito describe la cobertura, no la
+mayoría.
+**Archivado** · 2 ficheros (la consulta al FDSN y el aviso legal que sostiene la
+licencia).
+**El resto** · CHANGELOG `datos-v2026.08.64` · §10
+
+## red-carreteras
+
+**De dónde** · **Ministerio de Transportes y Movilidad Sostenible**, archivos de
+geometrías del **Catálogo de la Red de Carreteras del Estado 2025**: los 7.072
+tramos con su carretera, provincia, clase, puntos kilométricos y longitud, en
+shapefile ETRS89/UTM 30N.
+**Licencia y qué obliga** · La más explícita del atlas. El aviso legal del
+ministerio autoriza «la reproducción total o parcial, modificación, distribución
+y comunicación, **para usos comerciales y no comerciales**», con tres
+obligaciones: **no desnaturalizar** el contenido, **citar la fuente** y
+**mencionar la fecha de la última actualización** — que aquí es el 31-12-2025,
+la del propio catálogo. Régimen de la Ley 37/2007.
+**Cuál NO es la fuente, y es la trampa** · Las tres investigaciones que
+propusieron esta capa apuntaron al producto *Redes de Transporte* del CNIG.
+**Ése no vale**: su WFS INSPIRE declara **943.679** entidades `tn-ro:Road` y
+**9.879.089** `tn-ro:RoadLink` — el viario entero de España con calles urbanas.
+Lo que hace red a esta red es la **titularidad estatal**, y quien la fija es el
+catálogo del ministerio: 26.564 km de los 165.756 del país, con el 53 % del
+tráfico total y el 65,7 % del pesado.
+**Qué hay que saber** · **Viene proyectado**, en ETRS89/UTM 30N, así que hay que
+reproyectar a WGS84 para el GeoJSON; la conversión se hace en el pipeline sin
+`pyproj`, y está comprobada contra puntos conocidos —el meridiano central del
+huso sale a `-3,00000` exacto—. El resultado cae donde debe: lon -8,78 a 3,17,
+lat 35,27 a 43,69. **Canarias no aparece, y no es un fallo**: su red no es del
+Estado. **El registro es la CARRETERA y no el tramo**: los 7.072 tramos se
+agrupan en las **393** carreteras que ellos mismos nombran — agrupar aquí no es
+fabricar, al contrario que en `red-electrica`, donde las líneas de la BTN venían
+sin nombre.
+**La geometría se simplifica, y se dice** · 1.420.848 vértices no caben en una
+página web. Douglas-Peucker a **10 m** deja el 8 %, y **la tolerancia se afina
+sola** carretera a carretera hasta bajar del 5 % de desvío: a 10 m fijos,
+**noventa carreteras cortas** se pasaban, porque quitar 10 m de un ramal de 400 m
+es proporcionalmente brutal. De ahí `geo_precision: generalizada` (§6.6) y su
+`geo_fuente` diciendo qué se simplificó, como exige R9.
+**Por qué la longitud no se llama `longitud_km`** · Porque ese nombre lo mira
+**R10**, que compara lo declarado con lo dibujado, y aquí serían **dos medidas
+distintas bajo el mismo nombre**: la del catálogo es la **administrativa, por
+puntos kilométricos**, y la del trazado es la del eje. No es un rodeo a la regla
+— lo que R10 persigue **queda comprobado y no ocurre**: en el conjunto de la red
+las dos concuerdan al **-0,34 %** (26.563,5 km declarados contra 26.473,3
+dibujados) y la mediana por clase no pasa del 1,5 %. Donde se separan es en
+**ramales de menos de tres kilómetros**, y esa diferencia **la trae la fuente**:
+se mantiene aunque no se simplifique nada. Cada registro lo declara en una clave.
+**Cuadre publicado** · La suma de las longitudes de las 393 da **26.563,5 km**
+contra los **26.564** que publica el ministerio en su propia página. Y el
+catálogo cuadra consigo mismo: su geometría sin tocar mide 26.542,8 km, un
+0,08 % de su campo de longitud.
+**Archivado** · 2 ficheros (el ZIP del catálogo, 24 MB, y el aviso legal que
+sostiene la licencia).
+**El resto** · CHANGELOG `datos-v2026.08.65` · §10
+
+---
+
+## aeropuertos
+
+**De dónde** · El perímetro, de **tres actos del BOE**; la geometría, del
+**Instituto Geográfico Nacional** — producto *Información Geográfica de
+Referencia · Redes de Transporte* (IGR-RT), servicio WFS INSPIRE, del que salen
+los 1.796 nodos de aeródromo de España con su coordenada ETRS89, su indicador
+de lugar OACI y su designador IATA.
+**Licencia y qué obliga** · Dos regímenes, y no se mezclan. Los actos: **un
+texto legal no tiene dueño** (art. 13 TRLPI), sin obligación de atribución. La
+geometría: IGN, ver arriba · atribución exigida `Obra derivada de IGR-RT 2026
+CC-BY 4.0 scne.es` — con `scne.es`, no `ign.es`, por ser producto coproducido.
+**El perímetro no lo da una lista, lo dan tres actos** · Es lo que costó el día
+y lo que explica la cifra:
+1. **Real Decreto 1150/2011**, cuyo anexo trae **42 entradas** (40 aeropuertos y
+   2 helipuertos). Cuidado con el rótulo del anexo, que **no** dice «los
+   calificados de interés general» sino «Aeropuertos y helipuertos gestionados
+   por *Aena Aeropuertos, S.A.*»; quien califica es su **disposición adicional
+   primera**. Modificaciones posteriores: **ninguna**, y no es una suposición —
+   el análisis del propio BOE solo lista como referencia posterior la corrección
+   de errores.
+2. **Real Decreto 1167/1995**, artículo 1, redacción **vigente desde el
+   26-07-2025**: su apartado 2 nombra los **8 aeródromos de utilización
+   conjunta** civil-militar, y su apartado 1 las **5 bases aéreas abiertas al
+   tráfico civil** (Talavera la Real, Matacán, Villanubla, León y Albacete), que
+   **no** están calificadas de interés general.
+3. **Orden FOM/1510/2006**, que sostiene a **Ciudad Real**, único de titularidad
+   no estatal — el caso que el RD de 2011 preserva sin nombrarlo: «igualmente
+   conservarán dicha calificación los aeropuertos de titularidad no estatal
+   actualmente calificados de interés general».
+**Por qué salen 48 y no lo que enseña el mapa de Aena** · Porque esas **5 bases
+aéreas son exactamente el hueco**, y se publican para que se vea: una base
+abierta al tráfico civil sigue siendo militar —su jefe lo es «de todo el
+conjunto» (art. 5) y Aena solo designa un delegado para la zona civil (art. 9)—,
+así que no está en el anexo de 2011 ni se puede llamar aeropuerto de interés
+general. **San Javier estaba y salió en 2025** (Orden PJC/808/2025), tras
+cerrarse al tráfico civil el 14-01-2019: la capa lo refleja porque lee la
+redacción vigente, no por criterio propio.
+**Dos cuadres que el guion comprueba en vez de suponer** · Los **ocho**
+paréntesis «(aeródromo utilización conjunta)» del anexo de 2011 son los **ocho**
+del artículo 1.2 del RD de 1995 — dos actos independientes diciendo lo mismo, y
+eso es lo que sostiene el `confirmado` de ese dato. Y la **corrección de errores**
+de 26-11-2011 se aplica **leyéndola**, no a mano. Ahí saltó una rareza: la
+corrección **se cita a sí misma mal**, escribe «(aeródromo **de** utilización
+conjunta)» y la página corregida no lleva ese «de», así que un reemplazo literal
+no habría encontrado nada y la corrección se habría aplicado en silencio.
+**El emparejamiento con la geometría, declarado uno a uno** · Casar por nombre
+**no vale**: siete casillas salían ambiguas y una se llevó por delante una
+suposición — Logroño-Agoncillo tiene **dos** nodos, el aeropuerto `LERJ` y un
+helipuerto `LELO` a novecientos metros, y el helipuerto es el que gana por
+parecido de nombre. Lo mismo con Ceuta (`GECE`, con IATA, y `GECT` sin él),
+Melilla, Tenerife Norte y Santiago. Por eso la tabla va escrita a mano y el guion
+exige que cada código salga **exactamente una vez** en el archivo. De propina:
+el fichero del IGN trae **once códigos OACI repetidos** (LEBP, LECD, LECX, LEDE,
+LEHI, LELI, LELM, LEOA, LEPZ, LETA, LETT), siempre entre aeródromos privados y
+helipuertos de hospital o empresa; **ninguno es de los 48**, y eso se comprueba,
+no se cree. Cuando el IGN llama a un sitio distinto que el acto —«Josep
+Tarradellas Barcelona-El Prat», «Aeròdrom de Son Bonet»—, **manda el nombre del
+acto**: la capa publica el perímetro jurídico.
+**Comprobación de la geometría** · Cada uno de los 48 puntos cae dentro de la
+provincia que su nombre implica, contrastado contra los polígonos provinciales
+que ya publica el atlas. Única excepción, y es del instrumento: el helipuerto de
+Ceuta queda 348 m fuera del contorno de Ceuta **porque ese contorno está
+generalizado** a 33 vértices. Los puntos del IGN coinciden con el punto de
+referencia que publica el AIP dentro de unos treinta metros.
+**Huecos declarados** · La capa publica el **régimen**, no la operación: no dice
+si un aeródromo tiene tráfico comercial regular —Huesca, Burgos, Córdoba o Son
+Bonet están calificados y apenas lo tienen—, ni pistas, ni superficie, ni
+servidumbres aeronáuticas. Y la calificación de Ciudad Real es de **alcance
+acotado** por su propio acto, «a los exclusivos efectos de reservar al Estado la
+gestión directa de los servicios aeronáuticos y aeroportuarios estatales»: va
+citado verbatim en su ficha.
+**Archivado** · 8 ficheros: los **seis actos del BOE** —los tres que fijan el
+perímetro, la corrección de errores, la orden de 2025 y el RD 2858/1981, que es
+la norma bajo la que se califica—, la respuesta del WFS y sus capacidades. La
+licencia del IGN y la tabla del SCNE ya estaban archivadas.
+**El resto** · CHANGELOG `datos-v2026.08.66` · §10
 
 ---
 

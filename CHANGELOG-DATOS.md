@@ -32,6 +32,98 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.66 — Los aeropuertos, y por qué no son una lista
+
+Entra **`aeropuertos`**: los **43 aeropuertos y helipuertos calificados de
+interés general** y las **5 bases aéreas abiertas al tráfico civil**. Es el
+hermano que le faltaba a `puertos` y el complemento de la carretera y el
+ferrocarril — pero sobre todo es la capa que enseña que **un perímetro jurídico
+no siempre cabe en una lista**.
+
+### Añadido
+
+- `aeropuertos` — **48 aeródromos**, cada uno con el acto que lo pone ahí, su
+  indicador de lugar OACI, su designador IATA cuando lo tiene, y su régimen:
+  34 de interés general, 8 de utilización conjunta civil-militar, 1 de interés
+  general no estatal y 5 bases aéreas abiertas al tráfico civil.
+
+### El perímetro lo dan tres actos, no uno
+
+Fue el trabajo del día. **RD 1150/2011**, cuyo anexo trae 42 entradas — y
+cuidado, porque el rótulo del anexo **no** dice «los calificados de interés
+general» sino «gestionados por *Aena Aeropuertos, S.A.*»: quien califica es su
+disposición adicional primera. **RD 1167/1995**, artículo 1, en su redacción
+vigente desde el **26-07-2025**, que nombra los 8 aeródromos de utilización
+conjunta y las 5 bases abiertas al tráfico civil. Y la **Orden FOM/1510/2006**,
+que sostiene a **Ciudad Real**, el único de titularidad no estatal — el caso que
+el RD de 2011 preserva sin nombrarlo, y cuya cadena hay que leer entera porque
+el BOE no la enlaza: la Orden FOM/3237/2002, de título idéntico, quedó **sin
+efecto** por el apartado Cuarto de la de 2006.
+
+### Por qué salen 48 y el mapa comercial de Aena enseña otra cosa
+
+Porque esas **5 bases aéreas son exactamente el hueco**, y se publican para que
+se vea, en vez de dejar la capa pareciendo incompleta. Una base abierta al
+tráfico civil sigue siendo militar: su jefe lo es «de todo el conjunto» y Aena
+solo designa un delegado para la zona civil. Por eso no está en el anexo de 2011
+y por eso no puede llamarse aeropuerto de interés general.
+
+**San Javier estaba en esa lista y salió en 2025**, tras cerrarse al tráfico
+civil el 14-01-2019. La capa lo refleja porque lee la redacción vigente, no por
+criterio propio: la relación está viva.
+
+### Dos cuadres, comprobados y no supuestos
+
+Los **ocho** paréntesis «(aeródromo utilización conjunta)» del anexo de 2011 son
+los **ocho** que nombra el artículo 1.2 del RD de 1995. Dos actos independientes
+diciendo lo mismo es lo que sostiene ese `confirmado`, y el guion lo exige: si un
+día dejan de coincidir, la capa no se construye.
+
+Y la **corrección de errores** de 26-11-2011 se aplica **leyéndola**. Ahí saltó
+una rareza que merece quedar escrita: la corrección **se cita a sí misma mal** —
+dice «donde dice: *(aeródromo **de** utilización conjunta)*» y la página
+corregida no lleva ese «de»—, así que un reemplazo literal no habría encontrado
+nada y la corrección se habría aplicado en silencio.
+
+### El emparejamiento con la geometría, declarado uno a uno
+
+La geometría son los nodos de aeródromo del IGN (producto **IGR-RT**), que caen
+dentro de unos treinta metros del punto de referencia que publica el AIP. Casar
+por **nombre no vale**: siete casillas salían ambiguas y una se llevó por delante
+una suposición — **Logroño-Agoncillo tiene dos nodos**, el aeropuerto `LERJ` y un
+helipuerto `LELO` a novecientos metros, y el helipuerto gana por parecido de
+nombre. Lo mismo con Ceuta, Melilla, Tenerife Norte y Santiago.
+
+De propina, el archivo del IGN trae **once códigos OACI repetidos** entre
+aeródromos privados y helipuertos de hospital. Ninguno es de los 48 — y eso el
+guion lo comprueba en lugar de creérselo.
+
+### Comprobación publicada
+
+Los 48 puntos caen dentro de la provincia que su nombre implica, contrastados
+contra los polígonos provinciales que el atlas ya publica. Única excepción, y es
+del instrumento: el helipuerto de Ceuta queda 348 m fuera **porque ese contorno
+está generalizado a 33 vértices**.
+
+### Huecos
+
+- La capa publica el **régimen, no la operación**: no dice si un aeródromo tiene
+  tráfico comercial regular. Huesca, Burgos, Córdoba y Son Bonet están
+  calificados y apenas lo tienen — calificación jurídica y tráfico son cosas
+  distintas.
+- **Sin pistas, sin superficie y sin servidumbres aeronáuticas**: el atlas
+  publica un punto por aeródromo, no su recinto. Al contrario que `puertos`,
+  aquí no hay un acto que delimite zona de servicio en la misma fuente.
+- La calificación de **Ciudad Real** es de **alcance acotado** por su propio
+  acto, «a los exclusivos efectos de reservar al Estado la gestión directa de los
+  servicios aeronáuticos y aeroportuarios estatales». Va citado verbatim en su
+  ficha, no resumido.
+- **Los helipuertos de interés general son solo dos** (Algeciras y Ceuta), los
+  que nombra el anexo. La red de helipuertos españoles es mucho mayor y no es
+  competencia estatal.
+
+---
+
 ## datos-v2026.08.65 — Las carreteras del Estado, por fin
 
 Entra **`red-carreteras`**: las **393 carreteras de titularidad estatal**,

@@ -1,0 +1,2052 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<WFS_Capabilities version="2.0.0" xmlns="http://www.opengis.net/wfs/2.0" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:ogc="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+  <ows:ServiceIdentification>
+    <ows:Title>Redes de transporte de España</ows:Title>
+    <ows:Abstract>Red e Infraestructuras del Transporte del Sistema Cartográfico Nacional (www.scne.es). La Red de Transporte es una red lineal 3D de cobertura nacional definida y publicada en conformidad con la Directiva INSPIRE. Se compone de cinco modos de transporte: red viaria (que incluye la red de carreteras, red urbana y los caminos), red de transporte por raíl, red de transporte por vías navegables, red de transporte aéreo y red de transporte por cable, además de sus respectivas conexiones intermodales e infraestructuras asociadas. La red de cobertura nacional fue generada por el IGN a partir los datos de esta temática existentes en sus productos y su contraste con terceras fuentes, y tras la incorporación de la producción de datos realizada por el Instituto Cartográfico de Valencia (ICV) en el ámbito de la Comunidad Valenciana. La actualización de la cobertura nacional de la red se realiza a partir de fuentes de datos procedentes de la Administración General del Estado y de Comunidades Autónomas, y, en particular, por la integración de la actualización realizada el ICV en la C. Valenciana y por el Eusko Jaurlaritza/Gobierno Vasco en el País Vasco. Tal y como recoge la especificación de datos de Redes de Transporte de Inspire, los siguientes tipos de objetos geográficos no tienen geometría asociada y por tanto no pueden realizarse consultas por encuadre geográfico (BBOX): net:NetworkConnection (Conexión de redes), tn-a:AerodromeCategory (Categoría de aeródromo), tn-a:AerodromeType (Tipo de aeródromo), tn-a:ConditionOfAirFacility (Estado de la instalación aérea), tn-ra:NominalTrackGauge (Ancho de vía nominal), tn-ra:NumberOfTracks (Número de vías), tn-ra:RailwayElectrification (Electrificación de la vía férrea), tn-ra:RailwayLine (Línea ferroviaria), tn-ra:RailwayStationCode (Código de estación ferroviaria), tn-ra:RailwayUse (Uso ferroviario),  tn-ro:ERoad (Carretera E), tn-ro:FormOfWay (Forma de vía), tn-ro:FunctionalRoadClass (Clase funcional de la carretera), tn-ro: NumberOfLanes (Número de carriles), tn-ro:Road (Carretera), tn-ro:RoadName (Nombre de carretera), tn-ro:RoadServiceType (Tipo de servicio de carretera), tn-ro:RoadSurfaceCategory (Categoría de superficie de la carretera), tn:AccessRestriction (Restricción de acceso), tn:ConditionOfFacility (Estado de la instalación), tn:MaintenanceAuthority (Autoridad de mantenimiento), tn:OwnerAuthority (Autoridad propietaria), tn:VerticalPosition (Posición vertical). Servicio de descarga Inspire de acceso directo conforme con ISO 19142 Web Feature Service e ISO 19143 Filter Encoding.</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>España</ows:Keyword>
+      <ows:Keyword>IGR</ows:Keyword>
+      <ows:Keyword>Carretera</ows:Keyword>
+      <ows:Keyword>Ferrocarril</ows:Keyword>
+      <ows:Keyword>Estación</ows:Keyword>
+      <ows:Keyword>Aeródromo</ows:Keyword>
+      <ows:Keyword>Plataforma</ows:Keyword>
+      <ows:Keyword>Calle de rodaje</ows:Keyword>
+      <ows:Keyword>Pista</ows:Keyword>
+      <ows:Keyword>Infraestructura de Datos Espaciales</ows:Keyword>
+      <ows:Keyword>IDEE</ows:Keyword>
+      <ows:Keyword>SCNE</ows:Keyword>
+      <ows:Keyword>Sistema Cartográfico Nacional</ows:Keyword>
+      <ows:Keyword>Información Geográfica de Referencia</ows:Keyword>
+    </ows:Keywords>
+    <ows:Keywords>
+      <ows:Keyword>infoManagementService</ows:Keyword>
+      <ows:Keyword>infoFeatureAccessService</ows:Keyword>
+      <ows:Type>ISO 19119 geographic services taxonomy, version 2.3</ows:Type>
+    </ows:Keywords>
+    <ows:ServiceType codeSpace="http://www.opengeospatial.org/">WFS</ows:ServiceType>
+    <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+    <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+    <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+    <ows:Fees>No se aplican condiciones</ows:Fees>
+    <ows:AccessConstraints>CC BY 4.0 scne.es</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>Infraestructura de Datos Espaciales de España</ows:ProviderName>
+    <ows:ProviderSite xlink:href="https://www.idee.es"/>
+    <ows:ServiceContact>
+      <ows:PositionName>Punto de contacto</ows:PositionName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice>+34 91 597 96 46</ows:Voice>
+          <ows:Facsimile>+34 91 597 97 64</ows:Facsimile>
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint>C/ General Ibáñez de Ibero, 3</ows:DeliveryPoint>
+          <ows:City>Madrid</ows:City>
+          <ows:AdministrativeArea>Madrid</ows:AdministrativeArea>
+          <ows:PostalCode>28003</ows:PostalCode>
+          <ows:Country>España</ows:Country>
+          <ows:ElectronicMailAddress>ign@transportes.gob.es</ows:ElectronicMailAddress>
+        </ows:Address>
+        <ows:OnlineResource xlink:href="https://www.ign.es"/>
+      </ows:ContactInfo>
+      <ows:Role>Punto de contacto</ows:Role>
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://servicios.idee.es/wfs-inspire/transportes?"/>
+          <ows:Post xlink:href="https://servicios.idee.es/wfs-inspire/transportes"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="AcceptVersions">
+        <ows:AllowedValues>
+          <ows:Value>2.0.0</ows:Value>
+          <ows:Value>1.1.0</ows:Value>
+          <ows:Value>1.0.0</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptFormats">
+        <ows:AllowedValues>
+          <ows:Value>text/xml</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+      <ows:Parameter name="Sections">
+        <ows:AllowedValues>
+          <ows:Value>ServiceIdentification</ows:Value>
+          <ows:Value>ServiceProvider</ows:Value>
+          <ows:Value>OperationsMetadata</ows:Value>
+          <ows:Value>FeatureTypeList</ows:Value>
+          <ows:Value>Filter_Capabilities</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="DescribeFeatureType">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://servicios.idee.es/wfs-inspire/transportes?"/>
+          <ows:Post xlink:href="https://servicios.idee.es/wfs-inspire/transportes"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="ListStoredQueries">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://servicios.idee.es/wfs-inspire/transportes?"/>
+          <ows:Post xlink:href="https://servicios.idee.es/wfs-inspire/transportes"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="DescribeStoredQueries">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://servicios.idee.es/wfs-inspire/transportes?"/>
+          <ows:Post xlink:href="https://servicios.idee.es/wfs-inspire/transportes"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetFeature">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://servicios.idee.es/wfs-inspire/transportes?"/>
+          <ows:Post xlink:href="https://servicios.idee.es/wfs-inspire/transportes"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetPropertyValue">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://servicios.idee.es/wfs-inspire/transportes?"/>
+          <ows:Post xlink:href="https://servicios.idee.es/wfs-inspire/transportes"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Parameter name="version">
+      <ows:AllowedValues>
+        <ows:Value>2.0.0</ows:Value>
+        <ows:Value>1.1.0</ows:Value>
+        <ows:Value>1.0.0</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="srsName">
+      <ows:AllowedValues>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/4258</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/3035</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/25828</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/25829</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/25830</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/25831</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/32628</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/32629</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/32630</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/32631</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/4326</ows:Value>
+        <ows:Value>http://www.opengis.net/def/crs/EPSG/0/3857</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="outputFormat">
+      <ows:AllowedValues>
+        <ows:Value>text/xml; subtype=gml/3.2.1</ows:Value>
+        <ows:Value>application/gml+xml; version=3.2</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+        <ows:Value>text/xml; subtype=gml/2.1.2</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="resolve">
+      <ows:AllowedValues>
+        <ows:Value>none</ows:Value>
+        <ows:Value>local</ows:Value>
+        <ows:Value>remote</ows:Value>
+        <ows:Value>all</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Constraint name="ImplementsSimpleWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsBasicWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsTransactionalWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsLockingWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="KVPEncoding">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="XMLEncoding">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="SOAPEncoding">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsInheritance">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsRemoteResolve">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsResultPaging">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="PagingIsTransactionSafe">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsStandardJoins">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsSpatialJoins">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsTemporalJoins">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsFeatureVersioning">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ManageStoredQueries">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="CountDefault">
+      <ows:NoValues/>
+      <ows:DefaultValue>10000</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ResolveTimeoutDefault">
+      <ows:NoValues/>
+      <ows:DefaultValue>180</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ResolveLocalScope">
+      <ows:NoValues/>
+      <ows:DefaultValue>*</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="QueryExpressions">
+      <ows:AllowedValues>
+        <ows:Value>wfs:Query</ows:Value>
+        <ows:Value>wfs:StoredQuery</ows:Value>
+      </ows:AllowedValues>
+    </ows:Constraint>
+    <ows:ExtendedCapabilities xmlns="http://www.deegree.org/services/metadata" xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0" xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0" xmlns:tn-c="http://inspire.ec.europa.eu/schemas/tn-c/4.0" xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <inspire_dls:ExtendedCapabilities xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd">
+        <inspire_common:MetadataUrl>
+          <inspire_common:URL>https://www.idee.es/csw-inspire-idee/srv/spa/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=spaignwfs_IGR_Transporte&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;ID=spaignwfs_IGR_Transporte</inspire_common:URL>
+          <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+          
+        
+        </inspire_common:MetadataUrl>
+        <inspire_common:SupportedLanguages>
+          <inspire_common:DefaultLanguage>
+            <inspire_common:Language>spa</inspire_common:Language>
+          
+          </inspire_common:DefaultLanguage>
+          <inspire_common:SupportedLanguage>
+            <inspire_common:Language>eng</inspire_common:Language>
+          
+          </inspire_common:SupportedLanguage>
+        
+        </inspire_common:SupportedLanguages>
+        <inspire_common:ResponseLanguage>
+          <inspire_common:Language>spa</inspire_common:Language>
+        
+        </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>igr_transporte</inspire_common:Code>
+          <inspire_common:Namespace>SCNE</inspire_common:Namespace>
+        
+        </inspire_dls:SpatialDataSetIdentifier>
+      
+      </inspire_dls:ExtendedCapabilities>
+    
+    </ows:ExtendedCapabilities>
+  </ows:OperationsMetadata>
+  <FeatureTypeList>
+    <FeatureType>
+      <Name xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0">net:NetworkConnection</Name>
+      <Title>Conexión de redes</Title>
+      <Abstract>Representa una conexión lógica entre dos o más elementos de red de redes diferentes</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:AerodromeArea</Name>
+      <Title>Área de aeródromo</Title>
+      <Abstract>Zona definida, sobre tierra o agua (incluidos eventuales edificios, instalaciones y equipos), cuyo propósito es ser utilizada total o parcialmente para la llegada, salida y movimiento en superficie de aeronaves y/o helicópteros</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.996183 27.707514</ows:LowerCorner>
+        <ows:UpperCorner>4.256145 43.706787</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:AerodromeCategory</Name>
+      <Title>Categoría de aeródromo</Title>
+      <Abstract>Categoría de aeródromo en relación con el alcance y la importancia de los servicios de tránsito aéreo ofrecidos a partir con origen o destino en él</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:AerodromeNode</Name>
+      <Title>Nodo de aeródromo</Title>
+      <Abstract>Nodo localizado en el punto de referencia del aeródromo de un aeropuerto/helipuerto, que se utiliza para representarlo de manera simplificada.</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.995729 27.707680</ows:LowerCorner>
+        <ows:UpperCorner>4.254282 43.706409</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:AerodromeType</Name>
+      <Title>Tipo de aeródromo</Title>
+      <Abstract>Código que especifica el tipo de aeródromo</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:ApronArea</Name>
+      <Title>Área de plataforma</Title>
+      <Abstract>Área definida, en un aeródromo/helipuerto terrestre, destinada a dar cabida a las aeronaves/helicópteros para los fines de embarque o desembarque de pasajeros, correo o carga, abastecimiento de combustible, estacionamiento o mantenimiento</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.885679 27.781454</ows:LowerCorner>
+        <ows:UpperCorner>4.255243 43.576031</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:ConditionOfAirFacility</Name>
+      <Title>Estado de la instalación aérea</Title>
+      <Abstract>Estado de un elemento de la red de transporte aéreo en lo que se refiere a su acabado y uso</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:ElementLength</Name>
+      <Title>Longitud del elemento</Title>
+      <Abstract>Longitud física del elemento</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:ElementWidth</Name>
+      <Title>Anchura del elemento</Title>
+      <Abstract>Anchura física del elemento</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:FieldElevation</Name>
+      <Title>Elevación del campo</Title>
+      <Abstract>Elevación del aeródromo, expresada como distancia vertical entre el punto más elevado de la zona de aterrizaje de un aeródromo y el nivel medio del mar</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:RunwayArea</Name>
+      <Title>Área de pista</Title>
+      <Abstract>Área rectangular definida en un aeródromo/helipuerto terrestre preparada para el aterrizaje y el despegue de aeronaves</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.996183 27.707514</ows:LowerCorner>
+        <ows:UpperCorner>4.255460 43.706787</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:SurfaceComposition</Name>
+      <Title>Composición de la superficie</Title>
+      <Abstract>Composición de la superficie relacionada con un aeródromo/helipuerto</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:TaxiwayArea</Name>
+      <Title>Área de calle de rodaje</Title>
+      <Abstract>Vía definida en un aeródromo/helipuerto, establecida para el rodaje de aeronaves/helicópteros y destinada a proporcionar enlace entre dos partes del aeródromo</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.886604 27.780762</ows:LowerCorner>
+        <ows:UpperCorner>4.254909 43.576569</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:UseRestriction</Name>
+      <Title>Restricción del uso</Title>
+      <Abstract>Restricciones impuestas al uso de un objeto de red aérea</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-c="http://inspire.ec.europa.eu/schemas/tn-c/4.0">tn-c:CablewayLink</Name>
+      <Title>Enlace de cable transportador</Title>
+      <Abstract>Objeto espacial lineal que describe la geometría y la conectividad de una red de cable entre dos puntos de una red de transporte por cable</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-16.638937 28.254583</ows:LowerCorner>
+        <ows:UpperCorner>2.187671 43.166225</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-c="http://inspire.ec.europa.eu/schemas/tn-c/4.0">tn-c:CablewayLinkSet</Name>
+      <Title>Conjunto de enlaces de cable transportador</Title>
+      <Abstract>Colección de secuencias de enlaces de cable transportador y/o enlaces de cable transportador individuales que tiene una función o significación específicas en una red de transporte por cable</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-c="http://inspire.ec.europa.eu/schemas/tn-c/4.0">tn-c:CablewayNode</Name>
+      <Title>Nodo de cable transportador</Title>
+      <Abstract>Objeto espacial puntual que se utiliza para representar la conectividad entre dos enlaces de cable transportador consecutivos</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-16.638937 28.269918</ows:LowerCorner>
+        <ows:UpperCorner>2.187671 43.165558</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:NominalTrackGauge</Name>
+      <Title>Ancho de vía nominal</Title>
+      <Abstract>Distancia nominal entre los dos raíles exteriores (ancho) de una vía férrea.</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:NumberOfTracks</Name>
+      <Title>Número de vías</Title>
+      <Abstract>Número de vías en un tramo de vía férrea</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayElectrification</Name>
+      <Title>Electrificación de la vía férrea</Title>
+      <Abstract>Indicación de si la vía férrea está equipada de un sistema eléctrico para alimentar a los vehículos que circulen por ella</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayLine</Name>
+      <Title>Línea ferroviaria</Title>
+      <Abstract>Colección de secuencias de enlaces ferroviarios y/o enlaces ferroviarios individuales que se caracterizan por uno o más propiedades y/o identificadores temáticos</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayLink</Name>
+      <Title>Enlace ferroviario</Title>
+      <Abstract>Objeto espacial lineal que describe la geometría y la conectividad de una red ferroviaria entre dos puntos de la red</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-8.769745 36.125198</ows:LowerCorner>
+        <ows:UpperCorner>3.380477 43.744061</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayNode</Name>
+      <Title>Nodo ferroviario</Title>
+      <Abstract>Objeto espacial puntual que representa un punto significativo a lo largo de la red ferroviaria o define una intersección de vías férreas, utilizado para describir su conectividad</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-8.769061 36.126648</ows:LowerCorner>
+        <ows:UpperCorner>3.380304 43.735737</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayStationArea</Name>
+      <Title>Área de estación ferroviaria</Title>
+      <Abstract>Objeto espacial superficial que se usa para representar los límites topográficos de las instalaciones de una estación ferroviaria (edificios, zonas de operaciones, centros y equipos) dedicadas a la ejecución de las actividades de la estación ferroviaria</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-8.767617 36.126869</ows:LowerCorner>
+        <ows:UpperCorner>3.202245 43.735756</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayStationCode</Name>
+      <Title>Código de estación ferroviaria</Title>
+      <Abstract>Código único asignado a una estación ferroviaria</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayStationNode</Name>
+      <Title>Nodo de estación ferroviaria</Title>
+      <Abstract>Nodo ferroviario que representa la localización de una estación ferroviaria a lo largo de la red ferroviaria</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-8.767396 36.126934</ows:LowerCorner>
+        <ows:UpperCorner>3.202199 43.735661</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayType</Name>
+      <Title>Tipo ferroviario</Title>
+      <Abstract>Tipo de transporte ferroviario para el que está diseñada la línea</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayUse</Name>
+      <Title>Uso ferroviario</Title>
+      <Abstract>Uso actual del ferrocarril</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:ERoad</Name>
+      <Title>Carretera E</Title>
+      <Abstract>Colección de secuencias de enlaces de carretera y/o enlaces de carretera individuales que representa una ruta que forma parte de la red internacional de carreteras E, caracterizadas por su número de carretera europeo</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:FormOfWay</Name>
+      <Title>Forma de vía</Title>
+      <Abstract>Clasificación basada en las propiedades físicas del enlace de carretera</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:FunctionalRoadClass</Name>
+      <Title>Clase funcional de la carretera</Title>
+      <Abstract>Clasificación basada en la importancia del papel que desempeña la carretera en la red viaria</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:NumberOfLanes</Name>
+      <Title>Número de carriles</Title>
+      <Abstract>Número de carriles de un elemento de carretera</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:Road</Name>
+      <Title>Carretera</Title>
+      <Abstract>Colección de secuencias de enlaces de carretera y/o enlaces de carretera individuales que se caracterizan por uno o más propiedades y/o identificadores temáticos</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-8.767396 36.126934</ows:LowerCorner>
+        <ows:UpperCorner>3.202199 43.735661</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:RoadLink</Name>
+      <Title>Enlace de Carretera</Title>
+      <Abstract>Objeto espacial lineal que describe la geometría y la conectividad de una red viaria entre dos puntos de la red. Un enlace de carretera puede representar caminos, pistas para bicicletas, carreteras de calzada única, carreteras de calzada múltiple e incluso trayectorias ficticias a través de intersecciones</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-18.152815 27.638737</ows:LowerCorner>
+        <ows:UpperCorner>4.311363 43.788616</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:RoadName</Name>
+      <Title>Nombre de carretera</Title>
+      <Abstract>Nombre de una carretera, asignado por la autoridad responsable</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:RoadNode</Name>
+      <Title>Nodo de carretera</Title>
+      <Abstract>Objeto espacial puntual que se utiliza para representar la conectividad entre dos enlaces de carretera o para representar un objeto espacial significativo, tal como una estación de servicio o una rotonda</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-18.015442 27.639805</ows:LowerCorner>
+        <ows:UpperCorner>4.271724 43.744011</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:RoadServiceArea</Name>
+      <Title>Área de servicio de carretera</Title>
+      <Abstract>Superficie aneja a una carretera y dedicada a ofrecer determinados servicios en relación con ella</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-18.015749 27.703611</ows:LowerCorner>
+        <ows:UpperCorner>4.271730 43.743938</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:RoadServiceType</Name>
+      <Title>Tipo de servicio de carretera</Title>
+      <Abstract>Descripción del tipo de área de servicio de carretera y de las prestaciones disponibles</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">tn-ro:RoadSurfaceCategory</Name>
+      <Title>Categoría de superficie de la carretera</Title>
+      <Abstract>Especificación del estado de la superficie del elemento de carretera asociado. Indica si una carretera está asfaltada o no</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:ConditionOfWaterFacility</Name>
+      <Title>Estado de la instalación navegable</Title>
+      <Abstract>Estado de un elemento de red de transporte por vía navegable en lo que se refiere a su acabado y uso.</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:PortArea</Name>
+      <Title>Área portuaria</Title>
+      <Abstract>Objeto espacial superficial que se usa para representar los límites físicos de todas las instalaciones que constituyen la zona terrestre de un puerto marítimo o interior</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.980974 27.639574</ows:LowerCorner>
+        <ows:UpperCorner>4.276859 43.740002</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:PortNode</Name>
+      <Title>Nodo portuario</Title>
+      <Abstract>Objeto espacial puntual que se usa para representar un puerto marítimo o interior de manera simplificada, localizado aproximadamente a orillas de la masa de agua en la que se sitúa el puerto</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.978937 27.639845</ows:LowerCorner>
+        <ows:UpperCorner>4.266265 43.738125</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:WaterwayLink</Name>
+      <Title>Enlace de vía navegable</Title>
+      <Abstract>Objeto espacial lineal que describe la geometría o la conectividad de la red de transporte por vía navegable entre dos nodos de vía o curso navegable consecutivos. Representa una sección lineal a través de una masa de agua que se utiliza para la navegación</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.900846 27.777931</ows:LowerCorner>
+        <ows:UpperCorner>11.784775 50.810989</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:WaterwayNode</Name>
+      <Title>Nodo de vía navegable</Title>
+      <Abstract>Objeto espacial puntual que se utiliza para representar la conectividad entre dos enlaces de vía navegable diferentes, o entre un enlace de vía navegable y un enlace de curso navegable, en la red de transporte por vía navegable</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-17.978937 27.639845</ows:LowerCorner>
+        <ows:UpperCorner>4.266265 43.738125</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:AccessRestriction</Name>
+      <Title>Restricción de acceso</Title>
+      <Abstract>Restricción impuesta al acceso a un elemento de transporte</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:ConditionOfFacility</Name>
+      <Title>Estado de la instalación</Title>
+      <Abstract>Estado de un elemento de la red de transporte en lo que se refiere a su acabado y uso.</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:MaintenanceAuthority</Name>
+      <Title>Autoridad de mantenimiento</Title>
+      <Abstract>Autoridad responsable del mantenimiento del elemento de transporte.</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:TrafficFlowDirection</Name>
+      <Title>Dirección del flujo de tráfico</Title>
+      <Abstract>Indica la dirección del flujo de tráfico en relación con la dirección del vector del enlace de transport</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner>
+        <ows:UpperCorner>180.000000 90.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:MarkerPost</Name>
+      <Title>Hito</Title>
+      <Abstract>Indicador que se coloca a lo largo de una ruta en una red de transporte, habitualmente a intervalos regulares, para indicar la distancia desde el principio de la ruta, o desde algún otro punto de referencia, al punto en que está ubicado el hito</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-18.146481 27.639629</ows:LowerCorner>
+        <ows:UpperCorner>4.304115 43.773148</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:OwnerAuthority</Name>
+      <Title>Autoridad propietaria</Title>
+      <Abstract>Autoridad que posee el elemento de transporte</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+    <FeatureType>
+      <Name xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">tn:VerticalPosition</Name>
+      <Title>Posición vertical</Title>
+      <Abstract>Nivel vertical con relación a otros elementos de la red de transporte.</Abstract>
+      <DefaultCRS>http://www.opengis.net/def/crs/EPSG/0/4258</DefaultCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3035</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25828</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25829</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25830</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/25831</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32628</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32629</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32630</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/32631</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/4326</OtherCRS>
+      <OtherCRS>http://www.opengis.net/def/crs/EPSG/0/3857</OtherCRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/2.1.2</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>-19.000000 27.000000</ows:LowerCorner>
+        <ows:UpperCorner>5.000000 44.000000</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://www.idee.es/csw-inspire-idee/srv/spa/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;ElementSetName=full&amp;ID=spaign_IGR_Transporte"/>
+    </FeatureType>
+  </FeatureTypeList>
+  <fes:Filter_Capabilities>
+    <fes:Conformance>
+      <fes:Constraint name="ImplementsQuery">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsAdHocQuery">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsFunctions">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsResourceId">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinStandardFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsStandardFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinSpatialFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsSpatialFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinTemporalFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsTemporalFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsVersionNav">
+        <ows:NoValues/>
+        <ows:DefaultValue>FALSE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsSorting">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsExtendedOperators">
+        <ows:NoValues/>
+        <ows:DefaultValue>FALSE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinimumXPath">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsSchemaElementFunc">
+        <ows:NoValues/>
+        <ows:DefaultValue>FALSE</ows:DefaultValue>
+      </fes:Constraint>
+    </fes:Conformance>
+    <fes:Id_Capabilities>
+      <fes:ResourceIdentifier name="fes:ResourceId"/>
+    </fes:Id_Capabilities>
+    <fes:Scalar_Capabilities>
+      <fes:LogicalOperators/>
+      <fes:ComparisonOperators>
+        <fes:ComparisonOperator name="PropertyIsEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsNotEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsLessThan"/>
+        <fes:ComparisonOperator name="PropertyIsGreaterThan"/>
+        <fes:ComparisonOperator name="PropertyIsLessThanOrEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsGreaterThanOrEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsLike"/>
+        <fes:ComparisonOperator name="PropertyIsNull"/>
+        <fes:ComparisonOperator name="PropertyIsNil"/>
+        <fes:ComparisonOperator name="PropertyIsBetween"/>
+      </fes:ComparisonOperators>
+    </fes:Scalar_Capabilities>
+    <fes:Spatial_Capabilities>
+      <fes:GeometryOperands xmlns:gml="http://www.opengis.net/gml" xmlns:gml32="http://www.opengis.net/gml/3.2">
+        <fes:GeometryOperand name="gml:Box"/>
+        <fes:GeometryOperand name="gml:Envelope"/>
+        <fes:GeometryOperand name="gml:Point"/>
+        <fes:GeometryOperand name="gml:LineString"/>
+        <fes:GeometryOperand name="gml:Curve"/>
+        <fes:GeometryOperand name="gml:Polygon"/>
+        <fes:GeometryOperand name="gml:Surface"/>
+        <fes:GeometryOperand name="gml:MultiPoint"/>
+        <fes:GeometryOperand name="gml:MultiLineString"/>
+        <fes:GeometryOperand name="gml:MultiCurve"/>
+        <fes:GeometryOperand name="gml:MultiPolygon"/>
+        <fes:GeometryOperand name="gml:MultiSurface"/>
+        <fes:GeometryOperand name="gml:CompositeCurve"/>
+        <fes:GeometryOperand name="gml:CompositeSurface"/>
+        <fes:GeometryOperand name="gml32:Envelope"/>
+        <fes:GeometryOperand name="gml32:Point"/>
+        <fes:GeometryOperand name="gml32:LineString"/>
+        <fes:GeometryOperand name="gml32:Curve"/>
+        <fes:GeometryOperand name="gml32:Polygon"/>
+        <fes:GeometryOperand name="gml32:Surface"/>
+        <fes:GeometryOperand name="gml32:MultiPoint"/>
+        <fes:GeometryOperand name="gml32:MultiLineString"/>
+        <fes:GeometryOperand name="gml32:MultiCurve"/>
+        <fes:GeometryOperand name="gml32:MultiPolygon"/>
+        <fes:GeometryOperand name="gml32:MultiSurface"/>
+        <fes:GeometryOperand name="gml32:CompositeCurve"/>
+        <fes:GeometryOperand name="gml32:CompositeSurface"/>
+      </fes:GeometryOperands>
+      <fes:SpatialOperators>
+        <fes:SpatialOperator name="BBOX"/>
+        <fes:SpatialOperator name="Equals"/>
+        <fes:SpatialOperator name="Disjoint"/>
+        <fes:SpatialOperator name="Intersects"/>
+        <fes:SpatialOperator name="Touches"/>
+        <fes:SpatialOperator name="Crosses"/>
+        <fes:SpatialOperator name="Within"/>
+        <fes:SpatialOperator name="Contains"/>
+        <fes:SpatialOperator name="Overlaps"/>
+        <fes:SpatialOperator name="Beyond"/>
+        <fes:SpatialOperator name="DWithin"/>
+      </fes:SpatialOperators>
+    </fes:Spatial_Capabilities>
+    <fes:Temporal_Capabilities>
+      <fes:TemporalOperands xmlns:gml="http://www.opengis.net/gml" xmlns:gml32="http://www.opengis.net/gml/3.2">
+        <fes:TemporalOperand name="gml:TimeInstant"/>
+        <fes:TemporalOperand name="gml:TimePeriod"/>
+        <fes:TemporalOperand name="gml32:TimeInstant"/>
+        <fes:TemporalOperand name="gml32:TimePeriod"/>
+      </fes:TemporalOperands>
+      <fes:TemporalOperators>
+        <fes:TemporalOperator name="After"/>
+        <fes:TemporalOperator name="Before"/>
+        <fes:TemporalOperator name="During"/>
+        <fes:TemporalOperator name="TEquals"/>
+      </fes:TemporalOperators>
+    </fes:Temporal_Capabilities>
+    <fes:Functions>
+      <fes:Function name="Area">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Area">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Centroid">
+        <fes:Returns xmlns:gml="http://www.opengis.net/gml">gml:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Centroid">
+        <fes:Returns xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="ExtraProp">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:anyType</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="GeometryFromWKT">
+        <fes:Returns xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="GeometryFromWKT">
+        <fes:Returns xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="GetCurrentScale">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+      </fes:Function>
+      <fes:Function name="IDiv">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IMod">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="InteriorPoint">
+        <fes:Returns xmlns:gml="http://www.opengis.net/gml">gml:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="InteriorPoint">
+        <fes:Returns xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsCurve">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsCurve">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsPoint">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsPoint">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsSurface">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsSurface">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Length">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Length">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Lower">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="MoveGeometry">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="MoveGeometry">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Upper">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+    </fes:Functions>
+  </fes:Filter_Capabilities>
+</WFS_Capabilities>

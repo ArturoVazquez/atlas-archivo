@@ -85,6 +85,13 @@ Los identificadores exactos, de la tabla de productos del propio SCNE:
 | Nomenclátor Geográfico Básico | `Obra derivada de NGBE Continua CC-BY 4.0 ign.es` |
 | Límites municipales y provinciales | `Obra derivada de BDLJE Continua CC-BY 4.0 ign.es` |
 | Red de estaciones permanentes GNSS | `Obra derivada de ERGNSS 2025 CC-BY 4.0 ign.es` |
+| Redes de Transporte (nodos de aeródromo) | `Obra derivada de IGR-RT 2026 CC-BY 4.0 scne.es` |
+
+Ojo con la última: su atribución es **`scne.es`** y no `ign.es`, porque el
+producto está coproducido (IGN, Gobierno Vasco y Generalitat Valenciana). El
+propio servicio lo confirma por su cuenta, declarando `AccessConstraints: CC BY
+4.0 scne.es` en sus capacidades. Copiar la fórmula de otra fila sería atribuir
+mal.
 
 Y su punto 5 añade una obligación que casi nadie cumple: quien genere **un
 conjunto nuevo modificando el original** debe incluir esas expresiones **también
@@ -1219,6 +1226,85 @@ catálogo cuadra consigo mismo: su geometría sin tocar mide 26.542,8 km, un
 **Archivado** · 2 ficheros (el ZIP del catálogo, 24 MB, y el aviso legal que
 sostiene la licencia).
 **El resto** · CHANGELOG `datos-v2026.08.65` · §10
+
+---
+
+## aeropuertos
+
+**De dónde** · El perímetro, de **tres actos del BOE**; la geometría, del
+**Instituto Geográfico Nacional** — producto *Información Geográfica de
+Referencia · Redes de Transporte* (IGR-RT), servicio WFS INSPIRE, del que salen
+los 1.796 nodos de aeródromo de España con su coordenada ETRS89, su indicador
+de lugar OACI y su designador IATA.
+**Licencia y qué obliga** · Dos regímenes, y no se mezclan. Los actos: **un
+texto legal no tiene dueño** (art. 13 TRLPI), sin obligación de atribución. La
+geometría: IGN, ver arriba · atribución exigida `Obra derivada de IGR-RT 2026
+CC-BY 4.0 scne.es` — con `scne.es`, no `ign.es`, por ser producto coproducido.
+**El perímetro no lo da una lista, lo dan tres actos** · Es lo que costó el día
+y lo que explica la cifra:
+1. **Real Decreto 1150/2011**, cuyo anexo trae **42 entradas** (40 aeropuertos y
+   2 helipuertos). Cuidado con el rótulo del anexo, que **no** dice «los
+   calificados de interés general» sino «Aeropuertos y helipuertos gestionados
+   por *Aena Aeropuertos, S.A.*»; quien califica es su **disposición adicional
+   primera**. Modificaciones posteriores: **ninguna**, y no es una suposición —
+   el análisis del propio BOE solo lista como referencia posterior la corrección
+   de errores.
+2. **Real Decreto 1167/1995**, artículo 1, redacción **vigente desde el
+   26-07-2025**: su apartado 2 nombra los **8 aeródromos de utilización
+   conjunta** civil-militar, y su apartado 1 las **5 bases aéreas abiertas al
+   tráfico civil** (Talavera la Real, Matacán, Villanubla, León y Albacete), que
+   **no** están calificadas de interés general.
+3. **Orden FOM/1510/2006**, que sostiene a **Ciudad Real**, único de titularidad
+   no estatal — el caso que el RD de 2011 preserva sin nombrarlo: «igualmente
+   conservarán dicha calificación los aeropuertos de titularidad no estatal
+   actualmente calificados de interés general».
+**Por qué salen 48 y no lo que enseña el mapa de Aena** · Porque esas **5 bases
+aéreas son exactamente el hueco**, y se publican para que se vea: una base
+abierta al tráfico civil sigue siendo militar —su jefe lo es «de todo el
+conjunto» (art. 5) y Aena solo designa un delegado para la zona civil (art. 9)—,
+así que no está en el anexo de 2011 ni se puede llamar aeropuerto de interés
+general. **San Javier estaba y salió en 2025** (Orden PJC/808/2025), tras
+cerrarse al tráfico civil el 14-01-2019: la capa lo refleja porque lee la
+redacción vigente, no por criterio propio.
+**Dos cuadres que el guion comprueba en vez de suponer** · Los **ocho**
+paréntesis «(aeródromo utilización conjunta)» del anexo de 2011 son los **ocho**
+del artículo 1.2 del RD de 1995 — dos actos independientes diciendo lo mismo, y
+eso es lo que sostiene el `confirmado` de ese dato. Y la **corrección de errores**
+de 26-11-2011 se aplica **leyéndola**, no a mano. Ahí saltó una rareza: la
+corrección **se cita a sí misma mal**, escribe «(aeródromo **de** utilización
+conjunta)» y la página corregida no lleva ese «de», así que un reemplazo literal
+no habría encontrado nada y la corrección se habría aplicado en silencio.
+**El emparejamiento con la geometría, declarado uno a uno** · Casar por nombre
+**no vale**: siete casillas salían ambiguas y una se llevó por delante una
+suposición — Logroño-Agoncillo tiene **dos** nodos, el aeropuerto `LERJ` y un
+helipuerto `LELO` a novecientos metros, y el helipuerto es el que gana por
+parecido de nombre. Lo mismo con Ceuta (`GECE`, con IATA, y `GECT` sin él),
+Melilla, Tenerife Norte y Santiago. Por eso la tabla va escrita a mano y el guion
+exige que cada código salga **exactamente una vez** en el archivo. De propina:
+el fichero del IGN trae **once códigos OACI repetidos** (LEBP, LECD, LECX, LEDE,
+LEHI, LELI, LELM, LEOA, LEPZ, LETA, LETT), siempre entre aeródromos privados y
+helipuertos de hospital o empresa; **ninguno es de los 48**, y eso se comprueba,
+no se cree. Cuando el IGN llama a un sitio distinto que el acto —«Josep
+Tarradellas Barcelona-El Prat», «Aeròdrom de Son Bonet»—, **manda el nombre del
+acto**: la capa publica el perímetro jurídico.
+**Comprobación de la geometría** · Cada uno de los 48 puntos cae dentro de la
+provincia que su nombre implica, contrastado contra los polígonos provinciales
+que ya publica el atlas. Única excepción, y es del instrumento: el helipuerto de
+Ceuta queda 348 m fuera del contorno de Ceuta **porque ese contorno está
+generalizado** a 33 vértices. Los puntos del IGN coinciden con el punto de
+referencia que publica el AIP dentro de unos treinta metros.
+**Huecos declarados** · La capa publica el **régimen**, no la operación: no dice
+si un aeródromo tiene tráfico comercial regular —Huesca, Burgos, Córdoba o Son
+Bonet están calificados y apenas lo tienen—, ni pistas, ni superficie, ni
+servidumbres aeronáuticas. Y la calificación de Ciudad Real es de **alcance
+acotado** por su propio acto, «a los exclusivos efectos de reservar al Estado la
+gestión directa de los servicios aeronáuticos y aeroportuarios estatales»: va
+citado verbatim en su ficha.
+**Archivado** · 8 ficheros: los **seis actos del BOE** —los tres que fijan el
+perímetro, la corrección de errores, la orden de 2025 y el RD 2858/1981, que es
+la norma bajo la que se califica—, la respuesta del WFS y sus capacidades. La
+licencia del IGN y la tabla del SCNE ya estaban archivadas.
+**El resto** · CHANGELOG `datos-v2026.08.66` · §10
 
 ---
 
