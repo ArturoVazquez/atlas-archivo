@@ -32,6 +32,100 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.67 — Dónde se cruza la frontera exterior
+
+Entra **`frontera-schengen`**: los **81 pasos** por los que se cruza legalmente
+la frontera exterior del espacio Schengen en España — **43 aéreos, 34 marítimos
+y 4 terrestres**. No es una lista de instalaciones: es dónde empieza y acaba el
+territorio en el que se circula sin control.
+
+### Añadido
+
+- `frontera-schengen` — **81 pasos fronterizos**, cada uno con el nombre
+  literal con que España lo notifica, su medio y su enlace comprobado al
+  registro que el atlas ya publica.
+
+### El censo no estaba donde parecía
+
+El artículo 39 del Código de Fronteras Schengen obliga a cada Estado a
+**notificar sus pasos a la Comisión**, y la Comisión los publica de **dos
+maneras que no son la misma**: las **actualizaciones del DOUE son
+incrementales** —cada una toca solo a los Estados que han notificado cambios—,
+y el **Anexo 4 del manual de guardias de fronteras es el consolidado**. Tomar
+una actualización por la lista entera habría dado un censo cojo. Se usa el
+consolidado, edición de **10-08-2026**, y se cita además la actualización del
+DOUE de 2014 **en español**, que es la que fija cómo España nombra cada paso.
+
+### Y el acto nacional no existe como lista
+
+España habilita sus pasos **uno por uno, por orden ministerial**
+—Lleida-Alguaire en 2011, Badajoz y Burgos en 2014, Logroño-Agoncillo en 2018,
+Región de Murcia en 2019—, y el **Código de Fronteras que compila el propio
+BOE, 421 páginas, no nombra ni un puesto**. Comprobado buscándolo dentro. O sea
+que **no hay segunda fuente española que cruzar**, y la capa lo dice en vez de
+insinuar una doble verificación que no existe.
+
+*De paso queda corregida una nota vieja:* el acto nacional que `PLAN.md` daba
+por bueno, la **Orden PRA/1267/2017**, no es — trata de «instrucciones para la
+tramitación de convenios».
+
+### Lo que solo esta capa puede decir
+
+**72 de los 81 se enlazan con un registro que el atlas ya publica**, y el enlace
+**se comprueba**: si alguno dejara de existir, la capa no se construye. De ahí
+salen tres hechos que ninguna de las capas por separado enseñaba:
+
+- Las **cinco bases aéreas abiertas al tráfico civil** y **Ciudad Real** —las que
+  la release anterior publicó como el hueco entre el atlas y el mapa de Aena—
+  **son pasos fronterizos**. La lista es la prueba operativa del preámbulo del
+  RD 1150/2011, que quiso desligar el tráfico internacional de la calificación
+  de interés general.
+- **Cuatro pasos aéreos son aeropuertos autonómicos** —Castellón,
+  Lleida-Alguaire, Región de Murcia y Teruel—, que no están calificados de
+  interés general y entran al atlas por esta puerta.
+- **Diez puertos de interés general no son frontera exterior.**
+
+### Tres precisiones geográficas, a propósito
+
+`exacta` los 43 aéreos, `paraje` los 33 marítimos con topónimo y `municipio`
+los terrestres, porque el paso real está en un punto del término —el Tarajal,
+Beni Enzar, la Farga de Moles— que **la fuente no sitúa**. Publicarlos como si
+fueran la coordenada de una garita sería fingir precisión.
+
+### Una trampa nueva del nomenclátor del IGN
+
+**El parámetro `q=` no filtra.** Devuelve los veinte primeros rasgos de la
+colección entera con cara de resultado: un barrido que se fiara habría situado
+los 34 puertos de España en **Cabo Ortegal**. El que filtra es `etiqueta=`,
+exacto. Y `nameunit=` no encuentra los municipios con apóstrofo —«la Seu
+d'Urgell» devuelve cero en todas sus formas—; hay que barrer la provincia.
+
+### Huecos
+
+- **Un registro va `parcial`**: la lista dice «San Sebastián» a secas y hay dos
+  puertos de interés general que podrían serlo, **Pasaia** y **San Sebastián de
+  La Gomera**. Se publica Pasaia razonando desde la regla que el propio
+  documento aplica sin excepción —todo puerto canario cuyo nombre no diga su
+  isla la lleva entre paréntesis— y desde que la lista nombra ciudades y no
+  puertos. Es un razonamiento, no una certeza, y va con su hueco declarado.
+- La capa dice **dónde se cruza, no cómo**: sin horarios de apertura, sin tipo
+  de tráfico admitido, sin los puestos de control sanitario o veterinario, que
+  son otro régimen.
+- Las **excepciones que el propio Código prevé** —navegación de recreo, pesca
+  costera, marinos en tránsito— no se cartografían.
+- **Sin segunda fuente**: el censo se sostiene en un solo documento, primario.
+
+### Anotado, no cambiado
+
+Tres puertos y una villa de `puertos` llevan un **guion blando (U+00AD) donde va
+la tilde** —«Ferrol y su ri‑a», «Sevilla y su ri‑a», «Vigo y su ri‑a»,
+«Vilagarci‑a»—, así que se muestran sin tilde y no casan con una búsqueda por
+«ría». Lo destapó el cruce de esta capa. **Viene de Puertos del Estado** (22
+veces en el ZIP archivado) y `puertos` lo copia verbatim, que es su doctrina: se
+deja como está y se anota.
+
+---
+
 ## datos-v2026.08.66 — Los aeropuertos, y por qué no son una lista
 
 Entra **`aeropuertos`**: los **43 aeropuertos y helipuertos calificados de

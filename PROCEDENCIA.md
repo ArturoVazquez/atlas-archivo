@@ -1308,6 +1308,86 @@ licencia del IGN y la tabla del SCNE ya estaban archivadas.
 
 ---
 
+## frontera-schengen
+
+**De dónde** · El censo, de la **Comisión Europea**: el «List of border crossing
+points», **Anexo 4** del *Practical Handbook for Border Guards*, edición de
+**10-08-2026**, páginas 25 a 27 para España. Se cita además la **actualización
+del DOUE C 332/07, de 24-09-2014**, en español, que es la publicación legal de
+la misma lista y la que fija **cómo España nombra cada paso**. La geometría, del
+**IGN**: nodos de aeródromo (IGR-RT), topónimos del Nomenclátor y unidades
+administrativas.
+**Licencia y qué obliga** · Dos regímenes. La Comisión: su política de
+reutilización se aplica por la **Decisión de 12 de diciembre de 2011** y su
+contenido propio va bajo **CC BY 4.0**, «provided appropriate credit is given
+and changes are indicated». El IGN: ver arriba · atribución exigida `Obra
+derivada de IGR-RT 2026 CC-BY 4.0 scne.es`.
+**Dónde está el censo, que no es donde parecía** · El artículo 2.8 del Código de
+Fronteras Schengen define el paso fronterizo y el 39 obliga a cada Estado a
+notificar los suyos. La Comisión los publica de **dos maneras distintas**, y
+confundirlas es el primer error posible: las **actualizaciones del DOUE son
+incrementales** —cada una toca solo a los Estados que han notificado cambios, y
+tomar una por la lista entera daría un censo cojo—, mientras que el **Anexo 4 es
+el consolidado**. Esta capa usa el consolidado.
+**El acto nacional no existe como lista** · España habilita sus pasos **uno por
+uno, por orden ministerial**: Lleida-Alguaire en 2011, Badajoz y Burgos en 2014,
+Logroño-Agoncillo en 2018, Región de Murcia en 2019. Y el **Código de Fronteras
+que compila el propio BOE, 421 páginas, no nombra ni un puesto** — comprobado
+buscándolo dentro. O sea que **no hay segunda fuente española con la que cruzar
+el censo**: el `confirmado` se sostiene en el documento de la Comisión, que es
+primario, y esto queda dicho en vez de insinuar una doble verificación que no
+existe. *Ojo:* una nota anterior de `PLAN.md` daba por acto nacional la **Orden
+PRA/1267/2017** — es falso: esa orden trata de «instrucciones para la
+tramitación de convenios».
+**Tres precisiones geográficas, a propósito** · `exacta` los 43 aéreos (el nodo
+del aeródromo, del IGN); `paraje` los 33 marítimos con topónimo (primaria para
+el NOMBRE del puerto, no para su recinto); `municipio` los 4 terrestres y La
+Línea marítima, porque el paso real está en un punto del término —el Tarajal,
+Beni Enzar, la Farga de Moles— que **la fuente no sitúa**. Publicar los cuatro
+terrestres como si fueran la coordenada de una garita sería fingir precisión.
+**Lo que solo esta capa puede decir** · 72 de los 81 se enlazan con un registro
+que el atlas ya publica, y **el enlace se comprueba** contra `aeropuertos` y
+`puertos`: si alguno dejara de existir, la capa no se construye. De ahí salen
+tres hechos: las **cinco bases aéreas abiertas al tráfico civil y Ciudad Real
+son pasos fronterizos** —la lista es la prueba operativa del preámbulo del RD
+1150/2011, que quiso desligar el tráfico internacional de la calificación de
+interés general—; **cuatro pasos aéreos son aeropuertos autonómicos**
+(Castellón, Lleida-Alguaire, Región de Murcia y Teruel), no calificados de
+interés general; y **diez puertos de interés general no son frontera exterior**.
+**El registro que va `parcial`, y por qué** · La lista marítima dice «San
+Sebastián» a secas, y hay **dos** puertos de interés general que podrían serlo:
+**Pasaia** (Guipúzcoa) y **San Sebastián de La Gomera**. Se publica Pasaia por
+la regla que el propio documento aplica sin excepción —todo puerto canario cuyo
+nombre no diga su isla la lleva entre paréntesis: «Arrecife (Lanzarote)»,
+«Puerto del Rosario (Fuerteventura)», «Puerto de Santa Cruz de La Palma (La
+Palma)»— y porque la lista nombra **ciudades y no puertos**: «Gijón» por El
+Musel, «Bilbao» por un puerto que no está en Bilbao. Ninguna fuente alcanzable
+lo desambigua, así que el registro va `parcial` con su hueco declarado.
+**Dos trampas del servicio del IGN, medidas** · La primera es nueva y es la peor
+clase de fallo: **el parámetro `q=` del nomenclátor NO filtra**. Devuelve los
+veinte primeros rasgos de la colección entera con cara de resultado — un barrido
+que se fiara habría situado los 34 puertos de España en **Cabo Ortegal**. El que
+filtra es `etiqueta=`, exacto. La segunda: **`nameunit=` no encuentra los
+municipios con apóstrofo** —«la Seu d'Urgell» devuelve cero en todas sus
+formas—; hay que barrer la provincia por `codnut3` y filtrar en casa.
+**Una rareza de `puertos` que este cruce destapó** · Tres puertos y una villa
+llevan un **guion blando (U+00AD) donde va la tilde**: «Ferrol y su ri‑a»,
+«Sevilla y su ri‑a», «Vigo y su ri‑a», «Vilagarci‑a». Se comprobó que **viene de
+Puertos del Estado** —22 veces en el ZIP archivado— y `puertos` lo copia
+verbatim, que es su doctrina. Se deja como está y se anota: el nombre se muestra
+sin tilde y no casa con una búsqueda por «ría».
+**Huecos declarados** · La capa dice **dónde se cruza, no cómo**: no publica
+horarios de apertura, ni si el paso admite todo tipo de tráfico, ni si tiene
+puesto de control sanitario o veterinario, que son otro régimen. Y las
+**excepciones que el propio Código de Fronteras prevé** —navegación de recreo,
+pesca costera, marinos en tránsito— no se cartografían.
+**Archivado** · 5 ficheros (el Anexo 4, la actualización del DOUE en español, el
+aviso legal de la Comisión, los topónimos de puerto y las unidades
+administrativas); los nodos de aeródromo del IGN y la tabla del SCNE ya estaban.
+**El resto** · CHANGELOG `datos-v2026.08.67` · §10
+
+---
+
 # Cuaderno de obtención
 
 Para quien tenga que volver a la fuente. El endpoint, el formato y **la trampa**

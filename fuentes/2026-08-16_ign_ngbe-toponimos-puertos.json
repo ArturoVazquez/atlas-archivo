@@ -1,0 +1,2855 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Porto de Celeiro"
+   },
+   "id": "1637075",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.59759538499992,
+     43.6771234890001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Porto de Burela"
+   },
+   "id": "1641842",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.35479721499991,
+     43.6574707060001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Cudillero"
+   },
+   "id": "1645619",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.15130596299991,
+     43.5673215040001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto de Candás"
+   },
+   "id": "1646934",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.75878929499993,
+     43.5899049880001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Luanco"
+   },
+   "id": "1646935",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.78588854599991,
+     43.6171267130001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Gijón-Musel"
+   },
+   "id": "1647458",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.696831466656435,
+     43.561469283453036
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de A Coruña"
+   },
+   "id": "1648804",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.391672171427105,
+     43.36267065845897
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Pesquero"
+   },
+   "id": "1668960",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.28997792599995,
+     43.3920898570001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Castro-Urdiales"
+   },
+   "id": "1671804",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.21679510399991,
+     43.3818970070001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Bilbao"
+   },
+   "id": "1671959",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.061217241,
+     43.34552028
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGMEP",
+    "fecha": "2024-04-17",
+    "etiqueta": "Isla de los Faisanes"
+   },
+   "id": "1674527",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.76519901199993,
+     43.3430801230001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "C.A. País Vasco",
+    "fecha": "2023-08-08",
+    "etiqueta": "Kaiberria"
+   },
+   "id": "1674533",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.79229785099994,
+     43.3862943030001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "nombre_alternativo_2",
+    "fuente": "C.A. País Vasco",
+    "fecha": "2023-07-07",
+    "etiqueta": "Puerto Kaizarra"
+   },
+   "id": "1674551",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.79150442599996,
+     43.3676780230001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "C.A. País Vasco",
+    "fecha": "2023-08-07",
+    "etiqueta": "Abra"
+   },
+   "id": "1701185",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.01348798399994,
+     43.3312990690001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Autónomo"
+   },
+   "id": "1702048",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.96899392499995,
+     43.28552254
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "C.A. País Vasco",
+    "fecha": "2023-07-07",
+    "etiqueta": "Getariako portua"
+   },
+   "id": "1706859",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.19799683799994,
+     43.3045050440001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Pasaia"
+   },
+   "id": "1709187",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.91088706399995,
+     43.3218996350001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "C.A. País Vasco",
+    "fecha": "2023-07-07",
+    "etiqueta": "Portua"
+   },
+   "id": "1709306",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.98962293799991,
+     43.3225093980001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "nombre_alternativo_2",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-08-07",
+    "etiqueta": "Puerto de Pasaia"
+   },
+   "id": "1709834",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.9119857028162424,
+     43.3211061761703
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Porto da Pobra do Caramiñal"
+   },
+   "id": "1790309",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.93420416199996,
+     42.6088866640001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Porto de Aguiño"
+   },
+   "id": "1790729",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9.01812740899993,
+     42.520324724
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Porto de Ribeira"
+   },
+   "id": "1790730",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.99060059699991,
+     42.561096181
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Vilagarcía de Arousa y su Ría"
+   },
+   "id": "1791071",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.781228955653502,
+     42.595374561321854
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Marín "
+   },
+   "id": "1819126",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.697737601193182,
+     42.40058174776644
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Vigo y su Ría"
+   },
+   "id": "1848281",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.730939553158867,
+     42.24036626870505
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Porto de Bouzas"
+   },
+   "id": "1848282",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.75061003899992,
+     42.2286993200001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-22",
+    "etiqueta": "Port de Roses"
+   },
+   "id": "1877936",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.18109132500007,
+     42.253906268
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port de l'Estartit"
+   },
+   "id": "1910974",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.20428459300007,
+     42.052673326
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port de Blanes"
+   },
+   "id": "1959807",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.79992731400006,
+     41.6751099050001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port de Mataró"
+   },
+   "id": "1980571",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.44567902800009,
+     41.531311036
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port d'Arenys"
+   },
+   "id": "1981301",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.56048618400007,
+     41.5750732500001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Port esportiu del Masnou"
+   },
+   "id": "1999449",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.31292746300005,
+     41.4766845870001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Port Vell"
+   },
+   "id": "1999689",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.17968746100007,
+     41.3731079070001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Port Olímpic"
+   },
+   "id": "1999765",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.20147702500009,
+     41.3864746070001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Barcelona"
+   },
+   "id": "1999785",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1744117360268924,
+     41.36534831539351
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Port de Vilanova i la Geltrú"
+   },
+   "id": "2017653",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.72851550400009,
+     41.213928245
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port de la Central"
+   },
+   "id": "2017654",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.65332030000008,
+     41.1940918210001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Tarragona"
+   },
+   "id": "2034121",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.2445798000716128,
+     41.10948572820379
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Port dels Alfacs"
+   },
+   "id": "2079002",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.600280755000085,
+     40.614929175
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Maó"
+   },
+   "id": "2143352",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.263130314141518,
+     39.89126474453475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port de Soller"
+   },
+   "id": "2158127",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.69152822200004,
+     39.796508627
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Mollet dets Anglesos"
+   },
+   "id": "2159071",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.12109374200008,
+     39.8001100710001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Palma "
+   },
+   "id": "2176781",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.6368614807983675,
+     39.56211554575529
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "nombre_variante_1",
+    "fuente": "Comunitat Valenciana",
+    "fecha": "2023-06-27",
+    "etiqueta": "Port de València"
+   },
+   "id": "2193233",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.32359981885962286,
+     39.45377247653148
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Port de Sant Antoni"
+   },
+   "id": "2239556",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.29852306100008,
+     38.977477906
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Port d'Alacant"
+   },
+   "id": "2286917",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.48480229799992,
+     38.336120447
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Moll de Llevant"
+   },
+   "id": "2286975",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.482177792999948,
+     38.333679036
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Alicante"
+   },
+   "id": "2286981",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5012915224769862,
+     38.32931644819192
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto de Santa Pola"
+   },
+   "id": "2301018",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.559021098999949,
+     38.1904907620001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de Torrevieja"
+   },
+   "id": "2332752",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.686523777999923,
+     37.9730834900001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGBE",
+    "fecha": "2023-04-18",
+    "etiqueta": "Puerto de San Pedro del Pinatar"
+   },
+   "id": "2350318",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.757507416999943,
+     37.8203125100001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGBE",
+    "fecha": "2023-04-14",
+    "etiqueta": "Puerto Deportivo Ángel Villacieros"
+   },
+   "id": "2350453",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.824706753999919,
+     37.6782836450001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGBE",
+    "fecha": "2023-04-14",
+    "etiqueta": "Puerto Deportivo Tomás Maestre"
+   },
+   "id": "2350454",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.741089172999921,
+     37.7454835660001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGBE",
+    "fecha": "2023-04-14",
+    "etiqueta": "Puerto Deportivo Mar Menor"
+   },
+   "id": "2350455",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.849303966999912,
+     37.7360839
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGBE",
+    "fecha": "2023-04-14",
+    "etiqueta": "Puerto de Mazarrón"
+   },
+   "id": "2366403",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.256781508470428,
+     37.563434308499396
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.NGBE",
+    "fecha": "2023-04-14",
+    "etiqueta": "Puerto Bello de la Manga"
+   },
+   "id": "2367737",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7216943661919593,
+     37.650421972559876
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Garrucha"
+   },
+   "id": "2400095",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.81951850099995,
+     37.1840819120001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Almería"
+   },
+   "id": "2422382",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.4676734106056752,
+     36.83426167519414
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Carboneras"
+   },
+   "id": "2422964",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.9011270739650485,
+     36.97824002530877
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Bonanza"
+   },
+   "id": "2423454",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.33697638699994,
+     36.8038946550001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Málaga"
+   },
+   "id": "2430028",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.419658388841207,
+     36.71121480275307
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto del Candado"
+   },
+   "id": "2430524",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.34442141299991,
+     36.7147218060001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de la Caleta de Vélez"
+   },
+   "id": "2430977",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.06921459999995,
+     36.7479238600001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Deportivo Marina del Este"
+   },
+   "id": "2431599",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.72668492299994,
+     36.7264985770001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Motril"
+   },
+   "id": "2431717",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.5293248804566377,
+     36.72150872756079
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto Deportivo de Roquetas de Mar"
+   },
+   "id": "2433537",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.60498142699993,
+     36.7578741620001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Deportivo de Aguadulce"
+   },
+   "id": "2433538",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.56152371299993,
+     36.81451459
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de Almerimar"
+   },
+   "id": "2433689",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.79089533099994,
+     36.696716779
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-03",
+    "etiqueta": "Puerto Deportivo San José"
+   },
+   "id": "2434053",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.10199045799993,
+     36.7626951610001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de la Base Naval de Rota"
+   },
+   "id": "2434157",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.33038368099994,
+     36.619507996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto Astaroth"
+   },
+   "id": "2434385",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.35260055299995,
+     36.615296781
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Cádiz y su Bahía"
+   },
+   "id": "2434581",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.2913966359131726,
+     36.53423541823006
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto Sherry"
+   },
+   "id": "2434582",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.256122828811274,
+     36.581979880012994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto América"
+   },
+   "id": "2434586",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.28332640499991,
+     36.5421172590001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto Juan Sebastián Elcano"
+   },
+   "id": "2434597",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.26037744599995,
+     36.4998813220001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de El Puerto de Santa María"
+   },
+   "id": "2434617",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.23637269953403,
+     36.58117377365099
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "C.A. Andalucía",
+    "fecha": "2024-06-17",
+    "etiqueta": "Puerto Deportivo de Marbella"
+   },
+   "id": "2437881",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.88970827999992,
+     36.506103641
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Pesquero"
+   },
+   "id": "2437882",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.87579225499991,
+     36.5076905670001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Deportivo de Fuengirola"
+   },
+   "id": "2439420",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.61767558199995,
+     36.539489867
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto Deportivo"
+   },
+   "id": "2439501",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.51348883199995,
+     36.5958863590001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Marina"
+   },
+   "id": "2439502",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.50970465699993,
+     36.59710706
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto Deportivo"
+   },
+   "id": "2439834",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.20819311499992,
+     36.395510529
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Deportivo de la Duquesa"
+   },
+   "id": "2442166",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.22711203799992,
+     36.354677671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto Deportivo de Cabo Pino"
+   },
+   "id": "2442389",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.73998908699991,
+     36.4846802320001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto José Banús"
+   },
+   "id": "2442666",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.95391730699993,
+     36.485290595
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto de Almadraba"
+   },
+   "id": "2442779",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.13721025699994,
+     36.29449759
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de la Albufera"
+   },
+   "id": "2443210",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.93200676299995,
+     36.1848753570001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Sotogrande"
+   },
+   "id": "2444270",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.27099616099991,
+     36.2902850630001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto de la Atunara"
+   },
+   "id": "2444636",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.33477991999996,
+     36.1793196520001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Tarifa"
+   },
+   "id": "2445028",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.602471742099108,
+     36.010416331542615
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Bahía de Algeciras"
+   },
+   "id": "2445247",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.438785824858053,
+     36.12976894961108
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-03",
+    "etiqueta": "Puerto de Roquetas de Mar"
+   },
+   "id": "2588577",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.60540869599993,
+     36.7562872490001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto José Banús"
+   },
+   "id": "2442666",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.95391730699993,
+     36.485290595
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto de Almadraba"
+   },
+   "id": "2442779",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.13721025699994,
+     36.29449759
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de la Albufera"
+   },
+   "id": "2443210",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.93200676299995,
+     36.1848753570001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Sotogrande"
+   },
+   "id": "2444270",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.27099616099991,
+     36.2902850630001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-21",
+    "etiqueta": "Puerto de la Atunara"
+   },
+   "id": "2444636",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.33477991999996,
+     36.1793196520001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Tarifa"
+   },
+   "id": "2445028",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.602471742099108,
+     36.010416331542615
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Bahía de Algeciras"
+   },
+   "id": "2445247",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.438785824858053,
+     36.12976894961108
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-03",
+    "etiqueta": "Puerto de Roquetas de Mar"
+   },
+   "id": "2588577",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.60540869599993,
+     36.7562872490001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de la Estaca"
+   },
+   "id": "2619844",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.911215168105066,
+     27.794559830694066
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Corralejo"
+   },
+   "id": "2623081",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.8635864259999,
+     28.7409057630001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Gran Tarajal"
+   },
+   "id": "2623082",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -14.0270996099999,
+     28.206115723
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Morro Jable"
+   },
+   "id": "2623087",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -14.3648071289999,
+     28.0494995130001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Dársena Exterior"
+   },
+   "id": "2624819",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.4160766609999,
+     28.1361083990001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de la Aldea"
+   },
+   "id": "2627259",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.818786621,
+     28.0067138680001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de la Luz"
+   },
+   "id": "2627261",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.4177246089999,
+     28.1325073250001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Sardina"
+   },
+   "id": "2627263",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.6964111329999,
+     28.1514892580001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-03",
+    "etiqueta": "Puerto de Naos"
+   },
+   "id": "2630125",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.5413208009999,
+     28.9635009770001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de Tazacorte"
+   },
+   "id": "2631883",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.944519043,
+     28.645080567
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Candelaria"
+   },
+   "id": "2637477",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.3679809569999,
+     28.356689454
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Colón"
+   },
+   "id": "2637478",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.737792968,
+     28.0783081060001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de Honduras"
+   },
+   "id": "2637480",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.2645874019999,
+     28.44873047
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de las Galletas"
+   },
+   "id": "2637483",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.6614990229999,
+     28.007080079
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto de los Abrigos"
+   },
+   "id": "2637484",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.591003418,
+     28.027893067
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de los Gigantes"
+   },
+   "id": "2637486",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.8436889639999,
+     28.2476806650001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de los Mozos"
+   },
+   "id": "2637487",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.792175293,
+     28.1392822280001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-04",
+    "etiqueta": "Puerto de San Marcos"
+   },
+   "id": "2637488",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.7241210939999,
+     28.3779296880001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto del Buén Jesús"
+   },
+   "id": "2637490",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.8610229499999,
+     28.3759155280001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-24",
+    "etiqueta": "Puerto del Médano"
+   },
+   "id": "2637491",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.5350952139999,
+     28.04248047
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Santa Cruz de La Palma"
+   },
+   "id": "2638520",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.766886971778987,
+     28.67981581131458
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de San Sebastián de La Gomera"
+   },
+   "id": "2638533",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.10734150009445,
+     28.088612947167366
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Los Cristianos"
+   },
+   "id": "2638540",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.719699523512755,
+     28.048060558019554
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Granadilla"
+   },
+   "id": "2638546",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.491396171004503,
+     28.081440617089147
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Santa Cruz de Tenerife"
+   },
+   "id": "2638556",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.24483538224305,
+     28.469036842132926
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Las Palmas"
+   },
+   "id": "2638569",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.426380604442139,
+     28.141360959505548
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Arinaga"
+   },
+   "id": "2638571",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.402259860442513,
+     27.84792979578657
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Salinetas"
+   },
+   "id": "2638574",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.377193650530206,
+     27.976408497268924
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto del Rosario"
+   },
+   "id": "2638592",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.855601508271084,
+     28.497919270387953
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Arrecife"
+   },
+   "id": "2638605",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.529507573334714,
+     28.971221813583824
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Huelva"
+   },
+   "id": "2700699",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.923269602736053,
+     37.18657818135674
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Puerto Real"
+   },
+   "id": "2725152",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.190745495173893,
+     36.52522167764603
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Sevilla y su Ría"
+   },
+   "id": "2725153",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.994232870116439,
+     37.362156811426026
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de la Zona Franca de Cádiz"
+   },
+   "id": "2725156",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.2620000089902925,
+     36.50127387335352
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Santander"
+   },
+   "id": "2725428",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.824207486313905,
+     43.448970853351305
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Ceuta"
+   },
+   "id": "2725431",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.3242318463653,
+     35.89602393886446
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Melilla"
+   },
+   "id": "2725432",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.935570387221685,
+     35.28872949447241
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Castellón"
+   },
+   "id": "2725434",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.022148851381921596,
+     39.97030365290278
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Gandía"
+   },
+   "id": "2725435",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.155190785850648,
+     38.994353342695874
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Sagunto"
+   },
+   "id": "2725436",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.21726352356420817,
+     39.653348172886965
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto Bajo de la Cabezuela"
+   },
+   "id": "2725665",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.257021675253581,
+     36.52398792120373
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Ferrol y su Ría"
+   },
+   "id": "2725670",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.254412367251069,
+     43.47986705606733
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de San Cibrao"
+   },
+   "id": "2725672",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.4608957954171276,
+     43.708470385311536
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Alcúdia"
+   },
+   "id": "2725675",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.133773890248567,
+     39.836915308431536
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Eivissa"
+   },
+   "id": "2725676",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4401150072312057,
+     38.91349450160634
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de la Savina"
+   },
+   "id": "2725679",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4178825738823995,
+     38.733106854651446
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-06-27",
+    "etiqueta": "Puerto de Avilés"
+   },
+   "id": "2725682",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.922177801095915,
+     43.569563244225975
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.Puertos del Estado",
+    "fecha": "2023-08-07",
+    "etiqueta": "Puerto de Cartagena"
+   },
+   "id": "2725684",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9866701912913103,
+     37.59419126628829
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-03",
+    "etiqueta": "Muelle de Bonanza"
+   },
+   "id": "2999991",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.33697638699994,
+     36.8038946550001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Puerto",
+    "codigo_ngbe": "3.2.1",
+    "tiponombre": "identificador_geografico",
+    "fuente": "Región de Murcia",
+    "fecha": "2024-10-07",
+    "etiqueta": "Puerto de Águilas"
+   },
+   "id": "4037258",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5779072795747744,
+     37.40223509635508
+    ]
+   }
+  }
+ ]
+}
