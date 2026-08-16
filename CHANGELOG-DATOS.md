@@ -32,6 +32,78 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.81 — El telescopio se va a su isla
+
+La release anterior dejó al **Gran Telescopio Canarias dibujado en Santa Cruz de
+Tenerife**, a 163 km del telescopio y en otra isla, y lo defendió como
+disciplina. **Contrato 1.54.0.**
+
+### El razonamiento tenía un agujero
+
+`autonomia` es la convención declarada para lo que el Mapa de ICTS solo sitúa
+por comunidad autónoma. Pero **un punto en el mapa afirma**, y ese afirmaba la
+isla equivocada. El mismo día, con el IRAM 30m, había escrito que estar en la
+capital «era honesto y era inútil» — y lo moví. La convención no puede amparar un
+punto que dice algo falso.
+
+### Y al buscar de verdad, la fuente aparece
+
+El **convenio de financiación publicado en el BOE** —Resolución de 18 de
+noviembre de 2024, `BOE-A-2024-24663`— dice literalmente:
+
+> «el diseño, especificaciones y las fases de la construcción del **Gran
+> Telescopio Canarias en el Observatorio del Roque de los Muchachos (La
+> Palma)**»
+
+Y ese observatorio **sí** es topónimo del Nomenclátor: es el mismo punto que ya
+sostenía a `oocc`, porque el telescopio está dentro.
+
+| | antes | ahora |
+|---|---|---|
+| precisión | `autonomia` | **`paraje`** |
+| punto | Santa Cruz de Tenerife | Observatorio del Roque de los Muchachos |
+| municipio | — | **Garafía** |
+| | | se mueve **162.689 m** |
+
+El mismo convenio deja claro que la capital **no era ni siquiera una de sus tres
+sedes**: las de nivel del mar son La Laguna (Tenerife) y Breña Baja (La Palma).
+
+### La regla que queda escrita
+
+Antes de conformarse con `autonomia` hay que **agotar la búsqueda del acto**. Una
+búsqueda que se detiene en el gazetteer no la ha agotado: el Nomenclátor no tiene
+topónimo del telescopio, y de ahí concluí que no había fuente. La había, en el
+BOE, a una búsqueda de distancia.
+
+### Lo que la misma pasada buscó y NO encontró
+
+Se fue a buscar salida para los otros tres huecos declarados. Dos siguen
+cerrados, y ahora con prueba en vez de suposición:
+
+- **La zona del cielo protegido canario existe como geodato**: el IAC publica un
+  KMZ con **24 polígonos** de la zona de Tenerife con visión directa desde La
+  Palma. **No se puede usar:** su aviso legal prohíbe expresamente el uso
+  comercial y alterar los contenidos, y no ofrece ninguna licencia de
+  reutilización. Es el mismo muro que tumbó a TeleGeography.
+- **Las servidumbres de Yebes e IRAM no tienen perímetro publicado.** El
+  Ministerio publica la relación de instalaciones protegidas, no sus zonas. Y
+  hay una razón mejor para no dibujar el círculo que «no hay fuente»: **el acto
+  no impone un disco**. Impone distancias distintas según el elemento —1.000 m a
+  una industria, 3.000 a un aerogenerador— y una regla de ángulo para la altura.
+  Un círculo dibujaría una prohibición uniforme que no existe.
+- **El recuento de máquinas de la RES sí es alcanzable**, pero leyendo las 17
+  fichas de nodo una a una. La fuente lo dice; no lo dice de una vez. Queda
+  apuntado como trabajo, no como imposible.
+
+### Huecos
+
+- **`gtc` y `oocc` comparten punto exacto.** No es un error: el BOE dice que el
+  telescopio está EN ese observatorio, y fingir un desplazamiento sería inventar.
+- Siguen **19 registros** situados por comunidad o por país. A cada uno le falta
+  su acto, y ahora se sabe que puede existir.
+
+---
+
 ## datos-v2026.08.80 — El Mapa dice catorce nodos, y la red lista diecisiete
 
 Tercero y último de los enriquecimientos de `icts`, y el dato es que **dos
