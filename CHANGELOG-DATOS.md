@@ -32,6 +32,63 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.73 — Que lo mire el validador y no una persona
+
+La `.72` arregló dos polígonos rotos. Esta arregla **por qué nadie los vio**:
+§7.4 comprobaba el **sentido** de cada anillo y no que el anillo fuera
+**simple**, así que 135 polígonos pasaron el contrato entero con dos dibujando
+estrellas. **Contrato 1.46.0.**
+
+### Añadido
+
+- `validar.py` · **§7.4 · el anillo que se cruza a sí mismo**. RFC 7946 lo
+  prohíbe, por la razón obvia: un anillo que se cruza no delimita nada. El aviso
+  imprime **los metros del cruce y a cuántos vértices están los lados**.
+- Su prueba, `aviso-74-anillo-que-se-cruza.geojson`. La batería pasa de **50 a
+  51**.
+
+### Por qué AVISA y no bloquea, que estaba medido antes de decidirlo
+
+Se barrieron **las once capas con polígonos** del atlas. Hay cruces en **siete**,
+y al medirlos resulta que **no son el mismo fallo**:
+
+| | cruce típico | lados separados por |
+|---|---|---|
+| El de `zonas-defensa` (la estrella) | **4.000 m** | **12 vértices** |
+| `generacion-electrica-provincia` y `montes-catalogo` | 417 m | 2-3 vértices |
+| `puertos` | 39 m | 2 vértices |
+| `parques-eolicos`, `plantas-solares`, `red-electrica` | 45-70 m | 2 vértices |
+
+Los del atlas son **pellizcos**: un lado que roza al de al lado tras la
+simplificación, o que ya venía así de la fuente. Sobre una provincia de miles de
+kilómetros cuadrados es una centésima del contorno. Bloquear por eso pararía el
+CI sin que nadie pueda arreglarlo — hay que rehacer la generalización con
+topología, y eso es otra obra.
+
+El anillo **mal ordenado**, en cambio, se delata por la **magnitud**. Por eso el
+aviso no dice «se cruza» y calla: dice **cuánto** y **dónde**, que son los dos
+números con los que se distingue un pellizco de una estrella.
+
+### Dos afinados, para que el aviso no mienta
+
+- **Cruces por debajo de 25 m: ignorados.** Las coordenadas se guardan a cinco
+  decimales (≈1 m), y dos lados cortísimos que casi se tocan pueden salir
+  cruzados sin que el perímetro lo esté. Distinguirlo recuperó cuatro perímetros
+  buenos en `zonas-defensa`.
+- **Anillos de más de 900 vértices: no se comprueban.** El coste es cuadrático, y
+  esas fronteras vienen del IGN, no de una transcripción. Van contados aparte.
+
+### Huecos
+
+- **118 avisos vivos**, en siete capas. No son mentiras del dato: son pellizcos
+  de topología que quedan **dichos en voz alta** en cada corrida del CI.
+  Arreglarlos de verdad exige una generalización que conserve la topología, y
+  eso no entra aquí.
+- **Los anillos de más de 900 vértices no se miran.** Si un día una capa
+  transcribe a mano una frontera de esa talla, esta comprobación no la cubre.
+
+---
+
 ## datos-v2026.08.72 — Un anillo que se cruza a sí mismo no delimita nada
 
 Corrige la geometría de **`zonas-defensa`**, que salió mal en la `.71`. La capa
