@@ -32,6 +32,73 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.64 — Dónde se escuchan los terremotos, y desde cuándo
+
+Entra **`red-sismica`**: las **303 estaciones** de la Red Sísmica Nacional, con
+sus coordenadas, su altitud y **las dos fechas que importan** — desde cuándo
+vigila cada punto y, en 76 casos, hasta cuándo lo vigiló.
+
+Ayer esta capa se dio por bloqueada por licencia. **No lo estaba**, y la
+respuesta estaba publicada en dos sitios; el segundo, dentro de este mismo
+repositorio.
+
+### Añadido
+
+- `red-sismica` — **303 estaciones: 227 vigentes y 76 históricas**, con fecha de
+  instalación, fecha de baja donde la hay, elevación y coordenadas de la propia
+  estación.
+
+### Dónde estaba el dato
+
+El portal del IGN publica un buscador que da **solo código y nombre**, sin
+coordenadas, y `www.ign.es/fdsnws/…` responde **404** — de ahí la conclusión
+apresurada de que el IGN no sirve FDSN. **Sí lo sirve, en otro dominio**:
+`fdsnws.sismologia.ign.es`. Se llega preguntándole al **enrutador de EIDA**, la
+federación europea, que sabe qué nodo atiende cada red. Una sola petición
+devuelve las 303 con todo.
+
+### La licencia no es la de las demás capas del IGN
+
+Y confundirlas habría sido reclamar un permiso que no se tiene. La Orden
+FOM/2807/2015 —de donde sale «Obra derivada de *producto* CC-BY 4.0 ign.es»—
+cubre **solo los productos geográficos de la tabla del SCNE, y ahí no hay
+ninguno sísmico**.
+
+Lo que sí aplica es el **régimen general de la Ley 37/2007**, que el propio
+aviso legal del IGN desarrolla: reutilización permitida citando la fuente y la
+fecha, sin desnaturalizar el sentido ni insinuar patrocinio, **sin ShareAlike ni
+NonCommercial**. Es el mismo régimen sobre el que este atlas ya publicaba seis
+capas. La atribución es **«Instituto Geográfico Nacional»**, y no la fórmula del
+SCNE — el error de las quince atribuciones mal puestas, esta vez por exceso.
+
+### Las bajas son la mitad del valor
+
+76 estaciones tienen fecha de cierre y se publican como `historico` en vez de
+esconderse. **Una red de vigilancia sin su historia no dice cuándo se dejó de
+mirar un sitio**, que es justo lo que interesa saber.
+
+Y hay una consecuencia práctica: **el portal web va atrasado respecto al
+servicio**. Su pestaña de estaciones activas todavía lista cuatro que el FDSN da
+de baja en 2026 — E1601, E1602, E1603 y EBAJ. Manda el servicio, que es lo que
+el IGN mantiene para la federación internacional.
+
+### Huecos
+
+Los dos son **de la capa, no de cada registro**, así que se declaran en la
+procedencia y no en las 303 fichas: meterlos ahí las degradaría a
+«parcialmente verificadas» por algo que no dicen.
+
+- **Qué mide cada estación.** La consulta a nivel de estación no devuelve los
+  canales, así que la capa no distingue banda ancha, corto periodo o
+  acelerógrafo.
+- **La red `ES` no es toda la sismología del IGN.** Las antárticas (Decepción,
+  Livingston) y algunas volcánicas que el portal sí lista **no están en esta
+  red**: van con otro código, y ninguna estación de `ES` cae en el hemisferio
+  sur.
+
+La capa va como ámbito `mundo` por **una sola estación**: `VPORT`, en Vila do
+Porto (Santa María, Azores). El ámbito describe la cobertura, no la mayoría.
+
 ## datos-v2026.08.63 — El hueco que no existía
 
 La `.62` publicó las 123 estaciones geodésicas **con un hueco declarado**: la

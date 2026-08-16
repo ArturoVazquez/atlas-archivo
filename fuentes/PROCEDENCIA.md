@@ -66,7 +66,7 @@ vez, y las fichas remiten a esta sección.
 
 ### Instituto Geográfico Nacional (IGN) y CNIG
 
-**Presente en 23 de las 32 capas.** Licencia **CC-BY 4.0**, establecida por la
+**Presente en 23 de las 33 capas.** Licencia **CC-BY 4.0**, establecida por la
 **Orden FOM/2807/2015, de 18 de diciembre** (BOE de 26-12-2015), cuyo artículo 4
 dice que el uso «tendrá carácter libre y gratuito, siempre que se mencione el
 origen y propiedad de los datos».
@@ -157,8 +157,8 @@ la estadística eléctrica y los anuncios de Costas.
 
 ## El archivo está completo
 
-**Las 9.538 citas con URL de las 32 capas y del conjunto tienen su documento
-archivado aquí: el 100 %.** Son 204 documentos distintos. No queda un solo aviso
+**Las 10.144 citas con URL de las 33 capas y del conjunto tienen su documento
+archivado aquí: el 100 %.** Son 206 documentos distintos. No queda un solo aviso
 pendiente de §7.7 —la comprobación que avisa cuando una cita no está
 archivada—, y eso se midió, no se supuso.
 
@@ -1122,6 +1122,52 @@ Nacional»** con su fecha, no la fórmula del SCNE.
 diarios del 2026-08-10 que prueba la vigencia, y un site log IGS de muestra); la
 licencia y la tabla de productos del SCNE se reutilizan de la `.26`.
 **El resto** · CHANGELOG `datos-v2026.08.62` y `.63` · §10
+
+## red-sismica
+
+**De dónde** · **IGN**, servicio **FDSN** de estaciones de la red sísmica `ES`
+(*Spanish Digital Seismic Network*): coordenadas en WGS84, elevación,
+denominación del emplazamiento y **fechas de alta y de baja**, de una sola
+petición. La red tiene además DOI propio, `10.7914/SN/ES`.
+**Dónde está, que costó encontrarlo** · El portal del IGN publica un buscador
+que da **solo código y nombre**, sin coordenadas, y `www.ign.es/fdsnws/…`
+responde **404** — lo que hace pensar que el IGN no sirve FDSN. **Sí lo sirve,
+en otro dominio:** `fdsnws.sismologia.ign.es`. Se llega preguntándole al
+**enrutador de EIDA**, la federación europea, que sabe qué nodo atiende cada
+red: `orfeus-eu.org/eidaws/routing/1/query?network=ES&service=station`.
+**Licencia y qué obliga — OJO, NO es la de las demás capas del IGN** · La Orden
+FOM/2807/2015, de donde sale la fórmula «Obra derivada de *producto* CC-BY 4.0
+ign.es», cubre **solo los productos geográficos de la tabla del SCNE, y ahí no
+hay ninguno sísmico**. Usarla aquí sería reclamar una licencia que no aplica.
+Lo que sí aplica es el **régimen general de la Ley 37/2007**, que el propio
+aviso legal del IGN desarrolla en su punto RISP: reutilización permitida
+citando la fuente y la fecha, sin desnaturalizar el sentido, sin insinuar
+patrocinio y conservando los metadatos — **sin ShareAlike ni NonCommercial**.
+Atribución en el manifiesto: «Instituto Geográfico Nacional».
+**Qué hay que saber** · **Las bajas son la mitad del valor**: 76 de las 303
+estaciones tienen fecha de cierre y se publican como `historico` en vez de
+esconderse. Una red de vigilancia sin su historia no dice **cuándo se dejó de
+mirar un sitio**, que es justo lo que interesa. Y **el portal va atrasado
+respecto al servicio**: su pestaña de activas todavía lista cuatro que el FDSN
+da de baja en 2026 (E1601, E1602, E1603 y EBAJ). Manda el servicio, que es lo
+que el IGN mantiene para la federación internacional. Aquí, al contrario que en
+`red-geodesica`, **no hay lío de datums**: el formato FDSN publica en WGS84, que
+es lo que pide RFC 7946.
+**Huecos** · Los dos son de la **capa**, no de cada registro, y por eso están
+aquí y no en las 303 fichas —donde las degradarían a `parcial` por algo que no
+dicen—. Primero: **qué mide cada estación**. La consulta a nivel de estación no
+devuelve los canales, así que la capa no distingue banda ancha, corto periodo o
+acelerógrafo; el servicio lo publica a nivel de canal, que es otra consulta y
+otro volumen. Segundo: **la red `ES` no es toda la sismología del IGN**. Las
+antárticas (Decepción, Livingston) y algunas volcánicas que el portal sí lista
+**no están en esta red** — van con otro código, y ninguna estación de `ES` cae
+en el hemisferio sur.
+**Ámbito** · Va como `mundo` por **una sola estación**: `VPORT`, en Vila do
+Porto (Santa María, Azores), Portugal. El ámbito describe la cobertura, no la
+mayoría.
+**Archivado** · 2 ficheros (la consulta al FDSN y el aviso legal que sostiene la
+licencia).
+**El resto** · CHANGELOG `datos-v2026.08.64` · §10
 
 ---
 
