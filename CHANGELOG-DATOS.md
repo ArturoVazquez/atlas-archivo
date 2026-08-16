@@ -32,6 +32,73 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.72 — Un anillo que se cruza a sí mismo no delimita nada
+
+Corrige la geometría de **`zonas-defensa`**, que salió mal en la `.71`. La capa
+baja de **135 zonas a 120** y de 92 actos a 72, y lo que se va **no es dato
+perdido: era dibujo falso**.
+
+### Qué se veía, y qué era
+
+Sobre el mapa, dos formas imposibles: una **estrella de rayos** de cincuenta
+kilómetros en la sierra del Retín y un **pincho de noventa y ocho kilómetros**
+que bajaba de El Teleno hasta Miranda de Duero. Ninguna de las dos era un
+perímetro. Detrás había **cuatro fallos distintos**, y los cuatro son míos por
+no haber mirado las formas antes de publicar.
+
+1. **Tablas fundidas.** La orden de «El Teleno» publica **ocho parcelas
+   seguidas** —zona de caída, A-3, A-7, A-10…— separadas por rótulos de pocas
+   palabras. El corte por distancia en el texto las unía en un solo polígono.
+   Ahora se corta también **cuando entre dos puntos aparece una palabra** que no
+   sea mobiliario de tabla (el datum, el huso, la banda, que algunos actos
+   repiten en cada fila).
+2. **Numeraciones que se reinician.** Otros actos encadenan tablas bajo un
+   rótulo hecho solo de mobiliario («Denominación punto X Y»), y ahí no hay
+   palabra que delate el corte. Se corta también **cuando el acto vuelve a
+   numerar desde el principio**: que renumere es el propio acto diciendo dónde
+   acaba un perímetro.
+3. **Anillos que se cruzan a sí mismos.** Quedan **29**, y son los que producían
+   la estrella. No es que el acto esté mal: es que **el orden en que sus
+   vértices aparecen en el texto no es el orden del anillo** —tablas a dos
+   columnas, tablas partidas por un salto de página, numeraciones que el BOE
+   aplana al publicar—. **No se reordenan**: inventar el orden sería dibujar un
+   perímetro que nadie ha publicado. Se descartan y se dice cuántos. Con
+   tolerancia para los cruces **micro**, por debajo de 25 m, que son ruido del
+   redondeo y no del orden: distinguirlos recupera cuatro perímetros buenos.
+4. **Erratas de coordenada.** **Dos**. La orden de «El Teleno» imprime una Y de
+   **4600525** donde las otras cuatro de su tabla rondan 4699000 — cien
+   kilómetros de diferencia en un dígito. Tampoco se corrige: enmendar una
+   coordenada es inventarla. Se descarta el perímetro y se cuenta.
+
+### Cómo queda
+
+- **120 zonas** de **72 actos**: 63 de interés para la Defensa Nacional, 50
+  zonas de seguridad próximas y 7 lejanas. **5.132 vértices**, **59.874
+  hectáreas**, **0,82 MB**.
+- Los descartes van todos contados en el conjunto y en la ficha de procedencia:
+  29 anillos que se cruzan, 14 sin huso que encaje, 5 degenerados, 4 con varios
+  husos posibles, 3 correcciones aplicadas al acto que corrigen, 2 con errata de
+  coordenada y 2 sustituidos por un acto posterior.
+
+### La lección, que no es sobre Defensa
+
+**El validador no mira las formas.** Comprueba el sentido del anillo (§7.4) y no
+que el anillo sea simple, así que 135 polígonos pasaron el contrato con dos de
+ellos dibujando estrellas. Las comprobaciones que ahora deciden qué se publica
+—anillo simple, vértice fugado, superficie mínima— viven en el pipeline de esta
+capa; **si vuelve a hacer falta en otra, su sitio es el validador**, y entonces
+será una regla del contrato y no una manía de un guion.
+
+### Huecos
+
+- **La capa publica menos que antes y sabe más**: de los 97 actos con
+  coordenadas legibles, **25 no dan ni un perímetro utilizable**. La mayoría, por
+  el orden de sus vértices.
+- Lo anterior **no se puede arreglar leyendo mejor**: haría falta la tabla
+  original con su maquetación, y el BOE publica el texto ya aplanado.
+
+---
+
 ## datos-v2026.08.71 — El anillo que la Defensa dibuja sobre el suelo de otros
 
 Entra **`zonas-defensa`**: los **135 perímetros** que la Ley 8/1975 traza

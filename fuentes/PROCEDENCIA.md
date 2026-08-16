@@ -1593,10 +1593,21 @@ título, secciones I y III: «zona de seguridad» da **803** actos, **768** del 
 de Defensa —**598 señalamientos**, 71 supresiones, 53 modificaciones y 44
 correcciones—; «interés para la Defensa Nacional» da **76**, con **58
 declaraciones**. De esos 826 actos, **97 publican coordenadas legibles por
-máquina** y **92 verifican**. Los que no, **casi todos son de los años ochenta**
+máquina** y **72 verifican**. Los que no, **casi todos son de los años ochenta**
 —417 de los 768 lo son— y el BOE **solo los conserva escaneados**: su XML viene
 con el cuerpo vacío. No es que no tengan perímetro; es que no hay texto que
 leer.
+**Cómo se comprueba cada polígono, que es lo que decide qué se publica** ·
+(0) **El anillo tiene que ser un anillo.** Veintinueve perímetros salen
+**cruzándose a sí mismos**, que es lo que RFC 7946 prohíbe y lo que en un mapa
+se ve como una estrella de rayos: no es que el acto esté mal, es que **el orden
+en que sus vértices aparecen en el texto no es el orden del anillo** —tablas a
+dos columnas, tablas partidas, numeraciones que el BOE aplana al publicar—. El
+atlas **no los reordena**: inventar el orden sería dibujar un perímetro que
+nadie ha publicado. Se descartan. Y dos más se van por una **errata de
+coordenada**: la orden de «El Teleno» imprime una Y de 4600525 donde las otras
+cuatro de su tabla rondan 4699000, y eso manda un vértice **noventa y ocho
+kilómetros** al sur; tampoco se corrige, se descarta.
 **Cómo se comprueba cada polígono, que es lo que decide qué se publica** ·
 (1) **El huso no se cree, se deduce.** Casi ningún acto anterior a 2018 dice en
 qué huso UTM están sus coordenadas: se prueban los **cinco de España** (27 a 31)
@@ -1640,7 +1651,7 @@ El límite es **de la capa** y vive aquí.
 **Archivado** · 4 ficheros (los 97 actos con su texto íntegro en un solo
 documento, la Ley y el Reglamento consolidados, y la excepción .NET del WMS del
 ministerio como prueba de que esa vía no existe).
-**El resto** · CHANGELOG `datos-v2026.08.71` · §10
+**El resto** · CHANGELOG `datos-v2026.08.72` · §10
 
 ---
 
