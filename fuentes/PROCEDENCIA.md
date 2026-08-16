@@ -1108,11 +1108,16 @@ misma propuesta. Su listado web publica solo código y nombre, pero **el dato
 completo SÍ existe**: el enrutador EIDA revela que el IGN sirve FDSN en
 `fdsnws.sismologia.ign.es` —otro dominio, no `www.ign.es`, donde da 404— con
 **303 estaciones, coordenadas, elevación y fechas de alta y baja** (227 activas,
-76 dadas de baja). **Lo que bloquea es la licencia:** la política de datos del
-IGN se declara aplicable a «los productos y servicios de datos geográficos
-definidos en» la Orden FOM/2807/2015, **la sismología no está entre ellos**, no
-hay producto sísmico en la tabla del SCNE y no hay conjunto en `datos.gob.es`.
-Queda como consulta al CNIG en `AGENDA.md`, no como suposición.
+76 dadas de baja). **Y se puede usar**, aunque NO por la vía de las otras
+capas del IGN: la Orden FOM/2807/2015 cubre solo los productos geográficos del
+SCNE, donde no hay ninguno sísmico, así que la fórmula «Obra derivada de … CC-BY
+4.0 ign.es» **no aplica y usarla sería reclamar una licencia que no es**. Lo que
+sí aplica es el **régimen general de la Ley 37/2007**, que el propio aviso legal
+del IGN desarrolla en su punto RISP: permite reutilizar sus documentos citando la
+fuente y la fecha, sin desnaturalizar el sentido y sin insinuar patrocinio, y
+**sin ShareAlike ni NonCommercial**. Es el mismo régimen sobre el que este atlas
+publica ya seis capas. La atribución, por tanto, es **«Instituto Geográfico
+Nacional»** con su fecha, no la fórmula del SCNE.
 **Archivado** · 3 ficheros propios (la tabla de coordenadas, el listado de datos
 diarios del 2026-08-10 que prueba la vigencia, y un site log IGS de muestra); la
 licencia y la tabla de productos del SCNE se reutilizan de la `.26`.
