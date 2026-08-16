@@ -32,6 +32,67 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.78 — El radiotelescopio estaba dibujado en Sevilla
+
+El **IRAM 30m** es una antena de treinta metros en el pico Veleta, a 2.904 m de
+altitud. El atlas lo pintaba en **Sevilla, a 233 km**. **Contrato 1.51.0.**
+
+Y no era un descuido: el **Mapa de ICTS sitúa cada instalación por comunidad
+autónoma y nada más**, así que la capa nació poniendo cada registro en el punto
+de su capital y declarándolo `autonomia`. Honesto, y de poco servicio.
+
+### Lo que lo arregla no es el Mapa
+
+Dos de los radiotelescopios tienen algo que el Mapa no da: **un acto que los
+protege por su posición** — y para poder protegerlos, tiene que decir dónde
+están.
+
+| | acto | precisión | se mueve |
+|---|---|---|---|
+| `iram-30m` | Orden ITC/1679/2009 | `autonomia` → **`exacta`** | **232.860 m** |
+| `yebes` | Orden TDF/102/2025 | `paraje` → **`exacta`** | 166 m |
+
+Son coordenadas de la resolución que autoriza la instalación, que es
+literalmente lo que §6.6 admite como `exacta`. Cada orden deroga a la anterior:
+la de Yebes a la Orden CTE/1444/2003, y la del IRAM a la Resolución de 10 de
+marzo de 2006.
+
+### Lo que NO se dibuja, y es lo que más importa
+
+Las dos servidumbres se definen por **distancias desde un punto** —«a más de
+1.000 metros», «a más de 3.000»— y **ninguna de las dos trae un perímetro**.
+
+Dibujar círculos sería el atlas inventando geometría que su fuente no da. Las
+distancias entran como **campos**:
+
+- **Yebes:** por debajo de 1.000 m limita la altura de lo que se construya;
+  1.000 m a industrias, líneas de alta tensión, plantas fotovoltaicas y
+  ferrocarril electrificado; **3.000 m** a aeródromos, plantas solares,
+  aerogeneradores y plantas de hidrógeno.
+- **IRAM 30m:** 1.000 m a industrias, alta tensión y ferrocarril; de **1 a 5 km**
+  a los transmisores, según su potencia y su banda.
+
+### Añadido
+
+- `pipeline/enriquecer-icts.py`, que **comprueba que el acto archivado siga
+  diciendo la coordenada que se publica** antes de tocar nada.
+- Cuatro campos en §10, y **solo en los dos registros que tienen acto**:
+  `altitud_m`, `servidumbre_acto`, `servidumbre_distancia_minima_m` y
+  `servidumbre_distancia_mayor_m`.
+- Una clave por registro contando de dónde sale su posición.
+
+### Huecos
+
+- **Siguen 21 registros situados por comunidad o por país.** Esto arregla dos,
+  los dos que tienen acto propio; para el resto el Mapa es lo que hay.
+- **La orden del IRAM da los segundos ENTEROS**, que sobre el terreno son unos
+  30 m. Es `exacta` porque §6.6 mira de dónde sale la coordenada y no cuántos
+  decimales trae, pero la clave del registro lo dice.
+- `servidumbre_distancia_mayor_m` **no es un radio dibujable**: es la mayor
+  separación que impone el acto, y en cada uno se aplica a cosas distintas.
+
+---
+
 ## datos-v2026.08.77 — Seis filas vacías con un punto rojo
 
 La `.76` publicó `reservas-estrategicas` con sus **seis claves en blanco**: las
