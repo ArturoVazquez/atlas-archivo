@@ -333,11 +333,25 @@ Yebes, Doñana). **No se adivinó ningún municipio por notoriedad** — eso hab
 sido el relleno por verosimilitud. IDISOM va en `desarrollo` porque el propio
 acuerdo la declara «a constituir» (nota iv). El acuerdo advierte además de que
 las denominaciones de las redes pueden cambiar antes de su constitución.
+Donde el Mapa se queda corto lo suple **un acto que sitúe la instalación para
+poder protegerla**: las dos órdenes de servidumbre radioeléctrica (Yebes e IRAM
+30m, que salió de Sevilla a 233 km), el convenio del BOE que pone al Gran
+Telescopio Canarias en el Roque de los Muchachos —estuvo dibujado en otra
+isla— y el Reglamento del cielo canario.
+**Las once distribuidas van en `MultiPoint`** *(1.57)*, con un vértice en cada
+capital de las comunidades que su Anexo I nombra. Antes iban en `pais`, o sea
+las doce en el mismo punto de Madrid, que es lo que la fuente **no** dice:
+`rediris` es la única que se queda ahí, porque de ella sí dice «todas las
+comunidades autónomas». Los vértices siguen siendo capitales y no laboratorios.
 **Huecos** · Las de sede única sin topónimo declaran la ubicación de la
-instalación (nueve registros); las bases antárticas, sus coordenadas en cifra.
-**Archivado** · 5 ficheros (el acuerdo y su Anexo II de procedimiento, las dos
-páginas antárticas y las consultas al NGBE).
-**El resto** · CHANGELOG `datos-v2026.08.29` · §10
+instalación; las bases antárticas, sus coordenadas en cifra. **Canarias tiene
+dos capitales por estatuto** y la capa usa Santa Cruz de Tenerife: el Anexo I
+no dice la isla de sus nodos canarios, y elegirla por notoriedad sería el
+relleno que esta capa evita en todo lo demás.
+**Archivado** · 11 ficheros (el acuerdo y su Anexo II de procedimiento, las dos
+páginas antárticas, dos consultas al NGBE —la de las instalaciones y la de las
+capitales autonómicas—, cuatro actos del BOE y la página de nodos de la RES).
+**El resto** · CHANGELOG `datos-v2026.08.84` · §10
 
 ## desaladoras
 

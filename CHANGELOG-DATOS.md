@@ -32,6 +32,91 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.84 — Once cosas que no estaban en Madrid
+
+La release anterior puso un número al montón de puntos apilados sobre la
+capital. Esta quita el montón. **Contrato 1.57.0.**
+
+### El defecto: `pais` usado fuera de su propia definición
+
+Doce registros de `icts` se dibujaban en el **mismo punto de Madrid**. Lo vio
+Arturo mirando el mapa, y su objeción era la del Gran Telescopio Canarias
+aplicada once veces más: **un punto en un mapa afirma**, y ninguna de esas doce
+instalaciones está en Madrid. Son redes repartidas por España.
+
+Al comprobarlo aparece que no era una convención tosca sino un incumplimiento.
+§6.6 define `pais` como «el hecho es de un Estado entero **y la fuente no sitúa
+nada dentro de él**», y la fuente sí sitúa: el campo `localizacion`, verbatim
+del Anexo I del acuerdo del CPCTI, dice «Cataluña y Madrid», «Murcia, Galicia,
+Cataluña y Baleares», «Canarias, Cantabria, Cataluña, Madrid y País Vasco»…
+
+El atlas lo tenía copiado desde la 1.31 y además lo **confesaba por escrito**:
+el `geo_fuente` de los doce decía «sitúa el sujeto, no el objeto». O sea la
+ficha honesta y el mapa afirmando otra cosa — exactamente el patrón del
+telescopio. Una ficha sincera no absuelve a un punto falso, porque quien mira el
+mapa no está leyendo la ficha.
+
+### Corregido
+
+- `icts` · **once registros** pasan de `pais` (un punto en Madrid) a
+  `autonomia` con geometría **`MultiPoint`**: un vértice por cada comunidad que
+  el Anexo I nombra, en el punto de su capital autonómica según el Nomenclátor
+  del IGN. `res` 11 · `nanbiosis` 7 · `marhis` 5 · `flota` 4 · `elecmi` 4 ·
+  `micronanofabs` 3 · `redib` 3 · `r-lrb` 3 · `idisom` 2 · `rlasb` 2 · `iaba` 2.
+- `icts:rediris` — **se queda en `pais`**, y es el único que lo merece: su
+  localización dice «Todas las comunidades autónomas», que sí es un hecho de un
+  Estado entero.
+
+No se estrena vocabulario: `autonomia` existe desde la 1.31 y significa
+exactamente esto. Las comunidades **se parsean del propio registro**, no de una
+lista escrita en el guion, así que el reparto no puede desviarse de lo que la
+capa publica — y `res` se prueba sola: su localización dice «Once comunidades
+autónomas» y de los catorce nodos de su clave salen **once** distintas.
+
+### Añadido
+
+- `fuentes/2026-08-17_ign_ngbe-capitales-autonomicas.json` — captura del
+  Nomenclátor con las siete capitales que faltaban (Palma, València, Mérida,
+  Santiago de Compostela, Pamplona, Vitoria-Gasteiz y Santander). Las
+  coordenadas **no se escriben en el guion**: se leen de esta captura archivada.
+  Santander va por recuadro porque la consulta por etiqueta devuelve `0` en
+  silencio — el fallo del que avisa el propio `consultar.py`, cazado aquí por
+  seguir su doctrina.
+
+### Lo que este arreglo NO hace, dicho sin adorno
+
+**El punto de Madrid no desaparece.** Nueve de las once tienen sede allí de
+verdad, así que la capital sigue acumulando registros — de trece a once. Lo que
+cambia es que ahora es **cierto**: antes significaba «había que ponerlo en algún
+sitio», ahora significa lo que dice el Anexo I. Y cada una aparece **además** en
+las otras comunidades donde la fuente la sitúa.
+
+El vértice sigue siendo la **capital**, no el laboratorio. Es lo que `autonomia`
+significa y declara, y son entre 300 y 1.700 km menos de error.
+
+### El agujero que el arreglo abría, tapado en el mismo commit
+
+Tres controles contaban **rasgos** y no vértices, los tres nacidos en la 1.55, y
+se habrían quedado ciegos justo donde más apilamiento hay: el aviso de §7.4, el
+contador del visor y los vecinos «También en este emplazamiento». Pruebas
+**67 → 68**, con una fixture que lo prueba por construcción — un punto suelto y
+una red repartida que comparte con él **solo uno** de sus dos vértices.
+
+### Huecos
+
+- **Canarias tiene dos capitales por estatuto.** Se queda con la que la capa ya
+  usaba y ya tenía archivada, Santa Cruz de Tenerife. Elegir la otra «porque el
+  laboratorio está en Gran Canaria» sería el relleno por verosimilitud que
+  prohíbe el principio 1: para el nodo canario de la RES el Anexo I dice
+  «Canarias» y nada más.
+- Ninguno de estos vértices es el laboratorio: son capitales. Situarlos de
+  verdad pediría, para cada sede, un acto que la sitúe — la vía que sacó al
+  IRAM 30m de Sevilla y al telescopio de Tenerife.
+- Sigue sin localizar el informe del CSN de julio de 2026 sobre Almaraz, y sin
+  leer los dos hallazgos pendientes del vigía.
+
+---
+
 ## datos-v2026.08.83 — El vigía llevaba seis días en rojo, y tenía razón
 
 Cierra la auditoría hecha en otra máquina: sus diez arreglos ya estaban en el
