@@ -32,6 +32,47 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.86 — La ficha habla de la cosa, no del atlas
+
+**Contrato 1.59.0.**
+
+### Retirado
+
+- `icts` · la clave **«Estuvo dibujada entera en Madrid»** de las once
+  distribuidas. La escribió la `.84` para contar su propio arreglo, once veces
+  casi igual, y no es un hecho de la instalación: es **biografía del atlas**.
+
+Arturo lo vio sobre la ficha publicada y preguntó si hacía falta pintarlo ahí.
+No hacía falta. §6.3 define `claves` como «afirmaciones sueltas» **sobre el
+sujeto**, y el sitio de un arreglo es este documento, que existe textualmente
+para «lo que un lector externo necesita saber para confiar en una versión de los
+datos, o para desconfiar de la anterior con motivo». Contarlo **además** en el
+dato era la segunda verdad que descartó D3: dos copias que se desincronizan a la
+primera corrección.
+
+**El motivo no es que el sitio aún no tenga visitas** — eso valdría para volver a
+ponerlas cuando las tenga. Es que estaban en el documento equivocado.
+
+La ficha no pierde nada: dónde está cada registro lo dicen `sedes` y
+`geo_fuente`, y qué promete esa precisión lo explica el bloque de precisión
+geográfica, que el visor pinta entero.
+
+### Añadido al contrato
+
+§6.3 gana la prueba corta —**si el texto habla del atlas en vez de la cosa, no es
+una clave**— y su excepción, que importa tanto como la regla: cuando la
+corrección **viene de la fuente** y trae hechos con ella (el convenio del BOE
+nombrando las sedes a nivel del mar del Gran Telescopio Canarias), lo que se
+publica son esos hechos y no el arrepentimiento. Por eso la clave del telescopio
+se queda y estas once se van.
+
+### Huecos
+
+- Los de la `.84` siguen abiertos: los vértices son capitales y no laboratorios,
+  y Canarias se queda con una de sus dos capitales por estatuto.
+
+---
+
 ## datos-v2026.08.85 — Catorce vecinos bajo un punto que decía «3»
 
 Cierra el defecto que la `.84` dejó a la vista. **Contrato 1.58.0.**
