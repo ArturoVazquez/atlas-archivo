@@ -102,6 +102,25 @@ contador del visor y los vecinos «También en este emplazamiento». Pruebas
 **67 → 68**, con una fixture que lo prueba por construcción — un punto suelto y
 una red repartida que comparte con él **solo uno** de sus dos vértices.
 
+### Y una confesión: el contador del visor nunca había dibujado
+
+Al ir a comprobar sobre el mapa vivo que el «11» de Madrid aparecía, no
+aparecía. **La release `.82` anunció un contador que en producción no se veía, y
+nadie lo miró.** El motivo: sus rasgos viven en una fuente propia y solo llevan
+`n`, sin `slug`, así que el filtro general de las capas —«estar en la lista de
+permitidos», que se compara por `slug`— los descartaba a todos, siempre. La capa
+se añadía, pedía sus glifos y no pintaba nada.
+
+Eran **27 puntos apilados de 9 capas** sin su número, no solo los de `icts`. Ya
+se ve: «11» sobre Madrid, «2» sobre Almaraz. Y el número **se recalcula con el
+filtro**, porque tiene que contar lo que se dibuja y no lo que existe:
+comprobado poniendo el filtro en «latente», donde el 11 desaparece en vez de
+quedarse mintiendo.
+
+Esto se descubre **después** de cortar la etiqueta `datos-v2026.08.84`, y no la
+mueve: `datos/` no cambia ni un byte, el defecto era del visor. Queda dicho aquí
+para que el registro no herede la afirmación falsa de la `.82`.
+
 ### Huecos
 
 - **Canarias tiene dos capitales por estatuto.** Se queda con la que la capa ya
