@@ -32,6 +32,53 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.85 — Catorce vecinos bajo un punto que decía «3»
+
+Cierra el defecto que la `.84` dejó a la vista. **Contrato 1.58.0.**
+
+### Lo que no cuadraba
+
+Con las once ICTS ya repartidas, la ficha de MARHIS listaba **catorce vecinos**
+mientras el punto de Tenerife, en el mapa, decía **«3»**. Lo vio Arturo.
+
+Ninguno de los tres números estaba mal. Tenerife tiene 2 vecinos (3 contando a
+MARHIS); los catorce son la suma de sus **cinco** sedes. Pero la lista aplanaba
+cinco emplazamientos en uno, y **juntos no cuadraban para quien mira — que en
+una pantalla es lo mismo que estar mal**.
+
+### Añadido
+
+- `icts` · **`sedes[]`** en las once distribuidas: las comunidades que nombra el
+  Anexo I, en el **mismo orden** que los vértices de su `MultiPoint`. Es la
+  forma estructurada de lo que `localizacion` ya decía en prosa, y existe por el
+  mismo motivo por el que `nodos_del_mapa` es un entero y no una frase: **la
+  prosa no la puede leer un consumidor**.
+
+### Corregido
+
+- La ficha **separa los vecinos por sede**, con su recuento al lado, para que
+  cuadre con el número que el mapa pinta sobre ese punto.
+- La lista de emplazamientos deja de ser **coordenadas anónimas**: cada línea
+  lleva su comunidad. Once cifras sin nombre no dicen dónde está nada.
+- El enriquecedor **no era idempotente** en el reparto: a la segunda corrida
+  `coordinates[:2]` ya no eran dos números sino dos vértices, y reventaba. Es la
+  trampa que `ya_tiene` evita en las fuentes y que a la geometría le faltaba.
+
+### La comprobación nueva
+
+Que haya **tantas sedes como vértices** lo mira **§10 y no el esquema**, porque
+es una correspondencia entre una propiedad y la **geometría**: cada mitad es
+válida por su cuenta. Desalinearlas no rompe nada — solo pone cada laboratorio
+en la comunidad de al lado con toda la seguridad del mundo, que es la avería
+silenciosa de esta capa. Pruebas **68 → 69**.
+
+### Huecos
+
+- Los de la `.84` siguen abiertos: los vértices son capitales y no
+  laboratorios, y Canarias se queda con una de sus dos capitales por estatuto.
+
+---
+
 ## datos-v2026.08.84 — Once cosas que no estaban en Madrid
 
 La release anterior puso un número al montón de puntos apilados sobre la
