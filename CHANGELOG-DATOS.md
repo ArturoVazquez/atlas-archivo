@@ -32,6 +32,97 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.83 — El vigía llevaba seis días en rojo, y tenía razón
+
+Cierra la auditoría hecha en otra máquina: sus diez arreglos ya estaban en el
+código y **aquí entra lo que faltaba en el papel**, más un dato que había
+caducado en cuatro días. **Contrato 1.56.0.**
+
+### Almaraz: la prórroga a 2030, que el atlas había predicho y no tenía
+
+`otear.yml` —el vigía del BOE— llevaba en rojo desde el 11 de agosto. **Su rojo
+es su forma de hablar**, no una avería: lo dice su propio fichero. Entre sus
+hallazgos:
+
+> **Orden TED/864/2026, de 12 de agosto**, por la que se concede la renovación de
+> la autorización de explotación de la Central Nuclear Almaraz, Unidades I y II.
+> BOE del **14** de agosto.
+
+La capa `nuclear` se había verificado el **13**. Un día antes.
+
+Y la ficha ya decía exactamente qué esperar: *«La resolución del ministerio NO
+consta: mientras no exista, lo autorizado sigue siendo el 1 de noviembre de
+2027»*. Ya existe.
+
+| | antes | ahora |
+|---|---|---|
+| Almaraz I | 2027-11-01 | **2030-06-08** |
+| Almaraz II | 2028-10-31 | **2030-06-08** |
+
+Lo dice su **dispositivo tercero** —«validez para ambas Unidades hasta el 8 de
+junio de 2030, inclusive»— y no su preámbulo, que es donde está la trampa: el
+preámbulo repite las fechas viejas y recoge lo que la central *pidió*. Su
+dispositivo **primero revoca la Orden TED/773/2020**, que era justo la fuente que
+esta capa citaba.
+
+**Mover una fecha deja mentiras alrededor si no se miran.** Tres, aquí:
+
+- Almaraz II decía tener «un año más de autorización» que su gemelo. Ya no: las
+  dos expiran el mismo día.
+- Almaraz I decía ser «el reactor» con la autorización más próxima a expirar de
+  todo el parque. Sigue siéndolo —por siete semanas sobre Vandellós II— pero **ya
+  no en singular**. El guion lo comprueba contra el propio fichero, así que si
+  algún día otro reactor expira antes, para en vez de dejar la frase mintiendo.
+- El **hueco `f4`** pedía dos documentos: la resolución y el informe del CSN. Se
+  **estrecha**, no se cierra — la resolución entra archivada, el informe sigue sin
+  localizar. Y la orden revocada **se conserva** como fuente, diciendo que lo
+  está: es el acto bajo el que la central operó hasta agosto de 2026.
+
+`verif` sigue en `parcial`: queda el otro hueco, el protocolo de Enresa.
+
+### El manifiesto estrena esquema
+
+Era **el único documento de `datos/` sin uno**, y se notó por la puerta de atrás:
+`cadencia_revision_dias` viaja a un atributo `title` del visor y nada garantizaba
+que fuera un número, así que la auditoría tuvo que escaparlo **por si acaso**. Un
+«por si acaso» donde se escribe HTML es una deuda, no una defensa.
+
+`manifest.schema.json` cierra tipos y valores, incluidos **cinco enums que solo
+leía el código**:
+
+- un `geometria: "puntoss"` no rompía nada visible: **dejaba de dibujar la capa,
+  en silencio**;
+- un dedazo en `ambito` relajaba el recuadro de plausibilidad de §7.4 al rango
+  legal de WGS84, y dejaba pasar una coordenada en el Índico;
+- uno en `registro` devolvía a una capa ilustrativa el aspecto de medida.
+
+**Reparto explícito:** el esquema hace **tipos y valores**; la comprobación 8
+sigue haciendo la **doctrina**. Por eso el esquema **no** exige `resumen` ni
+`id` — fallar con «is a required property» no enseña nada, y la comprobación 8 sí
+explica para qué sirve cada uno.
+
+### Y la regla que ya se aplicaba sin estar escrita
+
+§7.8: la **ruta de la página** de una capa es de este sitio — empieza por «/» y
+**no por «//»**. Lo segundo cumple la regla al pie de la letra y es un dominio
+ajeno con el protocolo omitido. Era el único hueco que no cerraba ninguna de las
+dos barreras del atlas: `escapar` no mira a dónde apunta un enlace, y `urlSegura`
+lo habría **aprobado**, porque resuelve contra el propio dominio y saca un
+`https:` de buena fe.
+
+Pruebas **65 → 67**, con un caso por agujero tapado.
+
+### Huecos
+
+- El informe del CSN de julio de 2026 sobre Almaraz sigue sin localizar.
+- Los otros dos hallazgos del vigía quedan por leer: un convenio ENRESA-CSIC
+  (BOE-A-2026-17700) y **un falso positivo** — una convocatoria de plaza del
+  Ayuntamiento de Trillo, que despierta al emparejador por el nombre del pueblo.
+- El esquema del manifiesto comprueba la forma de `pagina`, no que la página
+  exista. Que la ruta lleve a algún sitio no lo mira nadie todavía.
+
+---
+
 ## datos-v2026.08.82 — Trece registros en un punto, y ninguno lo decía
 
 Arreglar la isla del Gran Telescopio Canarias lo hizo **desaparecer del mapa**:
