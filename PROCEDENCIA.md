@@ -1033,8 +1033,10 @@ por etiqueta y por recuadro sobre el Peñón.
 
 ## espacios-maritimos
 
-**De dónde** · **ONU**, las notas verbales cruzadas de Marruecos y España ante la
-Comisión de Límites de la Plataforma Continental · **Reino de Marruecos**,
+**De dónde** · **ONU**, el expediente de la presentación española n.º 77: su
+resumen ejecutivo, **las cinco comunicaciones** que recibió —de Marruecos, de
+Portugal y dos de la propia España— y la tabla de presentaciones de la Comisión ·
+**Reino de Marruecos**,
 Boletín Oficial n.º 6870 (leyes 37-17 y 38-17, traducción oficial) · **BOE**, RD
 2510/1977 y Ley 44/2010 · **GEBCO**, gazetteer submarino.
 **Licencia** · Textos legales y documentos de organismos internacionales.
@@ -1043,11 +1045,33 @@ se dibuja frontera**: se dibuja la zona sin delimitación acordada, y va
 `geo_precision: ilustrativa` a propósito. `ambito: mundo` porque la plataforma
 más allá de las 200 millas **cae fuera del recuadro de España por definición**
 —los puntos de la presentación española llegan a 24,7° W—.
+**Qué se corrigió** *(2026-08-18)* · La ficha decía «Quién objetó: Marruecos y
+Portugal», **confirmado**, citando la nota MARROQUÍ — que no puede acreditar lo
+que hizo Portugal. Al ir al expediente aparecen **cinco comunicaciones de tres
+Estados**, la ONU las llama «comunicaciones recibidas» y ni la marroquí pide que
+no se examine: pide que se tenga en cuenta **al** examinar. Se corrigió también
+la cita del estado jurídico, que afirmaba el presente de 2026 apoyándose en el
+resumen ejecutivo **de 2014**: ahora la sostiene la tabla de la Comisión, donde
+las columnas de subcomisión y recomendaciones siguen vacías.
+**Qué se corrigió** *(2026-08-18, segunda pasada)* · El hueco de la comunicación
+portuguesa **no era un hueco**: era una renuncia. El PDF que sirve la ONU es una
+página, una imagen y cero fuentes tipográficas, y de ahí a «no se puede citar»
+hay un paso que no había que dar — **«no se puede extraer» no es «no se puede
+leer»**. Se descomprimió el XObject de imagen (1704 × 2200 px, Separation/Black)
+y se leyó a tamaño natural. La nota dice que Portugal **no se opone** a que la
+Comisión examine la presentación española, con una sola salvaguarda; ese párrafo
+llevaba doce días publicado como incitable. La transcripción va archivada al lado
+del escaneo (`fuente.transcripcion`, contrato 1.60) para que se pueda contrastar.
+De paso se leyeron **uno a uno los 448 renglones del Anexo 1** del resumen
+español: de ahí salen el reparto por fórmulas, los dos extremos de la línea —PF‑1
+en la equidistancia con Portugal, PF‑448 contra las 200 M de terceros Estados— y
+la discrepancia del «FOS_30», que 61 puntos citan aunque el §7‑4 declare 29 pies
+de talud.
 **Huecos** · 2. **Ningún instrumento dibuja la zona sin delimitar**: trazarla con
-precisión sería dictar la delimitación que los dos Estados dejan a un acuerdo. Y
-las cifras de telurio y cobalto del monte Tropic vienen de campañas científicas
+precisión sería dictar la delimitación que los dos Estados dejan a un acuerdo.
+Y las cifras de telurio y cobalto del monte Tropic vienen de campañas científicas
 que este atlas no ha archivado.
-**Archivado** · 7 ficheros · **El resto** · CHANGELOG `datos-v2026.08.7` · §10
+**Archivado** · 13 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
 
 ## perte
 
@@ -1798,6 +1822,34 @@ Descarga en dos pasos: `initDescargaDir?secuencial=<id>` devuelve
   `tipo=Municipio` y validar la coordenada contra un recuadro de la provincia
   esperada antes de usarla como ancla — la primera pasada de `desaladoras`
   barrió tres recuadros equivocados por esto, y su cero no valía nada.
+
+### Un PDF que la máquina no puede leer
+
+Un escaneo sin capa de texto **no es un documento ilegible**: es un documento cuyo
+texto viaja como imagen. Vale la pena escribir el procedimiento porque la primera
+vez el atlas se rindió, y publicó durante doce días un hueco donde había una cita.
+
+1. **Diagnosticar antes de rendirse.** Contar en el PDF `/Font` y `/Image`. Cero
+   fuentes y una imagen es un escaneo: no hay nada que extraer y no lo habrá por
+   mucho que se cambie de extractor.
+2. **Sacar la imagen, no el texto.** El XObject de la página se descomprime tal
+   cual (`pypdf` + `PIL`). Ojo al espacio de color: el de la nota portuguesa venía
+   en `Separation`/`Black`, donde **0 es papel y 255 es tinta** — al revés que un
+   gris, así que hay que invertir o sale una página negra.
+3. **Leer por bandas y a tamaño natural.** Una página de 1704 × 2200 reducida
+   entera se vuelve ilegible; partida en cuatro franjas, cada una entra a su
+   resolución. Los párrafos que se van a **citar** se releen a 2×, palabra por
+   palabra. La página completa se recorre una vez de arriba abajo, para que el
+   sello o el manuscrito de un margen no se queden fuera.
+4. **Publicar la lectura, no solo el resultado.** La transcripción se archiva
+   verbatim junto al escaneo, diciendo cómo se obtuvo y marcando entre corchetes
+   lo manuscrito. La fuente sigue siendo la imagen; la transcripción es lo que el
+   atlas creyó leer, puesto donde alguien pueda desmentirlo (contrato 1.60,
+   `fuente.transcripcion`).
+
+Lo que este procedimiento **no** autoriza: tomar prestada la lectura de un
+tercero. Si el contenido se conoce por un análisis ajeno, eso es fuente
+secundaria y el hueco se queda hueco hasta que el atlas lea el original.
 
 ### Lo que no se salta
 

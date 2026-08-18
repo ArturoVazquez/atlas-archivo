@@ -32,6 +32,171 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.89 — la nota que no se podía leer, leída
+
+La release anterior cerró con un hueco declarado: la comunicación portuguesa de 1
+de abril de 2015 la publica la ONU **escaneada**, sin capa de texto, así que el
+atlas acreditaba que existía, de quién era y de qué día — **no lo que decía**. Se
+publicó así, con una clave que lo explicaba y un párrafo entero de la historia de
+Tropic construido sobre esa imposibilidad.
+
+Duró doce días. **«No se puede extraer» no es «no se puede leer»:** la página
+estaba dentro del PDF como mapa de bits (1704 × 2200, `Separation`/`Black`). Se
+descomprimió y se leyó, banda a banda, con doble pasada sobre los párrafos que se
+citan. La transcripción va archivada verbatim al lado del escaneo.
+
+### Corregido
+
+- `espacios-maritimos:plataforma-continental-canarias` · **desaparece el hueco
+  `f12`** («el contenido de la comunicación portuguesa no se puede citar»). El
+  registro sube de `verif: parcial` a **`confirmado`**: R4 lo retenía por ese
+  hueco y ya no hay ninguno.
+- La clave «De la nota portuguesa solo se puede citar la fecha» se sustituye por
+  **«Lo que dice Portugal»**, con la cita literal: el Gobierno portugués **«no
+  objeta»** a que la Comisión examine la presentación española y formule
+  recomendaciones, con una sola salvaguarda — que no prejuzguen ni el límite
+  exterior de la presentación portuguesa de 11 de mayo de 2009 ni la delimitación
+  entre ambos. Es lo contrario de lo que sostenía la ficha antes de la `.88`.
+- El título de `f8` deja de describir un documento mudo y dice qué documento es.
+
+### Añadido
+
+- `fuentes/2026-08-18_onu_nota-verbal-portugal-plataforma-canarias.transcripcion.txt`
+  — la nota entera, verbatim, con el procedimiento de lectura por delante y lo
+  manuscrito entre corchetes. **No es la fuente**: la fuente sigue siendo el
+  escaneo archivado al lado; esto es la lectura, puesta donde se pueda desmentir.
+- Clave **«La ONU publica esta nota escaneada»**: de dónde sale la cita, para que
+  nadie tenga que fiarse de que salió de un texto.
+- Tres claves que salen de leer **uno a uno los 448 renglones del Anexo 1** del
+  resumen ejecutivo español, que hasta ahora solo se había leído por encima:
+  - **«El primer punto lo fija Portugal; el último, terceros Estados»** — el PF‑1
+    está calculado en la equidistancia de las 200 M entre España y Portugal, a
+    partir del Roque de Santo Domingo (La Palma) y la **Ponta do Pargo (Madeira)**,
+    y para calcularlo España usó **la línea de costa oficial portuguesa**. El
+    PF‑448 cierra contra «las 200 M de terceros Estados». Los dos extremos de la
+    línea son los dos vecinos que después escribieron a la Comisión.
+  - **«Tres fórmulas para 448 puntos»** — 1 equidistancia, 191 Hedberg (60 M del
+    pie del talud), 253 a 350 M de las líneas de base y 3 Gardiner (1 % de espesor
+    de sedimentos). El reparto que enumera la prosa (§7‑5 a 7‑7) y el que se
+    obtiene renglón a renglón del anexo coinciden **punto por punto**.
+  - **«29 pies de talud, y sin embargo existe un FOS_30»** — el §7‑4 declara 29, y
+    61 puntos fijos (del PF‑388 al PF‑448) citan un «FOS_30»; el anexo llega a
+    nombrar 12 pies de talud distintos, porque los demás no generan ningún punto
+    del límite. Esa apariencia de contradicción ha llevado a literatura jurídica
+    posterior a escribir 30. **El atlas escribe 29**, que es lo que dice el
+    documento que España entregó, y publica la discrepancia en vez de taparla.
+
+### Contrato
+
+Sube a **1.60.0**. `fuente` gana **`transcripcion`**: la ruta al fichero de
+`fuentes/` donde se archiva la lectura verbatim de un documento sin capa de
+texto. §7.7 comprueba que exista, y **esa parte bloquea** — un `archivo` que
+falta deja una cita sin respaldo archivado, pero una transcripción que falta deja
+sin respaldo la lectura misma que sostiene el `confirmado`. Lo que el campo no
+autoriza queda escrito: ni resumir, ni traducir, ni **tomar prestada la lectura
+de un tercero** (eso es fuente secundaria, y el hueco se queda hueco). Prueba
+nueva, `invalido-77-transcripcion-fantasma`: 70 en verde.
+
+### Huecos
+
+Quedan **dos** en esta capa, los mismos de siempre y ninguno nuevo: ningún
+instrumento dibuja la zona sin delimitar entre Canarias y África —trazarla sería
+dictar el acuerdo que los dos Estados se reservan—, y las cifras de telurio y
+cobalto del monte Tropic vienen de campañas científicas que este atlas no ha
+archivado.
+
+## datos-v2026.08.88 — Portugal no objetó, y la nota que lo diría no se puede leer
+
+> **Sobre la `.87`.** Existe una etiqueta `datos-v2026.08.87` en el repositorio,
+> empujada una hora antes que esta y **superada por ella**: llevaba este mismo
+> trabajo sin la corrección de la espera ni la clave del artículo 76.10. No se
+> movió de sitio —una etiqueta publicada no se mueve— ni llegó a tener release ni
+> DOI. Lo que se cita es esta.
+
+Una revisión externa señaló que la historia de Tropic describía a Portugal como
+objetor. Al ir al expediente de la ONU, el problema estaba en **el dato**, y era
+mayor.
+
+### Corregido
+
+- `espacios-maritimos:plataforma-continental-canarias` · la clave **«Quién
+  objetó»** afirmaba, como **confirmado**, que Marruecos y Portugal objetaron —
+  y citaba `f2`, que es **la nota marroquí**. Un documento de Marruecos no puede
+  acreditar lo que hizo Portugal. La nota portuguesa **no estaba archivada**.
+- El mismo registro citaba a `f1` —el resumen ejecutivo español **de 2014**— para
+  sostener que la Comisión no se ha pronunciado, que es un hecho **de 2026**. Un
+  documento no puede sostener lo que pasó después de escribirse. Ahora lo
+  sostiene la tabla de presentaciones de la Comisión.
+- Los «objetores» se derivaban del campo `partes`, que dice a quién **concierne**
+  la presentación, no quién escribió. De ahí salía el «dos» del titular.
+
+### Lo que hay de verdad en el expediente 77
+
+**Cinco comunicaciones de tres Estados**, y la ONU las llama «comunicaciones
+recibidas», no objeciones: Marruecos (10 de marzo y 31 de julio de 2015),
+Portugal (1 de abril) y **España, que respondió dos veces** (7 y 22 de abril).
+
+Y ninguna pide que no se examine. La marroquí objeta el fondo —sostiene que la
+presentación recae sobre espacios no delimitados— pero **pide a la Comisión que
+lo tenga en cuenta EN SU EXAMEN**. Con Portugal lo que consta es lo contrario de
+un bloqueo: España comunica que delimitará lateralmente **«de acuerdo con
+Portugal»** en cuanto la Comisión haya examinado ambas presentaciones.
+
+### Añadido
+
+- Cinco fuentes primarias del expediente de la ONU: la página de la presentación
+  n.º 77 (que enumera las cinco comunicaciones), la nota portuguesa, la respuesta
+  española a Portugal, la segunda nota marroquí y la **tabla de presentaciones**
+  de la Comisión.
+- Un **hueco nuevo**, y de los raros: **el contenido de la comunicación portuguesa
+  no se puede citar**. La ONU la publica escaneada —una imagen, cero fuentes
+  tipográficas—, así que consta que existe, de quién es y de qué día; lo que dice,
+  no. El registro baja a `parcial` por R4, que es exactamente lo que R4 existe
+  para hacer.
+
+### Y un dato mejor que el que había
+
+En la tabla de la Comisión, la fila 77 trae la fecha y la referencia CLCS/90, y
+después nada: **«Subcommission established» y «Recommendations adopted on» están
+vacías**. No es solo que no haya recomendación — es que **once años después no se
+ha constituido el órgano que debe examinarla**.
+
+### Segunda revisión, el mismo día
+
+Una segunda pasada externa —hecha, dicho por ella, **sin poder cargar la página**—
+confirmó lo corregido y señaló dos cosas más. Una era suya y era buena; la otra
+la había roto yo al reescribir.
+
+- **La espera estaba redondeada al alza.** Se calculaba restando años
+  (`release − depósito`), y de un depósito del **17 de diciembre de 2014** salían
+  «12 años» en agosto de 2026. Son **once años y ocho meses**. Ahora se mide de
+  fecha a fecha, con el mes de la RELEASE como «ahora» —así la cifra viaja con el
+  dato y no con el día en que se compiló—. Un atlas que redondea al alza en su
+  propio titular no puede exigirle precisión a nadie.
+- **Se había perdido «un límite depositado no es un límite reconocido»**, que
+  vivía en la clave que sustituí. Vuelve, y mejor sostenida: la clave nueva **«Lo
+  que la Comisión NO hace»** cita el artículo 76.10 desde la propia nota
+  marroquí — las reglas del límite exterior «no prejuzgan la cuestión de la
+  delimitación... entre Estados con costas adyacentes o situadas frente a
+  frente». La Comisión dice hasta dónde llega la plataforma; **no reparte
+  fronteras**, y confundirlo es el error más fácil de esta historia.
+
+**Lo que NO se incorporó, y por qué.** La revisión aporta un matiz atractivo —que
+el anexo del resumen ejecutivo usa un `FOS_30` pese a declarar 29 puntos de pie
+de talud, y que literatura secundaria escribió «30» por eso—. **No entra**: el
+lector de PDF de la casa no consigue extraer texto de ese resumen, así que no se
+puede comprobar contra el primario archivado. Tampoco entra el contenido de la
+nota portuguesa que la revisión cita de un análisis jurídico de 2025: es fuente
+secundaria, y el hueco declarado dice exactamente eso.
+
+### Huecos
+
+- El contenido de la nota portuguesa, dicho arriba.
+- Sigue sin archivarse la comunicación marroquí de 31 de julio en su versión
+  francesa; se archiva la inglesa, que es la que publica la ONU en texto.
+
+---
+
 ## datos-v2026.08.86 — La ficha habla de la cosa, no del atlas
 
 **Contrato 1.59.0.**
@@ -2611,9 +2776,9 @@ Lo que no aguantó fue **lo escrito alrededor de los datos**.
   un párrafo decía que los sistemas se publican desde la `.48` y el de debajo,
   escrito en la `.47`, seguía diciendo «siguen sin publicarse».
 - Las anclas del Nomenclátor son **367**, no las «368» ni «369» que la AGENDA
-  decía en el mismo punto. Y `CLAUDE.md` pedía que las pruebas «siguieran dando
-  16/16» cuando ya iban 40; ahora no escribe la cifra, porque **una cifra al
-  lado del guion que la calcula solo puede envejecer**.
+  decía en el mismo punto. Y la guía del taller pedía que las pruebas
+  «siguieran dando 16/16» cuando ya iban 40; ahora no escribe la cifra, porque
+  **una cifra al lado del guion que la calcula solo puede envejecer**.
 
 ### Cambiado — el ritual pasa de cuatro gestos a seis
 

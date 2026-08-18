@@ -16,8 +16,8 @@ authors:
 repository-code: https://github.com/ArturoVazquez/atlas-archivo
 url: https://atlas.eltercioviejo.com
 license: CC-BY-4.0
-version: datos-v2026.08.86
-date-released: "2026-08-17"
+version: datos-v2026.08.89
+date-released: "2026-08-18"
 doi: 10.5281/zenodo.21918595
 identifiers:
   - type: doi
@@ -28,7 +28,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21984700
     description: >-
-      DOI de esta edición (datos-v2026.08.86). Lo que el depósito archiva es el
+      DOI de esta edición (datos-v2026.08.89). Lo que el depósito archiva es el
       aparato de citación —fuentes, procedencia, contrato y changelog—, no las
       capas de datos, que se sirven desde atlas.eltercioviejo.com.
       Este campo, `version` y `date-released` cambian en CADA edición: son el

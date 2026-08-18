@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.59.0 · **Fecha:** 2026-08-17
+**Versión del contrato:** 1.60.0 · **Fecha:** 2026-08-18
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -527,6 +527,33 @@ consultable con GDAL sin adaptadores. Las dos excepciones estructuradas son
 > estatuto— la restricción obligó a decir con precisión qué se publica, y las tres
 > veces la capa salió **más honesta**, no más pobre.
 
+> **Una fuente que la máquina no puede leer: la transcripción declarada**
+> *(1.60)*. `archivo` guarda el documento; **`transcripcion`** guarda lo que el
+> atlas leyó en él cuando el documento **no tiene capa de texto**. Es una ruta a
+> un fichero de `fuentes/`, y la comprobación §7.7 exige que exista: si se
+> declara una lectura, la lectura se publica.
+>
+> **Lo escribió una renuncia prematura.** La ONU publica la comunicación
+> portuguesa de 1 de abril de 2015 escaneada —una página, una imagen, cero
+> fuentes tipográficas— y el atlas dio su contenido por incitable durante doce
+> días, con su hueco declarado y todo. La página estaba ahí: lo que faltaba no
+> era el texto, era descomprimir la imagen del PDF y leerla. **«No se puede
+> extraer» no es lo mismo que «no se puede leer»**, y confundirlos cuesta
+> justamente el párrafo que la fuente existía para sostener.
+>
+> Con eso viene la cautela, y es la razón de que el campo exista en vez de
+> transcribir en silencio. Una transcripción **no es la fuente**: la fuente es
+> el escaneo, y la transcripción es una lectura que puede equivocarse. Por eso
+> se archiva **al lado del documento, verbatim**, diciendo cómo se obtuvo y
+> marcando lo manuscrito — para que cualquiera la contraste con la imagen y la
+> desmienta. Un atlas que cita un escaneo tiene que enseñar lo que creyó leer.
+>
+> **Lo que NO autoriza:** resumir, traducir ni interpretar dentro del fichero de
+> transcripción, y **tomar prestada la lectura de un tercero**. Si el contenido
+> de un documento ilegible se conoce por un análisis ajeno, eso es fuente
+> secundaria y sigue sin sostener un `confirmado`: el hueco se queda hueco hasta
+> que el atlas lea el original.
+
 ### 6.2 Verificación por campo
 
 Los campos **sensibles** llevan compañeros con sufijo reservado `__v` (estado) y
@@ -922,6 +949,11 @@ ser prosa y pasa a ser test:
 6. **Vocabularios:** todo enum contra `vocabularios.json` — **y que haya contra qué** *(1.48)*. Una capa cuyos registros declaran `categoria` sin entrada en el vocabulario **bloquea**: hasta la 1.48 no lo hacía, y ese silencio era el peor posible, porque el conjunto de valores admitidos salía vacío y apagaba de golpe los DOS controles de la categoría —el del enum y el del color de §9—. La capa más desprotegida era la que menos aviso daba. Bloquea y no avisa por simetría: un valor suelto fuera del vocabulario ya bloqueaba, así que una capa entera fuera no puede costar menos. Y el **valor** tiene forma comprobada, como ya la tenía el color: `[a-z0-9_]`, porque no es prosa —viaja a una clave de estilo del mapa y a una URL de filtro—. Los 99 valores del atlas la cumplen; el único que se salió, `autovía`, no lo escribió nadie: lo fabricó un `.lower().replace(" ", "_")` sobre el rótulo de la fuente, y sobrevivió porque su capa era justamente una de las tres sin entrada.
 7. **Archivo de fuentes:** toda fuente con `url` y tipo ≠ `hueco` referencia un
    `archivo` existente en `fuentes/` (aviso, no bloqueo, durante la v1).
+   *(1.60)* Y toda fuente que declare **`transcripcion`** referencia un fichero
+   que existe — este **bloquea**, y la asimetría con el aviso anterior es
+   deliberada: un `archivo` que falta deja una cita sin respaldo archivado, pero
+   una `transcripcion` que falta deja sin respaldo **la lectura misma** que
+   sostiene el `confirmado` de una fuente que ninguna máquina puede leer.
 8. **Manifiesto** *(1.1)*: cada capa con `fichero` apunta a un fichero que existe;
    el `atlas.capa` de la colección coincide con el `id` del manifiesto; una capa
    `en_preparacion` no declara `fichero` (regla del horizonte, §3). Y *(1.43)*
@@ -2474,6 +2506,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.60.0** | 2026-08-18 | **Aditiva, y nace de una renuncia prematura.** La comunicación portuguesa de 1 de abril de 2015 sobre la presentación española ante la CLCS la publica la ONU **escaneada** —una página, una imagen, cero fuentes tipográficas—, ningún extractor saca texto de ella, y el atlas dio su contenido por incitable: hueco declarado, clave «de la nota portuguesa solo se puede citar la fecha» y un párrafo entero de la historia de Tropic construido sobre esa imposibilidad. Duró doce días. **«No se puede extraer» no es «no se puede leer»**: la página estaba en el PDF como bitmap, y descomprimirla y leerla devolvió la nota entera — incluido el párrafo que dice que **Portugal no se opone** a que la Comisión examine la presentación española, siempre que sus recomendaciones no prejuzguen la presentación portuguesa de 2009 ni la delimitación entre ambos. §6.1 gana por tanto **`transcripcion`**: la ruta al fichero de `fuentes/` donde el atlas publica, verbatim y diciendo cómo la obtuvo, lo que leyó en un documento sin capa de texto. No es una fuente nueva —la fuente sigue siendo el escaneo— sino **la lectura, puesta donde se pueda desmentir**; §7.7 exige que exista, y esta parte **bloquea**, porque lo que falta cuando falta una transcripción es el respaldo del `confirmado`. Lo que el campo NO autoriza queda escrito: ni resumir, ni traducir, ni **tomar prestada la lectura de un tercero** — un análisis ajeno de un documento ilegible es fuente secundaria y el hueco se queda hueco. **No nace ninguna regla `R*`.** |
 | **1.59.0** | 2026-08-17 | **Aditiva, y quita once párrafos de las fichas.** Arturo mira una tarjeta y pregunta si hace falta pintar ahí que el atlas dibujaba mal ese registro. No hace falta: §6.3 define `claves` como «afirmaciones sueltas» **sobre el sujeto**, y «estuvo dibujada entera en Madrid, y su fuente nunca dijo eso» no es un hecho de la instalación — es **biografía del atlas**, escrita once veces casi igual. Su sitio es el CHANGELOG, que existe textualmente para «lo que un lector externo necesita saber para confiar en una versión de los datos»; contarlo además en el dato es la **segunda verdad** que descartó D3. §6.3 gana la prueba corta —**si el texto habla del atlas en vez de la cosa, no es una clave**— y su excepción, que importa tanto como la regla: cuando la corrección **viene de la fuente** y trae hechos con ella (el convenio del GTC nombrando sus sedes a nivel del mar), lo que se publica son esos hechos y no el arrepentimiento. Por eso la clave del telescopio se queda y estas once se van. **Nota sobre el motivo:** no se retiran porque el sitio aún no tenga visitas —eso valdría para volver a ponerlas cuando las tenga— sino porque están en el documento equivocado. **No nace ninguna regla `R*`.** |
 | **1.58.0** | 2026-08-17 | **Aditiva, y la pide una cifra que no cuadraba en pantalla.** Con las once ICTS ya repartidas, Arturo mira la ficha de MARHIS y ve **catorce vecinos bajo un punto de Tenerife que dice «3»**. Ninguno de los tres números estaba mal —Tenerife tiene 2 vecinos, y los catorce son la suma de sus CINCO sedes—, pero **juntos no cuadran para quien mira, que en una pantalla es lo mismo que estar mal**: la lista aplanaba cinco emplazamientos en uno. La ficha pasa a **separar los vecinos por sede**, con su recuento al lado para que cuadre con el del mapa. Para eso el dato tiene que decir **qué sitio es cada vértice**, y nace **`sedes[]`** (§10): las comunidades del Anexo I en el MISMO orden que los puntos del `MultiPoint`. Es la forma estructurada de lo que `localizacion` ya dice en prosa, y existe por el mismo motivo que `nodos_del_mapa` es un entero y no una frase — **la prosa no la lee un consumidor**. De paso arregla el otro efecto del mismo hueco: la lista de once coordenadas **anónimas**, que ahora lleva su nombre en cada línea. La alineación la comprueba **§10 y no el esquema**, porque es una correspondencia entre una propiedad y la GEOMETRÍA: cada mitad es válida por su cuenta, y desalinearlas no rompe nada — solo pone cada laboratorio en la comunidad de al lado con toda la seguridad del mundo. **Y un descuido propio, cazado al repetir:** el enriquecedor no era idempotente en el reparto —a la segunda corrida `coordinates[:2]` ya no eran dos números sino dos vértices—, la trampa que `ya_tiene` evita en las fuentes y que a la geometría le faltaba. **No nace ninguna regla `R*`.** |
 | **1.57.0** | 2026-08-17 | **Aditiva, y saca de Madrid once cosas que no están en Madrid.** Lo vio Arturo mirando el mapa, y es la objeción del Gran Telescopio Canarias aplicada once veces: **doce registros de `icts` se dibujaban en el mismo punto de la capital**, y un punto en un mapa **afirma**. Al comprobarlo aparece que era peor que una convención tosca — era `pais` usado **fuera de su propia definición**, que exige que la fuente «no sitúe nada dentro» del Estado. Y la fuente sí sitúa: el campo `localizacion`, verbatim del Anexo I, dice «Cataluña y Madrid», «Canarias, Cantabria, Cataluña, Madrid y País Vasco»… El atlas lo tenía copiado desde la 1.31 y lo **confesaba por escrito** en su `geo_fuente` —«sitúa el sujeto, no el objeto»—, o sea la ficha honesta y el mapa afirmando otra cosa. §6.6 gana la regla que faltaba: **primero cuántos lugares nombra la fuente, después con cuánto detalle nombra cada uno**; varios lugares → `MultiPoint` con un vértice por lugar. Las once pasan a `autonomia` con un vértice en cada capital autonómica —**no se estrena vocabulario**: `autonomia` existe desde la 1.31 y significa exactamente esto—, y las comunidades **se parsean del propio registro**, no de una lista en el guion: así `res` se prueba sola, porque su localización dice «Once comunidades autónomas» y de los catorce nodos de su clave salen **once** distintas. **`rediris` se queda en `pais`**, y es el único que lo merece: «todas las comunidades autónomas» sí es un hecho de un Estado entero. **Lo que NO arregla, dicho sin adorno:** el punto de Madrid no desaparece —nueve de las once tienen sede allí de verdad—, pero pasa de significar «había que ponerlo en algún sitio» a significar lo que dice el Anexo I. Y **Canarias tiene dos capitales por estatuto**: se queda con la que la capa ya usaba y ya tenía archivada, porque elegir la otra «porque el laboratorio está en Gran Canaria» sería el relleno por verosimilitud del principio 1 — para el nodo canario de la RES el Anexo no dice la isla. **El agujero que el arreglo abría, tapado en el mismo commit:** tres controles contaban **rasgos** y no vértices —el aviso de apilados de §7.4, el contador del visor y los vecinos «También en este emplazamiento», los tres nacidos en la 1.55— y se habrían quedado ciegos justo donde más apilamiento hay. **Y al comprobarlo sobre el mapa vivo aparece que el contador del visor NUNCA había dibujado:** sus rasgos van en fuente propia y solo llevan `n`, sin `slug`, así que el filtro general de las capas los descartaba a todos desde el día que nació — 27 puntos apilados de 9 capas sin su número, y una release anunciándolo. Pruebas **67 → 68**. **No nace ninguna regla `R*`.** |
