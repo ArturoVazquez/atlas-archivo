@@ -32,6 +32,56 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.91 — el reparto al cincuenta por ciento y el gemelo del norte
+
+La segunda tanda marítima del día. Dos registros que la `.90` dejó anunciados:
+uno estaba anotado en una clave («queda anotado en vez de trazado») y el otro,
+declarado como hueco con nombre propio.
+
+### Añadido
+
+- `espacios-maritimos:zona-especial-golfo-vizcaya` — el recinto Z1–Z4 que el
+  artículo 3 del convenio España–Francia de 1974 define **a caballo de la línea
+  divisoria**, con el régimen del anexo II: las Partes «favorecerán la
+  explotación de la zona con miras a un **reparto a partes iguales de sus
+  recursos**». Una zona de recursos al cincuenta por ciento, pactada en 1974 y
+  en vigor desde 1975 — cuatro vértices exactos del propio tratado.
+- `espacios-maritimos:aguas-canarias-madeira` — el gemelo septentrional del
+  corredor Canarias–Marruecos: las aguas entre el archipiélago y Madeira, **sin
+  delimitación acordada en vigor**, dicho por las dos partes en el expediente de
+  la CLCS (España, 7-04-2015: delimitará «de acuerdo con Portugal… tan pronto
+  como la Comisión haya examinado sus presentaciones»; Portugal, 1-04-2015: su
+  salvaguarda sobre «la delimitación de la plataforma continental entre
+  Portugal y España») y por la tabla de DOALOS, donde los dos convenios firmados
+  en 1976 siguen sin fecha de entrada en vigor. Perímetro ilustrativo trazado a
+  mano, con su hueco declarado — la misma regla que su gemelo del sur.
+
+### Corregido
+
+- `espacios-maritimos:delimitacion-francia-plataforma` · la clave «La zona
+  especial que este registro no dibuja» pasa a «La zona especial, en su propio
+  registro»: lo que la `.90` anotó en prosa es ahora un registro con geometría,
+  y una clave que dijera «no se dibuja» habría quedado falsa en la misma
+  pantalla que lo dibuja.
+- `vocabularios` · la definición de `limite_acordado` dice ahora «límite o
+  recinto»: la escribimos por la mañana pensando solo en líneas y por la tarde
+  el propio convenio de 1974 enseñó que también publica recintos.
+
+### Huecos
+
+- Los del frente portugués se ESTRECHAN pero no se cierran: el corredor
+  Canarias–Madeira ya tiene registro; los frentes del **Miño y del Guadiana**
+  siguen sin nada que dibujar, con los mismos convenios de 1976 firmados y sin
+  constancia de vigor.
+- El perímetro del corredor nuevo es lo único de su registro que no sostiene un
+  documento, y lleva su fuente `tipo: hueco` — trazarlo con precisión sería
+  dictar la delimitación que ambos Estados dejan a un acuerdo.
+- Siguen pendientes de la `.90`: el mar territorial con Francia (sin
+  coordenadas publicadas), Alborán, Ceuta y Melilla (sin instrumento que
+  dibuje) y las líneas de base del RD 2510/1977.
+
+---
+
 ## datos-v2026.08.90 — el mar deja de acabarse en Canarias
 
 «Espacios marítimos» prometía en su resumen mar territorial, zona contigua, ZEE

@@ -1082,7 +1082,12 @@ tabla de su acto, pasada a decimal con 5 decimales — nada más. El punto 2
 argelino y el punto inicial español son **el mismo, minuto por minuto**, y el
 solapamiento no lo dice el atlas: lo dice la nota verbal española de
 27-07-2018, archivada con la italiana y las respuestas argelinas. Los convenios
-de 1974-78 **no declaran datum** y cada `geo_fuente` lo dice.
+de 1974-78 **no declaran datum** y cada `geo_fuente` lo dice. *(Segunda tanda,
+mismo día)*: la **zona especial Z1–Z4** del artículo 3 del convenio con Francia
+—cuatro vértices exactos y un régimen de «reparto a partes iguales de sus
+recursos» (anexo II)— y el **corredor Canarias–Madeira sin delimitar**, gemelo
+del marroquí: perímetro ilustrativo con su hueco, sostenido por las notas
+España–Portugal de 2015 ya archivadas y por la tabla de DOALOS.
 **Huecos** · 2. **Ningún instrumento dibuja la zona sin delimitar**: trazarla con
 precisión sería dictar la delimitación que los dos Estados dejan a un acuerdo.
 Y las cifras de telurio y cobalto del monte Tropic vienen de campañas científicas
@@ -1091,8 +1096,9 @@ territorial con Francia** (BOE-A-1975-14263) no publica una sola coordenada
 —define sus puntos M, P y Q por referencias geográficas y una carta anexa—, así
 que su línea no se dibuja: digitalizarla sería calcular, no copiar. Con
 **Portugal** los dos convenios de 1976 figuran en la tabla de DOALOS firmados y
-sin constancia de entrada en vigor: tres frentes (Miño, Guadiana y
-Canarias–Madeira) sin delimitación en vigor que dibujar. **Alborán, Ceuta y
+sin constancia de entrada en vigor: el frente Canarias–Madeira tiene desde la
+segunda tanda su registro `sin_delimitar` (perímetro ilustrativo con hueco);
+los del **Miño y el Guadiana** siguen sin registro que dibujar. **Alborán, Ceuta y
 Melilla**: sin instrumento que publique línea alguna. Y las **líneas de base
 rectas del RD 2510/1977** (cientos de puntos, datum de la época) quedan
 pendientes de digitalizar.
