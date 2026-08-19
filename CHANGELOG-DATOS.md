@@ -32,6 +32,46 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.95 — un registro dibujado, una semántica
+
+La revisión visual de la `.94` detectó que las siete polilíneas de Gibraltar,
+con una sola simbología, se leían como **dos límites exteriores distintos**. La
+auditoría confirmó que la geometría es literalmente la del UKHO —cada parte
+casa punto por punto con su feature, sin costuras; las contigüidades a 0,0°
+las publica el propio UKHO— así que el problema era de representación, y la
+representación se gobierna por categoría.
+
+### Corregido
+
+- `espacios-maritimos:aguas-gibraltar` queda **solo con el mar territorial
+  reclamado** (la polilínea de 2.334 puntos). Ni una coordenada cambia: se
+  reparte.
+
+### Añadido
+
+- `espacios-maritimos:gibraltar-lineas-medianas` — los tres tramos «Median
+  line in absence of agreed maritime boundary», con la categoría nueva
+  **`linea_media_sin_acuerdo`** (familia visual del `sin_delimitar`, en trazo
+  **continuo**: el discontinuo de esta casa significa «no verificado», y estas
+  coordenadas están verificadas — lo que no está es acordado).
+- `espacios-maritimos:gibraltar-lineas-cierre` — las tres bocanas del puerto,
+  con la categoría técnica nueva **`linea_cierre`**: una línea de cierre
+  pertenece al sistema de líneas de base, no a los límites exteriores, y
+  vestirla de límite la haría mentir. Miden 100–200 metros: a escala nacional
+  son subpíxel y solo se aprecian acercándose, sin necesidad de maquinaria de
+  zoom.
+- El reparto regala el hover que faltaba: tres registros son tres tooltips, y
+  cada tramo dice lo que es al pasar el cursor.
+
+### Sin cambios
+
+- Las cuatro afirmaciones de la `.94` siguen en las tres fichas: la geometría
+  procede del fichero oficial del UKHO; España no la reconoce como
+  delimitación acordada; no existe delimitación España–Reino Unido; y no se
+  dibuja posición española porque España no publica coordenadas de la suya.
+
+---
+
 ## datos-v2026.08.94 — Gibraltar: la discontinuidad deja de parecer un dato que falta
 
 La revisión externa de la capa señaló lo que el mapa dejaba mudo: entre punta

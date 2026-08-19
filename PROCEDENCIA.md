@@ -1132,7 +1132,14 @@ absence of agreed maritime boundary») y cita enfrente la **Ley 10/1977**
 (disposición final primera, Utrecht), la posición del MAEC sobre las aguas
 adyacentes y la salvaguarda del acuerdo UE–Reino Unido de 2026. España no
 publica coordenadas de su posición, y por eso no se dibuja ninguna geometría
-española. Candidata que queda anotada: la **presentación conjunta
+española. *(Sexta tanda, mismo día)*: las siete polilíneas de Gibraltar se
+**reparten en tres registros según el campo Feature del propio UKHO** — mar
+territorial, medianas «in absence of agreed maritime boundary» (categoría
+nueva `linea_media_sin_acuerdo`, trazo continuo) y líneas de cierre del puerto
+(categoría técnica `linea_cierre`: sistema de líneas de base, no límite
+exterior) —, porque con una sola simbología el mapa las leía como dos límites
+exteriores. Ni una coordenada cambió: la auditoría casó cada parte punto por
+punto con su feature de origen. Candidata que queda anotada: la **presentación conjunta
 Francia–Irlanda–España–Reino Unido ante la CLCS (2006)** por el golfo de
 Vizcaya, que asoma en el expediente francés de DOALOS.
 **Licencia (añadido de la quinta tanda)** · El fichero del UKHO es **Open
