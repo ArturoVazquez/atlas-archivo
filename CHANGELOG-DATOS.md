@@ -32,6 +32,54 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.98 — dos cables, un arenal
+
+El décimo aterrizaje de `cables-submarinos`, y una mejora del primero. Una
+revisión externa señaló que faltaba **Marea** — y tenía razón; su dato («el BOE
+publicó la concesión de 20 de abril de 2017») se comprobó contra el BOE antes
+de escribir nada, que es la regla de la casa.
+
+### Añadido
+
+- **`marea-sopela`**: el cable transatlántico de 2017, en el mismo arenal de
+  Sopela que Grace Hopper. Su acto es el **otorgamiento por Orden Ministerial
+  de 20 de abril de 2017** (anuncio BOE-B-2017-40592, BOE núm. 154): titular
+  Telxius Cable España SLU, **27.861,24 m²** de dominio público
+  marítimo-terrestre, **25 años**, canon de 1,2391 €/m²/año — y, al contrario
+  que otros expedientes de la capa, **nombra sistema y destino con todas las
+  letras**: «cable de fibra óptica submarino "Marea" … en dirección a la playa
+  de Virginia Beach». Registro `confirmado`, sin huecos.
+- `fuentes/2026-08-19_boe_otorgamiento-concesion-cable-marea-sopela.html` y
+  `…-grace-hopper-sopela.html` — los dos otorgamientos, archivados.
+
+### Corregido
+
+- **`grace-hopper-sopela` citaba solo la información pública**, que autorizaba
+  «un cable submarino de fibra óptica» sin bautizarlo — la ficha lo contaba en
+  una clave, y `sistema` iba sin aparato de verificación. Al buscar el acto de
+  Marea apareció el **otorgamiento de Grace Hopper** (BOE-B-2021-39502,
+  Resolución de 8.09.2021, la misma referencia CNC02/21/48/0001): nombra el
+  sistema con todas las letras, y `sistema` pasa a **confirmado**. La clave se
+  reescribió con el acto en la mano: el nombre tardó cuatro meses en llegar al
+  acto, y llegó. Entra también «Lo que otorga el acto»: 34.162,44 m², 15 años
+  prorrogables hasta 25, canon de 50.843,19 €/año.
+- `conecta` de Grace Hopper decía «España con el Reino Unido y los Estados
+  Unidos» — y **ningún documento archivado sostenía lo del Reino Unido** (es
+  del sistema global, no de este aterrizaje). Ahora dice lo que dice su acto:
+  Estados Unidos (dirección a Smith Point, Nueva York).
+
+### Sin cambio de contrato
+
+Ni un campo nuevo, ni una regla: la release es de datos y el contrato se queda
+en 1.65.0.
+
+### Huecos
+
+Los dos de la capa siguen: los expedientes de Santander y Sagunto no nombran
+sistema ni destino, y la lista de cables que la Ley 11/2022 obliga a comunicar
+al Ministerio sigue sin publicarse. El visor marca como **apilados** los dos
+aterrizajes de Sopela, que comparten topónimo y punto.
+
 ## datos-v2026.08.97 — la red ferroviaria gana sus nodos
 
 La capa 40. Los 2.682 nodos con nombre de la IDE de Adif llevaban desde la

@@ -907,8 +907,23 @@ código CNC, y la documentación vive en
 `gobiernodecanarias.org/costas/informacion_publica`. Y una subvención de un
 real decreto **no sitúa nada**: los dos RD de PENCAN-X y el del ramal de
 Fuerteventura están archivados como comprobados-y-fuera.
-**Archivado** · 15 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17` y
-`.33` · §10
+**Qué se corrigió** *(2026-08-19, release `.98`)* · Una revisión externa señaló
+que faltaba **Marea** (Sopela, 2017) — y tenía razón, aunque su dato exigía
+comprobación: el acto existe, es el **otorgamiento por Orden Ministerial de 20
+de abril de 2017** (anuncio BOE-B-2017-40592) y nombra sistema y destino con
+todas las letras. Al buscarlo apareció además el **otorgamiento de Grace
+Hopper** (BOE-B-2021-39502, Resolución de 8.09.2021, misma referencia
+CNC02/21/48/0001 que la información pública ya archivada): el acto que POR FIN
+nombra el sistema que el anuncio inicial no bautizaba — la clave que contaba esa
+carencia se reescribió con el acto en la mano, y `sistema` pasó de campo sin
+aparato a **confirmado**. De paso, `conecta` de Grace Hopper decía «con el Reino
+Unido y los Estados Unidos» sin que ningún documento archivado sostuviera lo del
+Reino Unido: ahora dice lo que dice su acto (dirección a Smith Point, Nueva
+York). **Dos cables, un arenal**: Marea y Grace Hopper aterrizan en la misma
+playa de Sopela — el décimo registro comparte punto con el primero, y el visor
+los marca como apilados.
+**Archivado** · 17 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
+`.33` y `.98` · §10
 
 ## centros-datos
 
