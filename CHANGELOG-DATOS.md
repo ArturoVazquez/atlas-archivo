@@ -32,6 +32,73 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.97 — la red ferroviaria gana sus nodos
+
+La capa 40. Los 2.682 nodos con nombre de la IDE de Adif llevaban desde la
+release `.23` archivados y declarados como hueco: «mezclan estaciones de
+viajeros con nudos técnicos y piden criterio propio». Este es el criterio — y
+no es del atlas: es el cruce de dos primarias.
+
+### Por qué el criterio no podía salir del WFS
+
+Sus atributos INSPIRE están rellenos con constantes: `formOfNode` dice «railway
+stop» y `numberOfPlatforms` dice **CERO en los 2.682 nodos, hasta en
+Madrid-Atocha**. Por eso `n_andenes` queda PROHIBIDO por su nombre en el
+esquema: un campo relleno con una constante no es un dato.
+
+### Añadido
+
+- **`ferrocarril-nodos`**: 2.682 registros. **1.446 estaciones de viajeros**
+  (con el tipo literal del catálogo y la categoría 1-6 del canon del art. 98.5
+  — Atocha y Sants son 1), **131 instalaciones de mercancías**, **30
+  bifurcaciones**, **30 cambiadores de ancho** y **46 agujas o puntos
+  kilométricos** (estas tres clases, por lo que su propio nombre declara),
+  **954 sin instalación de servicio catalogada** y **45 sin clasificar**.
+- `fuentes/2026-08-19_adif_dr2026_relacion-instalaciones-servicio.pdf` — el
+  Catálogo 1 de la **Declaración sobre la Red 2026** de Adif (ed. 12/12/2025):
+  la relación de instalaciones de servicio con nombre, titularidad, tipo y
+  categoría. Es el documento que el art. 32 de la Ley 38/2015 obliga a
+  publicar: primaria por la doctrina 1.16. Obtenido de la captura del Internet
+  Archive de la URL viva de adif.es, que sirve 403 a clientes no interactivos
+  — el camino entero está en PROCEDENCIA.
+
+### Las reglas del cruce, que es donde una capa así puede mentir
+
+Por NOMBRE, porque el catálogo no trae códigos. **Un homónimo no se casa**: los
+45 `sin_clasificar` llevan cada uno su nota (salvo el caso resuelto a medias:
+dos «MENDEZ ALVARO», dos entradas del mismo tipo — no se sabe cuál es cuál,
+pero lo afirmado vale para ambos). **31 equivalencias de grafía, una a una con
+su motivo** en el extractor: erdia=centro (el WFS nombra en euskera lo que la
+DR nombra en castellano), B/V vasca, valenciano/castellano
+(«XILXES»=«CHILCHES»), abreviaturas («MADRID-P. DE ATOCHA») y, para las
+dudosas, las coordenadas del nodo contra la provincia del catálogo. **El
+negativo va acotado**: el cruce cubre solo las filas de titularidad Adif/Adif
+AV — cargaderos privados, talleres y puertos llevan otro titular y nombran
+ubicaciones, no identidades.
+
+### Lo que el cruce dejó a la vista
+
+- El WFS abrevia, castellaniza a medias y tiene al menos una errata: **«SAM
+  ROQUE DEL ACEBAL»**.
+- **47 instalaciones del catálogo no tienen nodo en el WFS**
+  (Madrid-Abroñigal, Vitoria-Mercancías, Ciñera…): el servicio no modela todas
+  las instalaciones, y el atlas no les inventa posición.
+- 13 parejas de nodos comparten coordenada exacta (una estación y su aguja):
+  puntos apilados legítimos que el visor ya marca.
+
+### Contrato
+
+Sube a **1.65.0**. En el esquema quedan prohibidos por su nombre `n_andenes`
+(la constante), `municipio` (ninguna fuente lo da por fila), `operador` (cambia
+por meses y no lo dice ninguna) y `viajeros_anuales` — el dato que más se echa
+en falta: cuando haya estadística oficial por estación, entrará con su cita.
+
+### Huecos
+
+Los de la capa nueva: las 47 instalaciones sin nodo, y el número de viajeros
+por estación. El hueco de `ferrocarril` que pedía criterio para los nodos
+**queda cerrado** con esta release.
+
 ## datos-v2026.08.96 — el ferrocarril dice de qué está hecho
 
 La capa nació con las prohibiciones más elocuentes del atlas: ancho,

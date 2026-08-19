@@ -1021,12 +1021,56 @@ diseño están publicados a la vista; la etiqueta la pondrá un acto, no este at
 `notApplicable` — que es literalmente la respuesta correcta en un cambiador.
 Cinco ramales (Maliaño-Raos, Llovio-Ribadesella…) declaran **0 km/h** de diseño
 y se publican tal cual: corregirlos a un número «razonable» sería inventar.
-**Huecos** · 29 líneas de 355 sin ningún tramo que las declare. Y **las 2.682
-estaciones y bifurcaciones NO entran**: mezclan estaciones de viajeros con nudos
-técnicos («BIF. CANAL DEL DUERO») y piden criterio propio. **Su GML sí queda
-archivado**, para que levantarlas no exija volver a pedirlo.
+**Huecos** · 29 líneas de 355 sin ningún tramo que las declare. Los 2.682 nodos
+que esta ficha declaraba pendientes de criterio **ya no son hueco**: viven en su
+propia capa, `ferrocarril-nodos`, clasificados con la Declaración sobre la Red
+(release `.97`).
 **Archivado** · 2 ficheros + el metadato de licencia
 **El resto** · CHANGELOG `datos-v2026.08.96` · §10
+
+## ferrocarril-nodos
+
+**De dónde** · **Adif** — los mismos `tn-ra:RailwayStationNode` del WFS INSPIRE
+archivado para la capa de líneas (2.682 nodos con nombre, código y posición,
+edición 2026/01) · **Adif** — Declaración sobre la Red 2026 (ed. 12/12/2025),
+Catálogo 1: «Relación de instalaciones de servicio», el documento que el art. 32
+de la Ley 38/2015 obliga a publicar — primaria por la misma doctrina que la
+plataforma PCI-PMI (contrato 1.16).
+**Licencia** · La de Adif (atribución con fórmula literal, ver `ferrocarril`).
+**Cómo se obtuvo el catálogo, y es parte de la procedencia** · adif.es sirve
+**403 a todo cliente no interactivo** (curl, Playwright con Chromium headless);
+la página respondió a un navegador Edge real, que dio los enlaces vigentes, y el
+PDF se descargó de la **captura del Internet Archive del 2026-04-14 de esa misma
+URL** — bit a bit el documento que adif.es publica hoy en
+`20251212_04_DR_Adif_Relac.IISS_2026.pdf`. El libro completo de la DR (13,5 MB)
+también se consultó; las capturas del archivo de sus ediciones de marzo y julio
+de 2026 están **truncadas a 5 MiB en origen** y no valen como copia.
+**Qué hay que saber** · El criterio de clasificación NO podía salir del WFS: sus
+atributos INSPIRE están rellenos con constantes (`formOfNode` = «railway stop» y
+CERO andenes en los 2.682 nodos, **hasta en Madrid-Atocha**). Clasifica el
+CRUCE con el catálogo, por nombre —el catálogo no trae códigos—, y el cruce
+está acotado a las filas de titularidad **Adif / Adif AV**: las secciones de
+cargaderos privados, talleres (RENFE y privados) y puertos llevan otro titular
+y nombran UBICACIONES, no identidades — quedan fuera, y la categoría negativa
+lo dice con precisión. Los homónimos no se casan (45 nodos `sin_clasificar`,
+cada uno con su nota), salvo cuando hay tantas entradas como nodos y todas
+dicen lo mismo (los dos «MENDEZ ALVARO»). **31 equivalencias de grafía se
+resolvieron una a una** con su motivo en el extractor — erdia=centro (euskera),
+B/V vasca, valenciano/castellano («XILXES»=«CHILCHES»), abreviaturas del WFS
+(«MADRID-P. DE ATOCHA») y, para las dudosas, las coordenadas del nodo contra la
+provincia de la cabecera del catálogo. Una errata del WFS quedó a la vista:
+«SAM ROQUE DEL ACEBAL».
+**Qué certifica cada campo** · `tipo_dr` y `categoria_estacion_dr` (la del canon
+del art. 98.5, 1-6) son literales del catálogo; `codigo` es el id del nodo en la
+explotación de Adif, confirmado por `tn-ra:RailwayStationCode`; la posición es
+la del WFS a 5 decimales (§4).
+**Huecos** · 2. **47 instalaciones del catálogo no tienen nodo en el WFS**
+(Madrid-Abroñigal, Vitoria-Mercancías, Ciñera, apeaderos-cargadero…): el WFS no
+modela todas las instalaciones de servicio, y el atlas no les inventa posición.
+Y **el número de viajeros por estación no existe en ninguna de las dos
+fuentes** — cuando haya estadística oficial por estación, entrará con su cita.
+**Archivado** · 2 ficheros (el GML compartido con `ferrocarril` y el catálogo)
+**El resto** · CHANGELOG `datos-v2026.08.97` · §10
 
 ## limites-soberania
 
