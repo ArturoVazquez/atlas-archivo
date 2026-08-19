@@ -32,6 +32,54 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.100 — el séptimo centro de datos, y el primero fuera de Aragón
+
+`centros-datos` pasa de 6 a **7**. La capa nació con la doctrina más estricta
+del atlas —«entra el centro que un acto administrativo nombra, y nada más»— y
+por eso eran seis y no sesenta. El séptimo llega con la misma vara: no una
+nota de prensa, sino **el acuerdo del Consejo de Gobierno** que lo aprueba.
+
+### Añadido
+
+- **`meta-talavera`** — el Proyecto de Singular Interés «Meta Data Center
+  Campus», **aprobado definitivamente por Acuerdo del Consejo de Gobierno de
+  Castilla-La Mancha de 14/10/2024** (DOCM n.º 205, de 22/10/2024): promotora
+  **Zarza Networks, S.L.**, ámbito de **191 ha** en Torrehierro-Fase 2
+  (Talavera de la Reina, Toledo), campus en parcela discontinua de **102 ha**
+  con **72.705 m²** de edificabilidad, obras a iniciar en 12 meses desde que
+  sea legalmente posible y construcción máxima de 10 años. Y la conexión con
+  Meta no es de prensa: **el propio acuerdo** lo describe como «una expansión
+  de la presencia de Meta en Europa».
+- La **declaración de impacto ambiental** (DOCM n.º 59, de 22/03/2024) aporta
+  las magnitudes: **demanda máxima global de 240 MVA** desde dos líneas de
+  220 kV, fotovoltaica aneja (1,09 MWp in situ + planta de 24,3 MW nominales)
+  y **40.600 m³/año de agua** (600 industriales de refrigeración, 40.000
+  potable, <1 contra incendios).
+- Tres fuentes archivadas: los dos actos del DOCM —descargados del expediente
+  oficial en `urbanismo.castillalamancha.es`— y el topónimo del Nomenclátor.
+
+### Dos diferencias con los cinco de AWS, y las dos son mejoras
+
+- **La precisión sube a `paraje`**: el Nomenclátor SÍ nombra el polígono que
+  el acto cita («Polígono Industrial Torrehierro»); en Aragón no nombraba
+  ninguno y los cinco quedaron en `municipio`.
+- **La ficha NO publica consumo anual, y el motivo queda escrito**: la DIA da
+  **potencia** (240 MVA), no energía, y convertirla a GWh exigiría inventar
+  las horas de uso. El dato va en su clave, con su unidad — el campo
+  `consumo_gwh_anio` se queda para los actos que sí lo den, como los de AWS.
+
+### Sin cambio de contrato
+
+Ni un campo nuevo: 240 MVA y el agua van en claves. Sigue 1.65.0. El registro
+entra `parcial` por el mismo hueco que los seis de AWS: la potencia TI en MW
+no la publica ningún acto (R4).
+
+### Huecos
+
+El de la capa, intacto y ahora sobre 7: la potencia TI la dan la patronal y
+los operadores, que son corporativos (R3). Y España sigue sin registro
+público de centros de datos.
+
 ## datos-v2026.08.99 — las tres estaciones que emitían sin fila
 
 `red-geodesica` pasa de 123 a **126**. Desde su primera pasada la capa

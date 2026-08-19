@@ -929,18 +929,31 @@ los marca como apilados.
 
 **De dónde** · **INAGA (Gobierno de Aragón)**, declaración ambiental estratégica
 del Plan de Interés General «Expansión Región AWS en Aragón» (BOA n.º 150) ·
+**JCCM (Castilla-La Mancha)**, Proyecto de Singular Interés «Meta Data Center
+Campus»: acuerdo de aprobación definitiva del Consejo de Gobierno (DOCM n.º 205,
+de 22/10/2024) y declaración de impacto ambiental (DOCM n.º 59, de 22/03/2024),
+descargados del expediente oficial en `urbanismo.castillalamancha.es` ·
 **IGN**, Nomenclátor.
-**Licencia** · Ley 37/2007 (BOA) · IGN.
+**Licencia** · Ley 37/2007 (BOA, DOCM) · IGN.
 **Qué hay que saber** · **Entra el centro que un acto administrativo nombra, y
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
-mercado son de la patronal. De ahí que sean 6 y no 60.
+mercado son de la patronal. De ahí que sean 7 y no 60.
+**Qué se añadió** *(2026-08-19, release `.100`)* · **El séptimo, y el primero
+fuera de Aragón**: el campus de Meta en Talavera de la Reina (promotora Zarza
+Networks, S.L. — «una expansión de la presencia de Meta en Europa», dice el
+propio acuerdo). A diferencia de los cinco de AWS, aquí el Nomenclátor SÍ
+nombra el polígono que el acto cita —«Polígono Industrial Torrehierro»— y la
+precisión sube de `municipio` a `paraje`. Y la ficha NO publica consumo anual:
+la DIA da 240 MVA de demanda máxima —potencia, no energía— y convertirla a
+GWh exigiría inventar las horas; el dato va en su clave, con su unidad.
 **La trampa que enseñó** · **Una nota de prensa de una administración no es
 fuente primaria.** Lo primario es el acto, no su anuncio: los «26 proyectos y
 2.000 MW» catalanes no traían un solo expediente detrás.
-**Huecos** · 6. **La potencia TI en MW no la publica ningún acto administrativo**
+**Huecos** · 7. **La potencia TI en MW no la publica ningún acto administrativo**
 — la dan la patronal y los operadores, que son corporativos (R3).
-**Archivado** · 2 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11` · §10
+**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11` y
+`.100` · §10
 
 ## hidrogeno-red
 

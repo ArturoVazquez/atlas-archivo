@@ -1,0 +1,53 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "codigo_ngbe":"2.2.2",
+                "fecha":"2023-07-07",
+                "tipo":"Edificaci\u00f3n",
+                "etiqueta":"Pol\u00edgono Industrial Torrehierro",
+                "fuente":"MITMA.IGN.BTN25"
+            },
+            "id":"2130740",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -4.93231209699991,
+                    39.9586790180001
+                ]
+            }
+        }
+    ],
+    "numberMatched":1,
+    "numberReturned":1,
+    "links":[
+        {
+            "type":"application/geo+json",
+            "rel":"self",
+            "title":"This document as GeoJSON",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Pol%C3%ADgono%20Industrial%20Torrehierro&limit=10"
+        },
+        {
+            "rel":"alternate",
+            "type":"application/ld+json",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Pol%C3%ADgono%20Industrial%20Torrehierro&limit=10"
+        },
+        {
+            "type":"text/html",
+            "rel":"alternate",
+            "title":"This document as HTML",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Pol%C3%ADgono%20Industrial%20Torrehierro&limit=10"
+        },
+        {
+            "type":"application/json",
+            "title":"GN Lugar nombrado",
+            "rel":"collection",
+            "href":"https://api-features.ign.es/collections/namedplace"
+        }
+    ],
+    "timeStamp":"2026-08-19T19:50:52.685881Z"
+}
