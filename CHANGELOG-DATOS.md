@@ -32,6 +32,58 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.94 — Gibraltar: la discontinuidad deja de parecer un dato que falta
+
+La revisión externa de la capa señaló lo que el mapa dejaba mudo: entre punta
+del Acebuche y punta Carbonera las líneas de base españolas se interrumpen, y
+esa discontinuidad **es un hecho geopolítico, no un hueco de datos**. Alrededor
+de Gibraltar no hay delimitación marítima España–Reino Unido, y las posiciones
+de las dos partes son incompatibles. Esta edición lo convierte en registro.
+
+### Añadido
+
+- `espacios-maritimos:aguas-gibraltar` — las **siete polilíneas que el fichero
+  oficial de límites del Reino Unido (UKHO) etiqueta como Gibraltar**: el mar
+  territorial que reivindica, tres líneas de cierre y tres tramos cuyo campo
+  Feature dice, literalmente, «Median line **in absence of agreed maritime
+  boundary**» — la ausencia de acuerdo, declarada por quien dibuja. El aviso de
+  licencia del propio conjunto añade «Not prejudicial to delimitation». Se
+  dibuja la posición británica atribuida al Reino Unido (D5) y la española va
+  en claves con sus papeles: la disposición final primera de la **Ley 10/1977**
+  («no puede ser interpretado como reconocimiento de cualesquiera derechos o
+  situaciones relativos a los espacios marítimos de Gibraltar, que no estén
+  comprendidos en el artículo diez del Tratado de Utrecht»), la posición del
+  MAEC («las aguas adyacentes […] no fue[ron] cedida[s] por España»), la
+  salvaguarda expresa del **acuerdo UE–Reino Unido de 2026** («no implica
+  modificación alguna de la posición jurídica de España en lo que atañe a la
+  soberanía y la jurisdicción») y la tabla de DOALOS, que no lista delimitación
+  alguna con el Reino Unido.
+- Dos fuentes nuevas archivadas: el **shapefile oficial del UKHO** (Open
+  Government Licence v3.0, con su fórmula de atribución literal — que entra en
+  la atribución de la capa, porque la licencia manda) y la **Ley 10/1977**
+  sobre mar territorial, que además sostiene desde ahora la regla general: 12
+  millas y, frente a costas vecinas o enfrentadas, «salvo mutuo acuerdo», la
+  línea media (artículo cuarto).
+
+### Auditado, sin cambios
+
+- La revisión preguntaba si el atlas confunde **líneas de base** con **límites
+  exteriores del mar territorial**. No: los once registros se llaman «Líneas de
+  base rectas — …» y sus fichas dicen desde la `.92` que «no son una frontera —
+  son el cero desde el que se miden el mar territorial y las demás zonas». El
+  atlas no dibuja ningún límite exterior de mar territorial porque ningún acto
+  español lo publica punto a punto: generarlo exigiría un buffer de 12 millas,
+  que es exactamente el cálculo que esta capa tiene prohibido.
+
+### Huecos
+
+- España **no publica coordenadas** de su posición sobre las aguas en torno a
+  Gibraltar: sus instrumentos la formulan sin dibujarla. Por eso el registro
+  dibuja la reclamación británica —etiquetada como tal— y no una geometría
+  española que no existe.
+
+---
+
 ## datos-v2026.08.93 — el tercer frente del Mediterráneo, y la zona con datum propio
 
 Cuarta y última tanda marítima del día. Con ella, el tablero registra **todos

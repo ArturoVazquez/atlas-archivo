@@ -1123,10 +1123,22 @@ pendientes: son once registros. España **no las ha depositado ante la ONU**
 1315/1997, «geodetic system Potsdam», sustituido por el M.Z.N.34.2000; la nota
 francesa de 1998 responde a esa zona). La zona de pesca, la ZEE
 francesa y el corredor de Alborán dejaron de ser candidatas en la cuarta
-tanda: son registros. Candidata que queda anotada: la **presentación conjunta
+tanda: son registros. *(Quinta tanda, mismo día)*: **Gibraltar** — la
+discontinuidad de las líneas de base en la bahía de Algeciras deja de parecer
+un dato que falta: el registro `aguas-gibraltar` dibuja las siete polilíneas
+del fichero oficial del **UKHO** (OGL v3.0, fórmula de atribución literal en
+el manifiesto; tres tramos etiquetados por el propio fichero «median line in
+absence of agreed maritime boundary») y cita enfrente la **Ley 10/1977**
+(disposición final primera, Utrecht), la posición del MAEC sobre las aguas
+adyacentes y la salvaguarda del acuerdo UE–Reino Unido de 2026. España no
+publica coordenadas de su posición, y por eso no se dibuja ninguna geometría
+española. Candidata que queda anotada: la **presentación conjunta
 Francia–Irlanda–España–Reino Unido ante la CLCS (2006)** por el golfo de
 Vizcaya, que asoma en el expediente francés de DOALOS.
-**Archivado** · 32 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
+**Licencia (añadido de la quinta tanda)** · El fichero del UKHO es **Open
+Government Licence v3.0** y exige fórmula de atribución literal, que viaja en
+la atribución de la capa — el mismo trato que la fórmula del IGN.
+**Archivado** · 34 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
 
 ## perte
 
