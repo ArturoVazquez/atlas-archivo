@@ -32,6 +32,54 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.99 — las tres estaciones que emitían sin fila
+
+`red-geodesica` pasa de 123 a **126**. Desde su primera pasada la capa
+declaraba el hueco en voz alta: el día de prueba entregaron datos 126
+estaciones y la tabla oficial de coordenadas publica 123 — `JADR`, `MOTI` y
+`TAR2` emitían sin posición publicada. La posición estaba: **en lo que el
+propio IGN sirve por otras puertas.**
+
+### Añadido
+
+- **`TAR2` (Tarifa, Cádiz)** — entra **`confirmado`**: el IGN sirve su **site
+  log IGS** en `ERGNSS/log/` (sitio Tarifa, DOMES 19350M003, posición
+  aproximada ITRF completa y elevación). **El cruce que calibra:** el site log
+  y la cabecera `APPROX POSITION XYZ` de su RINEX difieren en **~10
+  centímetros** — dos puertas del mismo IGN, una posición — y el extractor se
+  para si algún día divergen más de medio metro.
+- **`JADR` (Jadraque, Guadalajara, DOMES 15031M001)** y **`MOTI` (Motilla del
+  Palancar, Cuenca, DOMES 15030M001)** — entran **`parcial`**, y el matiz es
+  la honestidad de la capa: sin fila en la tabla y sin site log, su única
+  posición publicada es la cabecera de sus propios ficheros RINEX, que el
+  atlas convierte de XYZ a geográficas (GRS80) — **convertir sobre primaria no
+  la hace primaria**, la misma doctrina que `longitud_medida_km`. El municipio
+  de las tres se comprobó **punto-en-municipio contra el IGN** con
+  `consultar.py`, el patrón que verificó los 77 nodos de rte-t.
+- Cuatro ficheros archivados: el site log de TAR2 y los tres RINEX diarios del
+  2026-08-17 — estos como **una fuente con `archivo` en lista** (contrato
+  1.38): un emisor, una operación, tres piezas.
+
+### Dos remiendos que destapó el archivo-lista
+
+El primer `archivo` en lista de una CAPA (las series ya los usaban) tumbó el
+validador con un `TypeError` y reveló que **el esquema núcleo seguía exigiendo
+string**: la enmienda 1.38 se escribió para las series y el núcleo no se
+enteró. Arreglados los dos — `comprobar_archivo_fuentes` recorre la lista como
+ya hacía el comprobador de series, y `nucleo.schema.json` admite las dos
+formas con la historia contada en su descripción.
+
+### Sin cambio de contrato
+
+La regla del archivo-lista existe desde 1.38: esto es alinear validador y
+esquema con lo que el contrato ya decía. Se queda en 1.65.0.
+
+### Huecos
+
+El de la capa **se estrecha pero no se cierra**: la tabla oficial sigue
+publicando 123, y `JADR` y `MOTI` siguen sin fila y sin site log — su posición
+de tabla, con marco ETRS89 declarado, sigue siendo del IGN el publicarla.
+
 ## datos-v2026.08.98 — dos cables, un arenal
 
 El décimo aterrizaje de `cables-submarinos`, y una mejora del primero. Una

@@ -1288,11 +1288,22 @@ funcione, es el fichero que produjo ese día**. Comprobado sobre cuatro días
 repartidos de julio y agosto de 2026, **las 123 emiten**, y el extractor
 **revienta** si una publicada no entregó fichero. Con eso la vigencia deja de ser
 hueco y los registros pasan a `confirmado`.
-**Huecos** · **La red emite más de lo que sitúa.** El día de prueba entregaron
-datos **126** estaciones y la tabla de coordenadas publica **123**: `JADR`,
-`MOTI` y `TAR2` emiten y el IGN **no publica su posición**. Es un hueco del
-**perímetro de la capa**, no de cada registro — por eso vive aquí y no en las 123
-fichas, donde las degradaría a `parcial` por algo que no dicen.
+**Qué se corrigió** *(2026-08-19, release `.99`)* · **Las tres que emitían sin
+fila entran en la capa: 123 → 126.** La posición salió de lo que el PROPIO IGN
+sirve por otras puertas: `TAR2` tiene **site log IGS** en `ERGNSS/log/`
+(posición ITRF completa: Tarifa, Cádiz, DOMES 19350M003) y las tres llevan
+`APPROX POSITION XYZ` en la cabecera de sus RINEX diarios. **El cruce que
+calibra**: el site log y la cabecera de TAR2 difieren en ~10 centímetros — dos
+puertas del mismo IGN, una posición, y el extractor se para si divergen más de
+medio metro. `TAR2` entra `confirmado`; `JADR` (Jadraque, DOMES 15031M001) y
+`MOTI` (Motilla del Palancar, DOMES 15030M001) entran **`parcial`**: su única
+posición publicada es la cabecera, convertida por el atlas de XYZ a
+geográficas (GRS80) — convertir sobre primaria no la hace primaria. El
+municipio de las tres se comprobó **punto-en-municipio contra el IGN** con
+`consultar.py`.
+**Huecos** · **La tabla oficial sigue publicando 123.** `JADR` y `MOTI` siguen
+sin fila en la tabla de coordenadas y sin site log: su posición de tabla, con
+marco ETRS89 declarado, sigue siendo del IGN el publicarla.
 **Lo que se ve al contar** · Hay **132 fichas** de estación en el servidor, **117
 site logs** en formato IGS, **123** filas con coordenadas y **126** emitiendo. Las
 9 que tienen ficha y no coordenadas **tampoco emiten**: eso confirma que **la
