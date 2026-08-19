@@ -32,6 +32,69 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.90 — el mar deja de acabarse en Canarias
+
+«Espacios marítimos» prometía en su resumen mar territorial, zona contigua, ZEE
+y plataforma continental, y publicaba cuatro registros — todos alrededor de
+Canarias. Esta release la saca del expediente canario con la única regla que la
+capa admite: **se dibuja lo que un instrumento publica punto a punto, y ni un
+vértice más**. Ninguna de las cuatro líneas nuevas la ha trazado el atlas: las
+cuatro son la tabla de su acto, pasada a grados decimales.
+
+### Añadido
+
+- `espacios-maritimos:delimitacion-francia-plataforma` — la línea Q–R–T del
+  convenio de París de 29 de enero de 1974 (BOE-A-1975-14608, en vigor desde
+  1975): 16 puntos en el golfo de Vizcaya. Con la de Italia, una de las **dos
+  únicas delimitaciones marítimas que España tiene cerradas por tratado en
+  vigor**. Estrena la categoría `limite_acordado` (contrato 1.61.0): el único
+  trazo del tablero que no acredita una posición sino un acuerdo.
+- `espacios-maritimos:delimitacion-italia-plataforma` — los diez puntos A–L del
+  convenio de Madrid de 19 de febrero de 1974 (BOE-A-1978-29664, en vigor desde
+  1978), entre Baleares y Cerdeña. El criterio lo declara el propio tratado:
+  «la equidistancia de las líneas de base respectivas» — la equidistancia la
+  publica el convenio, no la calcula el atlas.
+- `espacios-maritimos:zee-mediterraneo-espana` — los 54 puntos del cuadro del
+  Real Decreto 236/2013, con «DATUM WGS 84» impreso encima: el límite que
+  España declaró en el Mediterráneo noroccidental, depositado ante la ONU en
+  2018 (M.Z.N.139.2018.LOS). Su artículo 2 deja dicho que podrá modificarse por
+  acuerdo: es una declaración a la espera de acuerdos que aún no existen.
+- `espacios-maritimos:zee-argelia` — los 62 puntos numéricos del anexo del
+  decreto presidencial argelino 18-96 (JORADP n.º 18, 2018; M.Z.N.135.2018.LOS).
+  Registrarla no es cortesía: D5 exige cada posición atribuida a quien la
+  sostiene, y dibujar solo la línea española habría convertido al atlas en
+  parte. **El hallazgo que las dos tablas regalan:** el punto 2 argelino y el
+  punto que el artículo 1 español sitúa a 46 millas de Cabo de Gata son el
+  mismo, minuto por minuto — las dos declaraciones arrancan del mismo lugar. El
+  solapamiento que sigue no lo dice el atlas: lo dice la nota verbal española
+  de 27 de julio de 2018 («coordenadas claramente exorbitantes respecto a la
+  línea media equidistante»), archivada junto a la protesta italiana y las
+  respuestas argelinas de 2019.
+- Once fuentes primarias archivadas: cinco del BOE (los tres convenios de
+  1974-78, el RD 236/2013 en facsímil con su cuadro y el gemelo del mar
+  territorial) y seis de la ONU (el decreto argelino depositado, las notas
+  verbales de España e Italia, la respuesta argelina y las páginas de Estado
+  de DOALOS).
+
+### Huecos
+
+- El **convenio del mar territorial con Francia** (BOE-A-1975-14263) no publica
+  una sola coordenada: define sus puntos M, P y Q por referencias geográficas y
+  una carta náutica anexa. Su línea no se dibuja — digitalizarla sería
+  calcular, no copiar.
+- Con **Portugal** no hay nada que dibujar: los dos convenios de delimitación
+  de 1976 figuran en la tabla de DOALOS firmados y **sin constancia de entrada
+  en vigor**. Tres frentes (Miño, Guadiana y Canarias–Madeira) siguen sin
+  delimitación en vigor.
+- **Alborán, Ceuta y Melilla**: ningún instrumento localizado publica línea
+  alguna que dibujar ni declaración conjunta que registrar.
+- Los convenios de los años setenta **no declaran datum**; cada `geo_fuente` lo
+  dice en vez de disimularlo.
+- Las **líneas de base rectas del RD 2510/1977** —cientos de puntos, datum de
+  la época— quedan pendientes de digitalizar como tarea propia.
+
+---
+
 ## datos-v2026.08.89 — la nota que no se podía leer, leída
 
 La release anterior cerró con un hueco declarado: la comunicación portuguesa de 1

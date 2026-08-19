@@ -1038,7 +1038,12 @@ resumen ejecutivo, **las cinco comunicaciones** que recibió —de Marruecos, de
 Portugal y dos de la propia España— y la tabla de presentaciones de la Comisión ·
 **Reino de Marruecos**,
 Boletín Oficial n.º 6870 (leyes 37-17 y 38-17, traducción oficial) · **BOE**, RD
-2510/1977 y Ley 44/2010 · **GEBCO**, gazetteer submarino.
+2510/1977, Ley 44/2010, convenios de delimitación con Francia (BOE-A-1975-14608
+y 14263) e Italia (BOE-A-1978-29664) y RD 236/2013 (ZEE del Mediterráneo) ·
+**ONU (DOALOS)**, decreto presidencial argelino 18-96 (JORADP n.º 18, copia
+depositada), notas verbales de España (2018) e Italia (2018), respuestas
+argelinas (2019) y páginas de Estado de España y Argelia · **GEBCO**, gazetteer
+submarino.
 **Licencia** · Textos legales y documentos de organismos internacionales.
 **Qué hay que saber** · La misma doctrina D5, en el mar. **En aguas disputadas no
 se dibuja frontera**: se dibuja la zona sin delimitación acordada, y va
@@ -1067,11 +1072,31 @@ español: de ahí salen el reparto por fórmulas, los dos extremos de la línea 
 en la equidistancia con Portugal, PF‑448 contra las 200 M de terceros Estados— y
 la discrepancia del «FOS_30», que 61 puntos citan aunque el §7‑4 declare 29 pies
 de talud.
+**Qué se amplió** *(2026-08-19)* · La capa sale del expediente canario: entran
+las **dos únicas delimitaciones cerradas por tratado en vigor** —plataforma
+continental con Francia (golfo de Vizcaya, 16 puntos Q–R–T) y con Italia
+(Baleares–Cerdeña, 10 puntos A–L)— y las **dos ZEE declaradas y enfrentadas del
+Mediterráneo**: la española del RD 236/2013 (54 puntos, WGS84 declarado) y la
+argelina del decreto 18-96 (62 puntos, WGS84 declarado). Las cuatro son la
+tabla de su acto, pasada a decimal con 5 decimales — nada más. El punto 2
+argelino y el punto inicial español son **el mismo, minuto por minuto**, y el
+solapamiento no lo dice el atlas: lo dice la nota verbal española de
+27-07-2018, archivada con la italiana y las respuestas argelinas. Los convenios
+de 1974-78 **no declaran datum** y cada `geo_fuente` lo dice.
 **Huecos** · 2. **Ningún instrumento dibuja la zona sin delimitar**: trazarla con
 precisión sería dictar la delimitación que los dos Estados dejan a un acuerdo.
 Y las cifras de telurio y cobalto del monte Tropic vienen de campañas científicas
-que este atlas no ha archivado.
-**Archivado** · 13 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
+que este atlas no ha archivado. *(2026-08-19)* · El **convenio del mar
+territorial con Francia** (BOE-A-1975-14263) no publica una sola coordenada
+—define sus puntos M, P y Q por referencias geográficas y una carta anexa—, así
+que su línea no se dibuja: digitalizarla sería calcular, no copiar. Con
+**Portugal** los dos convenios de 1976 figuran en la tabla de DOALOS firmados y
+sin constancia de entrada en vigor: tres frentes (Miño, Guadiana y
+Canarias–Madeira) sin delimitación en vigor que dibujar. **Alborán, Ceuta y
+Melilla**: sin instrumento que publique línea alguna. Y las **líneas de base
+rectas del RD 2510/1977** (cientos de puntos, datum de la época) quedan
+pendientes de digitalizar.
+**Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
 
 ## perte
 
