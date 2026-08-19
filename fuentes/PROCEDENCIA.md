@@ -972,12 +972,16 @@ del Plan de Interés General «Expansión Región AWS en Aragón» (BOA n.º 150
 Campus»: acuerdo de aprobación definitiva del Consejo de Gobierno (DOCM n.º 205,
 de 22/10/2024) y declaración de impacto ambiental (DOCM n.º 59, de 22/03/2024),
 descargados del expediente oficial en `urbanismo.castillalamancha.es` ·
+**Gobierno de Aragón (BOA)**, PIGA «ACS DC La Puebla»: Orden PEJ/865/2025 con el
+acuerdo de declaración de interés (BOA n.º 140) y anuncio de información
+pública del plan aprobado inicialmente (BOA n.º 237) · **BOE**, anuncio de
+información pública de la acometida estatal (BOE-B-2026-24883) ·
 **IGN**, Nomenclátor.
-**Licencia** · Ley 37/2007 (BOA, DOCM) · IGN.
+**Licencia** · Ley 37/2007 (BOA, DOCM, BOE) · IGN.
 **Qué hay que saber** · **Entra el centro que un acto administrativo nombra, y
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
-mercado son de la patronal. De ahí que sean 7 y no 60.
+mercado son de la patronal. De ahí que sean 8 y no 60.
 **Qué se añadió** *(2026-08-19, release `.100`)* · **El séptimo, y el primero
 fuera de Aragón**: el campus de Meta en Talavera de la Reina (promotora Zarza
 Networks, S.L. — «una expansión de la presencia de Meta en Europa», dice el
@@ -986,13 +990,28 @@ nombra el polígono que el acto cita —«Polígono Industrial Torrehierro»— 
 precisión sube de `municipio` a `paraje`. Y la ficha NO publica consumo anual:
 la DIA da 240 MVA de demanda máxima —potencia, no energía— y convertirla a
 GWh exigiría inventar las horas; el dato va en su clave, con su unidad.
+**Qué se añadió** *(2026-08-19, release `.102`)* · **El octavo, y es una
+exclusión que se revierte con motivo**: ACS DC La Puebla (La Puebla de
+Alfindén, Zaragoza). La release `.89` lo dejó fuera con razón — sus actos de
+entonces eran un concurso de capacidad que define una solicitud en un nudo y
+una acometida en OTRO municipio—; los actos que lo nombran, sitúan y
+dimensionan aparecieron después en el BOA: la declaración de interés
+autonómico con interés general (campus de 150 MW ampliable a otros 150,
+ámbito de 255.504,60 m² en el sector SP-1) y la aprobación INICIAL del PIGA
+con su información pública conjunta. Por eso estrena la categoría
+`en_tramitacion`, que el vocabulario tenía prevista y ninguna ficha usaba:
+sin aprobación definitiva no es `autorizado`, por muchos megavatios que
+prometa. El BOE de julio de 2026 —el anuncio de la acometida, que en la .89
+fue motivo de exclusión— entra ahora como cuarta fuente: su propio título
+llama al proyecto «acometida del centro de datos ACS DC LA PUEBLA».
 **La trampa que enseñó** · **Una nota de prensa de una administración no es
 fuente primaria.** Lo primario es el acto, no su anuncio: los «26 proyectos y
 2.000 MW» catalanes no traían un solo expediente detrás.
-**Huecos** · 7. **La potencia TI en MW no la publica ningún acto administrativo**
-— la dan la patronal y los operadores, que son corporativos (R3).
-**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11` y
-`.100` · §10
+**Huecos** · 8. **La potencia TI en MW no la publica ningún acto administrativo**
+— la dan la patronal y los operadores, que son corporativos (R3); el acto de
+ACS roza el dato (20-30 MW de carga TI POR SALA) pero no da el total.
+**Archivado** · 9 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100` y `.102` · §10
 
 ## hidrogeno-red
 

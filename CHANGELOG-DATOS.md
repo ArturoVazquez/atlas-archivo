@@ -32,6 +32,86 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.102 — el octavo centro de datos: la exclusión que se revierte con motivo
+
+La release `.89` dejó fuera el centro de datos de ACS con razón: sus actos de
+entonces eran un concurso de capacidad que define una solicitud en un nudo
+(Nuevo Vigo 220, y además excluida) y la acometida de «La Puebla» en OTRO
+municipio (Villamayor de Gállego). La regla de la capa es que entra el centro
+que un acto **nombra, sitúa y dimensiona** — y los actos que hacen las tres
+cosas aparecieron después, en el BOA. Esta release lo trae, sin tocar la regla
+que lo excluyó: lo que cambió son los actos, no la vara.
+
+**El contrato no se mueve: sigue en 1.65.0.** Entra un registro con el esquema
+que la capa ya tenía.
+
+### Añadido
+
+- **`centros-datos:acs-dc-la-puebla`** — el octavo de la capa y el primero
+  `en_tramitacion`: campus de centro de procesamiento de datos de **150 MW,
+  ampliable a otros 150**, en el sector SP-1 de **La Puebla de Alfindén**
+  (Zaragoza), promovido por **ACS DC Infra La Puebla, S.L.** Cuatro fuentes:
+  - la **Orden PEJ/865/2025** (BOA n.º 140, de 23/7/2025), que publica el
+    Acuerdo del Gobierno de Aragón de 27/6/2025 declarando el proyecto
+    inversión de interés autonómico con interés general — y que en su propio
+    texto da el ámbito (**255.504,60 m²**, siete parcelas de la reparcelación
+    unidas en una), las dos fases (la I con permiso de acceso y conexión de
+    REE en Peñaflor 400 kV desde el 5/9/2024; la II pendiente) y el diseño de
+    las salas (20.000-30.000 kW de carga TI cada una);
+  - el **anuncio conjunto de información pública** (BOA n.º 237, de
+    9/12/2025): el PIGA aprobado INICIALMENTE por Orden de 1/12/2025, la
+    autorización ambiental integrada (INAGA/500301/02/2025/11189) y las
+    instalaciones eléctricas autonómicas (AT 2025/258 — línea soterrada de
+    220 kV de ~13.500 m y SET CD Campus con 4×120 MVA);
+  - el **BOE-B-2026-24883** (22/7/2026), la información pública de la
+    acometida estatal — el mismo anuncio que en la `.89` fue motivo de
+    exclusión entra ahora como fuente, porque su título llama al proyecto
+    «acometida del centro de datos ACS DC LA PUEBLA»;
+  - y el **Nomenclátor** para el punto del municipio.
+
+### La honestidad de la ficha
+
+- **Estrena la categoría `en_tramitacion`**, que el vocabulario tenía prevista
+  desde el nacimiento de la capa y ninguna ficha usaba: el PIGA tiene
+  aprobación inicial, no definitiva, y la información pública de la acometida
+  estatal seguía abierta en julio de 2026. Llamarlo `autorizado` sería
+  adelantar el expediente.
+- **Sin consumo anual, otra vez**: los 150 MW son potencia, no energía — la
+  misma doctrina que los 240 MVA de Meta. El dato va en las claves con su
+  unidad.
+- **La potencia TI, rozada y no publicada**: el acto da el diseño POR SALA
+  (20-30 MW de carga TI) pero no el total con el que se compara el sector. La
+  prohibición del esquema queda como estaba, y el hueco lo cuenta.
+- **La inversión y el calendario van `parcial`**: los >1.250 M€ y la puesta en
+  marcha «antes de septiembre de 2029» los recoge el acto «según la
+  información facilitada por la promotora» — previsión del promotor recitada,
+  no cifra verificada por nadie.
+- La geometría se queda en `municipio` (§6.6): el acto sitúa por el sector
+  SP-1 del planeamiento, que el Nomenclátor no nombra — el mismo caso que los
+  cinco de AWS, no el de Meta (cuyo polígono sí tiene topónimo).
+
+### Corregido
+
+- **`datos/manifest.json`, la nota de la capa** — decía «por ahora el único
+  localizado que hace las tres cosas es el PIGA de AWS» desde antes de la
+  `.100`: dejó de ser verdad al entrar Meta y nadie la movió. Reescrita para
+  que no lleve recuentos, que es la clase de texto que envejece aparte del
+  dato. Y la atribución de la capa gana los emisores que le faltaban desde la
+  `.100` (JCCM) y esta release (BOE).
+
+### Huecos
+
+- **La potencia TI en MW** — sigue sin publicarla ningún acto (ver arriba).
+- **La aprobación definitiva del PIGA** — cuando llegue, la categoría sube a
+  `autorizado`. El vigía (`otear.py`) solo lee el BOE y este acto saldrá en el
+  BOA: queda como asunto mensual en `AGENDA.md`, junto al DOCM que ya se
+  revisa a mano por el mismo motivo.
+- **Los centros de datos de Madrid y Cataluña**, que son la mayoría del parque
+  español y siguen sin un solo acto archivado en esta capa.
+- Siguen abiertos los de releases anteriores.
+
+---
+
 ## datos-v2026.08.101 — la tanda de sedes: cuatro ICTS bajan de la capital
 
 La lección del GTC —que estuvo dibujado en la isla que no era porque el Mapa
