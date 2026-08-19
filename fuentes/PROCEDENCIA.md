@@ -1096,7 +1096,14 @@ costura explícita **validada por el encadenamiento de topónimos del anexo**,
 se restauró del facsímil (archivado, con su corrección de errores de
 20-10-1977, que solo toca el preámbulo) y se contrastó punto a punto contra el
 litoral provincial. La discrepancia de punta Grieta —impresa 32 km mar
-adentro— se dibuja como está publicada y se cuenta en su clave.
+adentro— se dibuja como está publicada y se cuenta en su clave. *(Cuarta
+tanda, mismo día)*: la **ZEE francesa del Mediterráneo** (décret 2012-1148 vía
+su copia depositada, M.Z.N.94.2013; solo sus loxodromias — los tramos que el
+anexo remite a las aguas territoriales no se dibujan) con la **protesta
+española de 23-10-2012 archivada y citada**; la **zona de protección pesquera**
+de 1997/2000 con los 58 puntos de su depósito (M.Z.N.34.2000, «Datum Postdam»
+sic — el único límite español con datum pre-WGS84 declarado); y el corredor de
+**Alborán** sin delimitar, que se detiene al oeste de la isla a propósito.
 **Huecos** · 2. **Ningún instrumento dibuja la zona sin delimitar**: trazarla con
 precisión sería dictar la delimitación que los dos Estados dejan a un acuerdo.
 Y las cifras de telurio y cobalto del monte Tropic vienen de campañas científicas
@@ -1114,13 +1121,12 @@ del acto. *(2026-08-19, tercera tanda)* · Las líneas de base ya NO están
 pendientes: son once registros. España **no las ha depositado ante la ONU**
 (el M.Z.N.19.1998 que lo parecía es la zona de protección pesquera del RD
 1315/1997, «geodetic system Potsdam», sustituido por el M.Z.N.34.2000; la nota
-francesa de 1998 responde a esa zona). La **zona de protección pesquera del
-Mediterráneo** queda anotada como candidata a registro: acto, coordenadas y
-datum declarado. Candidatas también: la **ZEE francesa del Mediterráneo**
-(décret 2012-1148, con anexo de coordenadas) para enseñar el solapamiento del
-golfo de León como ya se enseña el argelino, y el corredor de **Alborán** como
-`sin_delimitar`.
-**Archivado** · 26 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
+francesa de 1998 responde a esa zona). La zona de pesca, la ZEE
+francesa y el corredor de Alborán dejaron de ser candidatas en la cuarta
+tanda: son registros. Candidata que queda anotada: la **presentación conjunta
+Francia–Irlanda–España–Reino Unido ante la CLCS (2006)** por el golfo de
+Vizcaya, que asoma en el expediente francés de DOALOS.
+**Archivado** · 32 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
 
 ## perte
 

@@ -32,6 +32,54 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.93 — el tercer frente del Mediterráneo, y la zona con datum propio
+
+Cuarta y última tanda marítima del día. Con ella, el tablero registra **todos
+los límites marítimos alrededor de España que un instrumento publica punto a
+punto** — y declara, con nombre y motivo, los que no existen.
+
+### Añadido
+
+- `espacios-maritimos:zee-mediterraneo-francia` — las loxodromias del decreto
+  francés 2012-1148 (JORF, WGS84, vía su copia depositada en la ONU:
+  M.Z.N.94.2013.LOS), en dos partes separadas por Córcega. **España protestó
+  por nota verbal de 23-10-2012**, archivada y citada con sus palabras:
+  límites «claramente exorbitantes en relación a la línea equidistante», y
+  «ninguna de las coordenadas incluidas en el mencionado decreto puede ser
+  considerada en modo alguno como límite de separación». Los tramos que el
+  anexo remite a la límite exterior de las aguas territoriales **no se
+  dibujan**: el acto no publica sus coordenadas. Con el punto 0 francés a
+  cinco millas y media del punto 54 español, el golfo de León queda registrado
+  como el tercer frente abierto del Mediterráneo, con el argelino y el
+  marroquí.
+- `espacios-maritimos:zona-pesca-mediterraneo` — los 58 puntos de la zona de
+  protección pesquera de 1997 (retocada en 2000: «descontadas esas 12 millas,
+  la amplitud […] ha de ser forzosamente de 37 millas», dice el propio RD
+  431/2000), tal como España los depositó ante la ONU (M.Z.N.34.2000.LOS) —
+  «referidos al Datum Postdam» *(sic)*: el único límite marítimo español con
+  datum declarado antes del WGS84, y lo declara con errata. Se dibuja del
+  depósito y no del decreto, porque el decreto define el tramo oriental con la
+  fórmula «línea equidistante» sin publicar puntos: los publicó España al
+  depositarlos, y el atlas copia — no calcula.
+- `espacios-maritimos:aguas-alboran` — el tercer frente sin delimitación
+  acordada con Marruecos, ilustrativo y con su hueco, sostenido por los
+  instrumentos de las dos partes (la nota española de 2015, la ley marroquí
+  38-17). El esquema **se detiene al oeste de la isla de Alborán a propósito**:
+  incluirla habría hecho decir al dibujo algo sobre el efecto de la isla en una
+  delimitación futura, que ningún documento dice.
+
+### Huecos
+
+- Los tramos de la ZEE francesa definidos «por la límite exterior de las aguas
+  territoriales» quedan sin dibujar, con el motivo en la propia ficha.
+- El perímetro de Alborán es un esquema con fuente `tipo: hueco`, como sus dos
+  gemelos.
+- Candidata anotada para el futuro: la **presentación conjunta
+  Francia–Irlanda–España–Reino Unido ante la CLCS (2006)** por el golfo de
+  Vizcaya y el mar Céltico, que aparece en el expediente francés de DOALOS.
+
+---
+
 ## datos-v2026.08.92 — el cero desde el que se mide el mar
 
 Tercera tanda marítima del día, y la más gorda: las **líneas de base rectas del
