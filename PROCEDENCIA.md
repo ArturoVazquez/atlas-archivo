@@ -1087,7 +1087,16 @@ mismo día)*: la **zona especial Z1–Z4** del artículo 3 del convenio con Fran
 —cuatro vértices exactos y un régimen de «reparto a partes iguales de sus
 recursos» (anexo II)— y el **corredor Canarias–Madeira sin delimitar**, gemelo
 del marroquí: perímetro ilustrativo con su hueco, sostenido por las notas
-España–Portugal de 2015 ya archivadas y por la tabla de DOALOS.
+España–Portugal de 2015 ya archivadas y por la tabla de DOALOS. *(Tercera
+tanda, mismo día)*: las **líneas de base rectas del RD 2510/1977** — 154
+puntos en 31 tramos, once registros multilínea con el reparto del propio
+anexo. La tabla HTML del BOE conserva el entrelazado a dos columnas del
+facsímil y traía un bloque corrido y dos celdas perdidas: se recompuso con
+costura explícita **validada por el encadenamiento de topónimos del anexo**,
+se restauró del facsímil (archivado, con su corrección de errores de
+20-10-1977, que solo toca el preámbulo) y se contrastó punto a punto contra el
+litoral provincial. La discrepancia de punta Grieta —impresa 32 km mar
+adentro— se dibuja como está publicada y se cuenta en su clave.
 **Huecos** · 2. **Ningún instrumento dibuja la zona sin delimitar**: trazarla con
 precisión sería dictar la delimitación que los dos Estados dejan a un acuerdo.
 Y las cifras de telurio y cobalto del monte Tropic vienen de campañas científicas
@@ -1099,10 +1108,19 @@ que su línea no se dibuja: digitalizarla sería calcular, no copiar. Con
 sin constancia de entrada en vigor: el frente Canarias–Madeira tiene desde la
 segunda tanda su registro `sin_delimitar` (perímetro ilustrativo con hueco);
 los del **Miño y el Guadiana** siguen sin registro que dibujar. **Alborán, Ceuta y
-Melilla**: sin instrumento que publique línea alguna. Y las **líneas de base
-rectas del RD 2510/1977** (cientos de puntos, datum de la época) quedan
-pendientes de digitalizar.
-**Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
+Melilla**: sin instrumento que publique línea alguna — y el anexo del RD
+2510/1977 **tampoco traza líneas de base para las plazas**: ese silencio es
+del acto. *(2026-08-19, tercera tanda)* · Las líneas de base ya NO están
+pendientes: son once registros. España **no las ha depositado ante la ONU**
+(el M.Z.N.19.1998 que lo parecía es la zona de protección pesquera del RD
+1315/1997, «geodetic system Potsdam», sustituido por el M.Z.N.34.2000; la nota
+francesa de 1998 responde a esa zona). La **zona de protección pesquera del
+Mediterráneo** queda anotada como candidata a registro: acto, coordenadas y
+datum declarado. Candidatas también: la **ZEE francesa del Mediterráneo**
+(décret 2012-1148, con anexo de coordenadas) para enseñar el solapamiento del
+golfo de León como ya se enseña el argelino, y el corredor de **Alborán** como
+`sin_delimitar`.
+**Archivado** · 26 ficheros · **El resto** · CHANGELOG `datos-v2026.08.89` · §10
 
 ## perte
 

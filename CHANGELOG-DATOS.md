@@ -32,6 +32,58 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.92 — el cero desde el que se mide el mar
+
+Tercera tanda marítima del día, y la más gorda: las **líneas de base rectas del
+Real Decreto 2510/1977** — el punto cero desde el que se miden el mar
+territorial, la zona contigua, la ZEE y la plataforma. 154 puntos en 31 tramos,
+transcritos del anexo, validados por el encadenamiento de topónimos del propio
+acto y contrastados punto a punto contra el litoral y contra el facsímil de la
+gaceta a 400 píxeles por pulgada.
+
+### Añadido
+
+- Once registros `lineas-base-*`, uno por fachada o grupo insular — el reparto
+  del propio anexo: costa norte y noroeste, suroeste, sur y este; Mallorca y
+  Cabrera, Menorca, Ibiza y Formentera; Gran Canaria, Tenerife, El Hierro, La
+  Palma y el grupo Lanzarote–Fuerteventura. Cada uno es una multilínea: entre
+  tramo y tramo la costa sigue con su línea de bajamar, y eso también lo dice
+  cada ficha.
+- Dos fuentes nuevas archivadas: el **facsímil de la gaceta** (BOE núm. 234,
+  30-09-1977) y la **corrección de errores** de tres semanas después
+  (BOE-A-1977-25293) — que no toca ni una coordenada: cambia «Ministerio de
+  Marina» por «Ministro de Defensa». Un decreto que nació de una fe de erratas,
+  con la suya propia.
+
+### Lo que el papel dice y no cuadra, contado
+
+- «Pta. Grieta (Alegranza), 29°42′,50» cae **32 kilómetros mar adentro**, al
+  norte de la isla, cuando su vecina de anexo («Pta. Delgada (Alegranza)»,
+  29°24′,10) la pisa. Todo huele a errata de imprenta — ¿42 por 24? — pero la
+  corrección de 1977 no la tocó y ningún acto posterior modifica el anexo: el
+  atlas dibuja lo que el decreto publica y la clave del registro cuenta la
+  discrepancia. Es la doctrina del FOS_30, en el mar.
+- El trazado **deja fuera la bahía de Algeciras**: la sección atlántica muere
+  en punta del Acebuche y la mediterránea nace en punta Carbonera. El anexo no
+  lo explica; simplemente no dibuja ahí.
+
+### Huecos
+
+- **Ceuta y Melilla no aparecen en el anexo** del RD 2510/1977: sin líneas de
+  base rectas declaradas para las plazas. El silencio es del acto y se declara
+  aquí.
+- El decreto **no declara sistema geodésico**: sus posiciones salen de cartas
+  del Instituto Hidrográfico con ediciones de 1952 a 1972, que el propio anexo
+  enumera. Cada `geo_fuente` lo dice.
+- España **no ha depositado las líneas de base ante la ONU**. El depósito
+  M.Z.N.19.1998 que lo parecía resulta ser la **zona de protección pesquera del
+  Mediterráneo** (RD 1315/1997, «geodetic system Potsdam» según el propio
+  depósito), sustituido por el M.Z.N.34.2000 — y la nota francesa de 1998
+  responde a esa zona, no a las líneas de base. La zona de pesca queda anotada
+  como candidata a registro: tiene acto, coordenadas y hasta datum declarado.
+
+---
+
 ## datos-v2026.08.91 — el reparto al cincuenta por ciento y el gemelo del norte
 
 La segunda tanda marítima del día. Dos registros que la `.90` dejó anunciados:
