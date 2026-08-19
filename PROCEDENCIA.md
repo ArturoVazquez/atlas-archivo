@@ -229,7 +229,27 @@ fuente con URL.
 el hueco**: «el trazado es a mano alzada sobre el ámbito descrito, **no un
 límite medido**». Sirven para situar una comarca minera en el mapa, **no para
 medir sobre ellas**. Es la capa que hace verdad la regla R5.
-**Huecos** · 16 de 16, uno por registro. **Archivado** · nada que archivar
+**La investigación agotada** *(2026-08-19)* · Se buscó cartografía oficial que
+sustituyera la mano alzada, y **el veredicto es que no existe como vector**. El
+IGME publica DOS series metalogenéticas: el **Mapa previsor 1:1.500.000** (17
+sustancias, serie de **1972**) que distingue «áreas metalíferas (límites y tipo
+genético)» — pero se sirve como **JPG escaneado más memoria en PDF**, no como
+geometría; y el **Metalogenético 1:200.000** (desde 1994), con cobertura
+**incompleta por hojas** (la de muestra responde «No hay información
+disponible»). Calcar del escaneo de 1972 daría una fuente, pero una de hace
+medio siglo, a escala 1,5M, y sin hoja para varios dominios de esta capa
+(litio, tierras raras, celestina). **La licencia del IGME, en cambio, quedó
+verificada y archivada** (`2026-08-19_igme_licencia-uso-datos.pdf`):
+reutilización gratuita, comercial y no comercial, con fórmula literal —
+«Origen de los datos: "©Instituto Geológico y Minero de España (IGME)"» — y
+ampara también los panoramas mineros que `minerales-proyectos` ya cita. **La
+vía que queda anotada**: la BDMIN (indicios minerales georreferenciados, por
+PUNTOS) permitiría anclar cada dominio con indicios oficiales — otra forma,
+otro trabajo, dicho aquí para quien lo retome.
+**Huecos** · 16 de 16, uno por registro — y tras la investigación se quedan
+como están **a conciencia**: la mano alzada declarada es más honesta que un
+calco de 1972 vestido de fuente.
+**Archivado** · 1 fichero (la licencia del IGME)
 **El resto** · CHANGELOG `datos-v2026.08.6` · §10
 
 ## minerales-derechos
