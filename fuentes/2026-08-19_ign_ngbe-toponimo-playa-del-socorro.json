@@ -1,0 +1,53 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "etiqueta":"Playa del Socorro",
+                "tipo":"Playa",
+                "tiponombre":"identificador_geografico",
+                "fecha":"2023-07-20",
+                "codigo_ngbe":"6.2.2",
+                "fuente":"MITMA.IGN.BTN25"
+            },
+            "id":"2637371",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -16.603698731,
+                    28.3942871100001
+                ]
+            }
+        }
+    ],
+    "numberMatched":1,
+    "numberReturned":1,
+    "links":[
+        {
+            "type":"application/geo+json",
+            "rel":"self",
+            "title":"This document as GeoJSON",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=json&limit=10&etiqueta=Playa%20del%20Socorro"
+        },
+        {
+            "rel":"alternate",
+            "type":"application/ld+json",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=10&etiqueta=Playa%20del%20Socorro"
+        },
+        {
+            "type":"text/html",
+            "rel":"alternate",
+            "title":"This document as HTML",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=html&limit=10&etiqueta=Playa%20del%20Socorro"
+        },
+        {
+            "type":"application/json",
+            "title":"GN Lugar nombrado",
+            "rel":"collection",
+            "href":"https://api-features.ign.es/collections/namedplace"
+        }
+    ],
+    "timeStamp":"2026-08-19T21:14:30.590187Z"
+}

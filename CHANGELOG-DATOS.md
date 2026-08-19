@@ -32,6 +32,72 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.103 — la ronda de la agenda: un cable esperado y dos huecos con acto
+
+La ronda manual de `AGENDA.md` —lo que ninguna guardia automática cubre—
+pasada asunto a asunto. Tres piezas entran; lo que no se movió queda dicho
+abajo, porque una ronda que solo cuenta sus aciertos no es una ronda.
+
+**El contrato no se mueve: sigue en 1.65.0.**
+
+### Añadido
+
+- **`cables-submarinos:la-palma-tenerife-el-socorro`** — el undécimo
+  aterrizaje, y el asunto de la agenda que esperaba su anuncio: la información
+  pública de la concesión del **cable La Palma–Tenerife** salió en el **BOC
+  n.º 32** (17-2-2026; anuncio firmado el 15-12-2025). Telefónica de España,
+  S.A.U.; amarre en la «Playa de El Socorro» de **Los Realejos** — nombrada
+  por el propio anuncio, sin ir al proyecto básico como en Base 6; el
+  Nomenclátor tiene una única «Playa del Socorro» en toda España y de ahí el
+  punto (`paraje`). El acto no bautiza el sistema pero sí dice qué conecta:
+  sin hueco — un cable sin nombre comercial. Archivado en sus dos formas
+  oficiales (PDF y HTML del BOC): el facsímil esconde un tramo de texto a la
+  extracción (fuente incrustada sin ToUnicode) y el HTML lo completa.
+
+### Corregido
+
+- **`residuos-radiactivos:at-vandellos-i`** · `fase` — `tramitacion` →
+  **`desarrollo`**: el registro que «no tenía ningún acto, solo la previsión
+  del plan» ganó dos en 2026 — la **declaración de impacto ambiental** (BOE
+  n.º 81, de 2/4/2026) y la **autorización de ejecución y montaje** (BOE
+  n.º 140, de 9/6/2026, con informe favorable del CSN de 27/5/2026). La clave
+  que declaraba la carencia se reescribió con los actos en la mano y el hueco
+  se estrecha a lo que sigue siendo verdad: la puesta en servicio no consta y
+  2027 sigue siendo la previsión del plan.
+- **`residuos-radiactivos:el-cabril`** · hueco f6 — **el acto existía desde
+  enero de 2025 y la búsqueda del alta no lo encontró**: la Resolución de 17
+  de enero de 2025 (BOE n.º 31, de 5/2/2025) autoriza la ejecución y montaje
+  de la **Plataforma Sureste**, una nueva plataforma de almacenamiento
+  definitivo de baja y media actividad con **27 celdas**, con DIA de 19/2/2024
+  e informe favorable del CSN de 19/12/2024. El hueco se cierra y nace el
+  honesto: la puesta en servicio de esas celdas no consta, y la fecha de 2028
+  del plan sigue siendo previsión.
+
+### La ronda que no movió nada, dicha en voz alta
+
+- **Los cuatro ATI-100** (Vandellós II, Ascó, Cofrentes, Almaraz): ninguna
+  resolución de puesta en servicio en el BOE. Siguen en `desarrollo`, que es
+  la verdad.
+- **El DOCM** («Neodimio», «monacita», «tierras raras»): sin resultados — el
+  anuncio de información pública del PI de tierras raras sigue sin salir. De
+  propina, una mordedura anotada en la agenda: el buscador del DOCM devuelve
+  un **500** a las consultas que SÍ tienen resultados cuando pregunta un
+  cliente no interactivo.
+- **PENCAN-X**: sin acto de Costas ni en el BOJA ni en el BOC. (El PENBAL-4
+  de Valencia que asomó en el barrido ya estaba en la capa: el circuito de
+  guardia lo había cazado en su día.)
+- **El Magreb-Europa y el Boletín Hidrológico**: no tocaban — el gas se
+  refrescó el 12 de agosto y el agua el 14, y CORES no publica mes nuevo en
+  una semana.
+
+### Huecos
+
+- Los de siempre en las tres capas tocadas, más los dos honestos que nacen
+  hoy: la puesta en servicio del AT de Vandellós I y la de las celdas de la
+  Plataforma Sureste.
+
+---
+
 ## datos-v2026.08.102 — el octavo centro de datos: la exclusión que se revierte con motivo
 
 La release `.89` dejó fuera el centro de datos de ACS con razón: sus actos de

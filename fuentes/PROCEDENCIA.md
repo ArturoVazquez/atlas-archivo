@@ -633,16 +633,27 @@ convertir, es decir, a inventar.
 **Huecos** · Los 14 registros declaran alguno. El estructural: **la puesta en
 servicio de los ATI casi nunca llega al BOE** —se autorizan como modificación de
 diseño de su central, en dos pasos— así que las fechas de operación son las que
-declara el plan, no las de un acto archivado. Además: la ampliación de El Cabril
-prevista para 2028 no tiene acto localizado; el almacén de Vandellós I **no
-tiene ningún acto**, solo la previsión del plan para 2027; y si los ATI-100 han
-entrado ya en servicio —el plan lo esperaba para 2026— a este atlas no le
-consta.
+declara el plan, no las de un acto archivado. Y si los ATI-100 han entrado ya
+en servicio —el plan lo esperaba para 2026— a este atlas no le consta
+(recomprobado el 2026-08-19, sin novedad).
+**Qué se corrigió** *(2026-08-19, release `.103`)* · **Dos huecos de la ficha
+resultaron tener acto esperando en el BOE.** El almacén de Vandellós I, que
+«no tenía ningún acto», ganó dos en 2026: la declaración de impacto ambiental
+(BOE n.º 81, 2-4-2026) y la autorización de ejecución y montaje (BOE n.º 140,
+9-6-2026) — su fase sube de `tramitacion` a `desarrollo`, y el hueco se
+estrecha a la puesta en servicio. Y la ampliación de El Cabril tenía su acto
+**desde enero de 2025**: la resolución que autoriza la ejecución y montaje de
+la **Plataforma Sureste**, 27 celdas de baja y media actividad (BOE n.º 31,
+5-2-2025) — el hueco que decía «sin acto localizado» se cierra y nace el
+honesto: la puesta en servicio de esas celdas no consta. La lección es la del
+GTC otra vez: un hueco declarado no es un hueco eterno, hay que volver a
+buscarlo de vez en cuando.
 **Dos cosas que la fuente dice y sorprenden** · El acto de explotación de El
 Cabril **no la llama El Cabril** («instalación nuclear de almacenamiento de
 residuos radiactivos sólidos de sierra Albarrana») ni cita el municipio; y su
 autorización **no caduca por fecha sino por volumen** de celdas ocupadas.
-**Archivado** · 14 ficheros · **El resto** · CHANGELOG `datos-v2026.08.38` · §10
+**Archivado** · 17 ficheros · **El resto** · CHANGELOG `datos-v2026.08.38` y
+`.103` · §10
 
 ## electricidad-interconexiones
 
@@ -961,8 +972,20 @@ Reino Unido: ahora dice lo que dice su acto (dirección a Smith Point, Nueva
 York). **Dos cables, un arenal**: Marea y Grace Hopper aterrizan en la misma
 playa de Sopela — el décimo registro comparte punto con el primero, y el visor
 los marca como apilados.
-**Archivado** · 17 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
-`.33` y `.98` · §10
+**Qué se añadió** *(2026-08-19, release `.103`)* · **El undécimo aterrizaje,
+y era un asunto de la agenda**: el cable **La Palma–Tenerife**, cuyo anuncio de
+información pública se esperaba desde que su proyecto asomó en la web de Costas
+canaria. Salió en el BOC n.º 32 (17-2-2026, anuncio firmado el 15-12-2025):
+Telefónica de España, S.A.U., amarre en la «Playa de El Socorro» de Los
+Realejos — que el anuncio nombra él mismo, sin tener que ir al proyecto básico
+como en Base 6. El Nomenclátor recoge una única «Playa del Socorro» en toda
+España y de ahí sale el punto. El acto no bautiza el sistema pero sí dice qué
+conecta, así que —a diferencia de Santander— no hay hueco: hay un cable sin
+nombre comercial. El anuncio se archivó en sus dos formas oficiales (facsímil
+PDF y texto HTML del BOC), porque el PDF esconde un tramo de texto a la
+extracción —una fuente incrustada sin tabla ToUnicode— y el HTML lo completa.
+**Archivado** · 20 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
+`.33`, `.98` y `.103` · §10
 
 ## centros-datos
 
