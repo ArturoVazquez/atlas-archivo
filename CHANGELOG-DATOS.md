@@ -32,6 +32,72 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.96 — el ferrocarril dice de qué está hecho
+
+La capa nació con las prohibiciones más elocuentes del atlas: ancho,
+electrificación, vías y velocidad, vetados POR SU NOMBRE en el esquema porque
+«existen en el servicio, en capas que esta pasada no lee» — y escribirlos de
+memoria habría sido inventar los datos más citables de la red. Esta es la
+pasada que los lee.
+
+### Añadido
+
+- `fuentes/2026-08-19_adif_atributos-tramos-wfs-inspire.zip` — las seis capas
+  de propiedades del WFS INSPIRE de Adif (`NominalTrackGauge`,
+  `RailwayElectrification`, `NumberOfTracks`, `DesignSpeed`, `RailwayUse`,
+  `RailwayType`), un objeto por tramo con el id del tramo: 1.689 en cada una,
+  exactamente los tramos archivados el 2026-08-07, **misma edición 2026/01**
+  (el enriquecedor lo comprueba antes de cruzar nada). Una no sale en el
+  `GetCapabilities` — `NominalTrackGauge` se descubrió pidiéndola por su
+  nombre INSPIRE.
+- Cinco campos nuevos en las 326 líneas, cada uno con su **regla de agregación
+  tramo→línea declarada** en el esquema, porque ahí es donde una capa así
+  puede mentir:
+  - **`ancho_via_mm`** (315 líneas: 240 ibéricas, 51 estándar, 24 métricas;
+    **cero mixtas**). Las 11 sin el campo no lo declaran — entre ellas los
+    **cambiadores de ancho**, donde `notApplicable` es literalmente la
+    respuesta correcta, y las «FUERA DE SERVICIO».
+  - **`electrificacion`** total / parcial / ninguna (208 / 29 / 89). No es un
+    booleano a propósito: 29 líneas están a medias y un true/false las
+    obligaría a mentir. Las parciales llevan **`tramos_electrificados`**; la
+    fracción la divide quien la quiera (R7).
+  - **`n_vias_max`** — máximo y no «el» número: 59 líneas mezclan vía única y
+    doble. El **cero** de las líneas fuera de servicio se publica tal cual.
+  - **`velocidad_diseno_kmh`** — resultó **uniforme en las 326 líneas** y el
+    enriquecedor SE PARA si una edición futura lo rompe, en vez de elegir en
+    silencio. Once líneas a 300; **cinco a 0** (ramales portuarios como
+    Maliaño-Raos), publicados tal cual.
+  - **`uso`** mixto / mercancías / viajeros, solo cuando es uniforme entre los
+    tramos (223 líneas): resumir usos distintos en una palabra sería
+    clasificar por nuestra cuenta.
+
+### Tres erratas de Adif, anotadas y no corregidas en silencio
+
+El ancho viene con `uom="m"` y valor `1668.0` — son milímetros, y el campo
+lleva la unidad en el nombre para no depender de la fuente. `RailwayUse`
+escribe **«pasagens»** donde el vocabulario INSPIRE dice `passengers` (138
+tramos). Y el `GetCapabilities` no anuncia una de sus propias capas.
+
+### La prohibición que se queda, con el motivo corregido
+
+`alta_velocidad` esperaba a que se leyera `RailwayType`. **Se leyó: dice
+`train` en los 1.689 tramos** — no distingue la alta velocidad, y el
+enriquecedor comprueba en cada corrida que siga siendo así. Los 300 km/h de
+diseño están a la vista de cualquiera; la etiqueta la tendrá que poner un
+acto, no este atlas deduciéndola.
+
+### Contrato
+
+Sube a **1.64.0** (los cinco campos y sus reglas). `operador` sigue prohibido:
+Adif administra la infraestructura, quién presta servicio es otra cosa y no lo
+dice esta fuente.
+
+### Huecos
+
+Los mismos dos de la capa, sin cambio: 29 líneas de 355 sin ningún tramo que
+las declare, y las 2.682 estaciones y bifurcaciones —cuyo GML sigue archivado—
+pendientes de un criterio de clasificación propio. Son la siguiente pasada.
+
 ## datos-v2026.08.95 — un registro dibujado, una semántica
 
 La revisión visual de la `.94` detectó que las siete polilíneas de Gibraltar,

@@ -1000,17 +1000,33 @@ atribución sola, sin ShareAlike ni NonCommercial: compatible.
 > Y ojo con dónde se busca: **el `GetCapabilities` de Adif no trae `Fees` ni
 > `AccessConstraints`** — no declara nada. La licencia está en el CSW.
 
-**Qué hay que saber** · 326 líneas y **24.136 km** de titularidad estatal.
-**Qué NO trae esta pasada** · Ni ancho de vía, ni electrificación, ni alta
-velocidad, ni número de vías. **Existen en el servicio**, en capas que esta
-pasada no lee, y el esquema los prohíbe por su nombre: escribirlos de memoria
-sería inventar los datos más citables de la capa.
+**Qué hay que saber** · 326 líneas y **24.136 km** de titularidad estatal. Desde
+la **segunda pasada** (2026-08-19, release `.96`): ancho de vía, electrificación,
+vías, velocidad de diseño y uso — leídos de las **capas de propiedades** del
+mismo servicio, un objeto por tramo con el id del tramo (1.689 en cada una,
+misma edición 2026/01 que los tramos archivados; el enriquecedor lo comprueba).
+**Tres erratas de la fuente, anotadas y no corregidas en silencio:**
+`NominalTrackGauge` no sale en el `GetCapabilities` (se pide por su nombre
+INSPIRE y responde); el ancho viene con `uom="m"` y valor `1668.0` — son
+milímetros, y el campo se llama `ancho_via_mm` para que la unidad no dependa de
+la fuente; y `RailwayUse` escribe «pasagens» donde el vocabulario dice
+`passengers` (138 tramos), leído como viajeros.
+**Lo que la segunda pasada CONFIRMÓ que no se puede publicar** ·
+`alta_velocidad`. La capa que el esquema señalaba como su futura fuente,
+`RailwayType`, dice `train` en los 1.689 tramos: no distingue la alta velocidad,
+y el enriquecedor comprueba en cada corrida que siga siendo así. Los 300 km/h de
+diseño están publicados a la vista; la etiqueta la pondrá un acto, no este atlas.
+**Lo que el dato nuevo retrata solo** · Las seis líneas «FUERA DE SERVICIO EJE
+1-6» declaran **cero vías**, y los «CAMBIADOR» de ancho llevan el ancho
+`notApplicable` — que es literalmente la respuesta correcta en un cambiador.
+Cinco ramales (Maliaño-Raos, Llovio-Ribadesella…) declaran **0 km/h** de diseño
+y se publican tal cual: corregirlos a un número «razonable» sería inventar.
 **Huecos** · 29 líneas de 355 sin ningún tramo que las declare. Y **las 2.682
 estaciones y bifurcaciones NO entran**: mezclan estaciones de viajeros con nudos
 técnicos («BIF. CANAL DEL DUERO») y piden criterio propio. **Su GML sí queda
 archivado**, para que levantarlas no exija volver a pedirlo.
-**Archivado** · 1 fichero + el metadato de licencia
-**El resto** · CHANGELOG `datos-v2026.08.23` · §10
+**Archivado** · 2 ficheros + el metadato de licencia
+**El resto** · CHANGELOG `datos-v2026.08.96` · §10
 
 ## limites-soberania
 
