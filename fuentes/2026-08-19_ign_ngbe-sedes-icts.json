@@ -1,0 +1,467 @@
+{
+ "_": "Captura de la tanda de sedes ICTS del 2026-08-19: las respuestas del Nomenclátor (NGBE, servicio OGC API-Features del IGN) a las cuatro consultas con las que se situaron ALBA, CLPU, CENIEH y el OAJ. Cada entrada guarda la URL pedida y la respuesta íntegra.",
+ "consultas": [
+  {
+   "etiqueta": "Cerdanyola del Vallès",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Cerdanyola+del+Vall%C3%A8s&limit=10&f=json",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "codigo_ngbe": "1.3",
+       "fecha": "2025-07-05",
+       "tipo": "Municipio",
+       "etiqueta": "Cerdanyola del Vallès",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2706056",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        2.14068408,
+        41.49103986
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "codigo_ngbe": "2.1.3",
+       "fecha": "2025-07-06",
+       "tipo": "Capital de municipio",
+       "etiqueta": "Cerdanyola del Vallès",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2809844",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        2.14068408,
+        41.49103986
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "codigo_ngbe": "2.1.9",
+       "fecha": "2025-07-06",
+       "tipo": "Entidad singular",
+       "etiqueta": "Cerdanyola del Vallès",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2820231",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        2.14068408,
+        41.49103986
+       ]
+      }
+     }
+    ],
+    "numberMatched": 3,
+    "numberReturned": 3,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Cerdanyola%20del%20Vall%C3%A8s&limit=10"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Cerdanyola%20del%20Vall%C3%A8s&limit=10"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Cerdanyola%20del%20Vall%C3%A8s&limit=10"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-08-19T20:06:23.685516Z"
+   }
+  },
+  {
+   "etiqueta": "Burgos",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Burgos&limit=10&f=json",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Paraje",
+       "fecha": "2023-07-10",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "225789",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -1.41100984399992,
+        41.9157116970001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Paraje",
+       "fecha": "2023-07-26",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "265990",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -0.080017282999961,
+        41.5742798490001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Municipio",
+       "fecha": "2025-07-06",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "1.3",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2706149",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -3.702175883,
+        42.34058464
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Capital de provincia",
+       "fecha": "2025-01-31",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "2.1.2",
+       "fuente": "MAETD.REL"
+      },
+      "id": "2721287",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -3.70419805,
+        42.34113004
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Provincia",
+       "fecha": "2018-10-02",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "1.2",
+       "fuente": "MFOMENTO.IGN.NGCE"
+      },
+      "id": "2721839",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -3.70419805,
+        42.34113004
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Capital de municipio",
+       "fecha": "2025-07-06",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "2.1.3",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2809939",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -3.702175883,
+        42.34058464
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "tiponombre": "identificador_geografico",
+       "tipo": "Entidad singular",
+       "fecha": "2025-07-06",
+       "etiqueta": "Burgos",
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2820458",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -3.702175883,
+        42.34058464
+       ]
+      }
+     }
+    ],
+    "numberMatched": 7,
+    "numberReturned": 7,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Burgos&limit=10"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Burgos&limit=10"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Burgos&limit=10"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-08-19T20:06:23.764798Z"
+   }
+  },
+  {
+   "etiqueta": "Villamayor (recuadro Salamanca, filtrado)",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-5.75%2C40.95%2C-5.60%2C41.05&limit=200&f=json",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "etiqueta": "Villamayor",
+       "tipo": "Municipio",
+       "tiponombre": "identificador_geografico",
+       "fecha": "2025-07-06",
+       "codigo_ngbe": "1.3",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2710464",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -5.696169954,
+        40.99968736
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "etiqueta": "Villamayor",
+       "tipo": "Capital de municipio",
+       "tiponombre": "identificador_geografico",
+       "fecha": "2025-07-06",
+       "codigo_ngbe": "2.1.3",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2814384",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -5.696169954,
+        40.99968736
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "etiqueta": "Villamayor",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "fecha": "2025-07-05",
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP"
+      },
+      "id": "2871479",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -5.696169954,
+        40.99968736
+       ]
+      }
+     }
+    ],
+    "numberMatched": 464,
+    "numberReturned": 195,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&bbox=-5.75,40.95,-5.60,41.05&limit=200"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&bbox=-5.75,40.95,-5.60,41.05&limit=200"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&bbox=-5.75,40.95,-5.60,41.05&limit=200"
+     },
+     {
+      "type": "application/geo+json",
+      "rel": "next",
+      "title": "Items (next)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?offset=200&bbox=-5.75,40.95,-5.60,41.05&limit=200"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-08-19T20:06:23.950452Z"
+   }
+  },
+  {
+   "etiqueta": "Picón del Buitre (recuadro Javalambre, filtrado)",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-1.03%2C40.03%2C-1.00%2C40.05&limit=60&f=json",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "etiqueta": "Picón del Buitre",
+       "tipo": "Montaña",
+       "tiponombre": "identificador_geografico",
+       "fecha": "2023-07-25",
+       "codigo_ngbe": "4.1.2",
+       "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "2123275",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -1.01629630999992,
+        40.041870192
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "etiqueta": "Buitre",
+       "tipo": "Vértice Geodésico",
+       "tiponombre": "identificador_geografico",
+       "fecha": "2023-06-30",
+       "codigo_ngbe": "2.3.1",
+       "fuente": "MITMA.IGN.Red Geodésica"
+      },
+      "id": "3306786",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -1.016271627,
+        40.04182752
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "etiqueta": "Muela del Pozo del Buitre",
+       "tipo": "Montaña",
+       "tiponombre": "identificador_geografico",
+       "fecha": "2023-07-25",
+       "codigo_ngbe": "4.1.2",
+       "fuente": "MITMA.IGN.BTN25"
+      },
+      "id": "415362",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -1.01812737999995,
+        40.0471192050001
+       ]
+      }
+     }
+    ],
+    "numberMatched": 8,
+    "numberReturned": 8,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&bbox=-1.03,40.03,-1.00,40.05&limit=60"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&bbox=-1.03,40.03,-1.00,40.05&limit=60"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&bbox=-1.03,40.03,-1.00,40.05&limit=60"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-08-19T20:06:42.472162Z"
+   }
+  }
+ ]
+}

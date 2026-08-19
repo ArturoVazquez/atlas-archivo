@@ -348,6 +348,25 @@ instalación; las bases antárticas, sus coordenadas en cifra. **Canarias tiene
 dos capitales por estatuto** y la capa usa Santa Cruz de Tenerife: el Anexo I
 no dice la isla de sus nodos canarios, y elegirla por notoriedad sería el
 relleno que esta capa evita en todo lo demás.
+**Qué se corrigió** *(2026-08-19, release `.101`)* · **La tanda de sedes: cuatro
+ICTS bajan de la capital autonómica a su sitio.** Es la lección del GTC aplicada
+en serie —«antes de conformarse con la convención hay que agotar la búsqueda de
+un acto»—: **ALBA** a Cerdanyola del Vallès (el convenio de constitución de
+CELLS, BOE 1/1/2026, da domicilio y sitúa la ampliación «dentro del Parque del
+Alba»), **CLPU** a Villamayor, Salamanca (su convenio con la AEAT, BOE 4/4/2026,
+da la sede con señas completas — estaba dibujado en Valladolid, a 110 km),
+**CENIEH** a Burgos (convenio propio, BOE 1/6/2026 — estaba en Valladolid, a
+120 km) y el **OAJ de Javalambre** al Picón del Buitre, Arcos de las Salinas
+(Teruel), en `paraje`: el convenio con RedIRIS (BOE 23/8/2021) lo dice sin
+rodeos y el pico es topónimo del Nomenclátor — estaba en Zaragoza, a 180 km.
+Los huecos no se cierran: se ESTRECHAN — la coordenada del edificio sigue sin
+acto que la dé, y los cuatro siguen `parcial`.
+**La pista que queda anotada** · Para la **PSA** el Nomenclátor trae una
+«Central Solar de Almería» (instalación abierta) en el desierto de Tabernas
+que casi seguro ES la Plataforma — pero identificarla exige un acto que sitúe
+la PSA en Tabernas y no se encontró: las licitaciones del CIEMAT dan NUTS de
+Madrid (la sede contratante) y el Estatuto no la nombra. LNF, OmicsTech e ICAR
+siguen igual: sin acto que las baje de la comunidad.
 **Archivado** · 11 ficheros (el acuerdo y su Anexo II de procedimiento, las dos
 páginas antárticas, dos consultas al NGBE —la de las instalaciones y la de las
 capitales autonómicas—, cuatro actos del BOE y la página de nodos de la RES).

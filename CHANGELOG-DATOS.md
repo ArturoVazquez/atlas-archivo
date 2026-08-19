@@ -32,6 +32,58 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.101 — la tanda de sedes: cuatro ICTS bajan de la capital
+
+La lección del GTC —que estuvo dibujado en la isla que no era porque el Mapa
+de ICTS sitúa por comunidad autónoma— decía: «antes de conformarse con la
+convención hay que agotar la búsqueda de un acto». Esta release la aplica en
+serie: cuatro búsquedas agotadas, cuatro convenios del BOE encontrados,
+cuatro ICTS en su sitio.
+
+### Corregido
+
+- **ALBA** — de Barcelona capital a **Cerdanyola del Vallès**: el convenio de
+  constitución del consorcio CELLS (BOE n.º 1, de 1/1/2026) fija su domicilio
+  en el Carrer de la Llum 2-26 y sitúa la ampliación «dentro del Parque del
+  Alba en el término municipal de Cerdanyola del Vallès».
+- **CLPU** — de Valladolid (a ~110 km) a **Villamayor, Salamanca**: su
+  convenio con la AEAT (BOE n.º 83, de 4/4/2026) da la sede con señas
+  completas — calle Adaja 8, Edificio M5 del Parque Científico de la USAL.
+- **CENIEH** — de Valladolid (a ~120 km) a **Burgos**: un convenio del propio
+  consorcio (BOE n.º 133, de 1/6/2026) da su domicilio en el paseo de la
+  Sierra de Atapuerca 3.
+- **OAJ (Javalambre)** — de Zaragoza (a ~180 km) al **Picón del Buitre, Arcos
+  de las Salinas (Teruel)**, y este sube a `paraje`: el convenio con RedIRIS
+  (BOE n.º 201, de 23/8/2021) dice sin rodeos que el observatorio está en el
+  Pico del Buitre, y ese pico es topónimo del Nomenclátor — con su vértice
+  geodésico «Buitre» al lado.
+
+Los tres primeros quedan en `municipio` y no más allá a conciencia: los
+convenios dan la DIRECCIÓN, pero geocodificarla sería una coordenada fabricada
+por el atlas. La dirección queda dicha en cada clave. **Los huecos no se
+cierran: se estrechan** — la coordenada del edificio sigue sin acto que la dé,
+y los cuatro siguen `parcial`.
+
+### Añadido
+
+- Cuatro convenios del BOE archivados, cada uno con sus centinelas en el
+  enriquecedor (si el texto archivado dejara de decir lo que se publica, el
+  guion se para), y la captura del Nomenclátor de la tanda — cuatro consultas
+  con su URL y su respuesta íntegra.
+
+### La pista que queda anotada, y por qué no se publica
+
+Para la **PSA** el Nomenclátor trae una «Central Solar de Almería» en el
+desierto de Tabernas que casi seguro ES la Plataforma — pero identificarla
+exige un acto que sitúe la PSA en Tabernas y no apareció: las licitaciones del
+CIEMAT dan el NUTS de Madrid (la sede contratante) y su Estatuto no la nombra.
+Antes que casar por memoria, la pista queda en PROCEDENCIA. LNF, OmicsTech e
+ICAR siguen igual.
+
+### Sin cambio de contrato
+
+Sigue 1.65.0: ni un campo nuevo, ni una regla.
+
 ## datos-v2026.08.100 — el séptimo centro de datos, y el primero fuera de Aragón
 
 `centros-datos` pasa de 6 a **7**. La capa nació con la doctrina más estricta
