@@ -32,6 +32,63 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.104 — qué mide cada estación: la red sísmica gana sus canales
+
+El primer hueco declarado de `red-sismica` decía, desde su nacimiento en la
+`.64`: «qué mide cada estación […] el servicio lo publica a nivel de canal,
+que es otra consulta y otro volumen». La consulta se hizo. **Contrato
+1.65.0 → 1.66.0** (aditiva: la capa estrena su esquema §10).
+
+### Añadido
+
+- **`red-sismica` · `canales[]` e `instrumentacion[]` en las 303 fichas** —
+  del nivel de canal del mismo servicio FDSN del IGN (2.328 épocas de canal).
+  `canales` publica los códigos **verbatim** (los abiertos si la estación
+  vive; todos los que tuvo, si es histórica) e `instrumentacion` su lectura
+  por la **norma de identificadores de la propia FDSN**, archivada como
+  fuente: la primera letra es la banda (H/B banda ancha, E/S corto periodo) y
+  la segunda el instrumento (H sismómetro, N acelerómetro). El reparto: **180
+  estaciones con velocímetro de banda ancha, 98 con acelerómetro, 48 de corto
+  periodo**. Cada ficha gana además la clave «Qué mide, leído de sus canales»
+  con las cadenas de instrumento del servicio, verbatim.
+- **La comprobación que sella las dos consultas**: las estaciones con canal
+  abierto son **exactamente** las 227 sin fecha de baja — ni una más ni una
+  menos. El extractor se planta si un día divergen, y también ante una letra
+  de canal que el mapa no cubra: una banda nueva la lee una persona con la
+  norma delante, no un `else`.
+- **El esquema de la capa** (`red-sismica.schema.json`), probado en
+  adversario antes de publicar: tres defectos sembrados (un canal ilegal, un
+  valor fuera del enum, una vigente con `fecha_baja`), tres BLOQUEA. Nacen
+  dos prohibiciones con nombre: `magnitud_maxima` (sería un cálculo del atlas
+  vestido de dato) y `sensor_modelo` (la descripción del servicio es una
+  concatenación por épocas, no un modelo — va en la clave, no como campo que
+  invite a filtrar).
+
+### Por qué `instrumentacion` va `confirmado` y no `parcial`
+
+Leer «HN → acelerómetro» es **traducir un código por el diccionario de quien
+lo emite** — como leer el catálogo de la DR 2026 en `ferrocarril-nodos` — y
+no convertir una medida, que es lo que degrada a `parcial` (la doctrina de
+las conversiones XYZ→GRS80 de `red-geodesica`). La distinción queda escrita
+en el §10 del contrato.
+
+### Corregido
+
+- **El visor** — el rótulo de `codigo` decía «Código de la dependencia» desde
+  la `.97` para TODAS las capas: el apellido era de Adif y vestía mal a las
+  estaciones sísmicas y geodésicas, que comparten campo. Ahora «Código» a
+  secas (el propio comentario del código pedía eso y decía otra cosa), y los
+  dos campos nuevos ganan su rótulo.
+
+### Huecos
+
+- **El que queda es de la capa**: la red `ES` no es toda la sismología del
+  IGN — las antárticas y algunas volcánicas van con otro código de red.
+- La fecha de verificación de las 303 fichas pasa a 2026-08-20; su
+  `fecha_alta` se queda en la de su alta real, que es lo que ese campo dice.
+
+---
+
 ## datos-v2026.08.103 — la ronda de la agenda: un cable esperado y dos huecos con acto
 
 La ronda manual de `AGENDA.md` —lo que ninguna guardia automática cubre—

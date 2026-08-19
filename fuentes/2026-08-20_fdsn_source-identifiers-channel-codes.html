@@ -1,0 +1,894 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" />
+  <meta name="readthedocs-addons-api-version" content="1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Channel codes &mdash; FDSN Source Identifiers</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/fdsn_rtd_theme.css?v=62b22ee3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=eb84e9ba" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/js/sidebar_context.js?v=fed458f7"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/versions.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changes" href="changes.html" />
+    <link rel="prev" title="Location codes" href="location-codes.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="earthscope-consortium-source-identifiers" /><meta name="readthedocs-version-slug" content="v1.0" /><meta name="readthedocs-resolver-filename" content="/channel-codes.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FDSN Source Identifiers
+              <img src="_static/FDSN-logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="switch-menus">
+                <div class="version-switch"></div>
+                <div class="language-switch"></div>
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="definition.html">Definition of identifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network-codes.html">Network codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="location-codes.html">Location codes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Channel codes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#band-source-and-subsource-codes">Band, source and subsource codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#band-code">Band Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#source-and-subsource-codes">Source and Subsource Codes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#seismometer">Seismometer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tilt-meter">Tilt Meter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creep-meter">Creep Meter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibration-input">Calibration Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pressure">Pressure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#electronic-test-point">Electronic Test Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#magnetometer">Magnetometer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#humidity">Humidity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rotational-sensor">Rotational Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#temperature">Temperature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water-current">Water Current</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gravimeter">Gravimeter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#electric-potential">Electric Potential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rainfall">Rainfall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linear-strain">Linear Strain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tide">Tide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bolometer">Bolometer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volumetric-strain">Volumetric Strain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wind">Wind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#derived-or-generated-channel">Derived or generated channel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#non-specific-instruments">Non-specific instruments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#synthesized-beams">Synthesized Beams</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.fdsn.org/">FDSN home</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FDSN Source Identifiers</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="channel-codes">
+<span id="id1"></span><h1>Channel codes<a class="headerlink" href="#channel-codes" title="Link to this heading"></a></h1>
+<section id="band-source-and-subsource-codes">
+<h2>Band, source and subsource codes<a class="headerlink" href="#band-source-and-subsource-codes" title="Link to this heading"></a></h2>
+<p>A <em>channel</em> is composed of a sequence of three codes that each
+describe an aspect of the instrumentation and its digitization as
+follows:</p>
+<blockquote>
+<div><p><strong>Band</strong>: Indicates the general sampling rate and response band of the
+data source. May be empty for non-time series data.</p>
+<p><strong>Source</strong>: Identifies an instrument or other general data source. Cannot
+be empty.</p>
+<p><strong>Subsource</strong>: Identifies a sub-category within the source, often
+the orientation, relative positon, or sensor type. The meaning of
+subsource codes are specific to the containing source. May be
+empty.</p>
+</div></blockquote>
+<p>A <em>channel</em> is the combination of these three codes separated by “_”
+(ASCII 95) in the following pattern: <code class="docutils literal notranslate"><span class="pre">Band_Source_Subsource</span></code>, which
+forms the end of a source identifier.</p>
+<p>For usage of Band codes <strong>A</strong> and <strong>O</strong> (both deprecated), the source
+and subsource codes may be defined by the generator. In these cases,
+the source and subsource codes should not exceed three characters each
+in length. In all other cases, source and subsource codes defined in
+this specification must be used.</p>
+<p>Two sequences are reserved for special channels, both deprecated:
+<strong>L_O_G</strong> for the console log and <strong>S_O_H</strong> for general state of health.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All <em>channels</em> with single-character <code class="docutils literal notranslate"><span class="pre">Band</span></code>, <code class="docutils literal notranslate"><span class="pre">Source</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">Subsource</span></code> codes are equivalent to SEED 2.4 channel designations
+and vice versa.</p>
+</div>
+</section>
+<section id="band-code">
+<h2>Band Code<a class="headerlink" href="#band-code" title="Link to this heading"></a></h2>
+<p>The band code specifies the general sampling rate and the approximate
+response band of the instrument (when applicable to the data source).</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Band code</p></th>
+<th class="head"><p>Band type</p></th>
+<th class="head"><p>Sample rate (samples per sec)</p></th>
+<th class="head"><p>Lower bound (sec)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>J</strong></p></td>
+<td><p>…</p></td>
+<td><p>&gt; 5000</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>F</strong></p></td>
+<td><p>…</p></td>
+<td><p>&gt;= 1000 to &lt; 5000</p></td>
+<td><p>&gt;= 10 sec</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>G</strong></p></td>
+<td><p>…</p></td>
+<td><p>&gt;= 1000 to &lt; 5000</p></td>
+<td><p>&lt; 10 sec</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p>…</p></td>
+<td><p>&gt;= 250 to &lt; 1000</p></td>
+<td><p>&lt; 10 sec</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong></p></td>
+<td><p>…</p></td>
+<td><p>&gt;= 250 to &lt; 1000</p></td>
+<td><p>&gt;= 10 sec</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>E</strong></p></td>
+<td><p>Extremely Short Period</p></td>
+<td><p>&gt;= 80 to &lt; 250</p></td>
+<td><p>&lt; 10 sec</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>S</strong></p></td>
+<td><p>Short Period</p></td>
+<td><p>&gt;= 10 to &lt; 80</p></td>
+<td><p>&lt; 10 sec</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>H</strong></p></td>
+<td><p>High Broadband</p></td>
+<td><p>&gt;= 80 to &lt; 250</p></td>
+<td><p>&gt;= 10 sec</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>B</strong></p></td>
+<td><p>Broadband</p></td>
+<td><p>&gt;= 10 to &lt; 80</p></td>
+<td><p>&gt;= 10 sec</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>M</strong></p></td>
+<td><p>Mid Period</p></td>
+<td><p>&gt; 1 to &lt; 10</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>L</strong></p></td>
+<td><p>Long Period</p></td>
+<td><p>~ 1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>V</strong></p></td>
+<td><p>Very Long Period</p></td>
+<td><p>&gt;= 0.1 to &lt; 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>U</strong></p></td>
+<td><p>Ultra Long Period</p></td>
+<td><p>&gt;= 0.01 to &lt; 0.1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>W</strong></p></td>
+<td><p>Ultra-ultra Long Period</p></td>
+<td><p>&gt;= 0.001 to &lt; 0.01</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>R</strong></p></td>
+<td><p>Extremely Long Period</p></td>
+<td><p>&gt;= 0.0001 to &lt; 0.001</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>P</strong></p></td>
+<td><p>On order of 0.1 to 1 day</p></td>
+<td><p>&gt;= 0.00001 to &lt; 0.0001</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>T</strong></p></td>
+<td><p>On order of 1 to 10 days</p></td>
+<td><p>&gt;= 0.000001 to &lt; 0.00001</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Q</strong></p></td>
+<td><p>Greater than 10 days</p></td>
+<td><p>&lt; 0.000001</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>I</strong></p></td>
+<td><p>Irregularly sampled</p></td>
+<td><p>irregular</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>A</strong></p></td>
+<td><p><span class="strike">Administrative</span></p></td>
+<td><p>variable, DEPRECATED</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>O</strong></p></td>
+<td><p><span class="strike">Opaque</span></p></td>
+<td><p>variable, DEPRECATED</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="source-and-subsource-codes">
+<h2>Source and Subsource Codes<a class="headerlink" href="#source-and-subsource-codes" title="Link to this heading"></a></h2>
+<p>The source code specifies the family to which the sensor belongs or
+otherwise a general data source. In essence, this identifies what is
+being measured or simulated. Each of these source types are detailed in
+this section.</p>
+<p>The subsource code provides a way to indicate the directionality of
+the sensor measurement (orientation), the relative location of the
+sensor or the sensor type.  Subsource codes are source-specific.</p>
+<blockquote id="geographic-orientation">
+<div><p><strong>Geographic orientation subsource codes</strong></p>
+<p>Traditional orientation values of North-Source (N), East-West (E),
+and Vertical (Z) should <cite>only</cite> be used when within 5 degress of
+true directions.  Do not use <strong>N</strong> or <strong>E</strong> designations if the
+orientation of horizontal components is known to deviate more than
+5 degrees from true North/East.</p>
+<p>For orthogonal components that are in nontraditional orientations,
+if the orientation of the horizontal components is known to
+deviate more than 5 degrees from true North and East, the
+respective channels should be named <strong>1</strong>, <strong>2</strong> instead of N, E
+(N-&gt;1, E-&gt;2).</p>
+<p>For sources that record data in a direction typically aligned with
+geographical coordinate systems, the subsource identifier should
+follow these conventions (where appropriate):</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Subsource codes</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>N</strong>, <strong>E</strong>, <strong>Z</strong></p></td>
+<td><p>Traditional orientations of North (N), East (E), and Up (Z)</p>
+<p><em>When within 5 degrees of true directions</em></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>1</strong>, <strong>2</strong>, <strong>Z</strong></p></td>
+<td><p>Orthogonal components, nontraditional horizontals</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong>, <strong>3</strong></p></td>
+<td><p>Orthogonal components, nontraditional orientations</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>T</strong>, <strong>R</strong></p></td>
+<td><p>For rotated components or beams (Transverse, Radial)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>A</strong>, <strong>B</strong>, <strong>C</strong></p></td>
+<td><p>Triaxial (Along the edges of a cube turned up on a corner)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>U</strong>, <strong>V</strong>, <strong>W</strong></p></td>
+<td><p>Optional components, also used for raw triaxial output</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<section id="seismometer">
+<h3>Seismometer<a class="headerlink" href="#seismometer" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures displacement/velocity/acceleration along a line defined by
+the the dip and azimuth.</p>
+<p><em>Source Code</em></p>
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>H</strong></p></td>
+<td><p>High Gain Seismometer</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>L</strong></p></td>
+<td><p>Low Gain Seismometer</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>M</strong></p></td>
+<td><p>Mass Position Seismometer</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>N</strong></p></td>
+<td><p>Accelerometer</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>P</strong></p></td>
+<td><p>Geophone, very short period seismometer with natural frequency 5 - 10 Hz or higher</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Subsource Code</em> - See <a class="reference internal" href="#geographic-orientation"><span class="std std-ref">Geographic orientation codes</span></a> for more details.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>N</strong>, <strong>E</strong>, <strong>Z</strong></p></td>
+<td><p>Traditional orientations of North (N), East (E), and Up (Z)</p>
+<p><em>When within 5 degrees of true directions</em></p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong>, <strong>Z</strong></p></td>
+<td><p>Orthogonal components, nontraditional horizontals</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>1</strong>, <strong>2</strong>, <strong>3</strong></p></td>
+<td><p>Orthogonal components, nontraditional orientations</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>T</strong>, <strong>R</strong></p></td>
+<td><p>For rotated components or beams (Transverse, Radial)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>A</strong>, <strong>B</strong>, <strong>C</strong></p></td>
+<td><p>Triaxial (Along the edges of a cube turned up on a corner)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>U</strong>, <strong>V</strong>, <strong>W</strong></p></td>
+<td><p>Optional components, also used for raw triaxial output</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Ground motion vector</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m</span></code>, <code class="docutils literal notranslate"><span class="pre">m/s</span></code>, <code class="docutils literal notranslate"><span class="pre">m/s**2</span></code></p>
+</div></blockquote>
+</section>
+<section id="tilt-meter">
+<h3>Tilt Meter<a class="headerlink" href="#tilt-meter" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures tilt from the horizontal plane. Azimuth is typically N/S or
+E/W.</p>
+<p><em>Source Code</em></p>
+<p><strong>A</strong></p>
+<p><em>Subsource Code</em> - See <a class="reference internal" href="#geographic-orientation"><span class="std std-ref">Geographic orientation codes</span></a> for more details.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>N</strong>, <strong>E</strong></p></td>
+<td><p>Traditional orientations of North (N), East (E), and Up (Z)</p>
+<p><em>When within 5 degrees of true directions</em></p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong></p></td>
+<td><p>Orthogonal components, nontraditional orientations</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Ground motion vector</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">rad</span></code> (radian)</p>
+</div></blockquote>
+</section>
+<section id="creep-meter">
+<h3>Creep Meter<a class="headerlink" href="#creep-meter" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures the absolute movement between two sides of a fault.
+Traditionally this has been done by means of fixing a metal beam on
+one side of the fault and measuring its position on the other side,
+but can also done with light beams, triangulation wires and other
+techniques.</p>
+<p>The orientation and therefore the dip and azimuth would be
+perpendicular to the measuring beam, which would be along the average
+travel vector for the fault. Position/negative travel would be
+arbitrary, but would be noted in the dip/azimuth.</p>
+<p><em>Source Code</em></p>
+<p><strong>B</strong></p>
+<p><em>Subsource Code</em></p>
+<p>None defined</p>
+<p>Dip/Azimuth: Along the fault or wire vector</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m</span></code> (meter)</p>
+</div></blockquote>
+</section>
+<section id="calibration-input">
+<h3>Calibration Input<a class="headerlink" href="#calibration-input" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Usually only used for seismometers or other magnetic coil
+instruments. This signal monitors the input signal to the coil to be
+used in response evaluation. Usually tied to a specific instrument.
+Sometimes all instruments are calibrated together, sometimes
+horizontals are calibrated separately from verticals.</p>
+<p><em>Source Code</em></p>
+<p><strong>C</strong></p>
+<p><em>Subsource Code</em></p>
+<p><strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong> - For when there are only a few calibration sources for many devices.</p>
+<p>Blank if there is only one calibrator at a time or, match calibrated
+channel (i.e. <strong>Z</strong>, <strong>N</strong> or <strong>E</strong>).</p>
+</div></blockquote>
+</section>
+<section id="pressure">
+<h3>Pressure<a class="headerlink" href="#pressure" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>A barometer, microbarometer, or other gauge that measures pressure.
+Used to measure atmospheric, water, and any other pressure.  This
+includes infrasonic and hydrophone measurements.</p>
+<p><em>Source Code</em></p>
+<p><strong>D</strong></p>
+<p><em>Subsource Code</em></p>
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>O</strong></p></td>
+<td><p>Outside</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>I</strong></p></td>
+<td><p>Inside</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p>Down hole</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>F</strong></p></td>
+<td><p>Infrasound</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>G</strong></p></td>
+<td><p>Deep sea differential pressure gauge</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>H</strong></p></td>
+<td><p>Hydrophone</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>U</strong></p></td>
+<td><p>Underground</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: For many pressure measurements Dip and Azimuth are not
+applicable.  If the signal will be used for seismological
+applications, set Dip to -90 if a positive pressure change gives a
+positive signal, 90 if a positive pressure change gives a negative
+signal. This will align polarities with the vertical seismometer
+channel for UPGOING waves.</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">Pa</span></code> (Pascal)</p>
+</div></blockquote>
+</section>
+<section id="electronic-test-point">
+<h3>Electronic Test Point<a class="headerlink" href="#electronic-test-point" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Used to monitor circuitry inside recording system, local power or
+seismometer. Usually for power supply voltages, or line voltages.</p>
+<p><em>Source Code</em></p>
+<p><strong>E</strong></p>
+<p><em>Subsource Code</em></p>
+<p>Designate as desired, make mnemonic as possible, use numbers for test
+points, etc.</p>
+<p>Dip/Azimuth: Not applicable</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">V</span></code> (Volt), <code class="docutils literal notranslate"><span class="pre">A</span></code> (Ampere), <code class="docutils literal notranslate"><span class="pre">Hz</span></code> (Hertz), etc.</p>
+</div></blockquote>
+</section>
+<section id="magnetometer">
+<h3>Magnetometer<a class="headerlink" href="#magnetometer" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures the magnetic field at the sensor location. They measure
+the part of the field vector that is aligned with the measurement
+coil. Many magnetometers are three axis. The instrument will
+typically be oriented to local magnetic north. The dip and azimuth
+should describe this in terms of the geographic north.</p>
+<p>Example: Assuming magnetic north is 13 degrees east of north at the
+recording site, if the magnetometer is pointed to magnetic north, the
+azimuth would be + 103 for the E channel. Some magnetometers do not
+record any vector quantity associated with the signal, but record the
+total intensity. So, these would not have any dip or azimuth.</p>
+<p><em>Source Code</em></p>
+<p><strong>F</strong></p>
+<p><em>Subsource Code</em></p>
+<p><strong>Z</strong>, <strong>N</strong>, <strong>E</strong> - Magnetic</p>
+<p>Dip/Azimuth: Not applicable</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">T</span></code> (Tesla)</p>
+</div></blockquote>
+</section>
+<section id="humidity">
+<h3>Humidity<a class="headerlink" href="#humidity" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Absolute/relative measurements of humidity. Temperature recordings
+may also be needed for meaningful results.</p>
+<p><em>Source Code</em></p>
+<p><strong>I</strong></p>
+<p><em>Subsource Code</em></p>
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>O</strong></p></td>
+<td><p>Outside environment</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>I</strong></p></td>
+<td><p>Inside building</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p>Down hole</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong></p></td>
+<td><p>Cabinet sources</p></td>
+</tr>
+<tr class="row-odd"><td><p>–</p></td>
+<td><p>All other letters for mnemonic source types.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Not applicable</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">%</span></code> (Percent)</p>
+</div></blockquote>
+</section>
+<section id="rotational-sensor">
+<h3>Rotational Sensor<a class="headerlink" href="#rotational-sensor" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures solid-body rotations about an axis, commonly given in
+“displacement” (radians), velocity (radians/second) or acceleration
+(radians/second**2).</p>
+<p><em>Source Code</em></p>
+<p><strong>J</strong> - Rotation rate sensor</p>
+<p><em>Subsource Code</em> - See <a class="reference internal" href="#geographic-orientation"><span class="std std-ref">Geographic orientation codes</span></a> for more details.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>N</strong>, <strong>E</strong>, <strong>Z</strong></p></td>
+<td><p>Traditional orientations of North (N), East (E), and Up (Z)</p>
+<p><em>When within 5 degrees of true directions</em></p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong>, <strong>Z</strong></p></td>
+<td><p>Orthogonal components, nontraditional horizontals</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>1</strong>, <strong>2</strong>, <strong>3</strong></p></td>
+<td><p>Orthogonal components, nontraditional orientations</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>T</strong>, <strong>R</strong></p></td>
+<td><p>For rotated components or beams (Transverse, Radial)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>A</strong>, <strong>B</strong>, <strong>C</strong></p></td>
+<td><p>Triaxial (Along the edges of a cube turned up on a corner)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>U</strong>, <strong>V</strong>, <strong>W</strong></p></td>
+<td><p>Optional components, also used for raw triaxial output</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Axis about which rotation is measured following
+right-handed rule.</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">rad</span></code>, <code class="docutils literal notranslate"><span class="pre">rad/s</span></code>, <code class="docutils literal notranslate"><span class="pre">rad/s**2</span></code> – following right-handed rule</p>
+</div></blockquote>
+</section>
+<section id="temperature">
+<h3>Temperature<a class="headerlink" href="#temperature" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measurement of the temperature at some location. Typically used for
+measuring:</p>
+<ol class="arabic simple">
+<li><p>Weather</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Outside temperature</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>State of Health</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Inside recording building</p></li>
+<li><p>Down hole</p></li>
+<li><p>Inside electronics</p></li>
+</ul>
+</div></blockquote>
+<p><em>Source Code</em></p>
+<p><strong>K</strong></p>
+<p><em>Subsource Code</em></p>
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>O</strong></p></td>
+<td><p>Outside environment</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>I</strong></p></td>
+<td><p>Inside building</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p>Down hole</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong></p></td>
+<td><p>Cabinet sources</p></td>
+</tr>
+<tr class="row-odd"><td><p>–</p></td>
+<td><p>All other letters for mnemonic source types.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">degC</span></code>, <code class="docutils literal notranslate"><span class="pre">°C</span></code>, <code class="docutils literal notranslate"><span class="pre">K</span></code></p>
+</div></blockquote>
+</section>
+<section id="water-current">
+<h3>Water Current<a class="headerlink" href="#water-current" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measurement of the velocity of water in a given direction. The
+measurement may be at depth, within a borehole or a variety of other
+locations.</p>
+<p><em>Source Code</em></p>
+<p><strong>O</strong></p>
+<p><em>Subsource Code</em></p>
+<p>None defined</p>
+<p>Dip/Azimuth: Along current direction</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m/s</span></code> (meter/second)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The special, administrative channel codes of <strong>L_O_G</strong> and
+<strong>S_O_H</strong> (both deprecated) do not denote water current and should be
+avoided when using the “O” Source Code.</p>
+</div>
+</div></blockquote>
+</section>
+<section id="gravimeter">
+<h3>Gravimeter<a class="headerlink" href="#gravimeter" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measurement of a gravitational field.</p>
+<p><em>Source Code</em></p>
+<p><strong>G</strong> - Gravitaional sensor</p>
+<p><em>Subsource Code</em></p>
+<p><strong>Z</strong> - Traditionally
+<strong>1</strong> - Unknown, or not vertical**</p>
+<p><em>Note</em>: historically some channels from accelerometers have used a
+instrumentation code of <strong>G</strong>. As of August 2000 the FDSN defined
+the use of this code as limited to gravity.</p>
+<p>Dip/Azimuth: Gravity field Vector</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m/s**2</span></code></p>
+</div></blockquote>
+</section>
+<section id="electric-potential">
+<h3>Electric Potential<a class="headerlink" href="#electric-potential" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures the Electric Potential between two points. This is normally
+done using a high impedance voltmeter connected to two electrodes
+driven into the ground. In the case of magnetotelleuric work, this is
+one parameter that must be measured.</p>
+<p><em>Source Code</em></p>
+<p><strong>Q</strong></p>
+<p><em>Subsource Code</em></p>
+<p>None defined</p>
+<p>Dip/Azimuth: Not applicable</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">V</span></code> (Volt)</p>
+</div></blockquote>
+</section>
+<section id="rainfall">
+<h3>Rainfall<a class="headerlink" href="#rainfall" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures total rainfall, or an amount per sampling interval</p>
+<p><em>Source Code</em></p>
+<p><strong>R</strong></p>
+<p><em>Subsource Code</em></p>
+<p>None defined</p>
+<p>Dip/Azimuth: Not applicable</p>
+</div></blockquote>
+</section>
+<section id="linear-strain">
+<h3>Linear Strain<a class="headerlink" href="#linear-strain" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Dip/Azimuth are the line of the movement being measured. Positive
+values are obtained when stress/distance increases and negative when
+they decrease.</p>
+<p><em>Source Code</em></p>
+<p><strong>S</strong></p>
+<p><em>Subsource Code</em> - See <a class="reference internal" href="#geographic-orientation"><span class="std std-ref">Geographic orientation codes</span></a> for more details.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>N</strong>, <strong>E</strong>, <strong>Z</strong></p></td>
+<td><p>Traditional orientations of North (N), East (E), and Up (Z)</p>
+<p><em>When within 5 degrees of true directions</em></p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>1</strong>, <strong>2</strong>, <strong>3</strong></p></td>
+<td><p>Nontraditional orientations</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Along axis of measurement</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m/m</span></code> (meter per meter)</p>
+</div></blockquote>
+</section>
+<section id="tide">
+<h3>Tide<a class="headerlink" href="#tide" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measurement of depth of water at monitoring site. Not to be confused
+with lunar tidal filters or gravimeter output.</p>
+<p><em>Source Code</em></p>
+<p><strong>T</strong></p>
+<p><em>Subsource Code</em></p>
+<p><strong>Z</strong> - Always vertical</p>
+<p>Dip/Azimuth: Always vertical</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m</span></code> (meter) - Relative to sea level or local ocean depth</p>
+</div></blockquote>
+</section>
+<section id="bolometer">
+<h3>Bolometer<a class="headerlink" href="#bolometer" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Infrared instrument used to evaluate average cloud cover. Used in
+astronomy to determine observability of the sky.</p>
+<p><em>Source Code</em></p>
+<p><strong>U</strong></p>
+<p><em>Subsource Code</em></p>
+<p>None defined</p>
+<p>Dip/Azimuth: Not applicable</p>
+</div></blockquote>
+</section>
+<section id="volumetric-strain">
+<h3>Volumetric Strain<a class="headerlink" href="#volumetric-strain" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p><em>Source Code</em></p>
+<p><strong>V</strong></p>
+<p><em>Subsource Code</em></p>
+<p>None defined</p>
+<p>Dip/Azimuth: Not applicable</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m**3/m**3</span></code></p>
+</div></blockquote>
+</section>
+<section id="wind">
+<h3>Wind<a class="headerlink" href="#wind" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Measures the wind vector or velocity. Normal notion of dip and
+azimuth does not apply.</p>
+<p><em>Source Code</em></p>
+<p><strong>W</strong></p>
+<p><em>Subsource Code</em></p>
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>S</strong></p></td>
+<td><p>Windspeed</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>D</strong></p></td>
+<td><p>Wind direction vector, relative to geographic north</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>H</strong></p></td>
+<td><p>Horizontal wind speed</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Z</strong></p></td>
+<td><p>Vertical wind speed</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Not applicable</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m/s</span></code></p>
+</div></blockquote>
+</section>
+<section id="derived-or-generated-channel">
+<h3>Derived or generated channel<a class="headerlink" href="#derived-or-generated-channel" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>Time series derived from observational data or entirely generated by
+a computer.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This code is deprecated.  If no other <em>Source code</em> is
+applicable, a new code should be requested and allocated by the
+FDSN.</p>
+</div>
+<p><em>Source Code</em></p>
+<p><strong>X</strong></p>
+<p><em>Subsource Code</em></p>
+<p>Similar to the observable data that was modified or the observable
+equivalent for generated time series (synthetics). See subsource codes
+for the corresponding observed channel.</p>
+<p><strong>Further Usage (DEPRECATED)</strong></p>
+<p>In order to document the provenance of the data, information must be
+available in the metadata for this channel that documents the
+algorithms, processes, or systems that modified or generated the time
+series. A channel comment, providing a Uniform Resource Locator
+(URL), must be included in the metadata. The information available at
+the URL must identify the processes that were applied to modify or
+generate the time series. This information must reference the FDSN
+web site (<a class="reference external" href="http://www.fdsn.org/x-instrument/">http://www.fdsn.org/x-instrument/</a>).</p>
+</div></blockquote>
+</section>
+<section id="non-specific-instruments">
+<h3>Non-specific instruments<a class="headerlink" href="#non-specific-instruments" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>For instruments not specifically covered by an existing Source Code
+the Y Source Code can be used.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This code is deprecated.  If no other <em>Source code</em> is
+applicable, a new code should be requested and allocated by the
+FDSN.</p>
+</div>
+<p><em>Source Code</em></p>
+<p><strong>Y</strong></p>
+<p><em>Subsource Code</em></p>
+<p>Instrument specific.</p>
+<p><strong>Further Usage (DEPRECATED)</strong></p>
+<p>In order to document the instrument type and provenance of the data,
+information must be available in the metadata for this channel that
+documents the instrument that was used to generate the time series. A
+channel comment, providing a short description of the instrument, the
+type of measurement it makes and a Uniform Resource Locator (URL)
+referencing the FDSN web site (<a class="reference external" href="http://www.fdsn.org/y-instrument">http://www.fdsn.org/y-instrument</a>) that
+fully describes the instrumentation.</p>
+</div></blockquote>
+</section>
+<section id="synthesized-beams">
+<h3>Synthesized Beams<a class="headerlink" href="#synthesized-beams" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>This is used when forming beams from individual elements of an array.</p>
+<p><em>Source Code</em></p>
+<p><strong>Z</strong></p>
+<p><em>Subsource Code</em></p>
+<table class="docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><strong>I</strong></p></td>
+<td><p>Incoherent beam</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong></p></td>
+<td><p>Coherent beam</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>F</strong></p></td>
+<td><p>FK beam</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>O</strong></p></td>
+<td><p>Origin beam</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p>Wind direction vector, relative to geographic north</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dip/Azimuth: Ground motion vector</p>
+<p>Signal Units: <code class="docutils literal notranslate"><span class="pre">m</span></code>, <code class="docutils literal notranslate"><span class="pre">m/s</span></code>, <code class="docutils literal notranslate"><span class="pre">m/s**2</span></code></p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="location-codes.html" class="btn btn-neutral float-left" title="Location codes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="changes.html" class="btn btn-neutral float-right" title="Changes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, International FDSN.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

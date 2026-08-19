@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.65.0 · **Fecha:** 2026-08-19
+**Versión del contrato:** 1.66.0 · **Fecha:** 2026-08-20
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -2429,6 +2429,37 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > que esta pasada no lee**, y escribirlos de memoria sería inventar los datos más
 > citables de la capa.
 
+**red-sismica** *(1.66)* (`dotacion`, puntos, verificado): `codigo` (✔) ·
+`fecha_instalacion` (✔) · `fecha_baja` (solo `historico`, y el esquema ata las
+dos cosas en los dos sentidos) · `elevacion_m` · **`canales[]`** (✔: los
+códigos de canal VERBATIM del nivel de canal del FDSN — los abiertos si la
+estación vive, todos los que tuvo si es histórica) · **`instrumentacion[]`**
+(✔: `velocimetro_banda_ancha` / `velocimetro_corto_periodo` / `acelerometro`)
+· `claves[]`
+
+> **Por qué `instrumentacion` no es criterio del atlas.** Los códigos de canal
+> son de tres letras y su significado lo fija la norma de identificadores de
+> la **propia FDSN** (archivada como fuente): la primera letra es la banda
+> (H/B banda ancha, E/S corto periodo) y la segunda el instrumento (H
+> sismómetro de alta ganancia, N acelerómetro). Leer «HN→acelerómetro» es
+> traducir un código por el diccionario de quien lo emite — como leer el
+> catálogo de la DR en `ferrocarril-nodos` — y no convertir una medida, que es
+> lo que degradaría a `parcial` (la doctrina de las conversiones de
+> `red-geodesica`). El extractor **muere** ante una letra que el mapa no
+> cubra: una banda nueva la lee una persona con la norma delante, no un
+> `else`.
+>
+> **La comprobación que vale oro, ahora en el extractor:** las estaciones con
+> canal ABIERTO deben ser exactamente las que no tienen fecha de baja — hoy
+> 227 de 227, cruzadas las dos consultas del servicio. Si un día divergen, el
+> extractor se planta.
+>
+> **Dos prohibiciones con nombre:** `magnitud_maxima` (qué terremoto registra
+> una estación depende de la distancia y del ruido, no solo del aparato:
+> cualquier cifra sería un cálculo del atlas vestido de dato) y
+> `sensor_modelo` (la descripción del servicio es una cadena pegada por
+> épocas, no un modelo: va verbatim en la clave, no como campo).
+
 *(Capas futuras entran por §8 con su apartado aquí y su esquema en
 `pipeline/esquemas/`.)*
 
@@ -2539,6 +2570,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.66.0** | 2026-08-20 | **Aditiva: `red-sismica` gana su segunda pasada y su esquema §10 — el primer hueco declarado de la capa, cerrado con el mismo servicio que lo declaró.** La ficha de PROCEDENCIA decía desde la `.64` que «qué mide cada estación» era otra consulta y otro volumen; la consulta se hizo: el nivel de canal del FDSN del IGN (2.328 épocas) da a las 303 estaciones sus `canales[]` (verbatim) y su `instrumentacion[]`, leída por la norma de identificadores de la propia FDSN, archivada como fuente — traducción por el diccionario del emisor, no conversión (por eso va `confirmado` donde el XYZ→GRS80 de `red-geodesica` va `parcial`). Cruce que sella las dos consultas: canal abierto ⟺ estación sin baja, 227 de 227, y el extractor se planta si divergen. Nacen dos prohibiciones (`magnitud_maxima`, `sensor_modelo`) y el candado histórica⟺`fecha_baja` en los dos sentidos. **No nace ninguna regla `R*`.** |
 | **1.65.0** | 2026-08-19 | **Aditiva: nace `ferrocarril-nodos`, la capa 40 — y con ella el patrón del CRUCE DE DOS PRIMARIAS.** Los 2.682 nodos con nombre de la IDE de Adif llevaban desde la release `.23` archivados y declarados como hueco («piden criterio propio»). El criterio no podía salir del propio WFS: sus atributos INSPIRE están rellenos con constantes — `formOfNode` dice «railway stop» y `numberOfPlatforms` dice CERO en los 2.682, hasta en Madrid-Atocha, así que un campo relleno con una constante queda PROHIBIDO por su nombre (`n_andenes`): no es un dato, es un relleno. Clasifica el cruce con la **Relación de instalaciones de servicio de la Declaración sobre la Red 2026** (art. 32 de la Ley 38/2015 — primaria por la doctrina 1.16), por nombre y con tres reglas que lo mantienen honesto: un homónimo no se casa (va a `sin_clasificar` con su nota, salvo cuando hay tantas entradas como nodos y todas dicen lo mismo — entonces lo afirmado vale para ambos y lo que no se elige es el emparejamiento); las grafías que separan las dos fuentes se resolvieron **una a una con su motivo** (31 equivalencias: erdia=centro, B/V vasca, valenciano/castellano, abreviaturas, y coordenadas contra la provincia del catálogo para las dudosas — nunca un emparejador difuso); y lo que no casa no se inventa — BIF., CAMBIADOR y AGUJA se clasifican por lo que su propio nombre declara, y el resto queda como `sin_servicio_catalogado`, un negativo ACOTADO con precisión: el cruce solo cubre las filas de titularidad Adif/Adif AV, porque las secciones de cargaderos privados, talleres y puertos llevan otro titular y nombran ubicaciones, no identidades. `tipo_dr` publica el literal del catálogo y `categoria_estacion_dr` la categoría del canon (art. 98.5). **No nace ninguna regla `R*`.** |
 | **1.64.0** | 2026-08-19 | **Aditiva: la segunda pasada del ferrocarril, la que las prohibiciones del esquema estaban esperando.** La capa nació (release `.23`) prohibiendo por su nombre lo más citable —ancho, electrificación, vías, velocidad— con el motivo escrito: «existen en el servicio, en capas que esta pasada no lee», y escribirlos de memoria sería inventarlos. Esta pasada los lee: las capas de propiedades del mismo WFS INSPIRE de Adif, un objeto por tramo con el id del tramo, 1.689 en cada una — exactamente los tramos archivados, misma edición 2026/01 (se comprueba). Una de ellas, `NominalTrackGauge`, ni siquiera sale en el `GetCapabilities`: se descubrió pidiéndola por su nombre. Entran cinco campos con su REGLA DE AGREGACIÓN tramo→línea declarada, porque ahí es donde una capa así puede mentir: `ancho_via_mm` (solo si ningún tramo disiente — 315 de 326, cero mixtas; en milímetros y con la unidad en el nombre porque la fuente escribe `uom="m"` para 1668.0, errata anotada), `electrificacion` total/parcial/ninguna (no booleano A PROPÓSITO: 29 líneas están a medias y un true/false las obligaría a mentir) con `tramos_electrificados` solo en las parciales (la fracción la divide quien la quiera — R7), `n_vias_max` (máximo y no «el» número: 59 líneas mezclan vía única y doble; el CERO de las seis «FUERA DE SERVICIO» se publica tal cual), `velocidad_diseno_kmh` (uniforme en las 326 y el enriquecedor SE PARA si una edición lo rompe; el cero existe: cinco ramales lo declaran) y `uso` mixto/mercancías/viajeros solo cuando es uniforme (223) — la fuente escribe «pasagens» por `passengers`, errata leída como viajeros. **Y una prohibición se queda con el motivo corregido:** `alta_velocidad` esperaba a que se leyera `RailwayType`, se leyó, y dice `train` en los 1.689 tramos — NO distingue la alta velocidad; el enriquecedor comprueba en cada corrida que siga siendo así, y la etiqueta la tendrá que poner un acto, no este atlas deduciéndola de los 300 km/h que ya están a la vista. **No nace ninguna regla `R*`.** |
 | **1.63.0** | 2026-08-19 | **Correctiva de lectura, y la señaló Arturo mirando el mapa.** Las siete polilíneas de Gibraltar del fichero del UKHO entraron en la 1.62/.94 como UN registro con UNA simbología, y el mapa las leía como **dos límites exteriores distintos**: el arco casi cerrado del mar territorial y, con el mismo trazo, la cadena de medianas que se prolonga hacia levante. La auditoría confirmó que la geometría es literalmente la del UKHO —cada parte casa punto por punto con su feature, sin costuras: las contigüidades a 0,0° las publica el propio UKHO, que trocea UNA mediana continua en tres features— así que el problema era de representación, y la representación en esta casa se gobierna por CATEGORÍA. El campo `Feature` británico distingue tres clases y el atlas pasa a respetarlas con **un registro por clase**: `aguas-gibraltar` queda solo con el mar territorial reclamado (2.334 puntos, `limite_declarado`); nace **`linea_media_sin_acuerdo`** para las tres medianas «in absence of agreed maritime boundary» — familia visual del `sin_delimitar` y en trazo **continuo**, porque el discontinuo de esta casa significa «no verificado» y estas coordenadas están verificadas: lo que no está es acordado —; y nace **`linea_cierre`** como categoría técnica para las tres bocanas del puerto, que son sistema de líneas de base y no límite exterior — vestirlas de límite las haría mentir, y su visibilidad solo a gran zoom no necesita maquinaria: miden 100–200 metros. De paso, el reparto regala el hover que faltaba: tres registros son tres tooltips, y cada tramo dice lo que es. Las tres fichas conservan las cuatro afirmaciones de la .94 (geometría del UKHO; España no la reconoce; sin delimitación acordada; sin geometría española porque España no publica coordenadas). Pruebas **71 → 71**. **No nace ninguna regla `R*`.** |

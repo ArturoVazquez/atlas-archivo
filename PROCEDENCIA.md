@@ -1452,21 +1452,31 @@ da de baja en 2026 (E1601, E1602, E1603 y EBAJ). Manda el servicio, que es lo
 que el IGN mantiene para la federación internacional. Aquí, al contrario que en
 `red-geodesica`, **no hay lío de datums**: el formato FDSN publica en WGS84, que
 es lo que pide RFC 7946.
-**Huecos** · Los dos son de la **capa**, no de cada registro, y por eso están
-aquí y no en las 303 fichas —donde las degradarían a `parcial` por algo que no
-dicen—. Primero: **qué mide cada estación**. La consulta a nivel de estación no
-devuelve los canales, así que la capa no distingue banda ancha, corto periodo o
-acelerógrafo; el servicio lo publica a nivel de canal, que es otra consulta y
-otro volumen. Segundo: **la red `ES` no es toda la sismología del IGN**. Las
-antárticas (Decepción, Livingston) y algunas volcánicas que el portal sí lista
-**no están en esta red** — van con otro código, y ninguna estación de `ES` cae
-en el hemisferio sur.
+**Qué se añadió** *(2026-08-20, release `.104`, contrato 1.66.0)* · **La
+segunda pasada: qué mide cada estación.** El hueco decía «otra consulta y otro
+volumen», y la consulta se hizo — el nivel de canal del mismo servicio, 2.328
+épocas. Cada ficha gana `canales[]` (los códigos verbatim: los abiertos si
+vive, todos los que tuvo si es histórica) e `instrumentacion[]`, leída por la
+**norma de identificadores de la propia FDSN** (archivada): H/B banda ancha,
+E/S corto periodo en la primera letra; H sismómetro, N acelerómetro en la
+segunda. El reparto: 180 estaciones con velocímetro de banda ancha, 98 con
+acelerómetro, 48 de corto periodo. **El cruce que sella las dos consultas**:
+las estaciones con canal abierto son exactamente las 227 sin fecha de baja —
+ni una más ni una menos — y el extractor se planta si un día divergen. Las
+cadenas de instrumento del servicio («NmxTrillium40s…») van verbatim en la
+clave de cada ficha, no como campo: son concatenaciones por épocas, no
+modelos.
+**Huecos** · Queda el de la capa, que no es de ningún registro: **la red `ES`
+no es toda la sismología del IGN**. Las antárticas (Decepción, Livingston) y
+algunas volcánicas que el portal sí lista **no están en esta red** — van con
+otro código, y ninguna estación de `ES` cae en el hemisferio sur.
 **Ámbito** · Va como `mundo` por **una sola estación**: `VPORT`, en Vila do
 Porto (Santa María, Azores), Portugal. El ámbito describe la cobertura, no la
 mayoría.
-**Archivado** · 2 ficheros (la consulta al FDSN y el aviso legal que sostiene la
-licencia).
-**El resto** · CHANGELOG `datos-v2026.08.64` · §10
+**Archivado** · 4 ficheros (las dos consultas al FDSN —estación y canal—, el
+aviso legal que sostiene la licencia, y la norma de identificadores de la
+FDSN).
+**El resto** · CHANGELOG `datos-v2026.08.64` y `.104` · §10
 
 ## red-carreteras
 
