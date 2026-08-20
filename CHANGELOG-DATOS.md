@@ -32,6 +32,60 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.105 — el barrido de Costas: PENCAN-X toca tierra y Santander gana su otorgamiento
+
+La primera de las cuatro investigaciones que el relevo del 2026-08-20 dejó
+encargadas — el barrido de otorgamientos e informaciones públicas de DPMT
+para cables — pasada por sus frentes. Dos verificados y en la capa; el estado
+de los demás, escrito en el relevo para la segunda pasada. **El contrato no
+se mueve: sigue en 1.66.0.**
+
+### Añadido
+
+- **`cables-submarinos:pencan-x-rota`** — el duodécimo aterrizaje, y era un
+  asunto de la agenda: la información pública andaluza del **cable PENCAN-X
+  entre Rota y Las Palmas de Gran Canaria** (BOJA n.º 80, de 28-4-2026;
+  expediente CNC02-26-CA-0002; Telefónica de España, S.A.U.). El acto
+  **bautiza el sistema y nombra los dos extremos en su propio título** — al
+  contrario que los expedientes de Santander y Sagunto — y sitúa solo por
+  término municipal: geometría en `municipio` hasta que un acto nombre el
+  punto. Los dos reales decretos de su subvención (RD 1124/2024 y RD
+  268/2026), archivados en la `.33` como comprobados-y-fuera porque una
+  subvención no sitúa nada, entran como fuentes de lo que sí dicen: por qué
+  existe el cable, según el Estado. El lado canario (la prensa dice Las
+  Canteras) sigue sin acto en el BOC, y así lo declara una clave.
+
+### Corregido
+
+- **`cables-submarinos:virgen-del-mar-santander`** · `fase` — `tramitacion` →
+  **`desarrollo`**: la concesión se otorgó por **Orden Ministerial de 30 de
+  julio de 2024** (BOE n.º 208, de 28-8-2024) — 26.281 m², 10 años
+  prorrogables hasta 30, canon de 6,92 €/m²/año. El otorgamiento **tampoco
+  bautiza el sistema** ni nombra el otro extremo, así que el hueco declarado
+  sigue en pie y la pista de prensa («Anjana») sigue sin publicarse. La fase
+  sube a `desarrollo` y no a `produccion` a conciencia: la concesión autoriza
+  la instalación, y que el cable opere no lo dice ningún acto.
+
+### La ronda que no movió nada, dicha en voz alta
+
+- **Medusa** (AFR-IX; Atlanterra y Torreguadiaro): los buscadores refieren una
+  información pública del BOJA que el barrido no consiguió abrir como acto —
+  queda encargada la vía del buscador propio de eBOJA y de la aplicación de
+  resoluciones DPMT de la Junta.
+- **2Africa / Barcelona CLS** (Sant Adrià de Besòs): la concesión la tramitó
+  la Generalitat y el DOGC no la suelta por buscador general.
+- **Columbus-III y Atlantis-2** (Conil), **Tetuán–Estepona**,
+  **Almería–Melilla**, **Baleares** y **Ceuta y Melilla**: sin acto localizado
+  en esta pasada. Todo el detalle, en el relevo de `AGENDA.md`.
+
+### Huecos
+
+- El sistema del cable de Santander y el de Sagunto siguen sin nombre de acto.
+- El amarre canario de PENCAN-X, sin acto en el BOC.
+- Los de siempre en la capa.
+
+---
+
 ## datos-v2026.08.104 — qué mide cada estación: la red sísmica gana sus canales
 
 El primer hueco declarado de `red-sismica` decía, desde su nacimiento en la

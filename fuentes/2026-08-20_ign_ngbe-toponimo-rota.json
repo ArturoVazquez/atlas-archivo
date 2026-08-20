@@ -1,0 +1,110 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"Municipio",
+                "etiqueta":"Rota",
+                "fecha":"2025-07-06",
+                "codigo_ngbe":"1.3",
+                "fuente":"MITMA.IGN.NGMEP"
+            },
+            "id":"2706713",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -6.358020846,
+                    36.61695048
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"Capital de municipio",
+                "etiqueta":"Rota",
+                "fecha":"2025-07-06",
+                "codigo_ngbe":"2.1.3",
+                "fuente":"MITMA.IGN.NGMEP"
+            },
+            "id":"2810513",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -6.358020846,
+                    36.61695048
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"Entidad singular",
+                "etiqueta":"Rota",
+                "fecha":"2025-07-06",
+                "codigo_ngbe":"2.1.9",
+                "fuente":"MITMA.IGN.NGMEP"
+            },
+            "id":"2821386",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -6.358020846,
+                    36.61695048
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"V\u00e9rtice Geod\u00e9sico",
+                "etiqueta":"Rota",
+                "fecha":"2025-07-06",
+                "codigo_ngbe":"2.3.1",
+                "fuente":"MITMA.IGN.Red Geod\u00e9sica"
+            },
+            "id":"3300704",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -6.358020846,
+                    36.61695048
+                ]
+            }
+        }
+    ],
+    "numberMatched":4,
+    "numberReturned":4,
+    "links":[
+        {
+            "type":"application/geo+json",
+            "rel":"self",
+            "title":"This document as GeoJSON",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=json&limit=10&etiqueta=Rota"
+        },
+        {
+            "rel":"alternate",
+            "type":"application/ld+json",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=10&etiqueta=Rota"
+        },
+        {
+            "type":"text/html",
+            "rel":"alternate",
+            "title":"This document as HTML",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=html&limit=10&etiqueta=Rota"
+        },
+        {
+            "type":"application/json",
+            "title":"GN Lugar nombrado",
+            "rel":"collection",
+            "href":"https://api-features.ign.es/collections/namedplace"
+        }
+    ],
+    "timeStamp":"2026-08-20T21:59:44.225289Z"
+}

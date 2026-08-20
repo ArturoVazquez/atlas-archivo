@@ -984,8 +984,22 @@ conecta, así que —a diferencia de Santander— no hay hueco: hay un cable sin
 nombre comercial. El anuncio se archivó en sus dos formas oficiales (facsímil
 PDF y texto HTML del BOC), porque el PDF esconde un tramo de texto a la
 extracción —una fuente incrustada sin tabla ToUnicode— y el HTML lo completa.
-**Archivado** · 20 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
-`.33`, `.98` y `.103` · §10
+**Qué se añadió** *(2026-08-20, release `.105`)* · Dos piezas del barrido de
+Costas que encargó el relevo. **El otorgamiento de Santander**: la concesión
+del cable de la Virgen del Mar se otorgó por Orden Ministerial de 30-7-2024
+(BOE n.º 208) — 26.281 m², 10 años prorrogables a 30 — y el acto TAMPOCO
+bautiza el sistema, así que la pista «Anjana» sigue siendo prensa y el hueco
+declarado sigue en pie; la fase sube a `desarrollo`, no a `produccion`, porque
+nada acredita que el cable opere. **Y el duodécimo aterrizaje: PENCAN-X, lado
+Rota** — la información pública andaluza (BOJA n.º 80, de 28-4-2026, exp.
+CNC02-26-CA-0002) nombra el sistema y los dos extremos en su propio título y
+sitúa solo por término municipal; los dos reales decretos de su subvención,
+archivados en la `.33` como comprobados-y-fuera porque una subvención no sitúa
+nada, entran ahora a decir lo que sí dicen. El BOJA se archivó en sus dos
+formas (facsímil PDF y texto web): el PDF esconde su texto a la extracción,
+como el del BOC.
+**Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
+`.33`, `.98`, `.103` y `.105` · §10
 
 ## centros-datos
 
@@ -1130,7 +1144,18 @@ diseño están publicados a la vista; la etiqueta la pondrá un acto, no este at
 `notApplicable` — que es literalmente la respuesta correcta en un cambiador.
 Cinco ramales (Maliaño-Raos, Llovio-Ribadesella…) declaran **0 km/h** de diseño
 y se publican tal cual: corregirlos a un número «razonable» sería inventar.
-**Huecos** · 29 líneas de 355 sin ningún tramo que las declare. Los 2.682 nodos
+**Huecos** · Las 29 líneas de 355 sin ningún tramo **quedaron explicadas el
+2026-08-20, y el hueco es de la fuente**: las 29 —y solo ellas, ninguna de las
+326— llevan una «C» como tercer carácter del código (`11C10`, `13C30`…), una
+familia aparte del inventario cuyos nombres leen como corredores y conexiones
+de alta velocidad («MADRID - VALLADOLID - F. FRANCESA», «RAMAL CONEXIÓN
+ALICANTE-MURCIA», «Conexión Ancho Estándar Corredor Mediterráneo»…), y Adif las
+publica con la lista de tramos **vacía**: su `net:link` va sin contenido y los
+1.689 tramos del servicio pertenecen todos a las otras 326. Una llega a duplicar
+el nombre exacto de una línea dibujada (PALENCIA-SANTANDER). El servicio vivo se
+volvió a preguntar ese día y sigue sirviendo 355 líneas y 1.689 tramos: **no hay
+geometría que incorporar sin inventarla** — si una edición futura les diera
+tramos, el cruce por prefijo los encontraría. Los 2.682 nodos
 que esta ficha declaraba pendientes de criterio **ya no son hueco**: viven en su
 propia capa, `ferrocarril-nodos`, clasificados con la Declaración sobre la Red
 (release `.97`).
@@ -1466,10 +1491,26 @@ ni una más ni una menos — y el extractor se planta si un día divergen. Las
 cadenas de instrumento del servicio («NmxTrillium40s…») van verbatim en la
 clave de cada ficha, no como campo: son concatenaciones por épocas, no
 modelos.
-**Huecos** · Queda el de la capa, que no es de ningún registro: **la red `ES`
-no es toda la sismología del IGN**. Las antárticas (Decepción, Livingston) y
-algunas volcánicas que el portal sí lista **no están en esta red** — van con
-otro código, y ninguna estación de `ES` cae en el hemisferio sur.
+**El perímetro, averiguado el 2026-08-20** · El hueco decía «la red `ES` no es
+toda la sismología del IGN» sin poder decir qué más había. Ya se puede, y son
+cuatro hechos: (1) **el nodo FDSN del IGN sirve exactamente DOS redes** — la
+`ES` (303 estaciones, permanente) y la **`4L`**, «Tenerife-Gran Canaria Seismic
+Network (GUANCHE_INTEGRAL)», **13 estaciones en Gran Canaria, todas dadas de
+baja** entre diciembre de 2024 y junio de 2025; su DOI (`10.7914/k0b6-a232`) la
+declara **campaña temporal** de investigación, firmada por sismólogos del IGN
+**y del CSIC**, no red de vigilancia. (2) **La vigilancia volcánica SÍ está en
+la capa**: `ES` tiene **80 estaciones en Canarias** —La Palma, Tenerife,
+Lanzarote, La Gomera, El Hierro—, así que no es cierto que las volcánicas del
+IGN vayan por otro lado. (3) **Las antárticas nunca fueron del IGN**: las
+estaciones de Decepción (`DCP`), Livingston (`LVN`) y Cierva Cove (`CCV`) son
+de la red **`B6`, «Bransfield Strait Seismic Network»**, sirvieron de 2008 a
+**2015** y las sirve EarthScope/IRIS, no el nodo español — antes hubo `XB`
+(`DECP`, 1997-1999). (4) Y la que sí es permanente y NO es del IGN es la
+**`C7`, «Red Sísmica Canaria»** (2016-), de otro operador.
+**Huecos** · El de la capa, ahora con nombre y apellidos: **la `4L` queda
+fuera** porque el atlas publica la red de vigilancia y esa es una campaña
+científica cerrada; se dice aquí para que conste que existe y que su dato es
+del mismo nodo. Ninguna estación de `ES` cae en el hemisferio sur.
 **Ámbito** · Va como `mundo` por **una sola estación**: `VPORT`, en Vila do
 Porto (Santa María, Azores), Portugal. El ámbito describe la cobertura, no la
 mayoría.
