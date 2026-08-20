@@ -32,6 +32,67 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.106 — la segunda tanda de sedes: la Antártida en cifra y la PSA en su desierto
+
+La investigación de sedes ICTS que el relevo dejó encargada, con sus ángulos
+nuevos — cuatro de los cinco, saldados. **El contrato no se mueve: sigue en
+1.66.0.**
+
+### Corregido
+
+- **`icts:baes`** — las bases antárticas pasan del trazo a mano alzada
+  (`ilustrativa`) a **multipunto `exacta`** con las coordenadas que **España
+  misma deposita en el sistema de intercambio de información del Tratado
+  Antártico (EIES)**: la Juan Carlos I en 62º 39´ 47´´ S, 60º 23´ 19.9´´ W
+  (Livingston, 1988, 51 plazas) y la Gabriel de Castilla en 62º 58´ 37.908´´ S,
+  60º 40´ 32.682´´ W (Decepción, 1990, 28 plazas). El hueco que pedía «las
+  coordenadas en cifra» se cierra con la fuente que las publica, y la ficha
+  sube a `confirmado`. El trazo había quedado a **343 m** de la Juan Carlos I —
+  y la clave lo deja dicho. La reescritura sexagesimal→decimal es de notación,
+  no de datum: por eso va `confirmado` donde el XYZ→GRS80 de `red-geodesica`
+  va `parcial`.
+- **`icts:psa`** — de Sevilla capital (a más de 300 km) a su desierto, en
+  `paraje`: el **convenio CIEMAT-DLR** (BOE n.º 149, de 23/6/2022) dice que la
+  Plataforma está «ubicada en el Desierto de Tabernas» y recita su condición
+  de ICTS. Con ese acto, la pista que la `.101` dejó anotada sin publicar —el
+  topónimo «Central Solar de Almería» del Nomenclátor, en Tabernas— entra como
+  **equivalencia declarada con sus motivos**: está dentro del desierto que el
+  convenio nombra, es la única instalación solar del Nomenclátor en él, y
+  «Solar de Almería» solo nombra una instalación en España.
+- **`icts:icar`** — de Murcia capital (a unos 35 km) a su puerto, en `paraje`:
+  el **convenio IEO-CARM del atún rojo** (BOE n.º 73, de 25/3/2008) sitúa la
+  instalación del IEO «en el término municipal del Puerto de Mazarrón» — el
+  acto es el propio proyecto sobre el que una década después se declaró la
+  ICTS.
+- **`icts:omicstech`** — no se mueve un metro y deja de ser convención: los
+  **estatutos del consorcio CNAG** (BOE n.º 10, de 12/1/2023) fijan su
+  domicilio en Barcelona con todas las señas (C/ Baldiri Reixac 4, Parque
+  Científico); la precisión sube de `autonomia` a `municipio` y la dirección
+  queda dicha, no geocodificada.
+- **El remiendo a la `.101`, de propina** — su captura NGBE de sedes **nunca
+  entró en las fichas**: el dedupe del enriquecedor comparaba solo por URL, y
+  todas las consultas al Nomenclátor la comparten, así que la captura quedó
+  huérfana en `fuentes/` y **Javalambre atribuía su coordenada a un archivo
+  que no contiene el Picón del Buitre**. El dedupe compara ahora URL y
+  archivo, y las cinco fichas de la `.101` citan la captura que de verdad las
+  sitúa.
+
+### La ronda que no movió nada, dicha en voz alta
+
+- **El LNF**: el TJ-II solo pisa el BOE en anuncios de contratación, y una
+  formalización da la sede del CONTRATANTE (Av. Complutense 40, Madrid) más
+  un NUTS de comunidad entera — sitúa al comprador, no al dispositivo, y con
+  eso no se publica nada. El intento queda contado en la agenda con las vías
+  aún no agotadas.
+
+### Huecos
+
+- La coordenada de los edificios de PSA, ICAR y las sedes de la `.101` sigue
+  sin acto que la dé: los huecos se estrechan, no se cierran.
+- El LNF sigue en `autonomia`, que es la verdad del Mapa.
+
+---
+
 ## datos-v2026.08.105 — el barrido de Costas: PENCAN-X toca tierra y Santander gana su otorgamiento
 
 La primera de las cuatro investigaciones que el relevo del 2026-08-20 dejó

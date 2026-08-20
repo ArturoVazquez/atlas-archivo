@@ -343,9 +343,13 @@ el acuerdo que aprueba el Mapa de ICTS 2025-2028, con el Anexo I de
 configuración (28 ICTS, 64 infraestructuras, tipología, titular y localización;
 DA 30.ª de la Ley 14/2011) · **Ministerio de Ciencia** (Campaña Antártica del
 Comité Polar) e **IGN** (presentación antártica), para las dos bases ·
+**Secretaría del Tratado Antártico**, sistema EIES: la información permanente
+que España deposita, con las coordenadas en cifra de sus dos bases ·
 **IGN**, Nomenclátor, para toda la geometría peninsular y canaria.
 **Licencia y qué obliga** · Documentos oficiales (Ley 37/2007); IGN, fórmula
-NGBE de la Orden FOM/2807/2015.
+NGBE de la Orden FOM/2807/2015; el EIES es el intercambio de información que
+los artículos III y VII del Tratado Antártico obligan a hacer público — se
+cita la fuente y la fecha, como con cualquier documento oficial.
 **Qué hay que saber** · **El Mapa sitúa por comunidad autónoma y nada más**: de
 ahí que la capa estrene la precisión `autonomia` y que solo haya `paraje` donde
 el Nomenclátor nombra la instalación (Roque de los Muchachos, Calar Alto,
@@ -364,7 +368,7 @@ las doce en el mismo punto de Madrid, que es lo que la fuente **no** dice:
 `rediris` es la única que se queda ahí, porque de ella sí dice «todas las
 comunidades autónomas». Los vértices siguen siendo capitales y no laboratorios.
 **Huecos** · Las de sede única sin topónimo declaran la ubicación de la
-instalación; las bases antárticas, sus coordenadas en cifra. **Canarias tiene
+instalación. **Canarias tiene
 dos capitales por estatuto** y la capa usa Santa Cruz de Tenerife: el Anexo I
 no dice la isla de sus nodos canarios, y elegirla por notoriedad sería el
 relleno que esta capa evita en todo lo demás.
@@ -381,16 +385,35 @@ da la sede con señas completas — estaba dibujado en Valladolid, a 110 km),
 rodeos y el pico es topónimo del Nomenclátor — estaba en Zaragoza, a 180 km.
 Los huecos no se cierran: se ESTRECHAN — la coordenada del edificio sigue sin
 acto que la dé, y los cuatro siguen `parcial`.
-**La pista que queda anotada** · Para la **PSA** el Nomenclátor trae una
-«Central Solar de Almería» (instalación abierta) en el desierto de Tabernas
-que casi seguro ES la Plataforma — pero identificarla exige un acto que sitúe
-la PSA en Tabernas y no se encontró: las licitaciones del CIEMAT dan NUTS de
-Madrid (la sede contratante) y el Estatuto no la nombra. LNF, OmicsTech e ICAR
-siguen igual: sin acto que las baje de la comunidad.
-**Archivado** · 11 ficheros (el acuerdo y su Anexo II de procedimiento, las dos
-páginas antárticas, dos consultas al NGBE —la de las instalaciones y la de las
-capitales autonómicas—, cuatro actos del BOE y la página de nodos de la RES).
-**El resto** · CHANGELOG `datos-v2026.08.84` · §10
+**Qué se corrigió** *(2026-08-21, release `.106`)* · **La segunda tanda: cuatro
+de los cinco que quedaban.** Las **bases antárticas** pasan de un trazo a mano
+alzada a las coordenadas que **España misma deposita en el EIES del Tratado
+Antártico** — multipunto `exacta` con las dos: la Juan Carlos I (Livingston,
+1988) y la Gabriel de Castilla (Decepción, 1990); el trazo había quedado a 343
+m de la primera, y la reescritura sexagesimal→decimal es de notación, no de
+datum (por eso va `confirmado` donde el XYZ→GRS80 de red-geodesica va
+`parcial`). La **PSA** baja de Sevilla capital (a más de 300 km) a su desierto:
+el convenio CIEMAT-DLR del BOE la dice «ubicada en el Desierto de Tabernas», y
+con ese acto la pista que la `.101` dejó anotada —el topónimo «Central Solar
+de Almería» del Nomenclátor— se publica como equivalencia declarada, con sus
+motivos en la clave. **ICAR** baja de Murcia capital a su puerto: el convenio
+IEO-CARM del atún rojo (BOE 25/3/2008) sitúa la instalación «en el término
+municipal del Puerto de Mazarrón». Y **OmicsTech** no se mueve un metro pero
+deja de ser convención: los estatutos del consorcio CNAG (BOE 12/1/2023) fijan
+el domicilio en Barcelona con todas las señas. **De propina, un remiendo a la
+.101**: su captura NGBE de sedes nunca entró en las fichas —el dedupe del
+enriquecedor comparaba solo por URL y todas las consultas al Nomenclátor la
+comparten— y Javalambre atribuía su coordenada a un archivo que no contiene el
+Picón del Buitre; el dedupe compara ahora URL y archivo, y las cinco fichas
+citan la captura que de verdad las sitúa.
+**Lo que queda, con el intento contado** · El **LNF**: el TJ-II solo pisa el
+BOE en anuncios de contratación, y una formalización da la sede del
+CONTRATANTE (Av. Complutense 40, Madrid) y un NUTS de comunidad — sitúa al
+comprador, no al dispositivo, y con eso no se publica nada.
+**Archivado** · 17 ficheros (el acuerdo y su Anexo II, las dos páginas
+antárticas, el informe de estaciones del EIES, cuatro consultas al NGBE, siete
+actos del BOE y la página de nodos de la RES).
+**El resto** · CHANGELOG `datos-v2026.08.84`, `.101` y `.106` · §10
 
 ## desaladoras
 
