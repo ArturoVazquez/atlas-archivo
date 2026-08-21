@@ -1097,16 +1097,28 @@ del expediente de información pública**, que sostienen claves en `parcial` y n
 campos. El Nomenclátor no nombra el polígono (la «Isleta de Matillas» es un
 paraje fluvial, no el polígono): punto de `municipio`, el caso de AWS. Ese
 mismo día se recomprobó el PIGA de ACS: **sigue sin aprobación definitiva**.
-**Huecos** · 8 + los del noveno. **La potencia TI en MW no la publica ningún
-acto administrativo** — la dan la patronal y los operadores, que son
-corporativos (R3); el acto de ACS roza el dato (20-30 MW de carga TI POR SALA)
-sin dar el total, y el expediente de Alcalá **lo publica entero pero en
-documentación del promotor**, que tampoco es un acto: la prohibición del
-esquema aguanta con el motivo intacto. Y las aprobaciones definitivas de los
-dos `en_tramitacion` (ACS y Microsoft) quedan de guardia en AGENDA, porque ni
-el BOA ni el BOCM los vigila nadie automático.
-**Archivado** · 14 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
-`.100`, `.102` y `.108` · §10
+**Qué se añadió** *(2026-08-21, release `.109`)* · **El décimo, el primero con
+coordenada de acto**: el centro de procesamiento de datos de Merlin Edged, SL
+en Navalmoral de la Mata — Decreto 92/2026 (PREMIA) más el anuncio de su AAI
+(expediente AAI25/032), que publica **el centro geométrico de la parcela I-64
+en UTM** con su referencia catastral: precisión `exacta`, contrastada
+punto-en-municipio contra el IGN. El anuncio imprime además la potencia TI (16
+salas de 12 MW) y la maquinaria que de verdad activa la AAI: 104 generadores
+diésel de 7,9 MW térmicos. Todo es decreto de interés más SOLICITUD en
+información pública: tercer `en_tramitacion`. Y el decreto está **recurrido**
+(TSJ de Extremadura, agosto de 2026, admitido a trámite): consta en la ficha
+con su origen de prensa, porque los autos no se publican en boletín.
+**Huecos** · 8 + los de los dos últimos. **La potencia TI en MW no la certifica
+ningún acto** — la dan la patronal y los operadores (R3); el acto de ACS la
+roza (20-30 MW POR SALA), el expediente de Alcalá la publica en documentación
+del promotor, y el anuncio de Navalmoral la IMPRIME entera (16 salas × 12 MW)
+— pero como solicitud, no como resolución: la prohibición del esquema aguanta,
+y el día que una AAI resuelta la recoja habrá que releer su motivo. Las
+aprobaciones definitivas de los tres `en_tramitacion` (ACS, Microsoft y la
+AAI/DIA de Merlin) quedan de guardia en AGENDA: ni el BOA, ni el BOCM, ni el
+DOE los vigila nadie automático.
+**Archivado** · 17 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100`, `.102`, `.108` y `.109` · §10
 
 ## hidrogeno-red
 

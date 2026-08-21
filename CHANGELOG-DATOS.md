@@ -32,6 +32,65 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.109 — el décimo centro de datos trae coordenada, y un acto imprime la potencia TI
+
+La campaña sigue y el frente extremeño da la pieza mayor: **el centro de
+procesamiento de datos de Merlin Edged en Navalmoral de la Mata**, el primer
+registro de la capa que entra con precisión **exacta** — porque su acto publica
+la coordenada.
+
+**El contrato no se mueve: sigue en 1.66.0.**
+
+### Añadido
+
+- **`centros-datos:merlin-navalmoral`** — declarado **Proyecto Empresarial de
+  Interés Autonómico** por el **Decreto 92/2026** (DOE n.º 93, de 18/5/2026):
+  parcela I-64 del Parque Industrial Norte de Extremadura, 206.752 m², «un
+  volumen de inversión previsto superior a 1.600 millones de euros y una
+  creación de empleo de 250 UTA». Y con su **AAI y su estudio de impacto en
+  información pública** (expediente AAI25/032, DOE n.º 97, de 22/5/2026): dos
+  edificios, demanda crítica de 192 MW, demanda total de 288 MW — y el anuncio
+  publica **el centro geométrico de la parcela en UTM** (ETRS89 huso 30,
+  X=285.012,242 · Y=4.420.592,338, con su referencia catastral), que el atlas
+  convierte y contrasta punto-en-municipio contra el IGN. Tercer
+  `en_tramitacion` de la capa: todo esto es un decreto de interés y una
+  solicitud, no una resolución.
+
+### La cifra prohibida, impresa por primera vez en un acto
+
+El anuncio de la AAI enumera «Salas técnicas completas 12 MW IT (Data hall):
+16» — dieciséis salas de 12 MW de carga TI, los 192 MW de la demanda crítica.
+**Es la primera vez que un acto de esta capa imprime la potencia TI.** El campo
+del esquema sigue prohibido, porque lo impreso es la SOLICITUD del promotor en
+información pública, no una resolución que la certifique — pero el día que la
+AAI resuelva con la cifra dentro, el motivo de la prohibición habrá que
+releerlo. Queda dicho aquí y en la propia ficha.
+
+### Los dos números que no cuadran, dichos
+
+El decreto mide la parcela en 206.752 m²; el anuncio de la AAI, con el catastro
+delante, en 206.753. Un metro cuadrado de diferencia entre dos actos del mismo
+expediente: se publican los dos, cada uno con su fuente, y la superficie del
+campo sale del que cita el catastro.
+
+### El decreto, ante la sala
+
+El TSJ de Extremadura admitió a trámite en agosto de 2026 el recurso de
+Ecologistas en Acción contra el Decreto 92/2026. La admisión no anula nada,
+pero el instrumento del registro está judicialmente en revisión, y la ficha lo
+cuenta — con su origen de prensa declarado (`prensa`, `parcial`), porque los
+autos del TSJ no se publican en boletín.
+
+### Huecos
+
+- La **resolución** de la AAI y la DIA: no constan. El DOE no lo vigila nadie
+  automático — a la agenda.
+- La ampliación «hasta unos 1.500 MW» que circula en prensa: **ningún acto la
+  recoge**. Se registra lo actuado, no lo anunciado.
+- Cataluña sigue sin un solo acto en la capa; la campaña continúa.
+
+---
+
 ## datos-v2026.08.108 — el noveno centro de datos, y el primero de Madrid
 
 La campaña por boletines autonómicos que la agenda dejaba como siguiente da su
