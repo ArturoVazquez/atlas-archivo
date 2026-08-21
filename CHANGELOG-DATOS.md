@@ -32,6 +32,62 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.113 — la capa deja de llamarse por una figura jurídica: «Desaladoras»
+
+Una capa llamada **«Desaladoras de interés general del Estado»** tenía el
+perímetro en el nombre, y ese perímetro dejaba fuera a todas las demás **por una
+figura jurídica que no les corresponde, no por falta de fuente**. Decisión de
+Arturo (D18): «es información que se deja fuera».
+
+**El contrato no se mueve: sigue en 1.67.0.**
+
+### Cambiado
+
+- **La capa pasa a llamarse «Desaladoras»**, y la condición de **interés
+  general del Estado** —que es una figura que un acto declara, no un adjetivo—
+  pasa a ser una **categoría**, que es lo que la distingue al pintarla. Las diez
+  que ya estaban se recategorizan a `interes_general_estado` sin tocar un solo
+  dato suyo.
+- **La condición del cambio, y va escrita en el manifiesto**: no hay criterio
+  de tamaño ni umbral de capacidad. Eso lo tendría que fijar el atlas, y no es
+  suyo. Entra la desaladora que **una fuente oficial nombre y sitúe**.
+
+### Añadido
+
+- **Las ocho de ABAQUA en les Illes Balears** — Badia de Palma, Andratx,
+  Eivissa, Sant Antoni, Ciutadella, Alcúdia, Santa Eulària y Formentera—, las
+  primeras que el perímetro viejo excluía. Vienen del conjunto de datos abiertos
+  de la **Agència Balear de l'Aigua i de la Qualitat Ambiental**, la empresa
+  pública del agua del Govern balear, **CC BY** declarada y verificada antes de
+  incorporar nada. Entran en **precisión exacta**: la fuente publica la posición
+  de cada una, y los ocho puntos se comprobaron **punto-en-municipio contra el
+  IGN**, uno a uno.
+- La capa pasa de **10 a 18** registros y su ámbito, de una figura estatal, a la
+  geografía real de la desalación española — que sigue incompleta, y lo dice.
+
+### Qué sostiene las ocho, y qué no
+
+El conjunto del **operador público** — el mismo trato que ya recibían las fichas
+de la Mancomunidad de los Canales del Taibilla en las cuatro de Murcia y
+Alicante. Da nombre y punto; **no da capacidad ni acto**, así que los ocho
+registros van `parcial`, sin cifra de producción, y su `fase` no la certifica
+ningún acto localizado. La cifra que circula en prensa y en memorias
+corporativas no entra.
+
+### Huecos
+
+- **Canarias**, que es el archipiélago con más desalación de España, sigue sin
+  un solo registro: sus censos viven en los consejos insulares de aguas y en el
+  plan hidrológico de cada isla, y hay que ir a buscarlos.
+- **Cataluña**: sus dos grandes —ITAM Tordera (Blanes) e ITAM Llobregat— están
+  identificadas por el conjunto de volúmenes diarios de la Generalitat, que es
+  una serie y no un censo: da el nombre, no la posición.
+- La **capacidad** de las ocho baleares, y el **acto** que declara cada una.
+- Los de las diez estatales siguen igual: la coordenada de las seis de Acuamed
+  y la capacidad en servicio de Águilas.
+
+---
+
 ## datos-v2026.08.112 — el vigía nuevo trae su primera pieza, y con ella cae una prohibición
 
 Lo encontró **`otear-autonomicos.py` en su segunda corrida**, horas después de

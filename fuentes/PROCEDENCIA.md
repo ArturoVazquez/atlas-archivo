@@ -449,6 +449,7 @@ de la CHS de la competencia de proyectos de su concesión (CSR-0005/2024)
 advierte de que la ampliación «hasta los 70 hm³ anuales» estaba **pendiente de
 ejecutar** a enero de 2024 — la tercera cifra del expediente, con las tres
 ahora en la ficha.
+**El perímetro se reabre** *(2026-08-21, release `.113`, decisión D18)* · La capa se llamaba «Desaladoras de interés general del Estado» y **el nombre era el perímetro**: dejaba fuera a todas las demás por una figura jurídica que no les corresponde, no por falta de fuente. Ahora se llama **«Desaladoras»**, la condición estatal es una **categoría** —lo que las distingue al pintarlas— y entra la desaladora que **una fuente oficial nombre y sitúe**, sin criterio de tamaño: un umbral de capacidad lo tendría que fijar el atlas, y no es suyo. **Primeras en entrar por la puerta nueva:** las ocho de **ABAQUA** (Agència Balear de l'Aigua i de la Qualitat Ambiental, empresa pública del Govern balear), de su conjunto de datos abiertos con **CC BY declarada y verificada antes de incorporar nada**; en precisión **exacta**, con los ocho puntos comprobados punto-en-municipio contra el IGN. Las sostiene el conjunto del OPERADOR PÚBLICO —el mismo trato que las fichas de la MCT—, que da nombre y posición pero **ni capacidad ni acto**: por eso van `parcial`.
 **Huecos** · Las seis de Acuamed declaran la coordenada de la planta (punto de
 municipio, ahora con el lindero de su acto dicho en clave donde lo hay);
 Águilas añade la capacidad actual tras su ampliación (40 evaluados, 60
@@ -456,12 +457,12 @@ previstos, 70 pendientes de ejecutar en 2024 — la que está en servicio no la
 publica ningún acto). La capa sigue sin ser el censo: autonómicas, canarias y
 privadas quedan como ampliación, cada una con sus actos, **y ese cambio de
 perímetro lo decide Arturo** (AGENDA).
-**Archivado** · 21 ficheros (dieciséis del BOE, las cuatro fichas de la MCT y
+**Archivado** · 22 ficheros (dieciséis del BOE, las cuatro fichas de la MCT y
 el barrido del NGBE — que conserva también la PRIMERA pasada, descartada por
 caer en municipios homónimos de Madrid, Huesca y León: el error queda a la
 vista para que se vea qué se comprobó).
-**El resto** · CHANGELOG `datos-v2026.08.28`, `datos-v2026.08.30` y
-`datos-v2026.08.107` · §10
+**El resto** · CHANGELOG `datos-v2026.08.28`, `datos-v2026.08.30`,
+`datos-v2026.08.107` y `datos-v2026.08.113` · §10
 
 ## gas-almacenamiento
 

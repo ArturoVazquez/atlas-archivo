@@ -1,0 +1,125 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        2.695209999377402,
+                        39.56893745340619
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Badia de Palma"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        2.424340562673556,
+                        39.54780208335027
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Andratx"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        1.4347825443934092,
+                        38.919468346864335
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Eivissa"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        1.2872639693054873,
+                        38.993541543599875
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Sant Antoni"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        3.850641315330851,
+                        39.968775314038986
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Ciutadella"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        3.144775421426264,
+                        39.835056549622806
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Alcúdia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        1.5466420114768051,
+                        38.99471287989706
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Santa Eulària"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        1.4637419901540976,
+                        38.69330171772043
+                    ]
+                ]
+            },
+            "properties": {
+                "NOM": "IDAM Formentera"
+            }
+        }
+    ]
+}
