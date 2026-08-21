@@ -1108,17 +1108,28 @@ diésel de 7,9 MW térmicos. Todo es decreto de interés más SOLICITUD en
 información pública: tercer `en_tramitacion`. Y el decreto está **recurrido**
 (TSJ de Extremadura, agosto de 2026, admitido a trámite): consta en la ficha
 con su origen de prensa, porque los autos no se publican en boletín.
-**Huecos** · 8 + los de los dos últimos. **La potencia TI en MW no la certifica
+**Qué se añadió** *(2026-08-21, release `.110`)* · **El undécimo, con la
+cadena de actos más madura**: el centro de Merlin en Arasur (Ribabellosa,
+Ribera Baja/Erriberabeitia, Álava) — AAI **concedida** en 2023 al Edificio 3 y
+DIA favorable de 2024 con la AAI modificada para el Edificio 2 (BOPV n.º 4 de
+8/1/2025, archivado). El acto dimensiona por edificio (23.566 y 32.697 m²;
+31.000 y 70.000 kW instalados) y publica **la coordenada UTM de cada foco de
+emisión, motor a motor** — segunda `exacta` de la capa, con el huso **deducido**
+a la manera de `zonas-defensa` (el acto no lo declara: se probaron los tres y
+solo el 30 deja el punto en el municipio que el acto nombra).
+**Huecos** · 8 + los de los tres últimos. **La potencia TI en MW no la certifica
 ningún acto** — la dan la patronal y los operadores (R3); el acto de ACS la
 roza (20-30 MW POR SALA), el expediente de Alcalá la publica en documentación
-del promotor, y el anuncio de Navalmoral la IMPRIME entera (16 salas × 12 MW)
-— pero como solicitud, no como resolución: la prohibición del esquema aguanta,
-y el día que una AAI resuelta la recoja habrá que releer su motivo. Las
-aprobaciones definitivas de los tres `en_tramitacion` (ACS, Microsoft y la
-AAI/DIA de Merlin) quedan de guardia en AGENDA: ni el BOA, ni el BOCM, ni el
-DOE los vigila nadie automático.
-**Archivado** · 17 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
-`.100`, `.102`, `.108` y `.109` · §10
+del promotor, el anuncio de Navalmoral la IMPRIME entera (16 salas × 12 MW)
+como solicitud, y la AAI resuelta de Arasur da potencia eléctrica instalada,
+no TI: la prohibición del esquema aguanta, y el día que una resolución recoja
+la cifra habrá que releer su motivo. Las aprobaciones pendientes de los
+`en_tramitacion` (ACS, Microsoft y la AAI/DIA de Merlin Navalmoral) y la AAI
+original de Arasur de 2023 (citada por el acto archivado, sin publicación
+propia localizada) quedan de guardia en AGENDA: ni el BOA, ni el BOCM, ni el
+DOE, ni el BOPV los vigila nadie automático.
+**Archivado** · 18 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100`, `.102`, `.108`, `.109` y `.110` · §10
 
 ## hidrogeno-red
 

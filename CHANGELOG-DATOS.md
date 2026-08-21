@@ -32,6 +32,49 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.110 — el undécimo centro de datos: el primero con la autorización resuelta fuera del PIGA
+
+La campaña sigue por el norte, y Álava da el registro con la cadena de actos
+más madura hasta ahora: **el centro de procesos de datos de Merlin en Arasur**
+(Ribabellosa, Ribera Baja/Erriberabeitia), con su autorización ambiental
+integrada **concedida** — resoluciones, no solicitudes.
+
+**El contrato no se mueve: sigue en 1.66.0.**
+
+### Añadido
+
+- **`centros-datos:merlin-arasur`** — la AAI del Edificio 3 se concedió por
+  Resolución de 11/9/2023 del Viceconsejero de Sostenibilidad Ambiental, y la
+  Resolución de 1/11/2024 (**BOPV n.º 4, de 8/1/2025**, archivada) formula la
+  **DIA favorable del Edificio 2** de ampliación y modifica aquella AAI. El
+  acto dimensiona con grado de resolución: Edificio 3 de 23.566 m² construidos
+  y «una potencia total instalada de unos 31.000 kW» con 11 generadores de
+  gasóleo de 7,9 MWt; Edificio 2 de 32.697 m² y «unos 70.000 kW» con 27
+  focos. Promotor: Merlín Logística, S.L.U. — la sociedad logística del grupo.
+
+### La coordenada, de la tabla de focos — y el huso, deducido
+
+El anexo de la AAI publica **la coordenada UTM de cada foco de emisión, motor
+a motor**. El punto del atlas es el foco 01 del Edificio 3 (X=507.335 ·
+Y=4.727.345); el acto **no declara el huso**, y se aplicó la doctrina de
+`zonas-defensa`: se prueban los tres husos de España y se exige que
+exactamente uno deje el punto en el municipio que el acto nombra — el 29 lo
+manda a Boiro (Galicia), el 31 al mar, y **el 30 a Ribera Baja**. Segunda
+precisión `exacta` de la capa.
+
+### Huecos
+
+- La **puesta en servicio** y los **edificios 4 y 5** que la prensa atribuye
+  al campus: sin acto localizado — la fase se queda en `desarrollo` y se
+  registra lo actuado.
+- La **carga TI**: el acto da potencia eléctrica instalada por edificio, no
+  TI — la prohibición del esquema sigue con su motivo.
+- La resolución de 2023 (la AAI original) está citada y descrita por el acto
+  archivado, pero su publicación propia en el BOPV no se localizó por
+  buscador: cuando aparezca, se archiva.
+
+---
+
 ## datos-v2026.08.109 — el décimo centro de datos trae coordenada, y un acto imprime la potencia TI
 
 La campaña sigue y el frente extremeño da la pieza mayor: **el centro de
