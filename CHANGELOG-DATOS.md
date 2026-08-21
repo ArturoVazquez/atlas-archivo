@@ -32,6 +32,82 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.115 — la BTN deja de estar muda donde una comunidad la nombra
+
+De las 3.165 plantas fotovoltaicas que la Base Topográfica Nacional cartografía,
+**1.959 no llevan nombre**. No es un defecto del IGN: cartografiar un recinto no
+es identificarlo, y el atlas las dejaba fuera porque `nombre` es obligatorio.
+Esta edición aplica **D17** y las empieza a rescatar — no inventando el nombre,
+sino cruzando con quien sí lo tiene: **el registro de la administración que
+autorizó cada planta**.
+
+**El cruce va por SOLAPE GEOMÉTRICO, nunca por nombre**, y esa no es una
+preferencia de método: es el hallazgo. Los nombres NO coinciden. Donde la BTN
+dice «Huerta Solar Bárdenas Reales», IDENA dice «VILLAFRANCA - CORRALIZA DE
+BARRENO». Un emparejador por parecido habría fallado en silencio, que es la peor
+manera de fallar.
+
+**La geometría sigue siendo siempre la del IGN** y no se toca un vértice. El
+registro autonómico aporta identidad y atributos; la forma, una sola fuente para
+toda España.
+
+### Añadido
+- `plantas-solares` — **80 recintos que la BTN publica mudos**, identificados por
+  solape: **41 por IDENA** (Gobierno de Navarra, CC BY 4.0) y **39 por el ICV**
+  (Generalitat Valenciana, CC BY 4.0, declarada en el `AccessConstraints` de su
+  propio servicio). La capa pasa de 1.250 a 1.330 registros.
+- `plantas-solares` — **tres campos que estaban prohibidos por su nombre desde
+  que la capa nació**: `titular`, `potencia_mw` y `anio_servicio` (contrato
+  1.68.0). Las prohibiciones no se borran: **se sustituyen por una vara**, la
+  misma doctrina que levantó `potencia_it_mw` en la `.112`. Los llena el registro
+  autonómico y jamás la fuente cartográfica.
+- `plantas-solares` — **33 registros ya publicados ganan esos atributos** sin que
+  cambie su nombre, su slug ni su geometría: la BTN ya los nombraba y cambiarles
+  el nombre rompería las citas de las ediciones anteriores. Su clave nueva dice
+  cómo se llaman en el registro autonómico.
+
+### Corregido
+- `plantas-solares` · **20 registros bajan de `confirmado` a `parcial`**, y no es
+  una degradación: **bajan porque dicen más**. Al entrar los campos nuevos,
+  declaran también lo que NO tienen —el titular que el registro deja en «-», la
+  potencia que el atlas se niega a repartir— y R4 hace exactamente su trabajo.
+  En total la capa queda con 1.247 `confirmado` y 83 `parcial`.
+- `manifest.json` · alcance de `plantas-solares` — la nota decía «solo 1.206
+  llevan nombre» y esa cifra la dejó vieja este mismo cruce. Ahora dice las dos:
+  las que nombra la BTN y las que nombra una comunidad.
+
+### Huecos
+- **La potencia de 18 plantas repartidas en varios recintos NO se escribe.** Es
+  la trampa central de esta edición y merece decirse entera: una planta del
+  registro puede caer sobre varios recintos de la BTN —«FUSTIÑANA - CORRALIZA
+  VECINAL» cae sobre seis—, y la cifra que el registro publica es de la **planta
+  entera**. Escribirla en cada hermano multiplicaría la potencia solar del país.
+  Va en `claves`, dicha entera y con cuántos recintos la comparten, y cada ficha
+  declara su hueco.
+- **Tres recintos contienen DOS plantas registradas cada uno** (CÁSEDA 1 y 2;
+  Huerto Solar El Realengo I y III; y dos vallados de la PFV Sueras/Suera).
+  Tampoco llevan potencia: el recinto no es ninguna de las dos por separado.
+- **La cobertura es DESIGUAL POR COMUNIDAD, y es un hueco de la capa entera.**
+  Va en el manifiesto y no en las 80 fichas, y el motivo importa: ponerlo en cada
+  registro las habría bajado a `parcial` por algo que no dice nada de ellas
+  —habla de los recintos que NO están—. Hoy solo dos comunidades publican su
+  registro con geometría y con licencia usable. **Castilla y León tiene la capa
+  —1.592 recintos de instalación renovable con titular, potencia y fecha— y va
+  bajo licencia IGCYL-NC, no comercial**, que `datos/LICENCIA-DATOS.md` no
+  admite; su conjunto abierto en CC BY no trae geometría. **Cataluña** publica
+  541 fotovoltaicas sin geometría. Un recinto de Soria no es un dato peor que
+  uno de Tudela: es un dato que solo tiene medio país.
+- **`potencia_pico_mwp` sigue prohibida**, y no cae con las otras dos: el
+  registro valenciano tiene el campo y **lo publica vacío**. Un campo que la
+  fuente no rellena no es un dato que el atlas tenga.
+- **`parques-eolicos` no cambia.** La BTN solo deja 7 recintos eólicos mudos —ya
+  publica el 100 % de la superficie— y no hay todavía un registro eólico con
+  geometría y con licencia verificada: el WFS de IDEAragon, que tiene 349
+  polígonos y 1.774 aerogeneradores con detalle, **no declara licencia ninguna**
+  en su servicio, y sin eso no se toca.
+
+---
+
 ## datos-v2026.08.114 — el frente que pedía navegador resulta ser una API
 
 El barrido de cables llevaba dos pasadas atascado en «esto hay que mirarlo con

@@ -286,15 +286,52 @@ nadie los escriba de memoria. `superficie_ha` también, por derivada.
 
 ## plantas-solares
 
-**De dónde** · La misma BTN, el mismo objeto `0713S` (tipos 05 fotovoltaica y 08
-termosolar).
-**Licencia** · IGN, ver arriba · atribución exigida: `Obra derivada de BTN Continua CC-BY 4.0 ign.es`
-**Qué hay que saber** · **1.959 fotovoltaicas quedan fuera porque la BTN no las
-nombra**, y son las pequeñas: entran 1.206 de 3.165 recintos, que son el **76 %
-de la superficie**. Termosolar, 44 de 45. Las dos cifras van siempre juntas
-porque contar plantas y medir superficie dan respuestas distintas.
-**Qué NO trae la fuente** · Lo mismo que en eólica, prohibido igual.
-**Archivado** · 2 ficheros · **El resto** · CHANGELOG `datos-v2026.08.21` · §10
+**De dónde** · **Dos clases de fuente, y la distinción es toda la capa.** La
+GEOMETRÍA es siempre la BTN, el mismo objeto `0713S` (tipos 05 fotovoltaica y 08
+termosolar). La IDENTIDAD y los atributos, donde los hay, los pone el **registro
+de la administración que autorizó la planta** — desde la release `.115` (D17):
+**IDENA** (Gobierno de Navarra, conjuntos «Plantas solares fotovoltaicas en
+servicio» y «…en tramitación») y el **ICV** (Generalitat Valenciana, «ER
+Fotovoltaicas: Vallado», por WFS).
+**Licencia** · IGN, ver arriba · atribución exigida: `Obra derivada de BTN Continua CC-BY 4.0 ign.es` ·
+IDENA **CC BY 4.0**, declarada en la ficha de datos.gob.es · ICV **CC BY 4.0
+Generalitat**, declarada por el propio servicio en su `AccessConstraints`.
+**Cómo se cruzan** · **Por SOLAPE GEOMÉTRICO y jamás por nombre.** Los nombres no
+coinciden: la BTN llama «Huerta Solar Bárdenas Reales» a lo que IDENA llama
+«VILLAFRANCA - CORRALIZA DE BARRENO». Un emparejador por parecido habría fallado
+en silencio. Se exige que uno de los dos polígonos cubra al menos el 30 % del
+otro, y la fracción exacta va escrita en la ficha para que se pueda juzgar.
+**Qué hay que saber** · De las 3.165 fotovoltaicas de la BTN, **1.959 no llevan
+nombre** — no es un defecto del IGN: cartografiar un recinto no es identificarlo.
+La capa publica 1.286: las 1.206 que nombra la BTN (el **76 % de la superficie**,
+porque las anónimas son las pequeñas) más **79 que nombra una comunidad**.
+Termosolar, 44 de 45. Las cifras van siempre juntas porque contar plantas y medir
+superficie dan respuestas distintas.
+**Las tres trampas del cruce, y cómo se evitan** · (1) Una planta puede caer
+sobre **varios recintos** —«FUSTIÑANA - CORRALIZA VECINAL» sobre seis—: ahí NO se
+escribe potencia, porque la cifra es de la planta entera y repetirla en cada
+hermano multiplicaría la potencia solar del país. (2) Un recinto puede contener
+**dos plantas registradas** —tres casos—: tampoco lleva potencia, porque no es
+ninguna de las dos por separado. (3) El registro valenciano escribe literalmente
+**«-»** en el titular de las instalaciones viejas: eso es un hueco declarado, no
+un titular. En los tres casos la ficha lo dice y R4 la baja a `parcial`.
+**Qué NO trae la fuente** · La BTN, lo mismo que en eólica. Del registro
+autonómico, `potencia_pico_mw`: **el campo existe y viene vacío**, y sigue
+prohibido por eso.
+**El hueco mayor, que es de capa** · La cobertura es **desigual por comunidad** y
+está declarada en el manifiesto, no en las fichas —hablar de los recintos que NO
+están no dice nada de los que sí—. Sondeadas el 2026-08-21: **Castilla y León
+tiene la capa** (1.592 recintos con titular, potencia y fechas, por el WFS de
+IDECyL) **y va bajo licencia IGCYL-NC, no comercial**, que
+`datos/LICENCIA-DATOS.md` no admite; su conjunto abierto en CC BY 4.0 ES
+(«Parques eólicos en funcionamiento», 279 filas) **no trae geometría**.
+**Cataluña** publica 541 fotovoltaicas sin geometría. **Baleares** publica zonas
+de APTITUD, que no son instalaciones. De **Andalucía, Castilla-La Mancha,
+Extremadura, Galicia, Asturias, Cantabria, País Vasco, La Rioja, Murcia y
+Canarias** no se encontró geoservicio en dos intentos (los errores exactos, en la
+agenda). **Aragón** sí tiene registro eólico con geometría, pero su WFS **no
+declara licencia**, y sin eso no se toca.
+**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.115` · §10
 
 ## gas-regasificacion
 
