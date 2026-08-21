@@ -16,7 +16,7 @@ authors:
 repository-code: https://github.com/ArturoVazquez/atlas-archivo
 url: https://atlas.eltercioviejo.com
 license: CC-BY-4.0
-version: datos-v2026.08.110
+version: datos-v2026.08.111
 date-released: "2026-08-21"
 doi: 10.5281/zenodo.21918595
 identifiers:
@@ -26,7 +26,7 @@ identifiers:
       DOI de concepto: resuelve siempre a la última edición depositada. Es el
       que se cita cuando se cita el atlas, y no una edición concreta.
   - type: doi
-    value: 10.5281/zenodo.22040566
+    value: 10.5281/zenodo.22040671
     description: >-
       DOI de esta edición (datos-v2026.08.106). Lo que el depósito archiva es el
       aparato de citación —fuentes, procedencia, contrato y changelog—, no las
