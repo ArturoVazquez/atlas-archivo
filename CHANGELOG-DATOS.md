@@ -32,6 +32,67 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.117 — la capa dice por fin qué NO es
+
+Una lectura externa de `cables-submarinos` llegó a una conclusión correcta e
+incómoda: **la capa no mapea los cables submarinos de España**, mapea los
+aterrizajes que un acto administrativo publicado nombra y sitúa. Faltan cables
+que existen, y las fichas lo explican **una por una** — pero hasta hoy eso no se
+decía en ningún sitio donde se leyera de una vez. Esta edición lo arregla por los
+dos lados: la **doctrina** entra en la nota de la capa, y el **relato** en una
+historia nueva.
+
+### Añadido
+- `manifest.json` · `cables-submarinos` — **la regla de perímetro, declarada**.
+  La nota de la capa dice ahora, de frente, qué es y qué no es, con los **cuatro
+  motivos** por los que falta gente: que un cable tiene dos extremos y cada uno se
+  tramita aparte (PENCAN-X está por Rota y no por Las Palmas; Canalink Base 6 sí
+  está por los dos); que los cables viejos no vuelven a un boletín salvo caducidad,
+  remodelación o legalización (que es por lo que entró PENBAL-4); que **el Estado
+  tiene la lista y no la publica**; y que lo que cruza aguas españolas sin amarrar
+  aquí no entra (el Europe India Gateway, que toca tierra en Gibraltar).
+- `cables-submarinos:virgen-del-mar-santander` y `:sagunto` — **la Ley 11/2022,
+  archivada y citada**. Las dos fichas venían afirmando desde su alta que el
+  Ministerio tiene la lista de cables y no la publica, **y ninguna fuente lo
+  sostenía**: era una afirmación sin papel, justo lo que este atlas le exige a
+  cualquier otra. Ahora entra el texto consolidado con sus dos anclajes exactos —
+  el **artículo 6.9**, que obliga a comunicar todo cable que engancha en territorio
+  español, y la **disposición adicional vigésima tercera**, que da dos meses de
+  plazo y exige en su apartado f) «una exposición sucinta del trazado del cable
+  submarino […] y, en particular, del lugar en el que se produce el enganche».
+  Es decir: **el Ministerio tiene desde 2022 las dos cosas que a esas fichas les
+  faltan**.
+- Y con la ley, un negativo verificado: **el reglamento que el propio artículo
+  6.10 mandaba aprobar «en un plazo máximo de tres meses» no existe**. Barridos
+  los **1.515 sumarios** del BOE desde la entrada en vigor de la ley hasta hoy, no
+  aparece.
+- **Historia nueva**: «Cuatro cables sin nombre, y el Estado sabe cómo se llaman»
+  (`/historias/cables-el-mapa-de-los-actos/`). Como todas, **no escribe ni una
+  cifra**: las saca de la release y extrae sus citas literales de las fichas, así
+  que el día que una se reescriba el build se planta.
+
+### Corregido
+- **Contrato 1.69.0** — §4.2 cierra la puerta que le faltaba. Argumentaba con
+  cuidado por qué un conjunto **no es una capa** y por qué **no es el manifiesto**,
+  y no decía nada de por qué **no es una historia**, por un motivo que se puede
+  fechar: §4.2 se escribió el 2026-08-15 y las Historias nacieron el 2026-08-18.
+  La puerta abierta dejó pasar a alguien. Queda escrito que las dos condiciones de
+  un conjunto son **acumulativas**: no basta con que el hecho no tenga lugar,
+  **tiene que ser una cifra**. Ver **D19**.
+
+### Huecos
+- **Los cuatro aterrizajes sin nombre de sistema siguen sin él**, y ahora se sabe
+  a quién le falta: al Ministerio no, que lo tiene por ley desde 2022.
+- **El amarre canario de PENCAN-X sigue sin acto.** Su concesión es del Gobierno
+  canario y no consta en el BOC. Ya no hay que buscarlo: el vigía lo espera.
+- **El ramal de Canalink Base 4 al sur de Fuerteventura no entra.** El Real
+  Decreto 973/2025 lo subvenciona y lo nombra, pero una subvención **no sitúa un
+  amarre**: dice a qué isla va, no a qué playa. Entrará con su acto de ocupación.
+- **El recorrido de los cables sigue sin dibujarse.** No hay fuente con licencia
+  compatible, y trazarlo a ojo sería inventarlo.
+
+---
+
 ## datos-v2026.08.116 — Canarias deja de estar a oscuras
 
 El archipiélago con más desalación de España no tenía **ni un registro**, y el

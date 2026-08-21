@@ -1106,6 +1106,26 @@ como el del BOC.
 **Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
 `.33`, `.98`, `.103` y `.105` · §10
 
+**Qué mide esta capa, dicho antes de que nadie se confunda** *(release `.117`)*
+· **No es el mapa de los cables submarinos de España**: es el mapa de los
+ATERRIZAJES que un acto administrativo publicado nombra y sitúa. Faltan cables
+que existen, por cuatro motivos que están en las fichas y, desde la `.117`,
+también en la nota `_` de la capa: un cable tiene **dos extremos y cada uno se
+tramita aparte**; los **cables viejos** no vuelven a un boletín salvo caducidad,
+remodelación o legalización; **el Estado tiene la lista y no la publica**; y lo
+que **cruza aguas españolas sin amarrar aquí** no entra. Se cuenta entero en la
+historia «Cuatro cables sin nombre, y el Estado sabe cómo se llaman».
+**La Ley 11/2022, y por qué está archivada** *(release `.117`)* · Dos fichas
+—Santander y Sagunto— venían afirmando desde su alta que el Ministerio tiene la
+lista de cables y no la publica, **sin citar nada**. Era una afirmación sin
+papel. Ahora se archiva el texto consolidado y se cita con sus dos anclajes: el
+**artículo 6.9**, que obliga a comunicar todo cable submarino que engancha en
+territorio español, y la **disposición adicional vigésima tercera**, que da dos
+meses de plazo y exige en su apartado f) el **trazado del cable y el lugar del
+enganche** — las dos cosas que a esas fichas les faltan. Y con ella, un negativo
+verificado con el método de la casa: **el reglamento que el artículo 6.10
+mandaba aprobar en tres meses no existe**, barridos los 1.515 sumarios del BOE
+desde la entrada en vigor de la ley.
 **2Africa, y cómo apareció** *(2026-08-21, release `.116`)* · El aterrizaje
 español de 2Africa llevaba dos pasadas buscándose **por Barcelona**, sin acto,
 porque el DOGC no se deja leer por un cliente no interactivo. Estaba en
