@@ -115,6 +115,101 @@
           28.081440617089147
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo_ngbe": "6.2.2",
+        "fuente": "MITMA.IGN.BTN25",
+        "tiponombre": "identificador_geografico",
+        "tipo": "Playa",
+        "etiqueta": "Playa de Salinetas",
+        "fecha": "2023-07-20"
+      },
+      "id": "2627103",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.3779907229999,
+          27.9830932620001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo_ngbe": "6.2.1",
+        "fuente": "MITMA.IGN.BTN25",
+        "tiponombre": "identificador_geografico",
+        "tipo": "Saliente costero",
+        "etiqueta": "Punta de Salinetas",
+        "fecha": "2023-07-20"
+      },
+      "id": "2627347",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.3759765619999,
+          27.9777221690001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo_ngbe": "3.2.1",
+        "fuente": "MITMA.Puertos del Estado",
+        "tiponombre": "identificador_geografico",
+        "tipo": "Puerto",
+        "etiqueta": "Puerto de Salinetas",
+        "fecha": "2023-06-27"
+      },
+      "id": "2638574",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.377193650530206,
+          27.976408497268924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo_ngbe": "2.1.10",
+        "fuente": "MITMA.IGN.NGMEP",
+        "tiponombre": "identificador_geografico",
+        "tipo": "Núcleos de población",
+        "etiqueta": "Playa de Salinetas",
+        "fecha": "2025-09-09"
+      },
+      "id": "2639738",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.3787894,
+          27.98201544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "codigo_ngbe": "2.1.9",
+        "fuente": "MITMA.IGN.NGMEP",
+        "tiponombre": "identificador_geografico",
+        "tipo": "Entidad singular",
+        "etiqueta": "Playa de Salinetas",
+        "fecha": "2025-09-09"
+      },
+      "id": "2863890",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.3787894,
+          27.98201544
+        ]
+      }
     }
   ]
 }

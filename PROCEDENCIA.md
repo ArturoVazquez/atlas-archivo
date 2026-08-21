@@ -470,6 +470,29 @@ al topónimo del paraje de Agua Amarga que la propia MCT declara. **Cada
 capacidad retrata el momento de su acto y va en la unidad de su acto**:
 `capacidad_hm3_anio` o `capacidad_m3_dia`, sin conversión — convertir exigiría
 suponer días de operación.
+**Canarias, y una corrección de doctrina** *(2026-08-21, release `.116`)* ·
+La capa entra en el archipiélago con cuatro fichas —las tres del Cabildo
+Insular de El Hierro (Los Cangrejos, El Golfo, La Restinga) y la Maspalomas I
+de San Bartolomé de Tirajana— y **con precisión `exacta`, no `municipio`**. El
+veredicto de la `.107` que se lee abajo sigue en pie **para los actos del
+ESTADO**; los actos **insulares canarios** son otra cosa: escriben la coordenada
+UTM en el cuerpo del anuncio, «coordenadas X: 215.215 Y: 3.080.415 Z: 31». El
+huso NO lo dicen, y se deduce con la misma vara que en `zonas-defensa`: se
+prueban los de España y se exige que **uno solo** deje el punto dentro del
+municipio que el propio acto nombra. Los cuatro caen donde debían con el 28, y
+ni el 27 ni el 29 caen siquiera en Canarias.
+**Lo que NO entra de Canarias, que es casi todo** · El barrido del BOC sacó
+**226 actos de desalación entre 2003 y 2026** y la inmensa mayoría son
+PETICIONES de autorización de plantas privadas de autoabastecimiento —hoteles,
+fincas, un parque acuático, la refinería de Santa Cruz—: sitúan por municipio y
+**no acreditan que la instalación llegara a existir**. Las cuatro que entran
+pasan dos varas: acto que sitúa con coordenada, y existencia que el propio acto
+da por hecha, porque no se regulariza ni se amplía lo que no está. **La
+capacidad NO se escribe en ninguna**: los actos dan la cifra de la AMPLIACIÓN,
+no la de la planta, y va en clave. **Vía anotada para la siguiente tanda**, del
+propio barrido: el Consejo Insular de Aguas de Lanzarote mantiene un **«Censo de
+Plantas Desaladoras»** cuyas inscripciones publica en el BOC — un censo es
+exactamente la clase de fuente que esta capa quiere.
 **La relectura** *(2026-08-21, release `.107`)* · Los actos archivados de las
 seis de Acuamed, releídos entero buscando emplazamiento. **El resultado
 negativo es el que manda**: ninguna DIA publica la coordenada de la planta —
@@ -1082,6 +1105,18 @@ formas (facsímil PDF y texto web): el PDF esconde su texto a la extracción,
 como el del BOC.
 **Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
 `.33`, `.98`, `.103` y `.105` · §10
+
+**2Africa, y cómo apareció** *(2026-08-21, release `.116`)* · El aterrizaje
+español de 2Africa llevaba dos pasadas buscándose **por Barcelona**, sin acto,
+porque el DOGC no se deja leer por un cliente no interactivo. Estaba en
+Canarias: el **BOC n.º 165, de 22-8-2023**, somete a información pública la
+solicitud de Vodafone Enterprise Spain para ocupar el dominio público
+marítimo-terrestre con el **segmento W3-EGO** en la **Playa de Salinetas
+(Telde)**. Lo encontró un BARRIDO del boletín entero, no una búsqueda; y el
+mismo hallazgo metió el BOC en `otear-autonomicos.py`, de modo que el
+otorgamiento —si llega— ya no habrá que buscarlo. **Es además el único acto de
+esta capa que BAUTIZA el sistema con su segmento**, cuando la norma es que un
+acto de Costas autorice una ocupación sin nombrar el cable.
 
 ## centros-datos
 

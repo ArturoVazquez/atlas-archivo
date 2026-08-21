@@ -32,6 +32,69 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.116 — Canarias deja de estar a oscuras
+
+El archipiélago con más desalación de España no tenía **ni un registro**, y el
+aterrizaje español de 2Africa llevaba dos pasadas sin aparecer. Las dos cosas se
+resuelven de una vez y por la misma vía: **leer el boletín entero en vez de
+buscar en él**.
+
+El Boletín Oficial de Canarias va por NÚMERO de boletín y no por fecha —la misma
+trampa que dejó fuera al BOJA—, y por eso no estaba vigilado. Se salva barato:
+su **índice anual** lista los ~200 números del año con su fecha en una sola
+lectura. Con eso, un barrido de 2003 a 2026 devolvió **226 actos de desalación y
+el acto que nadie encontraba**, y el BOC entró en el vigía autonómico, donde
+seguirá sin costar nada.
+
+### Añadido
+- `cables-submarinos:2africa-telde` — **el primer aterrizaje español de 2Africa
+  que un acto administrativo nombra y sitúa**: segmento **W3-EGO**, Playa de
+  Salinetas, término municipal de Telde (Gran Canaria), instado por Vodafone
+  Enterprise Spain. Información pública del artículo 74 de la Ley de Costas
+  (BOC n.º 165, de 22-8-2023). El atlas llevaba dos pasadas buscándolo por
+  Barcelona, donde el DOGC no se deja leer.
+- `desaladoras` — **las cuatro primeras de Canarias**: las tres del Cabildo
+  Insular de El Hierro (**Los Cangrejos** en Valverde, **El Golfo** en La
+  Frontera y **La Restinga** en El Pinar) y la **Planta Desaladora Maspalomas I**
+  en San Bartolomé de Tirajana. La capa pasa de 18 a 22.
+- `vocabularios.json` · `desaladoras` — categoría **`privada`**, la tercera de
+  las que D18 abrió. La vara no es de quién es la planta: es si un acto la
+  nombra y la sitúa.
+
+### Corregido
+- **Un veredicto de la release `.107` se afina.** Aquella dio por sentado que
+  «los actos sitúan por linderos, no por coordenadas». Era verdad de los actos
+  del **Estado**. Los actos **insulares canarios** escriben la coordenada UTM en
+  el cuerpo del anuncio —«coordenadas X: 215.215 Y: 3.080.415 Z: 31»—, y por eso
+  las cuatro fichas nuevas van en precisión **`exacta`** y no en `municipio`. El
+  huso no lo dice el acto: se dedujo probando los de España y exigiendo que **uno
+  solo** dejara el punto dentro del municipio que el propio acto nombra. Los
+  cuatro caen donde debían y ni el 27 ni el 29 caen siquiera en Canarias.
+
+### Huecos
+- **La capacidad de las cuatro plantas canarias NO se escribe.** Los actos dan la
+  cifra de la **ampliación** —«ampliación de producción de 600 m³/día», «una
+  línea de 6.000 m³/día»—, que es lo que se añade y no lo que la planta produce.
+  Va en `claves`, en su sitio, y el campo queda con su hueco declarado.
+- **Los cientos de peticiones canarias que quedan fuera, y por qué.** El barrido
+  sacó 226 actos de desalación en veintitrés años, y **casi todos son PETICIONES
+  de autorización de plantas privadas de autoabastecimiento** — hoteles, fincas,
+  un parque acuático, una refinería. Sitúan por municipio y no acreditan que la
+  instalación llegara a existir. Las cuatro que entran pasan dos varas: acto que
+  sitúa con coordenada, e instalación cuya existencia el propio acto da por
+  hecha (no se regulariza ni se amplía lo que no está).
+- **El otorgamiento de 2Africa y la resolución de los cuatro expedientes
+  canarios.** Lo archivado son informaciones públicas de solicitudes. Si se
+  resolvieron, sus actos no constan localizados. Ya no hay que buscarlos: el
+  vigía del BOC los espera.
+- **Sigue sin haber ni un registro de Tenerife, Gran Canaria capital, Lanzarote
+  ni Fuerteventura**, que son las islas de más desalación. Vía anotada, y salió
+  del propio barrido: el Consejo Insular de Aguas de Lanzarote mantiene un
+  **«Censo de Plantas Desaladoras»** cuyas inscripciones publica en el BOC. Un
+  censo es exactamente la clase de fuente que esta capa quiere.
+
+---
+
 ## datos-v2026.08.115 — la BTN deja de estar muda donde una comunidad la nombra
 
 De las 3.165 plantas fotovoltaicas que la Base Topográfica Nacional cartografía,
