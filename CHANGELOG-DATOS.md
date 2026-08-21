@@ -32,6 +32,62 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.114 — el frente que pedía navegador resulta ser una API
+
+El barrido de cables llevaba dos pasadas atascado en «esto hay que mirarlo con
+un navegador»: los otorgamientos de los noventa **no salen por búsqueda web**.
+Resulta que no hacía falta ningún navegador — **la API de sumarios del BOE que
+usa el vigía semanal llega hasta 1997**, y lo que era un frente manual es un
+barrido de veinte minutos.
+
+**El contrato no se mueve: sigue en 1.67.0.**
+
+### El método, y su control
+
+Se barrieron **7.015 sumarios del BOE entre 1994 y 2016** casando el título
+contra «cable submarino» y sus variantes. Y antes de creerle a un resultado
+negativo, **se validó el método sobre un año con respuesta conocida**: en 2017
+devuelve el otorgamiento de Marea, que ya estaba en la capa. Un cero sin control
+es una garantía falsa.
+
+### Añadido
+
+- **`cables-submarinos:canalink-africa-granadilla`** — la Autoridad Portuaria de
+  Santa Cruz de Tenerife otorgó en sesión de 13/11/2014 concesión a **Canalink
+  África, S.L.U.** sobre la Zona II de aguas del **Puerto de Granadilla** «al
+  objeto de instalar un cable submarino de telecomunicaciones», veinticinco años
+  y 575,16 € de tasa anual (BOE-B-2015-789). **Segundo aterrizaje documentado en
+  el mismo puerto**: el de 2013 lo tiene Canarias Submarine Link, S.L. Dos
+  actos, dos concesionarias, dos fichas al mismo punto — la doctrina que la capa
+  ya tenía escrita («un cable con dos amarres documentados da dos registros»), y
+  el visor los marca apilados.
+
+### Dos veredictos que cierran frentes abiertos
+
+- **Columbus-III y Atlantis-2 en Conil: no están.** Once años de sumarios
+  (1994-2004) sin un solo acto con «cable submarino» en el título. Con el método
+  validado, el negativo vale: si esas concesiones se publicaron, no fue con ese
+  nombre en el título del BOE. **El frente se cierra** y deja de figurar como
+  pendiente de navegador.
+- **El EIG no es de esta capa.** La DIA de 2010 sobre el «Cable submarino fibra
+  óptica Europe India Gateway, segmento 2 (aguas españolas)» describe un cable
+  de 15.000 km que **cruza aguas españolas sin amarrar en España**: sus puntos
+  de conexión son Reino Unido, Portugal, **Gibraltar**, Mónaco, Francia, Libia,
+  Egipto… y el aterrizaje del tramo es el de Gibraltar. Sale de la lista de
+  candidatos con motivo, no por olvido.
+
+### Huecos
+
+- **Melilla–Península** sigue sin acto de Costas, pero el barrido dejó su rastro
+  administrativo: la Ciudad Autónoma licitó el tendido en 2010 y lo adjudicó en
+  2011, y Red.es formalizó en 2015 la fibra terrestre para conectarlo. Son
+  contratos: nombran el cable y sus extremos, **no sitúan el amarre**. La
+  concesión, si existe, está en el BOME o en el BOJA.
+- Los de siempre: Santander y Sagunto sin sistema ni destino, y la lista que la
+  Ley 11/2022 obliga a comunicar al Ministerio, sin publicar.
+
+---
+
 ## datos-v2026.08.113 — la capa deja de llamarse por una figura jurídica: «Desaladoras»
 
 Una capa llamada **«Desaladoras de interés general del Estado»** tenía el
