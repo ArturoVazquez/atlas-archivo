@@ -1117,7 +1117,8 @@ DIA favorable de 2024 con la AAI modificada para el Edificio 2 (BOPV n.º 4 de
 emisión, motor a motor** — segunda `exacta` de la capa, con el huso **deducido**
 a la manera de `zonas-defensa` (el acto no lo declara: se probaron los tres y
 solo el 30 deja el punto en el municipio que el acto nombra).
-**Huecos** · 8 + los de los tres últimos. **La potencia TI en MW no la certifica
+**Qué se añadió** *(2026-08-21, release `.112`, contrato 1.67.0)* · **El duodécimo, y lo trajo el vigía nuevo**: el campus «Zaragoza-WIND» de Merlin en Botorrita, que `otear-autonomicos.py` encontró en su segunda corrida —un acto del BOA de hacía una semana que una jornada de búsqueda a mano se había dejado—. Entra en `paraje`: el acuerdo nombra el polígono industrial San Antonio y el Nomenclátor tiene ese paraje en Botorrita, comprobado punto-en-municipio. **Y con él cae la prohibición de `potencia_it_mw`**: el acuerdo afirma «una potencia total de 144 MW IT» en su propia descripción, así que el motivo de la prohibición —«ningún acto la da»— dejó de ser verdad. El campo vuelve con una vara en su lugar: solo lo llena un acto que AFIRME la cifra; memoria recitada, solicitud o nota corporativa siguen yendo a claves.
+**Huecos** · 8 + los de los cuatro últimos. **La potencia TI en MW no la certifica
 ningún acto** — la dan la patronal y los operadores (R3); el acto de ACS la
 roza (20-30 MW POR SALA), el expediente de Alcalá la publica en documentación
 del promotor, el anuncio de Navalmoral la IMPRIME entera (16 salas × 12 MW)
@@ -1137,8 +1138,8 @@ anuncio conjunto de información pública del mismo boletín — ambos archivado
 con las superficies por ámbito, los expedientes de AAI por centro y las
 acometidas «DAY 1» a 132 kV. Tres `en_tramitacion` más, sin un megavatio
 publicado en acto: los que circulan son de prensa y no entran.
-**Archivado** · 22 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
-`.100`, `.102`, `.108`, `.109`, `.110` y `.111` · §10
+**Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100`, `.102`, `.108`, `.109`, `.110`, `.111` y `.112` · §10
 
 ## hidrogeno-red
 

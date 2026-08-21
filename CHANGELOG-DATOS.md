@@ -32,6 +32,66 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.112 — el vigía nuevo trae su primera pieza, y con ella cae una prohibición
+
+Lo encontró **`otear-autonomicos.py` en su segunda corrida**, horas después de
+nacer: un acto publicado en el BOA hace una semana que una jornada entera de
+búsqueda a mano se había dejado. Vigilar cuesta una vez; buscar cuesta cada vez.
+
+**Contrato 1.66.0 → 1.67.0** (aditiva: `centros-datos` recupera un campo que
+estaba prohibido, y el motivo se reescribe en vez de borrarse).
+
+### Añadido
+
+- **`centros-datos:merlin-zaragoza-wind`** — el «Campus de Centros de Datos
+  Zaragoza-WIND» de **Merlin Properties Socimi, SA** en **Botorrita**
+  (Zaragoza), declarado inversión de interés autonómico con interés general de
+  Aragón por Acuerdo de 22/7/2026 (**Orden ECE/1195/2026**, BOA n.º 157 de
+  14/8/2026, archivada). El acuerdo dimensiona: un edificio de **156.301 m²
+  construidos** y 41.868 de ocupación en planta, ámbito de **28,8 ha** en el
+  polígono industrial San Antonio, y **144 MW IT**.
+- Y entra en **`paraje`**, no en municipio: el acuerdo sitúa el ámbito «en el
+  polígono industrial San Antonio […] en el citado término municipal de
+  Botorrita», y el Nomenclátor tiene un paraje **«San Antonio»** que se
+  comprobó punto-en-municipio contra el IGN y cae en Botorrita — el patrón que
+  subió el OAJ al Pico del Buitre en la `.101`.
+
+### La prohibición que cae, y la vara que la sustituye
+
+`potencia_it_mw` estaba **prohibido por su nombre** desde que la capa nació, con
+este motivo: «ningún acto administrativo la da: la publican la patronal y los
+operadores, que por R3 no sostienen un `confirmado`». **Dejó de ser cierto**
+cuando el Acuerdo escribió «contará con una potencia total de 144 MW IT» en su
+propia descripción del proyecto que declara.
+
+El campo vuelve, pero la prohibición no se borra: **se sustituye por una vara**
+escrita en el esquema, que hace su mismo trabajo sin cegar el dato. Solo lo
+llena un **acto que AFIRME** la cifra. No lo llenan una nota corporativa, ni la
+memoria del promotor recitada por el acto («según la información facilitada por
+la promotora»), ni un proyecto en información pública: todo eso sigue yendo a
+`claves`, como en ACS, Alcalá y Navalmoral. **De quince registros lo llena
+uno** — y eso retrata la capa mejor que un campo inexistente: un registro sin él
+no está incompleto, es un centro cuya potencia TI no ha publicado nadie con
+autoridad.
+
+### Lo que el acto cuenta y no entra
+
+El acuerdo sitúa el proyecto en la red del grupo —«tres centros de datos que
+suman 64 MW IT (Barcelona-PLZF, Bilbao-Arasur y Madrid-Getafe)» en operación y
+una segunda fase de 254 MW—. Es contexto, no registros: Bilbao-Arasur sí está
+(entró en la `.110` con su propia AAI), y los demás esperan a que un acto los
+nombre, sitúe y dimensione. La previsión de empleo (5.040 puestos) sigue fuera
+por la prohibición de `empleos`, que nadie ha falsificado.
+
+### Huecos
+
+- El **PIGA** — el propio acuerdo lo llama «futuro PIGA» y nombra a Merlin
+  promotora definitiva. Cuando se apruebe, la categoría sube: lo vigila
+  `otear-autonomicos.py`, que es quien encontró esto.
+- El consumo eléctrico anual y el de agua: el acuerdo no los publica.
+
+---
+
 ## datos-v2026.08.111 — la Región Microsoft de Aragón entra con sus tres campus
 
 La capa dobla su Aragón: a los cinco de AWS y al de ACS se suman **los tres

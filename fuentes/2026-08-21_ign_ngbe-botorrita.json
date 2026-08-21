@@ -1,0 +1,91 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"Municipio",
+                "fecha":"2025-09-29",
+                "codigo_ngbe":"1.3",
+                "etiqueta":"Botorrita",
+                "fuente":"MITMA.IGN.NGMEP"
+            },
+            "id":"2712647",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -1.031536591,
+                    41.50784456
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"Capital de municipio",
+                "fecha":"2025-09-29",
+                "codigo_ngbe":"2.1.3",
+                "etiqueta":"Botorrita",
+                "fuente":"MITMA.IGN.NGMEP"
+            },
+            "id":"2816595",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -1.031536591,
+                    41.50784456
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "tiponombre":"identificador_geografico",
+                "tipo":"Entidad singular",
+                "fecha":"2025-09-29",
+                "codigo_ngbe":"2.1.9",
+                "etiqueta":"Botorrita",
+                "fuente":"MITMA.IGN.NGMEP"
+            },
+            "id":"2876543",
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -1.031536591,
+                    41.50784456
+                ]
+            }
+        }
+    ],
+    "numberMatched":3,
+    "numberReturned":3,
+    "links":[
+        {
+            "type":"application/geo+json",
+            "rel":"self",
+            "title":"This document as GeoJSON",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Botorrita&limit=12"
+        },
+        {
+            "rel":"alternate",
+            "type":"application/ld+json",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Botorrita&limit=12"
+        },
+        {
+            "type":"text/html",
+            "rel":"alternate",
+            "title":"This document as HTML",
+            "href":"https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Botorrita&limit=12"
+        },
+        {
+            "type":"application/json",
+            "title":"GN Lugar nombrado",
+            "rel":"collection",
+            "href":"https://api-features.ign.es/collections/namedplace"
+        }
+    ],
+    "timeStamp":"2026-08-21T07:44:40.549426Z"
+}
