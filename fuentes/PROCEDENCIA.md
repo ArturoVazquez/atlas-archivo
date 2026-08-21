@@ -1087,11 +1087,26 @@ llama al proyecto «acometida del centro de datos ACS DC LA PUEBLA».
 **La trampa que enseñó** · **Una nota de prensa de una administración no es
 fuente primaria.** Lo primario es el acto, no su anuncio: los «26 proyectos y
 2.000 MW» catalanes no traían un solo expediente detrás.
-**Huecos** · 8. **La potencia TI en MW no la publica ningún acto administrativo**
-— la dan la patronal y los operadores, que son corporativos (R3); el acto de
-ACS roza el dato (20-30 MW de carga TI POR SALA) pero no da el total.
-**Archivado** · 9 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
-`.100` y `.102` · §10
+**Qué se añadió** *(2026-08-21, release `.108`)* · **El noveno, y el primero de
+Madrid**: el Campus de Centros de Datos de Microsoft 7724 Spain, S.L.U. en el
+polígono Las Matillas de Alcalá de Henares, con la aprobación INICIAL de su
+Plan Especial (BOCM n.º 234, de 1/10/2025) como acto y sus cifras —98.693,19 m²
+según la memoria, 57,6 MW de potencia TI y 86,25 MW de consumo total según el
+análisis ambiental— dichas como lo que son: **documentos del promotor dentro
+del expediente de información pública**, que sostienen claves en `parcial` y no
+campos. El Nomenclátor no nombra el polígono (la «Isleta de Matillas» es un
+paraje fluvial, no el polígono): punto de `municipio`, el caso de AWS. Ese
+mismo día se recomprobó el PIGA de ACS: **sigue sin aprobación definitiva**.
+**Huecos** · 8 + los del noveno. **La potencia TI en MW no la publica ningún
+acto administrativo** — la dan la patronal y los operadores, que son
+corporativos (R3); el acto de ACS roza el dato (20-30 MW de carga TI POR SALA)
+sin dar el total, y el expediente de Alcalá **lo publica entero pero en
+documentación del promotor**, que tampoco es un acto: la prohibición del
+esquema aguanta con el motivo intacto. Y las aprobaciones definitivas de los
+dos `en_tramitacion` (ACS y Microsoft) quedan de guardia en AGENDA, porque ni
+el BOA ni el BOCM los vigila nadie automático.
+**Archivado** · 14 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100`, `.102` y `.108` · §10
 
 ## hidrogeno-red
 

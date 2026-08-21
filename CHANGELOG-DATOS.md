@@ -32,6 +32,63 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.108 — el noveno centro de datos, y el primero de Madrid
+
+La campaña por boletines autonómicos que la agenda dejaba como siguiente da su
+primera pieza — y es la que el hueco grande de la capa pedía: **Madrid entra en
+la capa**, con la misma vara con la que nacieron los ocho anteriores.
+
+**El contrato no se mueve: sigue en 1.66.0.**
+
+### Añadido
+
+- **`centros-datos:microsoft-alcala`** — el Campus de Centros de Datos de
+  **Microsoft 7724 Spain, S.L.U.** en el solar del Sector 26 del polígono
+  industrial **Las Matillas** (avenida de Madrid, 15, Alcalá de Henares), el
+  segundo `en_tramitacion` de la capa. Su acto: la **aprobación inicial del
+  Plan Especial de Ordenación** por la Junta de Gobierno Local (5/9/2025),
+  publicada con su información pública y su suspensión de licencias en el
+  **BOCM n.º 234, de 1/10/2025**. Y sus cifras, con la honestidad de dónde
+  salen: la memoria del plan («un Campus de Centros de Datos sobre un área de
+  unos 98.693,19 m²», entre la M-300 y las avenidas de Madrid y Roma — y su
+  propio plano topográfico midiendo 98.306,4 m²) y el análisis ambiental
+  (**57,6 MW de potencia nominal para los equipos de IT** y 86,25 MW de
+  consumo total) son **documentos del promotor dentro del expediente**:
+  sostienen claves en `parcial`, no campos en `confirmado`.
+- Cuatro fuentes archivadas: el anuncio del BOCM (facsímil y XML, la primera
+  fuente en lista de esta capa), la memoria y el análisis ambiental del
+  expediente de información pública, y la consulta al Nomenclátor.
+
+### La cifra prohibida, rozada por segunda vez — y el motivo aguanta
+
+El esquema prohíbe `potencia_it_mw` porque «ningún acto administrativo la da».
+El análisis ambiental de Alcalá la DA — pero es documentación del promotor
+sometida a información pública, no un acto que la certifique: la prohibición
+sigue en pie y la cifra va en clave, en `parcial`, con su procedencia contada.
+El día que una DIA o una aprobación definitiva la recite, tocará releer el
+motivo — está dicho aquí para que ese día no pille de nuevas.
+
+### La honestidad de la geometría
+
+El Nomenclátor **no nombra el polígono Las Matillas**: la búsqueda nacional da
+69 «Las Matillas» y ninguno en Alcalá, y el barrido por recuadro solo trae la
+«Isleta de Matillas», un paraje fluvial del Henares que NO es el polígono —
+casarlo por parecido sería el relleno que esta capa evita. Punto de
+`municipio`, el caso de los cinco de AWS.
+
+### Huecos
+
+- La **aprobación definitiva** del Plan Especial no consta: cuando llegue, la
+  categoría podrá subir. El BOCM no lo vigila nadie automático — va a la
+  agenda, junto al PIGA de ACS (que también se recomprobó hoy: **sigue sin
+  definitiva**).
+- Ningún acto administrativo dimensiona el campus: superficie y potencia son
+  del expediente del promotor, en claves.
+- Los **demás** centros de Madrid y todos los de Cataluña siguen sin acto en
+  la capa: la campaña continúa.
+
+---
+
 ## datos-v2026.08.107 — los actos sitúan por linderos, y ahora se dice
 
 La relectura que la agenda dejaba señalada como siguiente: los actos **ya
