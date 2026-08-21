@@ -32,6 +32,58 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.107 — los actos sitúan por linderos, y ahora se dice
+
+La relectura que la agenda dejaba señalada como siguiente: los actos **ya
+archivados** de las seis desaladoras de Acuamed, releídos entero buscando el
+emplazamiento que las fichas no contaban, y la capacidad de Águilas tras su
+ampliación, perseguida en el BOE.
+
+**El contrato no se mueve: sigue en 1.66.0.** Ni un registro ni un campo
+nuevos: la capa sube de parche (1.1.2).
+
+### Corregido
+
+- **`desaladoras:aguilas` — el hueco de la capacidad se estrecha con un acto
+  nuevo**: el anuncio de la CHS de la competencia de proyectos de la concesión
+  de sus volúmenes (CSR-0005/2024, BOE de 12/2/2024, archivado) advierte de
+  que para disponer de todo el volumen «es necesario que esté ejecutada la
+  ampliación de la desaladora hasta los 70 hm³ anuales». Es la tercera cifra
+  del expediente —40 evaluados en 2006, 60 previstos en la misma DIA, 70 en el
+  anuncio— y la constancia oficial de que a enero de 2024 la ampliación **no
+  estaba ejecutada**. La capacidad en servicio sigue sin acto que la publique,
+  y el hueco ahora lo cuenta con las tres cifras delante.
+- **Tres fichas ganan el «dónde» de su acto, verbatim y en clave**: Carboneras
+  («en una parcela de 45.000 metros cuadrados […] a 2 kilómetros de la
+  localidad de Carboneras en línea de costa, entre la Central Térmica de
+  ENDESA y la planta de cemento»), Bajo Almanzora («a 1.850 m de la línea de
+  costa y a 1.400 m aguas arriba del río Almanzora», en la parcela de la
+  antigua Confederación Hidrográfica del Sur — y con historia: no era el
+  emplazamiento proyectado, Acuamed aceptó el traslado en la información
+  pública) y Torrevieja («entre la carretera N-332 y las lagunas de
+  Torrevieja», del informe de 2022).
+
+### Lo que la relectura confirmó que NO hay
+
+- **Ni una coordenada de planta.** Las únicas tablas UTM de las DIA son las
+  estaciones de control de salinidad **en el mar** (E1–E5), no la planta. Los
+  actos sitúan por linderos y distancias; convertir un lindero en coordenada
+  sería fabricarla, así que los seis puntos siguen siendo de municipio — con
+  el lindero dicho en cada ficha, que es lo que cambia.
+- El Nomenclátor sigue sin nombrar ninguna de las seis: se repreguntó por
+  etiqueta, planta a planta, sobre el barrido archivado y contra el servicio.
+- Valdelentisco y Campo de Dalías: sus actos no sueltan más que «la parcela de
+  la actual planta». Nada que añadir sin inventar.
+
+### Huecos
+
+- El de la capacidad de Águilas y los seis de coordenada **se estrechan, no se
+  cierran** — cada uno dice ahora exactamente qué publica su acto y qué no. Y
+  la decisión de perímetro de la capa (si entran las autonómicas, canarias y
+  privadas) sigue esperando a Arturo, dicha en AGENDA.
+
+---
+
 ## datos-v2026.08.106 — la segunda tanda de sedes: la Antártida en cifra y la PSA en su desierto
 
 La investigación de sedes ICTS que el relevo dejó encargada, con sus ángulos

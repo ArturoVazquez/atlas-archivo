@@ -433,15 +433,35 @@ al topónimo del paraje de Agua Amarga que la propia MCT declara. **Cada
 capacidad retrata el momento de su acto y va en la unidad de su acto**:
 `capacidad_hm3_anio` o `capacidad_m3_dia`, sin conversión — convertir exigiría
 suponer días de operación.
+**La relectura** *(2026-08-21, release `.107`)* · Los actos archivados de las
+seis de Acuamed, releídos entero buscando emplazamiento. **El resultado
+negativo es el que manda**: ninguna DIA publica la coordenada de la planta —
+las únicas tablas UTM que traen son las estaciones de control de salinidad
+**en el mar**, no la planta— y el Nomenclátor, repreguntado por etiqueta
+planta a planta, sigue sin nombrar ninguna. Lo que sí publican son **linderos
+y distancias** («entre la Central Térmica de ENDESA y la planta de cemento»,
+«a 1.850 m de la línea de costa y a 1.400 m aguas arriba del río Almanzora»,
+«entre la carretera N-332 y las lagunas de Torrevieja»), que ahora van
+verbatim en clave en Carboneras, Bajo Almanzora y Torrevieja — **convertir un
+lindero en coordenada sería fabricarla**, así que los seis puntos siguen
+siendo de municipio. Para Águilas apareció además un acto nuevo: el anuncio
+de la CHS de la competencia de proyectos de su concesión (CSR-0005/2024)
+advierte de que la ampliación «hasta los 70 hm³ anuales» estaba **pendiente de
+ejecutar** a enero de 2024 — la tercera cifra del expediente, con las tres
+ahora en la ficha.
 **Huecos** · Las seis de Acuamed declaran la coordenada de la planta (punto de
-municipio); Águilas añade la capacidad actual tras su ampliación. La capa
-sigue sin ser el censo: autonómicas, canarias y privadas quedan como
-ampliación, cada una con sus actos.
-**Archivado** · 20 ficheros (quince del BOE, las cuatro fichas de la MCT y el
-barrido del NGBE — que conserva también la PRIMERA pasada, descartada por caer
-en municipios homónimos de Madrid, Huesca y León: el error queda a la vista
-para que se vea qué se comprobó).
-**El resto** · CHANGELOG `datos-v2026.08.28` y `datos-v2026.08.30` · §10
+municipio, ahora con el lindero de su acto dicho en clave donde lo hay);
+Águilas añade la capacidad actual tras su ampliación (40 evaluados, 60
+previstos, 70 pendientes de ejecutar en 2024 — la que está en servicio no la
+publica ningún acto). La capa sigue sin ser el censo: autonómicas, canarias y
+privadas quedan como ampliación, cada una con sus actos, **y ese cambio de
+perímetro lo decide Arturo** (AGENDA).
+**Archivado** · 21 ficheros (dieciséis del BOE, las cuatro fichas de la MCT y
+el barrido del NGBE — que conserva también la PRIMERA pasada, descartada por
+caer en municipios homónimos de Madrid, Huesca y León: el error queda a la
+vista para que se vea qué se comprobó).
+**El resto** · CHANGELOG `datos-v2026.08.28`, `datos-v2026.08.30` y
+`datos-v2026.08.107` · §10
 
 ## gas-almacenamiento
 
