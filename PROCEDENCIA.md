@@ -1128,8 +1128,17 @@ la cifra habrá que releer su motivo. Las aprobaciones pendientes de los
 original de Arasur de 2023 (citada por el acto archivado, sin publicación
 propia localizada) quedan de guardia en AGENDA: ni el BOA, ni el BOCM, ni el
 DOE, ni el BOPV los vigila nadie automático.
-**Archivado** · 18 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
-`.100`, `.102`, `.108`, `.109` y `.110` · §10
+**Qué se añadió** *(2026-08-21, release `.111`)* · **La Región Microsoft de
+Aragón, con sus tres campus** (La Muela, Villamayor de Gállego y Zaragoza —
+este último, «Puerto Venecia» según el anuncio): cada uno con su declaración
+de interés autonómico citada con su BOA, y los tres colgando de la Orden
+FOM/1520/2025 (PIGA aprobado INICIALMENTE, BOA n.º 223 de 18/11/2025) y del
+anuncio conjunto de información pública del mismo boletín — ambos archivados,
+con las superficies por ámbito, los expedientes de AAI por centro y las
+acometidas «DAY 1» a 132 kV. Tres `en_tramitacion` más, sin un megavatio
+publicado en acto: los que circulan son de prensa y no entran.
+**Archivado** · 22 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100`, `.102`, `.108`, `.109`, `.110` y `.111` · §10
 
 ## hidrogeno-red
 

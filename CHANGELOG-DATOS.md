@@ -32,6 +32,61 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.111 — la Región Microsoft de Aragón entra con sus tres campus
+
+La capa dobla su Aragón: a los cinco de AWS y al de ACS se suman **los tres
+campus del PIGA «Implantación de la Región Microsoft en Aragón»** — La Muela,
+Villamayor de Gállego y Zaragoza—, cada uno con su declaración de interés
+autonómico y el plan conjunto aprobado inicialmente. La capa pasa de 11 a
+**14**.
+
+**El contrato no se mueve: sigue en 1.66.0.**
+
+### Añadido
+
+- **`centros-datos:microsoft-la-muela`** — declarado el 20/12/2023 (Orden
+  EEI/1979/2023; BOA n.º 6, de 9/1/2024): la Fase 5 del polígono Centrovía,
+  sector de ~146,12 ha con la actividad concentrada en **93,69 ha**.
+- **`centros-datos:microsoft-villamayor-de-gallego`** — declarado el 3/7/2024
+  (Orden PEJ/564/2024; BOA n.º 141) y con el ámbito **modificado en 2025**
+  (Orden PEJ/546/2025; BOA n.º 100, **archivada** con sus tablas catastrales):
+  sector nuevo de 74,16 ha y parcela neta de **54,89 ha**, con la conexión
+  eléctrica soterrada hacia La Puebla de Alfindén en dos líneas de 4.370 y
+  4.442 m.
+- **`centros-datos:microsoft-zaragoza`** — declarado el 28/2/2025 (Orden
+  PEJ/285/2025; BOA n.º 57): sector nuevo de 55,27 ha en el área 88/3 y
+  parcela neta de **43,11 ha**. El anuncio conjunto lo llama «centro de datos
+  de Puerto Venecia».
+- Los tres cuelgan de la **Orden FOM/1520/2025** (BOA n.º 223, de 18/11/2025,
+  archivada), que aprueba INICIALMENTE el PIGA y describe los tres ámbitos, y
+  del **anuncio conjunto de información pública** del mismo BOA (archivado),
+  que da el expediente de AAI de cada centro (INAGA/500301/02/2025/11185,
+  11186 y 11187) y sus acometidas «DAY 1» a 132 kV (AT 2025/276, 277 y 278).
+
+### La honestidad de las fichas
+
+- **Tres `en_tramitacion`**: el PIGA tiene aprobación inicial, no definitiva —
+  la misma vara que ACS y que el Microsoft de Alcalá. La capa lleva ya seis
+  registros en esa categoría y ninguno la adelanta.
+- **Ni un megavatio**: los actos archivados son urbanísticos y de tramitación
+  (superficies, sectores, líneas y expedientes) y no publican potencia — la
+  que circula es de prensa y no entra. El hueco lo dice en cada ficha.
+- **Puntos de municipio los tres**: ni «Puerto Venecia» ni «Centrovía» están
+  en el Nomenclátor. El de Zaragoza comparte punto con `aws-car-zaragoza` y el
+  visor los marca apilados, que es la lectura honesta de dos campus situados
+  por el mismo municipio.
+- Las tres **órdenes de declaración** están citadas con su BOA por los actos
+  archivados pero sin archivo propio todavía: hueco en cada ficha y asunto en
+  la agenda.
+
+### Huecos
+
+- La aprobación definitiva del PIGA «Región MSFT»; las tres órdenes de
+  declaración por archivar; y los megavatios que ningún acto publica. Madrid
+  sigue con un solo registro y Cataluña con ninguno: la campaña continúa.
+
+---
+
 ## datos-v2026.08.110 — el undécimo centro de datos: el primero con la autorización resuelta fuera del PIGA
 
 La campaña sigue por el norte, y Álava da el registro con la cadena de actos
