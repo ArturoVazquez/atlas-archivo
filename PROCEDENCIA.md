@@ -171,10 +171,18 @@ archivada—, y eso se midió, no se supuso.
 
 En el directorio hay algunos más que citas los reclaman, y no son huérfanos: son
 las **pruebas de licencia** que sostienen este mismo fichero —el aviso legal de
-un emisor, los términos de reutilización de un portal— y los **boletines que se
+un emisor, los términos de reutilización de un portal—, los **boletines que se
 acumulan** en vez de reemplazarse, cada uno con una cifra que ningún otro
-documento repite. Un documento archivado de más es archivo; uno de menos sería
-una cita rota, y de esos no hay.
+documento repite, y —desde la release `.117`— los **actos de expedientes
+VIGILADOS que todavía no tienen ficha**. El primero de esta tercera clase es la
+información pública de la ocupación para el «Proyecto del sistema submarino de
+telecomunicaciones **Canalink Base 4 y Base 5**» (BOC-A-2025-176-3176): nombra
+el sistema y a su promotora, pero sitúa solo por **provincia**, y sin punto de
+amarre no hay aterrizaje que registrar. Se archiva porque su plazo de
+información pública ya cerró y el proyecto que llevaba el trazado **ha
+desaparecido de la web de la Consejería**; el día que llegue el otorgamiento,
+la mitad del expediente ya está guardada. Un documento archivado de más es
+archivo; uno de menos sería una cita rota, y de esos no hay.
 
 ## Lo que se decidió no obtener
 
