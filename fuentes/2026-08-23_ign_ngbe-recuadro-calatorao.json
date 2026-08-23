@@ -1,0 +1,6083 @@
+{
+ "_": "Recuadro sobre Calatorao (Zaragoza). Se consulta asi porque la consulta POR ETIQUETA «Calatorao» devolvio CERO resultados para un municipio que existe: el cero del IGN no prueba ausencia, y por recuadro aparece con sus tres entradas. De aqui sale el punto publicado del registro.",
+ "consulta": {
+  "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-1.40,41.45,-1.25,41.58&limit=500&f=json",
+  "fecha": "2026-08-23"
+ },
+ "respuesta": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera Blanca",
+     "tipo": "Edificación",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970077",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39709480999994,
+      41.55688459
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera del Fachenda",
+     "tipo": "Edificación",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970078",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37268074099995,
+      41.5601194770001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de Bernabé",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970079",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37030036999994,
+      41.5584715310001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Corral de la Poza",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970080",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37921150499994,
+      41.554321132
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Corral de Lucas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970081",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36938483999995,
+      41.5449217340001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas Dehesa de Amenas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970082",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36901862799994,
+      41.5321043610001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casetas de San Díez",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970083",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39477547499996,
+      41.5343015990001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa del Parihuela",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970084",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37341316199991,
+      41.5458982920001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Molino Canova",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970097",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39361580799994,
+      41.518493505
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Almacén Dehesa de Amenas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970098",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38092048899995,
+      41.5247191000001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas San Pedro",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970099",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36730964199995,
+      41.5239256570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas Soto de Agra",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970100",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36840827499992,
+      41.5148924580001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa la Riera",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970101",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37921150399995,
+      41.511718622
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Peirona",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970103",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39788827299992,
+      41.5136717270001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa de Francisco",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970104",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36260993099995,
+      41.5075072150001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Estación de Calatorao",
+     "tipo": "Construcción/instalación abierta",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970105",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36071784199993,
+      41.5286864020001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Poza",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970115",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39257820999995,
+      41.527526702
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Salillas",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970118",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37469489999995,
+      41.5302733010001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino del Cabezo de Judas",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-22"
+    },
+    "id": "1970119",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38488777699996,
+      41.5256956580001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino del Puyalón",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970120",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37902839699996,
+      41.5405271960001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Vereda de Dehesa Ancha",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970121",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39801034299995,
+      41.514892429
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Río Grío",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970139",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39489754899995,
+      41.50091539
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Río Mediano",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970166",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37310798299995,
+      41.5046995900001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Pueblo",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970168",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39691170999993,
+      41.5147093240001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia Vadillo",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970169",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37017829399991,
+      41.5042723460001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa de la Hoya",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970220",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33831794599996,
+      41.5748900200001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Caseta de Rosel",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970221",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31597906099995,
+      41.5618895550001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Caseta del Monte",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970222",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32647712199991,
+      41.5781248950001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa del Alemán",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970223",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29357915299994,
+      41.5697020760001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de Santiago",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970225",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29418949699993,
+      41.556884692
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Parideras de los García",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970235",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25439454599996,
+      41.5344848190001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Caseta de Esteban",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970236",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28082278699992,
+      41.549926692
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de la Mónica",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970237",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28369143299994,
+      41.5328978940001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de la Viña",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970238",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30438236899994,
+      41.5479125190001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas del Velloso",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970239",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32122807599995,
+      41.5338744260001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa del Fotruco",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970240",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30462650099992,
+      41.5277098940001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Ermita de San Gregorio",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970241",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32092289199994,
+      41.511108327
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Granjas del Cabildo",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970242",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31671146399992,
+      41.5142821570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa las Tapias",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970243",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31158450499993,
+      41.5070800180001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Torre Pascual",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970244",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32342533999991,
+      41.526122963
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa del Cabildo",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970245",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31927494299993,
+      41.5155028570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera el Ventorrillo",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970246",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30670169199993,
+      41.5145263080001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de Cruces",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970247",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27661134699991,
+      41.516906695
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Corral de Solano",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970248",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27380372599993,
+      41.5112914650001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de la Jacinta",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970249",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25927735599993,
+      41.5192870720001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa de Poza",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970250",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25079346599995,
+      41.5175170560001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Granjas de los Olivares",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970255",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31390385899994,
+      41.5499266690001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Puente de los Doce Ojos",
+     "tipo": "Construcción/instalación abierta",
+     "fecha": "2023-07-07"
+    },
+    "id": "1970256",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34069830499993,
+      41.5468748870001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Alfamén",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970260",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34161382399992,
+      41.5172728540001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Tabuenca",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970262",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34558113299994,
+      41.577270383
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Alfamén",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-22"
+    },
+    "id": "1970263",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29852298899993,
+      41.5474852790001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino Viejo de Épila",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1970268",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30511479299992,
+      41.5554808740001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Venta de Niles",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970270",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30889896099995,
+      41.5189208340001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino Viejo de Ricla",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1970271",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33978277799991,
+      41.5494993980001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco del Ollero",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970272",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35198982099996,
+      41.5656736980001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.5",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Pozo de las Penas",
+     "tipo": "Hidrónimo puntual",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970273",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28851323699996,
+      41.579101494
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Brazal del Prado",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970277",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32720951999994,
+      41.5203246240001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de Salillas",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970278",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33789068699991,
+      41.5504759610001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de Mareca",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970279",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32128912099995,
+      41.560485741
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de la Hermandad",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970280",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31781011099991,
+      41.551696683
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Pilón",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970281",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31829840499995,
+      41.5737303720001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de la Sangrera",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970282",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31561285699991,
+      41.574890043
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de la Villa",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970283",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30297857099993,
+      41.5687255050001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Vadillo",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1970284",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33038334799994,
+      41.513305582
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Almacenes del Conde de Montenegrón",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1970311",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25518800999993,
+      41.5582885190001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de los Pinos",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970337",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35400397499996,
+      41.5437010480001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de las Lagunas",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970338",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35388190699996,
+      41.5494993840001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de los Olleros",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970340",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35418709199996,
+      41.5750731080001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de Puyalón",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1970341",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35412605799991,
+      41.578491076
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas del Tuerto",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989473",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39459237399996,
+      41.496887073
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas los Bolos",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989474",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38201912199992,
+      41.4871214670001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Residencia Virgen de las Cabañas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989493",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37249763099993,
+      41.497314341
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera de Flores",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989494",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35870367299992,
+      41.467529217
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa los Pajaricos",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989495",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36041265899991,
+      41.4733275520001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Finca la Redonda",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989496",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35748296699995,
+      41.460510179
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casas de las Ventas del No Hay",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989503",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37200934999993,
+      41.492309462
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Ermita de la Virgen de las Cabañas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989504",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37469489799992,
+      41.49792469
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa San Juan",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989505",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36981208199995,
+      41.4835204080001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Generosa",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989506",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38439949499991,
+      41.4893187280001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa de Josa",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989507",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38439949499991,
+      41.494689818
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Guerrero",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989508",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39739999299991,
+      41.4902952770001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Polígono Industrial la Cuesta",
+     "tipo": "Edificación",
+     "fecha": "2023-07-20"
+    },
+    "id": "1989514",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36450201899993,
+      41.4943236270001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Peirón Virgen María",
+     "tipo": "Construcción/instalación abierta",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989516",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35870367199993,
+      41.474304116
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Valdefajas",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989546",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39318856399996,
+      41.4879149120001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Cantalobos",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1989549",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38708504499994,
+      41.4675291880001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Fontellas",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1989550",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38970955899993,
+      41.458679094
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino Hondo",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989551",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38549812899993,
+      41.4553221670001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Ricla",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989554",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39520272699991,
+      41.467285039
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de los Quiñones",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989556",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36297613799991,
+      41.4827269570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino del Ginestal",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989559",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36138922199996,
+      41.4714964970001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Hilera",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989560",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36920172699996,
+      41.4650878020001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino a Carraelaspo",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1989564",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35717779199996,
+      41.4721068530001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Calatorao",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989565",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36578375899995,
+      41.4957274340001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de Carra Alpartir",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1989596",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36859137399995,
+      41.4525145680001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de las Garras",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1989597",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37609870699993,
+      41.4564818440001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia Alta de Grío",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1989606",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36602789599993,
+      41.4614867330001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Rey",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989607",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36407477199992,
+      41.47991934
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Carretillo",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989610",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37860114999995,
+      41.4619139660001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de las Viñas Viejas",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989611",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39190682599991,
+      41.479675172
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de Almunia",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1989613",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39270028299995,
+      41.4929197930001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Romeral",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989615",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38751229099995,
+      41.4539183570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.8",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barrio de San Sebastián",
+     "tipo": "Barrio",
+     "fecha": "2025-10-07"
+    },
+    "id": "1989662",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.364826774841562,
+      41.48652101768869
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Almunia de Doña Godina a Muel",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1989670",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34149174499993,
+      41.4771117490001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Cuesta de la Torre de la Nava",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989671",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33349613599995,
+      41.4904784450001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.8",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Urbanización Fincalmunia",
+     "tipo": "Barrio",
+     "fecha": "2025-10-07"
+    },
+    "id": "1989726",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.3421836393510045,
+      41.49592811658693
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Granjas de Velilla",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989727",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33398442099991,
+      41.4993285370001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Torre Embid",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989728",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34301762999991,
+      41.4938964030001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Villa Pilar",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989729",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34167485299992,
+      41.4918822450001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Finca Saldaña",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989731",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33117678999992,
+      41.4511108
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Caseta de Marín",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989732",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32989505299992,
+      41.4617309100001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Caseta del Guarda",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989733",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33428958699994,
+      41.4608764150001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Blanca",
+     "tipo": "Edificación",
+     "fecha": "2024-08-09"
+    },
+    "id": "1989735",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.3150286311049826,
+      41.492082819815316
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Angora",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989736",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31958011199993,
+      41.4979247430001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Torre Chambona",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989737",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32299808499994,
+      41.4996947580001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa de los Pozos",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989738",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29901124599991,
+      41.4865111970001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Finca Izquierdo",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989739",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30230714599992,
+      41.4824828770001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Caseta de las Reguerillas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989745",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27337646199993,
+      41.4514770550001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Finca los Llanos",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989746",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28057861399992,
+      41.455505369
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Finca San Miguel",
+     "tipo": "Edificación",
+     "fecha": "2023-07-20"
+    },
+    "id": "1989747",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27740478699991,
+      41.4636840750001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Finca San Miguel",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989748",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26599120999992,
+      41.4656982380001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera Lomeros",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989749",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27410889099991,
+      41.476074204
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera la Jupe",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989750",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26678467199991,
+      41.481079085
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera la Solana",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989751",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27099610399995,
+      41.499511688
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Vargas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989767",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34021000699994,
+      41.4868773680001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa del Astro",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989768",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33850102199995,
+      41.485473562
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Casa Pinilla",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "1989769",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33099369399991,
+      41.4962767840001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Cuesta",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989776",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34570317599992,
+      41.483520431
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Enmedio",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1989779",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33502201199991,
+      41.4700927160001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino del Cerezuel",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989783",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31170656299992,
+      41.469299284
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Almonacid de la Sierra a Épila",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989784",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30938722099995,
+      41.4545287890001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de la Loma",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989788",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28619384999996,
+      41.460327142
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de Lucena",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989790",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26348877199996,
+      41.4760742080001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino del Saso",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-24"
+    },
+    "id": "1989802",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32202151399991,
+      41.4729003450001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino a Épila",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989804",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28979492699995,
+      41.4680786000001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Río Alpartir",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-08-04"
+    },
+    "id": "1989808",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34271244599995,
+      41.461486757
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.5",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Fuente de la Nava",
+     "tipo": "Hidrónimo puntual",
+     "fecha": "2023-07-20"
+    },
+    "id": "1989817",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33441166499995,
+      41.4888915320001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia Nueva de Michén",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989818",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32250979699995,
+      41.4774779780001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de la Acecuela",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989819",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32861331899994,
+      41.4874877300001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia de la Nava",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989821",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34021000899992,
+      41.489318772
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Brazal de los Escorrederos",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989822",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33758549599992,
+      41.4926757060001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Brazal de las Gayardas",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989862",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35791021699993,
+      41.4802855570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Camino de las Huertas",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-25"
+    },
+    "id": "1989863",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34979253299991,
+      41.4791258980001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia Vieja",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "1989865",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35479741999995,
+      41.4780882960001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cañada Real de Morata de Jalón a Alfamén",
+     "tipo": "Camino y vía pecuaria",
+     "fecha": "2023-07-22"
+    },
+    "id": "1989867",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36041265699993,
+      41.4586791230001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.3",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acequia del Ceicazo",
+     "tipo": "Curso artificial de agua",
+     "fecha": "2023-07-20"
+    },
+    "id": "1989880",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32110598599991,
+      41.4749145050001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera Dehesa de Amenas",
+     "tipo": "Edificación",
+     "fecha": "2023-07-21"
+    },
+    "id": "2588709",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38140876999995,
+      41.524719099
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Paridera del Conde de Montenegrón",
+     "tipo": "Edificación",
+     "fecha": "2023-07-20"
+    },
+    "id": "2588710",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25567629099993,
+      41.5581054130001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.4",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Llano de Puyalón",
+     "tipo": "Llanura",
+     "fecha": "2023-07-20"
+    },
+    "id": "264341",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36511238299994,
+      41.5703123540001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Loma del Ollero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264342",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39318855699992,
+      41.5698850780001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Teja Roya",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264360",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39440926399993,
+      41.5468748330001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Poza",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264362",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37988289099991,
+      41.551330411
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Llanos de Lucas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "264363",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36389167499993,
+      41.5504759360001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Lagunas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-07"
+    },
+    "id": "264364",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36102302299992,
+      41.5590818920001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Alto de Puyalón",
+     "tipo": "Montaña",
+     "fecha": "2023-07-20"
+    },
+    "id": "264365",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37310798799996,
+      41.565124359
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Carreteras",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264367",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36468513099993,
+      41.544311388
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Dehesa de Amenas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "264368",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36700446599991,
+      41.5299070980001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Hoya del Muerto",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264369",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36767585499996,
+      41.5374754520001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Plano",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264370",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38598640899994,
+      41.5399168380001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Alto del Plano",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264379",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37658699199994,
+      41.5338743710001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Plano Bajo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264380",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35839850599996,
+      41.525329474
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Navillas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264381",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36071784199993,
+      41.5203245910001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Castillejo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264382",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37188728099994,
+      41.5181273160001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cascayo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264383",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38708504299996,
+      41.5172728100001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cebollinero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264384",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39239510599992,
+      41.5119017140001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Lumbrarias",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264385",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39398201999995,
+      41.5095213420001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Riera",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264386",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37329109099994,
+      41.5073241000001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Aleja",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264407",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37792976399993,
+      41.5083006560001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Tamarices",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264408",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38690193899993,
+      41.500488153
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Noria",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264409",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39331063299994,
+      41.514892434
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.6",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Solana de Alberto",
+     "tipo": "Vertientes",
+     "fecha": "2023-07-20"
+    },
+    "id": "264419",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39837654499991,
+      41.5797117290001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Fotruco",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264421",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36871345099991,
+      41.5214842500001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Repolla",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264422",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38092048899995,
+      41.5213011340001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Ollero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264425",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39300545199995,
+      41.576293767
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Pineo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264440",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39678963499995,
+      41.551330394
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Vallés",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264441",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39910897199991,
+      41.5458982660001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Puentello",
+     "tipo": "Paraje",
+     "fecha": "2023-07-07"
+    },
+    "id": "264445",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38751228999996,
+      41.50488268
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Agra",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264446",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36608893799996,
+      41.5172728300001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Puyalón",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264447",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36651619399993,
+      41.5784910620001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Eras del Romeral",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264452",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34997564599996,
+      41.5111082990001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Vadillo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264453",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34490972599991,
+      41.5162962900001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.5",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Hoya",
+     "tipo": "Depresión",
+     "fecha": "2023-07-21"
+    },
+    "id": "264454",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33770759199996,
+      41.5720824030001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cabezo de Judas",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "264455",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34997565799995,
+      41.561279169
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Loma de la Laguna",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264456",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34729010699994,
+      41.5504759520001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Soto de la Zorra",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264457",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30609137199991,
+      41.579284585
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Artillos",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264458",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31347662399992,
+      41.5728758860001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Navarro",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264459",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30780034999992,
+      41.5692748170001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Planas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-22"
+    },
+    "id": "264460",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31799322399991,
+      41.5648802750001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Rozas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "264461",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31048589499994,
+      41.5632933690001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Lavadero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264462",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30432134299991,
+      41.564880288
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Correntias",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264463",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31829839699992,
+      41.5584715840001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Chopera",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264464",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32940679999996,
+      41.557922256
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Lofras",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264466",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32659917899991,
+      41.5502928670001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Arenales",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "264467",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32830816099994,
+      41.5452879860001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Landas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264468",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33020025099995,
+      41.5394896480001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cacho",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264469",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29528812199993,
+      41.5413207350001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Altamira",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264470",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29779056299992,
+      41.5364989590001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Viñas Altas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264471",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29541018699996,
+      41.5297240620001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Viñaza",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264472",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31597905399991,
+      41.5457152430001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Prado",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264473",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31488041799992,
+      41.5424803830001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Estrechos",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264474",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32659917199993,
+      41.5349120170001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Suertes",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264475",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31738285699993,
+      41.5297240410001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Plano",
+     "tipo": "Paraje",
+     "fecha": "2023-07-26"
+    },
+    "id": "264476",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33062748899994,
+      41.515075601
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cabildo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264477",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31878666199992,
+      41.5172728760001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Villacampa",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264478",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32568363899992,
+      41.5189208180001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Granja",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264479",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31390384999992,
+      41.5269164300001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Michel",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264480",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30249026699994,
+      41.5234984730001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Serrallo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264481",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29968264599995,
+      41.519470159
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Ventorrillo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264482",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30529788399991,
+      41.516723573
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Ginestares",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264483",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30700686299991,
+      41.504699653
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Pujarnés",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264484",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30389406699993,
+      41.5025023910001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Loma",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "264485",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28790285199995,
+      41.5109252490001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Suertes Blancas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264486",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29101564499996,
+      41.5068969290001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Faja",
+     "tipo": "Paraje",
+     "fecha": "2023-07-07"
+    },
+    "id": "264487",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28070069699993,
+      41.501708949
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Espartal",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264488",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27288819599994,
+      41.5039062150001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Juan Solana",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264489",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27319337299991,
+      41.5087279900001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Sarda",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "264492",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25488282299995,
+      41.520507776
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Poza",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264493",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27172853299993,
+      41.520080523
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Bodegón Cuartero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264494",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27038575799992,
+      41.5159301350001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Roturados",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264495",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27081300299994,
+      41.5126952740001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cuesta Roya",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264498",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26580814299996,
+      41.579894961
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Acampo del Conde",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264499",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26678469999996,
+      41.5656737680001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Prado de las Viñas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-22"
+    },
+    "id": "264500",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28729252399995,
+      41.5648803020001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Dehesilla",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264501",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27551272999995,
+      41.5607299160001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Dehesa de Berbedel",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264502",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29052738199994,
+      41.5529174090001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Polo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264503",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28240969899991,
+      41.5432738640001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Ruejo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264504",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27050783599992,
+      41.5402831480001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cabezo Royo",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "264505",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25097657699996,
+      41.5429076670001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Azafranares",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264506",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25390626399991,
+      41.5366820830001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Centenares",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264507",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28179934199994,
+      41.5311278760001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Canario",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264508",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27801515899995,
+      41.5258788570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Capellanía",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264521",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30090337399992,
+      41.5678710160001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cerrado Franco",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264523",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28662114399992,
+      41.5748900680001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.4",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Llano del Conejuelo",
+     "tipo": "Llanura",
+     "fecha": "2023-07-21"
+    },
+    "id": "264524",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34552009899994,
+      41.5786741910001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cancillo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-22"
+    },
+    "id": "264525",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31420904599992,
+      41.570678619
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Dehesa de Amena",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264526",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35089118099995,
+      41.5415037870001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Bodegón",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264527",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28399661199995,
+      41.5393065810001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Yesares",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264528",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26239015199991,
+      41.52392574
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Bodegones",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264529",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26159669799995,
+      41.5388793450001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Tejares",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "264530",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32830815399996,
+      41.5249022570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Timbares",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264531",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34680182099993,
+      41.5343016470001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Somones",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264533",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32482916399994,
+      41.563110249
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Malpa",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264534",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34082037499991,
+      41.5413206910001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Calatoradico",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264535",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33300786499996,
+      41.527526762
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Guinoy",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264536",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32812504799995,
+      41.5213011850001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Finillos",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264537",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33178716699996,
+      41.5421141570001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Anguillos",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264538",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31689457899995,
+      41.538085853
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Fotruco",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264539",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30572513599992,
+      41.531310966
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Chifalos",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264540",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29431155499992,
+      41.5335082400001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Fustarés",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264551",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30169680299991,
+      41.5081176250001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Suñén",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264552",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28369145199991,
+      41.5701293270001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Ramiel",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264554",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33551030899991,
+      41.5294798830001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Virgen del Romeral",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "264556",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34851080099992,
+      41.5076903340001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Almunia de Doña Godina",
+     "tipo": "Municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2712617",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.373214152,
+      41.47807609
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Calatorao",
+     "tipo": "Municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2712659",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.345161824,
+      41.52253995
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lucena de Jalón",
+     "tipo": "Municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2712732",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31415846,
+      41.55352693
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Salillas de Jalón",
+     "tipo": "Municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2712815",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.324548615,
+      41.56668504
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "1.6",
+     "fuente": "MFOMENTO.IGN.NGCE",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Valdejalón",
+     "tipo": "Comarca administrativa",
+     "fecha": "2018-10-02"
+    },
+    "id": "2721809",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36657721399996,
+      41.466674718
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Almunia de Doña Godina",
+     "tipo": "Capital de municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2816565",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.373214152,
+      41.47807609
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Calatorao",
+     "tipo": "Capital de municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2816607",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.345161824,
+      41.52253995
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lucena de Jalón",
+     "tipo": "Capital de municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2816680",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31415846,
+      41.55352693
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.3",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Salillas de Jalón",
+     "tipo": "Capital de municipio",
+     "fecha": "2025-09-29"
+    },
+    "id": "2816763",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.324548615,
+      41.56668504
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Sobre Puyas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283232",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39398202299992,
+      41.4526976480001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Romeral",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283233",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38092048799996,
+      41.455505277
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Hondilla",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283239",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39648446499996,
+      41.4912718400001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Vaso Canovas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283240",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.39129647299995,
+      41.4938963550001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Viñaza",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283241",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38110359499996,
+      41.4938963650001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Agra",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283242",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38031013699992,
+      41.4990843510001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Cuesta",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283243",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36218268299996,
+      41.4962767540001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Fosal",
+     "tipo": "Paraje",
+     "fecha": "2023-07-07"
+    },
+    "id": "283244",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38342293199992,
+      41.4874876760001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Estacadas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283245",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38958748799996,
+      41.4807127720001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Cabilas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283246",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.35760504199993,
+      41.487121491
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Planilla",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283247",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38879403099992,
+      41.4746702960001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Carra Alpartir",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283248",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.38391121399991,
+      41.472289931
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Tranca",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283249",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36297613799991,
+      41.476074129
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Carra la Hilera",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283250",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.37072760799992,
+      41.464904694
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Ginestal",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283251",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36029058799994,
+      41.4663085120001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Redonda",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283253",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.36010747899991,
+      41.4509276640001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.5",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Nava",
+     "tipo": "Depresión",
+     "fecha": "2023-07-21"
+    },
+    "id": "283273",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33422855899994,
+      41.4851073550001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Pujarues",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283274",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31073000899994,
+      41.4976806110001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Dehesa la Cerrada",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283275",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31091310999994,
+      41.4838866750001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Botiguero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283276",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30987550799995,
+      41.4746703750001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Plano",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283277",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34588627999995,
+      41.4750975850001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Hondaliza",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283278",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33520511799992,
+      41.4738768930001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Carra Uvones",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283279",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.34460453799994,
+      41.4652709330001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.4",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Llanos",
+     "tipo": "Llanura",
+     "fecha": "2023-07-21"
+    },
+    "id": "283280",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.32928470199994,
+      41.4644774920001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Dehesilla",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283281",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31909182299995,
+      41.4714965410001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cabezo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-20"
+    },
+    "id": "283282",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33319095299993,
+      41.4591063980001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cabezo de Uvones",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "283283",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33740238199994,
+      41.4577025850001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Reguero",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283284",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.33959964899992,
+      41.450317334
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Reguerillo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283296",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29937744499995,
+      41.4519042900001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Loma de las Matas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "283297",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29278564599991,
+      41.4545288040001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Pozas",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283304",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25579833399991,
+      41.452880867
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cansa Bueyes",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283315",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28790284599995,
+      41.4967040660001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Saso",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283316",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29028321399994,
+      41.485473605
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Dehesa de la Jupe",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283317",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27990723399995,
+      41.4838866970001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Dehesa el Reguerillo",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283318",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28979492799994,
+      41.471496566
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cerezuel",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283319",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30731202699991,
+      41.4655151110001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Loma",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283320",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.28668213299994,
+      41.4656982320001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomeros",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283321",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27349853699991,
+      41.4672851490001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.NGBE",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Mediojudío",
+     "tipo": "Paraje",
+     "fecha": "2023-06-28"
+    },
+    "id": "283322",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.26098632699996,
+      41.4630737300001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Los Pedregales",
+     "tipo": "Paraje",
+     "fecha": "2023-07-10"
+    },
+    "id": "283323",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25531005699992,
+      41.4686889610001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Jupe",
+     "tipo": "Paraje",
+     "fecha": "2023-07-07"
+    },
+    "id": "283325",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.27398682499995,
+      41.490478491
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Hoya",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "283326",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25781250399996,
+      41.4921264440001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Artical",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "283327",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.25689697799993,
+      41.4968871830001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cabezo del Cerezuel",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "283348",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.29650879299993,
+      41.4572753830001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Almunia de Doña Godina",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-29"
+    },
+    "id": "2876504",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.373214152,
+      41.47807609
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Calatorao",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-29"
+    },
+    "id": "2876570",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.345161824,
+      41.52253995
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Berbedel",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-29"
+    },
+    "id": "2876669",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30926781,
+      41.56096294
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lucena de Jalón",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-29"
+    },
+    "id": "2876670",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.31415846,
+      41.55352693
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Salillas de Jalón",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-29"
+    },
+    "id": "2876783",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.324548615,
+      41.56668504
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.3.1",
+     "fuente": "MITMA.IGN.Red Geodésica",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Puyalón",
+     "tipo": "Vértice Geodésico",
+     "fecha": "2023-06-30"
+    },
+    "id": "3303921",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.373153311,
+      41.56501798
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.3.1",
+     "fuente": "MITMA.IGN.Red Geodésica",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Depósito",
+     "tipo": "Vértice Geodésico",
+     "fecha": "2023-06-30"
+    },
+    "id": "3303923",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.339607103,
+      41.52711298
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.3.1",
+     "fuente": "MITMA.IGN.Red Geodésica",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cuesta Roya",
+     "tipo": "Vértice Geodésico",
+     "fecha": "2023-06-30"
+    },
+    "id": "3303925",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.256745436,
+      41.55960357
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.3.1",
+     "fuente": "MITMA.IGN.Red Geodésica",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Nevera",
+     "tipo": "Vértice Geodésico",
+     "fecha": "2023-06-30"
+    },
+    "id": "3304281",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.351141257,
+      41.48391438
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.3.1",
+     "fuente": "MITMA.IGN.Red Geodésica",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Matas",
+     "tipo": "Vértice Geodésico",
+     "fecha": "2023-06-30"
+    },
+    "id": "3304282",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.302667964,
+      41.46050964
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "3.3.1",
+     "fuente": "MITMA.IGN.IGR-RT",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "A-1304",
+     "tipo": "Carretera",
+     "fecha": "2023-06-27"
+    },
+    "id": "4000838",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.2637018369999282,
+      41.45362600800007
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Berbedel",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-29"
+    },
+    "id": "4030752",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.30926781,
+      41.56096294
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Vergel de la Planilla",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-29"
+    },
+    "id": "4030774",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -1.390532255,
+      41.47894382
+     ]
+    }
+   }
+  ],
+  "numberMatched": 318,
+  "numberReturned": 318,
+  "links": [
+   {
+    "type": "application/geo+json",
+    "rel": "self",
+    "title": "This document as GeoJSON",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=json&bbox=-1.40,41.45,-1.25,41.58&limit=500"
+   },
+   {
+    "rel": "alternate",
+    "type": "application/ld+json",
+    "title": "This document as RDF (JSON-LD)",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&bbox=-1.40,41.45,-1.25,41.58&limit=500"
+   },
+   {
+    "type": "text/html",
+    "rel": "alternate",
+    "title": "This document as HTML",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=html&bbox=-1.40,41.45,-1.25,41.58&limit=500"
+   },
+   {
+    "type": "application/json",
+    "title": "GN Lugar nombrado",
+    "rel": "collection",
+    "href": "https://api-features.ign.es/collections/namedplace"
+   }
+  ],
+  "timeStamp": "2026-08-23T20:36:28.786357Z"
+ }
+}

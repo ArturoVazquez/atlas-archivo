@@ -518,6 +518,28 @@ advierte de que la ampliación «hasta los 70 hm³ anuales» estaba **pendiente 
 ejecutar** a enero de 2024 — la tercera cifra del expediente, con las tres
 ahora en la ficha.
 **El perímetro se reabre** *(2026-08-21, release `.113`, decisión D18)* · La capa se llamaba «Desaladoras de interés general del Estado» y **el nombre era el perímetro**: dejaba fuera a todas las demás por una figura jurídica que no les corresponde, no por falta de fuente. Ahora se llama **«Desaladoras»**, la condición estatal es una **categoría** —lo que las distingue al pintarlas— y entra la desaladora que **una fuente oficial nombre y sitúe**, sin criterio de tamaño: un umbral de capacidad lo tendría que fijar el atlas, y no es suyo. **Primeras en entrar por la puerta nueva:** las ocho de **ABAQUA** (Agència Balear de l'Aigua i de la Qualitat Ambiental, empresa pública del Govern balear), de su conjunto de datos abiertos con **CC BY declarada y verificada antes de incorporar nada**; en precisión **exacta**, con los ocho puntos comprobados punto-en-municipio contra el IGN. Las sostiene el conjunto del OPERADOR PÚBLICO —el mismo trato que las fichas de la MCT—, que da nombre y posición pero **ni capacidad ni acto**: por eso van `parcial`.
+**Qué se añadió** *(2026-08-23, release `.118`, contrato 1.70.0)* · **La
+primera pieza que entra en esta capa por VIGILANCIA y no por búsqueda**: la
+**EDAM de Playa de Mogán**, que `otear-autonomicos.py` señaló en el sumario del
+BOC del 19 de agosto, dos días después de que ese boletín entrara al vigía. El
+acto es la información pública de la prórroga y modificación de su vertido de
+salmuera (Expte. VM-211-LP) y **la nombra y la sitúa por término municipal, sin
+coordenada** — al contrario que los actos insulares de la `.116`, y eso matiza
+otra vez el veredicto de la `.107`: los actos canarios publican UTM **cuando
+son de consejo insular de aguas**, no cuando son de la Dirección General de
+Calidad Ambiental. **Se persiguió la coordenada hasta el final y no está:** el
+acto enlaza la documentación de su información pública, cuyo plazo seguía
+abierto, y se descargó entera (7,7 MB; la descarga la sirve un visor JSF que
+**exige navegador**, no basta con pedir la URL). Ni el proyecto de modificación
+ni el estudio de compatibilidad con la Estrategia Marina traen una sola
+coordenada geográfica: las 35 menciones de «coordenadas» del proyecto son del
+modelo brIHne del chorro de salmuera, un sistema cartesiano local con origen en
+la boquilla del difusor. Tampoco traen la capacidad de producción — solo
+caudales de vertido, y deducir de ellos la producción exigiría suponer la tasa
+de conversión de la planta. **Y con ella nace la categoría `municipal`**
+(contrato 1.70.0): la explota un ayuntamiento, y `autonomica` dice «de una
+administración autonómica o insular» — estirarla habría sido dejar que la
+etiqueta dejara de decir la verdad.
 **Huecos** · Las seis de Acuamed declaran la coordenada de la planta (punto de
 municipio, ahora con el lindero de su acto dicho en clave donde lo hay);
 Águilas añade la capacidad actual tras su ampliación (40 evaluados, 60
@@ -525,12 +547,17 @@ previstos, 70 pendientes de ejecutar en 2024 — la que está en servicio no la
 publica ningún acto). La capa sigue sin ser el censo: autonómicas, canarias y
 privadas quedan como ampliación, cada una con sus actos, **y ese cambio de
 perímetro lo decide Arturo** (AGENDA).
-**Archivado** · 22 ficheros (dieciséis del BOE, las cuatro fichas de la MCT y
+**Archivado** · 30 ficheros (dieciséis del BOE, las cuatro fichas de la MCT,
+los cuatro actos canarios de la `.116`, el acto de Mogán con el expediente
+entero de su información pública y las dos consultas al Nomenclátor que lo
+sitúan —una de ellas, la del recuadro, existe solo para acreditar que el IGN
+**no** nombra la desaladora— y
 el barrido del NGBE — que conserva también la PRIMERA pasada, descartada por
 caer en municipios homónimos de Madrid, Huesca y León: el error queda a la
 vista para que se vea qué se comprobó).
 **El resto** · CHANGELOG `datos-v2026.08.28`, `datos-v2026.08.30`,
-`datos-v2026.08.107` y `datos-v2026.08.113` · §10
+`datos-v2026.08.107`, `datos-v2026.08.113`, `datos-v2026.08.116` y
+`datos-v2026.08.118` · §10
 
 ## gas-almacenamiento
 
@@ -1240,7 +1267,30 @@ anuncio conjunto de información pública del mismo boletín — ambos archivado
 con las superficies por ámbito, los expedientes de AAI por centro y las
 acometidas «DAY 1» a 132 kV. Tres `en_tramitacion` más, sin un megavatio
 publicado en acto: los que circulan son de prensa y no entran.
-**Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+**Qué se añadió** *(2026-08-23, release `.118`)* · **El decimosexto, y una
+lección sobre qué acto sostiene un registro**: el **campus data center
+«Rhodes»** de Calatorao (Zaragoza), promovido por Calanza Inmuebles, SL. Lo
+señaló `otear-autonomicos.py` por el acto del 18 de agosto —la redelimitación
+del ámbito de su PIGA, con declaración de utilidad pública y urgente
+ocupación—, **y ese acto solo no bastaba**: habla de los centros de datos en
+abstracto para justificar la urgencia de la expropiación y luego de «proyectos
+de estas características», que es implicación fuerte y no afirmación. **Lo que
+lo sostiene es el acto que él mismo cita**: la Orden PEJ/1229/2024 lleva en su
+propio título «el proyecto “Rhodes” de construcción de un campus data center»
+—mismo patrón que PENCAN-X— y es la que además lo dimensiona: ámbito de 224 ha
+(el sector S.U.I.-4 entero, con suelo dotacional municipal dentro), primera
+etapa sobre parcela privada de unas **80 ha** —la cifra que publica el campo—,
+segunda de unas 75, y hasta **7.500 millones de euros** de inversión potencial.
+El acto declara además la cadena de control, que va a claves y no a un campo:
+Calanza «está controlada por fondos gestionados por BLACKSTONE», y **QTS** —del
+mismo dueño— «será nombrada sociedad promotora delegada del campus […] y, una
+vez construido y finalizado, su gestora». **La potencia TI vuelve a faltar**:
+los actos hablan de «la potencia eléctrica actualmente reconocida», de
+subestación propia, de generadores de emergencia y de placas solares en suelo
+colindante, y no escriben un solo MW. Del BOA se archivan las dos formas —el
+facsímil PDF y el texto web—, porque el PDF va a dos columnas y la lectura por
+líneas las entrelaza.
+**Archivado** · 29 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
 `.100`, `.102`, `.108`, `.109`, `.110`, `.111` y `.112` · §10
 
 ## hidrogeno-red

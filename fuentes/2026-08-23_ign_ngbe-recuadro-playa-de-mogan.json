@@ -1,0 +1,858 @@
+{
+ "_": "Recuadro sobre la costa de Playa de Mogan (Gran Canaria). Sirve para dos cosas: acredita que el Nomenclator NO nombra la desaladora —ninguno de los toponimos del recuadro lo es— y da el contexto del punto de municipio con que se situa el registro.",
+ "consulta": {
+  "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-15.79,27.80,-15.73,27.85&limit=200&f=json",
+  "fecha": "2026-08-23"
+ },
+ "respuesta": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de la Canal",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-19"
+    },
+    "id": "2623864",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.767028809,
+      27.8405151380001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de la Sorpresa",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-19"
+    },
+    "id": "2623926",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7777099609999,
+      27.8449096680001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de Mogán",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-19"
+    },
+    "id": "2624015",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7532958989999,
+      27.8322753910001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco de Perchel",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-19"
+    },
+    "id": "2624018",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7734985349999,
+      27.8394775400001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco del Taurito",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-19"
+    },
+    "id": "2624173",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7432861319999,
+      27.8292846690001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranquillo de los Frailes",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "2624259",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7354125979999,
+      27.8073120130001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranquillo de los Medios Almudes",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-21"
+    },
+    "id": "2624260",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7359008789999,
+      27.8167114270001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "5.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cañada de los Parados",
+     "tipo": "Curso natural de agua",
+     "fecha": "2023-07-19"
+    },
+    "id": "2624324",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.74407959,
+      27.8464965830001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cuarterías",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "2624667",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7319946289999,
+      27.8256835940001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Castillete",
+     "tipo": "Paraje",
+     "fecha": "2023-07-13"
+    },
+    "id": "2624881",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7692871089999,
+      27.848876954
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Horno",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "2624944",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7869262689999,
+      27.8413085940001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Faro de Mogán ",
+     "tipo": "Edificación",
+     "fecha": "2023-07-07"
+    },
+    "id": "2625211",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7675781249999,
+      27.8182983410001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.5",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Hoya del Salitre",
+     "tipo": "Depresión",
+     "fecha": "2023-07-21"
+    },
+    "id": "2625603",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7401123049999,
+      27.8461303720001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "C.A. Canarias",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomo de la Cruz de Piedra",
+     "tipo": "Montaña",
+     "fecha": "2020-07-07"
+    },
+    "id": "2626163",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7415771479999,
+      27.8261108410001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomo de los Gatos ",
+     "tipo": "Construcción/instalación abierta",
+     "fecha": "2023-07-07"
+    },
+    "id": "2626241",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7589111329999,
+      27.8198852550001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomo del Castillete",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "2626306",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7727050779999,
+      27.8416748060001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomo del Hornillo",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "2626323",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7562255849999,
+      27.843078614
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "4.1.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomo del Taurito",
+     "tipo": "Montaña",
+     "fecha": "2023-07-25"
+    },
+    "id": "2626344",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7501831049999,
+      27.8270874030001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Perchel de Mogán",
+     "tipo": "Saliente costero",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627018",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7810058589999,
+      27.830078126
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Playa de las Bajas",
+     "tipo": "Playa",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627085",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7897949219999,
+      27.838684082
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Playa de Tiritaña",
+     "tipo": "Playa",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627112",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7398071289999,
+      27.8016967780001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.2",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Playa del Diablito",
+     "tipo": "Playa",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627131",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.753112793,
+      27.8145141610001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.1",
+     "fuente": "C.A. Canarias",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Punta de la Cruz de Piedra",
+     "tipo": "Saliente costero",
+     "fecha": "2020-11-13"
+    },
+    "id": "2627283",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7485961919999,
+      27.8068847660001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Punta de las Bajas",
+     "tipo": "Saliente costero",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627319",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7874755859999,
+      27.8348999030001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Punta de Tiritaña",
+     "tipo": "Saliente costero",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627356",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7421874999999,
+      27.801330567
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.1",
+     "fuente": "MITMA.IGN.BTN25",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Punta del Castillete",
+     "tipo": "Saliente costero",
+     "fecha": "2023-07-20"
+    },
+    "id": "2627368",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7739868159999,
+      27.8231201180001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "6.2.1",
+     "fuente": "MFOMENTO.IGN.NGCE",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Punta de la Cruz de Piedra",
+     "tipo": "Saliente costero",
+     "fecha": "2018-10-03"
+    },
+    "id": "2638563",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7332763669999,
+      27.800109864
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cercado",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-09"
+    },
+    "id": "2639019",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.74513342,
+      27.8419471
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomoquiebre",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-10"
+    },
+    "id": "2639030",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.76167777,
+      27.82493769
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Playa de Mogán",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-18"
+    },
+    "id": "2639050",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.760583,
+      27.822208
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Playa del Cura",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-18"
+    },
+    "id": "2639054",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.73397698,
+      27.80059889
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Taurito",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-18"
+    },
+    "id": "2639066",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.75197453,
+      27.81614619
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco del Cura",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-09"
+    },
+    "id": "2639079",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7304617,
+      27.80769986
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Las Burrillas",
+     "tipo": "Entidad singular",
+     "fecha": "2023-06-29"
+    },
+    "id": "2863592",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.745788574,
+      27.8419189460001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "El Cercado",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-09"
+    },
+    "id": "2863597",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.74513342,
+      27.8419471
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Lomoquiebre",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-10"
+    },
+    "id": "2863603",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.76167777,
+      27.82493769
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Playa de Mogán",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-18"
+    },
+    "id": "2863614",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.760583,
+      27.822208
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "La Playa del Cura",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-18"
+    },
+    "id": "2863616",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.73397698,
+      27.80059889
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Tabaibales",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-09"
+    },
+    "id": "2863621",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.77894762,
+      27.84713939
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Taurito",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-18"
+    },
+    "id": "2863622",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.75197453,
+      27.81614619
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.9",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Barranco del Cura",
+     "tipo": "Entidad singular",
+     "fecha": "2025-09-09"
+    },
+    "id": "2863628",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7304617,
+      27.80769986
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.3.1",
+     "fuente": "MITMA.IGN.Red Geodésica",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Cruz de Piedra",
+     "tipo": "Vértice Geodésico",
+     "fecha": "2023-06-30"
+    },
+    "id": "3301152",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.74968915,
+      27.80979369
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "codigo_ngbe": "2.1.10",
+     "fuente": "MITMA.IGN.NGMEP",
+     "tiponombre": "identificador_geografico",
+     "etiqueta": "Tabaibales",
+     "tipo": "Núcleos de población",
+     "fecha": "2025-09-09"
+    },
+    "id": "4025428",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.77894762,
+      27.84713939
+     ]
+    }
+   }
+  ],
+  "numberMatched": 44,
+  "numberReturned": 43,
+  "links": [
+   {
+    "type": "application/geo+json",
+    "rel": "self",
+    "title": "This document as GeoJSON",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=json&bbox=-15.79,27.80,-15.73,27.85&limit=200"
+   },
+   {
+    "rel": "alternate",
+    "type": "application/ld+json",
+    "title": "This document as RDF (JSON-LD)",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&bbox=-15.79,27.80,-15.73,27.85&limit=200"
+   },
+   {
+    "type": "text/html",
+    "rel": "alternate",
+    "title": "This document as HTML",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=html&bbox=-15.79,27.80,-15.73,27.85&limit=200"
+   },
+   {
+    "type": "application/json",
+    "title": "GN Lugar nombrado",
+    "rel": "collection",
+    "href": "https://api-features.ign.es/collections/namedplace"
+   }
+  ],
+  "timeStamp": "2026-08-23T20:36:28.558930Z"
+ }
+}

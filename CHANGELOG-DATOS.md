@@ -32,6 +32,70 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.118 — el vigía caza dos, y ninguna entra por donde parecía
+
+La primera edición cuyos dos registros los encuentra **una máquina y no una
+búsqueda**: `otear-autonomicos.py` puso en rojo su barrido del 2026-08-23 con
+dos hallazgos, uno del BOC y otro del BOA, y los dos acabaron en la capa. Pero
+ninguno entró por el acto que el vigía señaló, y ese es el aprendizaje de la
+tanda: **el vigía indica el día, no acredita el hecho.** El contrato sube a
+**1.70.0** por una categoría nueva.
+
+### Añadido
+
+- **`desaladoras:edam-playa-de-mogan`** — la EDAM del **Ayuntamiento de Mogán**
+  (Gran Canaria), quinta canaria de la capa y **primera que entra por
+  vigilancia**. Su acto —la información pública de la prórroga y modificación
+  del vertido de salmuera, Expte. VM-211-LP— la nombra y la sitúa **solo por
+  término municipal**. Se persiguió la coordenada hasta agotar las vías: el
+  **expediente completo se descargó y se leyó** (7,7 MB, y su visor JSF exige
+  navegador) y no hay en él una sola coordenada geográfica — las 35 menciones de
+  «coordenadas» son del modelo del chorro de salmuera, cartesiano y con origen
+  en la boquilla; y el **Nomenclátor no la nombra**, comprobado por RECUADRO y
+  no solo por etiqueta, que es la diferencia entre un hueco declarado y un cero
+  sin comprobar. Va en `municipio`, con la coordenada y la capacidad declaradas
+  como huecos.
+- **`centros-datos:rhodes-calatorao`** — el **campus data center «Rhodes»** de
+  Calatorao (Zaragoza), decimosexto de la capa: 224 ha de ámbito (sector
+  S.U.I.-4), primera etapa de unas 80 ha, hasta 7.500 M€ de inversión
+  potencial, promovido por Calanza Inmuebles, SL —**controlada por fondos de
+  Blackstone**, con **QTS** como promotora delegada y futura gestora, y el acto
+  lo dice—. En `municipio`: los actos sitúan por término municipal y por sector
+  urbanístico, que no es un topónimo.
+
+### El contrato · 1.70.0
+
+- **Nace la categoría `municipal` de `desaladoras`.** La EDAM de Mogán la
+  explota un **ayuntamiento**, y las tres categorías existentes eran «de interés
+  general del Estado», «de una administración autonómica o insular» y «de un
+  titular privado». La salida fácil era ensanchar `autonomica`; se descartó
+  porque esa etiqueta se llama por lo que cubre, y estirarla hasta un
+  ayuntamiento la habría convertido en mentira. **No reclasifica ninguno de los
+  22 registros anteriores.**
+
+### La lección: el vigía señala el día, no acredita el hecho
+
+- El acto del BOA que disparó el aviso —la redelimitación del PIGA— **nunca dice
+  que «Rhodes» sea un centro de datos**: habla de los centros de datos en
+  abstracto para justificar la urgencia de la expropiación, y luego de
+  «proyectos de estas características». Con eso solo, el registro no entraba.
+  Lo que lo sostiene es el acto que él mismo cita, **la Orden PEJ/1229/2024, que
+  lo bautiza en su propio título**: «el proyecto “Rhodes” de construcción de un
+  campus data center». Mismo patrón que PENCAN-X en la `.105`.
+- Y el mismo día, el Nomenclátor volvió a hacer su truco: **`Calatorao` por
+  etiqueta devolvió CERO** para un municipio que existe, y por recuadro aparece
+  con sus tres entradas. El aviso que la casa lleva escrito desde la `.25` se
+  cobró su pieza.
+
+### Huecos
+
+- La coordenada y la capacidad de la EDAM de Mogán, y la resolución de su
+  expediente.
+- La potencia TI del campus Rhodes, y su PIGA aprobado.
+- Los de siempre en las dos capas.
+
+---
+
 ## datos-v2026.08.117 — la capa dice por fin qué NO es
 
 Una lectura externa de `cables-submarinos` llegó a una conclusión correcta e

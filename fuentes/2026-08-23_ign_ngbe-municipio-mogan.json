@@ -1,0 +1,136 @@
+{
+ "_": "El punto del municipio de Mogan, que es la geometria publicada del registro. Ojo al tercer resultado: hay un paraje homonimo en la peninsula (Granada), la trampa que la release .30 dejo escrita.",
+ "consulta": {
+  "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Mog%C3%A1n&limit=20&f=json",
+  "fecha": "2026-08-23"
+ },
+ "respuesta": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "fuente": "MITMA.IGN.BTN25",
+     "etiqueta": "Mogán",
+     "codigo_ngbe": "4.2.2",
+     "tipo": "Paraje",
+     "fecha": "2023-07-21"
+    },
+    "id": "2636652",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -16.4478759759999,
+      28.1610717780001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "fuente": "MITMA.IGN.NGMEP",
+     "etiqueta": "Mogán",
+     "codigo_ngbe": "1.3",
+     "tipo": "Municipio",
+     "fecha": "2025-07-06"
+    },
+    "id": "2710046",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.72383785,
+      27.88393804
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "fuente": "MITMA.IGN.NGMEP",
+     "etiqueta": "Mogán",
+     "codigo_ngbe": "2.1.3",
+     "tipo": "Capital de municipio",
+     "fecha": "2025-07-06"
+    },
+    "id": "2813966",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.72383785,
+      27.88393804
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "fuente": "MITMA.IGN.NGMEP",
+     "etiqueta": "Mogán",
+     "codigo_ngbe": "2.1.9",
+     "tipo": "Entidad singular",
+     "fecha": "2023-06-29"
+    },
+    "id": "2863605",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -15.7261962889999,
+      27.8803100590001
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "tiponombre": "identificador_geografico",
+     "fuente": "MITMA.IGN.BTN25",
+     "etiqueta": "Mogán",
+     "codigo_ngbe": "4.2.2",
+     "tipo": "Paraje",
+     "fecha": "2023-07-25"
+    },
+    "id": "565423",
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -3.05187973299991,
+      37.2755126500001
+     ]
+    }
+   }
+  ],
+  "numberMatched": 5,
+  "numberReturned": 5,
+  "links": [
+   {
+    "type": "application/geo+json",
+    "rel": "self",
+    "title": "This document as GeoJSON",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Mog%C3%A1n&limit=20"
+   },
+   {
+    "rel": "alternate",
+    "type": "application/ld+json",
+    "title": "This document as RDF (JSON-LD)",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Mog%C3%A1n&limit=20"
+   },
+   {
+    "type": "text/html",
+    "rel": "alternate",
+    "title": "This document as HTML",
+    "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Mog%C3%A1n&limit=20"
+   },
+   {
+    "type": "application/json",
+    "title": "GN Lugar nombrado",
+    "rel": "collection",
+    "href": "https://api-features.ign.es/collections/namedplace"
+   }
+  ],
+  "timeStamp": "2026-08-23T20:36:28.660161Z"
+ }
+}
