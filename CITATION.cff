@@ -6,8 +6,10 @@ type: dataset
 title: Atlas Estratégico de España
 abstract: >-
   Capa de inteligencia geoespacial pública sobre los activos estratégicos de
-  España: minerales críticos, energía, conectividad, transporte, ciencia y el
-  tablero de límites y soberanía. Cada dato lleva fuente, fecha y estado de
+  España, ordenada en siete dominios: recursos y territorio, energía,
+  transporte y logística, conectividad, ciencia y capacidades avanzadas,
+  soberanía y seguridad, y economía y proyección. Cada dato lleva fuente,
+  fecha y estado de
   verificación; lo que falta se declara como hueco, y la doctrina la comprueba
   la integración continua en cada cambio.
 authors:
