@@ -171,10 +171,18 @@ archivada—, y eso se midió, no se supuso.
 
 En el directorio hay algunos más que citas los reclaman, y no son huérfanos: son
 las **pruebas de licencia** que sostienen este mismo fichero —el aviso legal de
-un emisor, los términos de reutilización de un portal— y los **boletines que se
+un emisor, los términos de reutilización de un portal—, los **boletines que se
 acumulan** en vez de reemplazarse, cada uno con una cifra que ningún otro
-documento repite. Un documento archivado de más es archivo; uno de menos sería
-una cita rota, y de esos no hay.
+documento repite, y —desde la release `.117`— los **actos de expedientes
+VIGILADOS que todavía no tienen ficha**. El primero de esta tercera clase es la
+información pública de la ocupación para el «Proyecto del sistema submarino de
+telecomunicaciones **Canalink Base 4 y Base 5**» (BOC-A-2025-176-3176): nombra
+el sistema y a su promotora, pero sitúa solo por **provincia**, y sin punto de
+amarre no hay aterrizaje que registrar. Se archiva porque su plazo de
+información pública ya cerró y el proyecto que llevaba el trazado **ha
+desaparecido de la web de la Consejería**; el día que llegue el otorgamiento,
+la mitad del expediente ya está guardada. Un documento archivado de más es
+archivo; uno de menos sería una cita rota, y de esos no hay.
 
 ## Lo que se decidió no obtener
 
@@ -286,15 +294,52 @@ nadie los escriba de memoria. `superficie_ha` también, por derivada.
 
 ## plantas-solares
 
-**De dónde** · La misma BTN, el mismo objeto `0713S` (tipos 05 fotovoltaica y 08
-termosolar).
-**Licencia** · IGN, ver arriba · atribución exigida: `Obra derivada de BTN Continua CC-BY 4.0 ign.es`
-**Qué hay que saber** · **1.959 fotovoltaicas quedan fuera porque la BTN no las
-nombra**, y son las pequeñas: entran 1.206 de 3.165 recintos, que son el **76 %
-de la superficie**. Termosolar, 44 de 45. Las dos cifras van siempre juntas
-porque contar plantas y medir superficie dan respuestas distintas.
-**Qué NO trae la fuente** · Lo mismo que en eólica, prohibido igual.
-**Archivado** · 2 ficheros · **El resto** · CHANGELOG `datos-v2026.08.21` · §10
+**De dónde** · **Dos clases de fuente, y la distinción es toda la capa.** La
+GEOMETRÍA es siempre la BTN, el mismo objeto `0713S` (tipos 05 fotovoltaica y 08
+termosolar). La IDENTIDAD y los atributos, donde los hay, los pone el **registro
+de la administración que autorizó la planta** — desde la release `.115` (D17):
+**IDENA** (Gobierno de Navarra, conjuntos «Plantas solares fotovoltaicas en
+servicio» y «…en tramitación») y el **ICV** (Generalitat Valenciana, «ER
+Fotovoltaicas: Vallado», por WFS).
+**Licencia** · IGN, ver arriba · atribución exigida: `Obra derivada de BTN Continua CC-BY 4.0 ign.es` ·
+IDENA **CC BY 4.0**, declarada en la ficha de datos.gob.es · ICV **CC BY 4.0
+Generalitat**, declarada por el propio servicio en su `AccessConstraints`.
+**Cómo se cruzan** · **Por SOLAPE GEOMÉTRICO y jamás por nombre.** Los nombres no
+coinciden: la BTN llama «Huerta Solar Bárdenas Reales» a lo que IDENA llama
+«VILLAFRANCA - CORRALIZA DE BARRENO». Un emparejador por parecido habría fallado
+en silencio. Se exige que uno de los dos polígonos cubra al menos el 30 % del
+otro, y la fracción exacta va escrita en la ficha para que se pueda juzgar.
+**Qué hay que saber** · De las 3.165 fotovoltaicas de la BTN, **1.959 no llevan
+nombre** — no es un defecto del IGN: cartografiar un recinto no es identificarlo.
+La capa publica 1.286: las 1.206 que nombra la BTN (el **76 % de la superficie**,
+porque las anónimas son las pequeñas) más **79 que nombra una comunidad**.
+Termosolar, 44 de 45. Las cifras van siempre juntas porque contar plantas y medir
+superficie dan respuestas distintas.
+**Las tres trampas del cruce, y cómo se evitan** · (1) Una planta puede caer
+sobre **varios recintos** —«FUSTIÑANA - CORRALIZA VECINAL» sobre seis—: ahí NO se
+escribe potencia, porque la cifra es de la planta entera y repetirla en cada
+hermano multiplicaría la potencia solar del país. (2) Un recinto puede contener
+**dos plantas registradas** —tres casos—: tampoco lleva potencia, porque no es
+ninguna de las dos por separado. (3) El registro valenciano escribe literalmente
+**«-»** en el titular de las instalaciones viejas: eso es un hueco declarado, no
+un titular. En los tres casos la ficha lo dice y R4 la baja a `parcial`.
+**Qué NO trae la fuente** · La BTN, lo mismo que en eólica. Del registro
+autonómico, `potencia_pico_mw`: **el campo existe y viene vacío**, y sigue
+prohibido por eso.
+**El hueco mayor, que es de capa** · La cobertura es **desigual por comunidad** y
+está declarada en el manifiesto, no en las fichas —hablar de los recintos que NO
+están no dice nada de los que sí—. Sondeadas el 2026-08-21: **Castilla y León
+tiene la capa** (1.592 recintos con titular, potencia y fechas, por el WFS de
+IDECyL) **y va bajo licencia IGCYL-NC, no comercial**, que
+`datos/LICENCIA-DATOS.md` no admite; su conjunto abierto en CC BY 4.0 ES
+(«Parques eólicos en funcionamiento», 279 filas) **no trae geometría**.
+**Cataluña** publica 541 fotovoltaicas sin geometría. **Baleares** publica zonas
+de APTITUD, que no son instalaciones. De **Andalucía, Castilla-La Mancha,
+Extremadura, Galicia, Asturias, Cantabria, País Vasco, La Rioja, Murcia y
+Canarias** no se encontró geoservicio en dos intentos (los errores exactos, en la
+agenda). **Aragón** sí tiene registro eólico con geometría, pero su WFS **no
+declara licencia**, y sin eso no se toca.
+**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.115` · §10
 
 ## gas-regasificacion
 
@@ -433,6 +478,29 @@ al topónimo del paraje de Agua Amarga que la propia MCT declara. **Cada
 capacidad retrata el momento de su acto y va en la unidad de su acto**:
 `capacidad_hm3_anio` o `capacidad_m3_dia`, sin conversión — convertir exigiría
 suponer días de operación.
+**Canarias, y una corrección de doctrina** *(2026-08-21, release `.116`)* ·
+La capa entra en el archipiélago con cuatro fichas —las tres del Cabildo
+Insular de El Hierro (Los Cangrejos, El Golfo, La Restinga) y la Maspalomas I
+de San Bartolomé de Tirajana— y **con precisión `exacta`, no `municipio`**. El
+veredicto de la `.107` que se lee abajo sigue en pie **para los actos del
+ESTADO**; los actos **insulares canarios** son otra cosa: escriben la coordenada
+UTM en el cuerpo del anuncio, «coordenadas X: 215.215 Y: 3.080.415 Z: 31». El
+huso NO lo dicen, y se deduce con la misma vara que en `zonas-defensa`: se
+prueban los de España y se exige que **uno solo** deje el punto dentro del
+municipio que el propio acto nombra. Los cuatro caen donde debían con el 28, y
+ni el 27 ni el 29 caen siquiera en Canarias.
+**Lo que NO entra de Canarias, que es casi todo** · El barrido del BOC sacó
+**226 actos de desalación entre 2003 y 2026** y la inmensa mayoría son
+PETICIONES de autorización de plantas privadas de autoabastecimiento —hoteles,
+fincas, un parque acuático, la refinería de Santa Cruz—: sitúan por municipio y
+**no acreditan que la instalación llegara a existir**. Las cuatro que entran
+pasan dos varas: acto que sitúa con coordenada, y existencia que el propio acto
+da por hecha, porque no se regulariza ni se amplía lo que no está. **La
+capacidad NO se escribe en ninguna**: los actos dan la cifra de la AMPLIACIÓN,
+no la de la planta, y va en clave. **Vía anotada para la siguiente tanda**, del
+propio barrido: el Consejo Insular de Aguas de Lanzarote mantiene un **«Censo de
+Plantas Desaladoras»** cuyas inscripciones publica en el BOC — un censo es
+exactamente la clase de fuente que esta capa quiere.
 **La relectura** *(2026-08-21, release `.107`)* · Los actos archivados de las
 seis de Acuamed, releídos entero buscando emplazamiento. **El resultado
 negativo es el que manda**: ninguna DIA publica la coordenada de la planta —
@@ -450,6 +518,28 @@ advierte de que la ampliación «hasta los 70 hm³ anuales» estaba **pendiente 
 ejecutar** a enero de 2024 — la tercera cifra del expediente, con las tres
 ahora en la ficha.
 **El perímetro se reabre** *(2026-08-21, release `.113`, decisión D18)* · La capa se llamaba «Desaladoras de interés general del Estado» y **el nombre era el perímetro**: dejaba fuera a todas las demás por una figura jurídica que no les corresponde, no por falta de fuente. Ahora se llama **«Desaladoras»**, la condición estatal es una **categoría** —lo que las distingue al pintarlas— y entra la desaladora que **una fuente oficial nombre y sitúe**, sin criterio de tamaño: un umbral de capacidad lo tendría que fijar el atlas, y no es suyo. **Primeras en entrar por la puerta nueva:** las ocho de **ABAQUA** (Agència Balear de l'Aigua i de la Qualitat Ambiental, empresa pública del Govern balear), de su conjunto de datos abiertos con **CC BY declarada y verificada antes de incorporar nada**; en precisión **exacta**, con los ocho puntos comprobados punto-en-municipio contra el IGN. Las sostiene el conjunto del OPERADOR PÚBLICO —el mismo trato que las fichas de la MCT—, que da nombre y posición pero **ni capacidad ni acto**: por eso van `parcial`.
+**Qué se añadió** *(2026-08-23, release `.118`, contrato 1.70.0)* · **La
+primera pieza que entra en esta capa por VIGILANCIA y no por búsqueda**: la
+**EDAM de Playa de Mogán**, que `otear-autonomicos.py` señaló en el sumario del
+BOC del 19 de agosto, dos días después de que ese boletín entrara al vigía. El
+acto es la información pública de la prórroga y modificación de su vertido de
+salmuera (Expte. VM-211-LP) y **la nombra y la sitúa por término municipal, sin
+coordenada** — al contrario que los actos insulares de la `.116`, y eso matiza
+otra vez el veredicto de la `.107`: los actos canarios publican UTM **cuando
+son de consejo insular de aguas**, no cuando son de la Dirección General de
+Calidad Ambiental. **Se persiguió la coordenada hasta el final y no está:** el
+acto enlaza la documentación de su información pública, cuyo plazo seguía
+abierto, y se descargó entera (7,7 MB; la descarga la sirve un visor JSF que
+**exige navegador**, no basta con pedir la URL). Ni el proyecto de modificación
+ni el estudio de compatibilidad con la Estrategia Marina traen una sola
+coordenada geográfica: las 35 menciones de «coordenadas» del proyecto son del
+modelo brIHne del chorro de salmuera, un sistema cartesiano local con origen en
+la boquilla del difusor. Tampoco traen la capacidad de producción — solo
+caudales de vertido, y deducir de ellos la producción exigiría suponer la tasa
+de conversión de la planta. **Y con ella nace la categoría `municipal`**
+(contrato 1.70.0): la explota un ayuntamiento, y `autonomica` dice «de una
+administración autonómica o insular» — estirarla habría sido dejar que la
+etiqueta dejara de decir la verdad.
 **Huecos** · Las seis de Acuamed declaran la coordenada de la planta (punto de
 municipio, ahora con el lindero de su acto dicho en clave donde lo hay);
 Águilas añade la capacidad actual tras su ampliación (40 evaluados, 60
@@ -457,12 +547,17 @@ previstos, 70 pendientes de ejecutar en 2024 — la que está en servicio no la
 publica ningún acto). La capa sigue sin ser el censo: autonómicas, canarias y
 privadas quedan como ampliación, cada una con sus actos, **y ese cambio de
 perímetro lo decide Arturo** (AGENDA).
-**Archivado** · 22 ficheros (dieciséis del BOE, las cuatro fichas de la MCT y
+**Archivado** · 30 ficheros (dieciséis del BOE, las cuatro fichas de la MCT,
+los cuatro actos canarios de la `.116`, el acto de Mogán con el expediente
+entero de su información pública y las dos consultas al Nomenclátor que lo
+sitúan —una de ellas, la del recuadro, existe solo para acreditar que el IGN
+**no** nombra la desaladora— y
 el barrido del NGBE — que conserva también la PRIMERA pasada, descartada por
 caer en municipios homónimos de Madrid, Huesca y León: el error queda a la
 vista para que se vea qué se comprobó).
 **El resto** · CHANGELOG `datos-v2026.08.28`, `datos-v2026.08.30`,
-`datos-v2026.08.107` y `datos-v2026.08.113` · §10
+`datos-v2026.08.107`, `datos-v2026.08.113`, `datos-v2026.08.116` y
+`datos-v2026.08.118` · §10
 
 ## gas-almacenamiento
 
@@ -1046,6 +1141,38 @@ como el del BOC.
 **Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
 `.33`, `.98`, `.103` y `.105` · §10
 
+**Qué mide esta capa, dicho antes de que nadie se confunda** *(release `.117`)*
+· **No es el mapa de los cables submarinos de España**: es el mapa de los
+ATERRIZAJES que un acto administrativo publicado nombra y sitúa. Faltan cables
+que existen, por cuatro motivos que están en las fichas y, desde la `.117`,
+también en la nota `_` de la capa: un cable tiene **dos extremos y cada uno se
+tramita aparte**; los **cables viejos** no vuelven a un boletín salvo caducidad,
+remodelación o legalización; **el Estado tiene la lista y no la publica**; y lo
+que **cruza aguas españolas sin amarrar aquí** no entra. Se cuenta entero en la
+historia «Cuatro cables sin nombre, y el Estado sabe cómo se llaman».
+**La Ley 11/2022, y por qué está archivada** *(release `.117`)* · Dos fichas
+—Santander y Sagunto— venían afirmando desde su alta que el Ministerio tiene la
+lista de cables y no la publica, **sin citar nada**. Era una afirmación sin
+papel. Ahora se archiva el texto consolidado y se cita con sus dos anclajes: el
+**artículo 6.9**, que obliga a comunicar todo cable submarino que engancha en
+territorio español, y la **disposición adicional vigésima tercera**, que da dos
+meses de plazo y exige en su apartado f) el **trazado del cable y el lugar del
+enganche** — las dos cosas que a esas fichas les faltan. Y con ella, un negativo
+verificado con el método de la casa: **el reglamento que el artículo 6.10
+mandaba aprobar en tres meses no existe**, barridos los 1.515 sumarios del BOE
+desde la entrada en vigor de la ley.
+**2Africa, y cómo apareció** *(2026-08-21, release `.116`)* · El aterrizaje
+español de 2Africa llevaba dos pasadas buscándose **por Barcelona**, sin acto,
+porque el DOGC no se deja leer por un cliente no interactivo. Estaba en
+Canarias: el **BOC n.º 165, de 22-8-2023**, somete a información pública la
+solicitud de Vodafone Enterprise Spain para ocupar el dominio público
+marítimo-terrestre con el **segmento W3-EGO** en la **Playa de Salinetas
+(Telde)**. Lo encontró un BARRIDO del boletín entero, no una búsqueda; y el
+mismo hallazgo metió el BOC en `otear-autonomicos.py`, de modo que el
+otorgamiento —si llega— ya no habrá que buscarlo. **Es además el único acto de
+esta capa que BAUTIZA el sistema con su segmento**, cuando la norma es que un
+acto de Costas autorice una ocupación sin nombrar el cable.
+
 ## centros-datos
 
 **De dónde** · **INAGA (Gobierno de Aragón)**, declaración ambiental estratégica
@@ -1140,7 +1267,30 @@ anuncio conjunto de información pública del mismo boletín — ambos archivado
 con las superficies por ámbito, los expedientes de AAI por centro y las
 acometidas «DAY 1» a 132 kV. Tres `en_tramitacion` más, sin un megavatio
 publicado en acto: los que circulan son de prensa y no entran.
-**Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+**Qué se añadió** *(2026-08-23, release `.118`)* · **El decimosexto, y una
+lección sobre qué acto sostiene un registro**: el **campus data center
+«Rhodes»** de Calatorao (Zaragoza), promovido por Calanza Inmuebles, SL. Lo
+señaló `otear-autonomicos.py` por el acto del 18 de agosto —la redelimitación
+del ámbito de su PIGA, con declaración de utilidad pública y urgente
+ocupación—, **y ese acto solo no bastaba**: habla de los centros de datos en
+abstracto para justificar la urgencia de la expropiación y luego de «proyectos
+de estas características», que es implicación fuerte y no afirmación. **Lo que
+lo sostiene es el acto que él mismo cita**: la Orden PEJ/1229/2024 lleva en su
+propio título «el proyecto “Rhodes” de construcción de un campus data center»
+—mismo patrón que PENCAN-X— y es la que además lo dimensiona: ámbito de 224 ha
+(el sector S.U.I.-4 entero, con suelo dotacional municipal dentro), primera
+etapa sobre parcela privada de unas **80 ha** —la cifra que publica el campo—,
+segunda de unas 75, y hasta **7.500 millones de euros** de inversión potencial.
+El acto declara además la cadena de control, que va a claves y no a un campo:
+Calanza «está controlada por fondos gestionados por BLACKSTONE», y **QTS** —del
+mismo dueño— «será nombrada sociedad promotora delegada del campus […] y, una
+vez construido y finalizado, su gestora». **La potencia TI vuelve a faltar**:
+los actos hablan de «la potencia eléctrica actualmente reconocida», de
+subestación propia, de generadores de emergencia y de placas solares en suelo
+colindante, y no escriben un solo MW. Del BOA se archivan las dos formas —el
+facsímil PDF y el texto web—, porque el PDF va a dos columnas y la lectura por
+líneas las entrelaza.
+**Archivado** · 29 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
 `.100`, `.102`, `.108`, `.109`, `.110`, `.111` y `.112` · §10
 
 ## hidrogeno-red

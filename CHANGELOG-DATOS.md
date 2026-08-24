@@ -32,6 +32,32 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.120 — el archivo gana su estantería
+
+**Ni un dato cambia: cambian las señas de los documentos que los sostienen.**
+Los 369 ficheros del archivo dejan el directorio plano y pasan a
+`fuentes/<organismo>/<año del documento>/` — 62 organismos, 125 carpetas, los
+nombres intactos. El acto de 1978 vive en `boe/1978/` aunque se archivara en
+2026: el año de carpeta es el del documento (el del campo `fecha` de su cita),
+y la fecha de captura sigue siendo la primera palabra del nombre.
+
+### Cambiado
+
+- ~20.000 citas y menciones reescritas de una vez — capas, conjuntos, las 415
+  series, guiones del pipeline y fixtures de las pruebas. `validar.py` hizo de
+  red: los 175 avisos de línea base, exactos.
+- `fuentes/README.md` documenta la estantería: la regla del año, la de la
+  serie recurrente (la tercera captura del mismo organismo-descripción gana
+  carpeta propia) y por qué NO se organiza por capa ni dominio — quince
+  fuentes sostienen varias capas y treinta y dos no pertenecen a ninguna. El
+  porqué entero, en D23.
+
+### Sabido
+
+- **Las entradas anteriores de este changelog no se reescriben**: donde una
+  diga `fuentes/X`, léase `fuentes/<organismo>/<año>/X`. La historia cuenta lo
+  que se hizo con las señas de entonces.
+
 ## datos-v2026.08.119 — siete dominios, y cada sección con su nombre
 
 **Ni un registro cambia en esta edición: cambia el mueble, no lo que guarda.**

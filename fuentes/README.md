@@ -25,6 +25,38 @@ AAAA-MM-DD_emisor_titulo-corto.ext
 
 Ejemplo: `2026-07-22_ce_lista-crma-1.pdf`
 
+## Dónde vive un fichero
+
+```
+fuentes/<organismo>/<año del documento>/<nombre>
+fuentes/boe/1978/2026-08-20_boe_....pdf   ← «archivado en 2026, documento de 1978»
+```
+
+- **El organismo** es el mismo campo `emisor` del nombre — la carpeta no
+  inventa nada.
+- **El año es el del DOCUMENTO, no el de captura**: el que ya vive en el campo
+  `fecha` de su cita, un juicio que el atlas ejerce y registra al citar. Una
+  **instantánea de algo vivo** (captura WFS, catálogo, compilación) va por su
+  año de captura — no es excepción sino coherencia: el «documento» de una
+  instantánea es la foto de ese día. Un fichero **sin cita** toma el año
+  reconocible de su descripción, y si no lo lleva, el de captura.
+- **El nombre no cambia al mudarse.** La fecha de captura sigue siendo la
+  primera palabra: para los documentos vivos es la identidad, y para los muertos
+  no estorba. Una recaptura queda adyacente a su versión anterior, que es donde
+  se aprecia la contradicción.
+- **La regla de la serie** *(mismo espíritu que la regla de crecimiento de los
+  dominios, D22)*: la TERCERA captura del mismo `(organismo, descripción)`
+  convierte la clave en serie recurrente, y la serie gana carpeta propia —
+  `fuentes/<organismo>/<descripción>/` — sin nivel de año hasta que engorde.
+  Promoverla es mover dos ficheros y sus citas: un gesto, no una migración.
+- **Por qué NO se organiza por capa ni por dominio**, medido el 2026-08-24:
+  quince fuentes sostienen de dos a cuatro capas (una sostiene dos capas y un
+  conjunto), treinta y dos no pertenecen a ninguna —licencias, negativos
+  documentados, actos de expedientes vigilados—, y la taxonomía de dominios
+  cambió esa misma mañana (D22). La ruta es identidad y se construye con
+  propiedades estables; la vista por capa ya la dan las fichas y PROCEDENCIA,
+  generadas del dato y nunca desfasadas.
+
 ## Reglas
 
 - **Se archiva el documento, no la noticia sobre el documento.** Si una nota de
