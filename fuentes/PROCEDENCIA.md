@@ -19,13 +19,13 @@ una sola fuente de verdad, y no es esta:
 
 | Si buscas | Manda | Y no esto |
 |---|---|---|
-| La licencia y la atribución de una capa | `datos/manifest.json` (contrato §3) | — |
+| La licencia y la atribución de una capa | `datos/manifest.json` | — |
 | Qué campos tiene y por qué | `CONTRATO-DATOS.md` §10 | — |
 | La cita exacta de un campo concreto | el `__f` de ese registro (§6.2) | — |
 | Cómo se construyó y qué costó | `CHANGELOG-DATOS.md`, por release | — |
 | El documento original | el fichero archivado en este directorio | la URL, que se pudre |
 
-Esa disciplina es `DECISIONES.md` D3 aplicada a la documentación: donde este
+Esa disciplina tiene su porqué: donde este
 documento repitiera un dato en vez de enlazarlo, crearía una segunda verdad que
 se desincronizaría a la primera corrección.
 
@@ -35,9 +35,13 @@ pone que no las publica — no una suposición verosímil.
 ## Cómo se lee
 
 Un encabezado de nivel 2 en kebab-case (`## puertos`) **es una ficha de capa**;
-los de prosa llevan espacios. No es cosmética: `pipeline/validar.py` comprueba
+los de prosa llevan espacios. No es cosmética: la validación automática comprueba
 por esa forma que **ninguna capa publica datos sin su ficha, y ninguna ficha
-sobrevive a su capa** (§7.9, bloquea el CI).
+sobrevive a su capa**, y bloquea la publicación si no se cumple.
+
+> Las menciones a «contrato 1.x», a secciones «§» y a reglas «R» citan el
+> contrato de datos con la numeración técnica del día en que se escribieron; el contrato se
+> reorganizó en agosto de 2026 en una edición más breve.
 
 ---
 
@@ -153,7 +157,7 @@ la estadística eléctrica y los anuncios de Costas.
 > Durante seis releases esta ficha decía que el Inventario estaba tras un
 > **ALTCHA** —un CAPTCHA de prueba de trabajo puesto a propósito— y que **no se
 > salta**; la capa de agua embalsada existe porque se encontró otra puerta
-> abierta, no porque se forzara esa. Sigue sin saltarse: **lo descargó Arturo
+> abierta, no porque se forzara esa. Sigue sin saltarse: **se descargó a mano,
 > con un navegador**, que es lo que el ALTCHA pide y lo que ningún guion de este
 > repositorio hace. Camino, por si vuelve a hacer falta: la página de descargas
 > del IDE (`inventario-presas-embalses.html`) enlaza a
@@ -297,7 +301,7 @@ nadie los escriba de memoria. `superficie_ha` también, por derivada.
 **De dónde** · **Dos clases de fuente, y la distinción es toda la capa.** La
 GEOMETRÍA es siempre la BTN, el mismo objeto `0713S` (tipos 05 fotovoltaica y 08
 termosolar). La IDENTIDAD y los atributos, donde los hay, los pone el **registro
-de la administración que autorizó la planta** — desde la release `.115` (D17):
+de la administración que autorizó la planta** — desde la release `.115`:
 **IDENA** (Gobierno de Navarra, conjuntos «Plantas solares fotovoltaicas en
 servicio» y «…en tramitación») y el **ICV** (Generalitat Valenciana, «ER
 Fotovoltaicas: Vallado», por WFS).
@@ -361,7 +365,7 @@ falta bajar nada: hizo falta abrir el libro entero.
 **El emparejamiento se declara, no se deduce** · Las columnas del libro
 coinciden con los **slugs** y no con los nombres —«Bilbao» es Bahía de Bizkaia
 Gas, «Sagunto» es Saggas, «Mugardos» es Reganosa—, así que donde se parecen es
-casualidad. Cada ficha lleva su `nombre_estadistico` y `seriar-gas.py` revienta
+casualidad. Cada ficha lleva su `nombre_estadistico` y el extractor revienta
 si una columna no encuentra ficha o al revés. **Emparejar por parecido de
 nombres es lo que más falla**, y en esta casa costó una release entera
 aprenderlo con los embalses.
@@ -517,10 +521,10 @@ de la CHS de la competencia de proyectos de su concesión (CSR-0005/2024)
 advierte de que la ampliación «hasta los 70 hm³ anuales» estaba **pendiente de
 ejecutar** a enero de 2024 — la tercera cifra del expediente, con las tres
 ahora en la ficha.
-**El perímetro se reabre** *(2026-08-21, release `.113`, decisión D18)* · La capa se llamaba «Desaladoras de interés general del Estado» y **el nombre era el perímetro**: dejaba fuera a todas las demás por una figura jurídica que no les corresponde, no por falta de fuente. Ahora se llama **«Desaladoras»**, la condición estatal es una **categoría** —lo que las distingue al pintarlas— y entra la desaladora que **una fuente oficial nombre y sitúe**, sin criterio de tamaño: un umbral de capacidad lo tendría que fijar el atlas, y no es suyo. **Primeras en entrar por la puerta nueva:** las ocho de **ABAQUA** (Agència Balear de l'Aigua i de la Qualitat Ambiental, empresa pública del Govern balear), de su conjunto de datos abiertos con **CC BY declarada y verificada antes de incorporar nada**; en precisión **exacta**, con los ocho puntos comprobados punto-en-municipio contra el IGN. Las sostiene el conjunto del OPERADOR PÚBLICO —el mismo trato que las fichas de la MCT—, que da nombre y posición pero **ni capacidad ni acto**: por eso van `parcial`.
+**El perímetro se reabre** *(2026-08-21, release `.113`)* · La capa se llamaba «Desaladoras de interés general del Estado» y **el nombre era el perímetro**: dejaba fuera a todas las demás por una figura jurídica que no les corresponde, no por falta de fuente. Ahora se llama **«Desaladoras»**, la condición estatal es una **categoría** —lo que las distingue al pintarlas— y entra la desaladora que **una fuente oficial nombre y sitúe**, sin criterio de tamaño: un umbral de capacidad lo tendría que fijar el atlas, y no es suyo. **Primeras en entrar por la puerta nueva:** las ocho de **ABAQUA** (Agència Balear de l'Aigua i de la Qualitat Ambiental, empresa pública del Govern balear), de su conjunto de datos abiertos con **CC BY declarada y verificada antes de incorporar nada**; en precisión **exacta**, con los ocho puntos comprobados punto-en-municipio contra el IGN. Las sostiene el conjunto del OPERADOR PÚBLICO —el mismo trato que las fichas de la MCT—, que da nombre y posición pero **ni capacidad ni acto**: por eso van `parcial`.
 **Qué se añadió** *(2026-08-23, release `.118`, contrato 1.70.0)* · **La
 primera pieza que entra en esta capa por VIGILANCIA y no por búsqueda**: la
-**EDAM de Playa de Mogán**, que `otear-autonomicos.py` señaló en el sumario del
+**EDAM de Playa de Mogán**, que el vigía de los boletines autonómicos señaló en el sumario del
 BOC del 19 de agosto, dos días después de que ese boletín entrara al vigía. El
 acto es la información pública de la prórroga y modificación de su vertido de
 salmuera (Expte. VM-211-LP) y **la nombra y la sitúa por término municipal, sin
@@ -546,7 +550,7 @@ municipio, ahora con el lindero de su acto dicho en clave donde lo hay);
 previstos, 70 pendientes de ejecutar en 2024 — la que está en servicio no la
 publica ningún acto). La capa sigue sin ser el censo: autonómicas, canarias y
 privadas quedan como ampliación, cada una con sus actos, **y ese cambio de
-perímetro lo decide Arturo** (AGENDA).
+perímetro queda pendiente de decisión**.
 **Archivado** · 30 ficheros (dieciséis del BOE, las cuatro fichas de la MCT,
 los cuatro actos canarios de la `.116`, el acto de Mogán con el expediente
 entero de su información pública y las dos consultas al Nomenclátor que lo
@@ -1086,7 +1090,7 @@ está declarada y **sin usar**.
 el que cruza una ría. Y un cable que atraviesa aguas españolas **sin aterrizar
 aquí no entra**: el Europe India Gateway toca tierra en Gibraltar — se archiva,
 se cita y se queda fuera.
-**El barrido histórico, y por qué se puede creer su negativo** *(2026-08-21, release `.114`)* · Los otorgamientos antiguos **no salen por búsqueda web**, y eso tenía el frente parado como «hay que mirarlo con navegador». No hacía falta: **la API de sumarios del BOE —la misma que usa `otear.py`— llega hasta 1997**. Se barrieron **7.015 sumarios entre 1994 y 2016** casando el título, y **antes de creerle a un cero se validó el método** sobre 2017, donde devuelve el otorgamiento de Marea que ya estaba en la capa. De ahí salió el aterrizaje de **Canalink África en Granadilla** (BOE-B-2015-789, concesión de 2014, veinticinco años), segundo en el mismo puerto y con otra concesionaria. Y dos veredictos: **Columbus-III y Atlantis-2 en Conil no están** en once años de sumarios —si se publicaron, no con ese nombre en el título— y **el EIG no es de esta capa**: su DIA de 2010 describe un cable que cruza aguas españolas sin amarrar en España (sus puntos de conexión son Reino Unido, Portugal, Gibraltar, Mónaco, Francia…). El rastro de **Melilla–Península** quedó a la vista en contratos de 2010, 2011 y 2015: nombran el cable y sus extremos, no sitúan el amarre.
+**El barrido histórico, y por qué se puede creer su negativo** *(2026-08-21, release `.114`)* · Los otorgamientos antiguos **no salen por búsqueda web**, y eso tenía el frente parado como «hay que mirarlo con navegador». No hacía falta: **la API de sumarios del BOE —la misma que usa el vigía— llega hasta 1997**. Se barrieron **7.015 sumarios entre 1994 y 2016** casando el título, y **antes de creerle a un cero se validó el método** sobre 2017, donde devuelve el otorgamiento de Marea que ya estaba en la capa. De ahí salió el aterrizaje de **Canalink África en Granadilla** (BOE-B-2015-789, concesión de 2014, veinticinco años), segundo en el mismo puerto y con otra concesionaria. Y dos veredictos: **Columbus-III y Atlantis-2 en Conil no están** en once años de sumarios —si se publicaron, no con ese nombre en el título— y **el EIG no es de esta capa**: su DIA de 2010 describe un cable que cruza aguas españolas sin amarrar en España (sus puntos de conexión son Reino Unido, Portugal, Gibraltar, Mónaco, Francia…). El rastro de **Melilla–Península** quedó a la vista en contratos de 2010, 2011 y 2015: nombran el cable y sus extremos, no sitúan el amarre.
 **Huecos** · 2: **el acto autoriza una ocupación, no bautiza un cable.** Los
 expedientes de Santander y Sagunto no nombran sistema ni destino. La Ley
 11/2022 obliga a comunicarlos al Ministerio, pero **el Ministerio no publica la
@@ -1168,7 +1172,7 @@ Canarias: el **BOC n.º 165, de 22-8-2023**, somete a información pública la
 solicitud de Vodafone Enterprise Spain para ocupar el dominio público
 marítimo-terrestre con el **segmento W3-EGO** en la **Playa de Salinetas
 (Telde)**. Lo encontró un BARRIDO del boletín entero, no una búsqueda; y el
-mismo hallazgo metió el BOC en `otear-autonomicos.py`, de modo que el
+mismo hallazgo metió el BOC en el vigía autonómico, de modo que el
 otorgamiento —si llega— ya no habrá que buscarlo. **Es además el único acto de
 esta capa que BAUTIZA el sistema con su segmento**, cuando la norma es que un
 acto de Costas autorice una ocupación sin nombrar el cable.
@@ -1246,7 +1250,7 @@ DIA favorable de 2024 con la AAI modificada para el Edificio 2 (BOPV n.º 4 de
 emisión, motor a motor** — segunda `exacta` de la capa, con el huso **deducido**
 a la manera de `zonas-defensa` (el acto no lo declara: se probaron los tres y
 solo el 30 deja el punto en el municipio que el acto nombra).
-**Qué se añadió** *(2026-08-21, release `.112`, contrato 1.67.0)* · **El duodécimo, y lo trajo el vigía nuevo**: el campus «Zaragoza-WIND» de Merlin en Botorrita, que `otear-autonomicos.py` encontró en su segunda corrida —un acto del BOA de hacía una semana que una jornada de búsqueda a mano se había dejado—. Entra en `paraje`: el acuerdo nombra el polígono industrial San Antonio y el Nomenclátor tiene ese paraje en Botorrita, comprobado punto-en-municipio. **Y con él cae la prohibición de `potencia_it_mw`**: el acuerdo afirma «una potencia total de 144 MW IT» en su propia descripción, así que el motivo de la prohibición —«ningún acto la da»— dejó de ser verdad. El campo vuelve con una vara en su lugar: solo lo llena un acto que AFIRME la cifra; memoria recitada, solicitud o nota corporativa siguen yendo a claves.
+**Qué se añadió** *(2026-08-21, release `.112`, contrato 1.67.0)* · **El duodécimo, y lo trajo el vigía nuevo**: el campus «Zaragoza-WIND» de Merlin en Botorrita, que el vigía autonómico encontró en su segunda corrida —un acto del BOA de hacía una semana que una jornada de búsqueda a mano se había dejado—. Entra en `paraje`: el acuerdo nombra el polígono industrial San Antonio y el Nomenclátor tiene ese paraje en Botorrita, comprobado punto-en-municipio. **Y con él cae la prohibición de `potencia_it_mw`**: el acuerdo afirma «una potencia total de 144 MW IT» en su propia descripción, así que el motivo de la prohibición —«ningún acto la da»— dejó de ser verdad. El campo vuelve con una vara en su lugar: solo lo llena un acto que AFIRME la cifra; memoria recitada, solicitud o nota corporativa siguen yendo a claves.
 **Huecos** · 8 + los de los cuatro últimos. **La potencia TI en MW no la certifica
 ningún acto** — la dan la patronal y los operadores (R3); el acto de ACS la
 roza (20-30 MW POR SALA), el expediente de Alcalá la publica en documentación
@@ -1256,7 +1260,7 @@ no TI: la prohibición del esquema aguanta, y el día que una resolución recoja
 la cifra habrá que releer su motivo. Las aprobaciones pendientes de los
 `en_tramitacion` (ACS, Microsoft y la AAI/DIA de Merlin Navalmoral) y la AAI
 original de Arasur de 2023 (citada por el acto archivado, sin publicación
-propia localizada) quedan de guardia en AGENDA: ni el BOA, ni el BOCM, ni el
+propia localizada) quedan de guardia manual: ni el BOA, ni el BOCM, ni el
 DOE, ni el BOPV los vigila nadie automático.
 **Qué se añadió** *(2026-08-21, release `.111`)* · **La Región Microsoft de
 Aragón, con sus tres campus** (La Muela, Villamayor de Gállego y Zaragoza —
@@ -1270,7 +1274,7 @@ publicado en acto: los que circulan son de prensa y no entran.
 **Qué se añadió** *(2026-08-23, release `.118`)* · **El decimosexto, y una
 lección sobre qué acto sostiene un registro**: el **campus data center
 «Rhodes»** de Calatorao (Zaragoza), promovido por Calanza Inmuebles, SL. Lo
-señaló `otear-autonomicos.py` por el acto del 18 de agosto —la redelimitación
+señaló el vigía autonómico por el acto del 18 de agosto —la redelimitación
 del ámbito de su PIGA, con declaración de utilidad pública y urgente
 ocupación—, **y ese acto solo no bastaba**: habla de los centros de datos en
 abstracto para justificar la urgencia de la expropiación y luego de «proyectos
@@ -1456,7 +1460,7 @@ Estatutos de Autonomía de Ceuta y Melilla · **MAEC**, posición oficial de Esp
 · **IGN**, Nomenclátor.
 **Licencia** · Textos legales sin dueño · IGN.
 **Qué hay que saber** · **El atlas registra que la reclamación existe y quién la
-sostiene; no dicta veredicto** (D5). Por eso hay exactamente dos campos
+sostiene; no dicta veredicto**. Por eso hay exactamente dos campos
 simétricos —quién administra y quién reclama— y Gibraltar y Ceuta se describen
 con la misma vara. **Un tratado acredita la posición de una parte, no la razón de
 nadie.**
@@ -1482,7 +1486,7 @@ depositada), notas verbales de España (2018) e Italia (2018), respuestas
 argelinas (2019) y páginas de Estado de España y Argelia · **GEBCO**, gazetteer
 submarino.
 **Licencia** · Textos legales y documentos de organismos internacionales.
-**Qué hay que saber** · La misma doctrina D5, en el mar. **En aguas disputadas no
+**Qué hay que saber** · La misma doctrina, en el mar. **En aguas disputadas no
 se dibuja frontera**: se dibuja la zona sin delimitación acordada, y va
 `geo_precision: ilustrativa` a propósito. `ambito: mundo` porque la plataforma
 más allá de las 200 millas **cae fuera del recuadro de España por definición**
@@ -1661,8 +1665,7 @@ medio metro. `TAR2` entra `confirmado`; `JADR` (Jadraque, DOMES 15031M001) y
 `MOTI` (Motilla del Palancar, DOMES 15030M001) entran **`parcial`**: su única
 posición publicada es la cabecera, convertida por el atlas de XYZ a
 geográficas (GRS80) — convertir sobre primaria no la hace primaria. El
-municipio de las tres se comprobó **punto-en-municipio contra el IGN** con
-`consultar.py`.
+municipio de las tres se comprobó **punto-en-municipio contra el IGN**.
 **Huecos** · **La tabla oficial sigue publicando 123.** `JADR` y `MOTI` siguen
 sin fila en la tabla de coordenadas y sin site log: su posición de tabla, con
 marco ETRS89 declarado, sigue siendo del IGN el publicarla.
@@ -1782,7 +1785,7 @@ Lo que hace red a esta red es la **titularidad estatal**, y quien la fija es el
 catálogo del ministerio: 26.564 km de los 165.756 del país, con el 53 % del
 tráfico total y el 65,7 % del pesado.
 **Qué hay que saber** · **Viene proyectado**, en ETRS89/UTM 30N, así que hay que
-reproyectar a WGS84 para el GeoJSON; la conversión se hace en el pipeline sin
+reproyectar a WGS84 para el GeoJSON; la conversión se hace sin
 `pyproj`, y está comprobada contra puntos conocidos —el meridiano central del
 huso sale a `-3,00000` exacto—. El resultado cae donde debe: lon -8,78 a 3,17,
 lat 35,27 a 43,69. **Canarias no aparece, y no es un fallo**: su red no es del
@@ -2039,7 +2042,7 @@ tilde**; mezcla formas —«Bizkaia» y «Gipuzkoa» en euskera, pero «Alicante
 Canarias y Baleares **pone islas donde debería poner provincias** (Mallorca,
 Ibiza y Formentera, Gran Canaria, Fuerteventura, Tenerife, La Palma, La Gomera y
 El Hierro). Son **54 valores para 50 provincias con montes**, y la equivalencia
-va declarada una a una en el pipeline.
+va declarada una a una, no adivinada.
 **Huecos declarados** · **Ceuta y Melilla salen con cero**, y se dice en su ficha
 que el cero de una recopilación no prueba una ausencia. La capa **no publica los
 recintos**: quien necesite el contorno de un monte concreto tiene que ir a la
@@ -2072,7 +2075,7 @@ venía esquivando el PDF: cuando una fuente solo se publicaba así, o había otr
 distribución o la capa se paraba. Aquí **no hay otra**: ni CSV, ni Excel, ni
 servicio, ni conjunto en `datos.gob.es` — 25 páginas de tablas y nada más. La
 alternativa era teclear 420 filas a mano, que es exactamente lo que este atlas
-no hace. El lector vive en `pipeline/leer_pdf.py`, no tiene dependencias y sirve
+no hace. El lector de PDF es propio, sin dependencias, y sirve
 solo para PDF de texto: **no hay OCR y no lo habrá**. Reconstruye cada tabla
 desde las **reglas** que la dibujan —los rectángulos finos que Word pinta por
 celda—, y no adivinando columnas por sangrías, que es como se cuelan los errores
@@ -2091,7 +2094,7 @@ es el peor fallo posible.
 para 94 patologías**». Las patologías salen **exactas**, y se comprueban además
 contra el **otro** documento: el catálogo lista **116**, de las que 94 tienen
 centro, **11 tienen los criterios retirados** y **11 están declaradas «No CSUR»**
-— y el pipeline exige que toda catalogada sin designación diga por qué, o para
+— y la extracción exige que toda catalogada sin designación diga por qué, o para
 la construcción. Los «53 centros» salen exactos **pero no son 53 hospitales**:
 son **53 unidades designadas**, y trece de ellas son **alianzas de dos centros**,
 así que hospitales distintos hay **46**. Y de las **420 filas rayadas**, dos son
@@ -2105,7 +2108,7 @@ mayúscula). **«Hospital U. Reina Sofía» (Córdoba) y «Hospital General U. R
 Sofía» (Murcia)** son dos hospitales a quinientos kilómetros que una palabra
 separa: cualquier casado por parecido los funde. Y partir las alianzas por
 « y » rompe **«Ramón y Cajal»** y **«y Politécnico La Fe»**. Son **66 grafías →
-53 unidades → 46 centros**, declaradas una a una en `pipeline/tablas_csur.py`.
+53 unidades → 46 centros**, declaradas una a una, a mano.
 **La coordenada NO sale del domicilio, y hay un caso que lo prueba** · El primer
 intento fue geocodificar la dirección del Catálogo Nacional de Hospitales. Ese
 registro le da al **Ramón y Cajal** la calle de Ayala 38, en el centro de Madrid,
@@ -2328,7 +2331,7 @@ Descarga en dos pasos: `initDescargaDir?secuencial=<id>` devuelve
 - **EUR-Lex y el IGME devuelven HTTP 200 para documentos que no existen**,
   sirviendo una página de error. Si la URL termina en `.pdf` el engaño se
   detecta, porque responder `text/html` delata el enlace roto; si no, un
-  *soft-404* es indistinguible del documento. Por eso `vigilar.py` **cuenta
+  *soft-404* es indistinguible del documento. Por eso la guardia semanal **cuenta
   cuántas citas no puede comprobar de verdad**.
 
 ### CORES y el PRTR-España

@@ -12,7 +12,7 @@ procedencia.
 > Atlas Estratégico de España — <https://atlas.eltercioviejo.com> — CC BY 4.0
 
 Cada capa declara además su propia `licencia` y `atribucion` en
-`datos/manifest.json` (contrato §3). Si alguna capa futura llevara una licencia
+`datos/manifest.json`. Si alguna capa futura llevara una licencia
 distinta a esta, mandaría la del manifiesto y se anotaría aquí.
 
 > **La licencia de ENTRADA de cada capa —la de su emisor, y qué obliga— está en

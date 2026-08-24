@@ -1,14 +1,14 @@
 # El archivo documental
 
-Copia de cada documento citado por el atlas, guardada **en el momento de citarlo**
-(contrato §2). Las URLs se pudren: un boletín se reorganiza, un ministerio migra
+Copia de cada documento citado por el atlas, guardada **en el momento de citarlo**.
+Las URLs se pudren: un boletín se reorganiza, un ministerio migra
 su web, una empresa retira una nota de prensa que ya no le conviene. Cuando eso
 pasa, la cita sigue aquí.
 
 > **Qué se llevó cada capa de aquí, y con qué condiciones: [`PROCEDENCIA.md`](PROCEDENCIA.md).**
 > Este fichero explica cómo se archiva; aquel, de dónde sale cada capa, qué
 > obliga su licencia y qué hay que saber antes de citarla. Ninguna capa publica
-> sin su ficha — lo comprueba el CI (§7.9).
+> sin su ficha — lo comprueba la validación automática.
 
 ## Cómo se nombra un fichero
 
@@ -44,8 +44,8 @@ fuentes/boe/1978/2026-08-20_boe_....pdf   ← «archivado en 2026, documento de 
   primera palabra: para los documentos vivos es la identidad, y para los muertos
   no estorba. Una recaptura queda adyacente a su versión anterior, que es donde
   se aprecia la contradicción.
-- **La regla de la serie** *(mismo espíritu que la regla de crecimiento de los
-  dominios, D22)*: la TERCERA captura del mismo `(organismo, descripción)`
+- **La regla de la serie** *(el mismo espíritu que la regla de crecimiento de los
+  dominios)*: la TERCERA captura del mismo `(organismo, descripción)`
   convierte la clave en serie recurrente, y la serie gana carpeta propia —
   `fuentes/<organismo>/<descripción>/` — sin nivel de año hasta que engorde.
   Promoverla es mover dos ficheros y sus citas: un gesto, no una migración.
@@ -53,7 +53,7 @@ fuentes/boe/1978/2026-08-20_boe_....pdf   ← «archivado en 2026, documento de 
   quince fuentes sostienen de dos a cuatro capas (una sostiene dos capas y un
   conjunto), treinta y dos no pertenecen a ninguna —licencias, negativos
   documentados, actos de expedientes vigilados—, y la taxonomía de dominios
-  cambió esa misma mañana (D22). La ruta es identidad y se construye con
+  cambió esa misma mañana. La ruta es identidad y se construye con
   propiedades estables; la vista por capa ya la dan las fichas y PROCEDENCIA,
   generadas del dato y nunca desfasadas.
 

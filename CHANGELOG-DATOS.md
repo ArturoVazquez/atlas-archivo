@@ -1,13 +1,18 @@
 # CHANGELOG de datos
 
 Una entrada por **release de datos** (etiqueta Git `datos-vAAAA.MM`, con sufijo
-`.N` si hay más de una en el mismo mes; contrato §8).
-Cada entrada dice **qué cambió, por qué y con qué evidencia** — y alimenta la
-respuesta en el hilo de El Tercio de esa capa.
+`.N` si hay más de una en el mismo mes).
+Cada entrada dice **qué cambió, por qué y con qué evidencia**.
 
 Esto no es un registro de commits: es el registro de lo que un lector externo
 necesita saber para confiar en una versión de los datos, o para desconfiar de la
 anterior con motivo.
+
+> Las entradas citan a veces el contrato de datos por sus secciones («§6.6»),
+> sus reglas de doctrina («R3») o su edición («1.42.0»), con la numeración
+> vigente el día de la release. El
+> contrato se reorganizó en agosto de 2026 en una edición más breve: esas
+> referencias describen su momento y no se reescriben.
 
 **Formato de cada entrada:**
 
@@ -44,13 +49,12 @@ y la fecha de captura sigue siendo la primera palabra del nombre.
 ### Cambiado
 
 - ~20.000 citas y menciones reescritas de una vez — capas, conjuntos, las 415
-  series, guiones del pipeline y fixtures de las pruebas. `validar.py` hizo de
+  series, guiones internos y casos de prueba. La validación automática hizo de
   red: los 175 avisos de línea base, exactos.
 - `fuentes/README.md` documenta la estantería: la regla del año, la de la
   serie recurrente (la tercera captura del mismo organismo-descripción gana
   carpeta propia) y por qué NO se organiza por capa ni dominio — quince
-  fuentes sostienen varias capas y treinta y dos no pertenecen a ninguna. El
-  porqué entero, en D23.
+  fuentes sostienen varias capas y treinta y dos no pertenecen a ninguna.
 
 ### Sabido
 
@@ -78,11 +82,10 @@ retira: la sustituyen **24 subgrupos temáticos** que rotulan las secciones
   proyección**. Las 40 ganan subgrupo con nombre propio.
 - «El tablero» deja de ser rótulo de navegación: el dominio se llama
   **Soberanía y seguridad**, que dice qué hay dentro. El término sobrevive en
-  la doctrina y las historias, que es donde nació (D5).
+  la doctrina y las historias, que es donde nació.
 - Contrato **1.71.0**: §3 estrena la **regla de crecimiento** — ningún dominio
   nace con una sola capa; el subgrupo pre-dibuja la escisión y se promueve a
-  dominio al juntar 3–4 capas. La conversación entera, con sus tres rondas y
-  sus alternativas, está en D22.
+  dominio al juntar 3–4 capas.
 
 ### Sabido y asumido
 
@@ -93,7 +96,7 @@ retira: la sustituyen **24 subgrupos temáticos** que rotulan las secciones
 ## datos-v2026.08.118 — el vigía caza dos, y ninguna entra por donde parecía
 
 La primera edición cuyos dos registros los encuentra **una máquina y no una
-búsqueda**: `otear-autonomicos.py` puso en rojo su barrido del 2026-08-23 con
+búsqueda**: el vigía de los boletines autonómicos puso en rojo su barrido del 2026-08-23 con
 dos hallazgos, uno del BOC y otro del BOA, y los dos acabaron en la capa. Pero
 ninguno entró por el acto que el vigía señaló, y ese es el aprendizaje de la
 tanda: **el vigía indica el día, no acredita el hecho.** El contrato sube a
@@ -200,7 +203,7 @@ historia nueva.
   fechar: §4.2 se escribió el 2026-08-15 y las Historias nacieron el 2026-08-18.
   La puerta abierta dejó pasar a alguien. Queda escrito que las dos condiciones de
   un conjunto son **acumulativas**: no basta con que el hecho no tenga lugar,
-  **tiene que ser una cifra**. Ver **D19**.
+  **tiene que ser una cifra**.
 
 ### Huecos
 - **Los cuatro aterrizajes sin nombre de sistema siguen sin él**, y ahora se sabe
@@ -241,7 +244,7 @@ seguirá sin costar nada.
   Frontera y **La Restinga** en El Pinar) y la **Planta Desaladora Maspalomas I**
   en San Bartolomé de Tirajana. La capa pasa de 18 a 22.
 - `vocabularios.json` · `desaladoras` — categoría **`privada`**, la tercera de
-  las que D18 abrió. La vara no es de quién es la planta: es si un acto la
+  las que la reapertura del perímetro abrió. La vara no es de quién es la planta: es si un acto la
   nombra y la sitúa.
 
 ### Corregido
@@ -283,7 +286,7 @@ seguirá sin costar nada.
 De las 3.165 plantas fotovoltaicas que la Base Topográfica Nacional cartografía,
 **1.959 no llevan nombre**. No es un defecto del IGN: cartografiar un recinto no
 es identificarlo, y el atlas las dejaba fuera porque `nombre` es obligatorio.
-Esta edición aplica **D17** y las empieza a rescatar — no inventando el nombre,
+Esta edición las empieza a rescatar — no inventando el nombre,
 sino cruzando con quien sí lo tiene: **el registro de la administración que
 autorizó cada planta**.
 
@@ -414,8 +417,8 @@ es una garantía falsa.
 
 Una capa llamada **«Desaladoras de interés general del Estado»** tenía el
 perímetro en el nombre, y ese perímetro dejaba fuera a todas las demás **por una
-figura jurídica que no les corresponde, no por falta de fuente**. Decisión de
-Arturo (D18): «es información que se deja fuera».
+figura jurídica que no les corresponde, no por falta de fuente**. La decisión
+de curaduría: «es información que se deja fuera».
 
 **El contrato no se mueve: sigue en 1.67.0.**
 
@@ -468,7 +471,7 @@ corporativas no entra.
 
 ## datos-v2026.08.112 — el vigía nuevo trae su primera pieza, y con ella cae una prohibición
 
-Lo encontró **`otear-autonomicos.py` en su segunda corrida**, horas después de
+Lo encontró **el vigía de los boletines autonómicos en su segunda corrida**, horas después de
 nacer: un acto publicado en el BOA hace una semana que una jornada entera de
 búsqueda a mano se había dejado. Vigilar cuesta una vez; buscar cuesta cada vez.
 
@@ -521,7 +524,7 @@ por la prohibición de `empleos`, que nadie ha falsificado.
 
 - El **PIGA** — el propio acuerdo lo llama «futuro PIGA» y nombra a Merlin
   promotora definitiva. Cuando se apruebe, la categoría sube: lo vigila
-  `otear-autonomicos.py`, que es quien encontró esto.
+  el vigía autonómico, que es quien encontró esto.
 - El consumo eléctrico anual y el de agua: el acuerdo no los publica.
 
 ---
@@ -788,7 +791,7 @@ nuevos: la capa sube de parche (1.1.2).
 - El de la capacidad de Águilas y los seis de coordenada **se estrechan, no se
   cierran** — cada uno dice ahora exactamente qué publica su acto y qué no. Y
   la decisión de perímetro de la capa (si entran las autonómicas, canarias y
-  privadas) sigue esperando a Arturo, dicha en AGENDA.
+  privadas) sigue pendiente de decisión.
 
 ---
 
@@ -897,7 +900,7 @@ se mueve: sigue en 1.66.0.**
   la Generalitat y el DOGC no la suelta por buscador general.
 - **Columbus-III y Atlantis-2** (Conil), **Tetuán–Estepona**,
   **Almería–Melilla**, **Baleares** y **Ceuta y Melilla**: sin acto localizado
-  en esta pasada. Todo el detalle, en el relevo de `AGENDA.md`.
+  en esta pasada; quedan de guardia.
 
 ### Huecos
 
@@ -966,8 +969,8 @@ en el §10 del contrato.
 
 ## datos-v2026.08.103 — la ronda de la agenda: un cable esperado y dos huecos con acto
 
-La ronda manual de `AGENDA.md` —lo que ninguna guardia automática cubre—
-pasada asunto a asunto. Tres piezas entran; lo que no se movió queda dicho
+La ronda manual de los asuntos pendientes —lo que ninguna guardia automática
+cubre— pasada asunto a asunto. Tres piezas entran; lo que no se movió queda dicho
 abajo, porque una ronda que solo cuenta sus aciertos no es una ronda.
 
 **El contrato no se mueve: sigue en 1.65.0.**
@@ -1101,9 +1104,9 @@ que la capa ya tenía.
 
 - **La potencia TI en MW** — sigue sin publicarla ningún acto (ver arriba).
 - **La aprobación definitiva del PIGA** — cuando llegue, la categoría sube a
-  `autorizado`. El vigía (`otear.py`) solo lee el BOE y este acto saldrá en el
-  BOA: queda como asunto mensual en `AGENDA.md`, junto al DOCM que ya se
-  revisa a mano por el mismo motivo.
+  `autorizado`. El vigía semanal solo lee el BOE y este acto saldrá en el
+  BOA: queda como asunto de revisión mensual a mano, junto al DOCM, por el
+  mismo motivo.
 - **Los centros de datos de Madrid y Cataluña**, que son la mayoría del parque
   español y siguen sin un solo acto archivado en esta capa.
 - Siguen abiertos los de releases anteriores.
@@ -1232,8 +1235,8 @@ propio IGN sirve por otras puertas.**
   posición publicada es la cabecera de sus propios ficheros RINEX, que el
   atlas convierte de XYZ a geográficas (GRS80) — **convertir sobre primaria no
   la hace primaria**, la misma doctrina que `longitud_medida_km`. El municipio
-  de las tres se comprobó **punto-en-municipio contra el IGN** con
-  `consultar.py`, el patrón que verificó los 77 nodos de rte-t.
+  de las tres se comprobó **punto-en-municipio contra el IGN** ,
+  el mismo contraste que verificó los 77 nodos de rte-t.
 - Cuatro ficheros archivados: el site log de TAR2 y los tres RINEX diarios del
   2026-08-17 — estos como **una fuente con `archivo` en lista** (contrato
   1.38): un emisor, una operación, tres piezas.
@@ -1495,7 +1498,7 @@ de las dos partes son incompatibles. Esta edición lo convierte en registro.
   Feature dice, literalmente, «Median line **in absence of agreed maritime
   boundary**» — la ausencia de acuerdo, declarada por quien dibuja. El aviso de
   licencia del propio conjunto añade «Not prejudicial to delimitation». Se
-  dibuja la posición británica atribuida al Reino Unido (D5) y la española va
+  dibuja la posición británica atribuida al Reino Unido y la española va
   en claves con sus papeles: la disposición final primera de la **Ley 10/1977**
   («no puede ser interpretado como reconocimiento de cualesquiera derechos o
   situaciones relativos a los espacios marítimos de Gibraltar, que no estén
@@ -1710,8 +1713,8 @@ cuatro son la tabla de su acto, pasada a grados decimales.
   acuerdo: es una declaración a la espera de acuerdos que aún no existen.
 - `espacios-maritimos:zee-argelia` — los 62 puntos numéricos del anexo del
   decreto presidencial argelino 18-96 (JORADP n.º 18, 2018; M.Z.N.135.2018.LOS).
-  Registrarla no es cortesía: D5 exige cada posición atribuida a quien la
-  sostiene, y dibujar solo la línea española habría convertido al atlas en
+  Registrarla no es cortesía: la doctrina exige cada posición atribuida a
+  quien la sostiene, y dibujar solo la línea española habría convertido al atlas en
   parte. **El hallazgo que las dos tablas regalan:** el punto 2 argelino y el
   punto que el artículo 1 español sitúa a 46 millas de Cabo de Gata son el
   mismo, minuto por minuto — las dos declaraciones arrancan del mismo lugar. El
@@ -1877,7 +1880,7 @@ ha constituido el órgano que debe examinarla**.
 
 Una segunda pasada externa —hecha, dicho por ella, **sin poder cargar la página**—
 confirmó lo corregido y señaló dos cosas más. Una era suya y era buena; la otra
-la había roto yo al reescribir.
+se había roto al reescribir la historia.
 
 - **La espera estaba redondeada al alza.** Se calculaba restando años
   (`release − depósito`), y de un depósito del **17 de diciembre de 2014** salían
@@ -1919,12 +1922,12 @@ secundaria, y el hueco declarado dice exactamente eso.
   distribuidas. La escribió la `.84` para contar su propio arreglo, once veces
   casi igual, y no es un hecho de la instalación: es **biografía del atlas**.
 
-Arturo lo vio sobre la ficha publicada y preguntó si hacía falta pintarlo ahí.
+Se vio sobre la ficha publicada, y la pregunta obligada era si hacía falta pintarlo ahí.
 No hacía falta. §6.3 define `claves` como «afirmaciones sueltas» **sobre el
 sujeto**, y el sitio de un arreglo es este documento, que existe textualmente
 para «lo que un lector externo necesita saber para confiar en una versión de los
 datos, o para desconfiar de la anterior con motivo». Contarlo **además** en el
-dato era la segunda verdad que descartó D3: dos copias que se desincronizan a la
+dato sería una segunda copia de la verdad: dos copias que se desincronizan a la
 primera corrección.
 
 **El motivo no es que el sitio aún no tenga visitas** — eso valdría para volver a
@@ -1957,7 +1960,7 @@ Cierra el defecto que la `.84` dejó a la vista. **Contrato 1.58.0.**
 ### Lo que no cuadraba
 
 Con las once ICTS ya repartidas, la ficha de MARHIS listaba **catorce vecinos**
-mientras el punto de Tenerife, en el mapa, decía **«3»**. Lo vio Arturo.
+mientras el punto de Tenerife, en el mapa, decía **«3»**.
 
 Ninguno de los tres números estaba mal. Tenerife tiene 2 vecinos (3 contando a
 MARHIS); los catorce son la suma de sus **cinco** sedes. Pero la lista aplanaba
@@ -2004,8 +2007,8 @@ capital. Esta quita el montón. **Contrato 1.57.0.**
 
 ### El defecto: `pais` usado fuera de su propia definición
 
-Doce registros de `icts` se dibujaban en el **mismo punto de Madrid**. Lo vio
-Arturo mirando el mapa, y su objeción era la del Gran Telescopio Canarias
+Doce registros de `icts` se dibujaban en el **mismo punto de Madrid**. Se vio
+mirando el mapa, y la objeción era la del Gran Telescopio Canarias
 aplicada once veces más: **un punto en un mapa afirma**, y ninguna de esas doce
 instalaciones está en Madrid. Son redes repartidas por España.
 
@@ -2045,7 +2048,7 @@ autónomas» y de los catorce nodos de su clave salen **once** distintas.
   Santiago de Compostela, Pamplona, Vitoria-Gasteiz y Santander). Las
   coordenadas **no se escriben en el guion**: se leen de esta captura archivada.
   Santander va por recuadro porque la consulta por etiqueta devuelve `0` en
-  silencio — el fallo del que avisa el propio `consultar.py`, cazado aquí por
+  silencio — el fallo del que avisa la propia consulta de contraste, cazado aquí por
   seguir su doctrina.
 
 ### Lo que este arreglo NO hace, dicho sin adorno
@@ -2064,7 +2067,7 @@ significa y declara, y son entre 300 y 1.700 km menos de error.
 Tres controles contaban **rasgos** y no vértices, los tres nacidos en la 1.55, y
 se habrían quedado ciegos justo donde más apilamiento hay: el aviso de §7.4, el
 contador del visor y los vecinos «También en este emplazamiento». Pruebas
-**67 → 68**, con una fixture que lo prueba por construcción — un punto suelto y
+**67 → 68**, con un caso nuevo que lo prueba por construcción — un punto suelto y
 una red repartida que comparte con él **solo uno** de sus dos vértices.
 
 ### Y una confesión: el contador del visor nunca había dibujado
@@ -2109,8 +2112,8 @@ caducado en cuatro días. **Contrato 1.56.0.**
 
 ### Almaraz: la prórroga a 2030, que el atlas había predicho y no tenía
 
-`otear.yml` —el vigía del BOE— llevaba en rojo desde el 11 de agosto. **Su rojo
-es su forma de hablar**, no una avería: lo dice su propio fichero. Entre sus
+El vigía del BOE llevaba en rojo desde el 11 de agosto. **Su rojo
+es su forma de hablar**, no una avería: así está diseñado. Entre sus
 hallazgos:
 
 > **Orden TED/864/2026, de 12 de agosto**, por la que se concede la renovación de
@@ -2363,7 +2366,7 @@ Entran ahora, con los dos nuevos.
 ### Huecos
 
 - **El recuento de máquinas queda sin publicar.** La fuente lista nodos, no
-  máquinas, y una ficha nombra dos: contar 18 sería mío, no suyo.
+  máquinas, y una ficha nombra dos: contar 18 sería del atlas, no de la fuente.
 - Los 17 son **lo que la red publica hoy**, no un acto: por eso van `parcial`.
   El Mapa se actualiza cada cuatro años y la red, cuando quiere.
 
@@ -2481,8 +2484,8 @@ distancias entran como **campos**:
 
 ### Añadido
 
-- `pipeline/enriquecer-icts.py`, que **comprueba que el acto archivado siga
-  diciendo la coordenada que se publica** antes de tocar nada.
+- Una comprobación nueva: **el acto archivado tiene que seguir diciendo la
+  coordenada que se publica** antes de tocar nada.
 - Cuatro campos en §10, y **solo en los dos registros que tienen acto**:
   `altitud_m`, `servidumbre_acto`, `servidumbre_distancia_minima_m` y
   `servidumbre_distancia_mayor_m`.
@@ -2502,9 +2505,9 @@ distancias entran como **campos**:
 
 ## datos-v2026.08.77 — Seis filas vacías con un punto rojo
 
-La `.76` publicó `reservas-estrategicas` con sus **seis claves en blanco**: las
-escribí como `{titulo, texto}` cuando la página espera `{k, v}`. Lo vio Arturo
-en la página. **Contrato 1.50.0.**
+La `.76` publicó `reservas-estrategicas` con sus **seis claves en blanco**:
+estaban escritas como `{titulo, texto}` cuando la página espera `{k, v}`. Se vio
+en la página publicada. **Contrato 1.50.0.**
 
 ### Lo peor no es el fallo, es por qué nadie lo vio
 
@@ -2657,11 +2660,11 @@ valores** sin que nada los mirara — y las tres pintándose con el gris de rese
 
 ### Añadido
 
-- `validar.py` · §7.6 **BLOQUEA** la capa que usa `categoria` y no tiene entrada
+- La validación · §7.6 **BLOQUEA** la capa que usa `categoria` y no tiene entrada
   en el vocabulario. Bloquea y no avisa —que es lo que decía el apunte— por
   simetría: un valor suelto fuera del vocabulario ya bloqueaba, así que una capa
   entera fuera no puede costar menos.
-- `validar.py` · §7.6 comprueba la **forma del valor**: `[a-z0-9_]`, como el
+- La validación · §7.6 comprueba la **forma del valor**: `[a-z0-9_]`, como el
   color ya tenía la suya desde la 1.33. Un valor de enum no es prosa — viaja a
   una clave de estilo del mapa y a una URL de filtro.
 - Las **tres entradas del vocabulario**, con sus nueve valores, etiquetas,
@@ -2735,7 +2738,7 @@ Así que el tope no compraba nada: quitarlo sale **doce veces más barato** y ve
 **cinco anillos** que llevaban un día escondidos, uno de ellos con un trozo
 contado del revés.
 
-Y no era un riesgo futuro, como escribí. El atlas tiene **dieciséis** anillos
+Y no era un riesgo futuro, como decía la entrada anterior. El atlas tiene **dieciséis** anillos
 por encima de 900 vértices ahora mismo, en cuatro capas. `puertos` llega a
 **9.011**.
 
@@ -2782,15 +2785,15 @@ se leían al revés:
 
 ### Añadido
 
-- `validar.py` · §7.4 **BLOQUEA** el trozo contado del revés que pasa a la vez
+- La validación · §7.4 **BLOQUEA** el trozo contado del revés que pasa a la vez
   del **1 % del recinto** y de **media hectárea**, y avisa en todo lo demás. El
   aviso dice ahora si el anillo está **estrangulado** o **del revés**, y cuántas
   hectáreas van mal contadas.
-- `validar.py` · §7.8 comprueba que el `schema_version` del manifiesto es el del
+- La validación · §7.8 comprueba que el `schema_version` del manifiesto es el del
   contrato. La `.73` subió el contrato a 1.46 y dejó el manifiesto en 1.45, así
   que la biblioteca lleva un día anunciando una versión que ya no rige.
-- Dos fixtures donde había uno: `invalido-74-anillo-del-reves.geojson` bloquea y
-  `aviso-74-anillo-estrangulado.geojson` avisa. Más la prueba de la guardia del
+- Dos casos de prueba donde había uno: el anillo del revés bloquea y el
+  anillo estrangulado avisa. Más la prueba de la guardia del
   manifiesto. La batería pasa de **51 a 53**.
 
 ### Por qué esos dos números, que están medidos contra los dos extremos
@@ -2808,7 +2811,7 @@ mapa. Y no bloquea nada de lo vivo, con **26 veces** de margen en el porcentaje
 y **166** en las hectáreas.
 
 El error se mide contra la **suma de los dos lóbulos**, nunca contra el área
-firmada del anillo. Lo enseñó el fixture de la `.73` al pasar por la regla
+firmada del anillo. Lo enseñó el caso de prueba de la `.73` al pasar por la regla
 nueva: en una pajarita simétrica los lóbulos se anulan, el área sale cero y
 **293.265 ha del revés pasaban como «0,000 %»**.
 
@@ -2835,7 +2838,7 @@ estrellas. **Contrato 1.46.0.**
 
 ### Añadido
 
-- `validar.py` · **§7.4 · el anillo que se cruza a sí mismo**. RFC 7946 lo
+- La validación · **§7.4 · el anillo que se cruza a sí mismo**. RFC 7946 lo
   prohíbe, por la razón obvia: un anillo que se cruza no delimita nada. El aviso
   imprime **los metros del cruce y a cuántos vértices están los lados**.
 - Su prueba, `aviso-74-anillo-que-se-cruza.geojson`. La batería pasa de **50 a
@@ -2936,8 +2939,8 @@ no haber mirado las formas antes de publicar.
 **El validador no mira las formas.** Comprueba el sentido del anillo (§7.4) y no
 que el anillo sea simple, así que 135 polígonos pasaron el contrato con dos de
 ellos dibujando estrellas. Las comprobaciones que ahora deciden qué se publica
-—anillo simple, vértice fugado, superficie mínima— viven en el pipeline de esta
-capa; **si vuelve a hacer falta en otra, su sitio es el validador**, y entonces
+—anillo simple, vértice fugado, superficie mínima— viven en la construcción de esta
+capa; **si vuelve a hacer falta en otra, su sitio es la validación común**, y entonces
 será una regla del contrato y no una manía de un guion.
 
 ### Huecos
@@ -3105,11 +3108,11 @@ que `bases-eeuu` registra el régimen y no la guarnición.
   treinta y ocho, y lo dijo durante diez releases. Deja de dar el recuento: vive
   en la lista, que es donde se puede contar. La propia nota se lo había avisado a
   sí misma, a propósito de otra frase que envejeció aparte del dato.
-- `pipeline/extraer-adm.py` — el separador de miles volvió a comerse las comas de
+- El extractor del documento — el separador de miles volvió a comerse las comas de
   la prosa, el mismo fallo que se documentó en `montes-catalogo`. El ayudante
-  `mil()` está ahora también aquí, con la nota de que ha pasado dos veces.
+  de los miles está ahora también aquí, con la nota de que ha pasado dos veces.
 - **La página de conjunto sabía de gas y no lo sabía.** Con un solo conjunto
-  publicado, `pagina-conjunto.mjs` escribía « GWh» detrás de toda cifra y
+  publicado, la página de conjunto escribía « GWh» detrás de toda cifra y
   enlazaba siempre «el parte del gas de esa fecha»: los 89 laboratorios NBS-3
   salieron pintados como **«89,0 GWh»**. La unidad se deduce ahora del sufijo del
   campo (`_gwh`, `_ha`, `_km`…), que es la convención del atlas y no una lista de
@@ -3147,7 +3150,7 @@ Es la **primera capa del atlas leída de un PDF**, y no por gusto.
   **0,38 MB**.
 - **Un conjunto** (§4.2) con los totales nacionales, el reparto entre patologías
   catalogadas y designadas, y el cuadre contra la portada del documento.
-- `pipeline/leer_pdf.py` — lector de PDF **sin dependencias**, con posiciones y
+- Un lector de PDF propio, **sin dependencias**, con posiciones y
   reglas de tabla. Sirve para PDF de texto; **no hay OCR y no lo habrá**.
 
 ### Por qué se cruzó la raya del PDF
@@ -3182,8 +3185,8 @@ procedimientos**».
 - Las **94 patologías** salen exactas. Y se comprueban contra el **otro**
   documento del ministerio: el catálogo lista **116**, de las que 94 tienen
   centro, **11 tienen los criterios retirados** y **11 están declaradas «No
-  CSUR»** —diez de ellas «pendientes de proceso de designación», sin fecha—. El
-  pipeline **exige que toda catalogada sin designación diga por qué**, o para la
+  CSUR»** —diez de ellas «pendientes de proceso de designación», sin fecha—. La
+  extracción **exige que toda catalogada sin designación diga por qué**, o para la
   construcción.
 - Los **53 centros** salen exactos **y no son 53 hospitales**: son 53 **unidades
   designadas**, y trece de ellas son **alianzas de dos centros**. Hospitales
@@ -3582,7 +3585,7 @@ de desvío, porque a 10 m fijos **noventa carreteras cortas** se pasaban: quitar
 generalizada` y su `geo_fuente` diciendo qué se simplificó, como exige R9.
 
 También hubo que reproyectar: el catálogo viene en **ETRS89/UTM 30N**, no en
-latitud y longitud. La conversión se hace en el pipeline **sin añadir
+latitud y longitud. La conversión se hace en la construcción de la capa **sin añadir
 dependencias** —tiene una sola a propósito— y está comprobada contra puntos
 conocidos: el meridiano central del huso sale a `-3,00000` exacto.
 
@@ -3823,8 +3826,7 @@ mentira y pasa a ser **la única forma de que el histórico cuadre**.
   reparte el gas en sus **cuatro caminos** y dice **qué parte está situada en el
   mapa y qué parte no**, que es lo único que este atlas puede decir y la
   estadística no.
-- **`pipeline/seriar-gas.py --capa cuadre`**: el cuadre del sistema entero,
-  permanente. Cada hoja ya se comprobaba contra su total, y eso **no dice nada
+- **El cuadre del sistema entero, permanente.** Cada hoja ya se comprobaba contra su total, y eso **no dice nada
   del sistema** — las plantas podían cuadrar, las conexiones también, y el total
   nacional seguir corto porque faltaba un camino. Ahora **los 269 meses cuadran**
   con los totales del propio libro.
@@ -3877,7 +3879,7 @@ tener historia. Desde la `.59` existe.
   a mayo de 2026, con las tres columnas —los dos VIP y las cisternas— y su
   gráfica en la página del conjunto, dibujada por el mismo dibujante que las
   4.666 fichas.
-- **`seriar-gas.py` sabe extraerla**, con las mismas guardas de siempre: revienta
+- **El extractor de las series sabe extraerla**, con las mismas guardas de siempre: revienta
   si el libro deja de traer una columna, y un mes enteramente nulo no es un
   punto.
 
@@ -3981,13 +3983,13 @@ es**. Se buscó ese texto donde debería estar y no estaba en ningún sitio.
   caracteres** de los 140 que caben.
 - **`/biblioteca/`**, el catálogo de todo lo publicado: las 31 capas con sus
   registros, su reparto de verificación, sus huecos y su película; los partes; y
-  el archivo público. Es una página de `app/`, **no un dato**, y **ninguna de
+  el archivo público. Es una página del visor, **no un dato**, y **ninguna de
   sus cifras está escrita a mano**: todas se cuentan al construir, desde esta
   release. La lección de la `.51` aplicada a una página que es toda recuentos.
 
 ### Por qué no valía nada de lo que ya había
 
-- Las **notas `_` del manifiesto son prosa de taller**: explican decisiones
+- Las **notas `_` del manifiesto son apuntes internos**: explican decisiones
   —«Era `recurso-eolico`, y se renombra sin coste porque…»— y **diez de las
   treinta y una no tenían ninguna**.
 - **`fuentes/PROCEDENCIA.md`** contesta de dónde sale una capa, que es otra
@@ -4050,7 +4052,7 @@ No hizo falta bajar nada. Hizo falta abrir el libro entero.
 - **`series_completas`** en el manifiesto: las siete la tienen, luego una que
   faltara es un defecto y no una omisión legítima. Probado escondiendo la de
   Musel — el validador bloquea.
-- **`pipeline/seriar-gas.py`**, el extractor. Lee los `.xlsx` con la biblioteca
+- **El extractor de las series.** Lee los `.xlsx` con la biblioteca
   estándar y trae dos guardas: **el propio libro hace de juez** (la suma de lo
   extraído tiene que dar su columna de total en los 269 meses y en los dos
   libros) y el emparejamiento columna→ficha **revienta** en vez de adivinar.
@@ -4296,17 +4298,17 @@ sigue intacta en las dos pasadas. **41 pruebas.**
 - **La otra mitad de ese hallazgo era falsa.** El informe decía que la `.43`
   erraba en «184 bajan, 18 suben, 142 se quedan, −898». Reproducido contra la
   etiqueta: **es exacto**. Comparó un diff entre releases con una frase que
-  describe **la semana del parte** — y yo repetí su error antes de verlo. Queda
+  describe **la semana del parte** — y la primera lectura de aquí repitió su error antes de verlo. Queda
   escrito: **un informe también se audita**.
 - El esquema decía «por eso `geo_precision` es `paraje`» con 40 de 401 ya en
   `exacta`. Ahora dice que es el ancla **por defecto** y no fija el reparto.
 - **«719.725 partes»** sale del contrato §10 y de la nota del manifiesto: no se
   actualiza a 720.099, **se deja de nombrar**. Igual que el recuento de anclas
-  en AGENDA, que bailó entre 368 y 369, se corrigió a 367 y dos días después ya
+  de las notas de trabajo, que bailó entre 368 y 369, se corrigió a 367 y dos días después ya
   eran 361.
-- **D11** dice «faltan 32 embalses», superado por la `.48`. `DECISIONES.md` no
-  se reescribe: se anota — y la nota recuerda que **la prohibición que D11
-  impone sigue vigente por un motivo que el número nunca tocó**.
+- Una decisión antigua decía «faltan 32 embalses», superada por la `.48`. No
+  se reescribe: se anota — y la nota recuerda que **la prohibición que aquella
+  decisión impuso sigue vigente por un motivo que el número nunca tocó**.
 
 ### Añadido — lo que la fuente es y no decía nadie
 
@@ -4430,7 +4432,7 @@ Comparando **solo los registros ya anclados en el Inventario** —identidad
 cierta, sin adivinar— salen seis desacuerdos, y **dos son basura de la fuente**:
 `NMN_CAPAC` da **8.136.000.000** para Soto Terroba y **8.085.000.000** para Las
 Fitas, que es exactamente leer sus 8,136 y 8,085 hm³ como metros cúbicos. **El
-campo no está en una sola unidad**, y queda anotado en PROCEDENCIA y en AGENDA:
+campo no está en una sola unidad**, y queda anotado en PROCEDENCIA:
 un barrido masivo que no se guarde de eso fabricará desacuerdos de miles de
 millones por ciento.
 
@@ -4487,14 +4489,14 @@ Lo que no aguantó fue **lo escrito alrededor de los datos**.
 - **`PROCEDENCIA.md` se contradecía a sí mismo** —esto no lo vio la auditoría—:
   un párrafo decía que los sistemas se publican desde la `.48` y el de debajo,
   escrito en la `.47`, seguía diciendo «siguen sin publicarse».
-- Las anclas del Nomenclátor son **367**, no las «368» ni «369» que la AGENDA
-  decía en el mismo punto. Y la guía del taller pedía que las pruebas
+- Las anclas del Nomenclátor son **367**, no las «368» ni «369» que las notas
+  de trabajo decían en el mismo punto. Y una nota pedía que las pruebas
   «siguieran dando 16/16» cuando ya iban 40; ahora no escribe la cifra, porque
   **una cifra al lado del guion que la calcula solo puede envejecer**.
 
 ### Cambiado — el ritual pasa de cuatro gestos a seis
 
-Entran **`app/release.json`** y **`CITATION.cff`**. Los dos porque los dos se
+Entran **`release.json`** y **`CITATION.cff`**. Los dos porque los dos se
 olvidaron, y los dos comparten la propiedad peligrosa: **no rompen nada al
 olvidarse**. Sin `release.json` la web publica los datos de la edición anterior
 sin dar un solo error (pasó en la `.43`); sin `CITATION.cff` la cita apunta a
@@ -4505,7 +4507,7 @@ otra edición (ocho ediciones, de la `.42` a la `.50`).
 Tres agujeros y una sola causa: **cada comprobación nació recorriendo
 `features`** y el contrato creció por debajo.
 
-- **`vigilar.py` solo vigilaba registros.** Ni el PDF del conjunto ni las
+- **La guardia semanal solo vigilaba registros.** Ni el PDF del conjunto ni las
   fuentes de las 401 series estaban vigiladas por nadie: si esas URLs se
   pudrían, la guardia semanal seguía en verde.
 - **§7.7 y §7.10 no alcanzaban a las series**, donde la fuente es **suya** y
@@ -4522,7 +4524,7 @@ alcance que faltaba, no reglas que faltaran.
 
 ### Corregido — el error silencioso que más preocupaba
 
-`hm3()` en `seriar.py` hacía `.replace(".", "")` **a ciegas**, dando por hecho
+El ayudante de los hm³ del extractor hacía `.replace(".", "")` **a ciegas**, dando por hecho
 que el punto siempre separa miles. El día que MITECO publique «8.5» a la
 inglesa, eso devuelve **85**: el histórico entero multiplicado por diez, en
 silencio, **cuadrando consigo mismo y pasando R11 en verde** porque la serie y
@@ -4536,9 +4538,9 @@ rechazos, y revienta ante «8.5», «12.34» y «1,234.5».
 
 ### Pruebas: 37 → 40
 
-Tres fixtures nuevas, porque una regla que nadie ejercita se pudre sin que se
-note —lo dice este mismo directorio—. Y las tres fixtures de series dejaban de
-citar un `fuentes/fixture.zip` **que no existe**: ahora se atan al archivo real,
+Tres casos de prueba nuevos, porque una regla que nadie ejercita se pudre sin
+que se note. Y los tres casos de las series dejaban de
+citar un fichero **que no existe**: ahora se atan al archivo real,
 así que §7.7 avisará si un refresco del Boletín se deja alguna atrás. Red, en
 vez de tarea.
 
@@ -4559,7 +4561,7 @@ no un remiendo.
   bytes), la verificación por demarcación en vivo (el ArcGIS del Ministerio es
   intermitente), la elección de presa en los embalses con varias (el
   `ALT_CIMIEN` del SNCZI viene corrupto), y Firefox/WebKit.
-- **Queda abierto, y ahora mejor descrito en AGENDA:** el juicio humano sobre
+- **Queda abierto, y ahora mejor descrito:** el juicio humano sobre
   las **25 anclas a más de 3 km** (casi todas embalses de cola kilométrica), los
   **11 parajes incontrastables por nombre** y los **~15 desacuerdos de capacidad
   Boletín↔Inventario**, de los que solo Fresneda lo declara en su ficha.
@@ -4574,8 +4576,8 @@ no un remiendo.
 
 ## datos-v2026.08.50 — Las dos mitades del agua, y la electricidad que guarda
 
-**Ningún embalse cambia de cifra.** Esta release sale de una pregunta de
-Arturo: si el parte podía decir cuánta de la bajada semanal se fue en producir
+**Ningún embalse cambia de cifra.** Esta release sale de una pregunta:
+si el parte podía decir cuánta de la bajada semanal se fue en producir
 electricidad. **No podía, y no por falta de datos**: el uso hidroeléctrico es
 *no consuntivo* —el agua pasa por la turbina y sigue río abajo, casi siempre
 hasta otro embalse que también cuenta— y el desembalse por usos no lo publica
@@ -4649,7 +4651,7 @@ que casi se escapa: **§7.7 y §7.10 solo recorrían `features`**, así que un
 bloque de conjunto podía publicar un `javascript:` o una cita sin archivar por
 la puerta de atrás.
 
-Dos fixtures nuevas, **35 pruebas → 37**. La primera es el error que el
+Dos casos de prueba nuevos, **35 pruebas → 37**. La primera es el error que el
 mecanismo invita a cometer: la cifra del conjunto apunta a un id que existe en
 las fuentes de la **ficha**. Las del conjunto son suyas, precisamente porque
 salen de otro documento.
@@ -4707,7 +4709,7 @@ Es la misma razón por la que `series` vive ahí desde la 1.35: **el visor ofrec
 el enlace sin conocer capas por su nombre**. Al declararlo el manifiesto, la
 acción aparece sola en el panel de cualquier capa que lo traiga.
 
-Y de paso muere una contradicción que duró un día: `generar-fichas.mjs` tenía
+Y de paso muere una contradicción que duró un día: el generador de fichas tenía
 una **tabla escrita a mano** con `agua-embalsada` dentro para poner ese mismo
 enlace en el índice de la capa. Funcionaba y contradecía la regla de la casa
 —«añadir una capa es añadir su entrada, sin tocar código de panel»—. Ahora los
@@ -4902,10 +4904,10 @@ Deshacerlo pedía una de dos cosas, y ninguna se hace:
 - **Borrar uno.** El atlas no borra registros, y ninguno de los dos es falso:
   son dos filas de la fuente y cada una dice algo distinto y cierto.
 - **Empalmarlos en una sola serie.** Habría que afirmar que la fila «Escarra» y
-  la fila «Sistema Escarra» son la misma película, y eso es una inferencia mía,
-  no un dato de nadie. §4.1 prohíbe empalmar para cubrir tramos distintos del
+  la fila «Sistema Escarra» son la misma película, y eso es una inferencia del
+  atlas, no un dato de nadie. §4.1 prohíbe empalmar para cubrir tramos distintos del
   tiempo, y aunque aquí el emisor y la operación son los mismos, la decisión
-  seguiría siendo mía.
+  seguiría siendo del atlas.
 
 Lo que sí se hace: el agregado **deja de llamarse «Embalse de Sistema Escarra»**
 —que era un nombre fabricado por el prefijo automático— y pasa a «Sistema
@@ -5112,7 +5114,7 @@ la de estos dieciocho desde hace años. **Lo que faltaba era el punto.**
 Desde la release `.18`, la ficha de procedencia de esta capa decía —seis
 releases seguidas— que el **Inventario de Presas y Embalses** del SNCZI estaba
 tras un **ALTCHA**, un CAPTCHA de prueba de trabajo puesto a propósito, y que
-**no se salta**. Sigue sin saltarse: **lo descargó Arturo con un navegador**,
+**no se salta**. Sigue sin saltarse: **se descargó a mano, con un navegador**,
 que es exactamente lo que el ALTCHA pide y lo que ningún guion de este repo
 hace.
 
@@ -5254,8 +5256,8 @@ edición anterior **no se pierde**: vive en su etiqueta de Git y en su depósito
 Zenodo, que es exactamente para lo que sirven.
 
 **Y el refresco toca cuatro sitios, no dos** —queda escrito porque volverá cada
-mes—: la capa, las 369 series, la fuente archivada y **el `archivo` que cita el
-fixture de `pipeline/pruebas/`**, que si no se mueve deja tres pruebas en rojo
+mes—: la capa, las 369 series, la fuente archivada y **el `archivo` que citan
+los casos de prueba**, que si no se mueve deja tres pruebas en rojo
 por §7.7 (fichero archivado inexistente). Las tres cayeron en esta tanda y así se
 descubrió.
 
@@ -5271,7 +5273,7 @@ descubrió.
 
 ---
 
-## datos-v2026.08.42 — La red que no estaba en el fichero que yo podía bajar
+## datos-v2026.08.42 — La red que no estaba en el fichero que se dejaba bajar
 
 Última capa del **segundo horizonte**, y la que más se resistió. No por los
 datos: por el portal que los guarda.
@@ -5488,10 +5490,10 @@ de recortar el publicado. A la **Subdirección General de Energías Renovables**
 del MITECO, titular del registro: que la exportación de Electra incorpore
 **provincia, municipio y tecnología** —los tres campos por los que su propio
 buscador ya filtra— y que se rellene `IdInstalacion`, hoy vacía, que es lo que
-impide unir sus dos hojas por algo más firme que el nombre. Queda anotado en
-`AGENDA.md`.
+impide unir sus dos hojas por algo más firme que el nombre. Queda anotado
+como asunto pendiente.
 
-### Una nota de método, porque el error fue mío
+### Una nota de método, porque el error fue propio
 
 El primer cruce emparejó las centrales **por prefijo del nombre**, y eso
 asignó la potencia de Almaraz I a Almaraz II y la de Ascó I a Ascó II:
@@ -5728,11 +5730,10 @@ forma de todas las demás.
 
 ## datos-v2026.08.37 — El vigía cobra su primera pieza: la concesión de Valdelentisco
 
-**Primera release del circuito de guardia completo**: `otear` señaló el acto en
-su barrido semanal (1 hallazgo sobre 8 sumarios y 1.440 actos), la curación lo
-juzgó y entra. Y primera release tras la mudanza del taller (DECISIONES D10):
-el despliegue ya no es un push — es el ritual prebuilt de Vercel — y la fuente
-nueva se sincroniza a `atlas-archivo`, que es donde las fichas citan.
+**Primera release del circuito de guardia completo**: el vigía del BOE señaló
+el acto en su barrido semanal (1 hallazgo sobre 8 sumarios y 1.440 actos), la
+curación lo juzgó y entra. Y la fuente nueva se sincroniza a este archivo, que
+es donde las fichas citan.
 
 ### Añadido
 - `desaladoras:valdelentisco` — fuente f5 (BOE-B-2026-26187, 2026-08-05:
@@ -5788,9 +5789,8 @@ emparejamiento que la `.32`.
 - **El manifiesto declara qué capas tienen serie** (`series:
   "reserva-semanal"`, §3): el visor pide la película sin conocer capas por su
   nombre y sin sembrar 404 en las que no la tienen.
-- **`pipeline/seriar.py`**, la herramienta de extracción: escribe solo donde
-  se le diga, `access_parser` sigue sin ser dependencia del pipeline, y quien
-  la corre firma. Método gana la sección «La foto y la película» (03), en las
+- **La herramienta de extracción**: escribe solo donde se le diga, sin ganar
+  dependencias, y quien la corre firma. Método gana la sección «La foto y la película» (03), en las
   dos lenguas.
 
 ### Huecos
@@ -6330,7 +6330,7 @@ buena la release anterior.
 
 Se destapó al comprobar que el cambio de la atribución llegaba al bundle: no
 llegaba, y el hash del fichero no cambiaba nunca. Tapado con un `package.json` en
-la raíz que no construye nada y solo delega en `app/`. **La raíz ahora responde
+la raíz que no construye nada y solo delega en el del visor. **La raíz ahora responde
 por sí misma o falla**, que es lo que tenía que haber hecho desde el principio.
 
 ---
@@ -6359,7 +6359,8 @@ manifiesto por capa, los `__f` por registro, el contrato por campo, el changelog
 
 **Lo que se añade es la síntesis, no el hecho.** La licencia autoritativa sigue
 siendo la del manifiesto, los campos siguen en §10 y el relato en este changelog;
-la ficha enlaza en vez de copiar. Es D3 aplicada a la documentación.
+la ficha enlaza en vez de copiar: una sola fuente de verdad, también en la
+documentación.
 
 ### Lo que salió al escribirlo
 
@@ -6523,10 +6524,10 @@ ellos se puedan ver.
 
 ### Añadido
 
-- **`validar.py` comprueba el color** (§9, **avisa y no bloquea**). La exigencia
+- **La validación comprueba el color** (§9, **avisa y no bloquea**). La exigencia
   estaba escrita **desde la 1.9** y nadie la verificaba nunca, que es exactamente
   lo que §8 llama «prosa disfrazada de garantía» — y el precio se pagó tres veces:
-  la primera la cuenta `app/src/mapa.js` («Cuatro capas, indistinguibles»), la
+  la primera dejó cuatro capas indistinguibles en el visor, la
   última fue esta.
   - **Avisa y no bloquea** a propósito: el dato es correcto y lo único que se
     pierde es distinguir la capa. Bloquear pararía la publicación de un registro
@@ -6539,7 +6540,7 @@ ellos se puedan ver.
     una categoría que ningún registro usa no pinta nada — elegirlo hoy sería
     decidir un diseño para algo que no existe. El aviso saltará el día que alguien
     la use, que es cuando hace falta.
-  - Pruebas **25 → 26**, con el fixture que ejercita justo ese caso.
+  - Pruebas **25 → 26**, con el caso de prueba que ejercita justo eso.
 
 ### Huecos
 
@@ -6721,7 +6722,7 @@ es lo que el manifiesto decía de sí mismo.
   y tres**. En un fichero cuyo propio comentario dice que un manifiesto que
   anunciara capas inexistentes «sería la primera mentira del atlas, y sería sobre
   sí mismo», esa era justo la avería que no podía tener.
-- `app/preparar-datos.mjs` — **guarda nueva**: compara la release que el
+- La preparación de datos del visor — **guarda nueva**: compara la release que el
   manifiesto declara con la etiqueta que está sirviendo y **avisa** si no cuadran.
   No rompe, porque el dato servido es el de la etiqueta y está bien; lo que está
   mal es la cabecera, y eso se corrige, no se bloquea.
@@ -6730,7 +6731,7 @@ es lo que el manifiesto decía de sí mismo.
 nunca la cabecera, tres releases seguidas. Es la tercera vez en el mismo día que
 la lección se repite —la herramienta que ya tiene los dos números delante es la
 que debe notar que no coinciden—, después del `Content-Type` de un HEAD en
-`vigilar.py` y del «ningún municipio» en `consultar.py`.
+la guardia de URLs y del «ningún municipio» en el contraste de municipio.
 
 ---
 
@@ -6844,7 +6845,7 @@ puntos. La categoría `trazado` queda declarada y **sin usar**.
 
 ### Corregido
 
-- `consultar.py contraste` — **no caer en ningún municipio no es lo mismo que
+- El contraste de municipio — **no caer en ningún municipio no es lo mismo que
   caer en otro.** Lo segundo es una contradicción; lo primero es que no hay
   segundo dato con el que comparar, y en la costa es lo normal: el IGN sitúa la
   etiqueta de una playa en la orilla y los polígonos municipales acaban en la
@@ -6944,7 +6945,7 @@ cuentan cómo se comprobó:
 
 ### Corregido
 
-- `vigilar.py` — el detector de soft-404 usaba el `Content-Type` de un **HEAD**, y
+- La guardia de URLs — el detector de soft-404 usaba el `Content-Type` de un **HEAD**, y
   ese no es de fiar: el servidor del Tribunal Supremo de Elecciones de Costa Rica
   responde `text/html` al HEAD y `application/pdf` al GET de la misma URL. La
   guardia acusaba a una fuente sana. Ahora confirma con GET antes de acusar.
@@ -6953,7 +6954,7 @@ cuentan cómo se comprobó:
 
 - **El `debate_url` de la capa.** `analisis` se define «enlazada al hilo de El
   Tercio donde se defiende» y ese hilo **no existe todavía**. No se inventa: el
-  atlas es autosuficiente por D1 y la capa se publica igual.
+  atlas es autosuficiente y la capa se publica igual.
 - **La OEA y la Unión Africana**, donde el español es lengua oficial, **no
   entran**. `oas.org` devuelve 403 a toda captura automática y el Protocolo de
   Enmiendas al Acta Constitutiva de la UA se sirve como escaneo sin capa de
@@ -7740,7 +7741,7 @@ canarias. Los instrumentos no dibujan ninguna línea. Va en la ficha, con la cit
   que se publica es un **esquema del corredor** entre el archipiélago y la costa
   africana, con su fuente `hueco`: **no delimita el alcance de la superposición
   de derechos**, que se extiende mucho más al suroeste. Trazar una línea mediana
-  sería dictar el resultado que los dos Estados dejan a un acuerdo (D5).
+  sería dictar el resultado que los dos Estados dejan a un acuerdo.
 - **Las leyes de las costras del Monte Tropic.** Las cifras de telurio y cobalto
   que circulan vienen de campañas científicas que este atlas no ha archivado, y
   **no se publican**. Del monte se registra su nombre y su posición, con la
@@ -7891,7 +7892,7 @@ con su fila en la tabla de `activo`.
 Tercera capa, y la que da al atlas su carácter. El árbol **El tablero** estaba
 vacío desde F0.
 
-D5 fijó la doctrina hace tiempo: *el atlas registra que la reclamación existe y
+La doctrina quedó fijada hace tiempo: *el atlas registra que la reclamación existe y
 quién la sostiene; no dicta veredicto*. Esta capa es esa frase convertida en
 datos, con **dos campos simétricos** —`administrado_por` y `reclamado_por`— con
 los que Gibraltar y Ceuta se describen con la misma estructura, y una
@@ -8107,7 +8108,7 @@ Sube a **1.3.0**. `geo_fuente` admite `__v`/`__f` (§5) y la geometría deja de 
 el único dato del atlas cuya procedencia no se podía comprobar. Nuevo **§6.6**
 con la tabla de qué precisión concede cada clase de fuente, y nueva regla **R9**:
 una `geo_precision` de `exacta` o `paraje` exige fuente primaria. Entra con
-diente y con dos fixtures —18 pruebas—, no declarada y pendiente.
+diente y con dos casos de prueba —18 pruebas—, no declarada y pendiente.
 
 Dos cosas del contrato salieron de tocar la fuente, no de escribirlo:
 
