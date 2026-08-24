@@ -3,9 +3,10 @@
 La parte pública del **[Atlas Estratégico de España](https://atlas.eltercioviejo.com)**:
 el archivo documental que sostiene cada dato, la doctrina que gobierna su
 formato y las licencias que obligan. El atlas es una capa de inteligencia
-geoespacial sobre los activos estratégicos de España: **minerales críticos**,
-**energía**, **conectividad**, **transporte**, **ciencia** y **el tablero de
-límites y soberanía**.
+geoespacial sobre los activos estratégicos de España, ordenada en siete
+dominios: **recursos y territorio**, **energía**, **transporte y logística**,
+**conectividad**, **ciencia y capacidades avanzadas**, **soberanía y
+seguridad** y **economía y proyección**.
 
 No es un mapa bonito. Es una herramienta de lectura del territorio donde **cada
 dato lleva fuente, fecha y estado de verificación** — y donde lo que no se sabe
@@ -20,6 +21,9 @@ aparece como hueco, no como relleno.
 
 Este repositorio es el aparato de citación. El atlas se lee en el visor:
 
+- **[El proyecto](https://atlas.eltercioviejo.com/proyecto/)** — qué es el
+  atlas, sus cifras al día y por dónde entrar según lo que se busque:
+  curiosidad, periodismo, investigación o administración.
 - **[La biblioteca](https://atlas.eltercioviejo.com/biblioteca/)** — el índice de
   todo lo publicado: cada capa con cuántos registros tiene, qué verifica y qué
   declara no saber, más los partes y el catálogo de documentos archivados.
