@@ -1,6 +1,6 @@
 # CONTRATO DE DATOS — Atlas Estratégico de España
 
-**Versión del contrato:** 1.70.0 · **Fecha:** 2026-08-23
+**Versión del contrato:** 1.71.0 · **Fecha:** 2026-08-24
 **Ámbito:** todo dato publicado por el atlas. Este documento es la fuente de verdad;
 el código se adapta al contrato, nunca al revés.
 
@@ -126,7 +126,7 @@ fichero y su entrada aquí. La app construye el panel desde el manifiesto.
       "id": "renovable-provincia",
       "titulo": "Renovable instalada por provincia",
       "arbol": "energia",
-      "grupo": "dotacion",
+      "grupo": "renovables",
       "en_preparacion": true
     }
   ]
@@ -136,8 +136,8 @@ fichero y su entrada aquí. La app construye el panel desde el manifiesto.
 | Campo | Valores / notas |
 |---|---|
 | `resumen` | **(1.43)** UNA línea que dice **qué contiene la capa**, en castellano llano y como máximo 140 caracteres. **Obligatorio en toda capa con `fichero`**; se omite en una rama en preparación, que todavía no contiene nada. Nace de un hueco que solo se ve cuando se intenta hacer un catálogo: el atlas sabía cómo se llama cada capa y de dónde sale, y **no sabía decir qué es**. Las notas `_` del manifiesto no servían —son prosa de taller, explican decisiones («Era `recurso-eolico`, y se renombra…») y diez capas no tenían ninguna—. **No es un dato y no lleva aparato de verificación**, igual que `titulo`: es cómo la casa presenta su propia capa, y por eso se escribe a mano y no se deriva. Lo que sí exige el contrato es que **exista, quepa y no repita el título**: un resumen que solo dice el nombre otra vez es una casilla rellenada, no una respuesta. |
-| `arbol` | **(1.1)** dominio bajo el que cuelga la capa en el panel: `minerales` · `energia` · `conectividad` · `tablero` · `intangibles`. Es la organización visible (D3). |
-| `grupo` | `dotacion` (lo que tiene) · `actividad` (lo que se trabaja). Abierto a nuevos grupos por versión menor. |
+| `arbol` | **(1.1)** dominio bajo el que cuelga la capa en el panel. Desde **(1.71)** son siete: `recursos` · `energia` · `transporte` · `conectividad` · `capacidades` · `soberania` · `economia` — los valores y sus rótulos viven en `vocabularios.json` y los cierra el `enum` del esquema (D22). **La regla de crecimiento, y es doctrina:** ningún dominio nace con una sola capa. Una capa nueva entra en el dominio existente que mejor describa su función estratégica, y su SUBGRUPO pre-dibuja la escisión; el subgrupo se promueve a dominio cuando junta 3–4 capas que formen un conjunto reconocible. Dos capas bastan solo cuando la distinción conceptual es inconfundible y el crecimiento cierto — `conectividad` es la excepción que fija la vara. |
+| `grupo` | **(1.71)** subgrupo temático DENTRO del dominio, con el que el panel rotula sus secciones («Sistema eléctrico», «Fronteras»…). Los 24 valores viven en `vocabularios.json`, cada uno pertenece a UN solo dominio y pre-dibuja una escisión futura (D22). Hasta 1.70 era la pareja genérica `dotacion`/`actividad`. Abierto a nuevos subgrupos por versión menor. |
 | `ambito` | **(1.1)** `espana` (por defecto si se omite) · `mundo`. Relaja la comprobación de bbox de §7.4: una capa de ámbito mundo no se valida contra el recuadro de España. |
 | `geometria` | `puntos` · `poligonos` · `lineas` · `mixta` |
 | `registro` | `verificado` (fichas con doctrina completa) · `ilustrativo` (dibuja dónde, no cuánto ni de quién) · **(1.1)** `analisis` (investigación u opinión **sellada como tal**, con su `debate_url` al hilo donde se defiende — nunca se presenta como hecho) |
@@ -1135,7 +1135,7 @@ vocabulario.
 
 **Del manifiesto:**
 
-- `grupo`: `dotacion` · `actividad`
+- `grupo`: uno de los subgrupos temáticos de `vocabularios.json` (D22)
 - `arbol` *(1.1)*: `minerales` · `energia` · `conectividad` · `tablero` · `intangibles`
 - `ambito` *(1.1)*: `espana` · `mundo`
 - `registro`: `verificado` · `ilustrativo` · `analisis` *(1.1)*
@@ -1267,7 +1267,7 @@ distinguen mejor citando el artículo que clasificándolo.
 
 ## 10 · Esquemas por capa (campos específicos, planos)
 
-**minerales-proyectos** (`actividad`, puntos, verificado):
+**minerales-proyectos** (puntos, verificado):
 `materias[]` (✔) · `tipo_proyecto` (✔: extracción / procesamiento / refino /
 reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` (+`__v`,`__f`)
 · **`fase`** (✔ *(1.1)*, vocabulario; +`__v`,`__f`) · `estado_proyecto`
@@ -1281,7 +1281,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > el DOUE no encontraría la entrada. `nombre` sigue siendo el de presentación;
 > `nombre_oficial` es el que permite la cita.
 
-**nuclear** *(1.6)* (`actividad`, puntos, verificado):
+**nuclear** *(1.6)* (puntos, verificado):
 `grupo` (✔: el reactor dentro de su emplazamiento) · `municipio` (✔) ·
 `provincia` (✔) · `potencia_mw` (+`__v`,`__f`) · `tecnologia` (+`__v`,`__f`) ·
 `titulares[]` (+`__v`,`__f`) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
@@ -1306,7 +1306,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > Comparten coordenada, y eso se dice — separarlos en el mapa exigiría una
 > fuente que sitúe cada edificio, y no la hay (§6.6).
 
-**conducciones-combustible** *(1.39)* (`dotacion`, líneas, verificado):
+**conducciones-combustible** *(1.39)* (líneas, verificado):
 `n_tramos` (✔) · `longitud_medida_km` (✔; +`__v`,`__f`) · `claves[]`
 — y un esquema que existe sobre todo para **PROHIBIR**: `titular`,
 `propietario`, `operador`, `presion_bar`, `diametro_mm` y `fase`.
@@ -1332,7 +1332,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > que el mapa no dibuja, que es exactamente la divergencia silenciosa que R11
 > persigue en las series.
 
-**gas-interconexiones** *(1.37)* (`actividad`, puntos, verificado):
+**gas-interconexiones** *(1.37)* (puntos, verificado):
 `municipio` (– *admite null*) · `provincia` (✔) · `pais_vecino` (✔; +`__v`,`__f`) ·
 `extremo_exterior` (nombrado, sin coordenada) · `nombre_estadistico` ·
 `codigo_entsog` (– *admite null*) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
@@ -1370,7 +1370,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > para Francia y Portugal, así que el cero de Badajoz o Tuy en la serie significa
 > «se cuenta en otro sitio», no «no pasa nada».
 
-**residuos-radiactivos** *(1.36)* (`dotacion`, puntos, verificado):
+**residuos-radiactivos** *(1.36)* (puntos, verificado):
 `municipio` (✔) · `provincia` (✔) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
 `anio_operacion` (+`__v`,`__f`) · `capacidad` (+`__v`,`__f`) ·
 `titular` (+`__v`,`__f`) · `claves[]`
@@ -1405,7 +1405,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > vale solo para lo que dejó de ser verdad: también para lo que nunca llegó a
 > serlo, cuando su no-existencia está acreditada por acto.
 
-**gas-regasificacion** *(1.8)* (`dotacion`, puntos, verificado):
+**gas-regasificacion** *(1.8)* (puntos, verificado):
 `operador` (✔; +`__v`,`__f`) · `municipio` (✔) · `provincia` (✔) ·
 **`fase`** (✔, vocabulario; +`__v`,`__f`) · `puesta_en_servicio` (+`__v`,`__f`) ·
 `capacidad_almacenamiento_m3` (+`__v`,`__f`) ·
@@ -1423,7 +1423,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > cotizada: por §6.1 sus publicaciones son `corporativa` y por **R3** no pueden
 > sostener un `confirmado`. Lo primario es el BOE y la CNMC.
 
-**refinerias** *(1.28)* (`actividad`, puntos, verificado):
+**refinerias** *(1.28)* (puntos, verificado):
 `grupo` (✔; +`__v`,`__f`) · `operador` (✔; +`__v`,`__f`) · `municipio` (✔) ·
 `provincia` (✔) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
 `capacidad_crudo_kt` (✔; +`__v`,`__f`, `_fecha`) · `anio_inicio` (✔; +`__v`,`__f`) ·
@@ -1463,7 +1463,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > — por eso las nueve llevan marca `parcial` y un hueco (f9) que pide el acto
 > administrativo por instalación.
 
-**gas-almacenamiento** *(1.29)* (`dotacion`, **mixta**, verificado):
+**gas-almacenamiento** *(1.29)* (**mixta**, verificado):
 `titular` (+`__v`,`__f`) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
 `capacidad_disponible_gwh` (+`__v`,`__f`, `_fecha`) · `superficie_ha`
 (+`__v`,`__f`) · `municipio` · `provincia` · `claves[]`
@@ -1493,7 +1493,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > del almacenamiento no lo dice ninguno de los dos actos: el campo va `parcial`
 > y el hueco lo pide.
 
-**bases-eeuu** *(1.29)* (`dotacion`, puntos, verificado, árbol `tablero`):
+**bases-eeuu** *(1.29)* (puntos, verificado, árbol `tablero`):
 `marco` (✔; +`__v`,`__f`) · `municipio` · `provincia` · `claves[]`
 
 > **El perímetro lo fija el anejo 2 del Convenio de 1988**: las bases y
@@ -1510,7 +1510,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > **Sin `fase` por esquema** (`"not": {}`): una base de utilización conjunta no
 > es una explotación que se abra o se cierre. §6.5 la declara «no aplica».
 
-**seguimiento-espacial** *(1.29)* (`actividad`, puntos, verificado, árbol
+**seguimiento-espacial** *(1.29)* (puntos, verificado, árbol
 `conectividad`): `agencia` (✔; +`__v`,`__f`) · **`fase`** (✔, vocabulario;
 +`__v`,`__f`) · `municipio` · `provincia` · `claves[]`
 
@@ -1528,7 +1528,7 @@ reciclaje, combinables) · `municipio` (✔) · `provincia` (✔) · `promotor` 
 > lejano» (Cebreros), complejo «del Espacio Profundo» (Robledo). Maspalomas no
 > tiene esa palabra en ningún acto y va como `seguimiento` a secas.
 
-**icts** *(1.31)* (`actividad`, puntos, verificado, `ambito: mundo`, árbol
+**icts** *(1.31)* (puntos, verificado, `ambito: mundo`, árbol
 `ciencia`): `acronimo` (✔; +`__v`,`__f`) · `localizacion` (✔; +`__v`,`__f`) ·
 `titular` (+`__v`,`__f`) · **`fase`** (✔, vocabulario; +`__v`,`__f`) ·
 `municipio` · `provincia` · `claves[]` · *(1.51)* `altitud_m` ·
@@ -1579,7 +1579,7 @@ registros que tienen acto de servidumbre**) · *(1.52)* `proteccion_acto` ·
 > las Shetland del Sur, fuera del recuadro de §7.4 — que no se ensancha, se
 > declara la capa, como ya hizo `espacios-maritimos`.
 
-**desaladoras** *(1.30, ampliada en 1.32)* (`actividad`, puntos, verificado):
+**desaladoras** *(1.30, ampliada en 1.32)* (puntos, verificado):
 `encomendada_a` (✔; +`__v`,`__f`) · `demarcacion` (+`__v`,`__f`) ·
 **`fase`** (✔, vocabulario; +`__v`,`__f`) · `capacidad_hm3_anio`
 (+`__v`,`__f`, `_fecha`) · `capacidad_m3_dia` *(1.32)* (+`__v`,`__f`,
@@ -1622,7 +1622,7 @@ registros que tienen acto de servidumbre**) · *(1.52)* `proteccion_acto` ·
 > municipio también puede estar mal**, y la captura conserva el error para que
 > se vea qué se comprobó.
 
-**limites-soberania** *(1.7)* (`dotacion`, puntos, verificado):
+**limites-soberania** *(1.7)* (puntos, verificado):
 `administrado_por` (✔; +`__v`,`__f`) · `reclamado_por` (✔; +`__v`,`__f`) ·
 `municipio` · `provincia` · `nombre_oficial` · `claves[]`
 
@@ -1644,7 +1644,7 @@ registros que tienen acto de servidumbre**) · *(1.52)* `proteccion_acto` ·
 > **Nada de esto tiene `fase`**: el tablero figura como «no aplica» en §6.5, así
 > que su `activo` es `null` y el filtro de explotación no lo esconde nunca.
 
-**espacios-maritimos** *(1.11)* (`dotacion`, **mixta**, verificado, `ambito:
+**espacios-maritimos** *(1.11)* (**mixta**, verificado, `ambito:
 mundo`): `estado_juridico` (✔; +`__v`,`__f`) · `partes[]` · `instrumento` ·
 `claves[]`
 
@@ -1705,7 +1705,7 @@ mundo`): `estado_juridico` (✔; +`__v`,`__f`) · `partes[]` · `instrumento` ·
 > **no al revés**; R9 solo vigila `exacta` y `paraje`. Queda escrito aquí porque
 > el malentendido contrario ya aplazó esta capa una vez.
 
-**electricidad-interconexiones** *(1.13)* (`actividad`, puntos, verificado):
+**electricidad-interconexiones** *(1.13)* (puntos, verificado):
 `pais_vecino` (✔) · `extremo_exterior` · `codigo_actuacion` · `tension_kv` ·
 `instrumento` · `municipio` · `provincia` · `claves[]`
 
@@ -1732,7 +1732,7 @@ mundo`): `estado_juridico` (✔; +`__v`,`__f`) · `partes[]` · `instrumento` ·
 > **Una frase que da por cerrado el mundo tiene que decir dónde miró.**
 > El IGN la publica: ver `red-electrica`, más abajo.
 
-**minerales-derechos** *(1.12)* (`actividad`, polígonos, verificado):
+**minerales-derechos** *(1.12)* (polígonos, verificado):
 `titular` (✔) · `tipo_derecho` · `situacion` (✔) · `n_registro` ·
 `sustancia_principal` · `sustancias[]` · `superficie_declarada` · `provincia`
 
@@ -1756,7 +1756,7 @@ mundo`): `estado_juridico` (✔; +`__v`,`__f`) · `partes[]` · `instrumento` ·
 > publicado un número veintidós veces menor que el área que el propio catastro
 > traza.
 
-**minerales-dominios** (`dotacion`, polígonos, ilustrativo→verificado) *(1.10)*:
+**minerales-dominios** (polígonos, ilustrativo→verificado) *(1.10)*:
 `ambito_territorial` · `materias[]` · `distritos[]` · `sym` (etiqueta corta de
 mapa: «Cu · Zn · Pb»)
 
@@ -1774,7 +1774,7 @@ mapa: «Cu · Zn · Pb»)
 > primaria, R5 obliga a que ascienda **la capa entera**: es regla de capa, no de
 > registro, así que el ascenso parcial parte la capa en dos en vez de mezclarlas.
 
-**cables-submarinos** *(1.20)* (`dotacion`, **puntos**, verificado):
+**cables-submarinos** *(1.20)* (**puntos**, verificado):
 `sistema` · `titular` (✔) · `conecta` (✔) · `expediente` (✔) · `instrumento` (✔) ·
 `fase` · `emplazamiento` (✔; **admite `null`** desde 1.34, cuando el acto sitúa
 solo el término municipal — entonces `geo_precision` es `municipio`) ·
@@ -1824,11 +1824,11 @@ solo el término municipal — entonces `geo_precision` es `municipio`) ·
 > su punto de contacto único solo ofrece el formulario. Lo que se publica son los
 > aterrizajes que un acto administrativo nombra y sitúa.
 
-~~**recurso-eolico / recurso-solar** (`dotacion`, polígonos, ilustrativo):
+~~**recurso-eolico / recurso-solar** (polígonos, ilustrativo):
 `distritos[]` · `justificacion` (por qué la zona)~~
 
-**parques-eolicos** *(1.23)* (`actividad`, polígonos, verificado): —
-**plantas-solares** *(1.23, ampliada en 1.68)* (`actividad`, polígonos, verificado):
+**parques-eolicos** *(1.23)* (polígonos, verificado): —
+**plantas-solares** *(1.23, ampliada en 1.68)* (polígonos, verificado):
 `titular` · `potencia_mw` · `anio_servicio` — los tres los pone el REGISTRO
 AUTONÓMICO, nunca la fuente cartográfica, y los tres estuvieron prohibidos por
 su nombre hasta la 1.68 (D17).
@@ -1900,7 +1900,7 @@ su nombre hasta la 1.68 (D17).
 > dos cifras**, porque una sola de ellas engaña en la dirección que le convenga a
 > quien la elija.
 
-**generacion-electrica-provincia** *(1.14)* (`actividad`, polígonos, verificado,
+**generacion-electrica-provincia** *(1.14)* (polígonos, verificado,
 `fondo`): `anio` (✔) · `caracter_dato` · `provincia` · `total_gwh` (✔) y las ocho
 tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh` ·
 `eolica_gwh` · `solar_fv_gwh` · `solar_termica_gwh` · `mareomotriz_gwh` ·
@@ -1949,7 +1949,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > exactitud que la simplificación ya no tiene. La generalización **no puede borrar
 > islas**: la tolerancia se aplica a la escala de cada anillo, no plana.
 
-**centros-datos** *(1.15)* (`actividad`, puntos, verificado): `promotor` (✔) ·
+**centros-datos** *(1.15)* (puntos, verificado): `promotor` (✔) ·
 `codigo_promotor` · `consumo_gwh_anio` (+`__v`,`__f`) · `superficie_ha` ·
 `fase` · `instrumento` · `municipio` (✔) · `provincia` (✔) · `claves[]`
 
@@ -1982,7 +1982,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > manera de seguir un centro concreto a través de los sucesivos expedientes,
 > porque el nombre comercial no aparece y el municipio se repite.
 
-**hidrogeno-red** *(1.16)* (`actividad`, **mixta**, verificado, `ambito: mundo`):
+**hidrogeno-red** *(1.16)* (**mixta**, verificado, `ambito: mundo`):
 `promotor` (✔) · `pci_codigo` (✔) · `estado_pci` (✔) ·
 `puesta_en_servicio_prevista` (+`__v`,`__f`) · `fase` · `longitud_km`
 (+`__v`,`__f`) · `diametro_mm` (+`__v`,`__f`) · `capacidad_mt_anio`
@@ -2034,7 +2034,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > red**, y de promotores distintos; el acto que da el perímetro de esta capa no
 > habilita a Enagás para ellos. Cuando entren, entrarán en capa propia.
 
-**hidrogeno-produccion** *(1.17)* (`actividad`, puntos, verificado): `promotor`
+**hidrogeno-produccion** *(1.17)* (puntos, verificado): `promotor`
 (✔) · `pci_codigo` (✔) · `estado_pci` (✔) · `puesta_en_servicio_prevista`
 (+`__v`,`__f`) · `fase` · `potencia_mw` (+`__v`,`__f`) · `produccion_t_anio`
 (+`__v`,`__f`) · `claves[]`
@@ -2078,7 +2078,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > siempre previsión del promotor. Misma prohibición, y por el mismo motivo, que
 > ya lleva `centros-datos`.
 
-**perte** *(1.18)* (`actividad`, puntos, verificado): `beneficiario` (✔) ·
+**perte** *(1.18)* (puntos, verificado): `beneficiario` (✔) ·
 `titulo_plan` (✔) · `cif` (✔) · `codigo_plan` (✔) · `instrumento` (✔) · `comision_verificacion` (✔) ·
 `fase` · `municipio` (✔) · `provincia` (✔) · `presupuesto_financiable`
 (+`__v`,`__f`) · `gasto_subvencionable` (+`__v`,`__f`) · `subvencion_propuesta`
@@ -2121,7 +2121,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > primera, para que una propuesta no se convierta en concesión borrando un
 > adjetivo (§6.1, enmienda 1.18); la segunda, por lo mismo que en `centros-datos`.
 
-**idioma** *(1.19)* (`dotacion`, puntos, **analisis**, ámbito **mundo**):
+**idioma** *(1.19)* (puntos, **analisis**, ámbito **mundo**):
 `estatuto` (+`__v`,`__f`) · `norma` (✔) · `norma_fecha` · `norma_cita` (✔) ·
 `nombre_en_la_norma` (✔) · `pais` · `sede` · `claves[]`
 
@@ -2166,7 +2166,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > publican: citar de memoria un artículo que no se ha podido leer sería
 > exactamente lo que esta capa existe para no hacer.
 
-**agua-embalsada** *(1.21)* (`dotacion`, puntos, verificado): `demarcacion` (✔) ·
+**agua-embalsada** *(1.21)* (puntos, verificado): `demarcacion` (✔) ·
 `capacidad_hm3` (✔, +`__v`,`__f`) · `agua_actual_hm3` (+`__v`,`__f`) ·
 `fecha_dato` (✔) · `hidroelectrico` · `claves[]`
 **En `atlas.conjunto`** *(1.41)*: `fecha_dato` (✔) · `energia_almacenada_gwh` ·
@@ -2227,7 +2227,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > cualquier equivalencia en hm³** de los GWh, que exigiría el salto de cada
 > central — y el salto no es la altura de la presa.
 
-**red-electrica** *(1.22)* (`dotacion`, **mixta**, verificado):
+**red-electrica** *(1.22)* (**mixta**, verificado):
 `tension_kv` (✔) · `n_tramos` (✔) · `longitud_medida_km` · `claves[]`
 
 > **La capa se llama por lo que la fuente sostiene, y no por lo que uno querría
@@ -2298,7 +2298,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > sería tirar un dato de la fuente—: se publican los dos unidos por « / », y una
 > clave dice que el separador es de la fuente y la barra, del atlas.
 
-**puertos** *(1.25)* (`dotacion`, polígonos, verificado): `puerto` (✔) ·
+**puertos** *(1.25)* (polígonos, verificado): `puerto` (✔) ·
 `autoridad_portuaria` (✔) · `darsena` · `acto_delimitacion` · `fecha_acto` ·
 `superficie_declarada_m2` · `claves[]`
 
@@ -2361,7 +2361,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > lóbulos se anulan, el área sale cero y el peor defecto posible se colaría
 > como un 0,000 %.
 
-**rte-t** *(1.25)* (`dotacion`, puntos, verificado): `nodo_urbano` (✔) ·
+**rte-t** *(1.25)* (puntos, verificado): `nodo_urbano` (✔) ·
 `municipio` · `aeropuerto` (✔) · `puerto_maritimo` (✔) · `puerto_interior` (✔) ·
 `terminal_ff_carretera` (✔) · `claves[]`
 
@@ -2404,7 +2404,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > toma un punto de la parte mayor, garantizado dentro, y se comprueba volviendo a
 > preguntar al IGN en qué municipio cae.
 
-**ferrocarril** *(1.25)* (`dotacion`, líneas, verificado): `codigo_linea` (✔) ·
+**ferrocarril** *(1.25)* (líneas, verificado): `codigo_linea` (✔) ·
 `n_tramos` (✔) · `longitud_medida_km` · `claves[]`
 
 > **326 líneas y 24.136 km** de la red de titularidad estatal, del servicio WFS
@@ -2441,7 +2441,7 @@ tecnologías en **producción neta**, cada una con su `__v`/`__f`: `nuclear_gwh`
 > que esta pasada no lee**, y escribirlos de memoria sería inventar los datos más
 > citables de la capa.
 
-**red-sismica** *(1.66)* (`dotacion`, puntos, verificado): `codigo` (✔) ·
+**red-sismica** *(1.66)* (puntos, verificado): `codigo` (✔) ·
 `fecha_instalacion` (✔) · `fecha_baja` (solo `historico`, y el esquema ata las
 dos cosas en los dos sentidos) · `elevacion_m` · **`canales[]`** (✔: los
 códigos de canal VERBATIM del nivel de canal del FDSN — los abiertos si la
@@ -2582,6 +2582,7 @@ comprueba.)*
 
 | Versión | Fecha | Qué cambió |
 |---|---|---|
+| **1.71.0** | 2026-08-24 | **La taxonomía de los siete dominios (D22).** El panel pasa de siete árboles heredados a SIETE dominios pensados —recursos y territorio · energía · transporte y logística · conectividad · ciencia y capacidades avanzadas · soberanía y seguridad · economía y proyección— y la pareja genérica `dotacion`/`actividad` muere: la sustituyen **24 subgrupos temáticos**, cada uno de UN solo dominio, con los que el panel rotula sus secciones. El porqué cabe en una frase: la pareja decía cómo clasificaba el atlas y no qué contiene el dominio — y el rótulo de una sección lo lee un extraño. Con la reorganización entra a §3 la **regla de crecimiento** que evita que esto vuelva a pasar: ningún dominio de una capa; el subgrupo pre-dibuja la escisión y se promueve a dominio cuando junta 3–4 capas. **Ni un campo de registro cambia**: `arbol` y `grupo` viven en el manifiesto y los GeoJSON no se enteran — por eso es menor pese a retirar valores de vocabulario: su único consumidor es el visor, que cambia con ellos. Los `enum` del esquema son la compuerta (§7.1); §7.8 sigue exigiendo presencia. Las cabeceras de §10 pierden la mención al grupo que duplicaban del manifiesto — una etiqueta copiada al lado del sitio donde se declara solo puede envejecer, y con 40 capas ya estaba envejecida. Coste asumido y medido: el primer dominio del arranque en frío pesa 7,57 MB crudos (los montes, 5,87), contra 0,55 del anterior. **No nace ninguna regla `R*`.** |
 | **1.70.0** | 2026-08-23 | **Aditiva.** §9 estrena la categoría **`municipal`** de `desaladoras`: la planta que explota un AYUNTAMIENTO. Nace separada y **no ensanchando `autonomica`**, que era la salida fácil: esa categoría se llama «de una administración autonómica o insular» y estirarla hasta cubrir un ayuntamiento habría sido dejar que la etiqueta dejara de decir la verdad para no tocar el vocabulario. Un ayuntamiento no es una comunidad ni un cabildo. **No nace para un caso**: en Canarias y en Baleares el municipio costero que desala para su propio abastecimiento es un titular frecuente, y la capa iba a chocar con el segundo la semana que viene. **No cambia ningún registro publicado** —ninguno de los 22 anteriores se reclasifica—, ni ningún esquema, ni ningún campo. **No nace ninguna regla `R*`.** |
 | **1.69.0** | 2026-08-21 | **Aditiva, y cierra una puerta que llevaba tres días abierta sin que nadie la viera (D19).** §4.2 argumentaba con cuidado **por qué un conjunto no es una capa** y **por qué no es el manifiesto**, y no decía una palabra de **por qué no es una historia** — por un motivo que se puede fechar: §4.2 se escribió el **2026-08-15** y las Historias nacieron el **2026-08-18**. Cuando se fijó la doctrina del conjunto, el tercer vehículo no existía y no había contra qué deslindarse. La puerta abierta dejó pasar a alguien: ante un análisis que explicaba **por qué faltan cables submarinos que existen**, se propuso construir un `conjunto`, y no lo era. **Lo que la enmienda escribe** es que las dos condiciones del conjunto son **ACUMULATIVAS**: no basta con que el hecho no tenga lugar —los VIP del gas—, **tiene que ser una CIFRA**. Los tres conjuntos publicados llevan 13, 22 y 3. Una **regla de perímetro** (qué entra en una capa y qué no) y una **ausencia documentada** (un registro que la ley ordenó y nadie creó) no son números: la primera es doctrina de capa y vive en la nota `_` del manifiesto y en los `hueco` de las fichas, y la segunda se cuenta en una historia. **No cambia ni un campo, ni un esquema, ni un dato publicado**, y por eso es aditiva: lo único que cambia es que la sección ya no se puede leer mal. **No nace ninguna regla `R*`.** |
 | **1.68.0** | 2026-08-21 | **Aditiva, y la capa cambia de OBJETO sin cambiar de id (D17):** `plantas-solares` deja de ser «los recintos de la BTN» y pasa a ser **la BTN identificada donde una administración la identifica**. La geometría sigue siendo SIEMPRE la del IGN —una sola fuente de forma, comparable en toda España, y no se fabrica ni un vértice—; lo que aporta el registro autonómico es **identidad y atributos**. **El cruce va por SOLAPE GEOMÉTRICO y jamás por nombre**, y no es una preferencia de método: el ensayo destapó que los nombres NO coinciden — la BTN llama «Huerta Solar Bárdenas Reales» a lo que IDENA llama «VILLAFRANCA - CORRALIZA DE BARRENO». Entran **80 recintos que la BTN publica MUDOS** (41 por Navarra, 39 por la Comunitat Valenciana) y **33 ya publicados ganan atributos**. **Caen tres prohibiciones y ninguna se borra: se sustituyen por una vara**, con la doctrina de la 1.67. `potencia_mw` decía «la BTN no da potencia […] y la cifra solo la publica el promotor (`corporativa`, R3)» — sigue siendo verdad de la BTN y dejó de serlo del país: un registro administrativo autonómico con geometría no es una nota de promotor. `titular` decía «la BTN cartografía y no dice de quién es nada», y por eso el campo lo llena el registro y nunca la cartografía. Y nace `anio_servicio`, AÑO y no fecha porque es lo que la fuente publica. **La vara de `potencia_mw` es lo que impide que esta enmienda mienta**, y tiene dos dientes: (a) cuando una planta se reparte en VARIOS recintos —18 plantas sobre 44 recintos— la cifra es de la planta entera y escribirla en cada hermano **multiplicaría la potencia solar del país**; (b) cuando un recinto contiene DOS plantas registradas —tres casos— no es ninguna de las dos por separado. En ambos la cifra va a `claves`, entera y con lo que abarca, y el registro declara su hueco. **Tres prohibiciones se quedan y una afina su motivo:** `promotor` se gana el sueldo justo ahora que `titular` se abre (el campo de IDENA se llama así, y copiar el nombre de cada fuente habría dejado dos campos para una cosa); `fecha_puesta_en_servicio` sigue cerrada porque `f_alta` es cuándo capturó el IGN y el registro publica un año, no un día; y **`potencia_pico_mwp` NO cae con las otras dos**: el registro valenciano sí tiene el campo y **lo publica vacío**, y un campo que la fuente no rellena no es un dato que el atlas tenga. **La consecuencia que hay que mirar de frente:** 83 registros quedan `parcial` donde 20 de ellos estaban `confirmado`, porque ahora **declaran un hueco que antes no tenían** —el titular que el registro deja en «-», la potencia que el atlas se niega a repartir— y R4 hace su trabajo. **Bajan porque dicen más, no porque valgan menos.** **Y el hueco de cobertura desigual por comunidad es de CAPA, no de ficha**, y por eso vive en el manifiesto y no en las 80 `fuentes`: ponerlo en cada registro habría bajado las 80 a `parcial` por algo que no dice nada de ellas —habla de los recintos que NO están—. Solo dos comunidades publican hoy su registro con geometría y con licencia usable: Castilla y León tiene la capa pero bajo **IGCYL-NC**, no comercial, que `datos/LICENCIA-DATOS.md` no admite, y su conjunto CC BY no trae geometría; Cataluña publica 541 fotovoltaicas sin geometría. Un recinto de Soria no es un dato peor que uno de Tudela: es un dato que solo tiene medio país. **`parques-eolicos` NO cambia**, y decir por qué es parte de la enmienda: la BTN solo deja 7 recintos eólicos mudos —ya publica el 100 % de la superficie— y no hay todavía registro eólico con geometría y licencia verificada (IDEAragon no declara ninguna en su WFS). **No nace ninguna regla `R*`.** |

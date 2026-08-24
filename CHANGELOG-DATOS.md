@@ -32,6 +32,38 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.119 — siete dominios, y cada sección con su nombre
+
+**Ni un registro cambia en esta edición: cambia el mueble, no lo que guarda.**
+El panel pasa de siete árboles heredados a **siete dominios pensados** —
+Recursos y territorio · Energía · Transporte y logística · Conectividad ·
+Ciencia y capacidades avanzadas · Soberanía y seguridad · Economía y
+proyección — y la pareja genérica «Lo que tiene» / «Lo que se trabaja» se
+retira: la sustituyen **24 subgrupos temáticos** que rotulan las secciones
+(«Sistema eléctrico», «Renovables», «Fronteras»…).
+
+### Cambiado
+
+- Siete capas cambian de dominio: las tres de minerales y las dos de agua
+  fundan **Recursos y territorio** junto a los montes; `hidrogeno-red` se
+  reúne con su hermana de producción en Energía (estaban partidas entre dos
+  árboles desde su alta); `csur` y `seguimiento-espacial` entran en **Ciencia
+  y capacidades avanzadas**; `perte` e `idioma` comparten **Economía y
+  proyección**. Las 40 ganan subgrupo con nombre propio.
+- «El tablero» deja de ser rótulo de navegación: el dominio se llama
+  **Soberanía y seguridad**, que dice qué hay dentro. El término sobrevive en
+  la doctrina y las historias, que es donde nació (D5).
+- Contrato **1.71.0**: §3 estrena la **regla de crecimiento** — ningún dominio
+  nace con una sola capa; el subgrupo pre-dibuja la escisión y se promueve a
+  dominio al juntar 3–4 capas. La conversación entera, con sus tres rondas y
+  sus alternativas, está en D22.
+
+### Sabido y asumido
+
+- El primer dominio del arranque en frío pesa ahora 7,57 MB crudos (los
+  montes, 5,87) contra 0,55 del anterior — comprimido, en torno a un quinto.
+  Si duele, la palanca es la política de arranque del visor, no la taxonomía.
+
 ## datos-v2026.08.118 — el vigía caza dos, y ninguna entra por donde parecía
 
 La primera edición cuyos dos registros los encuentra **una máquina y no una
