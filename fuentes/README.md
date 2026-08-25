@@ -40,6 +40,12 @@ fuentes/boe/1978/2026-08-20_boe_....pdf   ← «archivado en 2026, documento de 
   año de captura — no es excepción sino coherencia: el «documento» de una
   instantánea es la foto de ese día. Un fichero **sin cita** toma el año
   reconocible de su descripción, y si no lo lleva, el de captura.
+- **La raíz no admite documentos**: solo `README.md` y `PROCEDENCIA.md`, y
+  todo lo demás bajo su estante. El guion de sincronización se planta ante
+  cualquier otro fichero suelto. Un documento con **dos emisores** (el acta
+  gasista, IGN + IECA) vive bajo el que sirvió la mayor parte, con el otro
+  nombrado en la cita: la carpeta es archivo, no atribución — la legal va en
+  `atribucion` y nombra a los dos.
 - **El nombre no cambia al mudarse.** La fecha de captura sigue siendo la
   primera palabra: para los documentos vivos es la identidad, y para los muertos
   no estorba. Una recaptura queda adyacente a su versión anterior, que es donde

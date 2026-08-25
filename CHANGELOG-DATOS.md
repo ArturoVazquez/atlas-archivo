@@ -37,6 +37,41 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.121 — el archivo cierra su raíz
+
+**Ni un dato cambia: cambian las señas de un solo documento, el último que
+quedaba fuera de estante.** La `.120` ordenó 369 ficheros por organismo y
+año y dejó uno en la raíz a propósito: el acta de captura de la geometría de
+las seis interconexiones gasistas internacionales, escrita por el atlas a
+partir de DOS servicios (el IGN pone cuatro de los seis puntos, el IECA los
+otros dos). Se quedó fuera porque parecía pedir una regla nueva para los
+documentos con varios emisores. No la pedía: el archivo ya guardaba tres
+documentos de dos emisores, cada uno bajo el que lo sirvió y con el otro
+nombrado — y veintiuna actas de captura ya vivían bajo el organismo que
+consultaron.
+
+### Cambiado
+
+- `gas-interconexiones` · 6 citas — `archivo` pasa de
+  `fuentes/2026-08-12_geometria-interconexiones-gasistas.json` a
+  `fuentes/ign/2026/2026-08-12_geometria-interconexiones-gasistas.json`. El
+  fichero es el mismo byte a byte; la carpeta es archivo, no atribución: la
+  legal sigue en `atribucion` y nombra a los dos emisores.
+- `fuentes/README.md` — la raíz de `fuentes/` no admite documentos: solo
+  `README.md` y `PROCEDENCIA.md`. La regla existía en la práctica desde la
+  `.120`; ahora está escrita y la comprueba la sincronización del archivo
+  público, que se planta ante cualquier fichero suelto.
+
+### Huecos
+
+- Ninguno nuevo y ninguno cerrado: los 334 huecos declarados en 277 registros
+  de la `.120` siguen tal cual. El propio acta explica el suyo: no existe
+  ningún conjunto de ámbito estatal, bajo licencia abierta, que sitúe los
+  puntos de conexión gasista de España — por eso hubo que componerlo de dos
+  servicios.
+
+---
+
 ## datos-v2026.08.120 — el archivo gana su estantería
 
 **Ni un dato cambia: cambian las señas de los documentos que los sostienen.**
