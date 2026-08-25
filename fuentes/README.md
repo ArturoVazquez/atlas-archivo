@@ -25,6 +25,11 @@ AAAA-MM-DD_emisor_titulo-corto.ext
 
 Ejemplo: `2026-07-22_ce_lista-crma-1.pdf`
 
+Un fichero del archivo incumple la regla y se sabe: el acta gasista
+(`ign/2026/2026-08-12_geometria-interconexiones-gasistas.json`) no lleva
+`emisor`. Se renombra cuando una release toque `gas-interconexiones`; hasta
+entonces, que quede dicho aquí y no descubierto.
+
 ## Dónde vive un fichero
 
 ```
