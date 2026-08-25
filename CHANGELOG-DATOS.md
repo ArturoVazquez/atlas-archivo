@@ -37,6 +37,76 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.122 — la paleta se mide
+
+**Ni un registro cambia: cambian 32 de las 111 tintas con las que el mapa
+distingue las categorías de cada capa.** El color es dato publicado —el
+vocabulario lo dice de sí mismo: quien descargue una release puede repintar el
+atlas sin usar su visor—, y por eso una corrección de color viaja como
+cualquier otra corrección: con su medida delante.
+
+**Lo que la medida encontró.** Nueve tintas quedaban por debajo de **2:1** de
+contraste sobre la mesa oscura del mapa: no es que se leyeran mal, es que no se
+veían. Diez capas tenían una pareja de categorías que una persona con
+deuteranopía ve como el mismo color. Dos capas tenían dos categorías a **ΔE
+menor de 10**, indistinguibles para cualquiera.
+
+**Cómo se eligió cada sustituta.** Por búsqueda con restricciones, no a ojo y
+no por una regla mecánica: para cada tinta señalada, **el color más parecido al
+original** que a la vez alcanza 3:1 de contraste sobre la mesa oscura, mantiene
+ΔE ≥ 12 con las demás categorías de su capa —también tras simular deuteranopía
+y protanopía— y ΔE ≥ 10 con las capas de su mismo dominio, que son las que se
+encienden juntas. Las tres estrategias mecánicas que se habían ensayado antes
+—llevar toda la paleta a una banda de luminancia, o elevar solo las oscuras—
+corregían el contraste **destruyendo la separación**, y por eso se
+descartaron. Las tintas se mueven poco: la mediana del desplazamiento es de ΔE
+15.
+
+**Dos cosas que NO se han tocado, y decirlo es parte de la corrección.** Que
+ocho parejas de capas distintas compartan el mismo hex es **deliberado** desde
+la 1.48.0, y sigue siéndolo: lo que hay que cuidar es el escalón dentro de una
+capa, no la unicidad global. Y en una **rampa** —una escala ordenada, como las
+clases de vía por capacidad o los estados de un centro de datos— los escalones
+contiguos se parecen **por definición**: lo que un mapa tiene que decir de un
+vistazo es la distinción de fondo, y esa sigue abierta de par en par (ΔE 36
+entre gran capacidad y convencional).
+
+**Y un límite que conviene saber.** Las **siete** clases de la Red de
+Carreteras del Estado no caben en color: separarlas por matiz hunde la
+distancia bajo deuteranopía a ΔE 4, y estirarlas por claridad hasta que todas
+alcancen 3:1 deja la carretera convencional siendo lo más brillante de un mapa
+oscuro, al revés de lo que significa. La rampa se ha vuelto a tender dentro de
+la banda legible, y **la jerarquía la lleva ahora también el grosor del
+trazo**, como en cualquier mapa de carreteras. Eso último es cosa del visor y
+no del dato: el vocabulario sigue diciendo solo de qué clase es cada tramo.
+
+### Cambiado
+
+- 32 categorías de 16 capas · `color` — nuevo valor hexadecimal. Las nueve que
+  no se veían: `red-carreteras:autopista_de_peaje`,
+  `centros-datos:en_servicio`, `espacios-maritimos:limite_declarado`,
+  `refinerias:refino`, `minerales-derechos:vigente`, `puertos:zona_terrestre`,
+  `seguimiento-espacial:espacio_profundo`, `csur:polo_nacional` y
+  `ferrocarril:linea`. El resto sale de las parejas confundibles bajo
+  daltonismo y de las dos capas con categorías indistinguibles.
+- `puertos` · las tres zonas — se re-tienden **como conjunto**: subir la más
+  oscura al mínimo la metía encima de su vecina, así que la escala entera se
+  desplaza. Quedan a ΔE 18 o más entre sí.
+- `red-carreteras` y `centros-datos` · las dos rampas — re-tendidas dentro de
+  la banda que sirve tanto a la mesa oscura como a la clara, conservando su
+  orden y su camino de matiz.
+
+### Huecos
+
+- **La mesa clara sigue peor servida que la oscura.** Con la paleta nueva, 29
+  tintas quedan por debajo de 3:1 sobre el fondo oscuro y 21 sobre el claro. La
+  corrección ha atendido primero lo que era invisible; lo que se lee con
+  esfuerzo sigue esperando, y se dice en voz alta en vez de darlo por bueno.
+- Los huecos de datos declarados en la `.121` siguen exactamente igual: esta
+  edición no añade, no retira y no corrige ni un solo registro.
+
+---
+
 ## datos-v2026.08.121 — el archivo cierra su raíz
 
 **Ni un dato cambia: cambian las señas de un solo documento, el último que
