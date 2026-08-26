@@ -2038,6 +2038,18 @@ archivado.
 > trabajo sin la corrección de la espera ni la clave del artículo 76.10. No se
 > movió de sitio —una etiqueta publicada no se mueve— ni llegó a tener release ni
 > DOI. Lo que se cita es esta.
+>
+> **Y sobre esta edición, anotado el 2026-08-26.** La `.88` **tampoco tiene
+> depósito propio en el archivo público**, y hay que decirlo justo aquí, donde
+> la línea de arriba manda citarla: la sincronización del archivo saltó de la
+> `.86` a la `.89`, y las cinco fuentes nuevas de esta edición viajaron dentro
+> de aquella. Quien las cite, cita la `.89`, que las contiene enteras — están
+> en su depósito y en su DOI. **No se ha fabricado después una etiqueta con el
+> nombre de la `.88`**, y el motivo es el mismo que rige todo lo demás aquí: el
+> archivo no guarda ningún estado que sea el de esta edición, así que ponerle
+> hoy su nombre a otro contenido sería una cita falsa, y un DOI no se corrige
+> nunca. Es la única edición desde la `.41` sin depósito propio; desde hoy, la
+> comprobación de la sincronización se planta si vuelve a faltar uno.
 
 Una revisión externa señaló que la historia de Tropic describía a Portugal como
 objetor. Al ir al expediente de la ONU, el problema estaba en **el dato**, y era
