@@ -37,6 +37,60 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.123 — dos partes del Boletín
+
+**El agua embalsada avanza dos semanas: entran los partes del 18 y del 25 de
+agosto.** Es el refresco de rutina de la única capa del atlas que cambia de
+cifra cada semana, y esta vez llega al día siguiente del parte.
+
+**Lo que dice el parte del 25.** Los 374 embalses que hoy informan por separado
+suman **36.370 hm³ de una capacidad de 56.043**, el **64,9 %**. Dos semanas
+antes, en el parte del 11, eran 38.103 hm³ y el **68,0 %**: la reserva baja
+**1.733 hm³** en quince días, que es lo que suele hacer la segunda mitad de
+agosto. La cifra no es la reserva nacional —el Boletín no cuenta todo lo
+embalsado de España—, y por eso se publica siempre con su denominador.
+
+**Veintisiete registros no traen cifra nueva, y conservan su fecha.** Son los
+que dejaron de publicarse por separado —ocho de ellos porque el Boletín los
+agregó en 2006, y el resto en fechas repartidas entre 2009 y 2017—: su serie
+termina donde la fuente la dejó. A esos solo se les mueve la fecha de
+verificación, porque lo comprobado hoy es que la fuente **sigue** sin decir
+nada nuevo de ellos. Escribirles la fecha del parte del 25 sería atribuirle a
+la fuente un dato que no publica.
+
+**Las cifras de energía se quedan en su semana, y esto es un hueco declarado.**
+Las cuatro magnitudes energéticas del conjunto —agua embalsada en GWh,
+capacidad, producción de la semana y del año— no salen de esta base sino del
+resumen semanal en PDF, que se lee a mano. Su punto de acceso público no ha
+respondido en esta edición, así que **siguen siendo las del parte del 11 de
+agosto y lo dicen con su fecha**: no se arrastran a un parte que no es el suyo.
+El agua avanza sin ellas porque son magnitudes distintas de fuentes distintas,
+y mezclarlas en una sola fecha sería el error que este atlas se prohíbe.
+
+### Cambiado
+
+- `agua-embalsada` · **374 registros** — `agua_actual_hm3` y `fecha_dato` pasan
+  al parte del **2026-08-25**. Los 27 restantes conservan el suyo.
+- `agua-embalsada` · **401 citas** — la fuente del Boletín actualiza su `fecha`
+  a la del dato que sostiene y su `archivo` a la copia recién depositada. Los
+  401 registros mueven `fecha_verificacion` a **2026-08-26**.
+- **401 series temporales** — **748 puntos nuevos** (720.845 en total), los dos
+  partes de estas dos semanas para los embalses que informan.
+- `fuentes/` — el histórico de embalses del Boletín (1988-2026) se **reemplaza**
+  por la descarga del 2026-08-26. Es una base que se reescribe entera cada
+  semana: no se acumula una copia por parte, se guarda la vigente.
+
+### Huecos
+
+- **Las cuatro cifras de energía siguen fechadas el 2026-08-11**, dos partes por
+  detrás del agua, por lo dicho arriba. Quedan a la vista con su fecha en vez de
+  envejecer en silencio.
+- Los huecos declarados en ediciones anteriores siguen igual: esta edición no
+  añade, no retira y no reinterpreta ningún registro — solo trae la cifra que la
+  fuente publicó esta semana.
+
+---
+
 ## datos-v2026.08.122 — la paleta se mide
 
 **Ni un registro cambia: cambian 32 de las 111 tintas con las que el mapa
