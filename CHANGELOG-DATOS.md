@@ -37,6 +37,58 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.124 — los montes bajan al suelo
+
+**Ni un registro cambia: cambia dónde se pinta una capa.** El «Catálogo de
+Montes de Utilidad Pública» publica las 52 provincias, y su geometría es
+*exactamente* la misma que la de «Generación eléctrica por provincia» — se toma
+de ella a propósito, para que dos mapas del mismo territorio encajen vértice a
+vértice. Es, por definición, una capa que cubre España entera; y nació sin
+decirlo.
+
+**Qué provocaba.** El manifiesto tiene una marca, `fondo`, para la capa que
+cubre el territorio completo: la dibuja debajo de todo y le hace ceder el clic
+a cualquier registro que tenga encima. Sin esa marca, los montes se colocaban
+entre las capas normales y, por su sitio en el manifiesto —la 38.ª de 40—, se
+pintaban por encima de casi todas. Medido sobre el visor publicado, con los
+montes y los parques eólicos encendidos: un clic **dentro** del parque eólico
+El Segredal, en Asturias, no abría el parque. Abría «Asturias». Lo mismo le
+pasaba a las otras siete capas de polígonos que quedan por debajo —derechos
+mineros, plantas solares, recintos portuarios, subestaciones…—: seguían
+dibujadas, pero dejaban de ser pinchables allí donde los montes las tapaban.
+
+**Qué cambia.** La capa declara `fondo` y vuelve al suelo. Cede el clic, y su
+relleno pasa del 22 % al 46 % de opacidad, que es la densidad de una capa que
+ya no tapa nada. No afecta a la primera pantalla del visor: el arranque
+enciende el primer grupo del primer dominio —los minerales—, y los montes no
+están en él.
+
+**Y una regla nueva de contrato, porque ahora hay dos.** Hasta hoy el atlas
+tenía una sola capa de fondo y la pregunta no existía. Con dos encendidas a la
+vez cubren el mismo territorio, sus rellenos se suman y lo que se ve no es la
+tinta de ninguna de las dos: con las dos al 46 %, dos tercios de la de arriba y
+un tercio de la de abajo. La edición 1.72.0 del contrato escribe qué manda —
+**el orden del manifiesto: la última nombrada queda encima**—, de modo que
+quien repinte una release desde los datos obtenga el mismo mapa que el atlas
+publica. Ninguna capa se apaga sola: las enciende el lector. El visor lo dice
+en la leyenda de la que queda debajo.
+
+### Corregido
+- `montes-catalogo` — el manifiesto le añade `fondo: true`. Ni la geometría ni
+  ningún campo de ningún registro cambian.
+
+### Huecos
+- El aviso **no impide la mezcla**, la nombra. Dos coropletas encendidas a la
+  vez siguen sumando tinta; si en uso resulta que confunde, el paso siguiente
+  sería que encender una apagara la otra, y eso es apagarle una capa al lector
+  por detrás.
+- Sigue abierto lo declarado en la edición anterior: las cuatro cifras de
+  energía embalsada del parte semanal continúan fechadas el 11 de agosto,
+  porque su resumen en PDF se publica aparte y su punto de acceso público no ha
+  respondido.
+
+---
+
 ## datos-v2026.08.123 — dos partes del Boletín
 
 **El agua embalsada avanza dos semanas: entran los partes del 18 y del 25 de
