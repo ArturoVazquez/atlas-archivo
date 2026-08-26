@@ -37,6 +37,70 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.125 — la ficha de un embalse deja de contar el parte de antes
+
+**El defecto se veía al pinchar un embalse en el mapa.** El texto que abre su
+ficha decía «Capacidad de 1.118 hm³ y 831 hm³ embalsados según el parte de
+2026-08-11», y tres líneas más abajo, en la tabla de datos del mismo registro,
+la cifra de agua embalsada decía **818**, del parte del 25 de agosto.
+
+**Cuántos, medido:** de los 401 embalses publicados, **374 citaban un parte de
+dos semanas antes**, y **248 de ellos daban una cifra distinta de la que
+publicaba su propio campo**. Los 27 restantes estaban bien: son los embalses
+que dejaron de informar hace años, y su texto nunca envejeció porque su fecha
+nunca se movió.
+
+**Por qué importa más de lo que parece.** Ese texto no vive solo dentro de la
+ficha: es también la descripción que ve un buscador y la que aparece al
+compartir el enlace. Durante dos semanas, la cifra que el atlas enseñaba fuera
+no era la que el atlas publicaba dentro.
+
+**La causa.** La actualización semanal movía la cifra de agua, su fecha, la
+cita del Boletín y la fecha de verificación — y no el texto, que se había
+escrito a mano al nacer la capa. Cada semana el dato avanzaba y la prosa se
+quedaba.
+
+**Lo corregido.** El texto pasa a **componerse de los campos del registro** en
+la misma pasada que los escribe, así que ya no puede separarse de ellos. La
+frase es la misma que había: se comprobó reproduciendo con ella los 27
+registros que seguían cuadrando, y salieron idénticos carácter a carácter. Y la
+actualización avisa ahora cuando un texto cambia sin que su parte se haya
+movido, que es la señal que no existía y por la que el desfase vivió dos
+semanas.
+
+### Corregido
+- `agua-embalsada` · descripción de 374 registros — el parte citado y la cifra
+  de agua pasan a ser los del registro. Sin tocar ni un dato: los campos ya
+  decían lo correcto.
+
+### Contrato
+**1.73.0 — el filtro «en explotación» dejaba pasar lo que no lo está.**
+
+La sección del contrato que dice, capa por capa, cuándo un registro cuenta como
+«en explotación» **no nombraba a dos capas que sí publican el campo del que eso
+se deriva**. Un contrato callado no equivale a «no aplica»: el visor no inventa,
+así que las dejaba pasar enteras.
+
+- **`residuos-radiactivos`** — aquí sí se veía. Bajo «en explotación» se
+  enseñaban los **cinco almacenes individuales ATI-100 todavía sin construir**
+  y el **Almacén Temporal Centralizado de Villar de Cañas**, que está cancelado
+  y figura como histórico. Ahora la capa deriva de su fase: **ocho de catorce**
+  están en explotación —los seis almacenes que custodian combustible gastado
+  hoy, El Cabril y la fábrica de Juzbado— y los otros seis aparecen como
+  latentes, que es donde tenían que estar.
+- **`gas-interconexiones`** — aquí no se veía, porque sus seis conexiones están
+  en servicio. Se decide igualmente, y por el campo correcto: la conexión con
+  Marruecos figura con el flujo invertido —dejó de importar en 2021 y hoy
+  exporta—, y clasificarla por su categoría la habría dado por parada. La
+  categoría dice en qué sentido va el gas; la fase, si va.
+
+Ninguna de las dos filas inventa doctrina: aplican la que la sección ya tenía
+escrita para un almacén, para una instalación autorizada y sin construir, y
+para una conexión en servicio. **Ni un campo, ni un esquema, ni un registro
+cambian**: cambia qué esconde el filtro.
+
+---
+
 ## datos-v2026.08.124 — los montes bajan al suelo
 
 **Ni un registro cambia: cambia dónde se pinta una capa.** El «Catálogo de
