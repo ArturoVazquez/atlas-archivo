@@ -37,6 +37,71 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.126 — las fechas se leen, y un resumen ya no puede citar la que no es
+
+**Dos cosas, y la segunda nace de mirar la primera.**
+
+### Las fechas se le enseñan al lector como las lee una persona
+
+Los datos guardan las fechas en formato internacional (`2026-08-25`) y así se
+quedan: ordenan bien y no admiten confusión entre países. Pero eso no es lo que
+se le enseña a nadie. Desde esta edición, en todo el sitio:
+
+- **en prosa**, «25 de agosto de 2026» — la descripción de un registro, las
+  frases de una página;
+- **como valor**, «25/08/2026» — la celda de una tabla, el pie de una ficha, la
+  fecha de una cita, el rótulo de una gráfica.
+
+La segunda ocupa exactamente lo mismo que la fecha que sustituye, así que
+ninguna columna se descuadra.
+
+Se quedan en formato internacional las **direcciones de los partes**
+(`/agua/2026-08-25/` es un enlace permanente y romperlo rompería las citas) y
+todo lo que hay dentro de los ficheros de datos, que es lo que descarga quien
+los usa.
+
+### Corregido
+
+- `agua-embalsada` · descripción de los 401 registros — la fecha del parte pasa
+  a escribirse «25 de agosto de 2026». Ningún dato cambia.
+
+### Contrato
+
+**1.74.0 — nace R12: un resumen no puede citar una fecha que su registro no
+sostiene.**
+
+La edición anterior corrigió 374 embalses cuyo resumen contaba un parte de dos
+semanas antes. Esta edición mira si eso puede pasarle a otra capa, y en vez de
+dejarlo anotado lo convierte en una comprobación que bloquea.
+
+**Lo que se midió primero.** De las 40 capas, solo dos tienen un guion que
+reescriba su fichero, y la otra —la red sísmica— compone su descripción cada
+vez, así que no puede envejecer. Pero **dieciséis capas repiten en prosa una
+cifra que también vive en un campo**, y basta con que alguien mueva el campo y
+no el texto.
+
+**La regla.** Toda fecha que la descripción de un registro nombre tiene que
+estar sostenida por el propio registro: por uno de sus campos de fecha, por su
+nota, o por la fecha de una de sus citas. Comprobado contra la capa tal como
+estaba antes de corregirla: **habría bloqueado los 374**.
+
+**Lo que la regla deja fuera, y por qué.** Las claves de un registro citan
+hechos ajenos —un tramo de la serie histórica, un acto de otra fecha— con su
+propia fuente; incluirlas señalaba 106 casos y los 106 eran correctos. Y la
+**nota** queda fuera, y además sirve de respaldo: es donde el atlas cita y
+razona. La nota de un reactor de Almaraz reproduce una orden oficial con dos
+fechas que ya no rigen, y la de Ascó II explica que su fuente cuenta diez años
+desde una fecha sin decir cuál es el último día. Las dos son el atlas siendo
+escrupuloso, y una regla que las persiguiera castigaría lo que se le pide.
+
+La comprobación reconoce la fecha escrita de las **dos maneras** —internacional
+y en prosa—, porque si solo mirara una dejaría de servir en cuanto un texto
+cambiara de forma. Que es exactamente lo que pasa en esta misma edición.
+
+**Ni un campo ni un esquema cambian.**
+
+---
+
 ## datos-v2026.08.125 — la ficha de un embalse deja de contar el parte de antes
 
 **El defecto se veía al pinchar un embalse en el mapa.** El texto que abre su
