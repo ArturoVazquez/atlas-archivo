@@ -18,7 +18,7 @@ authors:
 repository-code: https://github.com/ArturoVazquez/atlas-archivo
 url: https://atlas.eltercioviejo.com
 license: CC-BY-4.0
-version: datos-v2026.08.128
+version: datos-v2026.08.129
 date-released: "2026-08-27"
 doi: 10.5281/zenodo.21918595
 identifiers:
@@ -28,13 +28,17 @@ identifiers:
       DOI de concepto: resuelve siempre a la última edición depositada. Es el
       que se cita cuando se cita el atlas, y no una edición concreta.
   - type: doi
-    value: 10.5281/zenodo.22125848
+    value: 10.5281/zenodo.22127223
     description: >-
-      DOI de esta edición (datos-v2026.08.128). Lo que el depósito archiva es el
+      DOI de esta edición (datos-v2026.08.129). Lo que el depósito archiva es el
       aparato de citación —fuentes, procedencia, contrato y changelog—, no las
       capas de datos, que se sirven desde atlas.eltercioviejo.com.
+      Las capas de esta edición se descargan enteras del PAQUETE adjunto a su
+      release de GitHub, que cuelga de una etiqueta que no se mueve jamás. Son
+      dos cosas distintas y conviene no confundirlas: el depósito no incluye
+      los adjuntos de la release.
       Este campo, `version` y `date-released` cambian en CADA edición: son el
-      quinto gesto de la lista de §8, y estuvieron ocho ediciones parados
+      sexto gesto de la lista de §8, y estuvieron ocho ediciones parados
       porque el ritual no los nombraba.
 keywords:
   - España
