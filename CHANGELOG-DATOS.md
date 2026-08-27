@@ -37,6 +37,64 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.129 — el atlas dice por fin qué promete a quien lo lea a máquina
+
+**Ni un registro cambia.** Esta edición no añade datos: pone por escrito una
+promesa que el atlas llevaba tiempo cumpliendo sin haberla dado, y tapa un hueco
+que un atlas de trazabilidad no podía seguir teniendo abierto.
+
+### Lo que ya pasaba y nadie había dicho
+
+Los datos se sirven estáticos y **abiertos a cualquier origen** desde que existe
+el sitio: el catálogo, los vocabularios, las cuarenta capas, las series y los
+conjuntos. Cualquiera podía construir encima —y alguien podía estar
+haciéndolo— sobre rutas que **nadie había prometido** y que un cambio interno
+podía mover sin que se enterase nadie.
+
+### Añadido: §10.1, el contrato de acceso
+
+Cinco rutas quedan **prometidas** —el manifiesto, los vocabularios, las capas,
+las series y los conjuntos— y las gobiernan las mismas garantías de evolución
+que ya regían los datos: un identificador no se recicla jamás, un registro
+retirado cambia de estado y no desaparece, y renombrar un campo exige versión
+mayor y guía de migración.
+
+**Y tres quedan declaradas INTERNAS**, que es la mitad del valor de la sección:
+`representacion/`, `detalle/` e `indice-busqueda.json` no son datos, son órganos
+del visor —existen porque bajar el expediente completo de cada registro para
+dibujar un punto costaba casi setenta megas— y **cambiarán sin aviso**.
+Prometerlas habría sido congelar una optimización; callar habría sido dejar que
+alguien se apoyara en ellas sin saberlo.
+
+### Lo que de verdad cambia: una edición pasada se puede recuperar
+
+Hasta hoy el sitio servía **solo la edición viva**, en rutas sin versión, y el
+DOI amparaba el aparato de cita —fuentes, contrato, changelog— pero **no los
+datos**. Una cifra citada hoy era irrecuperable mañana: se podía nombrar la
+edición `.128` y no obtenerla.
+
+Desde esta edición, **cada release del archivo público lleva adjunto su paquete
+de datos** —`datos-<etiqueta>.tar.gz`, la carpeta de datos entera de esa
+etiqueta—, y lo pone una guardia automática que se repara sola: mira qué
+releases no lo tienen y se lo pone. **La `.129` es la primera que lo lleva.**
+
+### Huecos
+
+- Las ediciones **anteriores a la `.129` no llevan paquete**, y no se les puede
+  poner: el depósito recoge lo que ve al publicar, y un adjunto añadido después
+  no entra en un DOI ya acuñado. Colgarlo igualmente daría una apariencia de
+  completitud que el DOI no respalda. Se dice en vez de disimularlo.
+
+### Contrato
+
+**1.77.0 — aditiva.** Nace §8.1: qué rutas se prometen, cuáles son internas, qué
+edición se obtiene y cómo se fija una. La cabecera que abre los datos a
+cualquier origen pasa además a la configuración del despliegue: hasta hoy ese
+valor llegaba por un ajuste por defecto de la plataforma, y **prometer sin
+sostener es la garantía sin diente que este contrato existe para no dar**.
+
+**Ni un registro, ni una geometría, ni un campo de dato cambian.**
+
 ## datos-v2026.08.128 — las dos capas que no se vigilan solas dejan de estar calladas
 
 **Ni un registro cambia.** Esta edición separa dos cosas que la anterior había

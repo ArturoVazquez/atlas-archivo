@@ -233,6 +233,41 @@ lo que entra al atlas lo firma siempre el criterio humano.
   en el [README](README.md); la legible por máquina, en
   [`CITATION.cff`](CITATION.cff).
 
+### 10.1 · Acceso programático
+
+Los datos se sirven estáticos desde el sitio, sin clave, sin cuota y **abiertos
+a cualquier origen**. Estas cinco rutas son las que se prometen:
+
+| Ruta | Qué es |
+|---|---|
+| `/datos/manifest.json` | el catálogo. Trae la edición servida y la versión de este contrato. **Es la puerta**: se baja este, y no las cuarenta capas, para saber qué hay |
+| `/datos/vocabularios.json` | categorías, grupos, el árbol y **los colores**, que están aquí y no en la aplicación para que cualquiera pueda repintar el atlas sin ella |
+| `/datos/capas/<id>.geojson` | la capa **tal como se publica en la release**, byte a byte |
+| `/datos/series/<capa>/<slug>.json` | las series temporales |
+| `/datos/conjuntos/<id>.json` | los documentos de conjunto |
+
+Lo que cambia dentro de ellas lo gobiernan las garantías de arriba.
+
+**Y lo que NO se promete, que importa igual.** Bajo `/datos/` hay además
+`representacion/`, `detalle/` e `indice-busqueda.json`. **No son datos: son
+órganos internos del visor.** Existen porque bajar el expediente completo de
+cada registro para dibujar un punto costaba casi setenta megas, y su forma es
+esa optimización. Cambiarán cuando la optimización cambie, sin aviso y sin
+versión. Quien construya sobre ellas se romperá, y queda dicho de antemano; el
+dato canónico está en `capas/`.
+
+**Qué edición se obtiene.** Siempre la viva, la que nombra el manifiesto. No hay
+URL por edición, y por eso estas rutas piden revalidar en cada petición: una
+ruta sin versión que se cachease mucho entregaría datos de una edición ya
+retirada, que es peor que tardar.
+
+**Cómo se fija una edición** —para citarla, reproducir un análisis o comparar
+dos—: cada release de este archivo lleva adjunto su **paquete de datos**,
+`datos-<etiqueta>.tar.gz`, con la carpeta de datos entera de esa etiqueta. Esa
+release es también la que tiene DOI. **Desde `datos-v2026.08.129`**: las
+anteriores no lo llevan, porque un adjunto puesto después no entra en un DOI ya
+acuñado y fingir lo contrario sería dar una garantía que no existe.
+
 ## 11 · Un registro de ejemplo
 
 ```json
