@@ -248,12 +248,24 @@ a cualquier origen**. Estas cinco rutas son las que se prometen:
 
 Lo que cambia dentro de ellas lo gobiernan las garantías de arriba.
 
+**Y se sirven sin precomprimir.** La compresión de estas cinco rutas la negocia
+el servidor con quien pide, como en cualquier sitio: quien la pida recibe el
+fichero comprimido y quien no, texto plano. Es una garantía deliberada, y existe
+porque los órganos internos del visor sí van precomprimidos en origen y se
+comprobó que la plataforma que sirve el atlas no siempre respeta la cabecera con
+la que un cliente pide que no le compriman. Aplicar eso aquí rompería a quien
+descargue una capa con una herramienta que no sepa descomprimirla —y la rompería
+en silencio, con una respuesta correcta y un cuerpo ilegible—. Estas rutas
+existen para leerse sin saber nada de esta casa, así que la optimización se
+queda fuera de ellas.
+
 **Y lo que NO se promete, que importa igual.** Bajo `/datos/` hay además
 `representacion/`, `detalle/` e `indice-busqueda.json`. **No son datos: son
 órganos internos del visor.** Existen porque bajar el expediente completo de
 cada registro para dibujar un punto costaba casi setenta megas, y su forma es
-esa optimización. Cambiarán cuando la optimización cambie, sin aviso y sin
-versión. Quien construya sobre ellas se romperá, y queda dicho de antemano; el
+esa optimización — que desde el 2026-08-27 incluye ir **precomprimidos en
+origen**, un 44 % menos por el cable en las capas mayores. Cambiarán cuando la
+optimización cambie, sin aviso y sin versión, y eso incluye esto. Quien construya sobre ellas se romperá, y queda dicho de antemano; el
 dato canónico está en `capas/`.
 
 **Qué edición se obtiene.** Siempre la viva, la que nombra el manifiesto. No hay

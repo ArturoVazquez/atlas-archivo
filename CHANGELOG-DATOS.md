@@ -37,6 +37,38 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.131 — lo que el atlas promete se lee sin saber nada del atlas
+
+**Ni un registro cambia.** Lo que cambia es que el contrato adquiere una
+garantía que antes solo era una costumbre: **las rutas que el atlas promete se
+sirven sin precomprimir**, y quien no pida compresión recibe texto plano.
+
+**Por qué hacía falta escribirlo, y no es una precaución teórica.** El día
+anterior, los ficheros que el visor usa para dibujar pasaron a servirse ya
+comprimidos desde el origen —un 44 % menos por el cable en las ocho capas más
+pesadas, de 3.801.680 a 2.140.536 bytes—. Al probarlo apareció algo que conviene
+saber de la plataforma que sirve este sitio: **no respeta la cabecera con la que
+un cliente pide que NO le compriman**. A un fichero servido así le manda los
+bytes comprimidos aunque se le haya pedido lo contrario.
+
+Llevar esa optimización a las capas, al manifiesto, a los vocabularios, a las
+series o a los conjuntos habría roto a quien los descarga con una herramienta
+que no sepa descomprimir brotli —`curl` sin banderas, un script sin la
+librería, un SIG de escritorio—. **Y los habría roto en silencio**: respuesta
+correcta, cabeceras correctas y un cuerpo ilegible. Un fallo así no se descubre
+leyendo un mensaje de error; se descubre semanas más tarde, cuando alguien dice
+que el fichero «viene mal».
+
+Así que la línea que el contrato ya trazaba entre **lo que promete** y **lo que
+es órgano interno del visor** gobierna ahora también cómo viajan los bytes. Lo
+interno va comprimido y puede cambiar sin aviso; lo prometido, no, y eso ya no
+depende de que nadie se acuerde.
+
+**Qué NO cambia:** ni un registro, ni una geometría, ni un campo, ni una fuente.
+Quien haya descargado una capa antes de hoy tiene exactamente los mismos datos.
+
+Contrato **1.79.0**.
+
 ## datos-v2026.08.130 — todas las ediciones publicadas se pueden recuperar enteras
 
 **Ni un registro cambia.** Esta edición corrige la anterior, del mismo día, en
