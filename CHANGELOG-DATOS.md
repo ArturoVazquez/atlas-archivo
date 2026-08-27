@@ -37,6 +37,66 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.128 — las dos capas que no se vigilan solas dejan de estar calladas
+
+**Ni un registro cambia.** Esta edición separa dos cosas que la anterior había
+metido en el mismo saco, y le da voz a la guardia semanal sobre ellas.
+
+### Lo que la edición anterior no distinguía
+
+La `.127` hizo que cada capa dijera si le corresponde vigilancia de boletín
+oficial y, si no, por qué. Eso bastaba para saber **que** no la vigila un
+boletín, pero no para distinguir dos situaciones que no se parecen en nada:
+
+- **La red de carreteras** se transcribe del inventario del Instituto Geográfico
+  Nacional. No la vigila un boletín porque su disparador es otro: que el IGN
+  publique edición nueva. Pero **eso se puede mirar**, y se mira.
+- **Los pasos de la frontera Schengen** salen del Manual Schengen y de su
+  actualización en el Diario Oficial de la Unión Europea. **La presencia
+  institucional del español** sale de constituciones y leyes lingüísticas de
+  veintiún Estados. Detrás de estas dos **no hay nada**: ninguna guardia del
+  atlas barre el DOUE ni las gacetas nacionales. Su única red es que una persona
+  se acuerde.
+
+Las tres decían lo mismo —«no le toca vigía de boletín»— y el riesgo era muy
+distinto.
+
+### Añadido
+
+- **La marca `revision: "humana"`** en el catálogo de capas, para las capas cuya
+  **fuente no vigila nadie**. Hoy la llevan `frontera-schengen` e `idioma`, y
+  **pueden ser más**: cualquier capa futura que se apoye en fuente europea o
+  extranjera cae aquí.
+
+### Lo que de verdad cambia: la guardia habla
+
+La guardia semanal **las nombra ahora en cada pasada** —con cuántos días llevan
+sin revisar y cuál es su cadencia—, antes de dar el resultado y **aunque no haya
+ninguna alarma**. Hasta ahora solo avisaba cuando una capa pasaba de su cadencia,
+que llega tarde y, sobre todo, no dice el motivo.
+
+Es la misma doctrina con la que esa guardia ya informa de cuántas direcciones
+responden «correcto» sin poder comprobarse de verdad: un «sin alarmas» que se
+leyera como «todo está vigilado» sería exactamente la garantía falsa que este
+atlas existe para no dar.
+
+### Huecos
+
+- Los dos de la edición anterior siguen abiertos, y ahora están **marcados en los
+  datos** además de dichos aquí: nadie barre el DOUE ni las gacetas de otros
+  Estados por cuenta del atlas. Lo que cambia no es la cobertura, es que ya no
+  se puede olvidar.
+
+### Contrato
+
+**1.76.0 — aditiva.** Nace `vigilancia.revision` (§3), comprobada en §7.13: la
+marca solo puede acompañar a una capa que declare que no le toca vigía de
+boletín. Si un boletín la barre, su fuente sí tiene guardia y la marca mentiría —
+y una mentira ahí es peor que la ausencia, porque la guardia semanal decide a
+quién nombrar leyendo justo eso.
+
+**Ni un registro, ni una geometría, ni un campo de dato cambian.**
+
 ## datos-v2026.08.127 — cada capa dice quién la vigila, y cuatro estrenan vigía
 
 **Ni un registro cambia en esta edición.** Lo que cambia es que el catálogo deja
