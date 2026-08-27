@@ -262,11 +262,18 @@ ruta sin versión que se cachease mucho entregaría datos de una edición ya
 retirada, que es peor que tardar.
 
 **Cómo se fija una edición** —para citarla, reproducir un análisis o comparar
-dos—: cada release de este archivo lleva adjunto su **paquete de datos**,
-`datos-<etiqueta>.tar.gz`, con la carpeta de datos entera de esa etiqueta. Esa
-release es también la que tiene DOI. **Desde `datos-v2026.08.129`**: las
-anteriores no lo llevan, porque un adjunto puesto después no entra en un DOI ya
-acuñado y fingir lo contrario sería dar una garantía que no existe.
+dos—: cada release de este archivo lleva adjunto su **paquete de datos**. Se
+llama **como su etiqueta**, `<etiqueta>.tar.gz`, y trae la carpeta de datos
+entera de esa etiqueta. **Lo tienen todas las ediciones con release**, de
+`datos-v2026.08.41` en adelante, que es donde empieza este archivo.
+
+**Y conviene no confundir dos cosas.** El DOI de una release **no ampara ese
+paquete**: el depósito archiva el contenido del repositorio y no sus ficheros
+adjuntos, así que lo que el DOI conserva es el aparato de citación —fuentes,
+procedencia, contrato y registro de cambios—. Las capas se descargan del
+adjunto, que cuelga de una etiqueta que no se mueve jamás y por eso vale igual
+para fijar una edición. Las dos cosas se nombran por separado a propósito: darlas
+por una sola sería prometer un depósito que no existe.
 
 ## 11 · Un registro de ejemplo
 

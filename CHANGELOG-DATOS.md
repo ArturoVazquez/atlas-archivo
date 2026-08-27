@@ -37,6 +37,64 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.130 — todas las ediciones publicadas se pueden recuperar enteras
+
+**Ni un registro cambia.** Esta edición corrige la anterior, del mismo día, en
+dos cosas que solo se supieron al medirla ya publicada.
+
+### Lo que la `.129` decía mal
+
+La `.129` estrenó el **paquete de datos** adjunto a cada release —lo único con
+lo que alguien de fuera puede obtener una edición pasada entera— pero lo puso
+**solo de esa edición en adelante**, y lo justificó así: que un adjunto añadido
+después no entraría en un DOI ya acuñado.
+
+Al comprobar qué había depositado el archivo de esa misma edición, la razón
+resultó falsa. **El depósito archiva el paquete del repositorio, y nunca los
+ficheros adjuntos a la release** — ni los puestos antes ni los puestos después.
+El paquete de datos no toca ningún DOI, tampoco el de su propia edición.
+
+### Lo que cambia: cae el suelo
+
+Caída la razón, cae el corte. **Las 87 ediciones que tienen release pasan a
+tener su paquete**, de la `.41` —donde empieza el archivo público— en adelante.
+Cualquier edición que se haya citado desde el 12 de agosto se puede ahora
+descargar entera, con sus capas, sus series, sus conjuntos y su manifiesto tal
+como se publicaron.
+
+### Y una precisión que faltaba
+
+El contrato dice ahora **por separado** qué ampara cada cosa: el **DOI** archiva
+el aparato de citación —fuentes, procedencia, contrato, registro de cambios— y
+el **paquete** trae las capas. Las dos sirven para fijar una edición, porque el
+adjunto cuelga de una etiqueta que no se mueve jamás, pero no son la misma cosa.
+Darlas por una sola es prometer un depósito que no existe, y de esa confusión
+salió justamente el suelo de la `.129`.
+
+### Cómo se llama el paquete
+
+Se llamaba `datos-<etiqueta>.tar.gz`, y como la etiqueta ya empieza por `datos-`
+salía tartamudeando. Ahora se llama **como su etiqueta**: `<etiqueta>.tar.gz`.
+Una sola regla, sin excepciones que describir. El de la `.129` se renombró el
+mismo día, porque un adjunto no forma parte de la etiqueta y dejarlo habría
+obligado al contrato a explicar dos convenciones para siempre.
+
+### Huecos
+
+- Las ediciones **anteriores a la `.41` siguen sin paquete**, y no es una
+  decisión revisable: el archivo público empieza ahí y no guarda ningún estado
+  que sea el de las anteriores. Fecharlas sería mentir.
+- La **`.88` tampoco lo tiene**, por lo mismo que no tiene release: se publicó
+  una hora después de la que la sustituye y el archivo saltó por encima de ella.
+
+### Contrato
+
+**1.78.0 — correctiva y aditiva.** §8.1 pierde el suelo, gana la distinción
+entre lo que ampara el DOI y lo que ampara el paquete, y fija el nombre del
+adjunto.
+
+**Ni un registro, ni una geometría, ni un campo de dato cambian.**
+
 ## datos-v2026.08.129 — el atlas dice por fin qué promete a quien lo lea a máquina
 
 **Ni un registro cambia.** Esta edición no añade datos: pone por escrito una
