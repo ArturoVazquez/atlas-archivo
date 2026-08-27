@@ -37,6 +37,90 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.127 — cada capa dice quién la vigila, y cuatro estrenan vigía
+
+**Ni un registro cambia en esta edición.** Lo que cambia es que el catálogo deja
+de callar sobre una cosa que hasta hoy solo se podía averiguar leyendo el código
+de las guardias: **a qué capas les corresponde vigilancia de boletín oficial, y
+por qué a las demás no.**
+
+### El silencio que se cierra
+
+El atlas comprueba dos cosas distintas y por eso tiene dos clases de guardia:
+que un dato esté bien sostenido **el día que entra** —eso lo juzga la validación
+del contrato, sobre toda capa y en cada cambio— y que **siga estándolo** —eso lo
+mira la guardia semanal de caducidad y enlaces muertos, también sobre todas—.
+
+Lo que **no** se aplica a todas es la vigilancia de los boletines oficiales, que
+barre cada semana el BOE y cuatro boletines autonómicos buscando actos que toquen
+al atlas. De las 40 capas, la mitad tenía expresiones curadas y la otra mitad no,
+y **no había forma de saber cuáles estaban sin vigilar a propósito**.
+
+Al clasificarlas apareció que no era un descuido: **el atlas tiene dos mecánicas
+de actualización y hasta hoy solo una tenía guardia**.
+
+- **Capas de expediente** — cada registro tiene su acto administrativo, y el
+  disparador de un cambio es que salga uno nuevo en un boletín.
+- **Capas de conjunto transcrito** — la capa entera se toma de una edición de un
+  conjunto oficial, y **los mismos documentos sostienen todos sus registros**.
+  Su disparador no es un acto: es que el organismo publique edición nueva. Sobre
+  estas, un vigía de boletín no encuentra nada, y ponerlo solo añade ruido — y un
+  vigía que grita cada semana acaba apagado.
+
+Se midió con evidencia y no con criterio: en las capas sin vigilancia, los mismos
+documentos respaldan todos los registros — 120 de 120 en las zonas de defensa,
+48 de 48 en los aeropuertos, 46 de 46 en los centros de referencia del SNS, 81 de
+81 en los pasos de la frontera Schengen.
+
+### Añadido
+
+- **`vigilancia` en el catálogo de capas** — toda capa declara ahora si le
+  corresponde vigilancia de boletín y cuál, o, si no le corresponde, **por qué**.
+  Ese porqué es obligatorio: una capa que dice que no la vigila nadie sin decir
+  el motivo es un hueco sin declarar, y este atlas no los admite en sus datos ni
+  en su propia vigilancia.
+
+- **Cuatro capas estrenan vigilancia: `zonas-defensa`, `aeropuertos`, `csur` y
+  `perte`.** Las cuatro transcriben una **norma** publicada en el BOE —la Ley
+  8/1975 y su reglamento, el Real Decreto 1150/2011, el Real Decreto 1302/2006,
+  las resoluciones de concesión—, y si esa norma se modifica **la capa entera
+  queda desfasada sin que salte ninguna alarma**. Las expresiones se ciñen al
+  número de la norma, no al tema, y esa decisión está medida sobre **3.339
+  títulos del BOE de 25 días**: las cuatro dan cero falsos positivos, mientras
+  que las versiones amplias que se descartaron daban 26 y 9. Cero coincidencias
+  no es una guardia muerta — una reforma normativa es rara, y es precisamente la
+  que hoy no vería nadie.
+
+Con esto, la vigilancia de boletín pasa de **20 a 24 capas**.
+
+### Huecos
+
+- **`frontera-schengen` e `idioma` quedan con un hueco declarado, no con una
+  ausencia decidida.** La primera se sostiene en el Manual Schengen y en su
+  actualización en el Diario Oficial de la Unión Europea; la segunda, en textos
+  legales de veintiún Estados. **Ninguna guardia del atlas cubre todavía el DOUE
+  ni las gacetas nacionales**, así que las dos dependen de la revisión humana
+  periódica. Queda dicho aquí para que quien las use sepa exactamente qué las
+  respalda y qué no.
+
+- El catálogo de designaciones de centros de referencia del SNS **no se publica
+  en el BOE**: es un documento en la web del Ministerio de Sanidad. La nueva
+  vigilancia caza la norma y las designaciones publicadas como acto, no el
+  catálogo — ese sigue siendo revisión a mano.
+
+### Contrato
+
+**1.75.0 — aditiva.** Nace el campo `vigilancia` en el catálogo de capas (§3),
+obligatorio en toda capa publicada y comprobado por la verificación **§7.13**. Un
+segundo control cruza en cuatro direcciones lo que el catálogo declara con lo que
+las guardias hacen de verdad, para que las dos no puedan separarse en silencio:
+la capa que se cree vigilada y no lo está, la que dice que no le toca y sí la
+vigilan, la que nombra un boletín y la vigila otro, y el identificador mal escrito
+en una expresión. Una rama declarada y todavía sin datos queda fuera de la regla:
+no hay nada que vigilar hasta que nace.
+
+**Ni un registro, ni una geometría, ni un campo de dato cambian.**
+
 ## datos-v2026.08.126 — las fechas se leen, y un resumen ya no puede citar la que no es
 
 **Dos cosas, y la segunda nace de mirar la primera.**
