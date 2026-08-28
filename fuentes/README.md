@@ -25,10 +25,14 @@ AAAA-MM-DD_emisor_titulo-corto.ext
 
 Ejemplo: `2026-07-22_ce_lista-crma-1.pdf`
 
-Un fichero del archivo incumple la regla y se sabe: el acta gasista
-(`ign/2026/2026-08-12_geometria-interconexiones-gasistas.json`) no lleva
-`emisor`. Se renombra cuando una release toque `gas-interconexiones`; hasta
-entonces, que quede dicho aquí y no descubierto.
+**Un acta con DOS emisores se nombra por su estante**, y lo decidió el único
+caso que hay: el acta gasista archiva seis geometrías de dos organismos —dos del
+IECA andaluz y cuatro del Nomenclátor del IGN— y durante quince días fue el
+único fichero del archivo sin `emisor` en el nombre. Se renombró a
+`ign/2026/2026-08-12_ign_geometria-interconexiones-gasistas.json`: el nombre es
+etiqueta de estante y no registro de procedencia, y la procedencia de verdad va
+DENTRO, con su emisor declarado consulta a consulta. Un emisor compuesto en el
+nombre habría inventado una convención para un solo fichero.
 
 ## Dónde vive un fichero
 

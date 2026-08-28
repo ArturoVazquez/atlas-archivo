@@ -37,6 +37,64 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.132 — el atlas se aplica la ortografía que le exige a sus fuentes
+
+**Ni un registro, ni una geometría, ni una cifra cambian.** Cambian dieciséis
+textos que se escribieron sin tildes y el nombre de un documento del archivo.
+
+**Lo primero lo destapó publicarlo.** Cada capa declara desde hace poco por qué
+la vigila o no la vigila un boletín oficial, y ese motivo pasó a leerse en la
+página de la capa. Al verlo en pantalla se vio lo que un campo interno esconde:
+estaba escrito sin una sola tilde. No eran erratas sueltas —hay notas enteras
+con todas sus tildes y notas enteras sin ninguna—, así que se midió el corpus
+completo antes de tocar nada.
+
+**Y la medida trajo su propia leccion sobre qué NO tocar.** De la prosa publicada
+del atlas, lo único que se corrige es lo que el atlas ESCRIBE: doce motivos de
+vigilancia y cuatro notas de doctrina del manifiesto. **Todo lo demás se queda
+como está, y a propósito**: los titulares del Catastro Minero, los títulos de
+proyecto del PERTE y los nombres de estación de Adif vienen en mayúsculas y sin
+acentos porque así los publica su registro, y el atlas transcribe. Corregirlos
+sería mejorar la letra de una fuente, que es la forma educada de falsear una
+transcripción. Tampoco se tocan los identificadores —`energia`, `red-electrica`,
+`montes-catalogo`—, que no son palabras mal escritas sino rutas y claves.
+
+> La nota de `montes-catalogo` lleva meses diciendo, con razón, que su fuente
+> «escribe *Caceres* sin tilde». Tres notas del propio manifiesto hacían lo
+> mismo.
+
+Una sola corrección no es de tilde y va dicha aparte: la nota de
+`gas-interconexiones` llamaba **«Nomenclatur»** al callejero del IGN, que se
+llama **Nomenclátor**.
+
+### Cambiado
+
+- `manifest.json` · 16 textos — tildes en los `porque` de doce capas
+  (`agua-embalsada`, `conducciones-combustible`, `frontera-schengen`,
+  `generacion-electrica-provincia`, `idioma`, `minerales-dominios`,
+  `montes-catalogo`, `parques-eolicos`, `plantas-solares`, `puertos`,
+  `red-electrica`, `red-geodesica`) y en cuatro notas de doctrina
+  (`_vigilancia` y las de `conducciones-combustible`, `gas-interconexiones` y
+  `gas-regasificacion`). Ni una palabra cambia de significado.
+- `gas-interconexiones` · nota — «Nomenclatur» → «Nomenclátor», que es como se
+  llama el callejero del IGN.
+- `gas-interconexiones` · 6 citas — `archivo` pasa de
+  `fuentes/ign/2026/2026-08-12_geometria-interconexiones-gasistas.json` a
+  `fuentes/ign/2026/2026-08-12_ign_geometria-interconexiones-gasistas.json`.
+  **El fichero es el mismo byte a byte**; lo que gana es el emisor en el nombre,
+  que la regla del archivo pide y este era el único documento que no lo llevaba.
+  Un acta con DOS emisores —dos geometrías del IECA andaluz y cuatro del
+  Nomenclátor del IGN— se nombra por su estante: el nombre es etiqueta de
+  estante, no registro de procedencia, y la procedencia va dentro, con su emisor
+  declarado consulta a consulta.
+
+### Sin cambios
+
+Ninguna cifra, ningún vértice, ninguna fecha de dato, ninguna URL y ningún
+estado de verificación. Quien haya descargado una capa antes de hoy tiene
+exactamente los mismos datos; lo que cambia es cómo están escritas cuatro frases
+suyas y dónde apunta una ruta de archivo.
+
 ## datos-v2026.08.131 — lo que el atlas promete se lee sin saber nada del atlas
 
 **Ni un registro cambia.** Lo que cambia es que el contrato adquiere una
