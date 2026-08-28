@@ -68,6 +68,10 @@ datos/
   LICENCIA-DATOS.md  CC BY 4.0, y qué obliga (licencias contagiosas)
 ```
 
+**Las capas no viven en el árbol de arriba, y sí en las releases:** cada una
+lleva adjunto el paquete de datos de su edición. Cómo bajarlo, y cómo leer la
+edición viva ruta a ruta, más abajo.
+
 **No hay un `LICENSE` en la raíz, y es deliberado:** este repositorio no tiene
 una sola licencia. Lo que publica el atlas es CC BY 4.0
 ([`datos/LICENCIA-DATOS.md`](datos/LICENCIA-DATOS.md)); los documentos de
@@ -113,8 +117,47 @@ atlas entero.
 
 **Y hay que decir de qué responde ese DOI**, porque un DOI promete permanencia:
 lo que Zenodo archiva de cada edición es este repositorio —el **aparato de
-citación**: fuentes archivadas, procedencia, contrato y changelog—, no las capas
-de datos, que se sirven desde el visor y se descargan capa a capa.
+citación**: fuentes archivadas, procedencia, contrato y changelog—, y **no las
+capas de datos**.
+
+Las capas de una edición se descargan de **su propia release**, que lleva el
+paquete adjunto (ver abajo). Son dos cosas y conviene no confundirlas: el
+depósito conserva con qué comprobar un dato, y el adjunto, el dato mismo. Las
+dos cuelgan de una etiqueta que no se mueve jamás, así que las dos sirven para
+fijar una edición.
+
+## Cómo llevarse los datos
+
+Sin cuenta, sin clave y sin cuota. Hay dos maneras, y no son la misma.
+
+**La edición viva, ruta a ruta.** El visor las sirve estáticas y abiertas a
+cualquier origen:
+
+```
+https://atlas.eltercioviejo.com/datos/manifest.json          el catálogo — empieza por aquí
+https://atlas.eltercioviejo.com/datos/vocabularios.json      categorías, grupos y colores
+https://atlas.eltercioviejo.com/datos/capas/<id>.geojson     una capa, tal como se publica
+https://atlas.eltercioviejo.com/datos/series/<capa>/<slug>.json
+https://atlas.eltercioviejo.com/datos/conjuntos/<id>.json
+```
+
+Se baja el manifiesto y no las cuarenta capas para saber qué hay. **Qué rutas se
+prometen —y cuáles son órganos internos del visor que pueden cambiar sin
+aviso— lo fija [`CONTRATO-DATOS.md`](CONTRATO-DATOS.md)**, y las cinco de arriba
+se sirven **sin comprimir**: es una garantía escrita, y es lo que permite leerlas
+con `curl` sin banderas, desde un guion sin librerías o desde un SIG de
+escritorio.
+
+**Una edición concreta, entera.** Cada
+[release](https://github.com/ArturoVazquez/atlas-archivo/releases) de este
+repositorio lleva adjunto su **paquete de datos**, `<etiqueta>.tar.gz`: las
+capas, las series, los conjuntos y el manifiesto de esa edición, tal como se
+publicaron. **Las tienen todas**, no solo la última.
+
+Es la diferencia entre citar y reproducir. Las rutas de arriba dan siempre lo
+vigente —que mañana puede ser otra cosa—; el paquete de una release da lo que
+decía el atlas ese día, y no cambia nunca. Un análisis hecho hace un año se
+rehace con los datos de entonces.
 
 ## Si encuentras un error
 
