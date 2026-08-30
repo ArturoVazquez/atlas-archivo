@@ -37,6 +37,73 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.134 — dónde mide el tiempo el Estado
+
+**Nace `estaciones-meteorologicas`: 970 estaciones de AEMET.** Es la primera
+capa del atlas que no sale de un inventario, sino del **cruce de dos**.
+
+**AEMET publica dos redes que se solapan y no coinciden, y ninguna es «la
+red».** El inventario del Banco de Datos Nacional de Climatología lista **926**
+—las que tienen serie climatológica— y la observación convencional **854** —las
+que emiten en tiempo real—, con **810 en común**. Entra la unión, y la
+`categoria` de cada registro dice a qué red pertenece. Eso no es una etiqueta de
+conveniencia: **es un hecho que ninguna de las dos fuentes afirma por separado**
+y que solo existe al cruzarlas.
+
+**La duda se midió antes de decidir.** La observación es un flujo horario, así
+que sus 44 estaciones exclusivas podían ser un artefacto de haber mirado a una
+hora concreta. No lo son: **el 93 % de esas 44 entregó las doce lecturas de la
+ventana archivada, frente al 63 % de las 810 del núcleo** — son más regulares
+que la red principal, y ese 63 % es ruido de transmisión, no ausencia. De las
+116 que solo están en el censo se comprobó **una a una** que no emiten.
+Publicar un solo inventario habría dejado fuera Madrid-Barajas RS, Rota Base
+Naval, Igeldo y tres estaciones de Picos de Europa sabiendo dónde están.
+
+**Y la coordenada se comprueba contra sí misma.** El censo la escribe en
+grados-minutos-segundos pegados (`394924N`) y la observación en decimal, así que
+las 810 comunes contrastan la conversión contra un dato independiente **del
+mismo emisor**: peor desviación **0,0014°**, unos 155 m, que es justo lo que
+deja el redondeo al segundo de arco, y ni un formato ilegible. No es una
+comprobación de una vez: el extractor la rehace en cada pasada y se detiene si
+algún día se aparta más.
+
+### Añadido
+
+- `estaciones-meteorologicas` — **970 registros**, todos `confirmado`, en el
+  dominio de ciencia y capacidades avanzadas junto a la red sísmica y la
+  geodésica. Cada uno con su indicativo de AEMET, nombre, altitud y —cuando la
+  fuente lo da— provincia e indicativo sinóptico de la OMM. Reparto: **810** en
+  las dos redes, **116** solo climatológicas, **44** solo automáticas.
+- Tres valores de categoría en `vocabularios.json`, con sus colores medidos:
+  ninguno se confunde con otro de la capa ni bajo deuteranopía.
+- `fuentes/aemet/2026/` — los dos inventarios tal como los devolvió la API, sus
+  metadatos y la nota legal.
+
+### Huecos
+
+- **El TIPO de estación** —automática, manual, principal— y su instrumentación.
+  Ninguno de los dos inventarios lo publica. **Ojo a no leer la categoría como
+  si lo dijera:** habla de a qué RED pertenece la estación, no de qué aparato
+  es.
+- **La fecha de instalación** y **si la estación sigue activa**. Una que hubiera
+  cerrado seguiría figurando en el inventario sin decirlo.
+- **La red especial de radiación**, que es una tercera red de AEMET y se miró:
+  publica medidas por estación pero **no publica coordenadas**, así que no sitúa
+  nada y no entra.
+
+### Sin cambios
+
+Ninguna otra capa se mueve. El contrato pasa a **1.80.0** por el vocabulario
+nuevo; no nace ninguna regla `R*`.
+
+> **Sobre la licencia, que estaba mal apuntada.** El aparato de trabajo del
+> atlas daba por hecho que el conjunto de AEMET era CC BY 4.0. **No lo es:** su
+> nota legal es el **régimen general de la Ley 37/2007** —reutilización
+> comercial y no comercial permitida, citando a AEMET y sin desnaturalizar el
+> sentido, sin ShareAlike ni NonCommercial—. Es compatible con publicar el
+> derivado bajo CC BY 4.0, que es lo que esta casa ya hace con el MITECO y el
+> IGN, pero la fuente no dice lo que se creía y queda corregido.
+
 ## datos-v2026.08.133 — la energía del agua vuelve a estar al día, y se sabe por qué se había parado
 
 **La reserva de agua estaba al día desde el 26 de agosto; su energía no.** La

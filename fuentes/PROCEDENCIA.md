@@ -1693,6 +1693,62 @@ diarios del 2026-08-10 que prueba la vigencia, y un site log IGS de muestra); la
 licencia y la tabla de productos del SCNE se reutilizan de la `.26`.
 **El resto** · CHANGELOG `datos-v2026.08.62` y `.63` · §10
 
+## estaciones-meteorologicas
+
+**De dónde** · **AEMET**, y de sus **dos** inventarios abiertos, no de uno: el
+**inventario de estaciones del Banco de Datos Nacional de Climatología** —las
+que tienen serie climatológica, con indicativo, nombre, provincia, altitud e
+indicativo sinóptico de la OMM— y la **observación convencional de todas las
+estaciones**, que es la red que emite en tiempo real y publica la coordenada ya
+en grados decimales.
+**Por qué los dos, que es la decisión de esta capa** · Se solapan pero no
+coinciden. El día de la captura: 926 en el censo climatológico, 854 emitiendo,
+**810 en las dos**. Quedan 116 que solo están en el censo —Barcelona Fabra,
+Montserrat, Sabadell Aeropuerto: observación manual o de colaborador, y se
+comprobó una a una que no emiten— y **44 que solo emiten y el censo no lista**,
+entre ellas Madrid-Barajas RS, Rota Base Naval, Igeldo y tres estaciones de
+Picos de Europa. Publicar un solo inventario habría dejado fuera a unas o a
+otras sabiendo dónde están, así que entran las 970 y la categoría dice a qué red
+pertenece cada una — un hecho que ninguna de las dos fuentes afirma por
+separado.
+**Y las 44 no son un artefacto de mirar a una hora** · La observación es un
+flujo horario, así que la duda era legítima. Se midió: de esas 44, el **93 %**
+entregó las doce lecturas de la ventana archivada, frente al **63 %** de las 810
+del núcleo. Son más regulares que la red principal; ese 63 % es ruido de
+transmisión, no ausencia.
+**La coordenada se comprueba contra sí misma** · El censo la escribe en
+grados-minutos-segundos **pegados** (`394924N`) y la observación en decimal, así
+que las 810 comunes permiten contrastar la conversión contra un dato
+independiente del mismo emisor: **peor desviación 0,0014°**, unos 155 m, que es
+justo lo que deja el redondeo al segundo de arco, y ni un solo formato ilegible.
+La comprobación no se hizo una vez: se rehace en cada pasada y detiene la
+escritura si algún día se aparta más.
+**Licencia y qué obliga** · **Régimen general de la Ley 37/2007**, no una
+licencia Creative Commons: la nota legal de AEMET autoriza la reutilización
+**con fines comerciales y no comerciales**, exige citar a AEMET como fuente y
+prohíbe desnaturalizar el sentido de la información. Sin ShareAlike ni
+NonCommercial, y por tanto compatible con la publicación del atlas bajo CC BY
+4.0. Atribución en el manifiesto: «Agencia Estatal de Meteorología (AEMET)».
+**Qué hay que saber** · **La fuente pide una llave personal que caduca.** La API
+va con un token JWT que AEMET manda por correo tras un formulario con reCAPTCHA
+—no lo puede pedir un programa— y **vive 100 días**. Por eso esta capa se revisa
+cada 90 y no cada 180 como sus hermanas: una capa que no se puede refrescar
+envejece sin avisar. **Sin la llave, la API contesta 200 con el cuerpo vacío**,
+que es la peor forma de negar porque parece que no hay datos; con una llave
+inválida sí da un 401 honesto.
+**Lo que ninguna de las dos fuentes da, y por eso no está** · El **tipo** de
+estación (automática, manual, principal) y su instrumentación; la **fecha de
+instalación**; y si la estación **sigue activa**. Ojo a no leer la categoría como
+si dijera lo primero: habla de a qué RED pertenece la estación, no de qué
+aparato es. Una estación que hubiera cerrado seguiría figurando en el inventario
+sin decirlo.
+**Y una tercera red que se miró y no sirve** · La *red especial de radiación*
+publica medidas horarias por estación pero **no publica coordenadas**: no sitúa
+nada, así que no entra.
+**Alcance** · Las **970** estaciones que los dos inventarios de AEMET nombran y
+sitúan, el 100 % de lo que publican. Ninguna cae fuera del recuadro del
+territorio, ningún indicativo se repite y 54 provincias tienen al menos una.
+
 ## red-sismica
 
 **De dónde** · **IGN**, servicio **FDSN** de estaciones de la red sísmica `ES`
