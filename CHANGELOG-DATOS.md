@@ -37,6 +37,75 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.133 — la energía del agua vuelve a estar al día, y se sabe por qué se había parado
+
+**La reserva de agua estaba al día desde el 26 de agosto; su energía no.** La
+capa de embalses sirve el parte del 25 de agosto, pero las cifras de energía
+—que el Boletín Hidrológico publica solo en el resumen semanal en PDF, y no en
+ninguna base histórica— se habían quedado dos partes atrás, en el del 11. La
+edición `.123` lo declaró como hueco en voz alta en vez de callarlo. Este hueco
+se cierra.
+
+**Por qué se había parado, que es lo que faltaba por saber.** La ruta directa
+del PDF dejó de responder y se dio por caducada: los cuatro intentos de agosto
+daban 404, incluido el de un boletín que sí estaba archivado, así que la
+conclusión razonable fue que el patrón había cambiado. **No había cambiado.** El
+fichero sigue exactamente donde estaba; lo que pasa es que el Ministerio dejó de
+servirlo directo y ahora lo entrega a través de un cargador
+(`accion/cargador_archivo.htm?file=…&mimetype=application/pdf`), que responde a
+una petición simple sin sesión ni navegador. Un negativo bien anotado tenía la
+puerta exacta apuntada, y por eso se ha podido volver a llamar a ella.
+
+**La transcripción se comprobó contra lo ya publicado antes de creerse nada:**
+leído el PDF del boletín 32 con el mismo procedimiento, las ocho cifras salen
+idénticas a las que esta capa ya publicaba desde la `.50`. Y de paso el control
+cazó la trampa del documento: la página de totales trae dos filas
+«CAPACIDAD TOTAL», la del agua embalsada en hm³ (56.043) y la de la energía en
+GWh (23.011). Tomar la primera habría publicado hectómetros cúbicos como
+gigavatios hora.
+
+### Cambiado
+
+- `agua-embalsada` · conjunto — la energía pasa del **Boletín Hidrológico
+  Semanal n.º 32** (parte del 11 de agosto) al **n.º 34** (parte del 25 de
+  agosto), el mismo al que la capa ya iba:
+  - energía almacenada — 13.983 → **13.094 GWh** sobre la misma capacidad de
+    23.011 GWh, que no cambia: del 60,8 % al 56,9 % de llenado energético.
+  - producción de la semana — 474,4 → **470,6 GWh**.
+  - producción acumulada del año — 25.903 → **26.902 GWh**, frente a los
+    **28.515** del mismo periodo del año anterior (eran 27.404 en el parte
+    anterior): la diferencia interanual se mantiene en torno a los −1.600 GWh.
+  - periodo del dato — del 3–9 de agosto al **17–23 de agosto**.
+- `puertos` · nota de capa — se declara una rareza de la fuente que se
+  investigó y no se corrige. El campo con el nombre del puerto se contradice
+  consigo mismo en las tildes: cuatro de sus 43 valores pierden la que les toca
+  («Marin y Ria de Pontevedra», «Gijon-Musel», «Malaga», «San Sebastian de la
+  Gomera») mientras otros doce sí la llevan («Almería», «Alcúdia», «A Coruña»),
+  así que no es la codificación del fichero sino el dato. En tres de esos cuatro
+  la fuente se contradice **dentro de un mismo registro**: el nombre de la
+  autoridad portuaria acentúa lo que el del puerto no. Los dos van transcritos,
+  cada uno a su campo. Enmendarle la ortografía a un dato transcrito es
+  cambiarlo sin decirlo.
+
+### Añadido
+
+- `fuentes/miteco/2026/` — los resúmenes semanales **n.º 33 y n.º 34** de 2026.
+  Se acumulan en vez de reemplazar al anterior: cada semana trae una energía que
+  ningún otro documento repite, y el n.º 33 se archiva aunque hoy no sostenga
+  ninguna cifra publicada, porque su semana no está en ninguna otra parte.
+
+### Huecos
+
+- **La energía sigue siendo semanal y de una sola semana.** El Boletín la
+  publica solo en el resumen de cada martes, así que 2.016 de las 2.017 páginas
+  de parte no la llevan, y no es un olvido: se dice en cada una.
+- **El parte n.º 35 aún no existe.** Se comprobó el 30 de agosto: su ruta
+  responde 200 con el cuerpo vacío, que es la forma que tiene esta sede de decir
+  «todavía no». Sale el martes.
+- Sigue abierto todo lo que la `.123` ya declaraba de esta capa: los 27 embalses
+  que ya no informan por separado conservan su fecha vieja, y los GWh no se
+  convierten en hm³ porque haría falta un dato que el Boletín no publica.
+
 ## datos-v2026.08.132 — el atlas se aplica la ortografía que le exige a sus fuentes
 
 **Ni un registro, ni una geometría, ni una cifra cambian.** Cambian dieciséis
