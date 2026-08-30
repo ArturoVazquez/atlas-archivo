@@ -37,6 +37,80 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.135 — un aterrizaje sin nombre lo gana desde el expediente de otro
+
+**El hueco más citado de esta casa se estrecha, y no por donde se esperaba.**
+El aterrizaje de la Virgen del Mar (Santander) llevaba desde su alta declarando
+que ningún acto bautizaba a su cable. Se llama **Anjana**, y el nombre no ha
+salido de la lista que la Ley 11/2022 obliga al Estado a tener: ha salido del
+**proyecto que Google presentó para instalar OTRO cable en la misma playa**.
+
+**Cómo.** El 28 de agosto el BOE publicó la información pública de la solicitud
+de concesión del cable **SOL** en Santander. Su expediente trae 41 MB de
+documentación técnica, y el proyecto básico, al describir la infraestructura que
+piensa reutilizar, dice: «el BMH se encuentra en el parking de la playa Virgen
+del Mar (Latitud N43 28.6140 y Longitud W003 52.6230), ya que fue construido en
+2024 para permitir la conexión a tierra del cable de fibra óptica **Anjana**».
+
+**La identificación junta dos actos y se escribe entera para que se pueda
+discutir:** la concesión de esa ficha, otorgada por Orden Ministerial de 30 de
+julio de 2024 para un cable con inicio en esa playa, y este documento, que dice
+que el único amarre que allí existe se construyó en 2024 y es de Anjana. Encajan
+por lugar, año y objeto. Si algún día apareciera un segundo amarre, esa unión
+sería lo primero que habría que revisar.
+
+**No es la primera vez, y por eso el esquema lo dice ahora.** El nombre de Grace
+Hopper también constaba solo en el proyecto que acompañaba a su expediente, no
+en el acto. Que un aterrizaje sin nombre lo gane años después y desde el
+expediente de un tercero es el curso normal de esta capa.
+
+**Y el hueco NO se cierra: se estrecha.** Sigue sin haber fuente primaria que
+diga adónde va Anjana, y el registro sigue en `parcial`. Lo que este episodio
+demuestra es lo que la ficha llevaba diciendo desde el principio: el Estado
+tiene el dato desde 2022 y no lo publica — tanto, que el nombre acabó
+sabiéndose por el proyecto de un competidor.
+
+### Añadido
+
+- `cables-submarinos:sol-virgen-del-mar` — el aterrizaje **solicitado** para el
+  cable **SOL**: unos 7.500 km entre los Estados Unidos y España con ramales a
+  Bermudas y las Azores, de los que **858,85 km** cruzan aguas españolas.
+  Promotor **Google** por su filial **Cardinal Fish Infrastructure, S.L.**,
+  tendido por SubCom. Fase **en tramitación**: lo publicado es la apertura del
+  plazo de alegaciones, del 31 de agosto al 28 de septiembre de 2026, no una
+  concesión.
+- Tres documentos en `fuentes/` — el anuncio del BOE, la página del expediente
+  y el **proyecto básico** completo, que es el que sostiene tanto el nombre de
+  Anjana como las dos coordenadas.
+
+### Cambiado
+
+- `cables-submarinos:virgen-del-mar-santander` pasa a llamarse **«Anjana —
+  Playa de la Virgen del Mar (Santander)»** y estrena el campo `sistema`, que
+  hasta hoy estaba vacío en este registro por falta de acto.
+- **Su coordenada deja de ser una aproximación.** Venía del Nomenclátor del IGN
+  —que no recoge esa playa, así que se usaba la ISLA que la delimita— y pasa a
+  la posición exacta de la arqueta por donde el cable entra en tierra, unos
+  **250 m** al sur. La precisión sube de `paraje` a `exacta`.
+- Los dos registros comparten punto **a propósito**: comparten arqueta, igual
+  que Grace Hopper y Marea en Sopela.
+- La descripción del campo `sistema` en el esquema de la capa ya no pone de
+  ejemplo un hueco que acaba de cerrarse.
+
+### Huecos
+
+- **Adónde va Anjana.** Ninguna fuente primaria lo dice. El hueco conserva
+  entera su explicación: la Ley 11/2022 obliga a comunicar al Ministerio el
+  trazado y el punto de enganche, esa lista existe y no se publica, y el
+  reglamento que el artículo 6.10 mandaba aprobar en tres meses no consta en el
+  BOE cuatro años después.
+
+### Sin cambios
+
+Ninguna otra capa se mueve, y el contrato se queda en **1.80.0**: no hay
+vocabulario nuevo ni regla nueva. El campo `sistema` y la fase `tramitacion` ya
+existían y estaban esperando un caso como este.
+
 ## datos-v2026.08.134 — dónde mide el tiempo el Estado
 
 **Nace `estaciones-meteorologicas`: 970 estaciones de AEMET.** Es la primera

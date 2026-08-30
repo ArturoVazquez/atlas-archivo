@@ -1091,10 +1091,39 @@ el que cruza una ría. Y un cable que atraviesa aguas españolas **sin aterrizar
 aquí no entra**: el Europe India Gateway toca tierra en Gibraltar — se archiva,
 se cita y se queda fuera.
 **El barrido histórico, y por qué se puede creer su negativo** *(2026-08-21, release `.114`)* · Los otorgamientos antiguos **no salen por búsqueda web**, y eso tenía el frente parado como «hay que mirarlo con navegador». No hacía falta: **la API de sumarios del BOE —la misma que usa el vigía— llega hasta 1997**. Se barrieron **7.015 sumarios entre 1994 y 2016** casando el título, y **antes de creerle a un cero se validó el método** sobre 2017, donde devuelve el otorgamiento de Marea que ya estaba en la capa. De ahí salió el aterrizaje de **Canalink África en Granadilla** (BOE-B-2015-789, concesión de 2014, veinticinco años), segundo en el mismo puerto y con otra concesionaria. Y dos veredictos: **Columbus-III y Atlantis-2 en Conil no están** en once años de sumarios —si se publicaron, no con ese nombre en el título— y **el EIG no es de esta capa**: su DIA de 2010 describe un cable que cruza aguas españolas sin amarrar en España (sus puntos de conexión son Reino Unido, Portugal, Gibraltar, Mónaco, Francia…). El rastro de **Melilla–Península** quedó a la vista en contratos de 2010, 2011 y 2015: nombran el cable y sus extremos, no sitúan el amarre.
-**Huecos** · 2: **el acto autoriza una ocupación, no bautiza un cable.** Los
-expedientes de Santander y Sagunto no nombran sistema ni destino. La Ley
-11/2022 obliga a comunicarlos al Ministerio, pero **el Ministerio no publica la
-lista**.
+**Huecos** · **el acto autoriza una ocupación, no bautiza un cable.** El
+expediente de Sagunto no nombra sistema ni destino; el de Santander tampoco, y
+sin embargo su cable ya tiene nombre — ver abajo. La Ley 11/2022 obliga a
+comunicarlos al Ministerio, pero **el Ministerio no publica la lista**.
+**Un aterrizaje gana su nombre desde el expediente de OTRO cable**
+*(2026-08-30, edición `.135`)* · El aterrizaje de la **Virgen del Mar**
+(Santander) llevaba desde su alta declarando que ningún acto bautizaba a su
+cable. Se llama **Anjana**, y el nombre no ha salido de la lista que la Ley
+11/2022 obliga al Estado a tener: ha salido del **proyecto básico del cable
+SOL**, que Google presentó en agosto de 2026 para aterrizar en esa misma playa
+y que, al describir la infraestructura que va a reutilizar, dice que la arqueta
+«fue construido en 2024 para permitir la conexión a tierra del cable de fibra
+óptica Anjana». *Cómo se identifica, dicho entero para que se pueda discutir:*
+la unión junta la concesión de esa ficha —Orden Ministerial de 30 de julio de
+2024, para un cable con inicio en esa playa— con ese documento, que dice que el
+único amarre existente allí se construyó en 2024 y es de Anjana. Encajan por
+lugar, año y objeto, y el proyecto no menciona un segundo amarre; si apareciera,
+la unión sería lo primero que revisar. *No es la primera vez:* el nombre de
+Grace Hopper también constaba solo en el proyecto que acompañaba a su
+expediente. **Y el hueco no se cierra, se estrecha**: adónde va Anjana sigue sin
+tener fuente primaria, y el registro sigue `parcial`. *Y el mismo documento
+mejora la geometría:* publica la posición exacta de la arqueta, así que el punto
+deja de aproximarse por el topónimo de la ISLA de la Virgen del Mar —el
+Nomenclátor no recoge la playa— y se mueve unos 250 m, de `paraje` a `exacta`.
+**El aterrizaje del cable SOL** *(2026-08-30, edición `.135`)* · Entra
+**solicitado, no concedido**: lo que el BOE publicó el 28 de agosto es la
+apertura del plazo de alegaciones (expediente CNC02/26/39/0002, del 31 de agosto
+al 28 de septiembre de 2026), así que su fase es **en tramitación**. Unos 7.500
+km entre los Estados Unidos y España, con ramales a Bermudas y las Azores, de
+los que **858,85 km** cruzan aguas españolas. Promotor **Google** por su filial
+**Cardinal Fish Infrastructure, S.L.**; tendido de SubCom, permisos de AECOM.
+Comparte arqueta —y por tanto coordenada— con Anjana, igual que Grace Hopper y
+Marea comparten la suya en Sopela. Del trazado no se publica ni un metro.
 **Ojo (desde 2026-08-09)** · **En Canarias el DPM-T lo tramita el Gobierno
 canario**, no las Demarcaciones estatales: sus anuncios salen en el **BOC** sin
 código CNC, y la documentación vive en
