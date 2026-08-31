@@ -1,0 +1,86 @@
+{
+ "_": "Consultas puntuales a CartoCiudad (IGN/CNIG) del 2026-08-31 para situar tres centros de datos de la Comunidad de Madrid por la dirección que da su acto.",
+ "consultas": [
+  {
+   "q": "Calle Nevero 2, Alcobendas",
+   "respuesta": {
+    "id": "13.PV.MUN_280060236304",
+    "province": "Madrid",
+    "provinceCode": "28",
+    "comunidadAutonoma": "Comunidad de Madrid",
+    "comunidadAutonomaCode": "13",
+    "muni": "Alcobendas",
+    "muniCode": "28006",
+    "type": "portal",
+    "address": "NEVERO",
+    "postalCode": "28108",
+    "poblacion": "Alcobendas",
+    "geom": "POINT(-3.65961789798462 40.5354554230396)",
+    "tip_via": "CALLE",
+    "lat": 40.53545542303959,
+    "lng": -3.659617897984622,
+    "portalNumber": 2,
+    "noNumber": false,
+    "stateMsg": "",
+    "extension": null,
+    "state": 0,
+    "refCatastral": "4175302VK4847N",
+    "countryCode": "011"
+   }
+  },
+  {
+   "q": "Calle Pedro Duque, Daganzo de Arriba",
+   "respuesta": {
+    "id": "280530000133",
+    "province": "Madrid",
+    "provinceCode": "28",
+    "comunidadAutonoma": "Comunidad de Madrid",
+    "comunidadAutonomaCode": "13",
+    "muni": "Daganzo de Arriba",
+    "muniCode": "28053",
+    "type": "callejero",
+    "address": "PEDRO DUQUE",
+    "postalCode": "28814 28864",
+    "poblacion": "Ajalvir,Daganzo de Arriba",
+    "geom": "MULTILINESTRING((-3.46346349099064 40.536548190697,-3.4596964181957 40.5363198317643),(-3.46910134899969 40.5397561009842,-3.46846646599044 40.5394123736965,-3.46719118399058 40.5377009786967,-3.46648676399057 40.536772933697,-3.4649792599906 40.5366235156969,-3.46346349099064 40.536548190697))",
+    "tip_via": "CALLE",
+    "lat": 40.537207102674024,
+    "lng": -3.4648091526880482,
+    "portalNumber": null,
+    "noNumber": null,
+    "stateMsg": "",
+    "extension": null,
+    "state": 0,
+    "refCatastral": null,
+    "countryCode": "011"
+   }
+  },
+  {
+   "q": "Ronda de Valdecarrizo 12, Tres Cantos",
+   "respuesta": {
+    "id": "13.28.G28_289030629905",
+    "province": "Madrid",
+    "provinceCode": "28",
+    "comunidadAutonoma": "Comunidad de Madrid",
+    "comunidadAutonomaCode": "13",
+    "muni": "Tres Cantos",
+    "muniCode": "28903",
+    "type": "portal",
+    "address": "VALDECARRIZO",
+    "postalCode": "28760",
+    "poblacion": "Tres Cantos",
+    "geom": "POINT(-3.70283211443604 40.6171920551462)",
+    "tip_via": "RONDA",
+    "lat": 40.61719205514622,
+    "lng": -3.7028321144360445,
+    "portalNumber": 12,
+    "noNumber": false,
+    "stateMsg": "",
+    "extension": null,
+    "state": 0,
+    "countryCode": "011",
+    "refCatastral": "1264407VK4906N"
+   }
+  }
+ ]
+}

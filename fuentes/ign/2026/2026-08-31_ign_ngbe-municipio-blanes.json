@@ -1,0 +1,110 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo_ngbe": "4.2.2",
+    "fuente": "MITMA.IGN.BTN25",
+    "fecha": "2023-07-13",
+    "etiqueta": "Blanes",
+    "tipo": "Paraje",
+    "tiponombre": "identificador_geografico"
+   },
+   "id": "22699",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.05590910299992,
+     43.2473144430001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo_ngbe": "1.3",
+    "fuente": "MITMA.IGN.NGMEP",
+    "fecha": "2025-07-06",
+    "etiqueta": "Blanes",
+    "tipo": "Municipio",
+    "tiponombre": "identificador_geografico"
+   },
+   "id": "2707393",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.791996683,
+     41.67411132
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo_ngbe": "2.1.3",
+    "fuente": "MITMA.IGN.NGMEP",
+    "fecha": "2025-07-06",
+    "etiqueta": "Blanes",
+    "tipo": "Capital de municipio",
+    "tiponombre": "identificador_geografico"
+   },
+   "id": "2811192",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.791996683,
+     41.67411132
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo_ngbe": "2.1.9",
+    "fuente": "MITMA.IGN.NGMEP",
+    "fecha": "2025-07-06",
+    "etiqueta": "Blanes",
+    "tipo": "Entidad singular",
+    "tiponombre": "identificador_geografico"
+   },
+   "id": "2833712",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.791996683,
+     41.67411132
+    ]
+   }
+  }
+ ],
+ "numberMatched": 4,
+ "numberReturned": 4,
+ "links": [
+  {
+   "type": "application/geo+json",
+   "rel": "self",
+   "title": "This document as GeoJSON",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Blanes&limit=50"
+  },
+  {
+   "rel": "alternate",
+   "type": "application/ld+json",
+   "title": "This document as RDF (JSON-LD)",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Blanes&limit=50"
+  },
+  {
+   "type": "text/html",
+   "rel": "alternate",
+   "title": "This document as HTML",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Blanes&limit=50"
+  },
+  {
+   "type": "application/json",
+   "title": "GN Lugar nombrado",
+   "rel": "collection",
+   "href": "https://api-features.ign.es/collections/namedplace"
+  }
+ ],
+ "timeStamp": "2026-08-31T19:11:08.642543Z"
+}

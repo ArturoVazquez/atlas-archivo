@@ -473,7 +473,8 @@ explotación de San Pedro (2022) · **MCT** (organismo autónomo, MITECO), las
 fichas oficiales de sus cuatro plantas — el mismo trato que la ficha de
 centrales de MITECO en `nuclear` · **IGN**, Nomenclátor.
 **Licencia y qué obliga** · Textos legales sin dueño (art. 13 TRLPI); las
-fichas de la MCT, Ley 37/2007; IGN, fórmula NGBE de la Orden FOM/2807/2015.
+fichas de la MCT, Ley 37/2007; IGN, fórmula NGBE de la Orden FOM/2807/2015;
+DOGC, Ley 37/2007.
 **Qué hay que saber** · **Dos perímetros, los dos de acto**: las seis
 encomendadas a Acuamed (la orden) y las cuatro que la MCT construye y explota
 (sus DIA y sus fichas). Las de la MCT entran con **mejor geometría**: el
@@ -482,6 +483,27 @@ al topónimo del paraje de Agua Amarga que la propia MCT declara. **Cada
 capacidad retrata el momento de su acto y va en la unidad de su acto**:
 `capacidad_hm3_anio` o `capacidad_m3_dia`, sin conversión — convertir exigiría
 suponer días de operación.
+**Cataluña entra entera, y la trajo la vigilancia** *(2026-08-31, release
+`.137`)* · Cuatro plantas de golpe, y ninguna se buscó: las sacó el barrido
+hacia atrás del diario de la Generalitat el día que ese boletín entró en la
+guardia semanal. **Dos operan y dos están proyectadas**, y con ellas la capa
+estrena algo que no tenía: **registros en fase de tramitación**. Hasta hoy todas
+sus plantas estaban en producción, porque todas venían de actos que reconocían
+una explotación; una declaración de impacto ambiental retrata un momento
+anterior, y el filtro «en explotación» debe dejarlas fuera.
+**El ITAM del delta de la Tordera es el caso raro de la capa**: opera desde 2003
+y **no lo sostiene ningún acto suyo**, sino la declaración de impacto ambiental
+de la planta que se va a construir a su lado, que lo describe en sus
+antecedentes con sus fechas, sus caudales y sus dos promotores —autonómico el
+original, estatal la ampliación—. Es fuente primaria hablando de él, no un acto
+propio, y por eso va como `parcial` con su hueco escrito. **La del Llobregat
+entra por una puerta parecida y aún más estrecha**: un anuncio de obras de
+protección costera de la tubería de su captación, que la nombra, la sitúa por
+municipio y dice quién la explota, pero no publica ni capacidad ni año de
+servicio. **Ninguna de las cuatro sube de `municipio`**: los actos catalanes
+describen las conducciones metro a metro y no dan una sola coordenada de la
+planta, y el Nomenclátor no nombra ninguna —comprobado por etiqueta y por
+recuadro, que un cero por etiqueta no prueba ausencia.
 **Canarias, y una corrección de doctrina** *(2026-08-21, release `.116`)* ·
 La capa entra en el archipiélago con cuatro fichas —las tres del Cabildo
 Insular de El Hierro (Los Cangrejos, El Golfo, La Restinga) y la Maspalomas I
@@ -1221,12 +1243,40 @@ información pública de la acometida estatal (BOE-B-2026-24883) ·
 **Generalitat de Catalunya (DOGC)**, anuncio de información pública de la
 solicitud de autorización ambiental con declaración de impacto ambiental del
 data center de Parc Logístic de la Zona Franca, S.A., en Barcelona (DOGC de
-19/05/2026) · **IGN**, Nomenclátor.
+19/05/2026) · **Comunidad de Madrid (BOCM)**, tres actos: las dos
+autorizaciones ambientales integradas sometidas a información pública —CyrusOne
+Madrid 1 en Alcobendas (BOCM n.º 98, de 27/04/2026) y Cignus P2DC en Daganzo de
+Arriba (BOCM n.º 87, de 14/04/2026)— y la ocupación de vías pecuarias para la
+acometida del centro de Tres Cantos (BOCM de 29/04/2026) · **IGN**, Nomenclátor
+y CartoCiudad.
 **Licencia** · Ley 37/2007 (BOA, DOCM, DOGC, BOE) · IGN.
 **Qué hay que saber** · **Entra el centro que un acto administrativo nombra, y
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
 mercado son de la patronal. De ahí que sean 8 y no 60.
+**Madrid, tres de golpe, y una vara que se afina** *(2026-08-31, release
+`.137`)* · Los sacó el barrido hacia atrás del BOCM: 65.347 actos de 956
+sumarios, entre enero de 2023 y agosto de 2026. **Dos entran por su propio
+permiso** —la autorización ambiental integrada, que es el acto más fuerte que
+esta capa puede tener— y **una entra por el acto de su acometida eléctrica**, y
+eso pide explicación.
+La vara que esta capa se puso decía «la eléctrica sola no sitúa el centro», y
+por eso sigue fuera un expediente de Villalbilla cuyo acto es el de una
+subestación y nombra el centro en la finalidad sin decir dónde está. El de Tres
+Cantos es otra cosa: el acto da **calle y número**, que es más de lo que dan la
+mitad de los registros de esta capa. **La vara no excluye los actos eléctricos:
+excluye los que no sitúan** — y así queda escrita.
+**Con la misma medida, un cuarto NO entra.** En Algete hay un centro de datos
+que dos actos distintos dan por en construcción en el «Polígono Industrial SAU-8
+Los Ardales», pero **ninguno dice en qué término municipal está**: los
+municipios que enumeran son los que cruza la línea eléctrica. Y el único
+topónimo «Los Ardales» del Nomenclátor cae en **San Agustín del Guadalix**,
+comprobado contrastando la coordenada contra los municipios del IGN. Registrarlo
+habría sido elegir un municipio por parecido.
+**Los dos con dirección de calle suben a `paraje`** con el portal de
+CartoCiudad, y el de Daganzo se queda en el vial que el acto nombra porque su
+emplazamiento va por referencia catastral y este atlas no la ha resuelto.
+Ninguno de los tres publica potencia informática: sus actos no la dan.
 **Qué se añadió** *(2026-08-31, release `.136`)* · **El primero de Cataluña, y
 lo encontró la vigilancia y no una búsqueda.** El diario de la Generalitat entró
 ese día en la guardia semanal de boletines autonómicos, y un barrido hacia atrás

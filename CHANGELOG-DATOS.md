@@ -37,6 +37,95 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.137 — siete registros que nadie buscó
+
+**Los dos barridos que ayer parecían caros costaron veinticuatro minutos.** El
+diario de la Generalitat y el de la Comunidad de Madrid entraron hacia atrás
+hasta enero de 2023: **139.818 actos leídos en 1.808 sumarios**, y de ahí salen
+las **cuatro primeras desaladoras catalanas** del atlas y **tres centros de
+datos de Madrid**. Ninguno se buscó: todos estaban en el camino de una guardia
+que ya corre sola los miércoles.
+
+**La cifra que casi lo impide era mía y era falsa.** El parte decía que barrer
+el BOCM costaba ocho horas y 3 GB. Medido: **0,91 s por día**. El error venía de
+cronometrar el barrido con el lector de sumarios averiado, que casaba 3.570
+títulos diarios en vez de 84. Una medida tomada sobre un sistema roto mide la
+avería, no el sistema — y esa cifra, escrita, habría disuadido para siempre de
+un trabajo de veinte minutos.
+
+### Añadido
+
+- **`desaladoras:tordera-1`** — el **ITAM del delta de la Tordera**, en Blanes:
+  la primera desaladora de Cataluña, **en servicio desde 2003** y con **20
+  hm³/año** desde su ampliación de 2010-2011. Es el registro más raro de la
+  capa, porque **no lo sostiene ningún acto suyo**: lo acredita la declaración
+  de impacto ambiental de la planta que se va a construir a su lado, que lo
+  describe en sus antecedentes con sus fechas, sus caudales y sus dos
+  promotores — la Agencia Catalana del Agua el original, ACUAMED la ampliación.
+- **`desaladoras:tordera-2`** — la segunda planta del mismo delta, **60 hm³/año
+  (180.000 m³/día)**, con declaración de impacto ambiental de julio de 2023 y
+  **sin construir**. Su parcela mide 67.100 m² y está pegada a la primera. Con
+  las dos en marcha, el delta produciría hasta 80 hm³/año.
+- **`desaladoras:foix`** — en **Cubelles**, **30 hm³/año** finales y 20 en una
+  primera fase, con declaración de impacto ambiental de junio de 2025. Su
+  captación suma 5.068 metros y su emisario 3.738, la mitad de cada uno bajo el
+  mar.
+- **`desaladoras:llobregat`** — en **El Prat de Llobregat**, explotada por ATL.
+  Entra por la puerta más estrecha de las cuatro: un anuncio de obras de
+  protección costera de la tubería de su captación, que la nombra, la sitúa y
+  dice quién la explota, pero no publica ni capacidad ni año de servicio.
+- **`centros-datos:cyrusone-alcobendas`** — centro de datos de **CyrusOne Madrid
+  1, S.L.U.** en la **calle Nevero, 2, de Valdelacasa (Alcobendas)**, por la
+  información pública de su **autorización ambiental integrada**, que es el acto
+  más fuerte que esta capa puede tener: el permiso único que exige la ley de
+  prevención y control integrados de la contaminación.
+- **`centros-datos:cignus-daganzo`** — centro de datos de **Cignus P2DC, S.L.**
+  en **Daganzo de Arriba**, sobre cinco parcelas del polígono 1 entre la calle
+  Pedro Duque y la M-100. Su autorización ambiental integrada va **con
+  evaluación de impacto ambiental**, un escalón más que la de Alcobendas.
+- **`centros-datos:quetta-tres-cantos`** — nave destinada a centro de datos en
+  la **Ronda de Valdecarrizo, 12 (Tres Cantos)**, promovida por **Quetta Tres
+  Cantos, S.L.** Entra por el acto de su acometida: la ocupación de tres vías
+  pecuarias para tender la línea de 20 kV que ha de alimentarla.
+
+### Corregido
+
+- **`centros-datos`** — la vara de la `.89` se afina sin cambiar de sitio. Decía
+  «la eléctrica sola no sitúa el centro», y se estaba leyendo como si excluyera
+  todo acto eléctrico. **Excluye los que no sitúan**: el de Tres Cantos da calle
+  y número, que es más de lo que dan la mitad de los registros de esta capa; el
+  de Villalbilla sigue fuera porque su acto es el de una subestación y nombra el
+  centro sin decir dónde está.
+- **`desaladoras`** — la capa estrena **registros que no están en explotación**.
+  Hasta hoy sus veintitrés plantas iban todas en `produccion`, no por doctrina
+  sino porque todos sus actos reconocían una explotación en marcha. Una
+  declaración de impacto ambiental retrata un momento anterior, y el filtro «en
+  explotación» tiene que dejar fuera a Tordera 2 y al Foix. El contrato lo dice
+  ahora en su §6.5, que hablaba de «las seis» cuando ya eran veintitrés.
+
+### Huecos
+
+- **Un centro de datos en Algete que NO entra, y con la medida hecha.** Dos
+  actos distintos lo dan por en construcción en el «Polígono Industrial SAU-8
+  Los Ardales» y uno nombra a su promotora, Data4 Infrastructure Spain, S.L.U.
+  Pero **ninguno dice en qué término municipal está**: los municipios que
+  enumeran son los que cruza su línea eléctrica. Y el único topónimo «Los
+  Ardales» del Nomenclátor cae en **San Agustín del Guadalix**, comprobado
+  contrastando la coordenada contra los municipios del IGN. Registrarlo habría
+  sido elegir municipio por parecido de nombre.
+- **Ninguno de los tres centros de Madrid publica potencia informática.** Sus
+  actos no la dan: la documentación técnica que someten a información pública no
+  se publica en el boletín, sino en el Portal de Transparencia de la Comunidad.
+- **Las dos declaraciones de impacto ambiental propias del ITAM de la Tordera**
+  —DOGC de 2001 y BOE de 2005— no se han localizado ni archivado. Lo que esta
+  ficha publica sale de cómo las resume la declaración de su hermana.
+- **La capacidad y el año de servicio de la desaladora del Llobregat**: ningún
+  acto localizado los publica.
+- **Las cinco parcelas catastrales del centro de Daganzo** no se han resuelto a
+  geometría, así que su punto es el de una de las dos vías que las delimitan.
+
+---
+
 ## datos-v2026.08.136 — el primer centro de datos catalán, y lo trajo la guardia
 
 **Cataluña era el hueco grande de esta capa y llevaba meses buscándose a mano.**

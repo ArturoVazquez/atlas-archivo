@@ -1,0 +1,91 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Municipio",
+    "codigo_ngbe": "1.3",
+    "fuente": "MITMA.IGN.NGMEP",
+    "etiqueta": "El Prat de Llobregat",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2025-07-06"
+   },
+   "id": "2705961",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.093040709,
+     41.33078783
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Capital de municipio",
+    "codigo_ngbe": "2.1.3",
+    "fuente": "MITMA.IGN.NGMEP",
+    "etiqueta": "El Prat de Llobregat",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2025-07-06"
+   },
+   "id": "2809749",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.093040709,
+     41.33078783
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Entidad singular",
+    "codigo_ngbe": "2.1.9",
+    "fuente": "MITMA.IGN.NGMEP",
+    "etiqueta": "El Prat de Llobregat",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2025-07-06"
+   },
+   "id": "2819945",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.093040709,
+     41.33078783
+    ]
+   }
+  }
+ ],
+ "numberMatched": 3,
+ "numberReturned": 3,
+ "links": [
+  {
+   "type": "application/geo+json",
+   "rel": "self",
+   "title": "This document as GeoJSON",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=El%20Prat%20de%20Llobregat&limit=50"
+  },
+  {
+   "rel": "alternate",
+   "type": "application/ld+json",
+   "title": "This document as RDF (JSON-LD)",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=El%20Prat%20de%20Llobregat&limit=50"
+  },
+  {
+   "type": "text/html",
+   "rel": "alternate",
+   "title": "This document as HTML",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=El%20Prat%20de%20Llobregat&limit=50"
+  },
+  {
+   "type": "application/json",
+   "title": "GN Lugar nombrado",
+   "rel": "collection",
+   "href": "https://api-features.ign.es/collections/namedplace"
+  }
+ ],
+ "timeStamp": "2026-08-31T19:11:08.826689Z"
+}
