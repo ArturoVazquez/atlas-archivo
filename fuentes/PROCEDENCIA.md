@@ -471,10 +471,13 @@ las seis de Acuamed, con su demarcación), la DIA o el informe de ampliación de
 cada planta, y para las de la Mancomunidad sus DIA de 2005 y el contrato de
 explotación de San Pedro (2022) · **MCT** (organismo autónomo, MITECO), las
 fichas oficiales de sus cuatro plantas — el mismo trato que la ficha de
-centrales de MITECO en `nuclear` · **IGN**, Nomenclátor.
+centrales de MITECO en `nuclear` · **Consejo Insular de Aguas de Fuerteventura
+(BOC)**, la información pública del nuevo módulo de desalinización del centro de
+producción industrial de agua de Gran Tarajal (BOC n.º 1, de 02/01/2026) ·
+**IGN**, Nomenclátor.
 **Licencia y qué obliga** · Textos legales sin dueño (art. 13 TRLPI); las
 fichas de la MCT, Ley 37/2007; IGN, fórmula NGBE de la Orden FOM/2807/2015;
-DOGC, Ley 37/2007.
+DOGC y BOC, Ley 37/2007.
 **Qué hay que saber** · **Dos perímetros, los dos de acto**: las seis
 encomendadas a Acuamed (la orden) y las cuatro que la MCT construye y explota
 (sus DIA y sus fichas). Las de la MCT entran con **mejor geometría**: el
@@ -483,6 +486,22 @@ al topónimo del paraje de Agua Amarga que la propia MCT declara. **Cada
 capacidad retrata el momento de su acto y va en la unidad de su acto**:
 `capacidad_hm3_anio` o `capacidad_m3_dia`, sin conversión — convertir exigiría
 suponer días de operación.
+**La primera de Fuerteventura, y la sacó un vigía arreglado** *(2026-08-31,
+release `.139`)* · La **EDAM de Gran Tarajal**, en Tuineje, que explota el
+Consorcio de Abastecimiento de Aguas a Fuerteventura. Su acto no la crea: somete
+a información pública un módulo nuevo de ósmosis inversa de 2.500 m³/día
+destinado a riego agrícola, y al hacerlo acredita que la planta existe, dónde
+está y quién la explota — el mismo camino por el que entró la del Llobregat, y
+por eso su fase va como parcial.
+**Lo que hay que contar de ella no es la planta: es por qué llevaba ocho meses
+invisible.** El acto se publicó el 2 de enero de 2026, en el número 1 del
+boletín canario, y la guardia que barre ese boletín **no podía verlo**: escribía
+el número sin rellenar con ceros y pedía una dirección que responde 404, de modo
+que los boletines 1 a 99 de cada año —de enero a mediados de mayo— se contaban
+como días sin diario. Se arregló ese mismo día y el rebarrido del tramo ciego de
+2024 a 2026 devolvió 23 avisos que nadie había visto. Este es el que crea
+registro.
+
 **Revisión de los descartes** *(2026-08-31, release `.138`)* · Se releyeron los
 documentos que la `.137` había apartado, y uno no debía estarlo: el acuerdo de
 ocupación urgente de la Tordera 2 afirma que su proyecto básico está **aprobado
@@ -1258,13 +1277,52 @@ data center de Parc Logístic de la Zona Franca, S.A., en Barcelona (DOGC de
 autorizaciones ambientales integradas sometidas a información pública —CyrusOne
 Madrid 1 en Alcobendas (BOCM n.º 98, de 27/04/2026) y Cignus P2DC en Daganzo de
 Arriba (BOCM n.º 87, de 14/04/2026)— y la ocupación de vías pecuarias para la
-acometida del centro de Tres Cantos (BOCM de 29/04/2026) · **IGN**, Nomenclátor
+acometida del centro de Tres Cantos (BOCM de 29/04/2026) ·
+**Gobierno de Aragón (BOA)**, PIGA «Tillion Aragón»: la orden de aprobación
+inicial (BOA n.º 128, de 07/07/2026) y el acuerdo de redelimitación del ámbito
+con la relación de bienes afectados (BOA n.º 47, de 10/03/2026), más la orden de
+levantamiento de actas previas de ocupación del de La Puebla de Alfindén (BOA de
+10/07/2026) · **Junta de Extremadura (DOE)**, el Decreto 92/2026 de proyecto
+empresarial de interés autonómico y los anuncios de información pública
+ambiental de los centros de Navalmoral de la Mata (AAI25/032) y de Badajoz
+(AAI25/024) · **Gobierno Vasco (BOPV)**, la declaración de impacto ambiental con
+autorización ambiental integrada del centro de Ribabellosa (BOPV n.º 243, de
+22/12/2023), su modificación de 2024 y la información pública de su ampliación
+(BOPV n.º 118, de 24/06/2026) · **IGN**, Nomenclátor
 y CartoCiudad.
-**Licencia** · Ley 37/2007 (BOA, DOCM, DOGC, BOE) · IGN.
+**Licencia** · Ley 37/2007 (BOA, BOCM, BOPV, DOCM, DOE, DOGC, BOE) · IGN.
 **Qué hay que saber** · **Entra el centro que un acto administrativo nombra, y
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
 mercado son de la patronal. De ahí que sean 8 y no 60.
+**Dos más, y los dos de un barrido dirigido** *(2026-08-31, release `.139`)* ·
+No los encontró la guardia semanal ni una búsqueda: los encontró **preguntarle al
+sumario por un expediente concreto**, que es la herramienta que nació ese día.
+**«Tillion Aragón», en Villamayor de Gállego**, salió mientras se comprobaba si
+el PIGA de Microsoft en Aragón había ganado su aprobación definitiva —no la ha
+ganado— y es el campus más grande que entra en esta capa por potencia declarada:
+cuatro edificios de 75 MW, 300 MW en total, sobre un ámbito de 799.072,63 m².
+**«Data Riocaya», en Badajoz**, salió del mismo barrido que confirmó que la
+autorización ambiental de Navalmoral sigue sin resolverse, y es **el único
+registro de la capa cuyo acto publica su propia coordenada**: los demás sitúan
+por término municipal o por calle. Trae además las cinco referencias catastrales
+y la superficie.
+**Ninguno de los dos llena `potencia_it_mw`, y por motivos distintos que
+conviene separar.** El de Tillion da capacidad ELÉCTRICA por edificio y no dice
+«IT» en ningún sitio. El de Badajoz sí escribe «10 MW IT», pero **por módulo**, y
+no publica cuántos módulos hay — y aunque lo hiciera, la vara del contrato deja
+fuera los proyectos en información pública. Las dos cifras van a `claves` con lo
+que abarcan.
+**Y dos fichas viejas crecen.** La de **Merlin Arasur** cierra el hueco que
+declaraba desde su alta: la autorización ambiental integrada original, de 11 de
+septiembre de 2023, **estaba publicada** en el BOPV n.º 243 de 22 de diciembre —
+no aparecía por buscador y apareció barriendo el sumario número a número. Y su
+ampliación deja de estar solo en prensa: hay un anuncio de información pública de
+junio de 2026, aunque no dice qué edificios son, así que ese hueco se estrecha y
+no se cierra. La de **ACS DC La Puebla** gana el acto de levantamiento de actas
+previas de ocupación: el PIGA sigue en aprobación inicial, pero el suelo ya se
+ocupa.
+
 **Madrid, tres de golpe, y una vara que se afina** *(2026-08-31, release
 `.137`)* · Los sacó el barrido hacia atrás del BOCM: 65.347 actos de 956
 sumarios, entre enero de 2023 y agosto de 2026. **Dos entran por su propio

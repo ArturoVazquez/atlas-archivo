@@ -37,6 +37,98 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.139 — tres registros que salieron de arreglar un vigía ciego
+
+**La edición empieza con una avería.** El guion que vigila el boletín canario
+escribía el número de boletín sin rellenar con ceros, y el BOC lo numera a tres
+dígitos: pedía una dirección que responde **404**, y un 404 esta guardia lo
+cuenta como día sin diario. Resultado: **los boletines 1 a 99 de cada año —de
+enero a mediados de mayo— no los miraba nadie**, desde que la guardia nació. De
+junio en adelante el número pasa de 99, la dirección vuelve a ser buena y el
+boletín parece sano.
+
+**Se vio contando, no leyendo.** Un barrido de doce meses leyó 156 sumarios
+donde el índice anual del propio boletín declaraba 252. El parte de una guardia
+enseña hallazgos, nunca ausencias: la avería solo aparece cruzando lo leído con
+lo que la fuente dice que hay. El rebarrido del tramo ciego, de 2024 a 2026,
+devolvió **292 sumarios, 5.202 actos y 23 avisos que nadie había visto**. Uno de
+ellos crea registro aquí.
+
+### Añadido
+
+- **`desaladoras:gran-tarajal`** — la **EDAM de Gran Tarajal**, en Tuineje
+  (Fuerteventura), que explota el **Consorcio de Abastecimiento de Aguas a
+  Fuerteventura**. Es la primera planta de la isla en el atlas. Su acto no la
+  crea: somete a información pública un **módulo nuevo de ósmosis inversa de
+  2.500 m³/día** destinado a riego agrícola, y al hacerlo acredita que la planta
+  existe, dónde está y quién la explota. Por eso su fase va como parcial, igual
+  que la del Llobregat. Ese acto se publicó el **2 de enero de 2026** — el número
+  1 del año, justo el tramo que la avería ocultaba.
+- **`centros-datos:tillion-villamayor`** — el campus **«Tillion Aragón»**, en
+  Villamayor de Gállego (Zaragoza), promovido por Tillion Aragón, SL. Su Plan de
+  Interés General se aprobó inicialmente por orden publicada el 7 de julio de
+  2026. **Cuatro edificios de 75 MW cada uno, 300 MW de campus**, sobre un ámbito
+  de 799.072,63 m² a 1,8 km del núcleo urbano, con subestación propia de
+  400/66/20 kV y línea de 400 kV hasta la subestación Peñaflor.
+- **`centros-datos:data-riocaya-badajoz`** — centro de procesamiento de datos de
+  **Data Riocaya, SL** en la plataforma logística del Suroeste europeo, en
+  Badajoz: dos edificios de módulos de 15 MW, **demanda total de 170 MW de los
+  que 110 son carga crítica**, y funcionamiento continuo declarado de 8.760
+  horas al año. Es **el único registro de la capa cuyo acto publica su propia
+  coordenada**; los demás sitúan por término municipal o por calle.
+
+### Corregido
+
+- **`centros-datos:merlin-arasur`** — **se cierra el hueco que la ficha
+  declaraba desde su alta.** Decía que la autorización ambiental integrada
+  original, de 11 de septiembre de 2023, estaba citada por el acto de 2024 pero
+  «no se localizó por buscador». **Estaba publicada**: en el número 243 del
+  boletín vasco, de 22 de diciembre de 2023. No apareció buscando y apareció
+  barriendo el sumario número a número. El hueco pasa a ser la fuente.
+  Y un segundo hueco **se estrecha**: la ampliación del centro deja de constar
+  solo en prensa —hay información pública de un proyecto técnico y su estudio de
+  impacto ambiental, de 24 de junio de 2026—, pero ese anuncio no dice qué
+  edificios son, así que la correspondencia con los «edificios 4 y 5» sigue sin
+  acreditarse y el hueco no se cierra.
+- **`centros-datos:acs-dc-la-puebla`** — entra el acto de **levantamiento de
+  actas previas con efectos de ocupación** de las fincas expropiadas, de 10 de
+  julio de 2026. El plan sigue en aprobación inicial y **la fase no se mueve**:
+  levantar actas previas es un paso del expediente, no una aprobación
+  definitiva. Pero el suelo ya se está ocupando, y la ficha lo dice.
+
+### Huecos
+
+- **Ninguno de los dos centros nuevos publica potencia informática, y por
+  motivos distintos.** El acto de Tillion da capacidad **eléctrica** por edificio
+  y no escribe «IT» en ningún sitio. El de Badajoz sí escribe «10 MW IT», pero
+  **por módulo**, y no dice cuántos módulos hay. Las dos cifras van a las claves
+  de sus fichas con lo que abarcan.
+- **El ámbito de Tillion no se ha resuelto a geometría.** El acto lo delimita por
+  24 referencias catastrales —23 del polígono 46 y una del 31— y por límites
+  descritos en prosa, sin publicar el polígono. Su punto es el paraje
+  «Malvaseda», uno de los tres que el catastro asigna a esas parcelas: el
+  centroide de 24 parcelas no sería la coordenada de nada.
+- **La capacidad de la EDAM de Gran Tarajal y su año de servicio no constan.** El
+  acto solo publica los 2.500 m³/día del módulo que se añade.
+- **El acto propio de esa planta —su autorización original— no se ha
+  localizado.** La sostiene un acto sobre su ampliación.
+
+### Y tres preguntas contestadas que no cambian ningún dato
+
+Se preguntó a los sumarios, y las tres respuestas son negativas **con medida**,
+que es lo que las separa de un «no lo encuentro»:
+
+- **Ningún almacén temporal individualizado de residuos radiactivos ha ganado su
+  puesta en servicio en el BOE.** Barrido de junio de 2025 a agosto de 2026:
+  **393 sumarios y 90.867 actos**, y ni una aparición de la expresión.
+- **El lado canario del sistema de cables PENCAN-X no ha salido en el boletín
+  canario**, ni en la ventana normal ni en el tramo que la avería ocultaba.
+- **El gasoducto Magreb-Europa sigue sin importar.** La estadística de CORES,
+  actualizada al 17 de agosto de 2026 y con datos hasta junio, da **0,0 en todos
+  los meses** en su punto de entrada. La categoría `flujo_invertido` se sostiene.
+
+---
+
 ## datos-v2026.08.138 — se revisan los descartes, y uno estaba mal
 
 **Una edición sin registros nuevos.** Se releyeron los cuatro documentos que la

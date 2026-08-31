@@ -1,0 +1,72 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Paraje",
+    "codigo_ngbe": "4.2.2",
+    "fuente": "MITMA.IGN.BTN25",
+    "etiqueta": "Malvaseda",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-07-26"
+   },
+   "id": "245917",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.76202363799996,
+     41.697509773
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Paraje",
+    "codigo_ngbe": "4.2.2",
+    "fuente": "MITMA.IGN.BTN25",
+    "etiqueta": "Malvaseda",
+    "tiponombre": "identificador_geografico",
+    "fecha": "2023-07-17"
+   },
+   "id": "253144",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.22192375899994,
+     41.548278935
+    ]
+   }
+  }
+ ],
+ "numberMatched": 2,
+ "numberReturned": 2,
+ "links": [
+  {
+   "type": "application/geo+json",
+   "rel": "self",
+   "title": "This document as GeoJSON",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Malvaseda&limit=100"
+  },
+  {
+   "rel": "alternate",
+   "type": "application/ld+json",
+   "title": "This document as RDF (JSON-LD)",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Malvaseda&limit=100"
+  },
+  {
+   "type": "text/html",
+   "rel": "alternate",
+   "title": "This document as HTML",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Malvaseda&limit=100"
+  },
+  {
+   "type": "application/json",
+   "title": "GN Lugar nombrado",
+   "rel": "collection",
+   "href": "https://api-features.ign.es/collections/namedplace"
+  }
+ ],
+ "timeStamp": "2026-08-31T21:04:58.853450Z"
+}

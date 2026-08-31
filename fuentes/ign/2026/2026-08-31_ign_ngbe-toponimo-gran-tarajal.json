@@ -1,0 +1,72 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo_ngbe": "2.1.10",
+    "fuente": "MITMA.IGN.NGMEP",
+    "fecha": "2025-09-18",
+    "etiqueta": "Gran Tarajal",
+    "tipo": "Núcleos de población",
+    "tiponombre": "identificador_geografico"
+   },
+   "id": "2639856",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -14.02275168,
+     28.21133471
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo_ngbe": "2.1.9",
+    "fuente": "MITMA.IGN.NGMEP",
+    "fecha": "2025-09-18",
+    "etiqueta": "Gran Tarajal",
+    "tipo": "Entidad singular",
+    "tiponombre": "identificador_geografico"
+   },
+   "id": "2863926",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -14.02275168,
+     28.21133471
+    ]
+   }
+  }
+ ],
+ "numberMatched": 2,
+ "numberReturned": 2,
+ "links": [
+  {
+   "type": "application/geo+json",
+   "rel": "self",
+   "title": "This document as GeoJSON",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=json&etiqueta=Gran%20Tarajal&limit=50"
+  },
+  {
+   "rel": "alternate",
+   "type": "application/ld+json",
+   "title": "This document as RDF (JSON-LD)",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&etiqueta=Gran%20Tarajal&limit=50"
+  },
+  {
+   "type": "text/html",
+   "rel": "alternate",
+   "title": "This document as HTML",
+   "href": "https://api-features.ign.es/collections/namedplace/items?f=html&etiqueta=Gran%20Tarajal&limit=50"
+  },
+  {
+   "type": "application/json",
+   "title": "GN Lugar nombrado",
+   "rel": "collection",
+   "href": "https://api-features.ign.es/collections/namedplace"
+  }
+ ],
+ "timeStamp": "2026-08-31T21:05:11.901839Z"
+}
