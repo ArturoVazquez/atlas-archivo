@@ -37,6 +37,63 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.138 — se revisan los descartes, y uno estaba mal
+
+**Una edición sin registros nuevos.** Se releyeron los cuatro documentos que la
+`.137` descartó, y el ejercicio devolvió tres confirmaciones y **una
+corrección**: un acto apartado por «redundante» era el que decía en qué punto
+está de verdad la desaladora de la Tordera 2.
+
+### Corregido
+
+- **`desaladoras:tordera-2` · `fase`** — `tramitacion` → **`desarrollo`**. El
+  acuerdo de ocupación urgente del Gobierno catalán, de 14 de mayo de 2024,
+  afirma que el director de ATL aprobó el proyecto básico el **8 de noviembre de
+  2023** y que esa aprobación «lleva implícita la declaración de utilidad
+  pública y la necesidad de ocupación de los bienes y los derechos afectados».
+  La relación definitiva de bienes afectados quedó aprobada el **8 de enero de
+  2025**. La planta no está pendiente de decidirse: está pendiente de
+  construirse. *`activo` no cambia* —sigue en `false`, porque no está en
+  explotación—, pero la ficha ya no dice de menos.
+  Entran además dos claves nuevas y el acto como fuente propia.
+
+- **Changelog de la `.137` · errata.** Su apartado de huecos hablaba de «un
+  centro de datos en Algete». **No consta que lo esté.** «Algete» era el primer
+  municipio de la lista de la línea eléctrica que ha de alimentarlo, no una
+  afirmación sobre el centro; el acto solo lo sitúa en el «Polígono Industrial
+  SAU-8 Los Ardales». Y las dos bases oficiales que nombran lugares coinciden en
+  que **Los Ardales es un poblado de San Agustín del Guadalix**, con su propio
+  camino: el Nomenclátor del Instituto Geográfico Nacional no registra ningún
+  «Ardales» en Algete ni en su entorno, y CartoCiudad tampoco. La entrada
+  publicada lleva su errata dentro; el registro sigue sin crearse, porque
+  deducir el municipio del topónimo sería el mismo error al revés.
+
+### Huecos
+
+- **Sigue sin saberse de qué municipio es el SAU-8 «Los Ardales».** Lo que se
+  descartó al buscarlo: el informe de impacto ambiental **no se publica en el
+  boletín** —el acto solo anuncia que existe y remite al portal ambiental de la
+  Comunidad de Madrid—, y el buscador de ese portal no devuelve nada por
+  proyecto, promotor ni municipio. La puerta que queda es el planeamiento
+  urbanístico del sector, que es de un ayuntamiento concreto.
+- **Las expropiaciones de la Tordera 2 no sitúan la planta**, y ese descarte se
+  confirma: sus anexos son la traza de las conducciones —parcelas rústicas del
+  polígono 6 de Blanes— y van con el nombre de cada propietario particular. El
+  atlas no necesita esa geometría ni publica esos nombres.
+- **La acería de acero verde de Puertollano sigue fuera de `hidrogeno-produccion`,
+  y ahora contra el acto bueno.** El descarte anterior se hizo sobre una
+  rectificación de anexos; se ha leído la resolución que declara el proyecto de
+  singular interés, diez mil caracteres, y **no menciona ni una vez electrólisis,
+  hidrógeno ni potencia**. Una acería consume hidrógeno; esta capa registra a
+  quien lo produce.
+- **El marco estratégico catalán de centros de datos no crea registro**, y se
+  confirma tras leerlo entero: diez páginas de política, sin un solo
+  emplazamiento ni un listado de instalaciones. Lo único aprovechable es un
+  criterio suyo — para acogerse a él, un proyecto debe tener «una dimensión
+  mínima de potencia energética de 20 MW».
+
+---
+
 ## datos-v2026.08.137 — siete registros que nadie buscó
 
 **Los dos barridos que ayer parecían caros costaron veinticuatro minutos.** El
@@ -105,14 +162,19 @@ un trabajo de veinte minutos.
 
 ### Huecos
 
-- **Un centro de datos en Algete que NO entra, y con la medida hecha.** Dos
-  actos distintos lo dan por en construcción en el «Polígono Industrial SAU-8
-  Los Ardales» y uno nombra a su promotora, Data4 Infrastructure Spain, S.L.U.
+- **Un centro de datos del SAU-8 «Los Ardales» que NO entra, y con la medida
+  hecha.** Dos actos distintos lo dan por en construcción en ese polígono
+  industrial y uno nombra a su promotora, Data4 Infrastructure Spain, S.L.U.
   Pero **ninguno dice en qué término municipal está**: los municipios que
   enumeran son los que cruza su línea eléctrica. Y el único topónimo «Los
-  Ardales» del Nomenclátor cae en **San Agustín del Guadalix**, comprobado
+  Ardales» de la zona cae en **San Agustín del Guadalix**, comprobado
   contrastando la coordenada contra los municipios del IGN. Registrarlo habría
   sido elegir municipio por parecido de nombre.
+
+  > **Errata corregida el mismo día.** Este apartado decía «un centro de datos
+  > en Algete». No consta que lo esté: «Algete» era el primer municipio de la
+  > lista de la línea eléctrica, no una afirmación sobre el centro. La edición
+  > siguiente cuenta cómo se vio.
 - **Ninguno de los tres centros de Madrid publica potencia informática.** Sus
   actos no la dan: la documentación técnica que someten a información pública no
   se publica en el boletín, sino en el Portal de Transparencia de la Comunidad.

@@ -483,6 +483,17 @@ al topónimo del paraje de Agua Amarga que la propia MCT declara. **Cada
 capacidad retrata el momento de su acto y va en la unidad de su acto**:
 `capacidad_hm3_anio` o `capacidad_m3_dia`, sin conversión — convertir exigiría
 suponer días de operación.
+**Revisión de los descartes** *(2026-08-31, release `.138`)* · Se releyeron los
+documentos que la `.137` había apartado, y uno no debía estarlo: el acuerdo de
+ocupación urgente de la Tordera 2 afirma que su proyecto básico está **aprobado
+desde noviembre de 2023**, con declaración implícita de utilidad pública, y que
+la relación definitiva de bienes expropiados quedó cerrada en enero de 2025. La
+planta pasa de `tramitacion` a `desarrollo`: no está pendiente de decidirse,
+está pendiente de construirse. **Los otros dos actos de expropiación siguen
+fuera con mejor motivo que el primero**: sus anexos son la traza de las
+conducciones —parcelas rústicas del polígono 6 de Blanes— y van con el nombre de
+cada propietario particular; ni esa geometría hace falta ni esos nombres se
+publican.
 **Cataluña entra entera, y la trajo la vigilancia** *(2026-08-31, release
 `.137`)* · Cuatro plantas de golpe, y ninguna se buscó: las sacó el barrido
 hacia atrás del diario de la Generalitat el día que ese boletín entró en la
@@ -1266,13 +1277,16 @@ subestación y nombra el centro en la finalidad sin decir dónde está. El de Tr
 Cantos es otra cosa: el acto da **calle y número**, que es más de lo que dan la
 mitad de los registros de esta capa. **La vara no excluye los actos eléctricos:
 excluye los que no sitúan** — y así queda escrita.
-**Con la misma medida, un cuarto NO entra.** En Algete hay un centro de datos
-que dos actos distintos dan por en construcción en el «Polígono Industrial SAU-8
-Los Ardales», pero **ninguno dice en qué término municipal está**: los
-municipios que enumeran son los que cruza la línea eléctrica. Y el único
-topónimo «Los Ardales» del Nomenclátor cae en **San Agustín del Guadalix**,
-comprobado contrastando la coordenada contra los municipios del IGN. Registrarlo
-habría sido elegir un municipio por parecido.
+**Con la misma medida, un cuarto NO entra.** Dos actos distintos dan por en
+construcción un centro de datos en el «Polígono Industrial SAU-8 Los Ardales»,
+pero **ninguno dice en qué término municipal está**: los municipios que enumeran
+son los que cruza la línea eléctrica que ha de alimentarlo. Y las dos bases
+oficiales de topónimos coinciden en que **Los Ardales es un poblado de San
+Agustín del Guadalix**, con su propio camino; ninguna registra nada con ese
+nombre en Algete, que es el primero de aquella lista y por eso estuvo a punto de
+quedarse con el registro. Deducir el municipio del topónimo sería el mismo error
+al revés, así que el centro sigue sin ficha y con la puerta escrita: el
+planeamiento del sector, que es de un ayuntamiento concreto.
 **Los dos con dirección de calle suben a `paraje`** con el portal de
 CartoCiudad, y el de Daganzo se queda en el vial que el acto nombra porque su
 emplazamiento va por referencia catastral y este atlas no la ha resuelto.
