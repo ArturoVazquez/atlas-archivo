@@ -37,6 +37,67 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.08.136 — el primer centro de datos catalán, y lo trajo la guardia
+
+**Cataluña era el hueco grande de esta capa y llevaba meses buscándose a mano.**
+El diario de la Generalitat entra en la guardia semanal de boletines
+autonómicos, y un barrido hacia atrás de 60.937 actos saca en la primera pasada
+el expediente ambiental de un centro de datos en Barcelona. Se buscaba en el
+boletín provincial, donde se suponía que estaría su licencia municipal; el acto
+que lo acredita estaba en el diario autonómico.
+
+**Y el mismo día, dos boletines más entran a vigilancia** —el de Castilla-La
+Mancha y el de Cataluña—, con lo que la guardia pasa de cuatro diarios
+autonómicos a seis.
+
+### Añadido
+- **`centros-datos:zona-franca-barcelona`** — actividad de almacenamiento,
+  procesamiento y distribución de datos informáticos en Barcelona, promovida por
+  **Parc Logístic de la Zona Franca, S.A.** El acto no la autoriza por primera
+  vez: la somete a información pública porque ampliar sus grupos electrógenos de
+  6 a 13 lleva la potencia total a **108,251 MW** y supera el umbral de 50 MW,
+  lo que la saca del anexo II de la Ley catalana 20/2009 y la mete en el anexo I.
+  El anuncio afirma en presente que la actividad «dispone de licencia ambiental»,
+  así que el centro **ya opera**: por eso entra en `produccion` y no en
+  tramitación. *(DOGC de 19/05/2026, exp. FUE-2024-03943745.)*
+  **Los 108 MW no son potencia TI y la ficha lo dice**: son potencia de
+  emergencia, un umbral de clasificación ambiental. Confundirlas inflaría el
+  centro varias veces, y por eso la cifra va en una clave y no en
+  `potencia_it_mw`, que sigue vacío.
+
+### Corregido
+- **`centros-datos:meta-talavera`** — sube el siguiente peldaño de su
+  expediente: la **aprobación definitiva del proyecto de reparcelación** del
+  Proyecto de Singular Interés, de 7 de agosto de 2026. Con ella entran tres
+  hechos que ningún acto anterior daba: que **el suelo ya es de la promotora**
+  —la reparcelación solo se tramita una vez adquirido, y se solicitó el 16 de
+  abril de 2025—, que la transformación jurídica del suelo está cerrada tras
+  información pública y alegaciones del Ayuntamiento de Talavera y de la EATIM
+  de Gamonal, y la **primera cifra económica que un acto publica sobre este
+  campus**: una garantía de **1.089.554,00 €** por la monetización del 49 % del
+  aprovechamiento urbanístico. *La `fase` NO se mueve* y sigue en `desarrollo`:
+  reparcelar no es construir.
+
+### Huecos
+- **El emplazamiento exacto del centro de la Zona Franca.** El acto lo sitúa en
+  «el término municipal de Barcelona» y no dice más: ni dirección, ni parcela,
+  ni polígono. El nombre de la promotora apunta al Parc Logístic, pero eso es su
+  razón social y no una afirmación del acto, así que el punto se queda en el
+  municipio — la precisión que ya llevan nueve de los diecisiete registros de
+  esta capa. La licencia ambiental original que el anuncio cita es de anexo II y
+  la otorga el Ayuntamiento de Barcelona, así que se publica en el boletín
+  provincial y no en el autonómico.
+- **La potencia TI y la fecha de entrada en servicio de ese centro**: el acto no
+  las da. La única potencia que publica es la de los grupos electrógenos.
+- **Un centro de datos en Algete (Madrid) sigue sin registro, y ya tiene acto
+  cerca.** El informe de impacto ambiental de una línea subterránea de 66 kV
+  hasta la STR Los Ardales dice, en su propio título, que es «para suministro a
+  data center sito en el SAU-8 “Los Ardales”». Sitúa el centro, pero no lo
+  nombra ni lo dimensiona, y el objeto del acto es la línea: es el caso de Ignis
+  Data Beta II, y la vara de la `.89` sigue en pie. Falta el acto DEL CENTRO.
+
+---
+
 ## datos-v2026.08.135 — un aterrizaje sin nombre lo gana desde el expediente de otro
 
 **El hueco más citado de esta casa se estrecha, y no por donde se esperaba.**

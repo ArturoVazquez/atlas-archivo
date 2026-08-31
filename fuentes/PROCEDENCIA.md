@@ -1218,12 +1218,29 @@ descargados del expediente oficial en `urbanismo.castillalamancha.es` ·
 acuerdo de declaración de interés (BOA n.º 140) y anuncio de información
 pública del plan aprobado inicialmente (BOA n.º 237) · **BOE**, anuncio de
 información pública de la acometida estatal (BOE-B-2026-24883) ·
-**IGN**, Nomenclátor.
-**Licencia** · Ley 37/2007 (BOA, DOCM, BOE) · IGN.
+**Generalitat de Catalunya (DOGC)**, anuncio de información pública de la
+solicitud de autorización ambiental con declaración de impacto ambiental del
+data center de Parc Logístic de la Zona Franca, S.A., en Barcelona (DOGC de
+19/05/2026) · **IGN**, Nomenclátor.
+**Licencia** · Ley 37/2007 (BOA, DOCM, DOGC, BOE) · IGN.
 **Qué hay que saber** · **Entra el centro que un acto administrativo nombra, y
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
 mercado son de la patronal. De ahí que sean 8 y no 60.
+**Qué se añadió** *(2026-08-31, release `.136`)* · **El primero de Cataluña, y
+lo encontró la vigilancia y no una búsqueda.** El diario de la Generalitat entró
+ese día en la guardia semanal de boletines autonómicos, y un barrido hacia atrás
+de 60.937 actos sacó el expediente ambiental de un data center en Barcelona
+promovido por Parc Logístic de la Zona Franca, S.A. — que llevaba meses
+buscándose a mano por el boletín provincial, donde se suponía que estaría su
+licencia municipal. **El acto no autoriza un centro nuevo**: somete a
+información pública una modificación del que ya opera, porque ampliar sus grupos
+electrógenos de 6 a 13 lleva la potencia total a 108,251 MW y lo saca del anexo
+II de la Ley catalana 20/2009. **Esa cifra NO es potencia TI** y la ficha lo dice
+en su clave: es potencia de emergencia, un umbral de clasificación ambiental.
+**Y el punto se queda en el municipio**: el acto sitúa la actividad en «el
+término municipal de Barcelona» y no dice más — el nombre de la promotora apunta
+al Parc Logístic, pero eso es su razón social y no una afirmación del acto.
 **Qué se añadió** *(2026-08-19, release `.100`)* · **El séptimo, y el primero
 fuera de Aragón**: el campus de Meta en Talavera de la Reina (promotora Zarza
 Networks, S.L. — «una expansión de la presencia de Meta en Europa», dice el
