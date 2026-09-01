@@ -20,7 +20,7 @@ url: https://atlas.eltercioviejo.com
 license: CC-BY-4.0
 version: datos-v2026.09.140
 date-released: "2026-09-01"
-doi: 10.5281/zenodo.22215544
+doi: 10.5281/zenodo.22237224
 identifiers:
   - type: doi
     value: 10.5281/zenodo.21918595
@@ -28,9 +28,11 @@ identifiers:
       DOI de concepto: resuelve siempre a la última edición depositada. Es el
       que se cita cuando se cita el atlas, y no una edición concreta.
   - type: doi
-    value: 10.5281/zenodo.22215544
+    value: 10.5281/zenodo.22237224
     description: >-
-      DOI de esta edición (datos-v2026.08.135). Lo que el depósito archiva es el
+      DOI de esta edición, la que declara `version` — que es donde se lee y donde
+      no puede envejecer aparte: esta frase nombró «datos-v2026.08.135» durante
+      cuatro ediciones más. Lo que el depósito archiva es el
       aparato de citación —fuentes, procedencia, contrato y changelog—, no las
       capas de datos, que se sirven desde atlas.eltercioviejo.com.
       Las capas de esta edición se descargan enteras del PAQUETE adjunto a su
