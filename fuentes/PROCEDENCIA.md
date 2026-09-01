@@ -707,6 +707,111 @@ instalación (autorización o AAI) queda pendiente de localizar y archivar.
 complejos del PRTR, las diez fichas con coordenada y el barrido del Nomenclátor).
 **El resto** · CHANGELOG `datos-v2026.08.26` · §10
 
+## almacenamiento-petrolifero
+
+**De dónde** · **Comisión Nacional de los Mercados y la Competencia**, registro
+de instalaciones fijas de almacenamiento de productos petrolíferos, publicado en
+cumplimiento del **artículo 41.1 de la Ley 34/1998**, de 7 de octubre, del Sector
+de Hidrocarburos — el que obliga a permitir el **acceso de terceros** en
+condiciones no discriminatorias y a comunicar a la Comisión los contratos y los
+precios. Se usan **sus dos vistas**: el cuadro *Capacidad de almacenamiento de
+productos petrolíferos (Año 2026)*, en PDF, y el mismo registro **por comunidad
+autónoma**, que publica un marcador por instalación. Última actualización que la
+propia fuente declara: **25 de julio de 2026**. Para situar cada instalación, el
+**Nomenclátor Geográfico Básico** del IGN y su **Información Geográfica de
+Referencia · Redes de Transporte**, de donde salen los aeródromos por código
+OACI.
+
+**Licencia y qué obliga** · A los documentos de este registro les es de
+aplicación el **régimen general de la Ley 37/2007** y del **Real Decreto
+1495/2011**, según respuesta de la propia Comisión: no desnaturalizar el sentido,
+citar la fuente, **mencionar la fecha de última actualización** siempre que
+figure en el documento original, no insinuar que la Comisión patrocina la
+reutilización y conservar los metadatos de fecha y de condiciones. La cita tiene
+**fórmula dada** y por eso va literal en la atribución: «Origen de los datos:
+Comisión Nacional de los Mercados y la Competencia (CNMC)». Es un régimen de
+atribución, sin obligación de compartir en las mismas condiciones, y por eso es
+compatible con la licencia de salida de este atlas. El registro **no vive en el
+portal de datos abiertos** de la Comisión, cuyos conjuntos de hidrocarburos se
+publican bajo CC BY-SA 4.0: vive en un subdominio propio y sin licencia
+declarada, y de ahí que su régimen haya tenido que preguntarse. IGN: ver arriba ·
+atribución exigida `CC-BY 4.0 scne.es`.
+
+**Es fuente primaria, y conviene decir por qué** · La información **no es una
+recopilación** de la Comisión: es una **declaración que la ley obliga a hacer** a
+los titulares de las instalaciones y que la Comisión **publica por mandato**. Esa
+es la misma forma que tiene de ser primaria el registro estatal de emisiones, y
+es lo que permite que estos datos sostengan una verificación confirmada.
+
+**Las dos vistas dicen cosas distintas, y cruzarlas es la mitad del trabajo** ·
+El cuadro en PDF da la **capacidad** por emplazamiento y, cuando la fuente la
+desglosa, por producto. El registro por comunidades da el **municipio**, un
+**identificador propio** de la Comisión y —cuando la hay— una **advertencia sobre
+la disponibilidad** que el cuadro no recoge. El municipio del registro es además
+**más preciso y a veces distinto**: donde el cuadro dice «Pontevedra», el
+registro dice **Villagarcía de Arousa**; donde dice «Bilbao», dice **Santurce**;
+donde dice «Navarra», dice **Pamplona**. Casar las dos vistas por parecido de
+nombres habría puesto instalaciones en la ciudad equivocada, así que la
+correspondencia está **declarada una a una**.
+
+**Y el cruce destapa dos cosas que ninguna vista dice sola** · Una instalación
+**inscrita y sin capacidad publicada** —figura en el registro por comunidades, no
+tiene fila en el cuadro, y la propia Comisión anota que no tiene contratos
+vigentes—, que entra con su capacidad en hueco declarado porque el hecho es que
+está inscrita. Y **dos instalaciones que el cuadro separa y el mapa funde** en un
+único marcador, que se publican separadas porque separadas están sus capacidades.
+
+**Capacidad que existe no es capacidad disponible** · Dieciséis instalaciones
+llevan al lado una advertencia de la Comisión: no tener **contratos vigentes**,
+destinarse al **uso propio del almacenista**, estar **arrendada a otro
+almacenista**, **no admitir consignaciones**, estar **sin actividad** o
+destinarse **en exclusiva a existencias estratégicas**. Va en un campo propio y
+**no en la categoría**, porque cambia sin que la instalación cambie; y suma más
+de mil quinientos miles de metros cúbicos que no son mercado de acceso de
+terceros, que es justo lo que el artículo 41 existe para tutelar.
+
+**El punto NO es el de la instalación, y cada ficha lo dice** · El registro **no
+publica ni una coordenada**, y el registro estatal de emisiones —que sí resolvió
+las refinerías— **no cubre estas instalaciones**: se comprobó sobre sus 9.369
+complejos y no hay ni uno de los grandes almacenistas, porque almacenar no es
+actividad del anexo I. De modo que el punto es el del **lugar que la fuente
+nombra**: el paraje cuando el Nomenclátor lo nombra, el **término municipal**
+cuando la fuente no baja de ahí, la **isla** en tres terminales canarias de las
+que solo se publica la isla, y el **nodo del aeródromo** en las aeroportuarias.
+La precisión declarada de cada registro dice cuál de las cuatro es, y ninguna de
+ellas afirma saber dónde están los tanques.
+
+**Dos lugares que el Nomenclátor no resuelve** · Una terminal figura como «El
+Calero» (Vizcaya). El Nomenclátor nombra **cuatro** «El Calero» en Bizkaia, y
+caen en **cuatro municipios distintos** — comprobado uno a uno por punto en
+polígono. Elegir el portuario porque es el que parece tener sentido sería
+inventar. Lo que sí es fuente: la propia Comisión **dibuja esa instalación en el
+mismo marcador** que la de Ciérvana, así que se sitúa donde ella la sitúa. Y otra
+figura como «Vigo (Puxeiros)»: el Nomenclátor devuelve dos «Puxeiros» y **los dos
+están en Ourense**, a más de cincuenta kilómetros de la ría; un barrido por
+recuadro sobre Vigo, con novecientos noventa y cinco topónimos, no encuentra
+ninguno. Esa baja a precisión de término municipal sobre **Vigo**, que es el que
+el propio cuadro nombra.
+
+**Cada punto se comprobó contra el polígono municipal del que dice estar** ·
+No basta con elegir bien la etiqueta: hay que preguntar en qué municipio cae el
+punto que devuelve. Ese contraste, y no la lectura de las fichas, es lo que
+destapó lo de Puxeiros, lo del punto insular de La Palma —que **no cae dentro de
+ningún municipio**, por lo que esa terminal usa el de su capital— y una
+discrepancia entre las dos vistas del registro: el mapa rotula «Valladolid» donde
+el cuadro escribe «Valladolid (Santovenia)», y **Santovenia de Pisuerga es
+municipio propio y distinto de la capital**. Manda el que baja más.
+
+**El cuadre que la fuente regala** · Cada compañía publica **su propio total**.
+Las cuarenta y tres cuadran contra la suma de sus emplazamientos, extraída por
+separado; una sola que dejara de cuadrar detiene la construcción de la capa. Una
+de ellas escribe su total **redondeado a unidades y sin decimales**, al revés que
+las demás, y se admite con esa tolerancia y no con otra.
+
+**Lo que no se transcribe** · La tercera sección de la página del registro,
+*Oleoductos de productos*, **no es una tabla: es una imagen**, sin un dato que
+leer. Esas conducciones ya están en el atlas, con trazado y de otra fuente.
+
 ## nuclear
 
 **De dónde** · **BOE**, las órdenes TED de renovación de autorización, una por

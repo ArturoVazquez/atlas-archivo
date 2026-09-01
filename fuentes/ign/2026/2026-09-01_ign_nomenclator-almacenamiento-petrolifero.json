@@ -1,0 +1,4159 @@
+{
+ "_": "Consultas al Nomenclator Geografico Basico de Espana (NGBE) del IGN, servicio OGC API-Features, hechas el 2026-09-01 para situar las instalaciones del registro de almacenamiento de productos petroliferos de la CNMC. Se guardan TODOS los candidatos de cada etiqueta, no solo el elegido: la eleccion se declara en el extractor y tiene que poder revisarse contra lo que el servicio contesto. Los que salen a cero lo hacen porque la etiqueta del Nomenclator es otra (Mao por Mahon, Arahal por El Arahal, Vilagarcia por Villagarcia) — y porque el servicio devuelve cero en silencio si algo va mal en la consulta, de modo que un cero solo se acepta despues de reintentar. AMPLIADO el mismo día tras la revisión: «Puxeiros» resultó no existir en el Nomenclator cerca de Vigo —los dos que devuelve estan en Ourense, a 55 km, y un barrido por recuadro de 995 toponimos sobre la ria no encuentra ninguno—, asi que esa terminal baja a municipio sobre Vigo; y el punto de la isla de La Palma no cae dentro de ningun municipio, asi que se usa el de su capital, que el Nomenclator escribe «Santa Cruz de la Palma», con la minuscula.",
+ "servicio": "https://api-features.ign.es/collections/namedplace/items",
+ "fecha_consulta": "2026-09-01",
+ "campos": [
+  "etiqueta",
+  "tipo",
+  "lon",
+  "lat"
+ ],
+ "consultas": {
+  "Albuixech": [
+   [
+    "Albuixech",
+    "Municipio",
+    -0.32515,
+    39.54433
+   ],
+   [
+    "Albuixech",
+    "Capital de municipio",
+    -0.32515,
+    39.54433
+   ],
+   [
+    "Albuixech",
+    "Entidad singular",
+    -0.32515,
+    39.54433
+   ]
+  ],
+  "Alcázar de San Juan": [
+   [
+    "Alcázar de San Juan",
+    "Municipio",
+    -3.21053,
+    39.38907
+   ],
+   [
+    "Alcázar de San Juan",
+    "Capital de municipio",
+    -3.21053,
+    39.38907
+   ],
+   [
+    "Alcázar de San Juan",
+    "Entidad singular",
+    -3.21053,
+    39.38907
+   ]
+  ],
+  "Algeciras": [
+   [
+    "Algeciras",
+    "Municipio",
+    -5.44764,
+    36.13198
+   ],
+   [
+    "Algeciras",
+    "Capital de municipio",
+    -5.44764,
+    36.13198
+   ],
+   [
+    "Algeciras",
+    "Entidad singular",
+    -5.44764,
+    36.13198
+   ]
+  ],
+  "Alicante": [
+   [
+    "Alicante",
+    "Municipio",
+    -0.48137,
+    38.34531
+   ],
+   [
+    "Alicante",
+    "Capital de provincia",
+    -0.48318,
+    38.34549
+   ],
+   [
+    "Alicante",
+    "Provincia",
+    -0.48318,
+    38.34549
+   ],
+   [
+    "Alicante",
+    "Capital de municipio",
+    -0.48137,
+    38.34531
+   ],
+   [
+    "Alicante",
+    "Entidad singular",
+    -0.48137,
+    38.34531
+   ],
+   [
+    "Alicante",
+    "Vértice Geodésico",
+    -0.47939,
+    38.34862
+   ],
+   [
+    "Alicante",
+    "Paraje",
+    -4.2431,
+    36.76672
+   ]
+  ],
+  "Almodóvar del Campo": [
+   [
+    "Almodóvar del Campo",
+    "Municipio",
+    -4.17995,
+    38.70927
+   ],
+   [
+    "Almodóvar del Campo",
+    "Capital de municipio",
+    -4.17995,
+    38.70927
+   ],
+   [
+    "Almodóvar del Campo",
+    "Entidad singular",
+    -4.17995,
+    38.70927
+   ]
+  ],
+  "Alpicat": [
+   [
+    "Alpicat",
+    "Paraje",
+    0.57568,
+    41.63892
+   ],
+   [
+    "Alpicat",
+    "Municipio",
+    0.55557,
+    41.66589
+   ],
+   [
+    "Alpicat",
+    "Capital de municipio",
+    0.55557,
+    41.66589
+   ],
+   [
+    "Alpicat",
+    "Entidad singular",
+    0.55557,
+    41.66589
+   ]
+  ],
+  "Arahal": [
+   [
+    "Arahal",
+    "Municipio",
+    -5.5453,
+    37.26249
+   ],
+   [
+    "Arahal",
+    "Capital de municipio",
+    -5.5453,
+    37.26249
+   ],
+   [
+    "Arahal",
+    "Entidad singular",
+    -5.5453,
+    37.26249
+   ],
+   [
+    "Arahal",
+    "Vértice Geodésico",
+    -5.55095,
+    37.25976
+   ]
+  ],
+  "Arrecife": [
+   [
+    "Arrecife",
+    "Núcleos de población",
+    -2.40624,
+    38.49162
+   ],
+   [
+    "Arrecife",
+    "Municipio",
+    -13.54666,
+    28.95943
+   ],
+   [
+    "Arrecife",
+    "Capital de municipio",
+    -13.54666,
+    28.95943
+   ],
+   [
+    "Arrecife",
+    "Entidad singular",
+    -13.55139,
+    28.96069
+   ],
+   [
+    "Arrecife",
+    "Vértice Geodésico",
+    -13.54765,
+    28.95352
+   ],
+   [
+    "Arrecife",
+    "Paraje",
+    -5.25311,
+    38.42511
+   ]
+  ],
+  "Barcelona": [
+   [
+    "Barcelona",
+    "Edificación",
+    -7.45569,
+    43.54791
+   ],
+   [
+    "Barcelona",
+    "Saliente costero",
+    -7.94733,
+    43.73547
+   ],
+   [
+    "Barcelona",
+    "Municipio",
+    2.17744,
+    41.38229
+   ],
+   [
+    "Barcelona",
+    "Capital de provincia",
+    2.17635,
+    41.38425
+   ],
+   [
+    "Barcelona",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    2.17635,
+    41.38425
+   ],
+   [
+    "Barcelona",
+    "Provincia",
+    2.17635,
+    41.38425
+   ],
+   [
+    "Barcelona",
+    "Paraje",
+    -4.5506,
+    41.44049
+   ],
+   [
+    "Barcelona",
+    "Capital de municipio",
+    2.17744,
+    41.38229
+   ],
+   [
+    "Barcelona",
+    "Entidad singular",
+    2.17744,
+    41.38229
+   ]
+  ],
+  "Bens": [
+   [
+    "Bens",
+    "Entidad singular",
+    -8.44893,
+    43.35894
+   ],
+   [
+    "Bens",
+    "Núcleos de población",
+    -8.44893,
+    43.35894
+   ]
+  ],
+  "Bilbao": [
+   [
+    "Bilbao",
+    "Barrio",
+    -3.63751,
+    40.42511
+   ],
+   [
+    "Bilbao",
+    "Municipio",
+    -2.92346,
+    43.26422
+   ],
+   [
+    "Bilbao",
+    "Capital de provincia",
+    -2.91669,
+    43.25012
+   ],
+   [
+    "Bilbao",
+    "Capital de municipio",
+    -2.92346,
+    43.26422
+   ],
+   [
+    "Bilbao",
+    "Entidad singular",
+    -2.92346,
+    43.26422
+   ],
+   [
+    "Bilbao",
+    "Paraje",
+    -3.10699,
+    39.49792
+   ],
+   [
+    "Bilbao",
+    "Paraje",
+    -5.34363,
+    37.22192
+   ],
+   [
+    "Bilbao",
+    "Paraje",
+    -6.09229,
+    36.45148
+   ]
+  ],
+  "Burgos": [
+   [
+    "Burgos",
+    "Paraje",
+    -1.41101,
+    41.91571
+   ],
+   [
+    "Burgos",
+    "Paraje",
+    -0.08002,
+    41.57428
+   ],
+   [
+    "Burgos",
+    "Municipio",
+    -3.70218,
+    42.34058
+   ],
+   [
+    "Burgos",
+    "Capital de provincia",
+    -3.7042,
+    42.34113
+   ],
+   [
+    "Burgos",
+    "Provincia",
+    -3.7042,
+    42.34113
+   ],
+   [
+    "Burgos",
+    "Capital de municipio",
+    -3.70218,
+    42.34058
+   ],
+   [
+    "Burgos",
+    "Entidad singular",
+    -3.70218,
+    42.34058
+   ]
+  ],
+  "Calamonte": [
+   [
+    "Calamonte",
+    "Municipio",
+    -6.38677,
+    38.88891
+   ],
+   [
+    "Calamonte",
+    "Capital de municipio",
+    -6.38677,
+    38.88891
+   ],
+   [
+    "Calamonte",
+    "Entidad singular",
+    -6.38677,
+    38.88891
+   ]
+  ],
+  "Cartagena": [
+   [
+    "Cartagena",
+    "Paraje",
+    -1.11731,
+    42.09192
+   ],
+   [
+    "Cartagena",
+    "Paraje",
+    -1.10498,
+    42.0509
+   ],
+   [
+    "Cartagena",
+    "Municipio",
+    -0.98493,
+    37.60089
+   ],
+   [
+    "Cartagena",
+    "Capital de municipio",
+    -0.98493,
+    37.60089
+   ],
+   [
+    "Cartagena",
+    "Entidad singular",
+    -0.98493,
+    37.60089
+   ],
+   [
+    "Cartagena",
+    "Paraje",
+    -4.33282,
+    40.63312
+   ],
+   [
+    "Cartagena",
+    "Paraje",
+    -2.54279,
+    39.22553
+   ]
+  ],
+  "Castelló de la Plana": [
+   [
+    "Castelló de la Plana",
+    "Municipio",
+    -0.03785,
+    39.98605
+   ],
+   [
+    "Castelló de la Plana",
+    "Capital de provincia",
+    -0.03688,
+    39.98641
+   ],
+   [
+    "Castelló de la Plana",
+    "Capital de municipio",
+    -0.03785,
+    39.98605
+   ],
+   [
+    "Castelló de la Plana",
+    "Entidad singular",
+    -0.03785,
+    39.98605
+   ]
+  ],
+  "Castellón de la Plana": [
+   [
+    "Castellón de la Plana",
+    "Municipio",
+    -0.03785,
+    39.98605
+   ],
+   [
+    "Castellón de la Plana",
+    "Capital de provincia",
+    -0.03688,
+    39.98641
+   ]
+  ],
+  "Ceuta": [
+   [
+    "Ceuta",
+    "Municipio",
+    -5.30675,
+    35.8881
+   ],
+   [
+    "Ceuta",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -5.30675,
+    35.8881
+   ],
+   [
+    "Ceuta",
+    "Capital de municipio",
+    -5.30675,
+    35.8881
+   ],
+   [
+    "Ceuta",
+    "Entidad singular",
+    -5.30538,
+    35.88942
+   ],
+   [
+    "Ceuta",
+    "Paraje",
+    -0.70111,
+    39.67712
+   ],
+   [
+    "Ceuta",
+    "Paraje",
+    -4.79272,
+    37.61768
+   ],
+   [
+    "Ceuta",
+    "Paraje",
+    -6.16168,
+    36.53729
+   ]
+  ],
+  "Cádiz": [
+   [
+    "Cádiz",
+    "Municipio",
+    -6.29295,
+    36.52959
+   ],
+   [
+    "Cádiz",
+    "Capital de provincia",
+    -6.28415,
+    36.52171
+   ],
+   [
+    "Cádiz",
+    "Provincia",
+    -6.28415,
+    36.52171
+   ],
+   [
+    "Cádiz",
+    "Capital de municipio",
+    -6.29295,
+    36.52959
+   ],
+   [
+    "Cádiz",
+    "Entidad singular",
+    -6.29295,
+    36.52959
+   ],
+   [
+    "Cádiz",
+    "Vértice Geodésico",
+    -6.29295,
+    36.52959
+   ],
+   [
+    "Cádiz",
+    "Paraje",
+    -5.07898,
+    37.82892
+   ]
+  ],
+  "Córdoba": [
+   [
+    "Córdoba",
+    "Municipio",
+    -4.77624,
+    37.8852
+   ],
+   [
+    "Córdoba",
+    "Capital de provincia",
+    -4.78032,
+    37.87954
+   ],
+   [
+    "Córdoba",
+    "Provincia",
+    -4.78032,
+    37.87954
+   ],
+   [
+    "Córdoba",
+    "Capital de municipio",
+    -4.77624,
+    37.8852
+   ],
+   [
+    "Córdoba",
+    "Entidad singular",
+    -4.77624,
+    37.8852
+   ],
+   [
+    "Córdoba",
+    "Paraje",
+    -4.53619,
+    37.51868
+   ]
+  ],
+  "Eivissa": [
+   [
+    "Eivissa",
+    "Isla",
+    1.42986,
+    38.90993
+   ],
+   [
+    "Eivissa",
+    "Municipio",
+    1.43796,
+    38.90719
+   ],
+   [
+    "Eivissa",
+    "Capital de municipio",
+    1.43796,
+    38.90719
+   ],
+   [
+    "Eivissa",
+    "Entidad singular",
+    1.43796,
+    38.90719
+   ]
+  ],
+  "El Arahal": [],
+  "El Calero": [
+   [
+    "El Calero",
+    "Paraje",
+    -5.19562,
+    43.40552
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.34772,
+    42.62091
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.69659,
+    42.63049
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.64221,
+    42.58868
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.40869,
+    42.6651
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.42108,
+    42.5199
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -2.7384,
+    42.55591
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.60919,
+    43.41369
+   ],
+   [
+    "El Calero",
+    "Edificación",
+    -3.0686,
+    43.34387
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.23999,
+    42.48907
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.42218,
+    42.39313
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -2.88733,
+    42.37707
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.66071,
+    42.29749
+   ],
+   [
+    "El Calero",
+    "Edificación",
+    -5.77679,
+    43.34229
+   ],
+   [
+    "El Calero",
+    "Edificación",
+    -5.2926,
+    43.35992
+   ],
+   [
+    "El Calero",
+    "Edificación",
+    -4.9021,
+    43.40631
+   ],
+   [
+    "El Calero",
+    "Edificación",
+    -4.88208,
+    43.37347
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.24219,
+    42.28229
+   ],
+   [
+    "El Calero",
+    "Barrio",
+    -3.51147,
+    43.25128
+   ],
+   [
+    "El Calero",
+    "Barrio",
+    -3.09271,
+    43.31567
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.7478,
+    42.27588
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.64209,
+    42.31732
+   ],
+   [
+    "El Calero",
+    "Edificación",
+    -4.07397,
+    43.11987
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.42383,
+    42.08612
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.03949,
+    42.14673
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.08643,
+    42.05188
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.0368,
+    42.04889
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.87707,
+    42.06293
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.59051,
+    42.1283
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.44232,
+    42.0993
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.3147,
+    42.08209
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.2995,
+    42.00629
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.52698,
+    41.89447
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.31201,
+    41.87732
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.2157,
+    41.88031
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.17853,
+    41.94513
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.91028,
+    41.99249
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.93231,
+    41.94067
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.14429,
+    41.88708
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.96161,
+    41.88592
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.01691,
+    43.33173
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.3927,
+    41.7851
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.26581,
+    41.7735
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.2511,
+    41.74048
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.08069,
+    41.72967
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.03211,
+    41.71191
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.02619,
+    41.67407
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.0896,
+    41.64868
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -15.3963,
+    27.99847
+   ],
+   [
+    "El Calero",
+    "Núcleos de población",
+    -15.54276,
+    27.99931
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.0625,
+    43.18707
+   ],
+   [
+    "El Calero",
+    "Entidad singular",
+    -15.39676,
+    27.99547
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.26441,
+    43.29449
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.14441,
+    43.28473
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.59113,
+    41.13208
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.5423,
+    40.65991
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.61823,
+    40.18988
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.46759,
+    40.17969
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.22351,
+    40.15851
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.8963,
+    40.0943
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.7691,
+    40.03967
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.2146,
+    43.15869
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.8371,
+    39.6015
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.39911,
+    39.4107
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.13751,
+    39.18091
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.47199,
+    39.32867
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.74329,
+    43.13831
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -7.1048,
+    38.81427
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.63593,
+    38.71667
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.20758,
+    43.14191
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.42261,
+    38.59167
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.2926,
+    38.62451
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -2.95782,
+    38.21832
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.76611,
+    37.19989
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.27069,
+    36.4137
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.82721,
+    42.94428
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.70099,
+    42.93231
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.53711,
+    42.97669
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.51202,
+    42.84369
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.30969,
+    42.92969
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.10211,
+    42.94092
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.48309,
+    42.8761
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -2.53958,
+    42.93279
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.0611,
+    42.7663
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.89478,
+    43.42188
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.58081,
+    42.72192
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.24921,
+    42.76929
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -5.22028,
+    42.73791
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.73523,
+    42.8233
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -6.07141,
+    43.4129
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.36133,
+    42.69708
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -4.26507,
+    42.6933
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.5611,
+    42.75391
+   ],
+   [
+    "El Calero",
+    "Paraje",
+    -3.13202,
+    42.7157
+   ]
+  ],
+  "El Hierro": [
+   [
+    "El Hierro",
+    "Paraje",
+    -4.59131,
+    42.5495
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -2.4021,
+    42.51508
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -5.29388,
+    42.3587
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -4.75208,
+    42.23151
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -5.98401,
+    41.68951
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -4.1167,
+    41.05933
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -5.00018,
+    40.9671
+   ],
+   [
+    "El Hierro",
+    "Isla administrativa",
+    -17.91302,
+    27.80609
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -6.48779,
+    40.47369
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -3.74579,
+    40.36407
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -6.7074,
+    39.4823
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -3.59308,
+    38.70508
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -7.18158,
+    38.54791
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -4.41919,
+    37.94989
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -2.32019,
+    37.02612
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -5.99701,
+    36.93188
+   ],
+   [
+    "El Hierro",
+    "Paraje",
+    -4.19659,
+    42.78412
+   ]
+  ],
+  "Gijón": [
+   [
+    "Gijón",
+    "Entidad colectiva",
+    -5.65711,
+    43.53528
+   ],
+   [
+    "Gijón",
+    "Municipio",
+    -5.66213,
+    43.54505
+   ],
+   [
+    "Gijón",
+    "Capital de municipio",
+    -5.66213,
+    43.54505
+   ],
+   [
+    "Gijón",
+    "Entidad singular",
+    -5.66213,
+    43.54505
+   ]
+  ],
+  "Girona": [
+   [
+    "Girona",
+    "Municipio",
+    2.82479,
+    41.98307
+   ],
+   [
+    "Girona",
+    "Capital de provincia",
+    2.82412,
+    41.98186
+   ],
+   [
+    "Girona",
+    "Provincia",
+    2.82412,
+    41.98186
+   ],
+   [
+    "Girona",
+    "Capital de municipio",
+    2.82479,
+    41.98307
+   ],
+   [
+    "Girona",
+    "Entidad singular",
+    2.82479,
+    41.98307
+   ]
+  ],
+  "Guadarrama": [
+   [
+    "Guadarrama",
+    "Municipio",
+    -4.08879,
+    40.67252
+   ],
+   [
+    "Guadarrama",
+    "Capital de municipio",
+    -4.08879,
+    40.67252
+   ],
+   [
+    "Guadarrama",
+    "Entidad singular",
+    -4.08879,
+    40.67252
+   ],
+   [
+    "Guadarrama",
+    "Vértice Geodésico",
+    -3.41396,
+    40.88806
+   ],
+   [
+    "Guadarrama",
+    "Paraje",
+    -4.08221,
+    37.72388
+   ]
+  ],
+  "Hierro": [
+   [
+    "Hierro",
+    "Núcleos de población",
+    -3.35151,
+    42.89601
+   ],
+   [
+    "Hierro",
+    "Entidad singular",
+    -3.35151,
+    42.89601
+   ],
+   [
+    "Hierro",
+    "Vértice Geodésico",
+    -4.41282,
+    42.41801
+   ],
+   [
+    "Hierro",
+    "Vértice Geodésico",
+    -3.93297,
+    40.79944
+   ],
+   [
+    "Hierro",
+    "Vértice Geodésico",
+    -1.95546,
+    38.37573
+   ],
+   [
+    "Hierro",
+    "Montaña",
+    -3.08615,
+    43.15925
+   ]
+  ],
+  "Huelva": [
+   [
+    "Huelva",
+    "Provincia",
+    -6.95041,
+    37.26004
+   ],
+   [
+    "Huelva",
+    "Capital de provincia",
+    -6.95041,
+    37.26004
+   ],
+   [
+    "Huelva",
+    "Municipio",
+    -6.94957,
+    37.25654
+   ],
+   [
+    "Huelva",
+    "Capital de municipio",
+    -6.94957,
+    37.25654
+   ],
+   [
+    "Huelva",
+    "Entidad singular",
+    -6.94957,
+    37.25654
+   ],
+   [
+    "Huelva",
+    "Paraje",
+    -5.91241,
+    36.41852
+   ]
+  ],
+  "Ibiza": [
+   [
+    "Ibiza",
+    "Barrio",
+    -3.6748,
+    40.41949
+   ],
+   [
+    "Ibiza",
+    "Vértice Geodésico",
+    1.43672,
+    38.90684
+   ],
+   [
+    "Ibiza",
+    "Isla administrativa",
+    1.43628,
+    38.90668
+   ]
+  ],
+  "Isla de El Hierro": [
+   [
+    "Isla de El Hierro",
+    "Isla",
+    -17.91276,
+    27.80694
+   ]
+  ],
+  "Isla de La Palma": [
+   [
+    "Isla de La Palma",
+    "Isla",
+    -17.76344,
+    28.68342
+   ]
+  ],
+  "La Gomera": [
+   [
+    "La Gomera",
+    "Isla administrativa",
+    -17.10919,
+    28.0899
+   ],
+   [
+    "La Gomera",
+    "Paraje",
+    -3.24652,
+    38.50452
+   ],
+   [
+    "La Gomera",
+    "Paraje",
+    -6.50421,
+    37.92548
+   ]
+  ],
+  "La Palma": [
+   [
+    "La Palma",
+    "Entidad menor de población",
+    2.85571,
+    42.19049
+   ],
+   [
+    "La Palma",
+    "Barrio",
+    1.1015,
+    41.15973
+   ],
+   [
+    "La Palma",
+    "Edificación",
+    -4.14362,
+    37.17609
+   ],
+   [
+    "La Palma",
+    "Barrio",
+    -6.33429,
+    36.79089
+   ],
+   [
+    "La Palma",
+    "Edificación",
+    -4.43188,
+    36.8205
+   ],
+   [
+    "La Palma",
+    "Barrio",
+    -4.43323,
+    36.7395
+   ],
+   [
+    "La Palma",
+    "Barrio",
+    -3.44043,
+    36.70007
+   ],
+   [
+    "La Palma",
+    "Otro relieve costero",
+    -6.26892,
+    36.52753
+   ],
+   [
+    "La Palma",
+    "Entidad colectiva",
+    -0.96228,
+    37.6889
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -4.92889,
+    41.52393
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -15.5285,
+    28.04187
+   ],
+   [
+    "La Palma",
+    "Núcleos de población",
+    -15.47518,
+    28.06024
+   ],
+   [
+    "La Palma",
+    "Núcleos de población",
+    -16.37443,
+    28.35838
+   ],
+   [
+    "La Palma",
+    "Entidad singular",
+    -4.27772,
+    37.13751
+   ],
+   [
+    "La Palma",
+    "Entidad singular",
+    -0.96282,
+    37.68896
+   ],
+   [
+    "La Palma",
+    "Vértice Geodésico",
+    -5.78438,
+    37.26053
+   ],
+   [
+    "La Palma",
+    "Vértice Geodésico",
+    -0.96255,
+    37.68891
+   ],
+   [
+    "La Palma",
+    "Isla administrativa",
+    -17.763,
+    28.68188
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    0.60107,
+    40.7157
+   ],
+   [
+    "La Palma",
+    "Núcleos de población",
+    -4.27772,
+    37.13751
+   ],
+   [
+    "La Palma",
+    "Núcleos de población",
+    -0.96282,
+    37.68896
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.70361,
+    39.96149
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -4.0769,
+    39.70111
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -0.5058,
+    39.6535
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -3.74951,
+    39.47668
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -4.72058,
+    38.79327
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.19,
+    38.53589
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.06378,
+    38.43329
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -1.50922,
+    38.03607
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -1.67639,
+    37.67633
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.54492,
+    37.59271
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.9715,
+    37.5097
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.69751,
+    37.6239
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.05029,
+    37.65332
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.22259,
+    37.36249
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.17657,
+    37.47192
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.2937,
+    37.43213
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.2016,
+    37.46887
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -4.9093,
+    37.34491
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -2.25201,
+    37.39868
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.9043,
+    37.16968
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.797,
+    37.25568
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.87451,
+    37.07471
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -3.47498,
+    36.86108
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.38849,
+    36.7569
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.37482,
+    36.69171
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -6.00031,
+    36.72607
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -4.23256,
+    36.80664
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -2.98603,
+    36.74628
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -2.10181,
+    36.77667
+   ],
+   [
+    "La Palma",
+    "Paraje",
+    -5.30463,
+    36.3559
+   ]
+  ],
+  "Las Palmas de Gran Canaria": [
+   [
+    "Las Palmas de Gran Canaria",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -15.41337,
+    28.09938
+   ],
+   [
+    "Las Palmas de Gran Canaria",
+    "Municipio",
+    -15.42847,
+    28.12492
+   ],
+   [
+    "Las Palmas de Gran Canaria",
+    "Capital de provincia",
+    -15.41337,
+    28.09938
+   ],
+   [
+    "Las Palmas de Gran Canaria",
+    "Capital de municipio",
+    -15.42847,
+    28.12492
+   ],
+   [
+    "Las Palmas de Gran Canaria",
+    "Entidad singular",
+    -15.41339,
+    28.09991
+   ]
+  ],
+  "León": [
+   [
+    "León",
+    "Paraje",
+    -7.8653,
+    42.47351
+   ],
+   [
+    "León",
+    "Municipio",
+    -5.57423,
+    42.59763
+   ],
+   [
+    "León",
+    "Capital de provincia",
+    -5.56708,
+    42.59912
+   ],
+   [
+    "León",
+    "Provincia",
+    -5.56708,
+    42.59912
+   ],
+   [
+    "León",
+    "Capital de municipio",
+    -5.57423,
+    42.59763
+   ],
+   [
+    "León",
+    "Entidad singular",
+    -8.35901,
+    42.81189
+   ],
+   [
+    "León",
+    "Entidad singular",
+    -5.57423,
+    42.59763
+   ],
+   [
+    "León",
+    "Entidad singular",
+    -7.63046,
+    42.83169
+   ],
+   [
+    "León",
+    "Núcleos de población",
+    -7.63046,
+    42.83169
+   ],
+   [
+    "León",
+    "Paraje",
+    -3.78979,
+    39.50952
+   ],
+   [
+    "León",
+    "Paraje",
+    -6.7085,
+    39.16412
+   ],
+   [
+    "León",
+    "Paraje",
+    -6.67261,
+    39.15552
+   ],
+   [
+    "León",
+    "Paraje",
+    -6.47388,
+    37.42712
+   ],
+   [
+    "León",
+    "Paraje",
+    -4.99951,
+    37.08008
+   ]
+  ],
+  "Lleida": [
+   [
+    "Lleida",
+    "Municipio",
+    0.62673,
+    41.6147
+   ],
+   [
+    "Lleida",
+    "Capital de provincia",
+    0.62062,
+    41.61527
+   ],
+   [
+    "Lleida",
+    "Provincia",
+    0.62062,
+    41.61527
+   ],
+   [
+    "Lleida",
+    "Capital de municipio",
+    0.62673,
+    41.6147
+   ],
+   [
+    "Lleida",
+    "Entidad singular",
+    0.62673,
+    41.6147
+   ],
+   [
+    "Lleida",
+    "Vértice Geodésico",
+    0.62663,
+    41.61742
+   ]
+  ],
+  "Loeches": [
+   [
+    "Loeches",
+    "Municipio",
+    -3.40934,
+    40.38384
+   ],
+   [
+    "Loeches",
+    "Capital de municipio",
+    -3.40934,
+    40.38384
+   ],
+   [
+    "Loeches",
+    "Entidad singular",
+    -3.40934,
+    40.38384
+   ]
+  ],
+  "Mahón": [],
+  "Maó": [
+   [
+    "Maó",
+    "Municipio",
+    4.2643,
+    39.88976
+   ],
+   [
+    "Maó",
+    "Capital de municipio",
+    4.2643,
+    39.88976
+   ],
+   [
+    "Maó",
+    "Entidad singular",
+    4.2643,
+    39.88976
+   ]
+  ],
+  "Melilla": [
+   [
+    "Melilla",
+    "Núcleos de población",
+    -6.15953,
+    36.36495
+   ],
+   [
+    "Melilla",
+    "Municipio",
+    -2.93681,
+    35.29225
+   ],
+   [
+    "Melilla",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -2.94721,
+    35.29072
+   ],
+   [
+    "Melilla",
+    "Capital de municipio",
+    -2.93681,
+    35.29225
+   ],
+   [
+    "Melilla",
+    "Entidad singular",
+    -2.93681,
+    35.29225
+   ],
+   [
+    "Melilla",
+    "Paraje",
+    -6.7627,
+    38.38568
+   ],
+   [
+    "Melilla",
+    "Paraje",
+    -4.13519,
+    36.8443
+   ],
+   [
+    "Melilla",
+    "Paraje",
+    -6.14661,
+    36.35968
+   ]
+  ],
+  "Monzalbarba": [
+   [
+    "Monzalbarba",
+    "Entidad singular",
+    -0.96654,
+    41.70292
+   ],
+   [
+    "Monzalbarba",
+    "Núcleos de población",
+    -0.96654,
+    41.70292
+   ]
+  ],
+  "Motril": [
+   [
+    "Motril",
+    "Municipio",
+    -3.52046,
+    36.74535
+   ],
+   [
+    "Motril",
+    "Capital de municipio",
+    -3.52046,
+    36.74535
+   ],
+   [
+    "Motril",
+    "Entidad singular",
+    -3.52046,
+    36.74535
+   ],
+   [
+    "Motril",
+    "Paraje",
+    -3.99872,
+    37.73749
+   ]
+  ],
+  "Mugardos": [
+   [
+    "Mugardos",
+    "Edificación",
+    -8.10468,
+    43.5401
+   ],
+   [
+    "Mugardos",
+    "Municipio",
+    -8.25498,
+    43.46044
+   ],
+   [
+    "Mugardos",
+    "Capital de municipio",
+    -8.25498,
+    43.46044
+   ],
+   [
+    "Mugardos",
+    "Entidad singular",
+    -8.25498,
+    43.46044
+   ]
+  ],
+  "Málaga": [
+   [
+    "Málaga",
+    "Municipio",
+    -4.41498,
+    36.72026
+   ],
+   [
+    "Málaga",
+    "Capital de provincia",
+    -4.41998,
+    36.72034
+   ],
+   [
+    "Málaga",
+    "Provincia",
+    -4.41998,
+    36.72034
+   ],
+   [
+    "Málaga",
+    "Capital de municipio",
+    -4.41498,
+    36.72026
+   ],
+   [
+    "Málaga",
+    "Entidad singular",
+    -4.41498,
+    36.72026
+   ],
+   [
+    "Málaga",
+    "Vértice Geodésico",
+    -2.49671,
+    39.44375
+   ],
+   [
+    "Málaga",
+    "Vértice Geodésico",
+    -4.41498,
+    36.72026
+   ]
+  ],
+  "Mérida": [
+   [
+    "Mérida",
+    "Municipio",
+    -6.34572,
+    38.91666
+   ],
+   [
+    "Mérida",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -6.34417,
+    38.91739
+   ],
+   [
+    "Mérida",
+    "Capital de municipio",
+    -6.34572,
+    38.91666
+   ],
+   [
+    "Mérida",
+    "Entidad singular",
+    -6.34572,
+    38.91666
+   ]
+  ],
+  "Palma": [
+   [
+    "Palma",
+    "Municipio",
+    2.65043,
+    39.56908
+   ],
+   [
+    "Palma",
+    "Capital de provincia",
+    2.65182,
+    39.57115
+   ],
+   [
+    "Palma",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    2.65182,
+    39.57115
+   ],
+   [
+    "Palma",
+    "Capital de municipio",
+    2.65043,
+    39.56908
+   ],
+   [
+    "Palma",
+    "Entidad singular",
+    2.65043,
+    39.56908
+   ],
+   [
+    "Palma",
+    "Paraje",
+    -4.36841,
+    37.70972
+   ],
+   [
+    "Palma",
+    "Paraje",
+    -3.70099,
+    37.72028
+   ],
+   [
+    "Palma",
+    "Paraje",
+    -5.07141,
+    36.91748
+   ]
+  ],
+  "Pamplona": [
+   [
+    "Pamplona",
+    "Edificación",
+    -4.91589,
+    43.4469
+   ],
+   [
+    "Pamplona",
+    "Paraje",
+    -1.3299,
+    41.62671
+   ],
+   [
+    "Pamplona",
+    "Municipio",
+    -1.64441,
+    42.81856
+   ],
+   [
+    "Pamplona",
+    "Capital de provincia",
+    -1.64515,
+    42.8141
+   ],
+   [
+    "Pamplona",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -1.64515,
+    42.8141
+   ],
+   [
+    "Pamplona",
+    "Capital de municipio",
+    -1.64441,
+    42.81856
+   ],
+   [
+    "Pamplona",
+    "Entidad singular",
+    -1.64441,
+    42.81856
+   ],
+   [
+    "Pamplona",
+    "Vértice Geodésico",
+    -1.65204,
+    42.81454
+   ]
+  ],
+  "Playa de Salinetas": [
+   [
+    "Playa de Salinetas",
+    "Playa",
+    -15.37799,
+    27.98309
+   ],
+   [
+    "Playa de Salinetas",
+    "Núcleos de población",
+    -15.37879,
+    27.98202
+   ],
+   [
+    "Playa de Salinetas",
+    "Entidad singular",
+    -15.37879,
+    27.98202
+   ]
+  ],
+  "Puerto del Rosario": [
+   [
+    "Puerto del Rosario",
+    "Paso de montaña",
+    -6.48181,
+    38.13251
+   ],
+   [
+    "Puerto del Rosario",
+    "Puerto",
+    -13.8556,
+    28.49792
+   ],
+   [
+    "Puerto del Rosario",
+    "Municipio",
+    -13.85971,
+    28.49877
+   ],
+   [
+    "Puerto del Rosario",
+    "Capital de municipio",
+    -13.85971,
+    28.49877
+   ],
+   [
+    "Puerto del Rosario",
+    "Entidad singular",
+    -13.85919,
+    28.49811
+   ]
+  ],
+  "Puxeiros": [
+   [
+    "Puxeiros",
+    "Paraje",
+    -6.98608,
+    42.4751
+   ],
+   [
+    "Puxeiros",
+    "Barrio",
+    -8.0437,
+    42.32208
+   ]
+  ],
+  "Ribabellosa": [
+   [
+    "Ribabellosa",
+    "Capital de EATIM",
+    -2.91869,
+    42.71229
+   ],
+   [
+    "Ribabellosa",
+    "EATIM",
+    -2.91869,
+    42.71229
+   ],
+   [
+    "Ribabellosa",
+    "Entidad singular",
+    -2.91869,
+    42.71229
+   ]
+  ],
+  "Rota": [
+   [
+    "Rota",
+    "Municipio",
+    -6.35802,
+    36.61695
+   ],
+   [
+    "Rota",
+    "Capital de municipio",
+    -6.35802,
+    36.61695
+   ],
+   [
+    "Rota",
+    "Entidad singular",
+    -6.35802,
+    36.61695
+   ],
+   [
+    "Rota",
+    "Vértice Geodésico",
+    -6.35802,
+    36.61695
+   ]
+  ],
+  "Salamanca": [
+   [
+    "Salamanca",
+    "Distrito municipal",
+    -3.67859,
+    40.42969
+   ],
+   [
+    "Salamanca",
+    "Paraje",
+    -16.39978,
+    28.31128
+   ],
+   [
+    "Salamanca",
+    "Municipio",
+    -5.66363,
+    40.9655
+   ],
+   [
+    "Salamanca",
+    "Capital de provincia",
+    -5.66538,
+    40.96737
+   ],
+   [
+    "Salamanca",
+    "Provincia",
+    -5.66538,
+    40.96737
+   ],
+   [
+    "Salamanca",
+    "Capital de municipio",
+    -5.66363,
+    40.9655
+   ],
+   [
+    "Salamanca",
+    "Entidad singular",
+    -5.66363,
+    40.9655
+   ],
+   [
+    "Salamanca",
+    "Paraje",
+    -4.2948,
+    37.89868
+   ],
+   [
+    "Salamanca",
+    "Paraje",
+    -4.97729,
+    37.67047
+   ],
+   [
+    "Salamanca",
+    "Paraje",
+    -3.2981,
+    37.47351
+   ]
+  ],
+  "Salinetas": [],
+  "San Roque": [
+   [
+    "San Roque",
+    "Paraje",
+    -6.5722,
+    42.6275
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -4.84521,
+    43.35053
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -4.83227,
+    42.6145
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -4.64661,
+    42.60529
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -4.60968,
+    42.59491
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.99262,
+    42.64831
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.49512,
+    42.6369
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.87329,
+    43.42908
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.54389,
+    42.56534
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.67841,
+    42.5567
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.6012,
+    42.51489
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.55518,
+    42.44952
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.78711,
+    42.34528
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.43811,
+    42.36713
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.50988,
+    43.41528
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -6.70727,
+    42.4129
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.08569,
+    43.34552
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.87689,
+    42.47308
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.81299,
+    42.49011
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.80829,
+    42.40668
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.55798,
+    42.38068
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.0293,
+    42.4939
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.7619,
+    42.41827
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.57159,
+    42.4679
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.50928,
+    42.28528
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.08521,
+    42.27148
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -8.26081,
+    43.43188
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -6.0661,
+    43.44928
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -6.17011,
+    43.3559
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -5.61072,
+    43.39288
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -5.31781,
+    43.3905
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -4.70532,
+    43.33569
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -4.7757,
+    43.39868
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -3.8045,
+    43.46808
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.82501,
+    43.35351
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -3.43799,
+    43.38348
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -4.41199,
+    42.20648
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -5.01398,
+    43.33209
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -3.9342,
+    43.25848
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.8186,
+    43.22693
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -5.64658,
+    43.16206
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.90192,
+    43.16412
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -4.08209,
+    43.07788
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -2.86057,
+    43.09454
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -5.6438,
+    42.8725
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.78241,
+    42.8703
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.72028,
+    42.84473
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.2785,
+    42.94092
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.30841,
+    42.84448
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.77142,
+    42.80267
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.57648,
+    42.8313
+   ],
+   [
+    "San Roque",
+    "Construcción/instalación abierta",
+    -3.4986,
+    42.80872
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.49813,
+    42.73908
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.4696,
+    42.73328
+   ],
+   [
+    "San Roque",
+    "Entidad menor de población",
+    -8.6484,
+    42.56004
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -8.86572,
+    42.49231
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.61359,
+    43.21509
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -7.88391,
+    42.48248
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -8.13251,
+    42.37549
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -7.09619,
+    42.39691
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.87237,
+    42.13751
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -8.71588,
+    42.22272
+   ],
+   [
+    "San Roque",
+    "Entidad menor de población",
+    -8.50909,
+    42.1759
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -7.91638,
+    42.27753
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -7.92041,
+    42.20453
+   ],
+   [
+    "San Roque",
+    "Entidad menor de población",
+    -8.77801,
+    42.1557
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -6.56543,
+    42.0517
+   ],
+   [
+    "San Roque",
+    "Construcción/instalación abierta",
+    -4.05908,
+    41.53809
+   ],
+   [
+    "San Roque",
+    "Construcción/instalación abierta",
+    -2.11829,
+    41.66132
+   ],
+   [
+    "San Roque",
+    "Construcción/instalación abierta",
+    -2.013,
+    41.51251
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -4.091,
+    41.39447
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -6.49103,
+    43.29773
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -3.47742,
+    40.53528
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -8.09961,
+    41.89429
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -3.88599,
+    40.49652
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -3.81128,
+    40.43433
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -3.23309,
+    40.46887
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -4.01239,
+    40.28387
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.40509,
+    41.9613
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -7.43469,
+    41.86572
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -6.33899,
+    41.84888
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -4.23529,
+    41.93591
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -6.16681,
+    43.27472
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -6.95661,
+    38.88068
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -6.41608,
+    38.6825
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -1.97681,
+    41.97028
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.06091,
+    41.8725
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    0.37952,
+    41.99072
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -2.58551,
+    38.3855
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -1.28021,
+    38.08832
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -1.21352,
+    37.97209
+   ],
+   [
+    "San Roque",
+    "Barrio",
+    -0.69922,
+    37.97113
+   ],
+   [
+    "San Roque",
+    "Edificación",
+    -5.98389,
+    37.39111
+   ],
+   [
+    "San Roque",
+    "Entidad menor de población",
+    -2.15448,
+    37.39917
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.82678,
+    41.82049
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -3.21289,
+    41.78747
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.8233,
+    41.70209
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -2.08899,
+    41.77252
+   ],
+   [
+    "San Roque",
+    "Paraje",
+    -1.90228,
+    41.66852
+   ],
+   [
+    "San Roque",
+    "Núcleos de población",
+    -0.8347,
+    38.13634
+   ]
+  ],
+  "San Roque (Cádiz)": [
+   [
+    "San Roque",
+    "Municipio",
+    -5.39167,
+    36.21028
+   ],
+   [
+    "San Roque",
+    "Capital de municipio",
+    -5.39167,
+    36.21028
+   ],
+   [
+    "San Roque",
+    "Entidad singular",
+    -5.39167,
+    36.21028
+   ]
+  ],
+  "Santa Cruz de Tenerife": [
+   [
+    "Santa Cruz de Tenerife",
+    "Municipio",
+    -16.25449,
+    28.47001
+   ],
+   [
+    "Santa Cruz de Tenerife",
+    "Capital de provincia",
+    -16.24721,
+    28.46285
+   ],
+   [
+    "Santa Cruz de Tenerife",
+    "Provincia",
+    -16.24721,
+    28.46285
+   ],
+   [
+    "Santa Cruz de Tenerife",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -16.24721,
+    28.46285
+   ],
+   [
+    "Santa Cruz de Tenerife",
+    "Capital de municipio",
+    -16.25449,
+    28.47001
+   ],
+   [
+    "Santa Cruz de Tenerife",
+    "Entidad singular",
+    -16.24719,
+    28.46332
+   ]
+  ],
+  "Santa Cruz de la Palma": [
+   [
+    "Santa Cruz de la Palma",
+    "Municipio",
+    -17.7647,
+    28.68334
+   ],
+   [
+    "Santa Cruz de la Palma",
+    "Capital de municipio",
+    -17.7647,
+    28.68315
+   ],
+   [
+    "Santa Cruz de la Palma",
+    "Entidad singular",
+    -17.7647,
+    28.68334
+   ]
+  ],
+  "Santander": [
+   [
+    "Santander",
+    "Municipio",
+    -3.80999,
+    43.46234
+   ],
+   [
+    "Santander",
+    "Capital de provincia",
+    -3.80972,
+    43.46217
+   ],
+   [
+    "Santander",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -3.80972,
+    43.46217
+   ],
+   [
+    "Santander",
+    "Capital de municipio",
+    -3.80999,
+    43.46234
+   ],
+   [
+    "Santander",
+    "Entidad singular",
+    -3.80999,
+    43.46234
+   ]
+  ],
+  "Santovenia de Pisuerga": [
+   [
+    "Santovenia de Pisuerga",
+    "Municipio",
+    -4.68928,
+    41.69663
+   ],
+   [
+    "Santovenia de Pisuerga",
+    "Capital de municipio",
+    -4.68928,
+    41.69663
+   ],
+   [
+    "Santovenia de Pisuerga",
+    "Entidad singular",
+    -4.68928,
+    41.69663
+   ]
+  ],
+  "Santurce": [
+   [
+    "Santurce",
+    "Paraje",
+    -4.00012,
+    42.12988
+   ]
+  ],
+  "Santurtzi": [
+   [
+    "Santurtzi",
+    "Municipio",
+    -3.033,
+    43.3288
+   ],
+   [
+    "Santurtzi",
+    "Capital de municipio",
+    -3.033,
+    43.3288
+   ],
+   [
+    "Santurtzi",
+    "Entidad singular",
+    -3.033,
+    43.3288
+   ],
+   [
+    "Santurtzi",
+    "Montaña",
+    -3.08726,
+    43.1546
+   ]
+  ],
+  "Sevilla": [
+   [
+    "Sevilla",
+    "Paraje",
+    -4.47681,
+    42.45831
+   ],
+   [
+    "Sevilla",
+    "Paraje",
+    -4.87891,
+    42.26709
+   ],
+   [
+    "Sevilla",
+    "Paraje",
+    -0.6311,
+    42.31073
+   ],
+   [
+    "Sevilla",
+    "Barrio",
+    -1.50208,
+    37.76691
+   ],
+   [
+    "Sevilla",
+    "Paraje",
+    -3.64179,
+    41.75348
+   ],
+   [
+    "Sevilla",
+    "Barrio",
+    -4.60968,
+    36.56567
+   ],
+   [
+    "Sevilla",
+    "Municipio",
+    -5.99448,
+    37.38864
+   ],
+   [
+    "Sevilla",
+    "Capital de provincia",
+    -5.99251,
+    37.38621
+   ],
+   [
+    "Sevilla",
+    "Provincia",
+    -5.99251,
+    37.38621
+   ],
+   [
+    "Sevilla",
+    "Capital de comunidad autónoma y ciudad con estatuto de autonomía",
+    -5.99251,
+    37.38621
+   ],
+   [
+    "Sevilla",
+    "Capital de municipio",
+    -5.99448,
+    37.38864
+   ],
+   [
+    "Sevilla",
+    "Entidad singular",
+    -5.99448,
+    37.38864
+   ],
+   [
+    "Sevilla",
+    "Paraje",
+    -7.03888,
+    38.8089
+   ]
+  ],
+  "Son Banya": [
+   [
+    "Son Banya",
+    "Edificación",
+    2.71649,
+    39.5625
+   ],
+   [
+    "Son Banya",
+    "Edificación",
+    3.2041,
+    39.57867
+   ],
+   [
+    "Son Banya",
+    "Paraje",
+    2.7179,
+    39.5575
+   ],
+   [
+    "Son Banya",
+    "Paraje",
+    3.20209,
+    39.58032
+   ]
+  ],
+  "Tarragona": [
+   [
+    "Tarragona",
+    "Municipio",
+    1.25416,
+    41.11745
+   ],
+   [
+    "Tarragona",
+    "Capital de provincia",
+    1.25842,
+    41.1191
+   ],
+   [
+    "Tarragona",
+    "Provincia",
+    1.25842,
+    41.1191
+   ],
+   [
+    "Tarragona",
+    "Capital de municipio",
+    1.25416,
+    41.11745
+   ],
+   [
+    "Tarragona",
+    "Entidad singular",
+    1.25416,
+    41.11745
+   ],
+   [
+    "Tarragona",
+    "Vértice Geodésico",
+    1.25843,
+    41.11924
+   ]
+  ],
+  "Telde": [
+   [
+    "Telde",
+    "Municipio",
+    -15.4147,
+    28.00322
+   ],
+   [
+    "Telde",
+    "Capital de municipio",
+    -15.4147,
+    28.00322
+   ]
+  ],
+  "Torrejón de Ardoz": [
+   [
+    "Torrejón de Ardoz",
+    "Municipio",
+    -3.47982,
+    40.45917
+   ],
+   [
+    "Torrejón de Ardoz",
+    "Capital de municipio",
+    -3.47982,
+    40.45917
+   ],
+   [
+    "Torrejón de Ardoz",
+    "Entidad singular",
+    -3.47982,
+    40.45917
+   ]
+  ],
+  "Valencia": [
+   [
+    "Valencia",
+    "Paraje",
+    -4.07092,
+    43.38611
+   ],
+   [
+    "Valencia",
+    "Provincia",
+    -0.37566,
+    39.47534
+   ],
+   [
+    "Valencia",
+    "Vértice Geodésico",
+    -3.3028,
+    39.68694
+   ],
+   [
+    "Valencia",
+    "Paraje",
+    -3.59949,
+    39.85931
+   ],
+   [
+    "Valencia",
+    "Paraje",
+    -3.3006,
+    39.68372
+   ]
+  ],
+  "València": [
+   [
+    "València",
+    "Municipio",
+    -0.37739,
+    39.4699
+   ],
+   [
+    "València",
+    "Capital de provincia",
+    -0.37566,
+    39.47534
+   ],
+   [
+    "València",
+    "Provincia",
+    -0.37566,
+    39.47534
+   ],
+   [
+    "València",
+    "Capital de municipio",
+    -0.37739,
+    39.4699
+   ],
+   [
+    "València",
+    "Entidad singular",
+    -0.37739,
+    39.4699
+   ],
+   [
+    "València",
+    "Comarca geográfica",
+    -0.34351,
+    39.3183
+   ]
+  ],
+  "Vigo": [
+   [
+    "Vigo",
+    "Edificación",
+    -7.62201,
+    43.58929
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -7.28507,
+    43.54654
+   ],
+   [
+    "Vigo",
+    "Barrio",
+    -8.2837,
+    43.44287
+   ],
+   [
+    "Vigo",
+    "Edificación",
+    -7.89209,
+    43.29028
+   ],
+   [
+    "Vigo",
+    "Edificación",
+    -7.46259,
+    43.10272
+   ],
+   [
+    "Vigo",
+    "Barrio",
+    -8.4521,
+    42.86136
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -7.70221,
+    42.97229
+   ],
+   [
+    "Vigo",
+    "Barrio",
+    -7.53821,
+    42.83673
+   ],
+   [
+    "Vigo",
+    "Entidad menor de población",
+    -7.51202,
+    42.4007
+   ],
+   [
+    "Vigo",
+    "Municipio",
+    -8.72679,
+    42.23589
+   ],
+   [
+    "Vigo",
+    "Capital de municipio",
+    -8.72679,
+    42.23589
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.55609,
+    43.26007
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.69237,
+    42.7166
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -9.26076,
+    42.93628
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.84794,
+    43.30832
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.14722,
+    43.32349
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.01923,
+    43.53387
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.13529,
+    43.27004
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.64679,
+    42.80432
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.66248,
+    43.17878
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.383,
+    42.9035
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.80768,
+    42.64288
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.28507,
+    43.54654
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.83258,
+    43.20111
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.65509,
+    42.88599
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.70221,
+    42.97229
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.66638,
+    42.99548
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.3338,
+    43.44611
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.62201,
+    43.58911
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.60168,
+    43.56427
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.57489,
+    43.10687
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.5368,
+    42.81171
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.50519,
+    42.8371
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.3797,
+    43.09149
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.6452,
+    42.85327
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.75311,
+    42.82953
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.40729,
+    42.75909
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.66047,
+    42.59111
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -7.66852,
+    43.38892
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -6.62694,
+    43.56243
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.72679,
+    42.23589
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -6.69169,
+    42.13528
+   ],
+   [
+    "Vigo",
+    "Vértice Geodésico",
+    -8.71652,
+    42.22963
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -8.84794,
+    43.30832
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -8.13529,
+    43.27004
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -9.26076,
+    42.93628
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -8.69237,
+    42.7166
+   ],
+   [
+    "Vigo",
+    "Entidad singular",
+    -8.4521,
+    42.86136
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -7.66248,
+    43.17878
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -7.66047,
+    42.59111
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -6.62694,
+    43.56243
+   ],
+   [
+    "Vigo",
+    "Núcleos de población",
+    -6.69169,
+    42.13528
+   ]
+  ],
+  "Vilagarcía de Arousa": [
+   [
+    "Vilagarcía de Arousa",
+    "Municipio",
+    -8.76357,
+    42.59726
+   ]
+  ],
+  "Villagarcía de Arousa": [],
+  "Villaverde": [
+   [
+    "Villaverde",
+    "Paraje",
+    -4.58069,
+    42.62189
+   ],
+   [
+    "Villaverde",
+    "Edificación",
+    -5.42438,
+    43.45752
+   ],
+   [
+    "Villaverde",
+    "Edificación",
+    -6.00739,
+    43.20209
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -4.00659,
+    42.0321
+   ],
+   [
+    "Villaverde",
+    "Distrito municipal",
+    -3.70239,
+    40.34747
+   ],
+   [
+    "Villaverde",
+    "Edificación",
+    -2.37018,
+    38.79852
+   ],
+   [
+    "Villaverde",
+    "Entidad colectiva",
+    -6.6087,
+    43.22571
+   ],
+   [
+    "Villaverde",
+    "Entidad colectiva",
+    -5.52033,
+    43.5423
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -13.90317,
+    28.63248
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -1.4035,
+    41.5191
+   ],
+   [
+    "Villaverde",
+    "EATIM",
+    -2.56626,
+    42.62469
+   ],
+   [
+    "Villaverde",
+    "Capital de EATIM",
+    -4.68229,
+    43.08065
+   ],
+   [
+    "Villaverde",
+    "EATIM",
+    -4.68229,
+    43.08065
+   ],
+   [
+    "Villaverde",
+    "Capital de EATIM",
+    -2.56626,
+    42.62469
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -4.85027,
+    40.72511
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -8.41371,
+    43.08905
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -6.60849,
+    43.22628
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -5.14324,
+    43.25961
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -5.0357,
+    43.34949
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -5.65399,
+    43.4751
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -5.93245,
+    43.3634
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -5.52162,
+    43.54191
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -13.90317,
+    28.63248
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -3.5588,
+    43.19051
+   ],
+   [
+    "Villaverde",
+    "EATIM",
+    -3.5588,
+    43.19051
+   ],
+   [
+    "Villaverde",
+    "Capital de EATIM",
+    -3.5588,
+    43.19051
+   ],
+   [
+    "Villaverde",
+    "Vértice Geodésico",
+    -3.42473,
+    40.17498
+   ],
+   [
+    "Villaverde",
+    "Vértice Geodésico",
+    -5.71214,
+    38.66519
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -1.24451,
+    40.87708
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -4.95502,
+    40.81531
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -2.09808,
+    40.63409
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -3.55798,
+    40.49689
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -2.50391,
+    40.42871
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -5.93245,
+    43.3634
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -2.56626,
+    42.62469
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -4.85027,
+    40.72511
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -6.60849,
+    43.22628
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -5.14324,
+    43.25961
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -5.52162,
+    43.54191
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -3.5588,
+    43.19051
+   ],
+   [
+    "Villaverde",
+    "Núcleos de población",
+    -4.68229,
+    43.08065
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -2.56626,
+    42.62469
+   ],
+   [
+    "Villaverde",
+    "Entidad singular",
+    -4.68229,
+    43.08065
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -3.4696,
+    39.67749
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -2.8996,
+    39.68213
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -2.92889,
+    39.62329
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -1.7655,
+    39.44989
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -4.59558,
+    37.83112
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -4.54358,
+    37.27868
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -5.77362,
+    42.95007
+   ],
+   [
+    "Villaverde",
+    "Paraje",
+    -2.5069,
+    42.78668
+   ]
+  ],
+  "Zierbena": [
+   [
+    "Zierbena",
+    "Municipio",
+    -3.0889,
+    43.3459
+   ]
+  ]
+ }
+}

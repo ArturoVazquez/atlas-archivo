@@ -37,6 +37,77 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.140 — dónde guarda España el combustible, y cuánto de eso no está disponible
+
+### Añadido
+- **`almacenamiento-petrolifero` — capa nueva, 133 instalaciones.** Las **89
+  terminales** de almacenamiento de productos petrolíferos y los **44 depósitos
+  aeroportuarios** inscritos en el registro que la **Comisión Nacional de los
+  Mercados y la Competencia** publica en cumplimiento del **artículo 41.1 de la
+  Ley 34/1998** del Sector de Hidrocarburos — el que obliga a permitir el
+  **acceso de terceros** en condiciones no discriminatorias. **15.028,2 miles de
+  metros cúbicos** en las terminales y **120,9** en los depósitos de aeropuerto,
+  a 25 de julio de 2026, que es la fecha de actualización que la propia fuente
+  declara.
+- **El campo `disponibilidad`, que es lo que esta capa aporta y la tabla de
+  capacidades no dice.** Dieciséis instalaciones llevan al lado una advertencia
+  de la Comisión: **no tener contratos vigentes** de almacenamiento (5),
+  **destinarse al uso propio del almacenista** (5), **no admitir
+  consignaciones** (2), estar **arrendada a otro almacenista**, guardar **en
+  exclusiva existencias estratégicas**, almacenar **materias primas para
+  biocarburantes** y, una, estar **sin actividad**. Suman **1.535,8 miles de
+  metros cúbicos** que existen y **no son mercado de acceso de terceros**, que
+  es justo lo que el artículo 41 existe para tutelar. Sumarlos sin distinguir es
+  contar mal, y hasta ahora no había forma de distinguirlos sin abrir el
+  registro instalación por instalación.
+- **Una instalación inscrita y sin capacidad publicada**, que solo aparece al
+  cruzar las dos vistas del registro: figura en el registro por comunidades
+  —donde la Comisión anota que no tiene contratos vigentes— y no tiene fila en
+  el cuadro de capacidades. Entra con su cifra en hueco declarado, porque el
+  hecho comprobable es que está inscrita.
+
+### Corregido
+- **`almacenamiento-petrolifero` · municipio de cuatro instalaciones, antes de
+  publicarse.** El cuadro de capacidades y el registro por comunidades **no dan
+  el mismo lugar**: donde el cuadro dice «Pontevedra» el registro dice
+  **Villagarcía de Arousa**; donde dice «Bilbao», **Santurce**; donde dice
+  «Navarra», **Pamplona**. Manda el que baja más — y por eso en el cuarto caso
+  manda el cuadro y no el registro: donde el mapa rotula «Valladolid», el cuadro
+  escribe «Valladolid (Santovenia)», y **Santovenia de Pisuerga es municipio
+  propio y distinto de la capital**.
+
+### Huecos
+- **El registro no publica ni una coordenada**, y el registro estatal de
+  emisiones —que sí sitúa las refinerías— **no cubre estas instalaciones**:
+  comprobado sobre sus 9.369 complejos, porque almacenar no es actividad del
+  anexo I. El punto de cada ficha es el del **lugar que la fuente nombra** y su
+  precisión lo declara: paraje cuando el Nomenclátor nombra el sitio, **término
+  municipal** cuando la fuente no baja de ahí, **isla** en tres terminales
+  canarias, y el nodo del aeródromo en las aeroportuarias. Ninguna de las
+  cuatro afirma saber dónde están los tanques.
+- **La capacidad por producto no se publica para todas.** Siete compañías
+  enumeran qué almacenan sin repartir los metros cúbicos entre los productos:
+  de esas instalaciones se conoce el total y no el desglose. Repartirlo a ojo
+  sería inventarlo.
+- **El registro inscribe y no certifica explotación instalación por
+  instalación.** Por eso la fase va con verificación parcial y su hueco
+  declarado: la única sobre la que la Comisión se pronuncia en sentido contrario
+  es la que anota «sin actividad», y esa se publica como parada.
+- **Dos lugares que el Nomenclátor no resuelve.** «El Calero» (Vizcaya): hay
+  cuatro con ese nombre en Bizkaia y caen en cuatro municipios distintos; se
+  sitúa donde la propia Comisión lo sitúa —en el mismo marcador que la
+  instalación de Ciérvana— y no donde parecería razonable. Y «Vigo (Puxeiros)»:
+  los dos «Puxeiros» del Nomenclátor están en Ourense, a más de cincuenta
+  kilómetros de la ría, así que esa terminal se queda en el término de Vigo.
+- **El punto de la isla de La Palma no cae dentro de ningún municipio**, de modo
+  que esa terminal usa el de su capital. Los de El Hierro y La Gomera sí caen en
+  tierra, en Valverde y en San Sebastián.
+- **La sección «Oleoductos de productos» del registro no se transcribe** porque
+  no es una tabla: es una imagen, sin un dato que leer. Esas conducciones ya
+  están en el atlas, con trazado y de otra fuente.
+
+---
+
 ## datos-v2026.08.139 — tres registros que salieron de arreglar un vigía ciego
 
 **La edición empieza con una avería.** El guion que vigila el boletín canario

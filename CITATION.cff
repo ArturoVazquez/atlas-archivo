@@ -18,8 +18,8 @@ authors:
 repository-code: https://github.com/ArturoVazquez/atlas-archivo
 url: https://atlas.eltercioviejo.com
 license: CC-BY-4.0
-version: datos-v2026.08.139
-date-released: "2026-08-31"
+version: datos-v2026.09.140
+date-released: "2026-09-01"
 doi: 10.5281/zenodo.22215544
 identifiers:
   - type: doi
