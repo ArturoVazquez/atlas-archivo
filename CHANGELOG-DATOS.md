@@ -37,6 +37,33 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.141 — el parte del 1 de septiembre, con su energía
+
+### Cambiado
+- **`agua-embalsada` avanza al parte del 1 de septiembre de 2026.** Los 374
+  embalses que hoy informan por separado suman **35.875 hm³ de una capacidad de
+  56.043**, el **64,0 %**. Una semana antes, en el parte del 25 de agosto, eran
+  36.370 hm³ y el 64,9 %: la reserva baja **495 hm³** en siete días. La cifra no
+  es la reserva nacional —el Boletín no cuenta todo lo embalsado de España—, y
+  por eso se publica siempre con su denominador.
+- **Las cuatro cifras de energía llegan en la misma edición que el agua**, que
+  no siempre ocurre: son dos documentos con dos cadencias. El resumen semanal
+  n.º 35 da **12.831 GWh almacenados de 23.011**, el 55,8 %, y **417,7 GWh
+  producidos** en la semana del 24 al 30 de agosto —frente a los 470,6 de la
+  anterior—, con **27.320 GWh en lo que va de año** contra 29.020 del pasado.
+- **Veintisiete registros conservan su fecha.** Son los que dejaron de
+  publicarse por separado —ocho de ellos porque el Boletín los agregó en 2006, y
+  el resto entre 2009 y 2017—: su serie termina donde la fuente la dejó, y a
+  esos solo se les mueve la fecha de verificación. Escribirles el parte del 1 de
+  septiembre sería atribuirle a la fuente un dato que no publica.
+
+### Añadido
+- **721.219 puntos de serie**, 374 más que la edición anterior: una semana nueva
+  para cada embalse que informa. La película de cada embalse arranca en 1988 y
+  la ficha enseña siempre su último punto, que es lo que el contrato exige.
+
+---
+
 ## datos-v2026.09.140 — dónde guarda España el combustible, y cuánto de eso no está disponible
 
 ### Añadido
