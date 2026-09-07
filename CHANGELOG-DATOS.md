@@ -37,6 +37,63 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.142 — el gas a junio, y AWS en Aragón puesto al día
+
+### Cambiado
+- **Las series de gas avanzan a junio de 2026.** Son **270 meses** en vez de
+  269 en las trece series de plantas de regasificación e interconexiones y en el
+  conjunto del sistema gasista. El punto nuevo no es lo único que se mueve: la
+  fuente ha **revisado febrero, marzo, abril y mayo** en siete series, casi
+  siempre en la columna de exportación, y por eso se regenera la película entera
+  en vez de añadirle un punto al final. La comprobación de cuadre del sistema
+  vuelve a dar los 270 meses conformes con los totales que publica el propio
+  libro.
+- **Cuatro de los cinco centros de datos de AWS en Aragón pasan a «en
+  desarrollo»**, y el quinto **no**. Lo sostiene la aprobación definitiva parcial
+  del plan (Acuerdo del Gobierno de Aragón de 22 de agosto de 2025), pero no por
+  ser una aprobación: por dos de sus apartados. Uno libera de la expropiación
+  los bienes «que han sido adquiridos fuera del procedimiento expropiatorio» por
+  la promotora —el suelo está comprado— y otro reconoce a los proyectos de
+  movimiento de tierras y urbanización la condición de **«directamente
+  ejecutables sin necesidad de título habilitante de naturaleza urbanística»**.
+  El de Zaragoza-La Cartuja se queda en tramitación porque **el mismo acto lo
+  exceptúa**: sus obras están condicionadas a dos reparcelaciones que solo están
+  aprobadas inicialmente. Cada ficha lleva el detalle de su propio tomo, y las
+  tres con línea eléctrica anotan que esa parte sigue pendiente de la
+  autorización sectorial de energía.
+- **`agua-embalsada`, `centros-datos`, `gas-interconexiones` y
+  `gas-regasificacion` mueven su fecha de verificación.**
+
+### Añadido
+- **Tres centros de datos nuevos en Aragón**, los del plan de consolidación de
+  la región de AWS declarado inversión de interés autonómico el 25 de marzo de
+  2026: **Huesca** (46,93 ha), **La Puebla de Híjar y Azaila** (328,59 ha, el
+  mayor) y **San Mateo de Gállego** (294,13 ha). Entran en tramitación, que es
+  donde están: el propio acto dice que el plan «se materializará mediante la
+  tramitación de un Plan de Interés General» que todavía no existe.
+- **Y entran con tres precisiones geométricas distintas, a propósito**, porque
+  el acto sitúa cada uno con distinto detalle. Dos van por topónimo de
+  nomenclátor oficial —uno elegido por su posición y no por su nombre, tras
+  comprobar por recuadro que el nombre del acto no está en el nomenclátor— y el
+  de Huesca va al **centroide municipal**, que es el hueco dicho en voz alta: el
+  único topónimo que el acto nombra allí cae a unos 3 km del punto que él mismo
+  describe, y el ámbito mide 0,7 km.
+- **El plan especial de Daganzo de Arriba** entra como segunda fuente del centro
+  de datos que ya estaba registrado allí. Es la vía urbanística municipal, en
+  paralelo a la ambiental autonómica, y es el primer acto que nombra por dónde
+  se evacuaría la energía. **No mueve la fase** —aprobación inicial no es
+  explotación— **ni rellena ningún hueco**: no dimensiona el centro, y ahora el
+  hueco lo dice.
+
+### Sin cambiar, y dicho
+- **La línea de 220 kV que ese plan nombra no entra como registro.** El acto la
+  cita pero no dice dónde están sus dos subestaciones ni por dónde discurre;
+  registrarla obligaría a inventarle la geometría.
+- **Ni potencia ni consumo de los tres campus nuevos**: el acto no publica
+  ninguna cifra para ellos, y queda declarado como hueco.
+
+---
+
 ## datos-v2026.09.141 — el parte del 1 de septiembre, con su energía
 
 ### Cambiado

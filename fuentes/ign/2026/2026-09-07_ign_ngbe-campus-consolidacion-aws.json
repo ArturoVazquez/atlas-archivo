@@ -1,0 +1,1197 @@
+{
+ "_": "Consultas al Nomenclátor Geográfico Básico de España (IGN) para situar los tres campus del «Plan para la consolidación de la Región AWS en Aragón». Se archiva la respuesta del servicio, que es la cita; el juicio sobre cuál vale está en `geo_fuente` de cada ficha.",
+ "capturado": "2026-09-07",
+ "servicio": "https://api-features.ign.es/collections/namedplace/items",
+ "consultas": [
+  {
+   "descripcion": "etiqueta «Los Bolares» — el paraje que el acto nombra en el ámbito de La Puebla de Híjar; devuelve dos y solo uno cae en ese municipio",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Los+Bolares&limit=100&f=json",
+   "numberReturned": 2,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Los Bolares",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "304630",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.511110342999928,
+       41.2156990870001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Los Bolares",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "304670",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.463990868999929,
+       41.239929804
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "descripcion": "etiqueta «El Saboyal» — el nombre que el acto da al sector de San Mateo de Gállego. Devuelve CERO en los tres límites de la escalera: el Nomenclátor no lo tiene",
+   "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=El+Saboyal&limit=20&f=json",
+   "numberReturned": 0,
+   "features": []
+  },
+  {
+   "descripcion": "recuadro sobre San Mateo de Gállego — 19 topónimos del entorno, consultados antes de descartar «El Saboyal» y de elegir «Dehesa Boyal» por su posición",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-0.79%2C41.81%2C-0.73%2C41.845&limit=1000&f=json",
+   "numberReturned": 19,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Torre del Cerrado",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Edificación",
+      "fecha": "2023-07-07"
+     },
+     "id": "1923946",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.769591557999945,
+       41.8421021780001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "3.3.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Camino de Milmales",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Camino y vía pecuaria",
+      "fecha": "2023-07-25"
+     },
+     "id": "1923991",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.787596797999925,
+       41.8372803650001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "5.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Balsete Penén",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Masa de agua",
+      "fecha": "2023-07-20"
+     },
+     "id": "1924013",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.735900363999917,
+       41.8386842080001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "3.3.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Camino del Plano y de Valdefalcón",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Camino y vía pecuaria",
+      "fecha": "2023-07-07"
+     },
+     "id": "1924072",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.749083870999925,
+       41.835876575
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Poligono Industrial Río Gállego",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Edificación",
+      "fecha": "2023-07-21"
+     },
+     "id": "1947862",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.771483651999915,
+       41.8132935030001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Torre Pallaruela",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Edificación",
+      "fecha": "2023-07-07"
+     },
+     "id": "1947876",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.76867604399996,
+       41.81811529
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Ermita de Santa Engracia",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Edificación",
+      "fecha": "2023-07-21"
+     },
+     "id": "1947891",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.757811833999938,
+       41.8314820210001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "5.1",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Barranco de Mascarada",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Curso natural de agua",
+      "fecha": "2023-08-04"
+     },
+     "id": "1947923",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.755309416999921,
+       41.8272705900001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "5.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Balseta de la Calera",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Masa de agua",
+      "fecha": "2023-07-20"
+     },
+     "id": "1947928",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.736693833999936,
+       41.8134766330001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "5.3",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Acequia Baja de Zuera",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Curso artificial de agua",
+      "fecha": "2023-07-20"
+     },
+     "id": "1947940",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.789794037999911,
+       41.831909243
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "4.1.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Monte Penén",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Montaña",
+      "fecha": "2023-07-25"
+     },
+     "id": "226301",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.735595192999938,
+       41.840881482
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Santa Engracia",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Paraje",
+      "fecha": "2023-07-26"
+     },
+     "id": "245675",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.746276266999928,
+       41.8317261700001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Dehesa Boyal",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Paraje",
+      "fecha": "2023-07-21"
+     },
+     "id": "245676",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.755187357999944,
+       41.8212891360001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "La Pallaruela",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Paraje",
+      "fecha": "2023-07-21"
+     },
+     "id": "245677",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.758788427999946,
+       41.8104858920001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "La Guardia",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Paraje",
+      "fecha": "2023-07-26"
+     },
+     "id": "245678",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.741393519999917,
+       41.810119694
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "1.3",
+      "fuente": "MITMA.IGN.NGMEP",
+      "etiqueta": "San Mateo de Gállego",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Municipio",
+      "fecha": "2025-09-29"
+     },
+     "id": "2712819",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.769672482,
+       41.83064436
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.1.3",
+      "fuente": "MITMA.IGN.NGMEP",
+      "etiqueta": "San Mateo de Gállego",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Capital de municipio",
+      "fecha": "2025-09-29"
+     },
+     "id": "2816767",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.769672482,
+       41.83064436
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.1.9",
+      "fuente": "MITMA.IGN.NGMEP",
+      "etiqueta": "San Mateo de Gállego",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Entidad singular",
+      "fecha": "2025-09-29"
+     },
+     "id": "2876789",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.769672482,
+       41.83064436
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "codigo_ngbe": "2.3.1",
+      "fuente": "MITMA.IGN.Red Geodésica",
+      "etiqueta": "La Pallaruela",
+      "tiponombre": "identificador_geografico",
+      "tipo": "Vértice Geodésico",
+      "fecha": "2023-06-30"
+     },
+     "id": "3303562",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.765451031,
+       41.8177701
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "descripcion": "recuadro al suroeste de Huesca, donde el acto sitúa su ámbito: 25 topónimos y ninguno es la PLHUS, que es la referencia del acto",
+   "url": "https://api-features.ign.es/collections/namedplace/items?bbox=-0.50%2C42.07%2C-0.44%2C42.11&limit=1000&f=json",
+   "numberReturned": 25,
+   "features": [
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Paridera del Castillo",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-27"
+     },
+     "id": "1895960",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.494628916999943,
+       42.1007078910001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Castillo de Orús",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1895961",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.493713389999925,
+       42.097106818
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Castillo de San Luis Alto",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1895962",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.491516124999919,
+       42.0850828960001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Castillo de San Luis Bajo",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1895963",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.47869874099996,
+       42.0877074200001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Torre de Pérez",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1895964",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.464721689999919,
+       42.0861205190001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Castillo de Torón",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1895965",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.472106943999961,
+       42.0961302780001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Castillo de Pebredo",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1895966",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.445800789999907,
+       42.0941161420001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Camino y vía pecuaria",
+      "codigo_ngbe": "3.3.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Camino del Castillo de Orús",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-27"
+     },
+     "id": "1896033",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.478515634999951,
+       42.1058958960001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Camino y vía pecuaria",
+      "codigo_ngbe": "3.3.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Camino del Castillo de Orús",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-27"
+     },
+     "id": "1896145",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.481811533999917,
+       42.102722064
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Camino y vía pecuaria",
+      "codigo_ngbe": "3.3.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Camino de la Condesa",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-25"
+     },
+     "id": "1896146",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.482177744999944,
+       42.0966795840001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Castillo Alto de San Juan",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2025-10-06"
+     },
+     "id": "1896363",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.49288939188563463,
+       42.075269676825044
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Paridera de Colchoner",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-22"
+     },
+     "id": "1896364",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.443786631999956,
+       42.0739135040001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Edificación",
+      "codigo_ngbe": "2.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Paridera del Lecinar",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-07"
+     },
+     "id": "1896366",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.472778331999962,
+       42.0733031280001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Curso natural de agua",
+      "codigo_ngbe": "5.1",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Barranco de San Luis",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-08-04"
+     },
+     "id": "1896407",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.498413097999958,
+       42.0805052530001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Curso natural de agua",
+      "codigo_ngbe": "5.1",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Barranco de Valdabra",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-08-04"
+     },
+     "id": "1896487",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.455383311999924,
+       42.083496015
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Camino de Planillas",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "200916",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.491577157999927,
+       42.1099242020001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Panizonal",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "200917",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.495605478999948,
+       42.1043089630001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Los Reganos",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-05"
+     },
+     "id": "200932",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.480285652999953,
+       42.1082762660001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Los Muertos",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-25"
+     },
+     "id": "200933",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.480224619999944,
+       42.099670308
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "La Cabañera",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "200934",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.48718262899996,
+       42.0911253800001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Pebredo",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-22"
+     },
+     "id": "200935",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.44201660899995,
+       42.100891049
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "Las Calenturas",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "200936",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.452392585999917,
+       42.1055297120001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "San Jorge",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-22"
+     },
+     "id": "201015",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.495727550999959,
+       42.0885008610001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "El Lecinar",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-26"
+     },
+     "id": "201120",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.459411632999945,
+       42.0759276510001
+      ]
+     }
+    },
+    {
+     "type": "Feature",
+     "properties": {
+      "tipo": "Paraje",
+      "codigo_ngbe": "4.2.2",
+      "fuente": "MITMA.IGN.BTN25",
+      "etiqueta": "El Carrascal",
+      "tiponombre": "identificador_geografico",
+      "fecha": "2023-07-10"
+     },
+     "id": "201203",
+     "geometry": {
+      "type": "Point",
+      "coordinates": [
+       -0.442321787999958,
+       42.077880791
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "descripcion": "puntos de municipio de Huesca, La Puebla de Híjar y San Mateo de Gállego, contra los que se miden las distancias que el acto declara",
+   "consultas": [
+    {
+     "etiqueta": "Huesca",
+     "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=Huesca&limit=50&f=json",
+     "features": [
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Municipio",
+        "fecha": "2025-09-29",
+        "codigo_ngbe": "1.3",
+        "fuente": "MITMA.IGN.NGMEP"
+       },
+       "id": "2708232",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.409021685,
+         42.14062757
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Capital de provincia",
+        "fecha": "2025-01-31",
+        "codigo_ngbe": "2.1.2",
+        "fuente": "MAETD.REL"
+       },
+       "id": "2721280",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.40842276,
+         42.14062739
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Provincia",
+        "fecha": "2018-10-02",
+        "codigo_ngbe": "1.2",
+        "fuente": "MFOMENTO.IGN.NGCE"
+       },
+       "id": "2721832",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.40842276,
+         42.14062739
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Capital de municipio",
+        "fecha": "2025-09-29",
+        "codigo_ngbe": "2.1.3",
+        "fuente": "MITMA.IGN.NGMEP"
+       },
+       "id": "2812113",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.409021685,
+         42.14062757
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Entidad singular",
+        "fecha": "2025-09-29",
+        "codigo_ngbe": "2.1.9",
+        "fuente": "MITMA.IGN.NGMEP"
+       },
+       "id": "2836417",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.409021685,
+         42.14062757
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Vértice Geodésico",
+        "fecha": "2023-06-30",
+        "codigo_ngbe": "2.3.1",
+        "fuente": "MITMA.IGN.Red Geodésica"
+       },
+       "id": "3302820",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.408497246,
+         42.14056575
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Paraje",
+        "fecha": "2023-07-26",
+        "codigo_ngbe": "4.2.2",
+        "fuente": "MITMA.IGN.BTN25"
+       },
+       "id": "472402",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.948974497999927,
+         39.2183226720001
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tiponombre": "identificador_geografico",
+        "etiqueta": "Huesca",
+        "tipo": "Paraje",
+        "fecha": "2023-07-27",
+        "codigo_ngbe": "4.2.2",
+        "fuente": "MITMA.IGN.BTN25"
+       },
+       "id": "562572",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -4.85918992499995,
+         37.2611089250001
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "etiqueta": "La Puebla de Híjar",
+     "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=La+Puebla+de+H%C3%ADjar&limit=50&f=json",
+     "features": [
+      {
+       "type": "Feature",
+       "properties": {
+        "tipo": "Municipio",
+        "codigo_ngbe": "1.3",
+        "fuente": "MITMA.IGN.NGMEP",
+        "etiqueta": "La Puebla de Híjar",
+        "tiponombre": "identificador_geografico",
+        "fecha": "2025-09-29"
+       },
+       "id": "2711486",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.446248289,
+         41.2138263
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tipo": "Capital de municipio",
+        "codigo_ngbe": "2.1.3",
+        "fuente": "MITMA.IGN.NGMEP",
+        "etiqueta": "La Puebla de Híjar",
+        "tiponombre": "identificador_geografico",
+        "fecha": "2025-09-29"
+       },
+       "id": "2815417",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.446248289,
+         41.2138263
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tipo": "Entidad singular",
+        "codigo_ngbe": "2.1.9",
+        "fuente": "MITMA.IGN.NGMEP",
+        "etiqueta": "La Puebla de Híjar",
+        "tiponombre": "identificador_geografico",
+        "fecha": "2025-09-29"
+       },
+       "id": "2874261",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.446248289,
+         41.2138263
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "etiqueta": "San Mateo de Gállego",
+     "url": "https://api-features.ign.es/collections/namedplace/items?etiqueta=San+Mateo+de+G%C3%A1llego&limit=50&f=json",
+     "features": [
+      {
+       "type": "Feature",
+       "properties": {
+        "tipo": "Municipio",
+        "codigo_ngbe": "1.3",
+        "fuente": "MITMA.IGN.NGMEP",
+        "etiqueta": "San Mateo de Gállego",
+        "tiponombre": "identificador_geografico",
+        "fecha": "2025-09-29"
+       },
+       "id": "2712819",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.769672482,
+         41.83064436
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tipo": "Capital de municipio",
+        "codigo_ngbe": "2.1.3",
+        "fuente": "MITMA.IGN.NGMEP",
+        "etiqueta": "San Mateo de Gállego",
+        "tiponombre": "identificador_geografico",
+        "fecha": "2025-09-29"
+       },
+       "id": "2816767",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.769672482,
+         41.83064436
+        ]
+       }
+      },
+      {
+       "type": "Feature",
+       "properties": {
+        "tipo": "Entidad singular",
+        "codigo_ngbe": "2.1.9",
+        "fuente": "MITMA.IGN.NGMEP",
+        "etiqueta": "San Mateo de Gállego",
+        "tiponombre": "identificador_geografico",
+        "fecha": "2025-09-29"
+       },
+       "id": "2876789",
+       "geometry": {
+        "type": "Point",
+        "coordinates": [
+         -0.769672482,
+         41.83064436
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
