@@ -159,6 +159,19 @@ vigente —que mañana puede ser otra cosa—; el paquete de una release da lo q
 decía el atlas ese día, y no cambia nunca. Un análisis hecho hace un año se
 rehace con los datos de entonces.
 
+**El aparato de citación entero, clonando este repositorio.** Aquí lo que pesa
+no son los datos sino `fuentes/` — los documentos primarios archivados, hoy
+algo más de 400 MB y creciendo con cada edición. Quien solo quiera el
+contrato, la procedencia y el changelog puede ahorrárselos:
+
+```
+git clone --filter=blob:none https://github.com/ArturoVazquez/atlas-archivo.git
+```
+
+trae la historia completa y baja cada documento solo cuando algo lo abre. El
+clon corriente, sin banderas, se lo lleva todo — que también está bien: para
+eso se archiva.
+
 ## Si encuentras un error
 
 Se agradece, y **las [issues](https://github.com/ArturoVazquez/atlas-archivo/issues)
