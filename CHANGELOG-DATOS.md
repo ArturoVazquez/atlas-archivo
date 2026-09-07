@@ -37,14 +37,89 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.143 — lo que la prosa decía y el dato desmentía
+
+Una edición de correcciones. No entra ni un registro nuevo: lo que cambia es
+que **seis textos publicados decían algo que sus propios datos desmentían**, y
+que el atlas gana dos comprobaciones para que esa clase de defecto deje de poder
+esconderse.
+
+### Corregido
+
+- **Cuatro interconexiones de gas negaban una gráfica que su ficha dibujaba.**
+  Badajoz, Irún, Tuy y Larrau llevaban desde el 15 de agosto una clave que decía
+  «esta conexión NO tiene película» y «solo tienen serie Medgaz y el
+  Magreb-Europa» — mientras las cuatro páginas dibujaban su serie. La edición
+  que les dio historia no tocó ese texto, y así ha viajado desde entonces. **La
+  de Irún era la peor**: su gráfica es la línea de 141 meses a cero que el
+  propio texto decía que se leería mal. Se quedan las gráficas y el texto pasa a
+  explicarlas, con lo que hace la línea de cada una: el acantilado de Badajoz
+  (flujo de mayo de 2005 a abril de 2016), los dos únicos meses en que Tuy
+  vuelve a traer número, y Larrau con clave propia, porque a ella la fuente le
+  deja la celda **vacía** y a Irún le publica un **cero**, y por eso su película
+  se corta en 2014 y la de Irún no.
+- **Ocho cifras que envejecieron al avanzar el gas un mes.** Dos «269 partes»
+  que ya son 270, un «780,8 en mayo, último publicado» que ya es junio, y en el
+  conjunto del sistema gasista los «95 meses», los «140 meses», el mes de mayo
+  con sus dos cifras y **un 4,2 % que la propia página ya calculaba como
+  10,6 %** tres líneas más arriba. Salen del dato: la gráfica y la página las
+  calculan, y así no envejecen.
+- **Una premisa falsa, en tres sitios.** Los tres decían que la columna de
+  cisternas «queda en blanco» desde enero de 2023. **No queda en blanco: la
+  fuente publica cero**, todos los meses, sin una sola celda vacía. Un cero
+  afirma que no entró nada; un blanco calla. Lo que sigue sin saberse —y sigue
+  declarado como hueco— es por qué se acabó.
+- **Catorce fechas de verificación que no se habían movido.** Las cabeceras de
+  las dos capas de gas y de su conjunto declaraban el 7 de septiembre mientras
+  sus trece fichas seguían en el 13 y el 14 de agosto.
+- **Cinco capas publicaban dos fechas de verificación distintas.**
+  `ferrocarril`, `icts`, `red-geodesica`, `residuos-radiactivos` y
+  `minerales-proyectos` decían una en el catálogo y otra en la cabecera de su
+  propio fichero. **Ninguna fecha se ha inventado para cuadrarlas**: en las
+  cinco, la buena estaba ya escrita en sus fichas —cuatro veces coincidía con el
+  catálogo y una con el fichero—, así que se ha escrito la que la evidencia
+  sostiene.
+
+### Añadido
+
+- **Contrato 1.82.0 → 1.84.0, con dos comprobaciones nuevas.**
+  - **R13 · una cifra derivable se declara.** Una clave puede decir qué
+    magnitudes de su serie cita —cuántos partes tiene, el valor del último, en
+    cuántos hubo flujo, cuánto suman— y la validación **las vuelve a calcular en
+    cada pasada**, bloqueando si el texto ya no las dice. Lo primero sigue
+    siendo no escribir la cifra, porque lo que se deriva del dato no se guarda
+    en el dato; declararla es para cuando el texto la necesita de verdad, y
+    sobre todo **para la que se cree congelada**: la primera del atlas dice que
+    las cisternas suman 1.319 GWh en 72 meses, así que el día que vuelva a
+    entrar una, la validación lo dirá.
+  - **§7.14 · la fecha de verificación está escrita dos veces y tiene que decir
+    lo mismo** — en el catálogo y en la cabecera de la capa. Y la cabecera no
+    puede ser posterior a la fecha de verificación más reciente de sus fichas:
+    afirmar una pasada que no dejó rastro en ningún registro es afirmar algo que
+    no ocurrió. Al revés sí se admite, porque decir de menos es como debe
+    equivocarse una fecha de verificación.
+
+### Sin cambiar, y dicho
+
+- **Ni un registro entra, sale ni cambia de fase.** Las cifras de todas las
+  capas son las mismas que en la edición anterior: lo que cambia es lo que los
+  textos dicen de ellas y las fechas de cuándo se comprobaron.
+- **La errata de la edición anterior se corrige en su entrada**, con su nota al
+  pie. Lo depositado se queda como se depositó.
+
+---
+
 ## datos-v2026.09.142 — el gas a junio, y AWS en Aragón puesto al día
 
 ### Cambiado
-- **Las series de gas avanzan a junio de 2026.** Son **270 meses** en vez de
-  269 en las trece series de plantas de regasificación e interconexiones y en el
-  conjunto del sistema gasista. El punto nuevo no es lo único que se mueve: la
-  fuente ha **revisado febrero, marzo, abril y mayo** en siete series, casi
-  siempre en la columna de exportación, y por eso se regenera la película entera
+- **Las series de gas avanzan a junio de 2026.** Doce de las trece series de
+  plantas de regasificación e interconexiones ganan su punto de junio, y con
+  ellas el conjunto del sistema gasista: las más largas llegan a **270 meses**
+  en vez de 269, desde enero de 2004. La decimotercera, Larrau, no gana punto
+  —la estadística no le da cifra desde 2014— y de ella solo se mueve la cita.
+  El punto nuevo no es lo único que se mueve: la fuente ha **revisado febrero,
+  marzo, abril y mayo** en cinco series y en el conjunto —nueve cifras, casi
+  todas en la columna de exportación—, y por eso se regenera la película entera
   en vez de añadirle un punto al final. La comprobación de cuadre del sistema
   vuelve a dar los 270 meses conformes con los totales que publica el propio
   libro.
@@ -61,8 +136,19 @@ que no sabe está afirmando que lo sabe todo.
   aprobadas inicialmente. Cada ficha lleva el detalle de su propio tomo, y las
   tres con línea eléctrica anotan que esa parte sigue pendiente de la
   autorización sectorial de energía.
-- **`agua-embalsada`, `centros-datos`, `gas-interconexiones` y
-  `gas-regasificacion` mueven su fecha de verificación.**
+- **`centros-datos`, `gas-interconexiones` y `gas-regasificacion` mueven su
+  fecha de verificación.**
+
+  > **Errata corregida el mismo día.** Esta entrada decía tres cosas que no se
+  > sostienen, y quedan arregladas arriba. Decía que las **trece** series de gas
+  > llegan a 270 meses: son once, porque la de Larrau se corta en septiembre de
+  > 2014 con 129 partes y la de El Musel arranca en 2020 y va por 78. Decía que
+  > la fuente revisó **siete** series: fueron cinco —Tuy, Barcelona, Bilbao,
+  > Mugardos y El Musel— más el conjunto del sistema. Y nombraba a
+  > **`agua-embalsada`** entre las capas que mueven su fecha de verificación,
+  > cuando no la movió: sigue en el 2 de septiembre, la del parte que la puso al
+  > día. Las tres se vieron repasando la edición ya publicada, y la siguiente
+  > cuenta cómo.
 
 ### Añadido
 - **Tres centros de datos nuevos en Aragón**, los del plan de consolidación de
