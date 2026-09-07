@@ -172,6 +172,11 @@ trae la historia completa y baja cada documento solo cuando algo lo abre. El
 clon corriente, sin banderas, se lo lleva todo — que también está bien: para
 eso se archiva.
 
+En Windows conviene, antes de clonar, `git config --global core.longpaths
+true`: algunos documentos archivados llevan nombres largos y descriptivos, y
+en una carpeta de destino profunda superan el límite clásico de 260
+caracteres — sin ese ajuste el clon termina «bien» con el checkout a medias.
+
 ## Si encuentras un error
 
 Se agradece, y **las [issues](https://github.com/ArturoVazquez/atlas-archivo/issues)
