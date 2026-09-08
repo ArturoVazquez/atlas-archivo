@@ -37,6 +37,32 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.144 — el parte del 8 de septiembre, con la sangría del verano
+
+### Cambiado
+- **`agua-embalsada` avanza al parte del 8 de septiembre de 2026.** Los 374
+  embalses que hoy informan por separado suman **35.073 hm³ de una capacidad de
+  56.043**, el **62,6 %**. Una semana antes eran 35.875 hm³ y el 64,0 %: la
+  reserva baja **802 hm³ en siete días**, frente a los 495 de la semana
+  anterior — la sangría semanal casi se dobla en el cierre del verano. La cifra
+  no es la reserva nacional —el Boletín no cuenta todo lo embalsado de
+  España—, y por eso se publica siempre con su denominador.
+- **La energía llega otra vez en la misma edición que el agua.** El resumen
+  semanal n.º 36 da **12.354 GWh almacenados de 23.011**, el 53,7 % —477 GWh
+  menos que hace una semana—, y **508,1 GWh producidos** en la semana del 31 de
+  agosto al 6 de septiembre, frente a los 417,7 de la anterior: se embalsa
+  menos y se turbina más, que es lo que esas dos cifras dicen juntas. En lo
+  que va de año, **27.828 GWh** contra 29.450 del pasado.
+- **Veintisiete registros conservan su fecha.** Son los que la fuente dejó de
+  publicar por separado: su serie termina donde el Boletín la dejó y solo se
+  les mueve la fecha de verificación, como en cada parte.
+
+### Añadido
+- **721.593 puntos de serie**, 374 más que la edición anterior: una semana
+  nueva para cada embalse que informa.
+
+---
+
 ## datos-v2026.09.143 — lo que la prosa decía y el dato desmentía
 
 Una edición de correcciones. No entra ni un registro nuevo: lo que cambia es
