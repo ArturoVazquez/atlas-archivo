@@ -1387,10 +1387,11 @@ acometida del centro de Tres Cantos (BOCM de 29/04/2026) ·
 inicial (BOA n.º 128, de 07/07/2026) y el acuerdo de redelimitación del ámbito
 con la relación de bienes afectados (BOA n.º 47, de 10/03/2026), más la orden de
 levantamiento de actas previas de ocupación del de La Puebla de Alfindén (BOA de
-10/07/2026) · **Junta de Extremadura (DOE)**, el Decreto 92/2026 de proyecto
-empresarial de interés autonómico y los anuncios de información pública
-ambiental de los centros de Navalmoral de la Mata (AAI25/032) y de Badajoz
-(AAI25/024) · **Gobierno Vasco (BOPV)**, la declaración de impacto ambiental con
+10/07/2026) · **Junta de Extremadura (DOE)**, los Decretos 92/2026 y 151/2025 de proyecto
+empresarial de interés autonómico —Navalmoral de la Mata y Badajoz—, los
+anuncios de información pública ambiental de los dos centros (AAI25/032 y
+AAI25/024) y la autorización administrativa previa de las infraestructuras
+eléctricas del de Badajoz (DOE n.º 173, de 07/09/2026) · **Gobierno Vasco (BOPV)**, la declaración de impacto ambiental con
 autorización ambiental integrada del centro de Ribabellosa (BOPV n.º 243, de
 22/12/2023), su modificación de 2024 y la información pública de su ampliación
 (BOPV n.º 118, de 24/06/2026) · **IGN**, Nomenclátor
@@ -1400,6 +1401,22 @@ y CartoCiudad.
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
 mercado son de la patronal. De ahí que sean 8 y no 60.
+**Badajoz gana nombre y decreto** *(2026-09-10, release `.145`)* · Los trajo la
+guardia semanal del boletín extremeño: la **autorización administrativa previa
+de las infraestructuras eléctricas de consumo** bautiza el proyecto —«Data
+Center Nostrum Evergreen (DC Badajoz)»—, y al citar el **Decreto 151/2025**
+destapó que el centro es Proyecto Empresarial de Interés Autonómico desde
+noviembre de 2025: un acto que la ficha no tenía, publicado antes de su alta, y
+el mismo instrumento con el que entró Navalmoral. El instrumento del registro
+pasa a ser ese decreto y el anuncio ambiental se queda como fuente. **La fase
+no se mueve**: lo autorizado son subestaciones y líneas, y la autorización
+ambiental del centro sigue sin resolverse — la propia resolución dice que el
+órgano ambiental «tramitará» el informe del proyecto global. **Y una cautela
+sobre las cifras, que no coinciden entre actos:** el decreto habla de un acceso
+a red de hasta 300 MW y de una subestación 220/30 kV; el anuncio ambiental
+declara 170 MW de demanda y el proyecto eléctrico autorizado fija la
+subestación en 220/20 kV. No se elige ninguna: cada cifra va con su acto, y la
+potencia TI sigue sin publicarla nadie.
 **Dos más, y los dos de un barrido dirigido** *(2026-08-31, release `.139`)* ·
 No los encontró la guardia semanal ni una búsqueda: los encontró **preguntarle al
 sumario por un expediente concreto**, que es la herramienta que nació ese día.

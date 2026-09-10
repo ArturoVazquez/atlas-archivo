@@ -37,6 +37,78 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.145 — Badajoz gana nombre y decreto, y el vigía del miércoles queda juzgado
+
+**Una edición de un solo registro, y la trae la guardia.** El vigía de los
+boletines autonómicos señaló el 9 de septiembre tres actos: uno engorda una
+ficha, otro se suma a un expediente que ya se sigue y el tercero queda fuera por
+la doctrina de su capa. Los tres se cuentan aquí, para que la ausencia también
+tenga acta.
+
+### Corregido
+
+- **`centros-datos:data-riocaya-badajoz` · `nombre`** — «Centro de procesamiento
+  de datos de Data Riocaya (Badajoz)» → **«Centro de datos Nostrum Evergreen
+  (Badajoz)»**. Lo bautiza la resolución de 26 de agosto de 2026 que autoriza sus
+  infraestructuras eléctricas de consumo (DOE n.º 173, de 7 de septiembre):
+  «Data Center Nostrum Evergreen (DC Badajoz)». Ni el decreto ni el anuncio
+  ambiental le daban nombre.
+- **`centros-datos:data-riocaya-badajoz` · `instrumento`** — el anuncio de
+  información pública ambiental → el **Decreto 151/2025, de 11 de noviembre**,
+  que declara el proyecto **Proyecto Empresarial de Interés Autonómico** (DOE
+  n.º 221, de 17 de noviembre de 2025). Es el mismo instrumento con el que entró
+  el centro de Navalmoral de la Mata, y estaba publicado desde antes del alta:
+  lo destapó la resolución eléctrica al citarlo. El anuncio ambiental sigue en
+  la ficha como fuente.
+- **`centros-datos:data-riocaya-badajoz` · `promotor`** — «Data Riocaya, SL» →
+  **«Data Riocaya, SLU»**, con NIF B70639497, como la escriben el decreto y la
+  resolución de 2026. El anuncio de junio la escribía sin la «U»: es la misma
+  sociedad, unipersonal.
+
+### Añadido
+
+- **Dos actos primarios en la ficha de Badajoz.** El decreto de interés
+  autonómico —utilidad pública y urgencia de ocupación para el campo de 220 kV
+  y la línea de suministro, inversión prevista de 1.913 millones de euros y 330
+  UTA de empleo declarados por el promotor, acceso a red de hasta 300 MW— y la
+  autorización administrativa previa de las infraestructuras eléctricas de
+  consumo: el campo de 220 kV de una subestación de enlace 400/220 kV, dos
+  circuitos subterráneos de 220 kV de 3,3 km y una subestación propia 220/20 kV
+  con seis transformadores de 110/150 MVA, más dos a futuro. **La fase no se
+  mueve**: lo autorizado son subestaciones y líneas, y la autorización
+  ambiental del centro sigue sin resolverse — la propia resolución dice que el
+  órgano ambiental «tramitará» el informe del proyecto global.
+
+### Huecos
+
+- **La potencia TI de Badajoz sigue sin publicarla nadie.** El anuncio
+  ambiental la da por módulo; el decreto habla de acceso a red y la resolución
+  eléctrica, de megavoltiamperios de transformación. Ninguna de las tres es
+  potencia de sala, y la ficha las separa.
+- **La autorización ambiental integrada y la declaración de impacto ambiental
+  del centro no constan resueltas** (expediente AAI25/024).
+- **Las cifras de los tres actos no coinciden entre sí, y no se elige ninguna:**
+  170 MW de demanda en el anuncio ambiental frente a 300 MW de acceso en el
+  decreto; subestación 220/30 kV en el decreto frente a 220/20 kV en el proyecto
+  autorizado. Cada una va con su acto.
+
+### Y dos actos del mismo vigía que no cambian ningún dato
+
+- **Rhodes (Calatorao)**: el informe de impacto ambiental de las **conexiones
+  eléctricas exteriores** del campus —línea de 220 kV desde la subestación de
+  Calatorao y subestación «Rhodes» 220/33 kV— (BOA n.º 173, de 7 de septiembre
+  de 2026). Un acto eléctrico no mueve la fase del centro, que sigue en
+  tramitación; el expediente ya se sigue y este acto se le sumará cuando se
+  archiven los suyos.
+- **Una desaladora para autoconsumo de unos apartamentos en Tías (Lanzarote)**,
+  en información pública (BOC n.º 180, de 8 de septiembre de 2026). No entra: la
+  capa registra la planta que una fuente oficial nombra y sitúa como
+  instalación existente, y deja fuera las peticiones de plantas privadas de
+  autoabastecimiento, que sitúan por municipio y no acreditan que la planta
+  exista.
+
+---
+
 ## datos-v2026.09.144 — el parte del 8 de septiembre, con la sangría del verano
 
 ### Cambiado
