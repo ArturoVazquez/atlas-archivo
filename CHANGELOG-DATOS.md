@@ -37,6 +37,69 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.146 — La guardia se publica como dato, y la fuente puede decir qué hito es
+
+Esta edición no cambia ningún registro. Cambia lo que el atlas publica sobre
+sí mismo: lo que los vigías señalan y lo que una persona decide con ello pasa
+de un papel interno a un fichero de datos, y cada fuente de un registro puede
+declarar qué es en la vida del expediente. Contrato 1.85.0.
+
+### Añadido
+
+- **La guardia, en `datos/guardia/2026.json`** (contrato §4.3). Cada acto que
+  un vigía de boletín señaló, con su juicio y su motivo: entra en una edición,
+  se suma a un expediente que ya se sigue, queda fuera, o queda pendiente.
+  El primer fichero trae los cuatro hallazgos de septiembre ya juzgados: el
+  depósito regulador de Torrevieja (fuera: es distribución, no una planta), la
+  autorización eléctrica del centro de datos de Badajoz (entra: dio nombre,
+  decreto y forma social al registro en la edición anterior), el informe
+  ambiental de las conexiones de Rhodes en Calatorao (al expediente, sin
+  mover un dato) y una desaladora de autoconsumo en Tías (fuera, por la nota
+  de la capa). Los juicios anteriores a septiembre están en prosa en las
+  ediciones que los produjeron y no se transcriben hacia atrás.
+- **`hito` en la fuente** (contrato §6.1). Una fuente puede declarar qué es
+  en la vida del expediente: solicitud, información pública, evaluación
+  ambiental, autorización, puesta en servicio, modificación, cierre,
+  inventario u otro. Con él, las fuentes fechadas de un registro son su
+  cronología, y la ficha la enseña ordenada. Ningún registro lo lleva
+  todavía: el relleno se hará capa a capa, a mano, empezando por las cuatro
+  preguntas principales del tablero.
+
+### Cambiado
+
+- **El contrato sube a 1.85.0.** Nace §4.3 (la guardia), §7.15 (lo que se
+  comprueba de ella desde fuera del esquema) y la regla R14: un registro en
+  producción cuyas fuentes declaran hitos tiene que tener entre ellos una
+  puesta en servicio, una autorización o un inventario. La regla solo muerde
+  cuando hay hitos declarados, para que el relleno pueda ir capa a capa.
+- **El tercer vehículo cambia de nombre.** Lo que el contrato llamaba
+  historia se llama lectura y deriva de la edición sin interpretar. Las cinco
+  historias publicadas se retiraron; su doctrina sigue en la nota de cada
+  capa, y sus direcciones llevan al tablero.
+
+### Y en el sitio, con esta edición
+
+- **El tablero**, en `/tablero/`, sustituye a las lecturas: las trece
+  preguntas permanentes que el atlas existe para contestar, con su estado, su
+  respuesta calculada sobre la edición, quién está detrás, qué ha cambiado y
+  qué falta. Cuatro son principales: centros de datos, minerales críticos,
+  nuclear e interconexiones eléctricas. Cada capa dice a qué pregunta sirve,
+  o que es suelo.
+- **Cada ficha enseña su historia en el atlas**: en qué edición entró y qué
+  cambió después, comparando el registro entre ediciones. El índice de cada
+  capa resume sus últimas ediciones con movimiento, y `cambios.json` lo
+  publica registro a registro.
+- **La guardia**, en `/guardia/`, con las cuentas por juicio y por vigía.
+
+### Huecos
+
+- **Ningún registro declara `hito` todavía.** La cronología se enseña con
+  «fuente» en cada fila hasta que se rellene.
+- **Las puertas de dos hallazgos apuntan al diario y no al acto.** La
+  resolución del DOE y el acto del BOC se citan por la portada de su boletín
+  porque el atlas no ha archivado todavía el enlace directo; el número del
+  diario y del acto sí van.
+
 ## datos-v2026.09.145 — Badajoz gana nombre y decreto, y el vigía del miércoles queda juzgado
 
 **Una edición de un solo registro, y la trae la guardia.** El vigía de los
