@@ -1,0 +1,384 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:22:01+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800DF3N01FBNEUJ43",
+  "attributes": {
+   "lei": "959800DF3N01FBNEUJ43",
+   "entity": {
+    "legalName": {
+     "name": "REGASIFICADORA DEL NOROESTE, S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "PUNTA PROMONTOIRO S/N"
+     ],
+     "addressNumber": "S/N",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Mugardos",
+     "region": "ES-C",
+     "country": "ES",
+     "postalCode": "15620"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "PUNTA PROMONTOIRO S/N"
+     ],
+     "addressNumber": "S/N",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Mugardos",
+     "region": "ES-C",
+     "country": "ES",
+     "postalCode": "15620"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000068418666",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1999-03-09T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2018-07-19T10:15:23Z",
+    "lastUpdateDate": "2026-08-13T08:24:41Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-07-19T10:15:23Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000068418666",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A15685324"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/15685324",
+   "qcc": "QESRBMCGF6",
+   "gem": null,
+   "spglobal": [
+    "12412520"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800DF3N01FBNEUJ43|0|3374121bff0d7adf9e2092aaceefb72197b5c4a58785041c931b0ea8d7fda590|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800DF3N01FBNEUJ43",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_LEI",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "9598009H3QF4UL961L21",
+   "attributes": {
+    "lei": "9598009H3QF4UL961L21",
+    "entity": {
+     "legalName": {
+      "name": "GALLEGA DE DISTRIBUIDORES DE ALIMENTACIÓN, S.A.",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [
+      {
+       "name": "GALLEGA DE DISTRIBUIDORES DE ALIMENTACION, S.L.",
+       "language": "es",
+       "type": "PREFERRED_ASCII_TRANSLITERATED_LEGAL_NAME"
+      }
+     ],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "Polígono Piadela S/N"
+      ],
+      "addressNumber": "S/N",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Betanzos",
+      "region": null,
+      "country": "ES",
+      "postalCode": "15300"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "Polígono Piadela S/N"
+      ],
+      "addressNumber": "S/N",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Betanzos",
+      "region": null,
+      "country": "ES",
+      "postalCode": "15300"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000060432642",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1986-10-06T23:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2026-06-26T10:53:04Z",
+     "lastUpdateDate": "2026-08-14T06:57:46Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-06-26T10:53:04Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000060432642",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A15106925"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/15106925",
+    "qcc": null,
+    "gem": null,
+    "spglobal": [
+     "6461578"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21/ultimate-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "959800DF3N01FBNEUJ43|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|1|560745333bd4aa44ad90e16e123e18583eff8362ca4e806bf3c7109073fe4777|",
+   "attributes": {
+    "validFrom": "2026-08-14T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "959800DF3N01FBNEUJ43",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "9598009H3QF4UL961L21",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-30T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2026-07-14T11:57:03Z",
+     "lastUpdateDate": "2026-08-13T08:24:41Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-07-19T10:15:23Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de La Coruña, depósito nº <7223>, de fecha <30/07/2025>, ejercicio <2024>"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800DF3N01FBNEUJ43"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598009H3QF4UL961L21"
+     }
+    }
+   }
+  }
+ }
+}

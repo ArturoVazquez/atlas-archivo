@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:22:50+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005556337",
+  "attributes": {
+   "lei": "95980020140005556337",
+   "entity": {
+    "legalName": {
+     "name": "CANARIAS SUBMARINE LINK S.L.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Polígono Industrial Granadilla S/N"
+     ],
+     "addressNumber": "S/N",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Granadilla de Abona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "38600"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Polígono Industrial Granadilla S/N"
+     ],
+     "addressNumber": "S/N",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Granadilla de Abona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "38600"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000235010339",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": null,
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-25T16:01:17Z",
+    "lastUpdateDate": "2026-08-24T06:31:41Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2015-02-25T16:01:17Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000235010339",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B35808468"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/35808468",
+   "qcc": "QESXX8BR7V",
+   "gem": null,
+   "spglobal": [
+    "225629438"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005556337/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005556337/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005556337/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005556337/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005556337/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005556337"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005556337|0|327ef75ef32c0a714b7c2d81e61a918965b34b67dd7ebe5ba33edfa1d4f2f01c|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005556337",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005556337"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005556337|0|0f28cd9ecfb4acb991da753b38a7f7fc675570c06d703fc3c5dc9b02ac2e2ab0|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005556337",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005556337"
+     }
+    }
+   }
+  }
+ }
+}

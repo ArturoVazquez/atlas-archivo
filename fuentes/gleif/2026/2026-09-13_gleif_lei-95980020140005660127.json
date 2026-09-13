@@ -1,0 +1,194 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:22:08+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005660127",
+  "attributes": {
+   "lei": "95980020140005660127",
+   "entity": {
+    "legalName": {
+     "name": "FORESTAL DEL ATLÁNTICO, S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [
+     {
+      "name": "FORESTAL DEL ATLANTICO, S.A.",
+      "language": "es",
+      "type": "PREFERRED_ASCII_TRANSLITERATED_LEGAL_NAME"
+     }
+    ],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Punta Promontoiro s/n"
+     ],
+     "addressNumber": "s/n",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Mugardos",
+     "region": null,
+     "country": "ES",
+     "postalCode": "15620"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Punta Promontoiro s/n"
+     ],
+     "addressNumber": "s/n",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Mugardos",
+     "region": null,
+     "country": "ES",
+     "postalCode": "15620"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000059738780",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1987-07-31T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-03-10T07:17:39Z",
+    "lastUpdateDate": "2026-08-16T07:34:58Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-03-13T07:04:09Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000059738780",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A15126253"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/15126253",
+   "qcc": "QESV7JT7YD",
+   "gem": null,
+   "spglobal": [
+    "826473"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005660127/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005660127/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005660127/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005660127/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005660127/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005660127"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005660127|0|96c1d1cb84c9f170c8fc9d58aa8829ecdb9d6229ed7909296d259a34b734241d|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005660127",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_LEI",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005660127"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005660127|0|b20cce7650e94480551dd39507203240e44c3f2074bc918c75d65c97695bb837|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005660127",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_LEI",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005660127"
+     }
+    }
+   }
+  }
+ }
+}

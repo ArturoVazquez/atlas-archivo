@@ -37,6 +37,83 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.149 — Quién está detrás de las refinerías, el gas, el hidrógeno y los cables
+
+Segunda tanda del registro de entidades. Entran treinta sociedades, las que
+nombran las capas de refinerías, almacenamientos y plantas de gas, hidrógeno y
+cables submarinos, y con ellas los textos sin entidad pasan de nueve capas a
+tres. Ningún registro de capa cambia. Contrato 1.88.0.
+
+### Añadido
+
+- **Dieciséis entidades con su registro LEI**, archivado en
+  `fuentes/gleif/2026/`: Repsol Fuels, Moeve, Asfaltos Españoles, BP Energía
+  España, Petróleos del Norte, Enagás Transporte, Bahía de Bizkaia Gas, Planta
+  de Regasificación de Sagunto, Regasificadora del Noroeste, Forestal del
+  Atlántico, Teréga, NaTran, Open Grid Europe, Telefónica de España, Telxius
+  Cable España y Canarias Submarine Link. Cuatro de esos registros están sin
+  renovar y sostienen la identidad solo en parcial.
+- **Dos sociedades con su nombre de antes.** El registro de complejos
+  industriales escribe «Repsol Petróleo» y «Compañía Española de Petróleos», y
+  la plataforma de la Comisión, «Moeve (antes Cepsa)». Son Repsol Fuels y
+  Moeve: sus registros LEI guardan esas denominaciones como nombre legal
+  anterior de la misma sociedad, y es ese dato, y no el parecido, lo que reúne
+  los textos.
+- **Catorce entidades escritas desde el acto que las nombra**, sin registro
+  LEI: Gas Natural Almacenamiento Andalucía, Musel Energy Hub, Enagás
+  Infraestructuras de Hidrógeno, REN Gasodutos, H2 Aboño, H2Pole, CI ETF I
+  Renato Ptx Holdco, Erasmo P2X, Canalink África, Cardinal Fish Infrastructure,
+  Edge Network Infrastructure Services Spain, GTD Cableado de Redes
+  Inteligentes, Valencia Digital Port Conect y Vodafone Enterprise Spain. De
+  ellas, Musel Energy Hub tiene NIF, porque lo imprime la resolución que le
+  transmite la planta de El Musel.
+- **Las relaciones de matriz que GLEIF sostiene.** Petróleos del Norte depende
+  de Repsol, confirmado; Repsol Fuels, también de Repsol, y Enagás Transporte,
+  de Enagás, las dos en parcial, porque la relación la declara la propia
+  sociedad; Telefónica de España, de Telefónica, en parcial; y Regasificadora
+  del Noroeste tiene por matriz última a Gallega de Distribuidores de
+  Alimentación, confirmado.
+
+### Cambiado
+
+- **El contrato sube a 1.88.0**, y corrige una medición. Buscar una sociedad
+  por su nombre en GLEIF devolvía otra en cuatro de veintinueve casos, y no en
+  cinco: el quinto, Repsol Petróleo, devolvía Repsol Fuels, que es la misma
+  sociedad con su nombre nuevo y que un cotejo de nombres habría descartado.
+  El nombre falla en las dos direcciones. El contrato dice ahora cuándo un
+  nombre anterior es alias de una entidad y que un número con forma de NIF
+  solo es NIF si lo valida la Agencia Tributaria o el Registro Mercantil.
+- **Forestal del Atlántico reúne dos textos**: el de la plataforma de la
+  Comisión y el del cuadro de almacenamiento petrolífero de la CNMC, que la
+  escribe sin forma societaria en una instalación de Mugardos. Mugardos es su
+  domicilio en GLEIF, y el censo de operadores al por mayor de la CNMC le da el
+  mismo NIF.
+- **La pregunta de la matriz extranjera** cuenta ya seis sociedades
+  domiciliadas fuera de España sin matriz declarada, en Francia, Portugal y
+  Alemania. El «quién» de las preguntas de hidrógeno y de cables enlaza entero
+  a su entidad, y el de combustibles, en seis de sus cuarenta y ocho nombres.
+
+### Huecos
+
+- **Ninguna de las treinta tiene matriz extranjera documentada.** Once
+  declaran en GLEIF una excepción de información sobre su matriz (no consolida,
+  su matriz no tiene LEI o declina publicarla), BP Energía España entre ellas,
+  y las catorce sin LEI no tienen documento archivado que la nombre. Una
+  excepción dice que la matriz no se comunica, no que no exista.
+- **H2 Aboño y H2Pole** figuran en la plataforma de la Comisión como «del
+  grupo EDP» y «del grupo Reganosa», sin decir qué sociedad del grupo las
+  controla, y por eso no llevan matriz.
+- **El NIF de BP Energía España** figura en su registro LEI inscrito en el
+  Registro de Fundaciones de la Comunidad de Madrid, que no valida NIF, y no
+  se toma.
+- **Doscientos once textos de registro siguen sin entidad, en tres capas**:
+  el almacenamiento petrolífero, las plantas solares y las ICTS. En las dos
+  primeras la fuente escribe nombres cortos sin forma societaria, que no
+  identifican a una sociedad sin otro documento; en las ICTS, el acuerdo del
+  mapa de infraestructuras no imprime el identificador de sus titulares.
+
+---
+
 ## datos-v2026.09.148 — Las interconexiones eléctricas, con su promotor, y la de Portugal ya en servicio
 
 Esta edición completa la primera tanda del registro de entidades con la única

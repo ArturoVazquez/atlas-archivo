@@ -1,0 +1,554 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:22:36+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300N33JQ7EG2VD447",
+  "attributes": {
+   "lei": "549300N33JQ7EG2VD447",
+   "entity": {
+    "legalName": {
+     "name": "TELEFONICA DE ESPAÑA SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "GRAN VIA, NUMERO 28"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "28013"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "NORTE 1",
+      "DISTRITO TELEFONICA"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "25680"
+    },
+    "registeredAt": {
+     "id": "RA000535",
+     "other": null
+    },
+    "registeredAs": "A82018474",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": null,
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-12-25T01:45:00Z",
+    "lastUpdateDate": "2023-08-21T14:28:31Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2021-11-12T00:00:00Z",
+    "managingLou": "213800WAVVOPS85N2205",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000535",
+     "other": null
+    },
+    "validatedAs": "A82018474",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/82018474",
+   "qcc": "QES4E05P44",
+   "gem": null,
+   "spglobal": [
+    "1475802"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "549300EEJH4FEPDBBR25",
+   "attributes": {
+    "lei": "549300EEJH4FEPDBBR25",
+    "entity": {
+     "legalName": {
+      "name": "TELEFONICA SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "GRAN VIA 28"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "MADRID",
+      "region": "ES-M",
+      "country": "ES",
+      "postalCode": "28013"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "GRAN VIA 28"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "MADRID",
+      "region": "ES-M",
+      "country": "ES",
+      "postalCode": "28013"
+     },
+     "registeredAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "registeredAs": "A28015865",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2013-11-19T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2013-11-19T03:08:00Z",
+     "lastUpdateDate": "2025-10-01T16:10:51Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-10-01T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "validatedAs": "A28015865",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "TEFEESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/28015865",
+    "qcc": "QESCX6VBSS",
+    "gem": null,
+    "spglobal": [
+     "357076"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300N33JQ7EG2VD447|LEI|IS_DIRECTLY_CONSOLIDATED_BY|40|8e5ffcab222cbc98a3c0ca38fdfcb2234f74398a673179e6371c7de12c4d081f|",
+   "attributes": {
+    "validFrom": "2023-08-22T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300N33JQ7EG2VD447",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "549300EEJH4FEPDBBR25",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2019-01-01T00:00:00Z",
+       "endDate": "2019-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2017-11-28T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2014-12-25T01:45:00Z",
+     "lastUpdateDate": "2023-08-21T14:28:31Z",
+     "status": "LAPSED",
+     "nextRenewalDate": "2021-11-12T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "SUPPORTING_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "549300EEJH4FEPDBBR25",
+   "attributes": {
+    "lei": "549300EEJH4FEPDBBR25",
+    "entity": {
+     "legalName": {
+      "name": "TELEFONICA SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "GRAN VIA 28"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "MADRID",
+      "region": "ES-M",
+      "country": "ES",
+      "postalCode": "28013"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "GRAN VIA 28"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "MADRID",
+      "region": "ES-M",
+      "country": "ES",
+      "postalCode": "28013"
+     },
+     "registeredAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "registeredAs": "A28015865",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2013-11-19T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2013-11-19T03:08:00Z",
+     "lastUpdateDate": "2025-10-01T16:10:51Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-10-01T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "validatedAs": "A28015865",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "TEFEESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/28015865",
+    "qcc": "QESCX6VBSS",
+    "gem": null,
+    "spglobal": [
+     "357076"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300N33JQ7EG2VD447|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|40|bcf41347e99740b7d0431717da6548ca079e00edd0ded4799f6efcbb8335350a|",
+   "attributes": {
+    "validFrom": "2023-08-22T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300N33JQ7EG2VD447",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "549300EEJH4FEPDBBR25",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2019-01-01T00:00:00Z",
+       "endDate": "2019-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2017-11-28T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2014-12-25T01:45:00Z",
+     "lastUpdateDate": "2023-08-21T14:28:31Z",
+     "status": "LAPSED",
+     "nextRenewalDate": "2021-11-12T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "SUPPORTING_DOCUMENTS",
+     "corroborationReference": "https://www.telefonica.com/documents/153952/13347920/Individual_Annual_Report_2015.pdf/030563b3-9548-4162-a4e0-08d9d5c14e47"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300N33JQ7EG2VD447"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300EEJH4FEPDBBR25"
+     }
+    }
+   }
+  }
+ }
+}

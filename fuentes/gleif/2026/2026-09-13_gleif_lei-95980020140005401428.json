@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:21:53+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005401428",
+  "attributes": {
+   "lei": "95980020140005401428",
+   "entity": {
+    "legalName": {
+     "name": "PLANTA DE REGASIFICACION DE SAGUNTO SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Ampliación Puerto de Sagunto, Contradique Sur s/n, Apartado Correos 136 s/n"
+     ],
+     "addressNumber": "s/n",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Sagunto/Sagunt",
+     "region": null,
+     "country": "ES",
+     "postalCode": "46520"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Ampliación Puerto de Sagunto, Contradique Sur s/n, Apartado Correos 136 s/n"
+     ],
+     "addressNumber": "s/n",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Sagunto/Sagunt",
+     "region": null,
+     "country": "ES",
+     "postalCode": "46520"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000165208861",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2001-11-19T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-13T11:26:20Z",
+    "lastUpdateDate": "2026-08-20T08:51:50Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2025-09-26T07:44:43Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000165208861",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A83150060"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/83150060",
+   "qcc": "QES9RJNG2S",
+   "gem": null,
+   "spglobal": [
+    "43331672"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005401428/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005401428/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005401428/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005401428/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005401428/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005401428"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005401428|0|808db8692a18860b934d5fcbb3b9ab62dec67575061259215b197d626ee858f9|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005401428",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005401428"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005401428|0|3928926e05183988cfee194755c68cb5113ee5f75af62b8ccd705c954a1fc53b|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005401428",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005401428"
+     }
+    }
+   }
+  }
+ }
+}

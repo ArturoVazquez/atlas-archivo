@@ -1,0 +1,194 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:21:18+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "9598001K5QQD38VDMZ88",
+  "attributes": {
+   "lei": "9598001K5QQD38VDMZ88",
+   "entity": {
+    "legalName": {
+     "name": "ASFALTOS ESPAÑOLES, S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [
+     {
+      "name": "ASFALTOS ESPANOLES, S.A.",
+      "language": "es",
+      "type": "PREFERRED_ASCII_TRANSLITERATED_LEGAL_NAME"
+     }
+    ],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "PASEO DE LA CASTELLANA 141 19"
+     ],
+     "addressNumber": "141",
+     "addressNumberWithinBuilding": "19",
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28046"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "AUTOVIA SALOU S/N"
+     ],
+     "addressNumber": "S/N",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Tarragona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "43006"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000241403744",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1965-07-22T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2016-06-24T08:45:38Z",
+    "lastUpdateDate": "2026-08-14T06:57:46Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-06-27T09:19:16Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000241403744",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28148898"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/28148898",
+   "qcc": "QES3VR00D4",
+   "gem": null,
+   "spglobal": [
+    "28516915"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "9598001K5QQD38VDMZ88|0|a0e5b0b8b4e0d48b042ba4eef03953d4ee3038e0982c9a647510b43018f36fa9|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "9598001K5QQD38VDMZ88",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "9598001K5QQD38VDMZ88|0|6cb7299c925edbde1ce0946fe6419ab5492c71fd06fe342130b81fc41a276332|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "9598001K5QQD38VDMZ88",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598001K5QQD38VDMZ88"
+     }
+    }
+   }
+  }
+ }
+}

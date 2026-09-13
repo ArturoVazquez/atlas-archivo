@@ -1,0 +1,606 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:21:04+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300C4E7SC9ILCIW33",
+  "attributes": {
+   "lei": "549300C4E7SC9ILCIW33",
+   "entity": {
+    "legalName": {
+     "name": "REPSOL FUELS SA",
+     "language": "es"
+    },
+    "otherNames": [
+     {
+      "name": "REPSOL PETROLEO SA",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "calle Méndez Álvaro 44"
+     ],
+     "addressNumber": "44",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "calle Méndez Álvaro 44"
+     ],
+     "addressNumber": "44",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000239986799",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1949-06-27T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2026-02-09T11:00:00Z",
+        "recordedDate": "2026-03-16T11:19:13Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2013-05-13T08:29:00Z",
+    "lastUpdateDate": "2026-08-15T08:13:26Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-03-21T17:01:53Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000239986799",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28047223"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/28047223",
+   "qcc": "QESAGM9W1F",
+   "gem": null,
+   "spglobal": [
+    "5463783"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/ultimate-parent"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "BSYCX13Y0NOTV14V9N85",
+   "attributes": {
+    "lei": "BSYCX13Y0NOTV14V9N85",
+    "entity": {
+     "legalName": {
+      "name": "REPSOL SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000240034644",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1986-11-12T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T15:52:00Z",
+     "lastUpdateDate": "2026-08-17T07:14:49Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-01-18T18:41:00Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000240034644",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A78374725"
+      }
+     ]
+    },
+    "bic": [
+     "REPYESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/78374725",
+    "qcc": "QES2R42Y10",
+    "gem": "E100000000980",
+    "spglobal": [
+     "323502"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300C4E7SC9ILCIW33|LEI|IS_DIRECTLY_CONSOLIDATED_BY|39|e68851a76cf281fb863ac0af324cf2b308bfeb825b616821fd3a5c9418e9e7ec|",
+   "attributes": {
+    "validFrom": "2026-08-16T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300C4E7SC9ILCIW33",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "BSYCX13Y0NOTV14V9N85",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2023-06-26T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-25T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2023-06-27T07:48:40Z",
+     "lastUpdateDate": "2026-08-15T08:13:26Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-03-21T17:01:53Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "BSYCX13Y0NOTV14V9N85",
+   "attributes": {
+    "lei": "BSYCX13Y0NOTV14V9N85",
+    "entity": {
+     "legalName": {
+      "name": "REPSOL SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000240034644",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1986-11-12T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T15:52:00Z",
+     "lastUpdateDate": "2026-08-17T07:14:49Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-01-18T18:41:00Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000240034644",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A78374725"
+      }
+     ]
+    },
+    "bic": [
+     "REPYESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/78374725",
+    "qcc": "QES2R42Y10",
+    "gem": "E100000000980",
+    "spglobal": [
+     "323502"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300C4E7SC9ILCIW33|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|39|b0c48213724f9d405d64d299fa43672e5ad45f10c60ed482eb2482fb633a9742|",
+   "attributes": {
+    "validFrom": "2026-08-16T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300C4E7SC9ILCIW33",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "BSYCX13Y0NOTV14V9N85",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2023-06-26T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-25T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2023-06-27T07:48:40Z",
+     "lastUpdateDate": "2026-08-15T08:13:26Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-03-21T17:01:53Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300C4E7SC9ILCIW33"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+     }
+    }
+   }
+  }
+ }
+}

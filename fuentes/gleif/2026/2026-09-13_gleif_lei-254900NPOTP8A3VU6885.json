@@ -1,0 +1,221 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:21:25+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "254900NPOTP8A3VU6885",
+  "attributes": {
+   "lei": "254900NPOTP8A3VU6885",
+   "entity": {
+    "legalName": {
+     "name": "BP ENERGIA ESPAÑA SA",
+     "language": "es"
+    },
+    "otherNames": [
+     {
+      "name": "BP Energia Espana, S.A.",
+      "language": "en",
+      "type": "TRADING_OR_OPERATING_NAME"
+     },
+     {
+      "name": "BP OIL ESPAÑA, S.A.",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     },
+     {
+      "name": "ESSO PETROLEOS ESPANOLES, S.A.",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     },
+     {
+      "name": "PETROLEOS DEL MEDITERRANEO, S.A.",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [
+     {
+      "name": "BP Energia Espana SA",
+      "language": "es",
+      "type": "PREFERRED_ASCII_TRANSLITERATED_LEGAL_NAME"
+     }
+    ],
+    "legalAddress": {
+     "language": "en",
+     "addressLines": [
+      "POLIG INDUSTRIAL EL SERRALLO",
+      "GRAO DE CASTELLON"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "CASTELLON DE LA PLANA",
+     "region": "ES-MD",
+     "country": "ES",
+     "postalCode": "12100"
+    },
+    "headquartersAddress": {
+     "language": "en",
+     "addressLines": [
+      "Calle Quintanadnasue",
+      "6 Edificio Arqborea"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": "ES-MD",
+     "country": "ES",
+     "postalCode": "28050"
+    },
+    "registeredAt": {
+     "id": "RA001003",
+     "other": null
+    },
+    "registeredAs": "A28135846",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1964-12-04T00:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2026-03-11T00:00:00Z",
+        "recordedDate": "2026-03-11T00:00:00Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2026-03-24T12:30:29Z",
+    "lastUpdateDate": "2026-03-24T12:30:29Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-03-24T12:30:29Z",
+    "managingLou": "5493001KJTIIGC8Y1R12",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA001003",
+     "other": null
+    },
+    "validatedAs": "A28135846",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": "QESRPKYP00",
+   "gem": null,
+   "spglobal": null,
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "254900NPOTP8A3VU6885|0|5c04bfdd271f80b2a8e35aa3ed383acf9309af7700249bdcfe5d1fde869ea2f8|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "254900NPOTP8A3VU6885",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_LEI",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "254900NPOTP8A3VU6885|0|e2dc9c0e882426572aabed76b0d0fb4934517d26b64750cbd8d38ece4de85cd2|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "254900NPOTP8A3VU6885",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_LEI",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900NPOTP8A3VU6885"
+     }
+    }
+   }
+  }
+ }
+}

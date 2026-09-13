@@ -178,9 +178,14 @@ con la fecha de la consulta, y la cita lleva la URL de la API.
 **Lo que hay que saber antes de citarlo.**
 
 - El LEI identifica; el nombre no. Buscar una sociedad por su nombre devuelve
-  con frecuencia otra: medido sobre las sociedades de este atlas, cinco de
-  veintinueve. La consulta se hace por NIF o por LEI, y una persona comprueba
-  que el registro es el de la sociedad que el acto nombra.
+  con frecuencia otra: medido sobre las sociedades de este atlas, cuatro de
+  veintinueve, y una quinta devolvía la misma sociedad con su nombre nuevo, que
+  comparando nombres se habría descartado. La consulta se hace por NIF o por
+  LEI, y una persona comprueba que el registro es el de la sociedad que el acto
+  nombra.
+- Un acto antiguo puede nombrar a una sociedad por su denominación anterior. El
+  registro LEI guarda los nombres legales anteriores, y es ese dato, y no el
+  parecido, lo que permite reunir los dos textos en la misma entidad.
 - El NIF viene en el registro cuando la autoridad que lo validó es la Agencia
   Tributaria; cuando es el Registro Mercantil, viene como validación secundaria
   o no viene.

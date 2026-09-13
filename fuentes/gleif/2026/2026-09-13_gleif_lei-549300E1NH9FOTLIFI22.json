@@ -1,0 +1,232 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:21:11+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300E1NH9FOTLIFI22",
+  "attributes": {
+   "lei": "549300E1NH9FOTLIFI22",
+   "entity": {
+    "legalName": {
+     "name": "MOEVE SA",
+     "language": "es"
+    },
+    "otherNames": [
+     {
+      "name": "COMPAÑIA ESPAÑOLA DE PETROLEOS SA",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "PASEO DE LA CASTELLANA 259-A"
+     ],
+     "addressNumber": "259-A",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28046"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "PASEO DE LA CASTELLANA 259-A"
+     ],
+     "addressNumber": "259-A",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28046"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000239918471",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1929-09-26T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2025-05-22T10:00:00Z",
+        "recordedDate": "2025-07-22T07:29:22Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-05T04:43:51Z",
+    "lastUpdateDate": "2026-08-15T08:13:26Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-03-13T09:50:04Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000239918471",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28003119"
+     }
+    ]
+   },
+   "bic": [
+    "CPEPESMMXXX"
+   ],
+   "mic": null,
+   "ocid": "es/28003119",
+   "qcc": "QESH5AJCAW",
+   "gem": "E100000002574",
+   "spglobal": [
+    "874195"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/ultimate-parent-reporting-exception"
+    }
+   },
+   "direct-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/direct-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/direct-children"
+    }
+   },
+   "ultimate-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/ultimate-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/ultimate-children"
+    }
+   },
+   "branches": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/branch-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/branches"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "549300E1NH9FOTLIFI22|0|ffeaab3e1e88cce768e0494f9edc80c8a332b5c9cfd27e18e73fd85e98fbc1a6|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "549300E1NH9FOTLIFI22",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "549300E1NH9FOTLIFI22|0|6a8977fc1f23f9dce76fc0326c70e54f75fac790bdc88de01591931963bde7b1|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "549300E1NH9FOTLIFI22",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300E1NH9FOTLIFI22"
+     }
+    }
+   }
+  }
+ }
+}

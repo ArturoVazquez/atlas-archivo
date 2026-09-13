@@ -1,0 +1,230 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:22:22+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300WKO9211VIK5170",
+  "attributes": {
+   "lei": "549300WKO9211VIK5170",
+   "entity": {
+    "legalName": {
+     "name": "NATRAN",
+     "language": "fr"
+    },
+    "otherNames": [
+     {
+      "name": "GRTGAZ",
+      "language": "fr",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "fr",
+     "addressLines": [
+      "6 RUE RAOUL NORDLING"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "BOIS-COLOMBES",
+     "region": null,
+     "country": "FR",
+     "postalCode": "92270"
+    },
+    "headquartersAddress": {
+     "language": "fr",
+     "addressLines": [
+      "6 RUE RAOUL NORDLING"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "BOIS-COLOMBES",
+     "region": null,
+     "country": "FR",
+     "postalCode": "92270"
+    },
+    "registeredAt": {
+     "id": "RA000189",
+     "other": null
+    },
+    "registeredAs": "440117620",
+    "jurisdiction": "FR",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "K65D",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2001-11-04T23:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "REGULATORY_FILING",
+        "effectiveDate": "2025-03-18T23:00:00Z",
+        "recordedDate": "2025-03-18T23:00:00Z",
+        "type": "CHANGE_HQ_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "REGULATORY_FILING",
+        "effectiveDate": "2025-03-18T23:00:00Z",
+        "recordedDate": "2025-03-18T23:00:00Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "REGULATORY_FILING",
+        "effectiveDate": "2025-02-19T23:00:00Z",
+        "recordedDate": "2025-02-19T23:00:00Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-01-09T03:05:00Z",
+    "lastUpdateDate": "2026-09-11T20:14:30Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-09-14T00:02:20Z",
+    "managingLou": "969500Q2MA9VBQ8BG884",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000189",
+     "other": null
+    },
+    "validatedAs": "440117620",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "fr/440117620",
+   "qcc": "QFRN0YTQ9T",
+   "gem": "E100001014780",
+   "spglobal": [
+    "28564692"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/ultimate-parent-reporting-exception"
+    }
+   },
+   "direct-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/direct-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170/direct-children"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "549300WKO9211VIK5170|0|53db411cbcd172bcd6db3ef2b6f43015dd504d6d390100624288a68c39137aa5|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "549300WKO9211VIK5170",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "549300WKO9211VIK5170|0|4c20634aa15c228b18ac1582fc05d1bd8134da8c02c0235d19862a865530f485|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "549300WKO9211VIK5170",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300WKO9211VIK5170"
+     }
+    }
+   }
+  }
+ }
+}

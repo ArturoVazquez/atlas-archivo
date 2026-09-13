@@ -1,0 +1,181 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:22:29+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "529900901EZ5M6818919",
+  "attributes": {
+   "lei": "529900901EZ5M6818919",
+   "entity": {
+    "legalName": {
+     "name": "Open Grid Europe GmbH",
+     "language": "de"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "de",
+     "addressLines": [
+      "Kallenbergstr. 5"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Essen",
+     "region": "DE-NW",
+     "country": "DE",
+     "postalCode": "45141"
+    },
+    "headquartersAddress": {
+     "language": "de",
+     "addressLines": [
+      "Kallenbergstr. 5"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Essen",
+     "region": "DE-NW",
+     "country": "DE",
+     "postalCode": "45141"
+    },
+    "registeredAt": {
+     "id": "RA000239",
+     "other": null
+    },
+    "registeredAs": "HRB 17487",
+    "jurisdiction": "DE",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "2HBR",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2003-12-10T23:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2013-08-21T15:15:44Z",
+    "lastUpdateDate": "2026-06-19T11:01:34Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-08-10T22:00:00Z",
+    "managingLou": "5299000J2N45DDNE4Y28",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000239",
+     "other": null
+    },
+    "validatedAs": "HRB 17487",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "de/R2503_HRB17487",
+   "qcc": "QDEK4XDYGN",
+   "gem": "E100001014580",
+   "spglobal": [
+    "26425232"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "529900901EZ5M6818919|0|c914d603101ba709f1873e78d5d493796f24aa0b47fb2339f049af5ab47ab03f|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "529900901EZ5M6818919",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "529900901EZ5M6818919|3|f7a216d5ccf3dcd09a52b6a3f4bbb9bb0cc5a7b8cbd4c8a80bb2d812b82b0621|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "529900901EZ5M6818919",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900901EZ5M6818919"
+     }
+    }
+   }
+  }
+ }
+}

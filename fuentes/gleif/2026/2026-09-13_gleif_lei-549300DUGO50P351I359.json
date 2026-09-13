@@ -1,0 +1,587 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T02:21:32+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300DUGO50P351I359",
+  "attributes": {
+   "lei": "549300DUGO50P351I359",
+   "entity": {
+    "legalName": {
+     "name": "PETROLEOS DEL NORTE SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Edificio Muñatones, San Martin, 5-"
+     ],
+     "addressNumber": "5-",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Muskiz",
+     "region": "ES-BI",
+     "country": "ES",
+     "postalCode": "48550"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Edificio Muñatones, San Martin, 5-"
+     ],
+     "addressNumber": "5-",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Muskiz",
+     "region": "ES-BI",
+     "country": "ES",
+     "postalCode": "48550"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000056464464",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1968-11-30T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2013-10-10T03:08:00Z",
+    "lastUpdateDate": "2026-08-26T17:15:57Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-09-13T00:00:00Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000056464464",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A48053243"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/48053243",
+   "qcc": null,
+   "gem": null,
+   "spglobal": [
+    "4509086"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/ultimate-parent"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "BSYCX13Y0NOTV14V9N85",
+   "attributes": {
+    "lei": "BSYCX13Y0NOTV14V9N85",
+    "entity": {
+     "legalName": {
+      "name": "REPSOL SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000240034644",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1986-11-12T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T15:52:00Z",
+     "lastUpdateDate": "2026-08-17T07:14:49Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-01-18T18:41:00Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000240034644",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A78374725"
+      }
+     ]
+    },
+    "bic": [
+     "REPYESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/78374725",
+    "qcc": "QES2R42Y10",
+    "gem": "E100000000980",
+    "spglobal": [
+     "323502"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300DUGO50P351I359|LEI|IS_DIRECTLY_CONSOLIDATED_BY|48|de6c250daec72f4640e667aac016ea7f893b990f49c10abc03072bdf0580d9f6|",
+   "attributes": {
+    "validFrom": "2026-08-27T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300DUGO50P351I359",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "BSYCX13Y0NOTV14V9N85",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2020-12-16T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2025-01-01T11:00:00Z",
+       "endDate": "2025-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2026-07-14T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2023-09-07T10:02:56Z",
+     "lastUpdateDate": "2026-08-26T17:15:57Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-09-13T00:00:00Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Madrid, depósito nº 3/2026/80119, de fecha 14/07/2026, ejercicio 2025"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "BSYCX13Y0NOTV14V9N85",
+   "attributes": {
+    "lei": "BSYCX13Y0NOTV14V9N85",
+    "entity": {
+     "legalName": {
+      "name": "REPSOL SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "calle Méndez Alvaro 44"
+      ],
+      "addressNumber": "44",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28045"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000240034644",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1986-11-12T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T15:52:00Z",
+     "lastUpdateDate": "2026-08-17T07:14:49Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-01-18T18:41:00Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000240034644",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A78374725"
+      }
+     ]
+    },
+    "bic": [
+     "REPYESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/78374725",
+    "qcc": "QES2R42Y10",
+    "gem": "E100000000980",
+    "spglobal": [
+     "323502"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300DUGO50P351I359|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|48|348d332092dd67210f1f29cc2d6ef2f01581c29e9055eb09f34ee7e5082a59f9|",
+   "attributes": {
+    "validFrom": "2026-08-27T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300DUGO50P351I359",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "BSYCX13Y0NOTV14V9N85",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2020-12-16T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2025-01-01T11:00:00Z",
+       "endDate": "2025-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2026-07-14T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2023-09-07T10:02:56Z",
+     "lastUpdateDate": "2026-08-26T17:15:57Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-09-13T00:00:00Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Madrid, depósito nº 3/2026/80119, de fecha 14/07/2026, ejercicio 2025"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300DUGO50P351I359"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/BSYCX13Y0NOTV14V9N85"
+     }
+    }
+   }
+  }
+ }
+}
