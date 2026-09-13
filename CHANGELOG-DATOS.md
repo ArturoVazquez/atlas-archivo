@@ -37,6 +37,50 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.152 — Dos fases, con su acto
+
+Dos de los tres registros que figuraban en producción sin un acto que lo
+sostuviera tienen ya sus actos archivados. Uno cambia de fase y el otro gana su
+autorización y su coordenada. Contrato 1.90.0, sin cambios.
+
+### Cambiado
+
+- **Las Cruces está en desarrollo, no en producción.** El registro es el
+  proyecto estratégico de mina interior y refinería polimetalúrgica, y
+  figuraba en producción sin fuente. Tres documentos dicen otra cosa:
+  - un anuncio del BOE de 2023 recoge que el proyecto se autorizó el 8 de junio
+    de 2021 y que la mina «se desarrollará durante los cuatro primeros años»
+    antes de producir;
+  - otro de 2024 convoca la ocupación urgente de terrenos para las obras de
+    drenaje, autorizadas en 2022 y 2023;
+  - el Panorama Minero del IGME, publicado en 2024, cuenta que la corta a
+    cielo abierto se agotó en 2019 y que la planta de cobre pasaba a cuidado y
+    mantenimiento en julio de 2023.
+
+  La fase queda `parcial`, porque ningún acto archivado posterior a 2024 dice en
+  qué punto están las obras.
+- **El centro de datos existente de AWS en El Burgo de Ebro** tiene su
+  expediente: la autorización ambiental integrada que el INAGA otorgó el 27 de
+  julio de 2020 en el polígono El Espartal II. Su punto pasa del centro del
+  municipio a la coordenada de la resolución, a unos seis kilómetros del
+  anterior. La ficha recoge los 110,4 MW de grupos electrógenos de reserva por
+  los que necesita esa autorización.
+- **Los documentos**, archivados en `fuentes/boe/2023/`, `fuentes/boe/2024/`,
+  `fuentes/boa/2020/` y `fuentes/igme/2024/`.
+
+### Huecos
+
+- **Las obras de Las Cruces después de 2024.** Ningún acto archivado dice si la
+  mina interior ya se prepara ni cuándo producirá.
+- **La superficie, el consumo y la fecha de entrada en servicio** del centro de
+  AWS existente. La autorización de 2020 solo preveía terminar la primera fase
+  en 2021, y el acto de 2025 lo da por existente sin fecha.
+- **El centro de datos de la Zona Franca de Barcelona** sigue en producción sin
+  un acto que lo sostenga. Su licencia ambiental la otorga el Ayuntamiento de
+  Barcelona y se publica en el boletín de la provincia.
+
+---
+
 ## datos-v2026.09.151 — El Registro Mercantil, vigilado por sociedad
 
 El atlas vigila desde esta edición el Boletín Oficial del Registro Mercantil,
