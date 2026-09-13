@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:59:34+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800H4GN36BUMVRM64",
+  "attributes": {
+   "lei": "959800H4GN36BUMVRM64",
+   "entity": {
+    "legalName": {
+     "name": "CLH AVIACIÓN, S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "CALLE TITÁN 13"
+     ],
+     "addressNumber": "13",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "CALLE TITÁN 13"
+     ],
+     "addressNumber": "13",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000258859070",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1997-08-01T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-02-17T07:46:49Z",
+    "lastUpdateDate": "2026-08-22T07:48:24Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2018-02-17T07:46:49Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000258859070",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A81771529"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/81771529",
+   "qcc": null,
+   "gem": null,
+   "spglobal": [
+    "30424783"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800H4GN36BUMVRM64|0|3b3ee0e79d4e6952dae80c3127d0ca5bedd25fdfc0f28f1a9772ff4b948a06cf|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800H4GN36BUMVRM64",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800H4GN36BUMVRM64|0|800522dea7be49047a4cddc2668dd9ab9cb18c85366336a1366a845afe0c538f|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800H4GN36BUMVRM64",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800H4GN36BUMVRM64"
+     }
+    }
+   }
+  }
+ }
+}

@@ -250,6 +250,33 @@ de la API tal como la sirve, con el código del ente en el nombre del fichero.
   Una dirección general de un ministerio tampoco aparece, porque no es persona
   jurídica.
 
+### Red Eléctrica, el acceso de demanda a la red de transporte
+
+**Presente en la guardia**, no en ninguna capa. Red Eléctrica, como operador del
+sistema, publica cada mes dos documentos que la normativa le obliga a publicar:
+el **listado de solicitudes de acceso de demanda** recibidas en nudos de la red
+de transporte de 220 kV o más (artículo 20 quater del Real Decreto 1183/2020) y
+la **capacidad de acceso de demanda disponible y ocupada** en cada nudo (Circular
+1/2024 de la CNMC y su Resolución de especificaciones de 1 de diciembre de 2025).
+Cada listado y cada CSV se archivan en `ree/<año>/`.
+
+**Lo que hay que saber antes de citarlo.**
+
+- **Los listados caducan.** Cada uno deja de estar en vigor al mes siguiente, y
+  por eso se archivan todos, se usen o no: el de enero y el de febrero de 2026
+  se guardan como foto del atasco anterior a los concursos, sin juzgar solicitud
+  por solicitud.
+- **No nombran a nadie ni sitúan nada.** Una solicitud dice nudo, tipo y
+  megavatios, sin promotor y sin coordenada. El nudo es una subestación de la red
+  de transporte, no el lugar del proyecto, y la solicitud no dice qué se va a
+  conectar. Por eso lo que el atlas registra de cada una es una señal en la
+  guardia, no un registro de ninguna capa.
+- **Sus cifras no entran en los datos del atlas.** El aviso legal de Red Eléctrica
+  permite publicar sus contenidos con fines informativos, sin uso comercial,
+  citándola, sin alterar la información y con la fecha de su última
+  actualización; las copias archivadas conservan esos términos. Para el atlas es
+  una fuente corporativa: lo que dice se cita, y no sostiene un dato confirmado.
+
 ## El archivo está completo
 
 **Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento

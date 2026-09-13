@@ -37,6 +37,62 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.155 — Lo que se pide a la red eléctrica antes de tener acto
+
+El atlas vigila desde esta edición las solicitudes de acceso de demanda a la red
+de transporte que Red Eléctrica publica cada mes. Es la señal pública más
+temprana de un centro de datos o de una gran planta industrial, anterior a
+cualquier autorización. La guardia gana un juicio para lo que se pide y ningún
+acto sitúa todavía: la señal. Contrato 1.92.0.
+
+### Añadido
+
+- **Una guardia mensual del acceso a la red eléctrica.** Lee el listado de
+  solicitudes de acceso de demanda y la capacidad de cada nudo, y avisa de cada
+  solicitud de consumo dedicado o de ampliación de un consumo existente y de cada
+  nudo que entra o sale de concurso. El almacenamiento y el autoconsumo, que son
+  casi todo el listado, no despiertan a nadie.
+- **Cuarenta señales en la guardia**, de marzo a septiembre de 2026:
+  - veinticuatro solicitudes de consumo dedicado o ampliación, entre ellas dos de
+    885 MW en el nudo de Arcos de la Frontera 400, una de 407 MW en Íllora 220 y
+    una de 150 MW en Fuencarral 400, en Madrid;
+  - dieciséis nudos que dejan de ser de concurso: eran 66 el 1 de junio y son 50
+    el 1 de septiembre. En Brazatortas 400, Nuevo Vigo 220, Cristóbal Colón 220
+    y Palos 220, el motivo cita la resolución del concurso de capacidad de
+    demanda de febrero de 2026.
+- **Los documentos de Red Eléctrica**, archivados en `fuentes/ree/2026/` porque
+  cada listado deja de estar en vigor al mes siguiente: los ocho listados de
+  enero a agosto, tres ficheros de capacidad por nudo y la relación de nudos de
+  concurso.
+- **Exolum Aviation** entra en el registro de entidades y enlaza sus 32
+  instalaciones de almacenamiento de productos petrolíferos. El Registro
+  Mercantil de Madrid inscribió en mayo de 2022 su cambio de denominación desde
+  CLH Aviación, que es como la sigue guardando el registro mundial de
+  identificadores de persona jurídica.
+
+### Cambiado
+
+- **La guardia tiene un juicio más: la señal.** Recoge lo que se pide y ningún
+  acto sitúa todavía. No mueve ningún dato y no entra en ninguna edición; si un
+  acto nombra después el proyecto, la señal se suma a su expediente.
+- **La pregunta de lo que se pide antes del acto** dice ya qué registros de
+  intención tienen vigilancia: el Registro Mercantil y el acceso a la red. Faltan
+  la contratación pública y la evaluación ambiental.
+- **El contrato sube a 1.92.0.**
+
+### Huecos
+
+- **Una solicitud de acceso no dice quién pide ni para qué.** El nudo es una
+  subestación de la red de transporte, no el lugar del proyecto. Por eso cada
+  solicitud es una señal y no un registro de ninguna capa.
+- **Las cifras de capacidad por nudo no son datos del atlas.** Red Eléctrica es
+  una fuente corporativa, y sus documentos se archivan con sus propios términos.
+- **Los listados de enero y febrero** arrastran unas 1.500 solicitudes recibidas
+  entre 2023 y 2025, anteriores a los concursos. Se archivan como foto, sin
+  juzgarlas una a una.
+
+---
+
 ## datos-v2026.09.154 — Quién está detrás del almacenamiento de petróleo y de las plantas solares
 
 Diecinueve sociedades entran en el registro de entidades: dieciséis operadores
