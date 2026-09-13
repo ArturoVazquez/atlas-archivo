@@ -1,0 +1,623 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:09:18+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005893606",
+  "attributes": {
+   "lei": "95980020140005893606",
+   "entity": {
+    "legalName": {
+     "name": "ACCIONA GENERACION RENOVABLE, S.A.",
+     "language": "es"
+    },
+    "otherNames": [
+     {
+      "name": "ACCIONA GENERACION RENOVABLE SA",
+      "language": "es",
+      "type": "TRADING_OR_OPERATING_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "en",
+     "addressLines": [
+      "AVDA GRAN VIA DE HORTALEZA N 1"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-MD",
+     "country": "ES",
+     "postalCode": "28033"
+    },
+    "headquartersAddress": {
+     "language": "en",
+     "addressLines": [
+      "Av. Ciudad de la Innovacion, 5",
+      "Sarriguren"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Pamplona",
+     "region": "ES-NC",
+     "country": "ES",
+     "postalCode": "31621"
+    },
+    "registeredAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "registeredAs": "A31768138",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2002-12-09T00:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2021-05-11T00:00:00Z",
+        "recordedDate": "2022-12-21T00:00:00Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-05-28T09:43:36Z",
+    "lastUpdateDate": "2026-04-14T16:53:32Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-05-11T08:57:31Z",
+    "managingLou": "5493001KJTIIGC8Y1R12",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "validatedAs": "A31768138",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/31768138",
+   "qcc": "QESX2MW3B6",
+   "gem": null,
+   "spglobal": [
+    "680978"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/ultimate-parent"
+    }
+   },
+   "direct-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/direct-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005893606/direct-children"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005893606"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "254900UPX0OEHTKB9Y44",
+   "attributes": {
+    "lei": "254900UPX0OEHTKB9Y44",
+    "entity": {
+     "legalName": {
+      "name": "Corporacion Acciona Energias Renovables SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "en",
+      "addressLines": [
+       "Avenida de la Gran Via de Hortaleza 1"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": "ES-MD",
+      "country": "ES",
+      "postalCode": "28033"
+     },
+     "headquartersAddress": {
+      "language": "en",
+      "addressLines": [
+       "Avenida de la Gran Via de Hortaleza 1"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": "ES-MD",
+      "country": "ES",
+      "postalCode": "28033"
+     },
+     "registeredAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "registeredAs": "A85483311",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2008-06-12T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": [
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+         "effectiveDate": "2023-06-22T00:00:00Z",
+         "recordedDate": "2023-10-11T10:25:24Z",
+         "type": "CHANGE_LEGAL_ADDRESS",
+         "status": "COMPLETED"
+        }
+       ]
+      },
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+         "effectiveDate": "2023-06-22T00:00:00Z",
+         "recordedDate": "2023-10-11T10:25:24Z",
+         "type": "CHANGE_HQ_ADDRESS",
+         "status": "COMPLETED"
+        }
+       ]
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2021-02-01T16:20:41Z",
+     "lastUpdateDate": "2026-01-19T17:27:09Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-02-01T16:20:41Z",
+     "managingLou": "5493001KJTIIGC8Y1R12",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "validatedAs": "A85483311",
+     "otherValidationAuthorities": []
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/85483311",
+    "qcc": "QESRKGAJ0X",
+    "gem": null,
+    "spglobal": [
+     "224717377"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "relationship-record": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/direct-parent-relationship",
+      "lei-record": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/direct-parent"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "relationship-record": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/ultimate-parent-relationship",
+      "lei-record": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/ultimate-parent"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/direct-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "95980020140005893606|LEI|IS_DIRECTLY_CONSOLIDATED_BY|13|3465f09de4505acb70ee2c8842f8b70e56209f402fbf66e056fae3147ebe361e|",
+   "attributes": {
+    "validFrom": "2026-04-15T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "95980020140005893606",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "254900UPX0OEHTKB9Y44",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2009-04-07T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2025-01-01T00:00:00Z",
+       "endDate": "2025-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2022-12-23T15:21:30Z",
+     "lastUpdateDate": "2026-04-14T16:53:32Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-05-11T08:57:31Z",
+     "managingLou": "5493001KJTIIGC8Y1R12",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005893606"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/254900UPX0OEHTKB9Y44"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "54930002KP75TLLLNO21",
+   "attributes": {
+    "lei": "54930002KP75TLLLNO21",
+    "entity": {
+     "legalName": {
+      "name": "Acciona SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "en",
+      "addressLines": [
+       "Avenida de la Gran Via de Hortaleza 3"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": "ES-MD",
+      "country": "ES",
+      "postalCode": "28033"
+     },
+     "headquartersAddress": {
+      "language": "en",
+      "addressLines": [
+       "Avenida de la Gran Via de Hortaleza 3"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": "ES-MD",
+      "country": "ES",
+      "postalCode": "28033"
+     },
+     "registeredAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "registeredAs": "A08001851",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1916-06-17T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": [
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+         "effectiveDate": "2023-06-19T00:00:00Z",
+         "recordedDate": "2023-10-11T10:20:46Z",
+         "type": "CHANGE_LEGAL_ADDRESS",
+         "status": "COMPLETED"
+        }
+       ]
+      },
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+         "effectiveDate": "2023-06-19T00:00:00Z",
+         "recordedDate": "2023-10-11T10:20:46Z",
+         "type": "CHANGE_HQ_ADDRESS",
+         "status": "COMPLETED"
+        }
+       ]
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2013-01-04T21:27:16Z",
+     "lastUpdateDate": "2026-01-19T17:27:09Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-01-27T10:02:17Z",
+     "managingLou": "5493001KJTIIGC8Y1R12",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000535",
+      "other": null
+     },
+     "validatedAs": "A08001851",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "ACOIESMMXXX"
+    ],
+    "mic": null,
+    "ocid": "es/08001851",
+    "qcc": "QESPXVJCV5",
+    "gem": "E100000150598",
+    "spglobal": [
+     "876153"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "95980020140005893606|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|14|b42c18a2b629aecd23624eaf503c73add1532fcb6a2756d703b51732827ce132|",
+   "attributes": {
+    "validFrom": "2026-04-15T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "95980020140005893606",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "54930002KP75TLLLNO21",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2008-06-12T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2025-01-01T00:00:00Z",
+       "endDate": "2025-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2022-12-23T15:21:30Z",
+     "lastUpdateDate": "2026-04-14T16:53:32Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-05-11T08:57:31Z",
+     "managingLou": "5493001KJTIIGC8Y1R12",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005893606"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21"
+     }
+    }
+   }
+  }
+ }
+}

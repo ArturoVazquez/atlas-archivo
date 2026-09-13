@@ -1,0 +1,213 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:18:52+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800FC7Z6YA0BFSX34",
+  "attributes": {
+   "lei": "959800FC7Z6YA0BFSX34",
+   "entity": {
+    "legalName": {
+     "name": "OLIVIA PETROLEUM SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "RODRIGUEZ SAN PEDRO 42 2ºD"
+     ],
+     "addressNumber": "42",
+     "addressNumberWithinBuilding": "2ºD",
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28002"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "RODRIGUEZ SAN PEDRO 42 2ºD"
+     ],
+     "addressNumber": "42",
+     "addressNumberWithinBuilding": "2ºD",
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28002"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000309959278",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2010-04-08T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2022-02-22T11:00:00Z",
+        "recordedDate": "2022-07-13T13:38:37Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2022-02-22T11:00:00Z",
+        "recordedDate": "2022-07-13T13:38:37Z",
+        "type": "CHANGE_HQ_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-12-21T12:32:08Z",
+    "lastUpdateDate": "2026-08-21T09:36:07Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2024-07-14T07:09:49Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000309959278",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A65316796"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/65316796",
+   "qcc": "QESDSG5YEE",
+   "gem": null,
+   "spglobal": [
+    "379798319"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800FC7Z6YA0BFSX34|0|123fc2b5585f84fea0fca04cc406f1221c9b0cfbfe3f01afb2de3968432920b8|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800FC7Z6YA0BFSX34",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800FC7Z6YA0BFSX34|0|c98d854065068cc053545e121507a84668de8a76976ccc2733801cef4d5cf97d|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800FC7Z6YA0BFSX34",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800FC7Z6YA0BFSX34"
+     }
+    }
+   }
+  }
+ }
+}

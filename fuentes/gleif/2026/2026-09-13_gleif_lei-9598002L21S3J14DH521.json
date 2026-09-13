@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:12:31+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "9598002L21S3J14DH521",
+  "attributes": {
+   "lei": "9598002L21S3J14DH521",
+   "entity": {
+    "legalName": {
+     "name": "HELIOSOLAR SL",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Ctra. Pamplona Salinas 11"
+     ],
+     "addressNumber": "11",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Galar",
+     "region": null,
+     "country": "ES",
+     "postalCode": "31191"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Ctra. Pamplona Salinas 11"
+     ],
+     "addressNumber": "11",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Galar",
+     "region": null,
+     "country": "ES",
+     "postalCode": "31191"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000200009224",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2005-05-05T22:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2021-05-13T11:16:11Z",
+    "lastUpdateDate": "2026-08-22T07:48:24Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2023-05-13T11:16:11Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000200009224",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B31850977"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/31850977",
+   "qcc": "QESBA8HMAW",
+   "gem": null,
+   "spglobal": [
+    "49979644"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "9598002L21S3J14DH521|0|1c641ebef99264ff0abd8406881b603df38856075fb40093c54192cecfbd3601|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "9598002L21S3J14DH521",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "9598002L21S3J14DH521|0|5f534fe89919ac4ab34384e34aa5012b370131798aa79288da6e871e3804ed1b|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "9598002L21S3J14DH521",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598002L21S3J14DH521"
+     }
+    }
+   }
+  }
+ }
+}

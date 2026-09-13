@@ -37,6 +37,55 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.154 — Quién está detrás del almacenamiento de petróleo y de las plantas solares
+
+Diecinueve sociedades entran en el registro de entidades: dieciséis operadores
+del almacenamiento de productos petrolíferos y tres titulares de plantas
+solares. Cierra la tercera tanda del registro. Contrato 1.91.0, sin cambios.
+
+### Añadido
+
+- **Dieciséis operadores del almacenamiento petrolífero**, que cubren 58 de sus
+  132 instalaciones. Exolum Corporation, la antigua CLH, opera 38. Las demás son
+  Tepsa Iberia, Terminales Canarios, DBA Bilbao Port, Depósitos Portuarios, Galp
+  Energía España, Meroil, Olivia Petroleum, OP Trade, Petróleos Asturianos,
+  Petrologis Canarias, Receptora de Líquidos, Sevitrade, Tradebe Port Services,
+  Foresa y Petrolífera Dúcar.
+- **Tres titulares de plantas solares:** Acciona Generación Renovable, Heliosolar
+  y Amela Altaba.
+- **El censo de operadores al por mayor de productos petrolíferos de la CNMC**,
+  archivado en `fuentes/cnmc/2026/`, y el registro LEI de cada sociedad en
+  `fuentes/gleif/2026/`.
+
+### Cómo se identificaron
+
+- **La CNMC escribe cada operador con un nombre corto, sin forma societaria**, y
+  la Base Topográfica Nacional hace lo mismo con los titulares de las plantas
+  solares. Una sociedad entra solo cuando el registro mundial de identificadores
+  de persona jurídica da una sola sociedad española con esa denominación y su
+  domicilio casa con el lugar de la instalación, o cuando el censo de la CNMC la
+  da con su NIF.
+- **Donde las dos fuentes están, se cruzan.** El censo de la CNMC da el NIF de
+  cinco de ellas y la baja de Olivia Petroleum como operador al por mayor,
+  inhabilitada por la Orden TED/933/2025.
+- **Donde se contradicen, no se elige.** «ESERGUI» casaba con una sola sociedad
+  en el registro de identificadores, en Zierbena, y el censo de la CNMC tiene
+  otra con el mismo nombre en San Sebastián. Se queda sin entidad.
+
+### Huecos
+
+- **Veintiséis nombres del almacenamiento siguen sin entidad**, en 74
+  instalaciones. Hay grupos, como «DISA Grupo»; nombres que casan con dos
+  sociedades, como «ESERGUI» o «EUROENERGO»; y nombres sin ninguna sociedad
+  con esa denominación, como «EXOLUM AVIATION», que sola opera 32.
+- **Veinte nombres de las plantas solares siguen sin entidad**, en 58 plantas.
+  Hay rótulos comerciales que no dan una sola sociedad, un código y cuatro
+  sociedades que no tienen identificador de persona jurídica.
+- **Seis sociedades tienen caducado su identificador de persona jurídica**, y lo
+  que ese registro da de ellas queda en verificación parcial.
+
+---
+
 ## datos-v2026.09.153 — Quién opera las grandes instalaciones científicas
 
 Los operadores de las infraestructuras científicas y técnicas singulares entran

@@ -1,0 +1,248 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:18:10+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "529900TRPJRH3ONL7N67",
+  "attributes": {
+   "lei": "529900TRPJRH3ONL7N67",
+   "entity": {
+    "legalName": {
+     "name": "TEPSA IBERIA S.L.",
+     "language": "es"
+    },
+    "otherNames": [
+     {
+      "name": "TERMINALES PORTUARIAS SL",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Avinguda de l'Energia 4"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Abrera",
+     "region": "ES-CT",
+     "country": "ES",
+     "postalCode": "08630"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "LG MOLL D'INFLAMABLES S/N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "BARCELONA",
+     "region": "ES-CT",
+     "country": "ES",
+     "postalCode": "08039"
+    },
+    "registeredAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "registeredAs": "B62473301",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2000-12-28T23:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2025-12-07T23:00:00Z",
+        "recordedDate": "2025-12-08T11:03:58Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2024-12-20T23:00:00Z",
+        "recordedDate": "2024-12-21T07:56:41Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2024-12-20T23:00:00Z",
+        "recordedDate": "2024-12-21T07:56:41Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2023-12-07T23:00:00Z",
+        "recordedDate": "2023-12-08T12:14:59Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2023-06-05T22:00:00Z",
+        "recordedDate": "2023-06-06T14:46:10Z",
+        "type": "CHANGE_HQ_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2022-12-20T08:52:34Z",
+    "lastUpdateDate": "2025-12-08T11:03:58Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-12-21T07:56:41Z",
+    "managingLou": "5299000J2N45DDNE4Y28",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "validatedAs": "B62473301",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/62473301",
+   "qcc": "QESH7H57BR",
+   "gem": null,
+   "spglobal": [
+    "342096484"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "529900TRPJRH3ONL7N67|0|f387351e34a7bac844a970d2fad90dcd1bbd0c3e804b9d9e5dee5d8fff8da865|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "529900TRPJRH3ONL7N67",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "529900TRPJRH3ONL7N67|0|bb00f34a10a1990adf6f531468d3607f28a9deb776c538ffa0077e4167756b28|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "529900TRPJRH3ONL7N67",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900TRPJRH3ONL7N67"
+     }
+    }
+   }
+  }
+ }
+}

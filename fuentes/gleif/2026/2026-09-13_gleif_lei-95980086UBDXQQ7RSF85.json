@@ -1,0 +1,226 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:18:03+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980086UBDXQQ7RSF85",
+  "attributes": {
+   "lei": "95980086UBDXQQ7RSF85",
+   "entity": {
+    "legalName": {
+     "name": "EXOLUM CORPORATION SA",
+     "language": "es"
+    },
+    "otherNames": [
+     {
+      "name": "COMPAÑÍA LOGÍSTICA DE HIDROCARBUROS CLH, S.A.",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Titán 13"
+     ],
+     "addressNumber": "13",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Calle Titán 13"
+     ],
+     "addressNumber": "13",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000239767071",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1928-10-24T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2022-05-05T10:00:00Z",
+        "recordedDate": "2023-03-16T10:57:31Z",
+        "type": "CHANGE_LEGAL_NAME",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-02-17T07:46:49Z",
+    "lastUpdateDate": "2026-08-15T08:13:26Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-03-28T18:16:14Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000239767071",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28018380"
+     }
+    ]
+   },
+   "bic": [
+    "CLHDESMMXXX"
+   ],
+   "mic": null,
+   "ocid": "es/28018380",
+   "qcc": "QESBXXT3EY",
+   "gem": "E100001014712",
+   "spglobal": [
+    "874921"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/ultimate-parent-reporting-exception"
+    }
+   },
+   "direct-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/direct-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/direct-children"
+    }
+   },
+   "ultimate-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/ultimate-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/ultimate-children"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980086UBDXQQ7RSF85|0|450d3d68e461433f6d35346303a6f318fdd629d20be8df496f027f8985a1442e|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980086UBDXQQ7RSF85",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980086UBDXQQ7RSF85|0|fa69f85360bbc589cb4a1336154486e8f2c54836fe848f46147b50bce45b62a9|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980086UBDXQQ7RSF85",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980086UBDXQQ7RSF85"
+     }
+    }
+   }
+  }
+ }
+}

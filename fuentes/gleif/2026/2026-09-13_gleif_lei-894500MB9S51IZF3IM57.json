@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:18:31+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "894500MB9S51IZF3IM57",
+  "attributes": {
+   "lei": "894500MB9S51IZF3IM57",
+   "entity": {
+    "legalName": {
+     "name": "DEPOSITOS PORTUARIOS SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "MUELLE DE REINA VICTORIA, 19"
+     ],
+     "addressNumber": "19",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Santurtzi",
+     "region": null,
+     "country": "ES",
+     "postalCode": "48980"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "MUELLE DE REINA VICTORIA, 19"
+     ],
+     "addressNumber": "19",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Santurtzi",
+     "region": null,
+     "country": "ES",
+     "postalCode": "48980"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000248403353",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1951-09-26T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2020-04-23T13:41:42Z",
+    "lastUpdateDate": "2026-08-17T07:14:49Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-12-11T10:26:48Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000248403353",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A48051676"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/48051676",
+   "qcc": "QES1TU7RUF",
+   "gem": null,
+   "spglobal": [
+    "108806526"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "894500MB9S51IZF3IM57|4|14f9328ba0497d727da94f3be6f84c4f916b5a6e89434235ec181493856acde9|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "894500MB9S51IZF3IM57",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "894500MB9S51IZF3IM57|4|96cd7af97343c08c3bcb4a752a90845d6d89cd31da232db1a46cf0920d1a843f|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "894500MB9S51IZF3IM57",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/894500MB9S51IZF3IM57"
+     }
+    }
+   }
+  }
+ }
+}

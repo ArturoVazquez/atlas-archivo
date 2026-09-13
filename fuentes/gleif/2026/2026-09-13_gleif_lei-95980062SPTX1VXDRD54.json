@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:19:20+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980062SPTX1VXDRD54",
+  "attributes": {
+   "lei": "95980062SPTX1VXDRD54",
+   "entity": {
+    "legalName": {
+     "name": "RECEPTORA DE LIQUIDOS S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "MOLL DE L'ENERGIA 38"
+     ],
+     "addressNumber": "38",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Barcelona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08039"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "MOLL DE L'ENERGIA 38 S/N"
+     ],
+     "addressNumber": "38",
+     "addressNumberWithinBuilding": "S/N",
+     "mailRouting": null,
+     "city": "Barcelona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08039"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000319045675",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": null,
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-10-26T11:45:46Z",
+    "lastUpdateDate": "2026-08-25T06:09:37Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2019-10-26T11:45:46Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000319045675",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A08145385"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/08145385",
+   "qcc": "QESRV8JGH9",
+   "gem": null,
+   "spglobal": [
+    "76433945"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980062SPTX1VXDRD54|0|63daaa88416a99aedafc03e2d6a02e706ef89d796cd83fe8960a60d8a03499c7|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980062SPTX1VXDRD54",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980062SPTX1VXDRD54|0|501a0c09f7469888490ff8d724c8440803a383ad2f11c0d3e562992a52307d4e|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980062SPTX1VXDRD54",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062SPTX1VXDRD54"
+     }
+    }
+   }
+  }
+ }
+}

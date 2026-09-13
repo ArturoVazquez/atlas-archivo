@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:18:17+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800ESGXYELGATPJ80",
+  "attributes": {
+   "lei": "959800ESGXYELGATPJ80",
+   "entity": {
+    "legalName": {
+     "name": "TERMINALES CANARIOS SL",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Autovía de San Andrés, María Jimenez 15"
+     ],
+     "addressNumber": "15",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Santa Cruz de Tenerife",
+     "region": null,
+     "country": "ES",
+     "postalCode": "38180"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Autovía de San Andrés 15"
+     ],
+     "addressNumber": "15",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Santa Cruz de Tenerife",
+     "region": null,
+     "country": "ES",
+     "postalCode": "38180"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000226621351",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1993-03-26T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-11-23T15:28:40Z",
+    "lastUpdateDate": "2026-08-18T09:22:35Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-11-28T14:08:34Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000226621351",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B38318572"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/38318572",
+   "qcc": "QES0Y6HSMD",
+   "gem": null,
+   "spglobal": [
+    "48927381"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800ESGXYELGATPJ80|0|b70be064e2b58ea6b7735f27490054c9900b8bf5d257127e03c05737d559fa89|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800ESGXYELGATPJ80",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800ESGXYELGATPJ80|0|1ebc86f70c7807febdfe9de357f3c3ec78536f54f5c82e40d8fd2efd6ba56dcf|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800ESGXYELGATPJ80",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800ESGXYELGATPJ80"
+     }
+    }
+   }
+  }
+ }
+}

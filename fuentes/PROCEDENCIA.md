@@ -187,8 +187,9 @@ con la fecha de la consulta, y la cita lleva la URL de la API.
   registro LEI guarda los nombres legales anteriores, y es ese dato, y no el
   parecido, lo que permite reunir los dos textos en la misma entidad.
 - El NIF viene en el registro cuando la autoridad que lo validó es la Agencia
-  Tributaria; cuando es el Registro Mercantil, viene como validación secundaria
-  o no viene.
+  Tributaria o el Registro Mercantil Central; cuando es un Registro Mercantil
+  provincial, el número inscrito es la hoja registral, y el NIF viene como
+  validación secundaria o no viene.
 - Una sociedad de fuera no tiene NIF, y la identifica su LEI. Cuando el
   documento que la nombra no imprime ningún identificador, una persona la elige
   entre los candidatos de GLEIF comprobando que la razón social y el país casen

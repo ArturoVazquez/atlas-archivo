@@ -1,0 +1,193 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:18:45+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005006541",
+  "attributes": {
+   "lei": "95980020140005006541",
+   "entity": {
+    "legalName": {
+     "name": "MEROIL S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "PORT DE LAGOS 20 DELTA 1 DEL PORT DE BARCELONA"
+     ],
+     "addressNumber": "20",
+     "addressNumberWithinBuilding": "DELTA 1 DEL PORT DE BARCELONA",
+     "mailRouting": null,
+     "city": "Barcelona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08039"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "PORT DE LAGOS 20"
+     ],
+     "addressNumber": "20",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Barcelona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08039"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000335854366",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1993-10-15T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-10T10:01:50Z",
+    "lastUpdateDate": "2026-08-15T08:13:26Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-04-25T12:16:34Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000335854366",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A60404910"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/60404910",
+   "qcc": "QESH0A28SD",
+   "gem": null,
+   "spglobal": [
+    "126609"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005006541/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005006541/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005006541/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005006541/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980020140005006541/ultimate-parent-reporting-exception"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005006541/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005006541"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005006541|0|7a03e03e6c6e09accf9a072e200cc1e452a35694a212de0f64458f6e7429416c|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005006541",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005006541"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "95980020140005006541|0|71892450f9b2c2a37f15b285aa0c8211d1acd4c2854219af117a6b6db0c72c33|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "95980020140005006541",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005006541"
+     }
+    }
+   }
+  }
+ }
+}

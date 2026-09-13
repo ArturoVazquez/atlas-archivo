@@ -1,0 +1,564 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:19:41+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "9598001APBQA85S84437",
+  "attributes": {
+   "lei": "9598001APBQA85S84437",
+   "entity": {
+    "legalName": {
+     "name": "FORESA, INDUSTRIAS QUIMICAS DEL NOROESTE S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "AVENIDA DE DOÑA URRACA 91"
+     ],
+     "addressNumber": "91",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Caldas de Reis",
+     "region": null,
+     "country": "ES",
+     "postalCode": "36650"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "AVENIDA DE DOÑA URRACA 91"
+     ],
+     "addressNumber": "91",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Caldas de Reis",
+     "region": null,
+     "country": "ES",
+     "postalCode": "36650"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000090112224",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1964-07-13T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-11-09T09:26:43Z",
+    "lastUpdateDate": "2026-08-19T05:55:26Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-11-09T09:26:43Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000090112224",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28141224"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/28141224",
+   "qcc": "QESK60JQKM",
+   "gem": null,
+   "spglobal": [
+    "5864368"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "95980020140005534027",
+   "attributes": {
+    "lei": "95980020140005534027",
+    "entity": {
+     "legalName": {
+      "name": "FINANCIERA MADERERA SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "LUGAR DE FORMARIS S/N"
+      ],
+      "addressNumber": "S/N",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Santiago de Compostela",
+      "region": null,
+      "country": "ES",
+      "postalCode": "15707"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "LUGAR DE FORMARIS S/N"
+      ],
+      "addressNumber": "S/N",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Santiago de Compostela",
+      "region": null,
+      "country": "ES",
+      "postalCode": "15707"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000058731976",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1937-07-01T10:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2014-02-25T07:38:19Z",
+     "lastUpdateDate": "2026-08-15T08:13:26Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-04-18T07:09:31Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000058731976",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A15005499"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/15005499",
+    "qcc": "QESKTKD9RE",
+    "gem": null,
+    "spglobal": [
+     "5522597"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/direct-parent-relationship",
+      "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/direct-parent"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/ultimate-parent-relationship",
+      "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/ultimate-parent"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005534027/direct-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/95980020140005534027"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "9598001APBQA85S84437|LEI|IS_DIRECTLY_CONSOLIDATED_BY|12|85a018dfe178558843f171a04dc80a660b62ba71661d3cd5305544df5cc09e7b|",
+   "attributes": {
+    "validFrom": "2026-08-20T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "9598001APBQA85S84437",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "95980020140005534027",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-04-13T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-08-01T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-09T09:26:43Z",
+     "lastUpdateDate": "2026-08-19T05:55:26Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-11-09T09:26:43Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Pontevedra, depósito nº 2/2025/505387, de fecha 1/8/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005534027"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "959800EL29BTQ7G34R16",
+   "attributes": {
+    "lei": "959800EL29BTQ7G34R16",
+    "entity": {
+     "legalName": {
+      "name": "FINCORPORATIVA SL",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "Lugar de Formarís s/n"
+      ],
+      "addressNumber": "s/n",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Santiago de Compostela",
+      "region": null,
+      "country": "ES",
+      "postalCode": "15707"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "Lugar de Formarís s/n"
+      ],
+      "addressNumber": "s/n",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Santiago de Compostela",
+      "region": null,
+      "country": "ES",
+      "postalCode": "15707"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000127317660",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DP3Q",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2008-04-24T10:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-10-23T14:35:53Z",
+     "lastUpdateDate": "2026-08-19T05:55:26Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-10-23T14:35:53Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000127317660",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "B70164496"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/70164496",
+    "qcc": "QESBPQCP6V",
+    "gem": null,
+    "spglobal": [
+     "307974883"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16/ultimate-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "9598001APBQA85S84437|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|12|66df1ae35d20013993439ba06083b514912f86e4334877904d63800457959f64|",
+   "attributes": {
+    "validFrom": "2026-08-20T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "9598001APBQA85S84437",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "959800EL29BTQ7G34R16",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-04-13T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "0204-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-08-01T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-09T09:26:43Z",
+     "lastUpdateDate": "2026-08-19T05:55:26Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-11-09T09:26:43Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Pontevedra, depósito nº 2/2025/505387, de fecha 1/8/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598001APBQA85S84437"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800EL29BTQ7G34R16"
+     }
+    }
+   }
+  }
+ }
+}

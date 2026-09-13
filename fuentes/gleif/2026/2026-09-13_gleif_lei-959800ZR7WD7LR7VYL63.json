@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:09:25+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800ZR7WD7LR7VYL63",
+  "attributes": {
+   "lei": "959800ZR7WD7LR7VYL63",
+   "entity": {
+    "legalName": {
+     "name": "AMELA ALTABA SL",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "AVENIDA TERCER CENTENARIO 1"
+     ],
+     "addressNumber": "1",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Forcall",
+     "region": null,
+     "country": "ES",
+     "postalCode": "12310"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "AVENIDA TERCER CENTENARIO 1"
+     ],
+     "addressNumber": "1",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Forcall",
+     "region": null,
+     "country": "ES",
+     "postalCode": "12310"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000074533451",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2001-05-23T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-11-28T07:30:23Z",
+    "lastUpdateDate": "2026-08-18T09:22:35Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2025-11-28T07:30:23Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000074533451",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B12558193"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/12558193",
+   "qcc": "QESFQGE7S4",
+   "gem": null,
+   "spglobal": [
+    "550682754"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800ZR7WD7LR7VYL63|0|ffbbc159cbf93b3e607926cf495eac42758cf601e7fffe434f0453a1537e41a8|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800ZR7WD7LR7VYL63",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800ZR7WD7LR7VYL63|0|cc99cef26fd82c99d9c6493bbf53a5ed45d3689a39a7e9ec1ae461e00fc53989|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800ZR7WD7LR7VYL63",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800ZR7WD7LR7VYL63"
+     }
+    }
+   }
+  }
+ }
+}

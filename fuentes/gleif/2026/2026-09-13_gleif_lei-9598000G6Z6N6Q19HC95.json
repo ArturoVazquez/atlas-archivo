@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:19:05+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "9598000G6Z6N6Q19HC95",
+  "attributes": {
+   "lei": "9598000G6Z6N6Q19HC95",
+   "entity": {
+    "legalName": {
+     "name": "PETROLEOS ASTURIANOS SL",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "DE LA CASTELLANA 259 D"
+     ],
+     "addressNumber": "259",
+     "addressNumberWithinBuilding": "D",
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28046"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "MUELLE DE LA OSA SN PUERTO DE GIJON"
+     ],
+     "addressNumber": "SN",
+     "addressNumberWithinBuilding": "PUERTO DE GIJON",
+     "mailRouting": null,
+     "city": "Gijón",
+     "region": null,
+     "country": "ES",
+     "postalCode": "33290"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000282734558",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": null,
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2018-01-04T12:50:59Z",
+    "lastUpdateDate": "2026-08-25T06:09:37Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2020-01-10T17:15:15Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000282734558",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B62382809"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/62382809",
+   "qcc": "QESJGHAAT3",
+   "gem": null,
+   "spglobal": [
+    "549493051"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "9598000G6Z6N6Q19HC95|0|4669bf056af2cd8ded18f7d0fd040f42293503779f15f3d0cf61a9b19e465bab|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "9598000G6Z6N6Q19HC95",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "9598000G6Z6N6Q19HC95|0|c7c31633b9e09f779f7395eb02e5fa31fb030fae38dc2a622d3f5e04fa53e0e4|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "9598000G6Z6N6Q19HC95",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/9598000G6Z6N6Q19HC95"
+     }
+    }
+   }
+  }
+ }
+}

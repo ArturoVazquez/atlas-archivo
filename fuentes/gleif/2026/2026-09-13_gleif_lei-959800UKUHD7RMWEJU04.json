@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:19:13+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800UKUHD7RMWEJU04",
+  "attributes": {
+   "lei": "959800UKUHD7RMWEJU04",
+   "entity": {
+    "legalName": {
+     "name": "PETROLOGIS CANARIAS, SOCIEDAD LIMITADA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "EXPLA DE TOMAS QUEVEDO S/N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "PALMAS DE GRAN CANARIA, LAS",
+     "region": "ES-GC",
+     "country": "ES",
+     "postalCode": "35008"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "EXPLA DE TOMAS QUEVEDO S/N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "PALMAS DE GRAN CANARIA, LAS",
+     "region": "ES-GC",
+     "country": "ES",
+     "postalCode": "35008"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "GC-41477-8",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2008-09-24T00:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-12-18T11:38:15Z",
+    "lastUpdateDate": "2026-05-26T15:46:00Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-05-29T13:09:01Z",
+    "managingLou": "529900T8BM49AURSDO55",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "GC-41477-8",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B76012277"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": "QESGJ3J0H4",
+   "gem": null,
+   "spglobal": [
+    "216262131"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800UKUHD7RMWEJU04|3|1de50803927daaf9d950578f6610de42667bf84c72b49057a54d753cf2d29a7d|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800UKUHD7RMWEJU04",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800UKUHD7RMWEJU04|3|4539ff91100c266974ed428cdc162e39088fe8bb5b17cc558e061177c4b8686c|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800UKUHD7RMWEJU04",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800UKUHD7RMWEJU04"
+     }
+    }
+   }
+  }
+ }
+}

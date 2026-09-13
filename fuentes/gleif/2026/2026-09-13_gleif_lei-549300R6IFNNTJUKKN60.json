@@ -1,0 +1,574 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T18:19:34+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300R6IFNNTJUKKN60",
+  "attributes": {
+   "lei": "549300R6IFNNTJUKKN60",
+   "entity": {
+    "legalName": {
+     "name": "TRADEBE PORT SERVICES S.L.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "AV BARCELONA 109 5"
+     ],
+     "addressNumber": "109",
+     "addressNumberWithinBuilding": "5",
+     "mailRouting": null,
+     "city": "Sant Joan Despí",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08970"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "AV BARCELONA 109 5"
+     ],
+     "addressNumber": "109",
+     "addressNumberWithinBuilding": "5",
+     "mailRouting": null,
+     "city": "Sant Joan Despí",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08970"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000364223968",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2010-06-29T00:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2016-07-01T01:51:00Z",
+    "lastUpdateDate": "2026-08-14T06:57:46Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-06-10T06:16:37Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000364223968",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "B65370249"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/65370249",
+   "qcc": "QES8U4HTDW",
+   "gem": null,
+   "spglobal": [
+    "281218290"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/ultimate-parent"
+    }
+   },
+   "direct-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/direct-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60/direct-children"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "549300S4FZT6D0A6OJ48",
+   "attributes": {
+    "lei": "549300S4FZT6D0A6OJ48",
+    "entity": {
+     "legalName": {
+      "name": "OSHARE S.L.",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "AVINGUDA BARCELONA 109 5ª"
+      ],
+      "addressNumber": "109",
+      "addressNumberWithinBuilding": "5ª",
+      "mailRouting": null,
+      "city": "Sant Joan Despí",
+      "region": null,
+      "country": "ES",
+      "postalCode": "08970"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "AVINGUDA BARCELONA 109 2º"
+      ],
+      "addressNumber": "109",
+      "addressNumberWithinBuilding": "2º",
+      "mailRouting": null,
+      "city": "Sant Joan Despí",
+      "region": null,
+      "country": "ES",
+      "postalCode": "08970"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000317382475",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DP3Q",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1990-11-21T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2020-03-17T15:31:00Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "LAPSED",
+     "nextRenewalDate": "2026-01-13T09:25:10Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000317382475",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "B59560581"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/59560581",
+    "qcc": "QES43TNAPQ",
+    "gem": null,
+    "spglobal": [
+     "659394819"
+    ],
+    "conformityFlag": "NON_CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/ultimate-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300R6IFNNTJUKKN60|LEI|IS_DIRECTLY_CONSOLIDATED_BY|4|471f567de190a175885b2420f58aacc431bc01bcdd7beb3775d44cb0aac19378|",
+   "attributes": {
+    "validFrom": "2026-08-15T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300R6IFNNTJUKKN60",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "549300S4FZT6D0A6OJ48",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2025-04-02T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-11-04T11:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2025-04-09T10:13:49Z",
+     "lastUpdateDate": "2026-08-14T06:57:46Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-06-10T06:16:37Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Barcelona, depósito nº 45165602, de fecha 04/11/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "549300S4FZT6D0A6OJ48",
+   "attributes": {
+    "lei": "549300S4FZT6D0A6OJ48",
+    "entity": {
+     "legalName": {
+      "name": "OSHARE S.L.",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "AVINGUDA BARCELONA 109 5ª"
+      ],
+      "addressNumber": "109",
+      "addressNumberWithinBuilding": "5ª",
+      "mailRouting": null,
+      "city": "Sant Joan Despí",
+      "region": null,
+      "country": "ES",
+      "postalCode": "08970"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "AVINGUDA BARCELONA 109 2º"
+      ],
+      "addressNumber": "109",
+      "addressNumberWithinBuilding": "2º",
+      "mailRouting": null,
+      "city": "Sant Joan Despí",
+      "region": null,
+      "country": "ES",
+      "postalCode": "08970"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000317382475",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DP3Q",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1990-11-21T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2020-03-17T15:31:00Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "LAPSED",
+     "nextRenewalDate": "2026-01-13T09:25:10Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000317382475",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "B59560581"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/59560581",
+    "qcc": "QES43TNAPQ",
+    "gem": null,
+    "spglobal": [
+     "659394819"
+    ],
+    "conformityFlag": "NON_CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48/ultimate-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300R6IFNNTJUKKN60|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|4|dce60b244aae3775b99f0538e110ae09a33498cfff111ae32c0f58f848505692|",
+   "attributes": {
+    "validFrom": "2026-08-15T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300R6IFNNTJUKKN60",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "549300S4FZT6D0A6OJ48",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2025-04-02T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-11-04T11:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2025-04-09T10:13:49Z",
+     "lastUpdateDate": "2026-08-14T06:57:46Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-06-10T06:16:37Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Barcelona, depósito nº 45165602, de fecha 04/11/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300R6IFNNTJUKKN60"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300S4FZT6D0A6OJ48"
+     }
+    }
+   }
+  }
+ }
+}
