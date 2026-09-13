@@ -37,6 +37,53 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.150 — La cronología de las cuatro preguntas principales, con el hito de cada fuente
+
+Las fichas de centros de datos, minerales críticos, centrales nucleares,
+residuos radiactivos e interconexiones eléctricas enseñan sus fuentes como la
+cronología del expediente, y cada fuente dice qué es en ella: una información
+pública, una evaluación ambiental, una autorización, una renovación, un cierre,
+el catálogo oficial del que se transcribe. Ningún dato de ningún registro
+cambia. Contrato 1.89.0.
+
+### Añadido
+
+- **El hito de 410 fuentes en seis capas**, 97 documentos leídos uno a uno. En
+  los centros de datos se ve ya el camino de los campus con más de un acto,
+  de la información pública a la declaración de interés autonómico o a la
+  aprobación definitiva;
+  en las centrales nucleares, cada renovación de su autorización de
+  explotación; en los residuos radiactivos, las autorizaciones de los almacenes
+  y el cierre del almacén temporal centralizado.
+
+### Cambiado
+
+- **Las definiciones de los hitos se afinan** con lo que hubo que decidir al
+  leer. Un plan o una lista general que nombra muchos proyectos, como la
+  planificación de la red de transporte, la lista de proyectos de interés
+  común o la de proyectos estratégicos de materias primas, es «otro» y no una
+  autorización, aunque les dé un estatuto: no es un acto de ese expediente, y
+  no puede sostener que un proyecto esté en producción. La renovación de una
+  autorización de explotación es una modificación, y la aprobación inicial que
+  somete un plan a información pública cuenta como información pública. El
+  catálogo oficial del que la capa transcribe es inventario, y el nomenclátor
+  que sitúa el punto, un documento del promotor o la prensa son «otro».
+
+### Huecos
+
+- **Tres registros en producción se quedan sin hitos** porque ninguno de sus
+  documentos es una autorización, una puesta en servicio ni un inventario, y
+  declarar sus hitos haría fallar la comprobación que impide que la fase vaya
+  por delante de ellos. Son el centro de datos que AWS ya tiene en El Burgo de
+  Ebro, que solo consta por una mención de pasada en la declaración ambiental
+  de su ampliación; el de la Zona Franca de Barcelona, cuya licencia ambiental
+  citada otorga el Ayuntamiento y no está archivada; y Las Cruces, cuya fase no
+  tiene fuente. Sus actos se buscan en sus boletines.
+- **Las demás capas no tienen hitos todavía.** El relleno sigue capa a capa, y
+  una fuente sin hito se enseña como «fuente».
+
+---
+
 ## datos-v2026.09.149 — Quién está detrás de las refinerías, el gas, el hidrógeno y los cables
 
 Segunda tanda del registro de entidades. Entran treinta sociedades, las que
