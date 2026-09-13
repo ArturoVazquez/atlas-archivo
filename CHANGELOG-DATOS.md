@@ -37,6 +37,86 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.147 — El registro de entidades: quién está detrás, con identificador
+
+Esta edición no cambia ningún registro de ninguna capa. Añade un vehículo: el
+registro de entidades, que pone detrás de los textos con los que los actos
+nombran a un promotor, un titular o un operador a la persona jurídica que son,
+con su identificador, sus relaciones de matriz y la fuente de cada dato. El
+texto de cada registro sigue tal cual lo escribe el acto; el vínculo se deriva
+al construir el sitio. Contrato 1.86.0.
+
+### Añadido
+
+- **El registro de entidades, en `datos/entidades/`** (contrato §4.4): un
+  fichero por sociedad, con su nombre en el registro que la identifica, su
+  tipo, su país, su NIF y su LEI cuando GLEIF los tiene corroborados, los
+  textos exactos con los que los registros la nombran y sus relaciones con
+  otras entidades, cada una con fuente y verificación. La primera tanda son
+  las treinta y tres sociedades que nombran las capas de las cuatro preguntas
+  principales del tablero: centros de datos, minerales críticos, nuclear y
+  residuos radiactivos. Dieciséis entran con su registro LEI, archivado en
+  `fuentes/gleif/2026/` con la fecha de la consulta; diecisiete se escriben
+  desde el acto que las nombra, y de esas solo Merlin Edged tiene NIF, porque
+  el decreto que declara su proyecto lo imprime.
+- **Las relaciones de matriz que GLEIF sostiene.** Atlantic Copper depende de
+  Freeport-McMoRan (Estados Unidos); Endesa Generación, de Endesa y en último
+  término de Enel (Italia); Iberdrola Generación Nuclear, de Iberdrola;
+  Enusa, de la Sociedad Estatal de Participaciones Industriales; Cal de
+  Castilla, de Calcinor; Merlín Logística y Parc Logístic de la Zona Franca,
+  de Merlin Properties. TOLSA absorbió a Auxiliar de Minería, Industria y
+  Construcción, y lo dice el Catastro Minero en cada derecho que fue de ella.
+  EDP HC Energía, titular de Trillo en el registro del Ministerio, depende de
+  EDP (Portugal) solo en parcial: GLEIF tiene el registro a nombre de EDP
+  España y ningún documento archivado dice que sean la misma sociedad con
+  otra denominación.
+- **La ruta `/datos/entidades/<id>.json`** entra en las prometidas del
+  contrato (§8.1), con las mismas garantías que las otras cinco.
+- **Tres vocabularios nuevos** (§9): el tipo de entidad, el tipo de relación y
+  los países, en código de dos letras con su rótulo.
+
+### Cambiado
+
+- **El contrato sube a 1.86.0.** Nace §4.4 (las entidades), §7.16 (lo que se
+  comprueba de ellas: el control del NIF y del LEI, los vocabularios, las
+  fechas, la fuente de cada campo y de cada relación, y que todo alias case
+  con el texto de algún registro de la edición) y dos reglas. R15: una
+  relación confirmada apunta a una fuente primaria. R16: todo alias de una
+  entidad vigente casa con un registro, para que un texto que cambie no deje
+  un vínculo muerto sin que nadie lo vea.
+- **Cada ficha gana el bloque «Quién está detrás»** cuando el texto de su
+  promotor, titular u operador tiene entidad, en el panel del visor y en la
+  página, con enlace a `/entidad/`. El tablero agrupa el «quién» de cada
+  pregunta por entidad, y la pregunta sobre la matriz extranjera pasa de sin
+  contestar a contestada en parte desde el registro.
+
+### Huecos
+
+- **Quince entidades no tienen ningún identificador documentado**: las
+  sociedades de los centros de datos Data Riocaya, Tillion Aragón, Quetta
+  Tres Cantos, Zarza Networks, ACS DC Infra La Puebla, Cignus P2DC, Calanza
+  Inmuebles y Microsoft 7724 Spain, y las mineras Rio Narcea Recursos,
+  Atalaya Ossa Morena, Quantum Minería, Iberian Resources Spain, Solvay
+  Minerales, Recursos Minerales de Galicia y Canteras Industriales. Ningún
+  acto archivado imprime su NIF y GLEIF no tiene registro a su nombre. La
+  puerta es el Registro Mercantil, o un acto que lo imprima. Endesa
+  Generación tiene LEI y no NIF, porque su registro no lo publica.
+- **Nueve entidades declaran en GLEIF una excepción de información sobre su
+  matriz**, y aquí queda como hueco: Amazon Data Services Spain, CyrusOne
+  Madrid 1, Merlin Properties, Cobre las Cruces, Lithium Iberia, Abenójar
+  Tungsten, Naturgy, Enresa y TOLSA. La excepción dice que la matriz no se
+  comunica, o que nadie consolida sus cuentas; no dice que no exista.
+- **Las matrices de las quince sin identificador no las nombra ningún
+  documento archivado**, y el nombre de la sociedad no es una fuente:
+  Microsoft 7724 Spain y Merlin Edged quedan sin matriz declarada hasta que
+  un documento la dé.
+- **Doscientos sesenta y cinco textos de registro en otras nueve capas
+  siguen sin entidad** (almacenamiento petrolífero, plantas solares,
+  hidrógeno, cables submarinos, gas, ICTS, refinerías): entran tanda a tanda,
+  y hasta entonces se enseñan tal cual los escribe el acto.
+
+---
+
 ## datos-v2026.09.146 — La guardia se publica como dato, y la fuente puede decir qué hito es
 
 Esta edición no cambia ningún registro. Cambia lo que el atlas publica sobre

@@ -1,0 +1,568 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:01:02+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800X8G7YR2DLGG921",
+  "attributes": {
+   "lei": "959800X8G7YR2DLGG921",
+   "entity": {
+    "legalName": {
+     "name": "CAL DE CASTILLA SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "CTRA, MADRID-VALENCIA KM. 31"
+     ],
+     "addressNumber": "KM. 31",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Arganda del Rey",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28500"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "CTRA, MADRID-VALENCIA KM. 31"
+     ],
+     "addressNumber": "KM. 31",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Arganda del Rey",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28500"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000241562144",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1984-01-11T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-10-17T05:36:07Z",
+    "lastUpdateDate": "2026-08-20T08:51:50Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-10-19T13:16:06Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000241562144",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28891158"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/28891158",
+   "qcc": null,
+   "gem": null,
+   "spglobal": [
+    "52383086"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "95980062RWEWEWXU2627",
+   "attributes": {
+    "lei": "95980062RWEWEWXU2627",
+    "entity": {
+     "legalName": {
+      "name": "CALCINOR SL",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "EGILEOR AUZOA 101 2"
+      ],
+      "addressNumber": "101",
+      "addressNumberWithinBuilding": "2",
+      "mailRouting": null,
+      "city": "Altzo",
+      "region": "ES-SS",
+      "country": "ES",
+      "postalCode": "20268"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "EGILEOR AUZOA 101 2"
+      ],
+      "addressNumber": "101",
+      "addressNumberWithinBuilding": "2",
+      "mailRouting": null,
+      "city": "Altzo",
+      "region": "ES-SS",
+      "country": "ES",
+      "postalCode": "20268"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000121273861",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DP3Q",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2003-06-23T10:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-09-22T10:42:29Z",
+     "lastUpdateDate": "2026-08-31T12:15:22Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-09-22T10:42:29Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000121273861",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "B20813184"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/20813184",
+    "qcc": "QESA3N5NTC",
+    "gem": null,
+    "spglobal": [
+     "540952559"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/ultimate-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "959800X8G7YR2DLGG921|LEI|IS_DIRECTLY_CONSOLIDATED_BY|13|841fdf6ab74d3434920ad99ed28b8e4340d371ea9fe02d2542b66b128cc4f0d8|",
+   "attributes": {
+    "validFrom": "2026-08-21T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "959800X8G7YR2DLGG921",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "95980062RWEWEWXU2627",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-04-02T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-06-30T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-10-17T05:36:07Z",
+     "lastUpdateDate": "2026-08-20T08:51:50Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-10-19T13:16:06Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "95980062RWEWEWXU2627",
+   "attributes": {
+    "lei": "95980062RWEWEWXU2627",
+    "entity": {
+     "legalName": {
+      "name": "CALCINOR SL",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "EGILEOR AUZOA 101 2"
+      ],
+      "addressNumber": "101",
+      "addressNumberWithinBuilding": "2",
+      "mailRouting": null,
+      "city": "Altzo",
+      "region": "ES-SS",
+      "country": "ES",
+      "postalCode": "20268"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "EGILEOR AUZOA 101 2"
+      ],
+      "addressNumber": "101",
+      "addressNumberWithinBuilding": "2",
+      "mailRouting": null,
+      "city": "Altzo",
+      "region": "ES-SS",
+      "country": "ES",
+      "postalCode": "20268"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000121273861",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DP3Q",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2003-06-23T10:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-09-22T10:42:29Z",
+     "lastUpdateDate": "2026-08-31T12:15:22Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-09-22T10:42:29Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000121273861",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "B20813184"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/20813184",
+    "qcc": "QESA3N5NTC",
+    "gem": null,
+    "spglobal": [
+     "540952559"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627/ultimate-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "959800X8G7YR2DLGG921|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|13|a9b7d14f08e7fb65b23c61f3927560275abde6df9d9ce97b339429d51d159153|",
+   "attributes": {
+    "validFrom": "2026-08-21T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "959800X8G7YR2DLGG921",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "95980062RWEWEWXU2627",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-04-02T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-06-30T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-10-17T05:36:07Z",
+     "lastUpdateDate": "2026-08-20T08:51:50Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-10-19T13:16:06Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800X8G7YR2DLGG921"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980062RWEWEWXU2627"
+     }
+    }
+   }
+  }
+ }
+}

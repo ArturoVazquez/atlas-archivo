@@ -1,0 +1,207 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:01:24+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "TL2N6M87CW970S5SV098",
+  "attributes": {
+   "lei": "TL2N6M87CW970S5SV098",
+   "entity": {
+    "legalName": {
+     "name": "NATURGY ENERGY GROUP SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Avenida de América 38"
+     ],
+     "addressNumber": "38",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28028"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Avenida de América 38"
+     ],
+     "addressNumber": "38",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28028"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000258349577",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1891-01-03T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2012-06-06T15:51:00Z",
+    "lastUpdateDate": "2026-08-14T06:57:46Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-06-28T10:04:47Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000258349577",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A08015497"
+     }
+    ]
+   },
+   "bic": [
+    "GANRESBBXXX"
+   ],
+   "mic": null,
+   "ocid": "es/08015497",
+   "qcc": "QESM36TQWN",
+   "gem": "E100000000978",
+   "spglobal": [
+    "878889"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/ultimate-parent-reporting-exception"
+    }
+   },
+   "direct-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/direct-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/direct-children"
+    }
+   },
+   "ultimate-children": {
+    "links": {
+     "relationship-records": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/ultimate-child-relationships",
+     "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/ultimate-children"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "TL2N6M87CW970S5SV098|4|be9e887d3017cdd53621b408fee5aea92ce28b1bb4631300a1b6bf0510188869|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "TL2N6M87CW970S5SV098",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "TL2N6M87CW970S5SV098|4|cc117dcb4230c343f6f459556fd691f7cd56b738ae8c6b9e4578968a62a5f9f7|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "TL2N6M87CW970S5SV098",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/TL2N6M87CW970S5SV098"
+     }
+    }
+   }
+  }
+ }
+}

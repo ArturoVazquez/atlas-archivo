@@ -1,0 +1,604 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:00:33+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300157XX3WB44J374",
+  "attributes": {
+   "lei": "549300157XX3WB44J374",
+   "entity": {
+    "legalName": {
+     "name": "ATLANTIC COPPER SL",
+     "language": "en"
+    },
+    "otherNames": [
+     {
+      "name": "ATLANTIC COPPER SL",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     },
+     {
+      "name": "ATLANTIC COPPER SLU",
+      "language": "es",
+      "type": "PREVIOUS_LEGAL_NAME"
+     }
+    ],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "en",
+     "addressLines": [
+      "AVENIDA FRANCISCO MONTENEGRO S/N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "HUELVA",
+     "region": "ES-H",
+     "country": "ES",
+     "postalCode": "21001"
+    },
+    "headquartersAddress": {
+     "language": "en",
+     "addressLines": [
+      "AVENIDA FRANCISCO MONTENEGRO S/N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "HUELVA",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "21001"
+    },
+    "registeredAt": {
+     "id": "RA000535",
+     "other": null
+    },
+    "registeredAs": "B79110482",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "DP3Q",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2013-12-13T05:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2013-12-14T03:13:00Z",
+    "lastUpdateDate": "2025-11-13T07:32:36Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-01-03T00:00:00Z",
+    "managingLou": "213800WAVVOPS85N2205",
+    "corroborationLevel": "PARTIALLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000535",
+     "other": null
+    },
+    "validatedAs": "B79110482",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/79110482",
+   "qcc": "QESPFGNN0T",
+   "gem": null,
+   "spglobal": [
+    "1454567"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "549300IRDTHJQ1PVET45",
+   "attributes": {
+    "lei": "549300IRDTHJQ1PVET45",
+    "entity": {
+     "legalName": {
+      "name": "FREEPORT-MCMORAN INC.",
+      "language": "en"
+     },
+     "otherNames": [
+      {
+       "name": "Freeport-McMoRan Copper & Gold Inc.",
+       "language": "en",
+       "type": "PREVIOUS_LEGAL_NAME"
+      }
+     ],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "en",
+      "addressLines": [
+       "C/O CORPORATION SERVICE COMPANY",
+       "251 LITTLE FALLS DRIVE"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "WILMINGTON",
+      "region": "US-DE",
+      "country": "US",
+      "postalCode": "19808"
+     },
+     "headquartersAddress": {
+      "language": "en",
+      "addressLines": [
+       "333 North Central Avenue"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Phoenix",
+      "region": "US-AZ",
+      "country": "US",
+      "postalCode": "85004"
+     },
+     "registeredAt": {
+      "id": "RA000602",
+      "other": null
+     },
+     "registeredAs": "2143193",
+     "jurisdiction": "US-DE",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "XTIQ",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1987-11-10T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": [
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "SUPPORTING_DOCUMENTS",
+         "effectiveDate": "2025-08-12T00:00:00Z",
+         "recordedDate": "2026-08-11T00:00:00Z",
+         "type": "CHANGE_LEGAL_NAME",
+         "status": "COMPLETED"
+        }
+       ]
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-29T15:32:00Z",
+     "lastUpdateDate": "2026-08-12T05:54:59Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-09-12T00:00:00Z",
+     "managingLou": "5493001KJTIIGC8Y1R12",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000602",
+      "other": null
+     },
+     "validatedAs": "2143193",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "FRPTUS55XXX"
+    ],
+    "mic": null,
+    "ocid": "us_de/2143193",
+    "qcc": null,
+    "gem": "E100000001220",
+    "spglobal": [
+     "273607"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300157XX3WB44J374|LEI|IS_DIRECTLY_CONSOLIDATED_BY|29|8ac6bb2a463269300bd2f0421b30699f7bd91a04c112b4f858e0fc4d60f5ff0e|",
+   "attributes": {
+    "validFrom": "2025-11-14T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300157XX3WB44J374",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "549300IRDTHJQ1PVET45",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2024-01-01T00:00:00Z",
+       "endDate": "2024-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2020-05-11T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2013-12-14T03:13:00Z",
+     "lastUpdateDate": "2025-11-13T07:32:36Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-01-03T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "http://q4live.s22.clientfiles.s3-website-us-east-1.amazonaws.com/529358580/files/doc_financials/annual/AR_2024.pdf"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "549300IRDTHJQ1PVET45",
+   "attributes": {
+    "lei": "549300IRDTHJQ1PVET45",
+    "entity": {
+     "legalName": {
+      "name": "FREEPORT-MCMORAN INC.",
+      "language": "en"
+     },
+     "otherNames": [
+      {
+       "name": "Freeport-McMoRan Copper & Gold Inc.",
+       "language": "en",
+       "type": "PREVIOUS_LEGAL_NAME"
+      }
+     ],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "en",
+      "addressLines": [
+       "C/O CORPORATION SERVICE COMPANY",
+       "251 LITTLE FALLS DRIVE"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "WILMINGTON",
+      "region": "US-DE",
+      "country": "US",
+      "postalCode": "19808"
+     },
+     "headquartersAddress": {
+      "language": "en",
+      "addressLines": [
+       "333 North Central Avenue"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Phoenix",
+      "region": "US-AZ",
+      "country": "US",
+      "postalCode": "85004"
+     },
+     "registeredAt": {
+      "id": "RA000602",
+      "other": null
+     },
+     "registeredAs": "2143193",
+     "jurisdiction": "US-DE",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "XTIQ",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1987-11-10T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": [
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "SUPPORTING_DOCUMENTS",
+         "effectiveDate": "2025-08-12T00:00:00Z",
+         "recordedDate": "2026-08-11T00:00:00Z",
+         "type": "CHANGE_LEGAL_NAME",
+         "status": "COMPLETED"
+        }
+       ]
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-29T15:32:00Z",
+     "lastUpdateDate": "2026-08-12T05:54:59Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-09-12T00:00:00Z",
+     "managingLou": "5493001KJTIIGC8Y1R12",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000602",
+      "other": null
+     },
+     "validatedAs": "2143193",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "FRPTUS55XXX"
+    ],
+    "mic": null,
+    "ocid": "us_de/2143193",
+    "qcc": null,
+    "gem": "E100000001220",
+    "spglobal": [
+     "273607"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300157XX3WB44J374|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|41|969dffbd42acedc963d0c8f12b93f3e6e82f3ae7956f4e7dea7de75b033d76ac|",
+   "attributes": {
+    "validFrom": "2025-11-14T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300157XX3WB44J374",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "549300IRDTHJQ1PVET45",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2024-01-01T00:00:00Z",
+       "endDate": "2024-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2017-10-01T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2013-12-14T03:13:00Z",
+     "lastUpdateDate": "2025-11-13T07:32:36Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-01-03T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "http://q4live.s22.clientfiles.s3-website-us-east-1.amazonaws.com/529358580/files/doc_financials/annual/AR_2024.pdf"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300157XX3WB44J374"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300IRDTHJQ1PVET45"
+     }
+    }
+   }
+  }
+ }
+}

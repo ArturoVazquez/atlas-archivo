@@ -1,0 +1,193 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:00:55+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800WU8YLF30YMC879",
+  "attributes": {
+   "lei": "959800WU8YLF30YMC879",
+   "entity": {
+    "legalName": {
+     "name": "ABENOJAR TUNGSTEN S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Ayala 10 4 izquierda"
+     ],
+     "addressNumber": "10",
+     "addressNumberWithinBuilding": "4 izquierda",
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "28001"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Ayala 10 4 izquierda"
+     ],
+     "addressNumber": "10",
+     "addressNumberWithinBuilding": "4 izquierda",
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "28001"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000308460779",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2021-06-23T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2026-08-14T05:57:22Z",
+    "lastUpdateDate": "2026-08-14T06:15:11Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-08-14T05:57:22Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000308460779",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A06945976"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": "QESRS862MG",
+   "gem": null,
+   "spglobal": [
+    "2015107978"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879/ultimate-parent-reporting-exception"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800WU8YLF30YMC879|0|051acf517c7ba3b5e53a8271059b7e766e22b093257552026cf2daf59a44e2c2|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800WU8YLF30YMC879",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "959800WU8YLF30YMC879|0|608ddea08ca25581e3e74ae793910fd95824ad4bba932e3e5de87543c7413afc|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "959800WU8YLF30YMC879",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800WU8YLF30YMC879"
+     }
+    }
+   }
+  }
+ }
+}

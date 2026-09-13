@@ -1,0 +1,578 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:01:39+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005246907",
+  "attributes": {
+   "lei": "95980020140005246907",
+   "entity": {
+    "legalName": {
+     "name": "ENUSA INDUSTRIAS AVANZADAS SA SME",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Santiago Rusiñol 12"
+     ],
+     "addressNumber": "12",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28040"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Santiago Rusiñol 12"
+     ],
+     "addressNumber": "12",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Madrid",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28040"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000240833136",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1972-04-17T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-12T10:08:04Z",
+    "lastUpdateDate": "2026-08-16T07:34:58Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-03-02T11:12:01Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000240833136",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28286375"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/28286375",
+   "qcc": "QESQDFUA4N",
+   "gem": null,
+   "spglobal": [
+    "561003"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005246907/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005246907"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "959800AP9PR52CJPTD25",
+   "attributes": {
+    "lei": "959800AP9PR52CJPTD25",
+    "entity": {
+     "legalName": {
+      "name": "SOCIEDAD ESTATAL DE PARTICIPACIONES INDUSTRIALES",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "Velázquez 134"
+      ],
+      "addressNumber": "134",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28006"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "Velázquez 134"
+      ],
+      "addressNumber": "134",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28006"
+     },
+     "registeredAt": {
+      "id": "RA001002",
+      "other": null
+     },
+     "registeredAs": "INV00005120",
+     "jurisdiction": "ES",
+     "category": "RESIDENT_GOVERNMENT_ENTITY",
+     "legalForm": {
+      "id": "TUHS",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1995-08-01T10:00:00Z",
+     "subCategory": "CENTRAL_GOVERNMENT",
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2016-02-10T08:14:20Z",
+     "lastUpdateDate": "2026-02-02T10:13:19Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-02-15T07:32:24Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA001002",
+      "other": null
+     },
+     "validatedAs": "INV00005120",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "Q2820015B"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": null,
+    "qcc": null,
+    "gem": "E100001014667",
+    "spglobal": [
+     "560983"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "95980020140005246907|LEI|IS_DIRECTLY_CONSOLIDATED_BY|11|dae47a1fbd1eb95b083d3c777c8d2d61aada4726dff5ed71c5ed8f26c9ff7482|",
+   "attributes": {
+    "validFrom": "2026-08-17T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "95980020140005246907",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "959800AP9PR52CJPTD25",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-01-16T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-09-02T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2018-02-15T12:14:22Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-03-02T11:12:01Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005246907"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "959800AP9PR52CJPTD25",
+   "attributes": {
+    "lei": "959800AP9PR52CJPTD25",
+    "entity": {
+     "legalName": {
+      "name": "SOCIEDAD ESTATAL DE PARTICIPACIONES INDUSTRIALES",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "Velázquez 134"
+      ],
+      "addressNumber": "134",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28006"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "Velázquez 134"
+      ],
+      "addressNumber": "134",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28006"
+     },
+     "registeredAt": {
+      "id": "RA001002",
+      "other": null
+     },
+     "registeredAs": "INV00005120",
+     "jurisdiction": "ES",
+     "category": "RESIDENT_GOVERNMENT_ENTITY",
+     "legalForm": {
+      "id": "TUHS",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1995-08-01T10:00:00Z",
+     "subCategory": "CENTRAL_GOVERNMENT",
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2016-02-10T08:14:20Z",
+     "lastUpdateDate": "2026-02-02T10:13:19Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-02-15T07:32:24Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA001002",
+      "other": null
+     },
+     "validatedAs": "INV00005120",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "Q2820015B"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": null,
+    "qcc": null,
+    "gem": "E100001014667",
+    "spglobal": [
+     "560983"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "95980020140005246907|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|11|d842e3e722079dbb652ecf121acc9c9d41427a2c915f156a0690b2d835e181cb|",
+   "attributes": {
+    "validFrom": "2026-08-17T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "95980020140005246907",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "959800AP9PR52CJPTD25",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2020-02-04T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-09-02T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2018-02-15T12:14:22Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-03-02T11:12:01Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005246907"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800AP9PR52CJPTD25"
+     }
+    }
+   }
+  }
+ }
+}

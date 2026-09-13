@@ -1,0 +1,188 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:00:40+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "213800NT8JJFKD8IQE85",
+  "attributes": {
+   "lei": "213800NT8JJFKD8IQE85",
+   "entity": {
+    "legalName": {
+     "name": "COBRE LAS CRUCES SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Carretera SE-3410 km 4,1"
+     ],
+     "addressNumber": "km 4,1",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Gerena",
+     "region": null,
+     "country": "ES",
+     "postalCode": "41860"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Carretera SE-3410 km 4,1"
+     ],
+     "addressNumber": "km 4,1",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Gerena",
+     "region": null,
+     "country": "ES",
+     "postalCode": "41860"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000015690979",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1983-01-10T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-11T00:00:00Z",
+    "lastUpdateDate": "2026-08-19T05:55:26Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-11-05T12:17:02Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000015690979",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A28814135"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/28814135",
+   "qcc": "QES8673F10",
+   "gem": null,
+   "spglobal": [
+    "1033547"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "213800NT8JJFKD8IQE85|1|de8e1a1762a6f5abb7b05eadce2c0e2ff432d9553b1a42b67dbbf502312907c8|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "213800NT8JJFKD8IQE85",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "213800NT8JJFKD8IQE85|0|178b5437b03ff4062b1c99e7e5cd41cbdfd9f87f6b9898cb30ebe9b86bed05c7|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "213800NT8JJFKD8IQE85",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NON_CONSOLIDATING",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/213800NT8JJFKD8IQE85"
+     }
+    }
+   }
+  }
+ }
+}

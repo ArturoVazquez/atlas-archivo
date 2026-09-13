@@ -1,0 +1,707 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:01:32+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "5299004K3IJ5KNKRYY78",
+  "attributes": {
+   "lei": "5299004K3IJ5KNKRYY78",
+   "entity": {
+    "legalName": {
+     "name": "EDP ESPAÑA SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [
+     {
+      "name": "EDP ESPANA SA",
+      "language": "es",
+      "type": "AUTO_ASCII_TRANSLITERATED_LEGAL_NAME"
+     }
+    ],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Plaza del Fresno 2"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Oviedo",
+     "region": "ES-AS",
+     "country": "ES",
+     "postalCode": "33007"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "PLAZA DEL FRESNO 2"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Oviedo",
+     "region": "ES-AS",
+     "country": "ES",
+     "postalCode": "33007"
+    },
+    "registeredAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "registeredAs": "A33473752",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "8888",
+     "other": "Sociedad Anonima Unipersonal"
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1995-11-19T23:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2026-05-05T22:00:00Z",
+        "recordedDate": "2026-05-06T08:30:17Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2024-04-18T22:00:00Z",
+        "recordedDate": "2024-04-19T09:14:16Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2023-04-16T22:00:00Z",
+        "recordedDate": "2023-04-17T10:53:41Z",
+        "type": "CHANGE_LEGAL_FORM",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2022-05-22T22:00:00Z",
+        "recordedDate": "2022-05-23T10:42:09Z",
+        "type": "CHANGE_HQ_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2022-05-22T22:00:00Z",
+        "recordedDate": "2022-05-23T10:42:09Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2017-03-23T23:00:00Z",
+        "recordedDate": "2022-03-29T11:21:20Z",
+        "type": "MERGERS_AND_ACQUISITIONS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2016-10-30T23:00:00Z",
+        "recordedDate": "2022-03-29T11:54:38Z",
+        "type": "MERGERS_AND_ACQUISITIONS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "SUPPORTING_DOCUMENTS",
+        "effectiveDate": "2014-01-07T23:00:00Z",
+        "recordedDate": "2022-03-29T11:17:02Z",
+        "type": "MERGERS_AND_ACQUISITIONS",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-01-23T11:51:42Z",
+    "lastUpdateDate": "2026-05-06T08:30:17Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-06-01T07:00:00Z",
+    "managingLou": "5299000J2N45DDNE4Y28",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "validatedAs": "A33473752",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/33473752",
+   "qcc": "QESX2QRVB4",
+   "gem": "E100000120527",
+   "spglobal": [
+    "704881"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/ultimate-parent"
+    }
+   },
+   "isins": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78/isins"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "529900CLC3WDMGI9VH80",
+   "attributes": {
+    "lei": "529900CLC3WDMGI9VH80",
+    "entity": {
+     "legalName": {
+      "name": "EDP, S.A.",
+      "language": "pt"
+     },
+     "otherNames": [
+      {
+       "name": "EDP – ENERGIAS DE PORTUGAL, S.A.",
+       "language": "pt",
+       "type": "PREVIOUS_LEGAL_NAME"
+      }
+     ],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "pt",
+      "addressLines": [
+       "Avenida 24 de Julho, n.º 12"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Lisboa",
+      "region": "PT-11",
+      "country": "PT",
+      "postalCode": "1249-300"
+     },
+     "headquartersAddress": {
+      "language": "pt",
+      "addressLines": [
+       "Avenida 24 de Julho, n.º 12"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "LISBOA",
+      "region": "PT-11",
+      "country": "PT",
+      "postalCode": "1249-300"
+     },
+     "registeredAt": {
+      "id": "RA000487",
+      "other": null
+     },
+     "registeredAs": "500697256",
+     "jurisdiction": "PT",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DFE5",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2006-02-22T23:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": [
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "SUPPORTING_DOCUMENTS",
+         "effectiveDate": "2024-05-16T22:00:00Z",
+         "recordedDate": "2024-05-17T11:36:09Z",
+         "type": "CHANGE_LEGAL_NAME",
+         "status": "COMPLETED"
+        }
+       ]
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2014-01-23T11:40:08Z",
+     "lastUpdateDate": "2026-05-06T08:46:32Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-06-01T07:00:00Z",
+     "managingLou": "5299000J2N45DDNE4Y28",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000487",
+      "other": null
+     },
+     "validatedAs": "500697256",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "EDEPPTPPXXX"
+    ],
+    "mic": null,
+    "ocid": null,
+    "qcc": null,
+    "gem": "E100000000834",
+    "spglobal": [
+     "410485"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "5299004K3IJ5KNKRYY78|LEI|IS_DIRECTLY_CONSOLIDATED_BY|11|be355ee24b65a1ec2623c713650defe1c5ad3e5220a719ef848c66eb55b634b1|",
+   "attributes": {
+    "validFrom": "2026-05-06T16:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "5299004K3IJ5KNKRYY78",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "529900CLC3WDMGI9VH80",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2024-12-31T23:00:00Z",
+       "endDate": "2025-12-30T23:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2017-12-27T23:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2026-02-24T23:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2018-01-09T07:52:07Z",
+     "lastUpdateDate": "2026-05-06T08:30:17Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-06-01T07:00:00Z",
+     "managingLou": "5299000J2N45DDNE4Y28",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "529900CLC3WDMGI9VH80",
+   "attributes": {
+    "lei": "529900CLC3WDMGI9VH80",
+    "entity": {
+     "legalName": {
+      "name": "EDP, S.A.",
+      "language": "pt"
+     },
+     "otherNames": [
+      {
+       "name": "EDP – ENERGIAS DE PORTUGAL, S.A.",
+       "language": "pt",
+       "type": "PREVIOUS_LEGAL_NAME"
+      }
+     ],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "pt",
+      "addressLines": [
+       "Avenida 24 de Julho, n.º 12"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Lisboa",
+      "region": "PT-11",
+      "country": "PT",
+      "postalCode": "1249-300"
+     },
+     "headquartersAddress": {
+      "language": "pt",
+      "addressLines": [
+       "Avenida 24 de Julho, n.º 12"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "LISBOA",
+      "region": "PT-11",
+      "country": "PT",
+      "postalCode": "1249-300"
+     },
+     "registeredAt": {
+      "id": "RA000487",
+      "other": null
+     },
+     "registeredAs": "500697256",
+     "jurisdiction": "PT",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "DFE5",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2006-02-22T23:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": [
+      {
+       "groupType": "STANDALONE",
+       "events": [
+        {
+         "validationDocuments": "SUPPORTING_DOCUMENTS",
+         "effectiveDate": "2024-05-16T22:00:00Z",
+         "recordedDate": "2024-05-17T11:36:09Z",
+         "type": "CHANGE_LEGAL_NAME",
+         "status": "COMPLETED"
+        }
+       ]
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2014-01-23T11:40:08Z",
+     "lastUpdateDate": "2026-05-06T08:46:32Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-06-01T07:00:00Z",
+     "managingLou": "5299000J2N45DDNE4Y28",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000487",
+      "other": null
+     },
+     "validatedAs": "500697256",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "EDEPPTPPXXX"
+    ],
+    "mic": null,
+    "ocid": null,
+    "qcc": null,
+    "gem": "E100000000834",
+    "spglobal": [
+     "410485"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "5299004K3IJ5KNKRYY78|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|11|be49f764744a2f239a030415418aaa6af935b7c1bd51f3b4d58c0aa5de3cebd3|",
+   "attributes": {
+    "validFrom": "2026-05-06T16:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "5299004K3IJ5KNKRYY78",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "529900CLC3WDMGI9VH80",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2024-12-31T23:00:00Z",
+       "endDate": "2025-12-30T23:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2017-12-27T23:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2026-02-24T23:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2018-01-09T07:52:07Z",
+     "lastUpdateDate": "2026-05-06T08:30:17Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-06-01T07:00:00Z",
+     "managingLou": "5299000J2N45DDNE4Y28",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5299004K3IJ5KNKRYY78"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80"
+     }
+    }
+   }
+  }
+ }
+}

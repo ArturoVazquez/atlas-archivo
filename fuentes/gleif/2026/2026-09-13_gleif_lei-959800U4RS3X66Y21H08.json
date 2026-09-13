@@ -1,0 +1,582 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:01:10+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "959800U4RS3X66Y21H08",
+  "attributes": {
+   "lei": "959800U4RS3X66Y21H08",
+   "entity": {
+    "legalName": {
+     "name": "IBERDROLA GENERACION NUCLEAR SA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Plaza Euskadi, 5-"
+     ],
+     "addressNumber": "5-",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Bilbao",
+     "region": null,
+     "country": "ES",
+     "postalCode": "48009"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Plaza Euskadi, 5-"
+     ],
+     "addressNumber": "5-",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Bilbao",
+     "region": null,
+     "country": "ES",
+     "postalCode": "48009"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000069916157",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2012-11-06T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-11-23T08:19:05Z",
+    "lastUpdateDate": "2026-08-16T07:34:58Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-02-13T13:43:23Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000069916157",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A86583747"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": null,
+   "gem": null,
+   "spglobal": [
+    "275289902"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "5QK37QC7NWOJ8D7WVQ45",
+   "attributes": {
+    "lei": "5QK37QC7NWOJ8D7WVQ45",
+    "entity": {
+     "legalName": {
+      "name": "IBERDROLA SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "PLAZA EUSKADI, 5- -Torre Iberdrola-"
+      ],
+      "addressNumber": "5-",
+      "addressNumberWithinBuilding": "-Torre Iberdrola-",
+      "mailRouting": null,
+      "city": "Bilbao",
+      "region": null,
+      "country": "ES",
+      "postalCode": "48009"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "PLAZA EUSKADI, 5- -Torre Iberdrola-"
+      ],
+      "addressNumber": "5-",
+      "addressNumberWithinBuilding": "-Torre Iberdrola-",
+      "mailRouting": null,
+      "city": "Bilbao",
+      "region": null,
+      "country": "ES",
+      "postalCode": "48009"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000056343765",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1901-07-19T10:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-27T11:34:31Z",
+     "lastUpdateDate": "2026-08-14T06:57:46Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-07-07T10:15:27Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000056343765",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A48010615"
+      }
+     ]
+    },
+    "bic": [
+     "IBDLES2BXXX"
+    ],
+    "mic": null,
+    "ocid": "es/48010615",
+    "qcc": null,
+    "gem": "E100000000975",
+    "spglobal": [
+     "517300"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "959800U4RS3X66Y21H08|LEI|IS_DIRECTLY_CONSOLIDATED_BY|8|b0613bc45497ab99a84b9ac9bf02e6533c41bd71386b6b179fc2b73643411b3a|",
+   "attributes": {
+    "validFrom": "2026-08-17T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "959800U4RS3X66Y21H08",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "5QK37QC7NWOJ8D7WVQ45",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2019-12-31T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-01T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2020-12-14T15:15:09Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-02-13T13:43:23Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Bilbao, depósito nº 3/2025/5540, de fecha 01/07/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "5QK37QC7NWOJ8D7WVQ45",
+   "attributes": {
+    "lei": "5QK37QC7NWOJ8D7WVQ45",
+    "entity": {
+     "legalName": {
+      "name": "IBERDROLA SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "PLAZA EUSKADI, 5- -Torre Iberdrola-"
+      ],
+      "addressNumber": "5-",
+      "addressNumberWithinBuilding": "-Torre Iberdrola-",
+      "mailRouting": null,
+      "city": "Bilbao",
+      "region": null,
+      "country": "ES",
+      "postalCode": "48009"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "PLAZA EUSKADI, 5- -Torre Iberdrola-"
+      ],
+      "addressNumber": "5-",
+      "addressNumberWithinBuilding": "-Torre Iberdrola-",
+      "mailRouting": null,
+      "city": "Bilbao",
+      "region": null,
+      "country": "ES",
+      "postalCode": "48009"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000056343765",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1901-07-19T10:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-27T11:34:31Z",
+     "lastUpdateDate": "2026-08-14T06:57:46Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-07-07T10:15:27Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000056343765",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A48010615"
+      }
+     ]
+    },
+    "bic": [
+     "IBDLES2BXXX"
+    ],
+    "mic": null,
+    "ocid": "es/48010615",
+    "qcc": null,
+    "gem": "E100000000975",
+    "spglobal": [
+     "517300"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "959800U4RS3X66Y21H08|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|15|0737765ca7e9551c214e461b4d2086ea292c4e9019cd4f9f3dee09671af36539|",
+   "attributes": {
+    "validFrom": "2026-08-17T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "959800U4RS3X66Y21H08",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "5QK37QC7NWOJ8D7WVQ45",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2019-12-31T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-01T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-23T08:19:05Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-02-13T13:43:23Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Bilbao, depósito nº 3/2025/5540, de fecha 01/07/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800U4RS3X66Y21H08"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T00:59:54+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "8945009NZ1FUV0O1OT13",
+  "attributes": {
+   "lei": "8945009NZ1FUV0O1OT13",
+   "entity": {
+    "legalName": {
+     "name": "Amazon Data Services Spain, S.L., Unipersonal",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "CALLE RAMIREZ DE PRADO 5"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "CALLE RAMIREZ DE PRADO 5"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-M",
+     "country": "ES",
+     "postalCode": "28045"
+    },
+    "registeredAt": {
+     "id": "RA000535",
+     "other": null
+    },
+    "registeredAs": "B86339595",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "R6UT",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2018-12-31T23:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2022-02-08T14:21:55Z",
+    "lastUpdateDate": "2025-02-26T18:01:51Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2025-02-26T16:02:29Z",
+    "managingLou": "529900F6BNUR3RJ2WH29",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000535",
+     "other": null
+    },
+    "validatedAs": "B86339595",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": null,
+   "gem": null,
+   "spglobal": [
+    "534599941"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "8945009NZ1FUV0O1OT13|0|eea04015dd60bacf35c41eb16d4237033594fbe93ccdf7d8739f212d6ea74dd2|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "8945009NZ1FUV0O1OT13",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "8945009NZ1FUV0O1OT13|0|649a6f1a3e9164c5347f3ed55aad717fce788646e017e23b627730713016afd1|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "8945009NZ1FUV0O1OT13",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/8945009NZ1FUV0O1OT13"
+     }
+    }
+   }
+  }
+ }
+}

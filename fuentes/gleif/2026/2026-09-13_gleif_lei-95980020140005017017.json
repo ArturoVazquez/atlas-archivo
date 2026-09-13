@@ -1,0 +1,582 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:00:25+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "95980020140005017017",
+  "attributes": {
+   "lei": "95980020140005017017",
+   "entity": {
+    "legalName": {
+     "name": "PARC LOGISTIC DE LA ZONA FRANCA S.A.",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Avda. 3 del Parc Logístic 26 Edif. Oficinas C3, Planta baja 2"
+     ],
+     "addressNumber": "26",
+     "addressNumberWithinBuilding": "Edif. Oficinas C3, Planta baja 2",
+     "mailRouting": null,
+     "city": "Barcelona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08040"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Avda. 3 del Parc Logístic 26 Edif. Oficinas C3, Planta baja 2"
+     ],
+     "addressNumber": "26",
+     "addressNumberWithinBuilding": "Edif. Oficinas C3, Planta baja 2",
+     "mailRouting": null,
+     "city": "Barcelona",
+     "region": null,
+     "country": "ES",
+     "postalCode": "08040"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000341314544",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1997-07-29T10:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-10T14:59:19Z",
+    "lastUpdateDate": "2026-08-16T07:34:58Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-02-02T10:45:21Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000341314544",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A61440335"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/61440335",
+   "qcc": "QESWV25K2N",
+   "gem": null,
+   "spglobal": [
+    "52413094"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/95980020140005017017/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/95980020140005017017"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "959800L8KD863DP30X04",
+   "attributes": {
+    "lei": "959800L8KD863DP30X04",
+    "entity": {
+     "legalName": {
+      "name": "MERLIN PROPERTIES SOCIMI, S.A.",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "Paseo de la Castellana 257 3ª planta"
+      ],
+      "addressNumber": "257",
+      "addressNumberWithinBuilding": "3ª planta",
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28046"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "Paseo de la Castellana 257 3ª planta"
+      ],
+      "addressNumber": "257",
+      "addressNumberWithinBuilding": "3ª planta",
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28046"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000292361664",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2014-03-25T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2015-11-26T11:49:41Z",
+     "lastUpdateDate": "2026-08-20T08:51:50Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-10-24T12:18:01Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000292361664",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A86977790"
+      }
+     ]
+    },
+    "bic": [
+     "MEPOESMMXXX"
+    ],
+    "mic": null,
+    "ocid": null,
+    "qcc": "QESJT5MQFS",
+    "gem": null,
+    "spglobal": [
+     "264555396"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "95980020140005017017|LEI|IS_DIRECTLY_CONSOLIDATED_BY|12|1be9e10ec075c81aedf61d76cc0856e56a2afe9ac21fa5c167cd72d02bd98c03|",
+   "attributes": {
+    "validFrom": "2026-08-17T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "95980020140005017017",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "959800L8KD863DP30X04",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-05-07T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-11T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2018-02-02T10:45:21Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-02-02T10:45:21Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Madrid, Legajo nº 3/2025/73472, de fecha 11/07/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005017017"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "959800L8KD863DP30X04",
+   "attributes": {
+    "lei": "959800L8KD863DP30X04",
+    "entity": {
+     "legalName": {
+      "name": "MERLIN PROPERTIES SOCIMI, S.A.",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "Paseo de la Castellana 257 3ª planta"
+      ],
+      "addressNumber": "257",
+      "addressNumberWithinBuilding": "3ª planta",
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28046"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "Paseo de la Castellana 257 3ª planta"
+      ],
+      "addressNumber": "257",
+      "addressNumberWithinBuilding": "3ª planta",
+      "mailRouting": null,
+      "city": "Madrid",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28046"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000292361664",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2014-03-25T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2015-11-26T11:49:41Z",
+     "lastUpdateDate": "2026-08-20T08:51:50Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-10-24T12:18:01Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000292361664",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A86977790"
+      }
+     ]
+    },
+    "bic": [
+     "MEPOESMMXXX"
+    ],
+    "mic": null,
+    "ocid": null,
+    "qcc": "QESJT5MQFS",
+    "gem": null,
+    "spglobal": [
+     "264555396"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "95980020140005017017|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|12|5dadf674b7a1780cd645328ec470d221d5c9eeb0d57ddbc131336d1636e25964|",
+   "attributes": {
+    "validFrom": "2026-08-17T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "95980020140005017017",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "959800L8KD863DP30X04",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2020-01-09T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-11T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2018-02-02T10:45:21Z",
+     "lastUpdateDate": "2026-08-16T07:34:58Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2027-02-02T10:45:21Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": "Registro Mercantil de Madrid, Legajo nº 3/2025/73472, de fecha 11/07/2025, ejercicio 2024"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/95980020140005017017"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/959800L8KD863DP30X04"
+     }
+    }
+   }
+  }
+ }
+}

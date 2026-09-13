@@ -65,8 +65,9 @@ teoría. Ha dejado fuera tres fuentes que habrían sido la vía obvia:
 
 ## Los emisores transversales
 
-Cuatro emisores sostienen la mayor parte del atlas. Sus condiciones van aquí una
-vez, y las fichas remiten a esta sección.
+Los emisores que sostienen la mayor parte del atlas, y el registro mundial de
+identificadores del que sale el registro de entidades. Sus condiciones van aquí
+una vez, y las fichas remiten a esta sección.
 
 ### Instituto Geográfico Nacional (IGN) y CNIG
 
@@ -165,6 +166,32 @@ la estadística eléctrica y los anuncios de Costas.
 > se resuelve sola antes del botón. Por guion, esa URL devuelve la página del
 > ALTCHA con un **200** — un 404 disfrazado de éxito, la trampa que esta casa ya
 > tiene fichada.
+
+### GLEIF, el registro mundial de identificadores de persona jurídica
+
+**Presente en el registro de entidades** (`datos/entidades/`, contrato §4.4),
+no en ninguna capa. La Global Legal Entity Identifier Foundation publica el
+registro LEI (ISO 17442) con licencia **CC0 1.0**: sin atribución obligatoria y
+sin restricción de uso. Cada registro consultado se archiva en `gleif/<año>/`
+con la fecha de la consulta, y la cita lleva la URL de la API.
+
+**Lo que hay que saber antes de citarlo.**
+
+- El LEI identifica; el nombre no. Buscar una sociedad por su nombre devuelve
+  con frecuencia otra: medido sobre las sociedades de este atlas, cinco de
+  veintinueve. La consulta se hace por NIF o por LEI, y una persona comprueba
+  que el registro es el de la sociedad que el acto nombra.
+- El NIF viene en el registro cuando la autoridad que lo validó es la Agencia
+  Tributaria; cuando es el Registro Mercantil, viene como validación secundaria
+  o no viene.
+- La corroboración lo dice todo. Un registro corroborado del todo está
+  contrastado contra el Registro Mercantil o la Agencia Tributaria y sostiene
+  un confirmado; uno caducado, o corroborado en parte, sostiene solo un parcial.
+- Las relaciones de matriz las declara la propia sociedad y la entidad emisora
+  las valida contra cuentas consolidadas. Cuando la sociedad se acoge a una
+  excepción de información (no consolida, no la comunica, la controlan
+  personas físicas), el registro lo dice y este atlas lo declara como hueco:
+  la matriz no se comunica, y eso no es lo mismo que no existir.
 
 ## El archivo está completo
 
