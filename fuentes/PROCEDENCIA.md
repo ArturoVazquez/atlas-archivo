@@ -169,8 +169,8 @@ la estadística eléctrica y los anuncios de Costas.
 
 ### GLEIF, el registro mundial de identificadores de persona jurídica
 
-**Presente en el registro de entidades** (`datos/entidades/`, contrato §4.4),
-no en ninguna capa. La Global Legal Entity Identifier Foundation publica el
+**Presente en el registro de entidades** (`datos/entidades/`), no en ninguna
+capa. La Global Legal Entity Identifier Foundation publica el
 registro LEI (ISO 17442) con licencia **CC0 1.0**: sin atribución obligatoria y
 sin restricción de uso. Cada registro consultado se archiva en `gleif/<año>/`
 con la fecha de la consulta, y la cita lleva la URL de la API.
@@ -184,6 +184,10 @@ con la fecha de la consulta, y la cita lleva la URL de la API.
 - El NIF viene en el registro cuando la autoridad que lo validó es la Agencia
   Tributaria; cuando es el Registro Mercantil, viene como validación secundaria
   o no viene.
+- Una sociedad de fuera no tiene NIF, y la identifica su LEI. Cuando el
+  documento que la nombra no imprime ningún identificador, una persona la elige
+  entre los candidatos de GLEIF comprobando que la razón social y el país casen
+  del todo, y su corroboración es contra el registro mercantil de su país.
 - La corroboración lo dice todo. Un registro corroborado del todo está
   contrastado contra el Registro Mercantil o la Agencia Tributaria y sostiene
   un confirmado; uno caducado, o corroborado en parte, sostiene solo un parcial.
@@ -986,17 +990,27 @@ autorización **no caduca por fecha sino por volumen** de celdas ocupadas.
 
 **De dónde** · **DOUE**, Reglamento Delegado (UE) 2026/764, lista de la Unión ·
 **MITECO**, Plan de desarrollo de la red de transporte 2021-2026 · **IGN**,
-Nomenclátor para el extremo español.
-**Licencia** · CE · Ley 37/2007 · IGN.
+Nomenclátor para el extremo español · **CINEA**, plataforma PCI-PMI: la ficha de
+cada enlace de la lista de la Unión, con su promotor y su estado de ejecución.
+**Licencia** · CE, Decisión 2011/833/UE · Ley 37/2007 · IGN.
 **Qué hay que saber** · **Un enlace tiene dos extremos y el atlas solo puede
 situar uno.** El de fuera va nombrado y sin coordenada: dibujar una recta entre
-los dos sería inventar el trazado.
-**Huecos** · Los 5 registros declaran dos. Primero: **el estado es el que dicen
-los instrumentos de PLANIFICACIÓN, no un parte de obra**. Segundo, y más grande:
-**las interconexiones YA EN SERVICIO con Francia, Portugal, Marruecos y Andorra
-no están en esta capa** — quien las inventaría es Red Eléctrica, fuente
-corporativa.
-**Archivado** · 3 ficheros · **El resto** · CHANGELOG `datos-v2026.08.9` · §10
+los dos sería inventar el trazado. **El promotor y el estado de los tres enlaces
+de la lista de la Unión son los de su ficha**, que alimentan los propios
+promotores. Esa ficha es la que dijo que el enlace con Portugal está en servicio
+desde el 2 de julio de 2026 y el del golfo de Vizcaya en construcción, cuando la
+planificación, la única fuente de estado que había, los daba a los dos por
+proyectados. Un enlace transfronterizo lo promueven las dos redes, y el promotor
+las nombra a las dos.
+**Huecos** · Tres. Primero: **el estado es el que declaran fichas y planes, no un
+parte de obra**. Segundo, y más grande: **las interconexiones que ya estaban en
+servicio con Francia, Portugal, Marruecos y Andorra antes del plan no están en
+esta capa**; quien las inventaría es Red Eléctrica, fuente corporativa. Tercero:
+**Andorra y Marruecos no tienen promotor publicado**, porque no están en la lista
+de la Unión y el plan no lo nombra; lo dirá su autorización administrativa en el
+BOE.
+**Archivado** · 4 ficheros · **El resto** · CHANGELOG `datos-v2026.08.9` y
+`.148` · §10
 
 ## red-electrica
 

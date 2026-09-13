@@ -1,0 +1,282 @@
+{
+ "_captura": {
+  "fecha": "2026-09-13",
+  "plataforma": "PCI-PMI Transparency Platform (CINEA / Comisión Europea)",
+  "base_legal": "Reglamento (UE) 2022/869 (TEN-E), artículo 23",
+  "visor": "https://ec.europa.eu/energy/infrastructure/transparency_platform/map-viewer/main.html",
+  "servicio": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer",
+  "where": "PCI_CODE IN ('1.1','1.2','1.7.1') AND PCI_LIST_ACTIVE=1",
+  "aviso_de_la_fuente": "The GIS representation of projects displayed in this TP does not prejudge and may not coincide with the final route of the projects.",
+  "reutilizacion": "Information displayed at the viewer is downloadable and it can be reused if reference is mentioned. (Decisión 2011/833/UE: CC BY 4.0)",
+  "nota": "Solo se captura la capa ENERGY/PCI, documento de la Comisión. La capa ENERGY/PLATTS del mismo visor es de S&P Global y NO se toca. Sin geometría y solo la subcapa de líneas, que trae una fila por proyecto: la de subestaciones repite los mismos atributos por punto, y la geometría de la plataforma no se cita, porque el extremo español de cada enlace lo sitúa el Nomenclátor del IGN.",
+  "returnGeometry": false
+ },
+ "capas": {
+  "3": {
+   "nombre": "Electricity line",
+   "url": "https://webgate.ec.europa.eu/cineagis/rest/services/ENERGY/PCI/MapServer/3/query?where=PCI_CODE%20IN%20%28%271.1%27%2C%271.2%27%2C%271.7.1%27%29%20AND%20PCI_LIST_ACTIVE%3D1&outFields=%2A&returnGeometry=false&f=json",
+   "respuesta": {
+    "displayFieldName": "LIST_NAME",
+    "fieldAliases": {
+     "OBJECTID": "OBJECTID",
+     "INFRA": "INFRA",
+     "PCI_CODE": "PCI_CODE",
+     "ISHIGHWAY": "ISHIGHWAY",
+     "PCI_ID": "PCI_ID",
+     "PCI_LIST_ID": "PCI_LIST_ID",
+     "LIST_NAME": "LIST_NAME",
+     "PCI_LIST_ACTIVE": "PCI_LIST_ACTIVE",
+     "NATURE_CODE": "NATURE_CODE",
+     "CLUSTER_CODE": "CLUSTER_CODE",
+     "SECTOR_ABBREVIATION": "SECTOR_ABBREVIATION",
+     "CORRIDOR_CODE": "CORRIDOR_CODE",
+     "CORRIDOR_NUMBER": "CORRIDOR_NUMBER",
+     "PROJECT_FICHE_SHORT_TITLE": "PROJECT_FICHE_SHORT_TITLE",
+     "PROJECT_FULL_TITLE": "PROJECT_FULL_TITLE",
+     "TECHNICAL_DESCR": "TECHNICAL_DESCR",
+     "IMPLEMENTATION_STATUS": "IMPLEMENTATION_STATUS",
+     "IMPLEMENTATION_STATUS_DESCR": "IMPLEMENTATION_STATUS_DESCR",
+     "COUNTRY_CONCERNED": "COUNTRY_CONCERNED",
+     "PROMOTERS": "PROMOTERS",
+     "COMMISSIONING_DATE": "COMMISSIONING_DATE",
+     "CEF_ACTIONS": "CEF_ACTIONS",
+     "CEF_ACTION_FICHES": "CEF_ACTION_FICHES",
+     "STUDIES_OR_WORKS": "STUDIES_OR_WORKS",
+     "SHAPE.LEN": "SHAPE.LEN"
+    },
+    "fields": [
+     {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+     },
+     {
+      "name": "INFRA",
+      "type": "esriFieldTypeInteger",
+      "alias": "INFRA"
+     },
+     {
+      "name": "PCI_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "PCI_CODE",
+      "length": 250
+     },
+     {
+      "name": "ISHIGHWAY",
+      "type": "esriFieldTypeInteger",
+      "alias": "ISHIGHWAY"
+     },
+     {
+      "name": "PCI_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_ID"
+     },
+     {
+      "name": "PCI_LIST_ID",
+      "type": "esriFieldTypeDouble",
+      "alias": "PCI_LIST_ID"
+     },
+     {
+      "name": "LIST_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "LIST_NAME",
+      "length": 250
+     },
+     {
+      "name": "PCI_LIST_ACTIVE",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "PCI_LIST_ACTIVE"
+     },
+     {
+      "name": "NATURE_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "NATURE_CODE",
+      "length": 48
+     },
+     {
+      "name": "CLUSTER_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CLUSTER_CODE",
+      "length": 250
+     },
+     {
+      "name": "SECTOR_ABBREVIATION",
+      "type": "esriFieldTypeString",
+      "alias": "SECTOR_ABBREVIATION",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_CODE",
+      "type": "esriFieldTypeString",
+      "alias": "CORRIDOR_CODE",
+      "length": 250
+     },
+     {
+      "name": "CORRIDOR_NUMBER",
+      "type": "esriFieldTypeDouble",
+      "alias": "CORRIDOR_NUMBER"
+     },
+     {
+      "name": "PROJECT_FICHE_SHORT_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FICHE_SHORT_TITLE",
+      "length": 1000
+     },
+     {
+      "name": "PROJECT_FULL_TITLE",
+      "type": "esriFieldTypeString",
+      "alias": "PROJECT_FULL_TITLE",
+      "length": 2000
+     },
+     {
+      "name": "TECHNICAL_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "TECHNICAL_DESCR",
+      "length": 1073741822
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS",
+      "type": "esriFieldTypeDouble",
+      "alias": "IMPLEMENTATION_STATUS"
+     },
+     {
+      "name": "IMPLEMENTATION_STATUS_DESCR",
+      "type": "esriFieldTypeString",
+      "alias": "IMPLEMENTATION_STATUS_DESCR",
+      "length": 250
+     },
+     {
+      "name": "COUNTRY_CONCERNED",
+      "type": "esriFieldTypeString",
+      "alias": "COUNTRY_CONCERNED",
+      "length": 1073741822
+     },
+     {
+      "name": "PROMOTERS",
+      "type": "esriFieldTypeString",
+      "alias": "PROMOTERS",
+      "length": 1073741822
+     },
+     {
+      "name": "COMMISSIONING_DATE",
+      "type": "esriFieldTypeString",
+      "alias": "COMMISSIONING_DATE",
+      "length": 250
+     },
+     {
+      "name": "CEF_ACTIONS",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTIONS",
+      "length": 1073741822
+     },
+     {
+      "name": "CEF_ACTION_FICHES",
+      "type": "esriFieldTypeString",
+      "alias": "CEF_ACTION_FICHES",
+      "length": 1073741822
+     },
+     {
+      "name": "STUDIES_OR_WORKS",
+      "type": "esriFieldTypeString",
+      "alias": "STUDIES_OR_WORKS",
+      "length": 1073741822
+     },
+     {
+      "name": "SHAPE.LEN",
+      "type": "esriFieldTypeDouble",
+      "alias": "SHAPE.LEN"
+     }
+    ],
+    "features": [
+     {
+      "attributes": {
+       "OBJECTID": 7007,
+       "INFRA": 1,
+       "PCI_CODE": "1.1",
+       "ISHIGHWAY": null,
+       "PCI_ID": 1281,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "PCI_LIST_ACTIVE": 1,
+       "NATURE_CODE": "PCI",
+       "CLUSTER_CODE": "n/a",
+       "SECTOR_ABBREVIATION": "E",
+       "CORRIDOR_CODE": "NSI West Electricity",
+       "CORRIDOR_NUMBER": 13,
+       "PROJECT_FICHE_SHORT_TITLE": "Beariz-Fontefría (ES)-Ponte de Lima-Vila Nova de Famalicão (PT) interconnection",
+       "PROJECT_FULL_TITLE": "Portugal – Spain interconnection between Beariz – Fontefría (ES), Fontefria (ES) – Ponte de Lima (PT) and Ponte de Lima – Vila Nova de Famalicão (PT), including substations in Beariz (ES), Fontefría (ES) and Ponte de Lima (PT)",
+       "TECHNICAL_DESCR": "<p>New 400 kV AC double circuit (OHL) of about 166 km (113 km in Portugal and 53&nbsp;km in Spain) between Beariz (ES) - Fontefría (ES) - Ponte de Lima (PT) – Vila Nova de Famalicão (PT), with only one circuit being installed on the Fontefría – Vila Nova de Famalicão section (on shore) 1499/1706 MVA (summer/winter). New 400 kV substations Fontefría, Beariz and Ponte de Lima.</p><p>Note: Section Ponte de Lima (PT)-Vila Nova de Famalicão (PT) has been commissioned in 2021. Ponte de Lima Substation (PT) has been comissioned in 2025.</p>",
+       "IMPLEMENTATION_STATUS": 5,
+       "IMPLEMENTATION_STATUS_DESCR": "Commissioned",
+       "COUNTRY_CONCERNED": "ES, PT",
+       "PROMOTERS": "REE - Red Eléctrica de España S.A.U. (ES) ; REN - Rede Eléctrica Nacional S.A. (PT)",
+       "COMMISSIONING_DATE": "02/07/2026",
+       "CEF_ACTIONS": null,
+       "CEF_ACTION_FICHES": null,
+       "STUDIES_OR_WORKS": null,
+       "SHAPE.LEN": 195950.410915115
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 5802,
+       "INFRA": 1,
+       "PCI_CODE": "1.2",
+       "ISHIGHWAY": null,
+       "PCI_ID": 1292,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "PCI_LIST_ACTIVE": 1,
+       "NATURE_CODE": "PCI",
+       "CLUSTER_CODE": "n/a",
+       "SECTOR_ABBREVIATION": "E",
+       "CORRIDOR_CODE": "NSI West Electricity",
+       "CORRIDOR_NUMBER": 13,
+       "PROJECT_FICHE_SHORT_TITLE": "Biscay Gulf interconnection (ES, FR)",
+       "PROJECT_FULL_TITLE": "Interconnection between Gatica (ES) and Cubnezais (FR) [currently known as \"Biscay Gulf\"]",
+       "TECHNICAL_DESCR": "<p>A new 400 kV HVDC subsea cable interconnection of approximately 394 km with a capacity of 2x1000 MW between Nouvelle Aquitaine and the Basque country, via the Biscay Gulf (offshore), with VCS converters at the end.</p>\n",
+       "IMPLEMENTATION_STATUS": 4,
+       "IMPLEMENTATION_STATUS_DESCR": "Under construction",
+       "COUNTRY_CONCERNED": "ES, FR",
+       "PROMOTERS": "RTE - Réseau de Transport d'Electricité (FR) ; REE - Red Eléctrica de España S.A.U. (ES)",
+       "COMMISSIONING_DATE": "31/12/2028",
+       "CEF_ACTIONS": "2.7-0001-fres-s-m-16 ; 2.7-0013-fres-w-m-17 ; 2.7-0023-fres-s-m-14",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/assets/cinea/project_fiches/cef/cef_energy/2.7-0001-FRES-S-M-16.pdf ; https://ec.europa.eu/assets/cinea/project_fiches/cef/cef_energy/2.7-0013-FRES-W-M-17.pdf ; https://ec.europa.eu/assets/cinea/project_fiches/cef/cef_energy/2.7-0023-FRES-S-M-14.pdf",
+       "STUDIES_OR_WORKS": "Studies ; Works",
+       "SHAPE.LEN": 548443.332332172
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 5871,
+       "INFRA": 1,
+       "PCI_CODE": "1.7.1",
+       "ISHIGHWAY": null,
+       "PCI_ID": 1301,
+       "PCI_LIST_ID": 61,
+       "LIST_NAME": "2nd PCI/PMI list",
+       "PCI_LIST_ACTIVE": 1,
+       "NATURE_CODE": "PCI",
+       "CLUSTER_CODE": "1.7",
+       "SECTOR_ABBREVIATION": "E",
+       "CORRIDOR_CODE": "NSI West Electricity",
+       "CORRIDOR_NUMBER": 13,
+       "PROJECT_FICHE_SHORT_TITLE": "Pyrenean crossing 1 (ES, FR)",
+       "PROJECT_FULL_TITLE": "Interconnection between Navarra (ES) and Landes (FR) [currently known as “Pyrenean crossing 1”]",
+       "TECHNICAL_DESCR": "<p>A new 225 km HVDC interconnection between France and Spain in the Western part of the Pyrenees between Pamplona area (Spain) and Cantegrit (France). The project consists of a new HVDC line of 2 GW nominal power, and two new converter stations in Olza (ES) and Cantegrit (FR).</p>",
+       "IMPLEMENTATION_STATUS": 1,
+       "IMPLEMENTATION_STATUS_DESCR": "Under consideration ",
+       "COUNTRY_CONCERNED": "ES, FR",
+       "PROMOTERS": "RTE - Réseau de Transport d'Electricité (FR) ; REE - Red Eléctrica de España S.A.U. (ES)",
+       "COMMISSIONING_DATE": "2036",
+       "CEF_ACTIONS": "1.7.1-esfr-s-m-24-navarra-landes es-fr",
+       "CEF_ACTION_FICHES": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43251567/101223592/CEF2027",
+       "STUDIES_OR_WORKS": "Studies",
+       "SHAPE.LEN": 200383.70536413402
+      }
+     }
+    ]
+   }
+  }
+ }
+}

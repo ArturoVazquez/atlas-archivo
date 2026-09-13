@@ -1,0 +1,584 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T01:52:23+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "54930070W8XSY31XK130",
+  "attributes": {
+   "lei": "54930070W8XSY31XK130",
+   "entity": {
+    "legalName": {
+     "name": "RED ELECTRICA DE ESPAÑA SOCIEDAD ANONIMA",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [
+     {
+      "name": "RED ELECTRICA DE ESPANA SOCIEDAD ANONIMA",
+      "language": "es",
+      "type": "PREFERRED_ASCII_TRANSLITERATED_LEGAL_NAME"
+     }
+    ],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "Paseo del Conde de los Gaitanes 177"
+     ],
+     "addressNumber": "177",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Alcobendas",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28109"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "Paseo del Conde de los Gaitanes 177"
+     ],
+     "addressNumber": "177",
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "Alcobendas",
+     "region": null,
+     "country": "ES",
+     "postalCode": "28109"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "1000281258148",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "5RDO",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2007-12-21T11:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2014-02-05T04:42:06Z",
+    "lastUpdateDate": "2026-08-18T09:22:35Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-12-07T10:22:47Z",
+    "managingLou": "959800R2X69K6Y6MX775",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "1000281258148",
+    "otherValidationAuthorities": [
+     {
+      "validatedAt": {
+       "id": "RA000535"
+      },
+      "validatedAs": "A85309219"
+     }
+    ]
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "es/85309219",
+   "qcc": "QESFJA2WRW",
+   "gem": null,
+   "spglobal": [
+    "46644874"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "5493009HMD0C90GUV498",
+   "attributes": {
+    "lei": "5493009HMD0C90GUV498",
+    "entity": {
+     "legalName": {
+      "name": "REDEIA CORPORACION SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "PASEO DEL CONDE DE LOS GAITANES 177"
+      ],
+      "addressNumber": "177",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Alcobendas",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28109"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "PASEO DEL CONDE DE LOS GAITANES 177"
+      ],
+      "addressNumber": "177",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Alcobendas",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28109"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000240021844",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1985-01-29T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2016-01-05T02:09:05Z",
+     "lastUpdateDate": "2026-08-18T09:22:35Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-12-09T09:12:18Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000240021844",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A78003662"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/78003662",
+    "qcc": "QESY1QA7ET",
+    "gem": "E100002022301",
+    "spglobal": [
+     "562968"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "54930070W8XSY31XK130|LEI|IS_DIRECTLY_CONSOLIDATED_BY|14|343c5e3b8a97f780cbd636e4c201d930df273f214ee06528abfdea0779c6680e|",
+   "attributes": {
+    "validFrom": "2026-08-19T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "54930070W8XSY31XK130",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "5493009HMD0C90GUV498",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2018-04-09T10:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-28T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-27T08:25:20Z",
+     "lastUpdateDate": "2026-08-18T09:22:35Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-12-07T10:22:47Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "5493009HMD0C90GUV498",
+   "attributes": {
+    "lei": "5493009HMD0C90GUV498",
+    "entity": {
+     "legalName": {
+      "name": "REDEIA CORPORACION SA",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "PASEO DEL CONDE DE LOS GAITANES 177"
+      ],
+      "addressNumber": "177",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Alcobendas",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28109"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "PASEO DEL CONDE DE LOS GAITANES 177"
+      ],
+      "addressNumber": "177",
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Alcobendas",
+      "region": null,
+      "country": "ES",
+      "postalCode": "28109"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "1000240021844",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1985-01-29T11:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2016-01-05T02:09:05Z",
+     "lastUpdateDate": "2026-08-18T09:22:35Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-12-09T09:12:18Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "1000240021844",
+     "otherValidationAuthorities": [
+      {
+       "validatedAt": {
+        "id": "RA000535"
+       },
+       "validatedAs": "A78003662"
+      }
+     ]
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": "es/78003662",
+    "qcc": "QESY1QA7ET",
+    "gem": "E100002022301",
+    "spglobal": [
+     "562968"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-12T16:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "54930070W8XSY31XK130|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|14|16a21af04400f16cfd87452e63587fad3714e216cbf2ed8317ec9946f087d818|",
+   "attributes": {
+    "validFrom": "2026-08-19T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "54930070W8XSY31XK130",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "5493009HMD0C90GUV498",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2019-11-20T11:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2024-01-01T11:00:00Z",
+       "endDate": "2024-12-31T22:59:59Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2025-07-28T10:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-11-27T08:25:20Z",
+     "lastUpdateDate": "2026-08-18T09:22:35Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-12-07T10:22:47Z",
+     "managingLou": "959800R2X69K6Y6MX775",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/54930070W8XSY31XK130"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493009HMD0C90GUV498"
+     }
+    }
+   }
+  }
+ }
+}

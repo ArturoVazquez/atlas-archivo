@@ -38,6 +38,7 @@ del contrato técnico se validó (`schema_version`).
 |---|---|
 | El mapa y las fichas de cada registro | [atlas.eltercioviejo.com](https://atlas.eltercioviejo.com) |
 | El índice de capas, con descargas GeoJSON | [la biblioteca](https://atlas.eltercioviejo.com/biblioteca/) |
+| Quién está detrás de cada activo, con su identificador | [el registro de entidades](https://atlas.eltercioviejo.com/entidad/) |
 | Cómo se lee un dato, y qué no se garantiza | [el método](https://atlas.eltercioviejo.com/metodo.html) |
 | Los documentos que sostienen cada cita | [`fuentes/`](fuentes/) en este repositorio |
 | De dónde sale cada capa y qué obliga su licencia | [`fuentes/PROCEDENCIA.md`](fuentes/PROCEDENCIA.md) |
@@ -175,7 +176,7 @@ cualquier campo sensible. **El atlas no inventa coordenadas**: lo que no tiene
 emplazamiento con fuente se publica en la precisión que la evidencia da, y esa
 precisión se puede comprobar contra el propio mapa.
 
-## 7 · Series y hechos de conjunto
+## 7 · Series, hechos de conjunto y entidades
 
 - **Series temporales.** Las capas con película (el agua embalsada, las
   entradas de gas) publican sus series como ficheros propios por registro, con
@@ -190,6 +191,23 @@ precisión se puede comprobar contra el propio mapa.
 - **Sin derivados.** El atlas no publica porcentajes ni agregados que salgan
   de operar sus propios campos: esos los calcula quien pinta, sobre los datos
   desnudos.
+- **Entidades.** Quién está detrás de un activo, el promotor, el titular o el
+  operador que nombra el acto, tiene su propio fichero, uno por sociedad u
+  organismo, en `datos/entidades/<id>.json`: su nombre como lo escribe el
+  registro que la identifica, su tipo, su país, su NIF y su LEI con su estado
+  de verificación, los textos exactos con los que los registros la nombran y
+  sus relaciones de matriz, participación o absorción, cada una con su fuente.
+  **El texto del registro no cambia**: lo que escribe el acto se queda tal
+  cual, y el vínculo con la entidad se calcula al construir el sitio casando
+  ese texto con los de la entidad, nunca por parecido. Si el texto de un
+  registro cambia y la entidad no lo recoge, la validación se planta. **El
+  identificador es el NIF, o el LEI de GLEIF, y no el nombre**, porque buscar
+  una sociedad por su nombre en el registro oficial devuelve con frecuencia
+  otra; una sociedad de fuera no tiene NIF y la identifica su LEI. Una relación
+  solo es confirmada si la sostiene una fuente primaria, y cuando una sociedad
+  declara que no comunica su matriz, se publica como hueco: no comunicarla no
+  es no tenerla. Se leen en
+  [/entidad/](https://atlas.eltercioviejo.com/entidad/).
 
 ## 8 · Vocabularios controlados
 
@@ -212,7 +230,9 @@ comprobar) **avisa**, y el aviso queda a la vista.
 Además del cerrojo, hay guardia: un vigía semanal barre el BOE y varios
 boletines autonómicos buscando actos nuevos de lo ya publicado, y una guardia
 de URLs comprueba que las citadas sigan vivas — **avisan y jamás escriben**:
-lo que entra al atlas lo firma siempre el criterio humano.
+lo que entra al atlas lo firma siempre el criterio humano. Lo que ese criterio
+decide con cada acto que un vigía señala, y por qué, se publica como dato en
+[/guardia/](https://atlas.eltercioviejo.com/guardia/).
 
 ## 10 · Releases, versiones y cómo citar
 
@@ -236,7 +256,7 @@ lo que entra al atlas lo firma siempre el criterio humano.
 ### 10.1 · Acceso programático
 
 Los datos se sirven estáticos desde el sitio, sin clave, sin cuota y **abiertos
-a cualquier origen**. Estas cinco rutas son las que se prometen:
+a cualquier origen**. Estas seis rutas son las que se prometen:
 
 | Ruta | Qué es |
 |---|---|
@@ -245,10 +265,11 @@ a cualquier origen**. Estas cinco rutas son las que se prometen:
 | `/datos/capas/<id>.geojson` | la capa **tal como se publica en la release**, byte a byte |
 | `/datos/series/<capa>/<slug>.json` | las series temporales |
 | `/datos/conjuntos/<id>.json` | los documentos de conjunto |
+| `/datos/entidades/<id>.json` | las entidades: quién está detrás de un activo, con su identificador, los textos con los que los registros la nombran y sus relaciones con fuente |
 
 Lo que cambia dentro de ellas lo gobiernan las garantías de arriba.
 
-**Y se sirven sin precomprimir.** La compresión de estas cinco rutas la negocia
+**Y se sirven sin precomprimir.** La compresión de estas seis rutas la negocia
 el servidor con quien pide, como en cualquier sitio: quien la pida recibe el
 fichero comprimido y quien no, texto plano. Es una garantía deliberada, y existe
 porque los órganos internos del visor sí van precomprimidos en origen y se
@@ -350,6 +371,9 @@ no tiene: el día que la coordenada salga del catastro minero subirá a
 - **La máquina avisa y jamás escribe**: los vigías señalan; el criterio humano
   firma cada dato que entra.
 - **Nada se borra**: los registros cambian de estado y el historial queda.
+- **El texto del acto se queda y la entidad se deriva**: quién está detrás de
+  un activo se resuelve casando textos exactos, sin normalizar lo que el acto
+  escribe y sin adivinar por parecido.
 - **Lo que falta se declara como dato**: una capa anunciada sin datos aparece
   en el manifiesto como `en_preparacion`, consultable — no como promesa suelta
   en un README.

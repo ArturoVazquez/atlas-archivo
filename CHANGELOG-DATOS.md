@@ -37,6 +37,65 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.148 — Las interconexiones eléctricas, con su promotor, y la de Portugal ya en servicio
+
+Esta edición completa la primera tanda del registro de entidades con la única
+de las cuatro preguntas principales que no nombraba a nadie, las
+interconexiones eléctricas, y corrige el estado de dos de ellas, que la capa
+daba por proyectadas. Contrato 1.87.0.
+
+### Añadido
+
+- **El promotor de las tres interconexiones de la lista de la Unión**, tal como
+  lo declara la ficha de cada proyecto en la plataforma de transparencia de la
+  Comisión: Red Eléctrica de España con REN en el enlace entre Galicia y el
+  norte de Portugal, y con RTE en los dos con Francia, por el golfo de Vizcaya
+  y por Navarra. Van todos los promotores de cada enlace, como en la red de
+  hidrógeno, porque quedarse con el español convertiría un enlace entre dos
+  países en uno nacional. Las fichas se archivan en `fuentes/ce/2026/`, sin la
+  geometría de la plataforma, que esta capa no cita.
+- **Tres entidades.** Red Eléctrica de España, con su NIF y su LEI, depende de
+  Redeia según GLEIF, en parcial: la relación la declara la propia sociedad y
+  nadie la ha contrastado. REN y RTE son las primeras sociedades de fuera del
+  registro, así que no tienen NIF y las identifica su LEI; el de REN está sin
+  renovar desde 2019 y sostiene su identidad solo en parcial.
+
+### Cambiado
+
+- **La interconexión con Portugal por Beariz y Fontefría pasa a en servicio.**
+  La ficha del proyecto dice que entró en servicio el 2 de julio de 2026. **La
+  del golfo de Vizcaya pasa a en construcción**, con la puesta en servicio
+  prevista el 31 de diciembre de 2028. La capa publicaba las dos como
+  proyectadas porque su única fuente de estado era la planificación; ahora
+  cada una lleva una clave que cita su ficha. La de Navarra sigue proyectada:
+  la ficha la da en consideración, con la puesta en servicio prevista en 2036.
+- **Los huecos de la capa se reescriben.** El estado de los tres enlaces de la
+  lista de la Unión es el que declara su ficha. Lo que la capa no trae son las
+  interconexiones que ya estaban en servicio antes del plan de desarrollo, y
+  ya no «las que están en servicio», porque una de las suyas lo está.
+- **La pregunta de la matriz extranjera cuenta aparte a la sociedad
+  domiciliada fuera que no declara matriz**, por el país de su propio fichero:
+  RTE y REN no caben en «sin matriz declarada» junto a las españolas. La
+  pregunta de las interconexiones enseña quién las promueve.
+- **El contrato sube a 1.87.0.** La capa de interconexiones gana `promotor`, y
+  §4.4 dice cómo se identifica una sociedad sin NIF y dónde está la puerta de
+  su matriz.
+
+### Huecos
+
+- **Andorra y Marruecos no tienen promotor publicado.** No están en la lista
+  de la Unión, así que la Comisión no tiene ficha suya, y el plan de desarrollo
+  no lo nombra. La puerta es la resolución de autorización administrativa
+  previa de cada actuación en el BOE, que nombra a quien la solicita.
+- **RTE y REN no comunican su matriz a GLEIF.** RTE declara que ninguna matriz
+  consolida sus cuentas por el criterio contable, y REN, que ninguna persona
+  jurídica las consolida. La puerta son sus cuentas consolidadas en el registro
+  mercantil de su país.
+- **El estado de las interconexiones sigue sin parte de obra.** La ficha de la
+  Comisión la alimentan los propios promotores.
+
+---
+
 ## datos-v2026.09.147 — El registro de entidades: quién está detrás, con identificador
 
 Esta edición no cambia ningún registro de ninguna capa. Añade un vehículo: el
