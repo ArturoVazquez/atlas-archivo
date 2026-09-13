@@ -203,7 +203,10 @@ precisión se puede comprobar contra el propio mapa.
   registro cambia y la entidad no lo recoge, la validación se planta. **El
   identificador es el NIF, o el LEI de GLEIF, y no el nombre**, porque buscar
   una sociedad por su nombre en el registro oficial devuelve con frecuencia
-  otra; una sociedad de fuera no tiene NIF y la identifica su LEI. Una relación
+  otra; una sociedad de fuera no tiene NIF y la identifica su LEI; y un ente del
+  sector público, que casi nunca tiene LEI, lo identifica el Inventario de Entes
+  del Sector Público que publica la Intervención General de la Administración
+  del Estado. Una relación
   solo es confirmada si la sostiene una fuente primaria, y cuando una sociedad
   declara que no comunica su matriz, se publica como hueco: no comunicarla no
   es no tenerla. Se leen en

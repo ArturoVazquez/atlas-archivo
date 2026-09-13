@@ -1,0 +1,206 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-13T17:04:53+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "529900XTS0YDP1XVWD35",
+  "attributes": {
+   "lei": "529900XTS0YDP1XVWD35",
+   "entity": {
+    "legalName": {
+     "name": "ENTIDAD PUBLICA EMPRESARIAL RED.ES",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "PLAZA MANUEL GOMEZ-MORENO , S/N - ED BRONCE"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-MD",
+     "country": "ES",
+     "postalCode": "28020"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "PLAZA MANUEL GOMEZ-MORENO , S/N - ED BRONCE"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "MADRID",
+     "region": "ES-MD",
+     "country": "ES",
+     "postalCode": "28020"
+    },
+    "registeredAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "registeredAs": "Q2891006E",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "TUHS",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "1989-06-29T22:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": [
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2023-09-05T22:00:00Z",
+        "recordedDate": "2023-09-06T06:00:33Z",
+        "type": "CHANGE_HQ_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     },
+     {
+      "groupType": "STANDALONE",
+      "events": [
+       {
+        "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+        "effectiveDate": "2023-09-05T22:00:00Z",
+        "recordedDate": "2023-09-06T06:00:33Z",
+        "type": "CHANGE_LEGAL_ADDRESS",
+        "status": "COMPLETED"
+       }
+      ]
+     }
+    ]
+   },
+   "registration": {
+    "initialRegistrationDate": "2022-09-19T11:58:09Z",
+    "lastUpdateDate": "2026-09-07T13:29:05Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2027-09-19T11:58:09Z",
+    "managingLou": "5299000J2N45DDNE4Y28",
+    "corroborationLevel": "PARTIALLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000780",
+     "other": null
+    },
+    "validatedAs": "Q2891006E",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": null,
+   "gem": null,
+   "spglobal": [
+    "39101629"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35/direct-parent-reporting-exception"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "reporting-exception": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35/ultimate-parent-reporting-exception"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35"
+  }
+ },
+ "direct-parent": null,
+ "direct-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "529900XTS0YDP1XVWD35|0|1a272965c0ac64c5bdc88bf795bf238b4ca7867205d006a0555cfa6069d9eb46|DIRECT_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "529900XTS0YDP1XVWD35",
+    "category": "DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": null,
+ "ultimate-parent-reporting-exception": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-13T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "reporting-exceptions",
+   "id": "529900XTS0YDP1XVWD35|0|505d05fb9e4a9a72f21486d627118d2db4945fb26d0870dffefc26545dd14534|ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT|",
+   "attributes": {
+    "validFrom": null,
+    "validTo": null,
+    "lei": "529900XTS0YDP1XVWD35",
+    "category": "ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+    "reason": "NO_KNOWN_PERSON",
+    "reference": null
+   },
+   "relationships": {
+    "lei-record": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/529900XTS0YDP1XVWD35"
+     }
+    }
+   }
+  }
+ }
+}

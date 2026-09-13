@@ -37,6 +37,52 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.153 — Quién opera las grandes instalaciones científicas
+
+Los operadores de las infraestructuras científicas y técnicas singulares entran
+en el registro de entidades, identificados por el inventario oficial del sector
+público. Contrato 1.91.0.
+
+### Añadido
+
+- **Once entidades del sector público**, con su denominación, su forma jurídica y
+  su NIF: el CSIC, el CIEMAT, el Gran Telescopio de Canarias, el Instituto de
+  Astrofísica de Canarias, el Centro Astronómico Hispano en Andalucía, la
+  Fundación Centro de Estudios de Física del Cosmos de Aragón, Red.es y los
+  consorcios del Laboratorio de Luz Sincrotrón, del Laboratorio Subterráneo de
+  Canfranc, del Centro Nacional de Investigación sobre la Evolución Humana y del
+  Centro de Láseres Pulsados. De las veintiocho fichas de ICTS, quince nombran
+  a su titular, y trece enlazan ya a su entidad; las demás son redes de varios
+  nodos sin un titular único.
+- **El Instituto Español de Oceanografía se reúne con el CSIC.** El Real Decreto
+  202/2021 lo suprimió e integró en el CSIC como centro nacional el 1 de abril de
+  2021, y la entidad del CSIC lo recoge como organismo absorbido.
+- **Los documentos:** las fichas del Inventario de Entes del Sector Público en
+  `fuentes/igae/2026/`, el real decreto en `fuentes/boe/2021/` y el registro LEI
+  de Red.es en `fuentes/gleif/2026/`.
+
+### Cambiado
+
+- **El inventario del sector público identifica a un ente público.** Los
+  organismos, consorcios y fundaciones casi nunca tienen identificador LEI, y el
+  documento que da su NIF es el Inventario de Entes del Sector Público, que
+  publica la Intervención General de la Administración del Estado por mandato
+  de la Ley 40/2015. La procedencia describe la fuente.
+- **El contrato sube a 1.91.0.**
+
+### Huecos
+
+- **El Instituto Geográfico Nacional** es una dirección general de un ministerio
+  y no una persona jurídica, así que su texto queda sin entidad.
+- **El Instituto de Radioastronomía Milimétrica** no está en el inventario ni
+  tiene identificador LEI a su nombre, y ningún documento archivado imprime su
+  NIF en España.
+- **La ficha por código del Centro Astronómico Hispano en Andalucía** conserva en
+  el inventario su denominación anterior, Hispano Alemán, con el mismo NIF. La
+  entidad toma la de la búsqueda, que es la actual, y cita las dos.
+
+---
+
 ## datos-v2026.09.152 — Dos fases, con su acto
 
 Dos de los tres registros que figuraban en producción sin un acto que lo

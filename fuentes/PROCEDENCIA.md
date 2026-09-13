@@ -223,6 +223,32 @@ datos abiertos, con la inscripción que se cita nombrada en la fuente.
   El atlas no los recoge: de cada acto registra la sociedad y su cambio, y cuando
   el socio único es una persona lo dice sin nombrarla.
 
+### INVENTE, el Inventario de Entes del Sector Público
+
+**Presente en el registro de entidades**, no en ninguna capa. Lo integra y
+publica la Intervención General de la Administración del Estado, a la que el
+artículo 82 de la Ley 40/2015 encarga el inventario de los entes del sector
+público estatal, autonómico y local. El portal no declara una licencia de
+reutilización propia: es la publicación que la ley manda hacer, y el atlas cita
+cada ficha con su código. Cada consulta se archiva en `igae/<año>/`: la respuesta
+de la API tal como la sirve, con el código del ente en el nombre del fichero.
+
+**Lo que hay que saber antes de citarlo.**
+
+- Identifica a los entes que casi nunca tienen LEI (organismos autónomos,
+  agencias, consorcios, fundaciones y sociedades del sector público) con su
+  denominación, su forma jurídica y su NIF. Una búsqueda por la denominación que
+  escribe el acto devuelve un solo ente cuando la denominación es la oficial, y
+  ese resultado lo comprueba una persona.
+- La búsqueda y la ficha del mismo ente pueden no dar la misma denominación:
+  la del Centro Astronómico Hispano en Andalucía conserva en la ficha el nombre
+  anterior, Hispano Alemán, con el mismo NIF. Se archivan las dos respuestas.
+- Solo lista entes con personalidad jurídica. Un organismo suprimido e
+  integrado en otro, como el Instituto Español de Oceanografía en el CSIC desde
+  2021, ya no aparece, y el documento que lo explica es la norma que lo integró.
+  Una dirección general de un ministerio tampoco aparece, porque no es persona
+  jurídica.
+
 ## El archivo está completo
 
 **Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento
