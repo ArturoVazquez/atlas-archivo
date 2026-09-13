@@ -37,6 +37,70 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.156 — Lo que se licita antes del acto
+
+El atlas vigila desde esta edición la contratación pública: las licitaciones y
+los encargos que anuncian la obra, la concesión o el proyecto de una instalación
+de sus capas antes de que tenga acto. Es el tercer registro de intención con
+vigilancia, tras el Registro Mercantil y el acceso a la red. Contrato 1.93.0.
+
+### Añadido
+
+- **Una guardia semanal de la contratación pública.** Lee los datos abiertos de
+  la Plataforma de Contratación del Sector Público:
+  - las licitaciones de los órganos con perfil en ella;
+  - las que publican por agregación las plataformas de Cataluña, el País Vasco,
+    Andalucía, Madrid, Galicia, Navarra y La Rioja;
+  - los encargos a medios propios.
+
+  Avisa de la obra, la concesión o el proyecto de una desaladora, un almacén de
+  residuos radiactivos, una central nuclear, un centro de datos nuevo, un cable
+  submarino o una planta de hidrógeno o de regasificación. Los suministros y el
+  mantenimiento, que son casi toda la contratación, no despiertan. No lee los
+  contactos de los órganos ni los adjudicatarios.
+- **Cincuenta y tres licitaciones juzgadas en la guardia**, del 1 de junio al 12
+  de septiembre de 2026:
+  - **nueve señales** de instalaciones que ningún acto sitúa todavía: las
+    desaladoras nuevas de la Costa del Sol Occidental, de Palma y de Mallorca,
+    Menorca e Ibiza; los centros de proceso de datos nuevos de la Junta de
+    Andalucía y del CIEMAT en Trujillo; y cuatro contratos de Canalink para
+    estaciones y tendidos de cable submarino en Fuerteventura, Lanzarote y El
+    Hierro;
+  - **doce que se suman al expediente de un registro**: las ampliaciones de
+    las desaladoras de Torrevieja, Águilas-Guadalentín y Santa Eulària y los
+    proyectos de ampliar una línea en Alcúdia y Andratx, la reparación de la
+    del Bajo Almanzora, la remodelación de la de la Badia de Palma, el vertido
+    de salmuera de la de Carboneras y dos obras de El Cabril;
+  - **treinta y dos fuera**, cada una con su motivo: fotovoltaicas y equipos
+    de eficiencia de plantas en servicio, depósitos y conducciones, y obras en
+    centrales en desmantelamiento.
+
+### Cambiado
+
+- **La pregunta de lo que se pide antes del acto** dice ya que tres de los
+  cuatro registros de intención tienen vigilancia: el Registro Mercantil, el
+  acceso a la red y la contratación pública. Falta la evaluación ambiental.
+- **La página de la guardia** cuenta el vigía de la contratación pública.
+- **El contrato sube a 1.93.0.**
+
+### Huecos
+
+- **Una licitación no es una instalación.** Anuncia que un órgano quiere
+  contratar un proyecto o una obra, casi nunca la sitúa más que por municipio y
+  no la dimensiona. Lo que anuncia se juzga en la guardia, y solo entra en una
+  capa con el acto que la autoriza o la sitúa.
+- **Seis desaladoras en servicio** que nombran estas licitaciones no están en el
+  atlas: Melilla, Marbella, Cabanes-Oropesa del Mar, Bocabarranco, La Aldea II y
+  Fonsalía. Los anuncios las sitúan solo por municipio o isla, y su ficha espera
+  al acto de su autorización o de su concesión.
+- **Las consultas preliminares al mercado no se leen.** En tres años y medio
+  anunciaron dos o tres instalaciones de las que el atlas registra.
+- **La Plataforma se retrasa.** El 13 de septiembre de 2026 sus datos de
+  licitaciones terminaban el 8; lo que publique después entra en la guardia de
+  la semana en que llegue.
+
+---
+
 ## datos-v2026.09.155 — Lo que se pide a la red eléctrica antes de tener acto
 
 El atlas vigila desde esta edición las solicitudes de acceso de demanda a la red

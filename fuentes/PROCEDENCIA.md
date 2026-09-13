@@ -277,6 +277,39 @@ Cada listado y cada CSV se archivan en `ree/<año>/`.
   actualización; las copias archivadas conservan esos términos. Para el atlas es
   una fuente corporativa: lo que dice se cita, y no sostiene un dato confirmado.
 
+### La Plataforma de Contratación del Sector Público
+
+**Presente en la guardia**, no en ninguna capa. La Dirección General del
+Patrimonio del Estado publica cada día, en datos abiertos, las licitaciones que
+los órganos de contratación dan a conocer en sus perfiles de la Plataforma por
+obligación de la Ley 9/2017, de Contratos del Sector Público (artículos 63 y
+347). Publica también las que las plataformas autonómicas difunden por
+agregación y los encargos a medios propios. El atlas lee esos tres conjuntos y
+señala la obra, la concesión o el proyecto de una instalación de sus capas antes
+de que tenga acto.
+
+**Lo que hay que saber antes de citarlo.**
+
+- **Una licitación no es una instalación.** Anuncia que un órgano quiere
+  contratar un proyecto o una obra; lo que se adjudica, se construye y se
+  autoriza lo dicen otros actos. Por eso una licitación es un hallazgo juzgado en
+  la guardia, y solo entra en una capa cuando su anuncio, archivado, sostiene un
+  dato.
+- **Casi toda la contratación es compra de lo que ya existe.** El mantenimiento,
+  los suministros y las reformas nombran desaladoras y centros de proceso de
+  datos a diario. El atlas lee solo lo que construye o concede, y aun así una
+  parte de lo que señala se juzga fuera, con su motivo.
+- **No recoge personas.** Los datos abiertos traen los contactos de cada órgano
+  y los adjudicatarios, que a veces son personas físicas, y el atlas no los lee.
+- **Se retrasa.** El 13 de septiembre de 2026, los datos de las licitaciones de
+  la Plataforma terminaban el 8.
+- **Las consultas preliminares al mercado no se leen.** En tres años y medio
+  anunciaron dos o tres instalaciones de las que el atlas registra.
+- **Los términos.** Las condiciones generales de reutilización de la
+  información del sector público estatal (datos.gob.es/avisolegal) permiten
+  reutilizarla con fines comerciales o no, citando la fuente. El anuncio que
+  sostiene un dato se archiva con esos términos.
+
 ## El archivo está completo
 
 **Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento
