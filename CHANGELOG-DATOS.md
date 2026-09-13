@@ -37,6 +37,55 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.151 — El Registro Mercantil, vigilado por sociedad
+
+El atlas vigila desde esta edición el Boletín Oficial del Registro Mercantil,
+por las sociedades de su registro de entidades y sin recoger personas. La
+primera pasada, de enero a septiembre de 2026, corrige una matriz y pone la de
+otra sociedad que no la tenía. Contrato 1.90.0.
+
+### Añadido
+
+- **Una guardia semanal del Registro Mercantil.** Lee cada semana el boletín
+  entero y avisa cuando una sociedad del registro de entidades, o la matriz de
+  una, inscribe un cambio de estructura: denominación, fusión, escisión,
+  transformación, socio único, disolución o extinción. Una semana trae unas
+  7.200 inscripciones, y los nombramientos, los apoderados y los cambios de
+  capital no despiertan a nadie. Cada aviso lo juzga una persona y se publica
+  en la guardia.
+- **La primera pasada, de enero a septiembre de 2026:** 176 boletines y trece
+  avisos, publicados con su juicio en la guardia. Tres entran:
+  - **Repsol Fuels** cambió su denominación desde Repsol Petróleo el 9 de
+    febrero, y el Registro inscribió como su socio único a Repsol Industrial
+    Transformation. Esa es ahora su matriz directa, confirmada, en lugar de la
+    que declaraba GLEIF. Su matriz última sigue siendo Repsol.
+  - **Cobre las Cruces** tiene como socio único a Global Panduro desde la
+    inscripción de 12 de junio. Es su matriz directa, confirmada, donde antes no
+    había ninguna.
+- **Los tres actos del Registro**, archivados en `fuentes/borme/2026/`.
+
+### Cambiado
+
+- **La guardia puede señalar una sociedad**, además de un registro de capa, y
+  enlaza a su página de entidad.
+- **El método dice qué se lee del Registro Mercantil:** las sociedades y sus
+  cambios de estructura, nunca los cargos ni el socio único cuando es una
+  persona.
+- **El contrato sube a 1.90.0.**
+
+### Huecos
+
+- **Quién está detrás de Global Panduro** no lo dice ningún documento
+  archivado: la matriz última de Cobre las Cruces sigue siendo un hueco.
+- **El Registro Mercantil no imprime NIF.** La identidad entre la sociedad del
+  acto y la entidad se comprueba por el nombre exacto, la provincia del registro
+  y el domicilio que da GLEIF.
+- **Los otros diez avisos quedan fuera:** son filiales de Moeve, Naturgy y
+  Enagás que no nombra ningún registro de ninguna capa. Si un acto nombra a una
+  de ellas promotora de un activo, entrará entonces.
+
+---
+
 ## datos-v2026.09.150 — La cronología de las cuatro preguntas principales, con el hito de cada fuente
 
 Las fichas de centros de datos, minerales críticos, centrales nucleares,

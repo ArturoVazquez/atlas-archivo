@@ -202,6 +202,27 @@ con la fecha de la consulta, y la cita lleva la URL de la API.
   personas físicas), el registro lo dice y este atlas lo declara como hueco:
   la matriz no se comunica, y eso no es lo mismo que no existir.
 
+### BORME, el Boletín Oficial del Registro Mercantil
+
+**Presente en el registro de entidades y en la guardia**, no en ninguna capa. Lo
+publica la Agencia Estatal Boletín Oficial del Estado, con los mismos términos
+de reutilización que el BOE. Cada acto citado se archiva en `borme/<año>/`: el
+XML de la sección primera de su provincia y su día, tal como lo sirve la API de
+datos abiertos, con la inscripción que se cita nombrada en la fuente.
+
+**Lo que hay que saber antes de citarlo.**
+
+- No imprime NIF. Identifica a cada sociedad por su hoja en el Registro
+  Mercantil de su provincia, así que la identidad con una entidad la comprueba
+  una persona: el nombre exacto, la provincia del registro contra el domicilio
+  que da GLEIF, y el propio acto cuando cambia la denominación.
+- Es fuente primaria de lo que se inscribe: la denominación, las fusiones y
+  escisiones, el socio único, la disolución. La inscripción del socio único
+  sostiene una relación de matriz directa; no dice quién está detrás de ese socio.
+- Cada inscripción nombra cargos y, a menudo, socios que son personas físicas.
+  El atlas no los recoge: de cada acto registra la sociedad y su cambio, y cuando
+  el socio único es una persona lo dice sin nombrarla.
+
 ## El archivo está completo
 
 **Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento
