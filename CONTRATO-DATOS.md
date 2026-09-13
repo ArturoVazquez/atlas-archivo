@@ -230,12 +230,17 @@ citado exista en el archivo. Lo que rompería un dato **bloquea** la release;
 lo que solo degrada (una capa sin color propio, una cita que aún no se puede
 comprobar) **avisa**, y el aviso queda a la vista.
 
-Además del cerrojo, hay guardia: un vigía semanal barre el BOE y varios
-boletines autonómicos buscando actos nuevos de lo ya publicado, y una guardia
-de URLs comprueba que las citadas sigan vivas — **avisan y jamás escriben**:
-lo que entra al atlas lo firma siempre el criterio humano. Lo que ese criterio
-decide con cada acto que un vigía señala, y por qué, se publica como dato en
-[/guardia/](https://atlas.eltercioviejo.com/guardia/).
+Además del cerrojo, hay guardia. Cada semana, unos vigías barren el BOE y
+varios boletines autonómicos en busca de actos nuevos de lo ya publicado, y el
+Boletín Oficial del Registro Mercantil por las sociedades del registro de
+entidades. Cada mes, otro lee las solicitudes de acceso de demanda a la red de
+transporte que publica Red Eléctrica, lo que se pide antes de tener acto. Y una
+guardia de URLs comprueba que las citadas sigan vivas. **Avisan y jamás
+escriben**: lo que entra al atlas lo firma siempre el criterio humano. Lo que ese
+criterio decide con cada hallazgo, y por qué, se publica como dato en
+[/guardia/](https://atlas.eltercioviejo.com/guardia/): si entra en una edición,
+si se suma a un expediente, si queda como señal de algo que se pide sin acto,
+o si queda fuera.
 
 ## 10 · Releases, versiones y cómo citar
 
