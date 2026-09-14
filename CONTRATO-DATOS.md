@@ -152,6 +152,27 @@ existencia y tener un campo en `parcial` porque su única fuente es prensa: los
 dos hechos se declaran por separado, y un dato solo sube de rango cuando sube
 su evidencia.
 
+**Y el mismo juicio, en el código de dos ejes de la OTAN** (desde septiembre de
+2026). Quien gradúa información en inteligencia usa una letra para la
+fiabilidad de la fuente, de la A a la F, y una cifra para la credibilidad del
+dato, del 1 al 6. El atlas no escribe ese código en los registros: lo deriva.
+`vocabularios.json` firma una letra por tipo de fuente (`fiabilidad`) y una
+cifra por estado (`credibilidad`), y el código de un campo es la letra del tipo
+de su `__f` y la cifra de su `__v`:
+
+| `tipo` | fiabilidad | estado | credibilidad |
+|---|---|---|---|
+| `primaria` | A | `confirmado` | 2 |
+| `corporativa` | C | `parcial` | 3 |
+| `prensa` | C | `no_verificado` | 6 |
+| `hueco` | F | | |
+
+Un campo sin fuente citada lleva la F. **Ningún dato lleva el 1**, que significa
+«confirmado por fuentes independientes», porque el atlas no comprueba que dos
+fuentes lo sean. Y la letra gradúa la **clase** de documento, no la trayectoria
+de quien lo emite: un registro que publica lo que le declaran lleva la misma A
+que la resolución que autoriza.
+
 **Cuando una fuente se cita, se archiva.** El campo `archivo` apunta a la
 copia guardada en [`fuentes/`](fuentes/) de este repositorio, tomada en el
 momento de citar: las URLs se pudren y la cita no.

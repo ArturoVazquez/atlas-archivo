@@ -37,6 +37,57 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.159 — Dos ejes
+
+El atlas publica desde esta edición el código de dos ejes con el que se gradúa la
+información en inteligencia: una letra para la fiabilidad de la fuente, de la A a
+la F, y una cifra para la credibilidad del dato, del 1 al 6. No es un campo
+nuevo de los datos. Se deriva de lo que cada dato ya declaraba, el tipo de la
+fuente que cita y su estado de verificación. Ningún registro cambia. Contrato
+1.96.0.
+
+### Añadido
+
+- **La correspondencia, en el vocabulario.** Cada tipo de fuente lleva su letra
+  y cada estado de verificación su cifra:
+  - fuente primaria A, corporativa C, prensa C y hueco declarado F;
+  - confirmado 2, parcialmente verificado 3 y no verificado 6.
+- **El código de un campo** es la letra del tipo de la fuente que cita y la
+  cifra de su estado. Un campo confirmado por una fuente primaria es un A2, y
+  uno sin fuente citada lleva la F.
+- **La comprobación.** La tabla no puede contradecir la regla de que solo una
+  fuente primaria sostiene un confirmado: un tipo que lo sostiene es A o B, un
+  confirmado es 1 o 2, el hueco es F y lo no verificado es 6.
+
+### Cambiado
+
+- **La ficha** enseña la letra al lado del tipo de cada fuente y el código en
+  la marca de cada campo, de cada clave y de cada relación de una entidad.
+- **El método** enseña la letra y la cifra en sus dos tablas y explica el
+  código y sus límites, en español y en inglés.
+- **La página de un conjunto** rotula cada fuente con su tipo del vocabulario.
+  Hasta esta edición llamaba «fuente primaria» a toda fuente que no fuera un
+  hueco.
+- **El contrato sube a 1.96.0.**
+
+### Huecos
+
+- **Ningún dato lleva el 1**, que significa confirmado por fuentes
+  independientes. El atlas no comprueba que dos fuentes lo sean, y contar
+  direcciones no basta: medido sobre esta edición, de 9.766 registros 7.577
+  citan fuentes oficiales en dos direcciones web distintas, pero casi siempre
+  son dos puertas del mismo organismo, o el documento que se transcribe y el
+  nomenclátor que sitúa el punto.
+- **La letra gradúa la clase de documento, no la trayectoria de quien lo
+  emite.** Un registro oficial que publica lo que le declaran lleva la misma A
+  que la resolución que autoriza. Cuando esa diferencia importa, la ficha la
+  dice en su texto.
+- **No se gradúa documento a documento.** El 97,7 % de las 23.256 fuentes son
+  primarias, así que la letra dice poco dentro del atlas. Sirve a quien cruza
+  el atlas con otras fuentes graduadas.
+
+---
+
 ## datos-v2026.09.158 — Lo que se espera ver
 
 El atlas publica desde esta edición un cuadro de indicadores: lo que se espera ver
