@@ -37,6 +37,68 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.158 — Lo que se espera ver
+
+El atlas publica desde esta edición un cuadro de indicadores: lo que se espera ver
+en cada una de las cuatro preguntas principales del tablero, dicho antes de que
+pase. Cada indicador lleva el día en que se definió y esta edición como prueba
+pública de que se dijo antes. Su estado no se escribe: se calcula sobre cada
+edición. Contrato 1.95.0.
+
+### Añadido
+
+- **Quince indicadores**, definidos el 14 de septiembre de 2026, que salen de los
+  registros en desarrollo o en tramitación de las cuatro preguntas.
+  - **Centros de datos:**
+    - la aprobación definitiva de los proyectos de interés general de Microsoft
+      en Aragón;
+    - la primera autorización de un centro de datos de la Comunidad de Madrid;
+    - la autorización de los campus de Merlin en Navalmoral de la Mata y en
+      Zaragoza;
+    - la puesta en servicio, con acto, de cualquier centro de datos.
+  - **Minerales críticos:**
+    - la evaluación ambiental o la autorización de la mina subterránea de Las
+      Cruces;
+    - lo mismo para los proyectos de litio de Las Navas y Doade;
+    - la autorización o la puesta en servicio de los de wolframio de El Moto y
+      La Parrilla;
+    - un nuevo trámite del de tierras raras de Matamulas.
+  - **Nuclear:**
+    - la decisión sobre la continuidad o el cese de Almaraz;
+    - la puesta en servicio del primer almacén temporal individualizado de
+      capacidad total;
+    - la del almacén temporal de Vandellós I.
+  - **Interconexiones eléctricas:**
+    - la puesta en servicio del enlace por el golfo de Vizcaya;
+    - la evaluación ambiental o la autorización del de Navarra;
+    - el primer trámite de la tercera interconexión con Marruecos;
+    - el del nuevo enlace con Andorra.
+- **Cómo se leen.** Un indicador se observa cuando una fuente de uno de sus
+  registros declara uno de sus hitos con fecha igual o posterior a su
+  definición. Todos empiezan sin observar. Cada uno dice en qué diario saldría
+  y si alguna guardia del atlas lo lee: el Boletín Oficial de la Junta de
+  Andalucía y el Diario Oficial de Galicia no los lee ninguna, y se dice.
+
+### Cambiado
+
+- **El tablero** enseña los indicadores de cada pregunta principal con su
+  estado: observado, con la fecha, el registro y el hito, o sin observar desde
+  el día en que se definió.
+- **La ruta `/datos/indicadores.json`** entra entre las que el atlas promete, y
+  la página para investigadores la nombra.
+- **El contrato sube a 1.95.0.**
+
+### Huecos
+
+- **Un indicador no tiene plazo ni probabilidad.** Dice qué se espera ver, no
+  cuándo ni con qué certeza.
+- **Solo cuenta lo que ocurre desde que se definió.** Un acto anterior que se
+  archive después no lo observa, porque no fue un aviso.
+- **Solo las cuatro preguntas principales** tienen indicadores. Las demás se
+  contestan con recuentos.
+
+---
+
 ## datos-v2026.09.157 — Lo que se tramita antes del acto
 
 El atlas vigila desde esta edición la evaluación ambiental del Estado: los

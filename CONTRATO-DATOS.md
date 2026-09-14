@@ -249,6 +249,17 @@ hallazgo, y por qué, se publica como dato en
 si se suma a un expediente, si queda como señal de algo que se pide, se licita o
 se tramita sin acto, o si queda fuera.
 
+Y desde septiembre de 2026 hay un **cuadro de indicadores**
+([/datos/indicadores.json](https://atlas.eltercioviejo.com/datos/indicadores.json)):
+para cada una de las cuatro preguntas principales del
+[tablero](https://atlas.eltercioviejo.com/tablero/), lo que se espera ver, dicho
+antes de que pase, con los registros donde se espera, el diario donde saldría y
+la edición en que se definió, que es la prueba pública de que se dijo antes. Su
+estado no se escribe: en cada edición, un indicador está observado cuando una
+fuente de uno de sus registros declara uno de sus hitos con fecha igual o
+posterior a su definición. Sin plazo ni probabilidad. Un indicador no se
+reescribe para que acierte: se retira, con su motivo.
+
 ## 10 · Releases, versiones y cómo citar
 
 - Cada release de datos es una **etiqueta Git** (`datos-vAAAA.MM`, con sufijo
