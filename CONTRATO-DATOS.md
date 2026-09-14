@@ -236,14 +236,18 @@ Boletín Oficial del Registro Mercantil por las sociedades del registro de
 entidades. Otro lee cada semana los datos abiertos de la Plataforma de
 Contratación del Sector Público, en busca de la obra, la concesión o el proyecto
 de una instalación que se licita antes de tener acto; los suministros y el
-mantenimiento no le despiertan. Cada mes, otro lee las solicitudes de acceso de
-demanda a la red de transporte que publica Red Eléctrica, lo que se pide antes
-de tener acto. Y una guardia de URLs comprueba que las citadas sigan vivas.
-**Avisan y jamás escriben**: lo que entra al atlas lo firma siempre el criterio
-humano. Lo que ese criterio decide con cada hallazgo, y por qué, se publica como
-dato en [/guardia/](https://atlas.eltercioviejo.com/guardia/): si entra en una
-edición, si se suma a un expediente, si queda como señal de algo que se pide o
-se licita sin acto, o si queda fuera.
+mantenimiento no le despiertan. Otro lee cada semana la consulta pública de
+evaluaciones ambientales del Ministerio para la Transición Ecológica, en busca
+del proyecto de una instalación que se tramita antes de que su declaración o su
+informe de impacto salgan en el BOE; no lee el promotor. Cada mes, otro lee las
+solicitudes de acceso de demanda a la red de transporte que publica Red
+Eléctrica, lo que se pide antes de tener acto. Y una guardia de URLs comprueba
+que las citadas sigan vivas. **Avisan y jamás escriben**: lo que entra al atlas
+lo firma siempre el criterio humano. Lo que ese criterio decide con cada
+hallazgo, y por qué, se publica como dato en
+[/guardia/](https://atlas.eltercioviejo.com/guardia/): si entra en una edición,
+si se suma a un expediente, si queda como señal de algo que se pide, se licita o
+se tramita sin acto, o si queda fuera.
 
 ## 10 · Releases, versiones y cómo citar
 

@@ -37,6 +37,81 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.157 — Lo que se tramita antes del acto
+
+El atlas vigila desde esta edición la evaluación ambiental del Estado: los
+proyectos de las instalaciones de sus capas que se tramitan en la sede del
+Ministerio para la Transición Ecológica antes de que su declaración o su informe
+de impacto salgan en el BOE. Con ella tienen vigilancia los cuatro registros de
+intención: el Registro Mercantil, el acceso a la red, la contratación pública y
+la evaluación ambiental. Contrato 1.94.0.
+
+### Añadido
+
+- **Una guardia semanal de la evaluación ambiental.** Lee la consulta pública de
+  evaluaciones ambientales del Ministerio para la Transición Ecológica, con los
+  proyectos que evalúa el Estado. Avisa del proyecto de cualquiera de estas
+  instalaciones:
+  - una desaladora, una refinería o una planta de regasificación;
+  - un almacén de residuos radiactivos o una central nuclear;
+  - un centro de datos o un cable submarino;
+  - una planta o una conducción de hidrógeno;
+  - una interconexión eléctrica o gasista, o un almacenamiento subterráneo.
+
+  Despierta lo que sigue en trámite, sea del año que sea, y lo registrado este
+  año o el anterior aunque ya esté resuelto. Los proyectos de otro Estado que
+  se consultan a España no despiertan. No lee el promotor.
+- **Veinte proyectos juzgados en la guardia**: lo que el 14 de septiembre de
+  2026 seguía en trámite o se había registrado desde 2025.
+  - **Tres señales** de instalaciones que ningún acto sitúa todavía: las líneas
+    directas de dos centros de datos de la Comunidad de Madrid, uno en Daganzo
+    de Arriba y el de Ignis Data Delta II entre Fuenlabrada, Moraleja de Enmedio
+    y Móstoles, y la desaladora de La Campana, en el valle de Escombreras.
+  - **Siete que se suman al expediente de un registro**: las fotovoltaicas de
+    las desaladoras de Carboneras y de Valdelentisco, el almacén temporal de
+    Vandellós I, el almacén de combustible gastado de Cofrentes, los
+    interconectores de hidrógeno BarMar y CelZa, y el cierre de la refinería de
+    Tenerife.
+  - **Diez fuera**, cada uno con su motivo:
+    - cuatro proyectos de hidrógeno verde que no son de interés común europeo;
+    - los enlaces eléctricos con Baleares y con Ceuta, que son de la red
+      nacional;
+    - tres conducciones de agua desalada;
+    - una planta de regasificación en Gran Canaria cuyo expediente figura en la
+      sede desde 2004.
+
+### Cambiado
+
+- **La pregunta de lo que se pide antes del acto** dice ya que los cuatro
+  registros de intención tienen vigilancia. Lo que falta es contestarla desde
+  las señales que la guardia juzga.
+- **La página de la guardia** cuenta el vigía de la evaluación ambiental, y la
+  señal nombra también lo que se tramita sin acto.
+- **El método** dice, en español y en inglés, que de la evaluación ambiental no
+  se lee el promotor.
+- **El contrato sube a 1.94.0.**
+
+### Huecos
+
+- **Una evaluación no es una autorización.** Dice que un proyecto se tramita. La
+  declaración o el informe de impacto salen en el BOE, y lo que se autoriza y se
+  construye lo dicen otros actos.
+- **Solo la evaluación del Estado.** No están en esa sede los proyectos que
+  evalúan las comunidades autónomas, entre ellos la mayoría de las minas y de
+  los centros de datos.
+- **La lista de la sede no fecha.** La fecha de cada hallazgo es el día en que
+  el atlas vio el proyecto, y la de su entrada va en el texto del hallazgo. Las
+  fichas antiguas no la traen.
+- **Los planes y programas no se leen, y tampoco la afección ambiental de las
+  renovables.** De los planes de la sede, unos siete desde 2020 tocan al atlas,
+  y todos llegan al BOE al aprobarse. La afección ambiental solo trae eólicas,
+  fotovoltaicas y almacenamiento.
+- **Una desaladora nueva en el valle de Escombreras** tiene informe de impacto
+  ambiental favorable en el BOE (BOE-A-2025-14077) y no está en el atlas. Su
+  ficha espera a comprobar que el informe la sitúa.
+
+---
+
 ## datos-v2026.09.156 — Lo que se licita antes del acto
 
 El atlas vigila desde esta edición la contratación pública: las licitaciones y

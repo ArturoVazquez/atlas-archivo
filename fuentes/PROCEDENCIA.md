@@ -310,6 +310,41 @@ de que tenga acto.
   reutilizarla con fines comerciales o no, citando la fuente. El anuncio que
   sostiene un dato se archiva con esos términos.
 
+### La consulta pública de evaluaciones ambientales del Ministerio para la Transición Ecológica
+
+**Presente en la guardia**, no en ninguna capa. El Ministerio para la Transición
+Ecológica y el Reto Demográfico, órgano ambiental de la Administración General
+del Estado según la Ley 21/2013, de evaluación ambiental, publica en su sede
+electrónica la lista de los proyectos que evalúa. Cada uno lleva su código, su
+título y su estado de tramitación, y tiene una ficha con su tipo, su órgano
+sustantivo, su lugar y su fecha de entrada. El atlas lee esa lista y señala el
+proyecto de una instalación de sus capas que sigue en trámite o se acaba de
+registrar.
+
+**Lo que hay que saber antes de citarlo.**
+
+- **Una evaluación no es una autorización.** Dice que un proyecto se tramita.
+  La declaración o el informe de impacto salen en el BOE, y lo que se autoriza y
+  se construye lo dicen otros actos. Por eso un proyecto en evaluación es un
+  hallazgo juzgado en la guardia, y solo entra en una capa cuando un documento
+  de su evaluación, archivado, sostiene un dato.
+- **Solo la evaluación del Estado.** Los proyectos que evalúan las comunidades
+  autónomas no están en esta sede, y la mayoría de las minas y de los centros
+  de datos se evalúan allí.
+- **La lista no fecha.** El día que se cita es el día en que el atlas vio el
+  proyecto. La fecha de entrada es la de la ficha, y las fichas antiguas no la
+  traen.
+- **No recoge personas.** La ficha nombra al promotor y a veces a su
+  representante, y el atlas no la lee.
+- **Lo que no se lee.** Los planes y programas y la determinación de afección
+  ambiental de las renovables. En septiembre de 2026, de los planes de esta sede
+  tocaban al atlas unos siete desde 2020, y todos llegan al BOE al aprobarse; la
+  afección ambiental solo traía eólicas, fotovoltaicas y almacenamiento.
+- **Los términos.** El aviso legal del Ministerio permite utilizar la
+  información de su web en parte o en su integridad sin autorización expresa,
+  citando la fuente, salvo los contenidos con derechos de terceros. El documento
+  que sostiene un dato se archiva con esos términos.
+
 ## El archivo está completo
 
 **Las 10.930 citas con URL de las 34 capas y del conjunto tienen su documento
