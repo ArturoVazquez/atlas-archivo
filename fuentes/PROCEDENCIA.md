@@ -270,6 +270,41 @@ de la API tal como la sirve, con el código del ente en el nombre del fichero.
   Una dirección general de un ministerio tampoco aparece, porque no es persona
   jurídica.
 
+### La Base de Datos Nacional de Subvenciones
+
+**Presente en el registro de entidades**, no en ninguna capa. Es el Sistema
+Nacional de Publicidad de Subvenciones y Ayudas Públicas, que la Intervención
+General de la Administración del Estado publica por mandato de la Ley 38/2003,
+General de Subvenciones: cada convocatoria y cada concesión de las
+administraciones, con su beneficiario. Su aviso legal autoriza la reutilización,
+también comercial, con tres condiciones: citar la fuente («Origen de los datos:
+Intervención General de la Administración del Estado»), decir la fecha de
+actualización cuando el documento la trae, y no dar a entender que la
+Intervención General participa en la reutilización. Cada consulta se archiva en
+`igae/<año>/`: la respuesta de su API tal como la sirve, con la búsqueda o el
+beneficiario en el nombre del fichero.
+
+**Lo que hay que saber antes de citarlo.**
+
+- Inscribe a cada beneficiario con su NIF y su nombre, en mayúsculas y sin
+  tildes. Es fuente primaria de esos dos datos, no del país ni de quién está
+  detrás.
+- Una entidad extranjera que opera en España lleva un NIF que empieza por N. La
+  letra dice que es extranjera, no de qué país.
+- La búsqueda de beneficiarios casa por el principio del texto, que empieza por
+  el NIF o por la denominación; una denominación cortada por en medio no
+  devuelve nada.
+- Es una base viva: sus datos pueden corregirse después de consultados, y por
+  eso cuenta la copia archivada con su fecha.
+
+### Las webs de las propias entidades
+
+Cuando ningún documento primario dice algo de una entidad y su propia web sí,
+esa página se archiva en el estante de la entidad, con la fecha de la consulta,
+y se cita como fuente `corporativa`. Sostiene como mucho un parcial, nunca un
+confirmado, y no sostiene una relación de matriz o de participación: lo que una
+entidad dice de sí misma se registra con su origen y se marca.
+
 ### Red Eléctrica, el acceso de demanda a la red de transporte
 
 **Presente en la guardia**, no en ninguna capa. Red Eléctrica, como operador del

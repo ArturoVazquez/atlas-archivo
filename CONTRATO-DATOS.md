@@ -227,7 +227,9 @@ precisión se puede comprobar contra el propio mapa.
   otra; una sociedad de fuera no tiene NIF y la identifica su LEI; y un ente del
   sector público, que casi nunca tiene LEI, lo identifica el Inventario de Entes
   del Sector Público que publica la Intervención General de la Administración
-  del Estado. Una relación
+  del Estado. Quien ha recibido una ayuda pública puede identificarlo también
+  la Base de Datos Nacional de Subvenciones, de la misma Intervención General,
+  que da el NIF y el nombre con los que está inscrito. Una relación
   solo es confirmada si la sostiene una fuente primaria, y cuando una sociedad
   declara que no comunica su matriz, se publica como hueco: no comunicarla no
   es no tenerla. Se leen en

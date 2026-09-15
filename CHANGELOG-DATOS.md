@@ -37,6 +37,48 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.165 — El Instituto de Radioastronomía Milimétrica, identificado
+
+El último operador de las infraestructuras científicas y técnicas singulares que
+faltaba entra en el registro de entidades, con el NIF que da la Base de Datos
+Nacional de Subvenciones. Contrato 1.100.0.
+
+### Añadido
+
+- **El Instituto de Radioastronomía Milimétrica**, que opera el radiotelescopio de
+  30 metros del Pico Veleta, con su NIF, N0011444G. Lo devuelve la Base de Datos
+  Nacional de Subvenciones, por una ayuda de la Agencia Estatal de Investigación
+  de 2022. La N es la de las entidades extranjeras que operan en España. La ficha
+  del radiotelescopio enlaza ya a su entidad, y de las quince fichas de ICTS que
+  nombran a su titular solo queda sin entidad la del Instituto Geográfico
+  Nacional, que no es persona jurídica.
+- **Los documentos:** las dos respuestas de la base de subvenciones en
+  `fuentes/igae/2026/` y dos páginas de la web del instituto en
+  `fuentes/iram/2026/`.
+
+### Cambiado
+
+- **La Base de Datos Nacional de Subvenciones identifica a un beneficiario.** La
+  publica la Intervención General de la Administración del Estado por mandato de
+  la Ley General de Subvenciones, y es fuente primaria del NIF y del nombre con
+  los que está inscrito quien ha recibido una ayuda pública. Origen de los datos:
+  Intervención General de la Administración del Estado. La procedencia describe
+  la fuente y cómo se cita la web de una entidad.
+- **El contrato sube a 1.100.0.**
+
+### Huecos
+
+- **De qué país es el instituto** lo dice su propia web, que sitúa la sede en
+  Grenoble. Es fuente corporativa, así que el país queda como parcialmente
+  verificado.
+- **Quién está detrás.** La web nombra a sus tres miembros: el CNRS francés, la
+  Sociedad Max Planck alemana y el Instituto Geográfico Nacional. Ningún documento
+  primario archivado da su forma jurídica ni lo que aporta cada uno, y sin eso no
+  se escribe una relación. La puerta son los acuerdos de cooperación
+  radioastronómica entre Alemania, Francia y España.
+
+---
+
 ## datos-v2026.09.164 — El mapa, incrustado con su edición
 
 El mapa que se incrusta en otra página lleva ahora dentro de dónde sale y de
