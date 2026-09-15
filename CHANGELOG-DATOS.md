@@ -37,6 +37,46 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.166 — Qué cambió, también en las cifras
+
+«Qué cambió en esta capa» callaba lo que más se mueve. Un parte semanal del
+agua cambia el volumen de cuatrocientos embalses y, para la lente que compara
+ediciones, la capa llevaba sin moverse desde agosto. Ahora cuenta también los
+datos. Ningún registro cambia: cambia lo que el sitio dice de ellos.
+
+### Corregido
+
+- **La lente temporal ve los datos.** Hasta hoy comparaba entre ediciones el
+  nombre, la fase, la categoría, el estado, la verificación y las fuentes
+  nuevas de cada registro; cualquier otra cifra le era invisible. Medido sobre
+  las 165 ediciones: en 59 de ellas había registros que cambiaron sin que nada
+  lo dijera, 3.659 cambios, entre ellos veinte de titular y dieciséis de
+  potencia. Ahora un registro que ya existía dice también qué campos se
+  movieron, y si se movió su geometría. No cuenta volver a verificar sin
+  cambiar nada, que ya tiene su propia línea.
+- **Dónde se nota:** en «Qué cambió en esta capa» de cada capa, en «Este
+  registro en las ediciones del atlas» de cada ficha, en el tablero y en
+  `cambios.json`, que ahora lleva los campos de cada cambio.
+- **Los rótulos sin tilde de siete campos.** «Anio servicio» se veía en 59
+  fichas y «Acto boe» en 120. Se arreglan donde viven, así que valen para la
+  ficha y para la línea de cambios.
+- **El papel de una entidad se nombra en vez de conjugarse.** En la página de
+  una entidad, cada registro salía como «CARBONERO es titular de», que se lee
+  al revés y a medias, porque quien es titular es la entidad. Ahora dice
+  «CARBONERO · titular».
+
+### Sin cambio
+
+- **Ningún registro, capa, entidad ni indicador**, y ninguna ruta de datos
+  prometida. El contrato sigue en 1.100.0.
+
+### Huecos
+
+- **Las cifras de un cambio no se enseñan**, solo qué campos se movieron. El
+  valor de antes y el de después se leen en el paquete de cada edición.
+
+---
+
 ## datos-v2026.09.165 — El Instituto de Radioastronomía Milimétrica, identificado
 
 El último operador de las infraestructuras científicas y técnicas singulares que
