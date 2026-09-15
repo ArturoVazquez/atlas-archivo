@@ -37,6 +37,42 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.161 — Lo que se ve
+
+El atlas publica sus dos primeros cotejos de imagen: lo que una persona vio al
+comparar dos escenas Sentinel-2 fechadas de la misma ventana alrededor de dos
+centros de datos, con las cuatro imágenes, los documentos que las fechan, las
+actas de cómo se pidieron y sus huellas archivados entre las fuentes. Ningún
+registro cambia: un cotejo no sostiene nada de la ficha. Contrato 1.97.0.
+
+### Añadido
+
+- **Merlin, Navalmoral de la Mata.** Escenas del 12 de septiembre de 2025 y del
+  12 de septiembre de 2026, a diez metros por píxel, en la ventana de 600 metros
+  centrada en la parcela que publica el anuncio de información pública de su
+  autorización ambiental.
+  Lo visto: aparecen trazas lineales claras que la imagen de antes no tenía.
+- **Data Riocaya, Badajoz.** Las mismas fechas, en la ventana centrada en la
+  parcela del anuncio. Lo visto: sin cambio a esa escala.
+- **Las fuentes de los dos**, en el estante de Copernicus de 2025 y de 2026: el
+  recorte de cada escena, su máscara de clasificación, la ficha del producto en
+  el catálogo del programa, el registro de la escena, el acta de captura y el
+  fichero de huellas de cada cotejo.
+
+### Huecos
+
+- **Un cotejo no dice qué son las trazas de Navalmoral**, ni de quién son, ni si
+  tienen que ver con el centro de datos. La autorización ambiental del proyecto
+  sigue sin resolver en la ficha.
+- **«Sin cambio» en Badajoz no es «no hay obra»**: a diez metros por píxel no se
+  ve ninguna forma nueva mayor de unos cincuenta metros, y lo menor no se
+  niega.
+- **Merlin en el polígono de Arasur no tiene cotejo**: el catálogo de vuelos no
+  fija el día de ninguna de sus dos ortofotos, y sin día no hay fecha que
+  comparar.
+
+---
+
 ## datos-v2026.09.160 — El cotejo de imagen
 
 El atlas prepara desde esta edición un vehículo nuevo, el cotejo de imagen: lo

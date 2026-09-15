@@ -1,0 +1,154 @@
+{
+ "_": "Acta de captura de una escena Sentinel-2 para un cotejo de imagen del atlas. El recorte y la máscara no los sirvió nadie tal cual: salen de los píxeles nativos de dos COG, leídos por rangos de bytes y sin remuestrear. El acta dice de qué ficheros y de qué rangos salen, con la hora, el estado, el tipo, los bytes y la huella de lo que llegó, la ventana en píxeles y en UTM, el recuento de la clasificación de escena por clase y la huella de los píxeles antes de codificarlos en PNG. El item que nombra `item` lo sirvió Element 84 (Earth Search, en AWS Open Data) y es la ruta a los píxeles, no la fuente de la fecha: el día lo da la ficha del producto en el catálogo del programa Copernicus. Esta acta dice cómo se obtuvieron las imágenes; lo que el atlas vio en ellas y lo que eso no permite afirmar está en el cotejo de la edición que lo publica.",
+ "registro": "centros-datos:data-riocaya-badajoz",
+ "producto": "sentinel-2-l2a",
+ "coordenada": [
+  -7.00127,
+  38.90599
+ ],
+ "lado_m": 600,
+ "escena": "S2C_T29SPD_20260912T111043_L2A",
+ "producto_copernicus": "S2C_MSIL2A_20260912T110631_N0512_R137_T29SPD_20260912T145321.SAFE",
+ "px": [
+  60,
+  60
+ ],
+ "resolucion_m": 10,
+ "adquirida": {
+  "desde": "2026-09-12",
+  "hasta": "2026-09-12",
+  "como": "El día UTC del inicio de la toma (ContentDate.Start) en la ficha del producto del catálogo de Copernicus, que es el mismo que el de properties.datetime del item."
+ },
+ "capturada": "2026-09-15T01:08:20Z",
+ "item": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29spd-data-riocaya-badajoz.item.json",
+ "cog_imagen": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/S/PD/2026/9/S2C_T29SPD_20260912T111043_L2A/TCI.tif",
+ "cog_mascara": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/S/PD/2026/9/S2C_T29SPD_20260912T111043_L2A/SCL.tif",
+ "ventana_utm": {
+  "epsg": 32629,
+  "caja": [
+   673000,
+   4307940,
+   673600,
+   4308540
+  ]
+ },
+ "ventana_px": {
+  "imagen": {
+   "columna": 7300,
+   "fila": 9150,
+   "ancho": 60,
+   "alto": 60
+  },
+  "mascara": {
+   "columna": 3650,
+   "fila": 4575,
+   "ancho": 30,
+   "alto": 30
+  }
+ },
+ "clases_mascara": {
+  "5": 900
+ },
+ "pixeles": "Filas de norte a sur y columnas de oeste a este, un byte por canal (rojo, verde y azul en la imagen; la clase en la máscara), sin filtro ni cabecera.",
+ "sha256_pixeles": {
+  "imagen": "ffe94636f0c18a73b0cc63e78184a7af1ae198fb00ed52ea409a5a1bf36110a5",
+  "mascara": "7ac824c7afa766e9a063847224d165c3940157ac6c48751ea8a8a75a1f2bf6e0"
+ },
+ "peticiones": [
+  {
+   "para": "item",
+   "url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2C_T29SPD_20260912T111043_L2A",
+   "hora_utc": "2026-09-15T01:08:20Z",
+   "estado": 200,
+   "tipo": "application/geo+json; charset=utf-8",
+   "bytes": 17684,
+   "sha256": "dc798b3651514e330fe1ec8dc5708fe5047450fde0f064776a8a2fe5296b03d3",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29spd-data-riocaya-badajoz.item.json"
+  },
+  {
+   "para": "busqueda",
+   "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?$filter=Name%20eq%20'S2C_MSIL2A_20260912T110631_N0512_R137_T29SPD_20260912T145321.SAFE'",
+   "hora_utc": "2026-09-15T01:08:21Z",
+   "estado": 200,
+   "tipo": "application/json",
+   "bytes": 1909,
+   "sha256": "94a28f482cc649ca68f0a851c0614851a630264a08cd6fd56117ea5c49f0899a"
+  },
+  {
+   "para": "fecha:0",
+   "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(56febf10-0d42-478e-a2ca-acf5a3a6de15)",
+   "hora_utc": "2026-09-15T01:08:21Z",
+   "estado": 200,
+   "tipo": "application/json",
+   "bytes": 1905,
+   "sha256": "d37b940bca81e9ca0fb1608c81bd307ff9edb31ffcebefe7817d3d728984b008",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_odata-s2-20260912-29spd-data-riocaya-badajoz.json"
+  },
+  {
+   "para": "imagen",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/S/PD/2026/9/S2C_T29SPD_20260912T111043_L2A/TCI.tif",
+   "rango": "bytes=0-65535",
+   "hora_utc": "2026-09-15T01:08:22Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 65536,
+   "sha256": "8141359f5f79fc7c317f2dd0cdbf6efa8a20ccdf08d4d271e782e7cd92172cf4"
+  },
+  {
+   "para": "imagen",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/S/PD/2026/9/S2C_T29SPD_20260912T111043_L2A/TCI.tif",
+   "rango": "bytes=168523861-170820803",
+   "hora_utc": "2026-09-15T01:08:22Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 2296943,
+   "sha256": "04414d24f64764cc2a52498d9342ebcb23ea2cbe47be0cc44491abfae0c7c31c"
+  },
+  {
+   "para": "mascara",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/S/PD/2026/9/S2C_T29SPD_20260912T111043_L2A/SCL.tif",
+   "rango": "bytes=0-65535",
+   "hora_utc": "2026-09-15T01:08:25Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 65536,
+   "sha256": "940c5d85eed4236131dd872988baed1152a9b1ed6f5048cf9b3483e0793b7c22"
+  },
+  {
+   "para": "mascara",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/S/PD/2026/9/S2C_T29SPD_20260912T111043_L2A/SCL.tif",
+   "rango": "bytes=995432-1008801",
+   "hora_utc": "2026-09-15T01:08:25Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 13370,
+   "sha256": "1e2a0a53bbe4a009032083c2e968a5be27cba5b9f6018a82fb116a3537d1bceb"
+  }
+ ],
+ "ficheros": [
+  {
+   "para": "imagen",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29spd-data-riocaya-badajoz.recorte.png",
+   "bytes": 10928,
+   "sha256": "4e9290cde319523effded46673b39cf73bcb9b309af75cba0a5238e3e31a77b7"
+  },
+  {
+   "para": "mascara",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29spd-data-riocaya-badajoz.scl.png",
+   "bytes": 998,
+   "sha256": "aaf387d4f460faf7a3566104c921e841fc226fcd8fc9ebc4d291f8a538dbf82a"
+  },
+  {
+   "para": "item",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29spd-data-riocaya-badajoz.item.json",
+   "bytes": 17684,
+   "sha256": "dc798b3651514e330fe1ec8dc5708fe5047450fde0f064776a8a2fe5296b03d3"
+  },
+  {
+   "para": "fecha:0",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_odata-s2-20260912-29spd-data-riocaya-badajoz.json",
+   "bytes": 1905,
+   "sha256": "d37b940bca81e9ca0fb1608c81bd307ff9edb31ffcebefe7817d3d728984b008"
+  }
+ ]
+}

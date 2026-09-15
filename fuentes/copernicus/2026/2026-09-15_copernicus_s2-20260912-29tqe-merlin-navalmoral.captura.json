@@ -1,0 +1,154 @@
+{
+ "_": "Acta de captura de una escena Sentinel-2 para un cotejo de imagen del atlas. El recorte y la máscara no los sirvió nadie tal cual: salen de los píxeles nativos de dos COG, leídos por rangos de bytes y sin remuestrear. El acta dice de qué ficheros y de qué rangos salen, con la hora, el estado, el tipo, los bytes y la huella de lo que llegó, la ventana en píxeles y en UTM, el recuento de la clasificación de escena por clase y la huella de los píxeles antes de codificarlos en PNG. El item que nombra `item` lo sirvió Element 84 (Earth Search, en AWS Open Data) y es la ruta a los píxeles, no la fuente de la fecha: el día lo da la ficha del producto en el catálogo del programa Copernicus. Esta acta dice cómo se obtuvieron las imágenes; lo que el atlas vio en ellas y lo que eso no permite afirmar está en el cotejo de la edición que lo publica.",
+ "registro": "centros-datos:merlin-navalmoral",
+ "producto": "sentinel-2-l2a",
+ "coordenada": [
+  -5.5151,
+  39.90816
+ ],
+ "lado_m": 600,
+ "escena": "S2C_T29TQE_20260912T111043_L2A",
+ "producto_copernicus": "S2C_MSIL2A_20260912T110631_N0512_R137_T29TQE_20260912T145321.SAFE",
+ "px": [
+  60,
+  60
+ ],
+ "resolucion_m": 10,
+ "adquirida": {
+  "desde": "2026-09-12",
+  "hasta": "2026-09-12",
+  "como": "El día UTC del inicio de la toma (ContentDate.Start) en la ficha del producto del catálogo de Copernicus, que es el mismo que el de properties.datetime del item."
+ },
+ "capturada": "2026-09-15T01:08:05Z",
+ "item": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29tqe-merlin-navalmoral.item.json",
+ "cog_imagen": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/T/QE/2026/9/S2C_T29TQE_20260912T111043_L2A/TCI.tif",
+ "cog_mascara": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/T/QE/2026/9/S2C_T29TQE_20260912T111043_L2A/SCL.tif",
+ "ventana_utm": {
+  "epsg": 32629,
+  "caja": [
+   797600,
+   4423080,
+   798200,
+   4423680
+  ]
+ },
+ "ventana_px": {
+  "imagen": {
+   "columna": 9764,
+   "fila": 7632,
+   "ancho": 60,
+   "alto": 60
+  },
+  "mascara": {
+   "columna": 4882,
+   "fila": 3816,
+   "ancho": 30,
+   "alto": 30
+  }
+ },
+ "clases_mascara": {
+  "5": 900
+ },
+ "pixeles": "Filas de norte a sur y columnas de oeste a este, un byte por canal (rojo, verde y azul en la imagen; la clase en la máscara), sin filtro ni cabecera.",
+ "sha256_pixeles": {
+  "imagen": "d0441d1ac946f250ddcc9b797d7f1ac09ff0e276474980332a51d821871cd7d5",
+  "mascara": "7ac824c7afa766e9a063847224d165c3940157ac6c48751ea8a8a75a1f2bf6e0"
+ },
+ "peticiones": [
+  {
+   "para": "item",
+   "url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2C_T29TQE_20260912T111043_L2A",
+   "hora_utc": "2026-09-15T01:08:05Z",
+   "estado": 200,
+   "tipo": "application/geo+json; charset=utf-8",
+   "bytes": 17664,
+   "sha256": "b8a0ebd225d33a9299c9d587c7c0dd8404685ef20f4ad1d6a7b0b0b5a462dc77",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29tqe-merlin-navalmoral.item.json"
+  },
+  {
+   "para": "busqueda",
+   "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?$filter=Name%20eq%20'S2C_MSIL2A_20260912T110631_N0512_R137_T29TQE_20260912T145321.SAFE'",
+   "hora_utc": "2026-09-15T01:08:06Z",
+   "estado": 200,
+   "tipo": "application/json",
+   "bytes": 1438,
+   "sha256": "de4837ba468c5e3b187c327d5e2b418e3fb759e41c11e041c0605da431502031"
+  },
+  {
+   "para": "fecha:0",
+   "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(d2490213-c0bb-48f0-a9c7-6b2d4398096a)",
+   "hora_utc": "2026-09-15T01:08:07Z",
+   "estado": 200,
+   "tipo": "application/json",
+   "bytes": 1434,
+   "sha256": "4cdd1d50f036e54f5bdd9147e00a76671e6257bb91028583e1d2300e35d2d09e",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_odata-s2-20260912-29tqe-merlin-navalmoral.json"
+  },
+  {
+   "para": "imagen",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/T/QE/2026/9/S2C_T29TQE_20260912T111043_L2A/TCI.tif",
+   "rango": "bytes=0-65535",
+   "hora_utc": "2026-09-15T01:08:07Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 65536,
+   "sha256": "75812e20a78e82cf4fe72966dd2d33cede33f94d5447d3fdc9022503cebef1fe"
+  },
+  {
+   "para": "imagen",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/T/QE/2026/9/S2C_T29TQE_20260912T111043_L2A/TCI.tif",
+   "rango": "bytes=290292462-292828722",
+   "hora_utc": "2026-09-15T01:08:08Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 2536261,
+   "sha256": "3dbd7b25ac2411a9d05e4e0e6957acf71a4eac65fe083a1f502e1ccae9c3e842"
+  },
+  {
+   "para": "mascara",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/T/QE/2026/9/S2C_T29TQE_20260912T111043_L2A/SCL.tif",
+   "rango": "bytes=0-65535",
+   "hora_utc": "2026-09-15T01:08:11Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 65536,
+   "sha256": "0a45dd137a1c454c27fd97a5f760210966c314880a7d91d4c812f2cfdb568a4c"
+  },
+  {
+   "para": "mascara",
+   "url": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/29/T/QE/2026/9/S2C_T29TQE_20260912T111043_L2A/SCL.tif",
+   "rango": "bytes=2914115-2924569",
+   "hora_utc": "2026-09-15T01:08:12Z",
+   "estado": 206,
+   "tipo": "image/tiff; application=geotiff; profile=cloud-optimized",
+   "bytes": 10455,
+   "sha256": "535bb386165f8855e556bc6b8e471d7704588bee83494f9a2f782637a51cacea"
+  }
+ ],
+ "ficheros": [
+  {
+   "para": "imagen",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29tqe-merlin-navalmoral.recorte.png",
+   "bytes": 10928,
+   "sha256": "c504c4b326a5f68ea9f39fb3647955c1b7f8d54ab0b55a92048156ee619f32e0"
+  },
+  {
+   "para": "mascara",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29tqe-merlin-navalmoral.scl.png",
+   "bytes": 998,
+   "sha256": "aaf387d4f460faf7a3566104c921e841fc226fcd8fc9ebc4d291f8a538dbf82a"
+  },
+  {
+   "para": "item",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_s2-20260912-29tqe-merlin-navalmoral.item.json",
+   "bytes": 17664,
+   "sha256": "b8a0ebd225d33a9299c9d587c7c0dd8404685ef20f4ad1d6a7b0b0b5a462dc77"
+  },
+  {
+   "para": "fecha:0",
+   "archivo": "fuentes/copernicus/2026/2026-09-15_copernicus_odata-s2-20260912-29tqe-merlin-navalmoral.json",
+   "bytes": 1434,
+   "sha256": "4cdd1d50f036e54f5bdd9147e00a76671e6257bb91028583e1d2300e35d2d09e"
+  }
+ ]
+}
