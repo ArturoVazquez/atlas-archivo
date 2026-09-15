@@ -37,6 +37,55 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.164 — El mapa, incrustado con su edición
+
+El mapa que se incrusta en otra página lleva ahora dentro de dónde sale y de
+cuándo es, y puede señalar un registro. Cada ficha y la página de cada capa dan
+el código para pegarlo, con la edición con la que se copió; si el atlas sirve
+después otra, el mapa lo dice y enlaza a lo que cambió. Ningún registro cambia.
+Contrato 1.99.0.
+
+### Añadido
+
+- **Incrustar un registro.** Con `sel=capa:slug`, el mapa incrustado marca el
+  registro, lo encuadra y lo nombra en una tarjeta con su estado y un enlace a
+  su ficha. Si la capa no tiene ese registro, lo dice. El código está en cada
+  ficha, junto a «Citar este registro», y el de la capa entera en la página de
+  cada capa, en «Incrustar esta capa».
+- **Una banda al pie del mapa incrustado**, que no se pliega, con la atribución
+  de cada capa y del mapa base y la edición de los datos, escrita en la página
+  al construirla. Hasta hoy la atribución era un panel que se plegaba al primer
+  gesto y la edición no se decía.
+- **El aviso de edición.** El código lleva `ed`, la edición con la que se copió.
+  Cuando el atlas sirve otra, la banda dice con cuál se incrustó y enlaza a lo
+  que cambió desde entonces: la ficha del registro, la página de la capa o este
+  registro de cambios.
+- **La dirección del mapa incrustado se promete**: `capas`, `v`, `sel`, `ed` y
+  `base`, y lo que enseña siempre. Quitar o renombrar uno de esos parámetros
+  pide versión mayor del contrato. Es la única página del sitio que admite ser
+  incrustada, y la edición pública del contrato lo recoge.
+
+### Corregido
+
+- **Los créditos repetidos en la imagen exportada.** Dos capas que comparten un
+  crédito sin tener la misma atribución, como las del gas con «Fuente CORES», lo
+  ponían dos veces en el PNG que se descarga desde el visor. Ahora sale una vez,
+  como en el pie del mapa.
+
+### Sin cambio
+
+- **Ningún registro, capa, entidad ni indicador.** Los mapas ya incrustados con
+  capas y encuadre se ven donde se veían, y ganan la banda.
+
+### Huecos
+
+- **El mapa incrustado enseña siempre la edición viva.** `ed` avisa y no fija:
+  para fijar una edición está su paquete de datos.
+- **El aviso no dice si ese registro cambió**, solo que la edición es otra y
+  dónde leer lo que cambió.
+
+---
+
 ## datos-v2026.09.163 — La colección, medida
 
 El atlas mide su propia colección. Una página nueva cuenta lo que trajo cada

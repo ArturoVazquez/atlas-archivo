@@ -362,6 +362,27 @@ origen**, un 44 % menos por el cable en las capas mayores. Cambiarán cuando la
 optimización cambie, sin aviso y sin versión, y eso incluye esto. Quien construya sobre ellas se romperá, y queda dicho de antemano; el
 dato canónico está en `capas/`.
 
+**Y una página sí se promete: el mapa incrustado.** Las páginas del sitio son
+la publicación, no la interfaz, salvo `/incrustar.html`, el mapa que un
+periódico o un informe mete en un `<iframe>`. Allí no hay nadie al lado que
+diga de dónde sale ni de cuándo es, así que se promete su dirección y lo que
+enseña, no su aspecto:
+
+| Parámetro | Qué es |
+|---|---|
+| `capas` | las capas pintadas, por su identificador y separadas por comas |
+| `v` | el encuadre: zoom, latitud y longitud |
+| `sel` | un registro, `capa:slug`, que se marca, se encuadra y se nombra con un enlace a su ficha |
+| `ed` | la edición con la que se copió el código |
+| `base` | el mapa de fondo: `hibrida`, `hibrida-clara` o `actual` |
+
+Enseña siempre la atribución de cada capa y del mapa base, en una banda que no
+se pliega, y la edición servida; y si `ed` es otra, que se incrustó con esa y
+dónde leer lo que cambió desde entonces. Sirve siempre la edición viva: `ed`
+avisa, no fija. Es la única página del sitio que admite ser incrustada, y quitar
+o renombrar uno de sus parámetros pide versión mayor. Cada ficha y la página de
+cada capa dan el código listo para pegar.
+
 **Qué edición se obtiene.** Siempre la viva, la que nombra el manifiesto. No hay
 URL por edición, y por eso estas rutas piden revalidar en cada petición: una
 ruta sin versión que se cachease mucho entregaría datos de una edición ya
