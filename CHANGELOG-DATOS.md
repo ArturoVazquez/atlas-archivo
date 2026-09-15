@@ -37,6 +37,71 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.160 — El cotejo de imagen
+
+El atlas prepara desde esta edición un vehículo nuevo, el cotejo de imagen: lo
+que una persona ve al comparar dos imágenes oficiales fechadas de la misma
+ventana alrededor de un registro, con las dos archivadas al lado para que
+cualquiera lo repita y lo desmienta. Esta edición publica las reglas, el método
+y la licencia. No publica todavía ningún cotejo: la lectura de cada par la firma
+una persona, y los primeros saldrán en una edición posterior. Ningún registro
+cambia. Contrato 1.97.0.
+
+### Añadido
+
+- **El cotejo, como vehículo.** Un fichero por cotejo, con su esquema. Lleva el
+  registro, las dos imágenes con su huella y el intervalo de adquisición que
+  fijan los documentos archivados, lo visto con un vocabulario cerrado y sus
+  fuentes.
+- **Lo que un cotejo no sostiene.** Ningún campo, estado de verificación, fase,
+  hito, indicador ni geometría del registro. Construido no es en servicio, y
+  una imagen vacía no es un negativo.
+- **Dónde se admite.** Solo en registros cuya coordenada da con exactitud un
+  acto, con fuente primaria, y por ahora solo en la capa de centros de datos.
+  Nunca en instalaciones de defensa, de seguimiento espacial, nucleares ni de
+  residuos radiactivos.
+- **Las puertas de imagen.** Las ortofotos del PNOA, por año y de máxima
+  actualidad, con la fecha de cada vuelo de la Fototeca del CNIG; y las escenas
+  Sentinel-2 L2A, con su fecha en el catálogo del programa Copernicus.
+- **Dos reglas nuevas.** Una imagen no es fuente de un registro, por su
+  dirección, por el fichero y por la firma de sus bytes. Y la lectura no dice
+  más que su imagen: ni un rasgo más fino que la escala, ni un cambio entre
+  estaciones distintas, ni nada bajo una nube, ni cifras, meses o palabras que
+  afirman uso, obra o legalidad.
+- **El aviso legal de los datos Copernicus Sentinel**, archivado entre las
+  fuentes.
+- **La ruta `/datos/cotejos/<id>.json`** entra entre las que el atlas promete.
+
+### Cambiado
+
+- **El método** explica cómo se lee un cotejo de imagen, y su apartado de lo que
+  el atlas no recoge dice qué no se fotografía nunca.
+- **La procedencia y la licencia de los datos** dicen qué imagen entra, con qué
+  atribución, y cuál no: Sentinel-2 cloudless desde 2018, SPOT y la imagen
+  comercial.
+- **El archivo de fuentes** admite la respuesta de un servicio público a una
+  petición escrita, archivada byte a byte con su huella y el documento que la
+  fecha.
+- **El contrato sube a 1.97.0.**
+
+### Corregido
+
+- **Seis fuentes con la copia archivada en dos ficheros** enlazaban a una
+  dirección que no existía: la ficha unía los dos nombres con una coma. Ahora
+  enlaza cada fichero por separado.
+
+### Huecos
+
+- **Ningún cotejo publicado.** Los tres registros que hoy admiten uno son centros
+  de datos. La lectura de sus pares espera la firma de una persona.
+- **De 123 registros en desarrollo, en tramitación o autorizados sin puesta en
+  servicio**, 120 no admiten cotejo. Casi todos porque su coordenada es la de
+  un municipio, un paraje o un trazado previsto, y ahí una imagen no sitúa la
+  instalación.
+- **Un cotejo no dice qué es lo que aparece**, ni de quién es, ni si funciona.
+
+---
+
 ## datos-v2026.09.159 — Dos ejes
 
 El atlas publica desde esta edición el código de dos ejes con el que se gradúa la

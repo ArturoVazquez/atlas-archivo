@@ -90,6 +90,7 @@ Los identificadores exactos, de la tabla de productos del propio SCNE:
 | Nomenclátor Geográfico Básico | `Obra derivada de NGBE Continua CC-BY 4.0 ign.es` |
 | Límites municipales y provinciales | `Obra derivada de BDLJE Continua CC-BY 4.0 ign.es` |
 | Red de estaciones permanentes GNSS | `Obra derivada de ERGNSS 2025 CC-BY 4.0 ign.es` |
+| Ortofotos PNOA anuales (las que admite un cotejo de imagen) | `Obra derivada de PNOA <año> CC-BY 4.0 scne.es` |
 | Redes de Transporte (nodos de aeródromo) | `Obra derivada de IGR-RT 2026 CC-BY 4.0 scne.es` |
 
 Ojo con la última: su atribución es **`scne.es`** y no `ign.es`, porque el
@@ -97,6 +98,25 @@ producto está coproducido (IGN, Gobierno Vasco y Generalitat Valenciana). El
 propio servicio lo confirma por su cuenta, declarando `AccessConstraints: CC BY
 4.0 scne.es` en sus capacidades. Copiar la fórmula de otra fila sería atribuir
 mal.
+
+La fila de las ortofotos PNOA no la usa ninguna capa. Es la que se exige si un
+cotejo de imagen (`datos/cotejos/`) compara dos ortofotos. La tabla archivada
+la trae para cada año como «PNOA \<año\> CC-BY 4.0 scne.es», y el 14 de
+septiembre de 2026 se comprobaron en ella las filas de 2020, 2023 y 2025. Hay
+tres cosas que saber antes de usarla.
+
+- El año de la fórmula es el del vuelo en el punto, que da la propia puerta, y
+  no el de la petición. En septiembre de 2026 la ortofoto de máxima actualidad
+  era de 2025 en un punto de la provincia de Cáceres y de 2023 en el centro de
+  Madrid.
+- La tabla da la forma sin «Obra derivada de» para la ortofoto tal como se
+  sirve. Un cotejo pone la ventana al lado de otra y la acompaña de una lectura,
+  y por eso se atribuye con la forma de obra derivada que fija el punto 4 de la
+  licencia.
+- La puerta de máxima actualidad no sirve PNOA en todas partes. Su propio
+  resumen dice «Ortoimagen Melilla: Pléiades Neo © Airbus DS (2022)», que es
+  imagen comercial sin licencia CC BY demostrada, y allí su consulta de fecha
+  contesta vacía. En Melilla no se admite ningún cotejo.
 
 Y su punto 5 añade una obligación que casi nadie cumple: quien genere **un
 conjunto nuevo modificando el original** debe incluir esas expresiones **también
@@ -344,6 +364,61 @@ registrar.
   información de su web en parte o en su integridad sin autorización expresa,
   citando la fuente, salvo los contenidos con derechos de terceros. El documento
   que sostiene un dato se archiva con esos términos.
+
+### Copernicus Sentinel-2
+
+**Sirve a los cotejos de imagen** (`datos/cotejos/`), no a ninguna capa. Las
+escenas de los satélites Sentinel-2 son datos del programa Copernicus de la
+Unión Europea. Su uso lo regulan el Reglamento (UE) 377/2014 y el Reglamento
+Delegado (UE) 1159/2013. La Comisión Europea lo resume en un aviso legal de dos
+páginas, «Legal notice on the use of Copernicus Sentinel Data and Service
+Information», que se archiva aquí.
+
+Lo que dice el aviso:
+
+- El acceso es «free, full and open», sin garantía de calidad ni de idoneidad
+  para ningún fin.
+- Permite, en la medida en que sea lícito, la reproducción, la distribución, la
+  comunicación al público y la adaptación, modificación y combinación con otros
+  datos. No tiene cláusula no comercial ni de compartir igual.
+- Quien comunica al público o distribuye los datos tiene que avisar de su
+  origen con «Copernicus Sentinel data [Year]», y si los ha adaptado o
+  modificado, con «Contains modified Copernicus Sentinel data [Year]». Un
+  recorte es una modificación, así que bajo cada escena de un cotejo va
+  `Contains modified Copernicus Sentinel data <año>`, con el año de la toma.
+- La ley admite limitaciones de acceso y de uso «in the rare cases of security
+  concerns, protection of third party rights or risk of service disruption».
+- Quien usa los datos renuncia a reclamar daños a la Unión Europea y a los
+  proveedores de los datos.
+
+No es una licencia Creative Commons. Es compatible con publicar bajo CC BY 4.0
+porque solo exige el aviso, y el aviso viaja con cada imagen.
+
+Lo que hay que saber antes de citarlo:
+
+- Los catálogos enlazan a copias muertas del aviso. Earth Search enlaza a
+  `sentinel.esa.int`, que el 14 de septiembre de 2026 no resolvía, y
+  Planetary Computer, a una dirección de `scihub.copernicus.eu` que no
+  conectaba. La copia viva es la de `sentinels.copernicus.eu`, y es la que se
+  archiva, con los 115.881 bytes que tenía al descargarla ese día. El 15 de
+  septiembre seguía siendo el mismo fichero, byte a byte.
+- El aviso no lleva fecha impresa, y sus metadatos dicen que el PDF se creó el
+  8 de julio de 2015. Se archiva como el aviso que el programa sirve hoy como
+  vigente, igual que la licencia del IGN de 2015, y por eso vive en el estante
+  de 2026.
+- Los píxeles y la fecha salen de puertas distintas. Los píxeles se leen del
+  COG que Earth Search redistribuye en AWS Open Data, sin cuenta, porque las
+  descargas del Copernicus Data Space contestan 401 «Token not found». La
+  identidad del producto y su día los da la ficha del catálogo OData del
+  programa, que se lee sin cuenta: la fecha la fija el organismo y no un
+  redistribuidor. El item de Earth Search se archiva como ruta a los píxeles y
+  no es fuente.
+- Hay imagen de Sentinel-2 que no entra. Los mosaicos Sentinel-2 cloudless de
+  EOX desde la edición de 2018 están bajo CC BY-NC-SA 4.0 y no fechan cada
+  píxel. Los mosaicos semestrales del IGN tampoco dicen de qué día es cada
+  píxel.
+
+- Archivado: [`2026-09-14_copernicus_sentinel-data-legal-notice.pdf`](copernicus/2026/2026-09-14_copernicus_sentinel-data-legal-notice.pdf)
 
 ## El archivo está completo
 
@@ -2936,6 +3011,98 @@ vez el atlas se rindió, y publicó durante doce días un hueco donde había una
 Lo que este procedimiento **no** autoriza: tomar prestada la lectura de un
 tercero. Si el contenido se conoce por un análisis ajeno, eso es fuente
 secundaria y el hueco se queda hueco hasta que el atlas lea el original.
+
+### Una imagen fechada: la petición, la huella y la fecha
+
+Una imagen sola no dice de cuándo es. Las ortofotos del PNOA y las escenas de
+Sentinel-2 llegan sin la fecha dentro, y un servicio de mapas contesta con una
+imagen aunque la petición esté mal hecha. Por eso cada imagen de un cotejo se
+archiva con tres cosas: la petición exacta, la huella SHA-256 de lo que llegó y
+la respuesta del organismo que la fecha. Lo que sigue son las trampas que se
+midieron el 14 de septiembre de 2026 en un punto de la provincia de Cáceres, en
+Madrid, Sevilla y Zaragoza y en siete registros del atlas.
+
+**Las ortofotos del PNOA.** El histórico
+(`https://www.ign.es/wms/pnoa-historico`) tiene una capa por año y sirve siempre
+la misma imagen. La máxima actualidad (`https://www.ign.es/wms-inspire/pnoa-ma`)
+sirve el vuelo más reciente de cada punto y cambia bajo la misma dirección.
+
+- Un año sin vuelo contesta con una imagen en blanco. El histórico de 2024 en
+  el punto de Cáceres, donde ese año no se voló, devolvió 200 image/jpeg de
+  1.819 bytes y en blanco. Pasó lo mismo en los catorce años sin vuelo de ese
+  punto, y en todos la consulta de información de la capa contestó «Search
+  returned no results». Antes de archivar se pregunta a la capa `infoVuelos`
+  qué años hay en el punto.
+- El orden de los ejes falla sin avisar. En WMS 1.3.0 con EPSG:4326 la caja va
+  en latitud y longitud, y con CRS:84 en longitud y latitud. Con el orden
+  cambiado, la máxima actualidad devolvió 200 con un JPEG en blanco de 6.237
+  bytes, y su consulta de fecha, «Search returned no results».
+- A escala pequeña la máxima actualidad pinta Sentinel-2, y la consulta de fecha
+  sigue diciendo PNOA. Su resumen lo avisa para escalas menores de una
+  1:70.000 aproximada. A unos 19 m por píxel salió Sentinel-2 y a unos 12 m,
+  PNOA. A la escala en que salía Sentinel-2, la consulta de fecha seguía
+  devolviendo el mes del vuelo del PNOA. Un cotejo pide la imagen a 1 m por
+  píxel o menos.
+- Un error llega con código 200. Una petición de 5.000 píxeles de ancho, más
+  que los 4.096 que admite, devolvió 200 text/xml de 477 bytes con la excepción
+  «Image size out of range». Se comprueban el tipo de contenido y los primeros
+  bytes del fichero, no el código.
+- En Melilla la máxima actualidad no es PNOA: sirve Pléiades Neo © Airbus DS,
+  y su consulta de fecha en JSON contesta 200 con el cuerpo vacío.
+- La fecha no tiene el mismo grano en las dos. La máxima actualidad da el año y
+  el mes en la capa `OI.MosaicElement` («2025-05» en el punto de Cáceres), y
+  el histórico, el año. El histórico no admite la consulta en JSON y contesta
+  con una excepción de formato: se pide en HTML o en GML.
+- La máxima actualidad se actualiza varias veces al año, así que su dirección
+  no es una cita estable. La cita es la copia con su huella, y la consulta de
+  fecha se pide el mismo día que la imagen.
+
+**La Fototeca del CNIG** (`https://wms-fototeca.idee.es/fototeca`, capa
+`vuelo_pnoa_<año>`). No da imagen: da el día de cada fotograma que cubre el
+punto.
+
+- Con un tope bajo la lista sale recortada, y no por el principio. Con
+  `FEATURE_COUNT=1` devolvió en el punto de Cáceres el último de los seis
+  fotogramas. Se pide con un tope de cien y se comprueba que el recuento no lo
+  alcanza: si lo alcanza, puede haber fotogramas sin ver, y la imagen no se
+  fecha.
+- Los fotogramas de un punto pueden ser de días distintos. En Sevilla, el vuelo
+  de 2025 dio fotogramas del 13 y del 27 de junio, y en el punto de Cáceres, el
+  de 2016, del 19 y del 23 de junio. Entonces la adquisición es el intervalo
+  entre el primero y el último, y no se elige un día. La huella de un fotograma
+  tampoco prueba que sea el que forma ese píxel del mosaico.
+- Se archiva el GML. La salida HTML declara UTF-8 y mezcla bytes Latin-1. El GML
+  trae un campo `ruta_servidor` con rutas internas del CNIG, y se archiva tal
+  como vino sin transcribir ese campo a ningún sitio.
+
+**Las escenas de Sentinel-2 de nivel 2A.**
+
+- La hora de una escena depende del catálogo. Para la misma escena de Madrid
+  del 12 de septiembre de 2026, el catálogo del programa daba las 11:06:31 UTC,
+  que es el inicio de la toma, y Earth Search, las 11:20:01 del gránulo. El día
+  coincide, y un cotejo compara solo el día UTC.
+- La nubosidad de la tesela no es la de la ventana. En Arasur, el 14 de
+  septiembre de 2026, dos escenas declaraban un 1,74 % y un 7,03 % de nube en
+  su tesela de 110 km. La clasificación de escena (SCL) de la ventana de 600 m
+  era nube y cirro entera en las dos. Lo que se mira es la SCL de la ventana,
+  que se archiva junto a la imagen.
+- La estación imita cambios. En uno de esos siete registros, una escena de
+  finales de mayo, verde de primavera, no se podía comparar con una de
+  septiembre: la estación cambia el tono del suelo y de la vegetación. Las
+  formas que la estación imita solo se comparan entre fechas de la misma época
+  del año.
+- Las miniaturas no sirven. La vista previa de Earth Search y la del catálogo
+  del programa tienen 343 por 343 píxeles para toda la tesela, unos 320 m por
+  píxel. Los píxeles nativos salen del COG con peticiones de rango de bytes,
+  cuatro por sitio y entre 1,2 y 2,7 MB. El acta guarda los rangos pedidos y la
+  huella de lo que llegó, para que cualquiera los vuelva a pedir.
+- La colección `sentinel-2-c1-l2a` de Earth Search empieza en Madrid el 23 de
+  febrero de 2018. Para fechas anteriores queda la colección antigua,
+  `sentinel-2-l2a`, que allí empieza el 3 de noviembre de 2016.
+
+Lo que este procedimiento no autoriza: medir o contar sobre la imagen, ni
+citarla como fuente de un registro. La lectura de un par de imágenes es un
+cotejo, la firma una persona y no sostiene ningún dato del registro.
 
 ### Lo que no se salta
 

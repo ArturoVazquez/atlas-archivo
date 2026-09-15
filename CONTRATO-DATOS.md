@@ -232,6 +232,25 @@ precisión se puede comprobar contra el propio mapa.
   declara que no comunica su matriz, se publica como hueco: no comunicarla no
   es no tenerla. Se leen en
   [/entidad/](https://atlas.eltercioviejo.com/entidad/).
+- **Cotejos de imagen** (desde septiembre de 2026). Lo que una persona ve al
+  comparar dos imágenes oficiales fechadas de la misma ventana alrededor de un
+  registro: ortofotos del PNOA, con el día de cada vuelo según la Fototeca del
+  CNIG, o escenas Sentinel-2, con su fecha en el catálogo del programa
+  Copernicus. Cada cotejo vive en `datos/cotejos/<id>.json`, y las dos imágenes,
+  los documentos que las fechan, el acta de cómo se pidieron y sus huellas
+  sha256 quedan en [`fuentes/`](fuentes/), para que cualquiera lo repita y lo
+  desmienta. **Un cotejo no sostiene nada del registro**: ni un campo, ni su
+  estado de verificación, ni su fase, ni un hito, ni un indicador, ni su
+  geometría. Construido no es en servicio, y una imagen vacía no es un negativo.
+  Lo que puede decir está cerrado: cuatro juicios (aparece, desaparece, sin
+  cambio, no concluyente), rasgos de forma que no identifican lo que se ve y
+  que no pueden ser más finos que la escala de la imagen, y un texto breve sin
+  cifras, sin meses y sin palabras que afirmen uso, obra o legalidad. Solo se
+  admite donde un acto da la coordenada con exactitud, y nunca sobre
+  instalaciones de defensa, de seguimiento espacial, nucleares ni de residuos
+  radiactivos. Una lectura equivocada se retira con su motivo, no se reescribe.
+  La validación comprueba también que ninguna imagen se cite como fuente de un
+  registro.
 
 ## 8 · Vocabularios controlados
 

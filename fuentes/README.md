@@ -49,6 +49,15 @@ fuentes/boe/1978/2026-08-20_boe_....pdf   ← «archivado en 2026, documento de 
   año de captura — no es excepción sino coherencia: el «documento» de una
   instantánea es la foto de ese día. Un fichero **sin cita** toma el año
   reconocible de su descripción, y si no lo lleva, el de captura.
+- **El año de una imagen es el de su adquisición**: el del vuelo de una
+  ortofoto o el de la toma de una escena de satélite. Ese es el año del
+  documento, y no el de la petición. El nombre conserva la fecha de captura,
+  así que una ortofoto de 2020 pedida en 2026 vive en `ign/2020/` con un nombre
+  que empieza por 2026. La imagen, las respuestas que la fechan y el acta de
+  cómo se pidió llevan todas ese año. El día de cada fotograma del PNOA lo da la
+  Fototeca del CNIG, y su respuesta va en `cnig/` con el año del vuelo. El item
+  del redistribuidor de una escena de Sentinel-2 va en `copernicus/`, junto a la
+  escena, y el acta dice quién lo sirvió.
 - **La raíz no admite documentos**: solo `README.md` y `PROCEDENCIA.md`, y
   todo lo demás bajo su estante. El guion de sincronización se planta ante
   cualquier otro fichero suelto. Un documento con **dos emisores** (el acta
@@ -80,6 +89,22 @@ fuentes/boe/1978/2026-08-20_boe_....pdf   ← «archivado en 2026, documento de 
 - **PDF cuando se pueda.** Si solo hay HTML, se imprime a PDF con la URL y la
   fecha visibles en el pie. Una captura de pantalla no es un archivo: no se puede
   buscar dentro ni comprobar si se manipuló.
+- **La respuesta de un servicio público sí es un archivo**, cuando se guarda
+  byte a byte con lo que permite comprobarla. Una ortofoto que el IGN devuelve
+  a una petición de mapa se archiva tal como llegó. A su lado van la petición
+  exacta, la huella SHA-256 de cada fichero y la respuesta del organismo que
+  fecha la imagen. Con eso cualquiera puede repetir la petición, comparar
+  lo que recibe y ver que la copia no se ha tocado, que es lo que una captura
+  de pantalla no permite.
+
+  El recorte que el atlas hace de un producto se archiva al lado, con su acta.
+  La ventana de una escena de Sentinel-2 la corta el atlas de los píxeles
+  nativos del producto, sin remuestrear. El acta (`.captura.json`) dice de qué
+  ficheros y de qué rangos de bytes sale, con la huella de lo que llegó. Las
+  huellas de todo lo que cita un cotejo van en un fichero `.sha256`, que se
+  comprueba con `sha256sum -c` desde la raíz del archivo. Es el mismo trato que
+  la transcripción de un escaneo: el producto es la fuente, y lo que el atlas
+  hace con él se guarda junto a él para poder desmentirlo.
 - **Nada se sustituye.** Si un documento se actualiza, entra el nuevo con su
   fecha de captura y el viejo se queda. La contradicción entre dos versiones es
   un dato, y a veces el más interesante.
