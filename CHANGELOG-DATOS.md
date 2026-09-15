@@ -37,6 +37,59 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.163 — La colección, medida
+
+El atlas mide su propia colección. Una página nueva cuenta lo que trajo cada
+vigía, lo que quedó fuera y lo que llegó dos veces, y qué huecos de las fichas
+se abrieron y se cerraron, en qué edición y desde cuándo siguen abiertos. Se
+calcula sobre la guardia y la historia de ediciones al construir el sitio, sin
+tasas ni puntuaciones. Ningún registro cambia. Contrato 1.98.0.
+
+### Añadido
+
+- **[/calibracion/](https://atlas.eltercioviejo.com/calibracion/), la colección
+  medida.** Por vigía: cuántos hallazgos produjeron (entraron en una edición, se
+  sumaron a un expediente o quedaron como señal), cuántos quedaron fuera y
+  cuántos repetían a otro, con la tanda de arranque de cada vigía aparte de sus
+  corridas por reloj. Por capa: cada hueco, fuente corporativa o de prensa que
+  se abrió, cambió de tipo o se quitó, en su edición, y la edad de lo que sigue
+  abierto. Un lote se lee en su fila: 123 de los 126 huecos que han pasado a
+  fuente primaria lo hicieron en una sola edición, la de las estaciones GNSS
+  permanentes. Una fuente quitada se dice quitada, no resuelta.
+- **La guardia gana `repite`**: cuando quien juzga ve que un hallazgo es el
+  mismo acto u obra que otro anterior, lo dice con el boletín y el número del
+  primero. Los dos primeros son dos que el motivo ya contaba en prosa: la
+  formalización en el BOE de las obras del depósito de Jacarilla, que la
+  Plataforma de Contratación había licitado en junio, y una cubierta de sombreo
+  en Adeje y Arona licitada otra vez en julio con otro número.
+- **`/datos/guardia/<AAAA>.json` es ruta prometida**, como las capas, las
+  entidades, los indicadores y los cotejos: estable, abierta a cualquier origen
+  y sin comprimir. La edición pública del contrato lista ahora las nueve rutas.
+
+### Corregido
+
+- **El día de veintiuna ediciones en «este registro en las ediciones del
+  atlas»**, el bloque de cada ficha: las etiquetas puestas pasada la
+  medianoche salían con el día anterior, porque la fecha se tomaba en tiempo
+  universal. Ahora se toma en la hora en que se puso la etiqueta. Ningún dato
+  cambia; cambia el día que la ficha enseña junto a esas ediciones.
+
+### Sin cambio
+
+- **Ningún registro, capa, entidad ni indicador.** La pregunta de lo que se
+  pide antes del acto no cuenta dos veces lo que repite a otro hallazgo; hoy su
+  respuesta no cambia, porque los dos repetidos quedaron fuera.
+
+### Huecos
+
+- **Todo lo de la guardia de 2026 es todavía tanda de arranque**: la guardia se
+  lleva como dato desde septiembre, sus primeras tandas recogieron hacia atrás, y
+  los juicios anteriores de los vigías de boletín están en prosa. Las cuentas
+  por reloj empiezan con lo que salga después.
+- **Las entidades y la verificación de las claves quedan fuera de la medida.**
+
+---
+
 ## datos-v2026.09.162 — La planta solar de Valdelentisco, evaluada
 
 Una edición de un solo registro, y la trae la guardia. El vigía del BOE señaló

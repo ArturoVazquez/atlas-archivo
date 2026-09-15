@@ -287,7 +287,11 @@ lo firma siempre el criterio humano. Lo que ese criterio decide con cada
 hallazgo, y por qué, se publica como dato en
 [/guardia/](https://atlas.eltercioviejo.com/guardia/): si entra en una edición,
 si se suma a un expediente, si queda como señal de algo que se pide, se licita o
-se tramita sin acto, o si queda fuera.
+se tramita sin acto, o si queda fuera. Cada año se mide en
+[/calibracion/](https://atlas.eltercioviejo.com/calibracion/) lo que trajo cada
+vigía, lo que quedó fuera y lo que llegó dos veces, y qué huecos de las fichas se
+abrieron y se cerraron, en qué edición, calculado sobre la guardia y la historia
+de ediciones.
 
 Y desde septiembre de 2026 hay un **cuadro de indicadores**
 ([/datos/indicadores.json](https://atlas.eltercioviejo.com/datos/indicadores.json)):
@@ -322,7 +326,7 @@ reescribe para que acierte: se retira, con su motivo.
 ### 10.1 · Acceso programático
 
 Los datos se sirven estáticos desde el sitio, sin clave, sin cuota y **abiertos
-a cualquier origen**. Estas seis rutas son las que se prometen:
+a cualquier origen**. Estas nueve rutas son las que se prometen:
 
 | Ruta | Qué es |
 |---|---|
@@ -332,10 +336,13 @@ a cualquier origen**. Estas seis rutas son las que se prometen:
 | `/datos/series/<capa>/<slug>.json` | las series temporales |
 | `/datos/conjuntos/<id>.json` | los documentos de conjunto |
 | `/datos/entidades/<id>.json` | las entidades: quién está detrás de un activo, con su identificador, los textos con los que los registros la nombran y sus relaciones con fuente |
+| `/datos/indicadores.json` | el cuadro de indicadores: lo que se espera ver en cada pregunta principal, con la edición en que se definió; su estado no va en el fichero |
+| `/datos/cotejos/<id>.json` | los cotejos de imagen: lo que una persona vio al comparar dos imágenes oficiales fechadas de la ventana de un registro, con las rutas de sus copias archivadas; no sostienen ningún dato del registro |
+| `/datos/guardia/<AAAA>.json` | la guardia de un año: los actos que los vigías señalaron y lo que una persona decidió con cada uno, con su motivo y, cuando es el mismo acto u obra que otro hallazgo anterior, cuál repite |
 
 Lo que cambia dentro de ellas lo gobiernan las garantías de arriba.
 
-**Y se sirven sin precomprimir.** La compresión de estas seis rutas la negocia
+**Y se sirven sin precomprimir.** La compresión de estas nueve rutas la negocia
 el servidor con quien pide, como en cualquier sitio: quien la pida recibe el
 fichero comprimido y quien no, texto plano. Es una garantía deliberada, y existe
 porque los órganos internos del visor sí van precomprimidos en origen y se
