@@ -37,6 +37,51 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.162 — La planta solar de Valdelentisco, evaluada
+
+Una edición de un solo registro, y la trae la guardia. El vigía del BOE señaló
+el 15 de septiembre dos actos de desaladoras: uno engorda una ficha y el otro
+ya estaba juzgado fuera.
+
+### Añadido
+
+- **`desaladoras:valdelentisco` · la declaración de impacto ambiental de su
+  planta fotovoltaica**, resolución de 31 de agosto de 2026 de la Dirección
+  General de Calidad y Evaluación Ambiental (BOE del 9 de septiembre). Entra
+  como fuente primaria con dos claves:
+  - **El proyecto evaluado.** Una planta solar de 54 MWp en el término
+    municipal de Mazarrón, con un vallado de 92,60 ha, unida por una línea
+    subterránea de 30 kV y 7.764 m a la subestación de la desaladora. Su
+    energía, para autoconsumo directo en la desaladora, cubriría «alrededor de
+    un 35 % de la energía consumida por la desaladora ampliada». La promueve
+    Acuamed, y la declaración es previa a la autorización del proyecto: es un
+    proyecto evaluado, previsto instalar y no en servicio.
+  - **Dónde la sitúa su acto.** La declaración recoge que la desaladora está
+    en el LIC y ZEPA La Muela-Cabo Tiñoso («se encuentra dentro de sus
+    límites») y en el Parque Regional Sierra de la Muela, Cabo Tiñoso y Roldán. Es el
+    primer espacio protegido que un acto de su ficha da como lindero de la
+    planta. La planta solar no coincide con ningún espacio protegido.
+- **La guardia gana su juicio**, `entra`, con el motivo en voz pública.
+
+### Sin cambio
+
+- **El punto sigue siendo el del municipio.** El acto no publica coordenadas y
+  su único plano no tiene retícula; lo que dibuja es la subestación, no la
+  desaladora. El lindero va en clave y el hueco de la coordenada lo dice.
+- **La capacidad sigue en 70 hm³/año.** El acto no da ninguna cifra de
+  producción, y «la desaladora ampliada» no dice qué ampliación es ni si está
+  hecha.
+- **La fase sigue en producción**, sostenida por la orden de 2023.
+
+### Y el otro acto del mismo vigía
+
+- **El depósito regulador de Jacarilla** para los aportes de la desaladora de
+  Torrevieja (BOE del 8 de septiembre) ya se había juzgado fuera el 9 de
+  septiembre: es distribución aguas abajo de la planta, y la capa registra
+  plantas.
+
+---
+
 ## datos-v2026.09.161 — Lo que se ve
 
 El atlas publica sus dos primeros cotejos de imagen: lo que una persona vio al
