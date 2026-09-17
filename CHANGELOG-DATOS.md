@@ -37,6 +37,64 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.167 — Lo que se ve al abrir el atlas
+
+Quien abría el atlas sin nada en la dirección veía tres capas de minerales: 133
+registros de un solo dominio, y una de las tres dibuja dónde sin afirmar cuánto
+ni de quién. Desde esta edición se abre por una portada que declara el
+manifiesto, con ocho capas de los siete dominios. Ningún registro cambia.
+Contrato 1.101.0.
+
+### Añadido
+
+- **La portada**, 199 registros al llegar:
+  - Recursos y territorio: los proyectos de minerales críticos;
+  - Energía: las centrales nucleares;
+  - Conectividad: los aterrizajes de cables submarinos y los centros de datos;
+  - Soberanía y seguridad: los límites y la soberanía;
+  - Economía y proyección: los PERTE en ejecución;
+  - Ciencia y capacidades avanzadas: las infraestructuras científicas y
+    técnicas singulares;
+  - Transporte y logística: los aeropuertos de interés general y las bases
+    abiertas.
+- **El manifiesto marca cada una con `portada`**, igual que marca las capas de
+  fondo. Un enlace que nombra sus capas sigue abriendo esas, y el mapa
+  incrustado sin capas enseña la misma portada.
+- **El contrato sube a 1.101.0.** Una portada solo puede ir en una capa que
+  publica datos, y nunca en una ilustrativa ni en una de fondo, que cubre el
+  territorio entero y taparía a las demás. Cada dominio con capas publicadas
+  tiene al menos una. Si falta, la edición no se publica.
+
+### Cambiado
+
+- **La leyenda de lo que está en el mapa es un panel, «Encendidas»**, y se abre
+  al llegar en una columna junto al mapa y no encima de él. Cada capa lleva su
+  interruptor, cuántos registros deja ver el filtro, sus categorías con su tinta
+  y su fecha de verificación.
+
+### La guardia
+
+- **Dos actos juzgados fuera el 16 de septiembre:**
+  - la modificación del Plan de Interés General de Aragón de la plataforma
+    logística La Melusa-Tamarite (BOA del 11 de septiembre), que añade una
+    fotovoltaica de autoconsumo al polígono y no nombra un centro de datos, una
+    planta de hidrógeno ni un proyecto minero;
+  - una plaza de funcionario del Ayuntamiento de Trillo (BOE del 16 de
+    septiembre): el municipio se llama como la central, y el acto no la toca.
+
+### Sin cambio
+
+- **Ningún registro, capa, entidad ni indicador**, y ninguna ruta de datos
+  prometida.
+
+### Huecos
+
+- **El agua embalsada no avanza en esta edición.** El 17 de septiembre, la base
+  histórica del Boletín Hidrológico seguía siendo la del 8 de septiembre, y el
+  parte de la semana se publicará cuando cambie.
+
+---
+
 ## datos-v2026.09.166 — Qué cambió, también en las cifras
 
 «Qué cambió en esta capa» callaba lo que más se mueve. Un parte semanal del
