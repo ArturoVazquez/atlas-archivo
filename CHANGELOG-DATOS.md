@@ -37,6 +37,80 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.168 — Las autorizaciones de Amazon en Aragón y el plazo de los almacenes nucleares
+
+Diez registros de dos capas ganan documentos, y ninguno cambia de fase. Los
+cinco centros de datos del plan de Amazon en Aragón tienen ya su autorización
+ambiental integrada, y cuatro de ellos sus edificios aprobados. Los cuatro
+almacenes de combustible gastado de nueva generación dicen para cuándo los
+espera el regulador.
+
+### Añadido
+
+- **El plan de Amazon en Aragón, en la capa de centros de datos:**
+  - las cinco autorizaciones ambientales integradas que el Instituto Aragonés de
+    Gestión Ambiental otorgó entre el 28 de abril y el 10 de julio de 2026, para
+    Huesca, Villanueva de Gállego 1 y 2, El Burgo de Ebro y La Cartuja
+    (Zaragoza);
+  - las dos aprobaciones definitivas parciales del plan, de mayo y junio de
+    2026, que aprueban los proyectos de edificación de la Fase 1 de Villanueva de
+    Gállego 1 y 2, Huesca y El Burgo de Ebro, con sus subestaciones, y los
+    declaran directamente ejecutables;
+  - la información pública, del 16 de septiembre, de las dos líneas de 220 kV
+    que llevarían la electricidad al campus de Huesca desde la subestación de
+    Esquedas.
+- **ACS DC La Puebla**, la orden de julio de 2026 que sustituye los proyectos de
+  su acometida eléctrica y reubica la subestación remota junto a la futura
+  ampliación de la subestación de Peñaflor. El plan sigue en aprobación inicial.
+- **Los cuatro ATI-100**, en Vandellós II, Ascó, Cofrentes y Almaraz, citan la
+  nota con que el Consejo de Seguridad Nuclear informó favorablemente su
+  ejecución y montaje, con la fecha que dio: entre abril y noviembre de 2027.
+  Es una nota de prensa y se cita como tal, así que no sostiene ningún dato
+  confirmado.
+
+### Sin cambio de fase
+
+- **Los cuatro centros de Amazon que estaban en desarrollo** no prestan
+  servicio todavía.
+- **La Cartuja** tiene su autorización, pero sus obras siguen condicionadas a
+  una reparcelación que el 18 de septiembre de 2026 solo tenía aprobación
+  inicial.
+- **Los ATI-100** siguen autorizados y sin construir: ningún acto de puesta en
+  servicio aparece en el BOE entre marzo de 2025 y el 18 de septiembre de 2026.
+
+### Cambiado
+
+- **Las películas del agua y del gas** llevan el área bajo la serie y el último
+  valor con su unidad, y en la página de cada parte, el año del máximo y el del
+  mínimo.
+
+### La guardia
+
+- **Siete hallazgos juzgados el 18 de septiembre:**
+  - seis solicitudes de acceso a la red de transporte del listado de septiembre
+    de Red Eléctrica, que se siguen como señal: dos en el nudo de Saguntum 220,
+    de 280 y 50 MW, y las de Fuente de Cantos 400, Almodóvar del Río 220, Baza
+    400 y Tábara 400. Desde ese listado, Red Eléctrica ya no dice si una
+    solicitud de consumo es dedicada o de autoconsumo;
+  - la reforma de los espacios de informática del Hospital Universitario Ramón
+    y Cajal, fuera: es la sala de ordenadores de un hospital, no un centro de
+    datos que un acto vaya a situar y dimensionar.
+- **La vigilancia de los boletines reconoce ahora «centro de almacenamiento de
+  datos»**, la fórmula del Instituto Aragonés de Gestión Ambiental. Las cinco
+  autorizaciones de Amazon se titulan así, y por eso no se habían visto.
+
+### Huecos
+
+- **La licencia del centro de datos de la Zona Franca de Barcelona** sigue sin
+  localizar. No está en el diario de la Generalitat, no se ha encontrado en el
+  boletín de la provincia, y el Ayuntamiento no publica licencias de actividad
+  como datos abiertos. Su autorización ambiental, que se tramita, saldrá en el
+  diario de la Generalitat.
+- **El agua embalsada sigue sin avanzar.** El 18 de septiembre, la base
+  histórica del Boletín Hidrológico seguía siendo la del 8 de septiembre.
+
+---
+
 ## datos-v2026.09.167 — Lo que se ve al abrir el atlas
 
 Quien abría el atlas sin nada en la dirección veía tres capas de minerales: 133

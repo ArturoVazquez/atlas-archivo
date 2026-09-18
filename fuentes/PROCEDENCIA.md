@@ -1206,7 +1206,10 @@ como doce años sin gas.
 (Acuerdo del Consejo de Ministros de 27 de diciembre de 2023) — de él salen el
 perímetro, las fechas de operación y las capacidades · **BOE**, el acuerdo que
 lo publica y los actos de autorización de cada instalación · **IGN**,
-Nomenclátor.
+Nomenclátor · **CSN**, las notas de prensa con que el Consejo de Seguridad
+Nuclear dio cuenta de su informe favorable a cada ATI-100: se citan como
+prensa, que no sostiene ningún `confirmado` (lo primario es el acto, no su
+anuncio).
 **Licencia** · MITECO, reutilización citando la fuente, sin no-comercial ni
 compartir-igual · Textos legales sin dueño · Ley 37/2007 · IGN.
 **Qué hay que saber** · **Autorizado no es existente.** Los cuatro ATI-100
@@ -1224,7 +1227,10 @@ servicio de los ATI casi nunca llega al BOE** —se autorizan como modificación
 diseño de su central, en dos pasos— así que las fechas de operación son las que
 declara el plan, no las de un acto archivado. Y si los ATI-100 han entrado ya
 en servicio —el plan lo esperaba para 2026— a este atlas no le consta
-(recomprobado el 2026-08-19, sin novedad).
+(recomprobado el 2026-09-18 barriendo el BOE desde marzo de 2025: 473 sumarios,
+ningún acto de puesta en servicio). Lo que sí se sabe ya es para cuándo los
+espera el regulador: al informar su ejecución y montaje, el CSN los situó entre
+abril y noviembre de 2027.
 **Qué se corrigió** *(2026-08-19, release `.103`)* · **Dos huecos de la ficha
 resultaron tener acto esperando en el BOE.** El almacén de Vandellós I, que
 «no tenía ningún acto», ganó dos en 2026: la declaración de impacto ambiental
@@ -1237,12 +1243,21 @@ la **Plataforma Sureste**, 27 celdas de baja y media actividad (BOE n.º 31,
 honesto: la puesta en servicio de esas celdas no consta. La lección es la del
 GTC otra vez: un hueco declarado no es un hueco eterno, hay que volver a
 buscarlo de vez en cuando.
+**Qué se corrigió** *(2026-09-18, release `.168`)* · **Los cuatro huecos de
+los ATI-100 decían lo que esperaba el plan, 2026, y no lo que dijo después el
+regulador.** Cada ficha gana la nota de prensa del CSN sobre su informe
+favorable, con la fecha que dio: Vandellós II, que tiene todo su combustible
+gastado en la piscina y la llenaría en la recarga de abril de 2027; Ascó,
+operativo antes de octubre de 2027; Cofrentes, disponible antes de abril de
+2027; y Almaraz, antes de noviembre de 2027. La de Almaraz no lleva su nombre
+en el titular: va dentro de una nota del mismo Pleno sobre un hospital de
+Soria, y por eso no aparecía al buscarla. La fase no se mueve.
 **Dos cosas que la fuente dice y sorprenden** · El acto de explotación de El
 Cabril **no la llama El Cabril** («instalación nuclear de almacenamiento de
 residuos radiactivos sólidos de sierra Albarrana») ni cita el municipio; y su
 autorización **no caduca por fecha sino por volumen** de celdas ocupadas.
-**Archivado** · 17 ficheros · **El resto** · CHANGELOG `datos-v2026.08.38` y
-`.103` · §10
+**Archivado** · 22 ficheros · **El resto** · CHANGELOG `datos-v2026.08.38`,
+`.103` y `.168` · §10
 
 ## electricidad-interconexiones
 
@@ -1700,6 +1715,25 @@ y CartoCiudad.
 nada más.** España **no tiene registro público de centros de datos**: la base
 europea se publica agregada por Estado, MITECO no lleva censo y las cifras de
 mercado son de la patronal. De ahí que sean 8 y no 60.
+**Los cinco de AWS, con su autorización ambiental** *(2026-09-18, release
+`.168`)* · El Instituto Aragonés de Gestión Ambiental otorgó entre abril y julio
+de 2026 la **autorización ambiental integrada de los cinco centros** del plan de
+interés general de Amazon en Aragón, y el Gobierno de Aragón aprobó en mayo y
+junio, de forma definitiva, los **proyectos de edificación de la Fase 1** de
+Villanueva de Gállego 1 y 2, Huesca y El Burgo de Ebro, que declara
+directamente ejecutables, con sus subestaciones. **Ninguna fase se mueve:** esos
+cuatro siguen sin prestar servicio, y La Cartuja tiene su autorización pero sus
+obras siguen condicionadas a una reparcelación que, a 18 de septiembre de 2026,
+solo tiene aprobación inicial. Huesca gana además la información pública de su
+conexión a la red, del 16 de septiembre. **Por qué no se habían visto:** las
+cinco autorizaciones se titulan «centro de *almacenamiento* de datos», una
+fórmula que la vigilancia de los boletines no reconocía; se corrigió el mismo
+día. Y el anuncio de la conexión de Huesca no nombra ningún centro de datos en
+su título, solo en el cuerpo. Todo salió barriendo el Boletín Oficial de Aragón
+por el nombre del promotor. **ACS DC La Puebla rehace su acometida:** una orden
+de julio de 2026 sustituye los proyectos de las líneas de 400 y 220 kV y de la
+subestación remota, que se reubica para ser compatible con la futura ampliación
+de la subestación de Peñaflor.
 **Badajoz gana nombre y decreto** *(2026-09-10, release `.145`)* · Los trajo la
 guardia semanal del boletín extremeño: la **autorización administrativa previa
 de las infraestructuras eléctricas de consumo** bautiza el proyecto —«Data
@@ -1883,8 +1917,9 @@ subestación propia, de generadores de emergencia y de placas solares en suelo
 colindante, y no escriben un solo MW. Del BOA se archivan las dos formas —el
 facsímil PDF y el texto web—, porque el PDF va a dos columnas y la lectura por
 líneas las entrelaza.
-**Archivado** · 29 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
-`.100`, `.102`, `.108`, `.109`, `.110`, `.111` y `.112` · §10
+**Archivado** · 57 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+`.100`, `.102`, `.108`, `.109`, `.110`, `.111`, `.112`, `.136`, `.139`,
+`.145` y `.168` · §10
 
 ## hidrogeno-red
 
