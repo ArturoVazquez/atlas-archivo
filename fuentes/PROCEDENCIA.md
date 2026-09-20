@@ -297,6 +297,54 @@ beneficiario en el nombre del fichero.
 - Es una base viva: sus datos pueden corregirse después de consultados, y por
   eso cuenta la copia archivada con su fecha.
 
+### La Federal Communications Commission, las licencias de amarre de cable
+
+**Presente en el registro de entidades**, no en ninguna capa. La Comisión
+Federal de Comunicaciones de los Estados Unidos licencia el amarre de todo cable
+submarino en su territorio y publica cada solicitud en un aviso público, con el
+reparto de la propiedad del sistema que los solicitantes declaran, tramo a tramo
+y estación a estación, también en el extremo que no es suyo. Sus avisos son
+obras del Gobierno federal, sin derechos de autor, y se archivan en
+`fcc/<año>/`, con el número del aviso y el del expediente en la cita.
+
+**Lo que hay que saber antes de citarlo.**
+
+- Reproduce lo que los solicitantes declaran. La Comisión publica el reparto
+  antes de resolver, y el aviso lo dice: es la solicitud aceptada a trámite, no
+  la licencia. Es fuente primaria del reparto que se declaró ese día ante una
+  autoridad, y la nota de cada relación lo dice.
+- Reparte lo que la licencia mira. Un aviso asigna cuotas del tramo en aguas de
+  cada Estado y de cada estación de amarre, y puede dejar una parte sin asignar:
+  el de Marea reparte el 75 % del tramo español y calla sobre el resto. La cuota
+  entra con lo que el documento reparte, y lo que falta se deriva.
+- Nombra a las sociedades sin identificador, y a veces por una sucursal o por un
+  nombre corto. La identidad con una entidad la comprueba una persona, y el aviso
+  no sostiene el país ni la matriz de nadie más que de los solicitantes que
+  describe.
+- Un cambio de manos posterior no se refleja en el aviso de la solicitud: hace
+  falta el aviso de la transferencia de control, que la Comisión publica igual.
+
+### La Securities and Exchange Commission, los informes anuales de las cotizadas
+
+**Presente en el registro de entidades**, no en ninguna capa. El supervisor de
+valores de los Estados Unidos publica en EDGAR cada documento que una sociedad
+cotizada presenta, y con el informe anual (Form 10-K) la lista de filiales que
+la norma le exige (Exhibit 21.1). Los documentos son de acceso público y se
+archivan en `sec/<año de presentación>/`, con el expediente en la cita.
+
+**Lo que hay que saber antes de citarlo.**
+
+- La lista de filiales es fuente primaria de que una sociedad está en el grupo y
+  de su jurisdicción. Sostiene una relación de matriz última con quien presenta
+  el informe, y no dice de quién cuelga cada filial ni con qué porcentaje: la
+  matriz directa queda como hueco.
+- Solo recoge las filiales que la sociedad considera significativas, y la lista
+  cambia de un año a otro. Que una filial deje de aparecer no dice que haya
+  dejado de serlo: el atlas cita la última lista que la nombra y archiva también
+  la siguiente, para que se vea.
+- EDGAR pide identificarse en cada petición con un agente de usuario que nombre a
+  quien consulta; sin él responde con un error.
+
 ### Las webs de las propias entidades
 
 Cuando ningún documento primario dice algo de una entidad y su propia web sí,

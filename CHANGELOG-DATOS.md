@@ -37,6 +37,73 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.169 — Quién es propietario del cable Marea, y desde qué documento
+
+El atlas registra desde esta edición quién es propietario de un activo, en qué
+parte y de qué país es su matriz última, como una relación de la entidad y no
+como un campo del registro. El primer caso es el amarre del cable Marea en
+Sopela: un aviso de la Comisión Federal de Comunicaciones de los Estados Unidos
+de 2016 reparte el tramo español y la estación de Bilbao entre tres sociedades
+al 25 % cada una, y ningún acto español lo dice. El texto del registro no
+cambia.
+
+### Añadido
+
+- **La propiedad de un activo, en el contrato (1.102.0).** Una entidad declara
+  ser propietaria de un registro con una relación `propietario`, cuya
+  contraparte es el registro y no otra entidad. Lleva porcentaje solo si el
+  documento lo da, dice de qué es ese porcentaje en las palabras del documento
+  y cuánto reparte el documento en total. La regla R19 comprueba que el
+  registro exista, que las cuotas de un mismo reparto no pasen de 100 y que las
+  que citan un mismo documento no pasen de lo que reparte; una suma corta entra
+  y se dice. Una entidad que ningún registro escribe entra cuando es propietaria
+  de uno, y entonces esa relación es su vínculo con la edición.
+- **Tres propietarias del tramo español de Marea**, por el aviso público de la
+  Comisión Federal de Comunicaciones de 30 de junio de 2016 sobre la solicitud
+  de licencia de amarre del sistema, que reproduce el reparto que los
+  solicitantes declaran:
+  - Microsoft Datacenter Netherlands B.V., sociedad neerlandesa con registro
+    LEI corroborado, con Microsoft Corporation como matriz declarada;
+  - Edge Network Services Limited, sociedad irlandesa que el aviso nombra por su
+    sucursal española, filial de Meta Platforms, Inc. según la lista de filiales
+    del informe anual de 2024 presentado ante la Securities and Exchange
+    Commission;
+  - Telxius Cable España, S.L., que ya estaba en el registro como titular de la
+    concesión del amarre. El titular del expediente y la propietaria de una
+    parte del tramo son la misma sociedad, y son dos hechos con dos documentos.
+- **Lo que se cuenta con ello, derivado en cada construcción.** La ficha de
+  cada registro y el dossier del visor enseñan un bloque «Propiedad documentada»
+  con cada propietario, su cuota, el país de su matriz última y la suma frente
+  a lo que el documento reparte. La ficha técnica de cada capa dice cuántos
+  registros tienen propiedad documentada y de qué países son sus matrices. La
+  pregunta de la matriz extranjera del tablero cuenta también por activo.
+- **Dos emisores nuevos en la procedencia:** la Comisión Federal de
+  Comunicaciones, por sus avisos de licencia de amarre, y la Securities and
+  Exchange Commission, por las listas de filiales de los informes anuales.
+
+### Huecos
+
+- **El 25 % restante del tramo español de Marea** no lo asigna el aviso, y
+  ningún otro documento archivado lo da. Las tres cuotas suman el 75 % que el
+  documento reparte, y la ficha lo dice así.
+- **El tramo en aguas internacionales** también lo reparte el aviso, entre
+  Telefónica International Wholesale Services América, Edge Network Services
+  Limited y Microsoft Datacenter Netherlands B.V. No se registra, porque ningún
+  registro del atlas sitúa ese tramo.
+- **Edge Network Services Limited** no tiene registro LEI, y ningún documento
+  archivado imprime su número de sociedad irlandés ni el NIF de su sucursal; su
+  matriz directa dentro del grupo tampoco está documentada. La lista de filiales
+  de Meta del ejercicio 2025, más corta, ya no la nombra; una lista de filiales
+  solo recoge las que la sociedad considera significativas, así que se archiva
+  también y el atlas cita la última que la nombra.
+- **La matriz de Telxius Cable España** sigue sin documento: su registro LEI
+  declara que no se comunica, y la puerta son las cuentas consolidadas.
+- **El reparto es el de 2016.** Un cambio de manos posterior lo diría el aviso
+  de transferencia de control que la misma Comisión publica, y ninguno está
+  archivado.
+
+---
+
 ## datos-v2026.09.168 — Las autorizaciones de Amazon en Aragón y el plazo de los almacenes nucleares
 
 Diez registros de dos capas ganan documentos, y ninguno cambia de fase. Los

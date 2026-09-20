@@ -1,0 +1,555 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-20T22:00:04+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300F7HXY7G5HT1043",
+  "attributes": {
+   "lei": "549300F7HXY7G5HT1043",
+   "entity": {
+    "legalName": {
+     "name": "MICROSOFT DATACENTER NETHERLANDS B.V.",
+     "language": "en-IE"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "en-IE",
+     "addressLines": [
+      "EVERT VAN DE BEEKSTRAAT 354",
+      "SCHIPHOL"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "AMSTERDAM",
+     "region": "NL-NH",
+     "country": "NL",
+     "postalCode": "1118 CZ"
+    },
+    "headquartersAddress": {
+     "language": "en-IE",
+     "addressLines": [
+      "EVERT VAN DE BEEKSTRAAT 354",
+      "SCHIPHOL"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "AMSTERDAM",
+     "region": "NL-NH",
+     "country": "NL",
+     "postalCode": "1118 CZ"
+    },
+    "registeredAt": {
+     "id": "RA000463",
+     "other": null
+    },
+    "registeredAs": "34143486",
+    "jurisdiction": "NL",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "54M6",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2000-10-31T00:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2021-12-01T00:00:00Z",
+    "lastUpdateDate": "2026-07-01T23:00:00Z",
+    "status": "ISSUED",
+    "nextRenewalDate": "2026-11-23T00:00:00Z",
+    "managingLou": "635400DZBUIMTBCXGA12",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000463",
+     "other": null
+    },
+    "validatedAs": "34143486",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": "nl/34143486",
+   "qcc": "QNLX2A9TN0",
+   "gem": null,
+   "spglobal": [
+    "222713203"
+   ],
+   "conformityFlag": "CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-20T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "INR2EJN1ERAN0W5ZP974",
+   "attributes": {
+    "lei": "INR2EJN1ERAN0W5ZP974",
+    "entity": {
+     "legalName": {
+      "name": "MICROSOFT CORPORATION",
+      "language": "en"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "en",
+      "addressLines": [
+       "300 DESCHUTES WAY SW STE 208 MC-CSC1"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "TUMWATER",
+      "region": "US-WA",
+      "country": "US",
+      "postalCode": "98501"
+     },
+     "headquartersAddress": {
+      "language": "en",
+      "addressLines": [
+       "ONE MICROSOFT WAY"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "REDMOND",
+      "region": "US-WA",
+      "country": "US",
+      "postalCode": "98052-8300"
+     },
+     "registeredAt": {
+      "id": "RA000641",
+      "other": null
+     },
+     "registeredAs": "600 413 485",
+     "jurisdiction": "US-WA",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "NHYA",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1993-09-22T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T15:55:00Z",
+     "lastUpdateDate": "2026-04-07T09:26:31Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-05-04T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000641",
+      "other": null
+     },
+     "validatedAs": "600 413 485",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "MSFTUS66XXX"
+    ],
+    "mic": null,
+    "ocid": "us_wa/600413485",
+    "qcc": null,
+    "gem": "E100001000937",
+    "spglobal": [
+     "21835"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-20T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300F7HXY7G5HT1043|LEI|IS_DIRECTLY_CONSOLIDATED_BY|14|bad7c0d6d9830a810b2a438db168ba1a9d4665620fc645e3bb87d990057ac768|",
+   "attributes": {
+    "validFrom": "2026-07-03T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300F7HXY7G5HT1043",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "INR2EJN1ERAN0W5ZP974",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2016-10-31T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2023-07-01T00:00:00Z",
+       "endDate": "2024-06-30T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2026-07-02T00:00:00Z",
+     "lastUpdateDate": "2026-07-02T15:09:25Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-11-23T00:00:00Z",
+     "managingLou": "635400DZBUIMTBCXGA12",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": "Consolidated financial statement"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-20T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "INR2EJN1ERAN0W5ZP974",
+   "attributes": {
+    "lei": "INR2EJN1ERAN0W5ZP974",
+    "entity": {
+     "legalName": {
+      "name": "MICROSOFT CORPORATION",
+      "language": "en"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "en",
+      "addressLines": [
+       "300 DESCHUTES WAY SW STE 208 MC-CSC1"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "TUMWATER",
+      "region": "US-WA",
+      "country": "US",
+      "postalCode": "98501"
+     },
+     "headquartersAddress": {
+      "language": "en",
+      "addressLines": [
+       "ONE MICROSOFT WAY"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "REDMOND",
+      "region": "US-WA",
+      "country": "US",
+      "postalCode": "98052-8300"
+     },
+     "registeredAt": {
+      "id": "RA000641",
+      "other": null
+     },
+     "registeredAs": "600 413 485",
+     "jurisdiction": "US-WA",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "NHYA",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "1993-09-22T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T15:55:00Z",
+     "lastUpdateDate": "2026-04-07T09:26:31Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2027-05-04T00:00:00Z",
+     "managingLou": "213800WAVVOPS85N2205",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000641",
+      "other": null
+     },
+     "validatedAs": "600 413 485",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "MSFTUS66XXX"
+    ],
+    "mic": null,
+    "ocid": "us_wa/600413485",
+    "qcc": null,
+    "gem": "E100001000937",
+    "spglobal": [
+     "21835"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-20T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300F7HXY7G5HT1043|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|13|9b732462389119f85f246fb52fc967df3e9c65e69cb87972b10dc2ed1cec5af3|",
+   "attributes": {
+    "validFrom": "2026-07-03T00:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300F7HXY7G5HT1043",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "INR2EJN1ERAN0W5ZP974",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2016-10-31T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      },
+      {
+       "startDate": "2023-07-01T00:00:00Z",
+       "endDate": "2024-06-30T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2026-07-02T00:00:00Z",
+     "lastUpdateDate": "2026-07-02T15:12:49Z",
+     "status": "PUBLISHED",
+     "nextRenewalDate": "2026-11-23T00:00:00Z",
+     "managingLou": "635400DZBUIMTBCXGA12",
+     "corroborationLevel": "ENTITY_SUPPLIED_ONLY",
+     "corroborationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+     "corroborationReference": "Consolidated financial statement"
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300F7HXY7G5HT1043"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/INR2EJN1ERAN0W5ZP974"
+     }
+    }
+   }
+  }
+ }
+}

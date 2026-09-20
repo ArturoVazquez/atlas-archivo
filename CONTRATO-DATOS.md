@@ -221,7 +221,10 @@ precisión se puede comprobar contra el propio mapa.
   **El texto del registro no cambia**: lo que escribe el acto se queda tal
   cual, y el vínculo con la entidad se calcula al construir el sitio casando
   ese texto con los de la entidad, nunca por parecido. Si el texto de un
-  registro cambia y la entidad no lo recoge, la validación se planta. **El
+  registro cambia y la entidad no lo recoge, la validación se planta. Una
+  entidad que ningún registro nombra entra solo cuando es propietaria de un
+  registro, y entonces esa relación es su vínculo; sin texto y sin propiedad
+  no entra. **El
   identificador es el NIF, o el LEI de GLEIF, y no el nombre**, porque buscar
   una sociedad por su nombre en el registro oficial devuelve con frecuencia
   otra; una sociedad de fuera no tiene NIF y la identifica su LEI; y un ente del
@@ -232,7 +235,17 @@ precisión se puede comprobar contra el propio mapa.
   que da el NIF y el nombre con los que está inscrito. Una relación
   solo es confirmada si la sostiene una fuente primaria, y cuando una sociedad
   declara que no comunica su matriz, se publica como hueco: no comunicarla no
-  es no tenerla. Se leen en
+  es no tenerla. Desde septiembre de 2026 una entidad puede declarar también
+  de qué activo es propietaria, con la relación `propietario`: su contraparte
+  es el registro de capa, `capa:slug`, el porcentaje va solo si el documento
+  lo da, con `de` que dice de qué es y `total` que dice cuánto reparte ese
+  documento, para que quien lea los datos distinga un documento que reparte
+  una parte de un propietario que al atlas le falta, y una propiedad que
+  termina no se borra, gana `hasta` con el documento que lo dice. El titular
+  del expediente que publica el registro y el propietario del activo son dos
+  hechos, y el atlas no deduce el uno del otro. La validación comprueba que
+  el registro exista en la edición y que los propietarios de un mismo activo
+  no sumen más de cien. Se leen en
   [/entidad/](https://atlas.eltercioviejo.com/entidad/).
 - **Cotejos de imagen** (desde septiembre de 2026). Lo que una persona ve al
   comparar dos imágenes oficiales fechadas de la misma ventana alrededor de un
