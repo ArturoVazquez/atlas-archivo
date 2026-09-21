@@ -98,7 +98,7 @@ Presente en todo registro de toda capa:
 | `fecha_alta` | ✔ | cuándo entró el registro en el atlas |
 | `fecha_verificacion` | ✔ | última pasada de verificación humana |
 | `fuentes` | ✔ | las fuentes del registro (§5), incluido el hueco explícito si lo hay |
-| `claves` | – | afirmaciones sueltas de las fuentes, citadas verbatim con su condicional |
+| `claves` | – | afirmaciones sueltas de las fuentes, citadas verbatim con su condicional, cada una con su estado y su fuente. Una clave puede llevar además la cadena de un campo inferido (§5) o, en las capas con serie, la magnitud de esa serie que su texto cita, para que la validación la vuelva a calcular en cada edición |
 | `nota` | – | matices en voz del atlas |
 | `debate_url` | – | enlace al hilo de debate en El Tercio, la casa del atlas |
 
