@@ -46,7 +46,7 @@ sensibles por separado. En el mapa, la marca lo dice sin leer la ficha:
 | Estado | Qué significa | Marca |
 |---|---|---|
 | **Confirmado** | Sostenido por al menos una fuente **primaria** archivada | Relleno sólido |
-| **Inferido** | Ningún documento lo dice solo: sale de cruzar al menos dos documentos primarios archivados, y la cadena va en el dato | Relleno casi entero con anillo de color; en una zona, borde discontinuo |
+| **Inferido** | Ningún documento lo dice solo: sale de cruzar al menos dos documentos primarios archivados, y la cadena va en el dato | Relleno casi entero con anillo discontinuo de su color; en una zona, borde discontinuo |
 | **Parcialmente verificado** | Hay fuente, pero no primaria, o cubre solo parte del registro | Relleno tenue, borde discontinuo |
 | **No verificado** | Registrado con su origen (prensa, anuncio corporativo), sin ascender a hecho | Hueco, borde discontinuo |
 
@@ -140,11 +140,15 @@ https://atlas.eltercioviejo.com/datos/vocabularios.json      categorías, grupos
 https://atlas.eltercioviejo.com/datos/capas/<id>.geojson     una capa, tal como se publica
 https://atlas.eltercioviejo.com/datos/series/<capa>/<slug>.json
 https://atlas.eltercioviejo.com/datos/conjuntos/<id>.json
+https://atlas.eltercioviejo.com/datos/entidades/<id>.json    quién está detrás de un activo, y de qué es propietario
+https://atlas.eltercioviejo.com/datos/indicadores.json       lo que se espera ver, dicho antes de que pase
+https://atlas.eltercioviejo.com/datos/cotejos/<id>.json      lo que una persona vio en dos imágenes fechadas
+https://atlas.eltercioviejo.com/datos/guardia/<AAAA>.json    lo que los vigías señalaron y qué se decidió
 ```
 
 Se baja el manifiesto y no las cuarenta capas para saber qué hay. **Qué rutas se
 prometen —y cuáles son órganos internos del visor que pueden cambiar sin
-aviso— lo fija [`CONTRATO-DATOS.md`](CONTRATO-DATOS.md)**, y las cinco de arriba
+aviso— lo fija [`CONTRATO-DATOS.md`](CONTRATO-DATOS.md)**, y las nueve de arriba
 se sirven **sin comprimir**: es una garantía escrita, y es lo que permite leerlas
 con `curl` sin banderas, desde un guion sin librerías o desde un SIG de
 escritorio.
