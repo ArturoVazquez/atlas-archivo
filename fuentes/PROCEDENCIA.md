@@ -1644,6 +1644,18 @@ se cita y se queda fuera.
 expediente de Sagunto no nombra sistema ni destino; el de Santander tampoco, y
 sin embargo su cable ya tiene nombre — ver abajo. La Ley 11/2022 obliga a
 comunicarlos al Ministerio, pero **el Ministerio no publica la lista**.
+**Quién es propietaria del tramo español de Marea, y desde qué documento**
+*(2026-09-20, edición `.169`)* · Ningún acto español dice de quién es el cable
+que aterriza en Sopela: la concesión nombra a su titular, y nada más. Lo dice un
+aviso público de la Comisión Federal de Comunicaciones de los Estados Unidos, de
+30 de junio de 2016, que reparte el tramo en aguas españolas y la estación de
+amarre de Bilbao entre tres sociedades al 25 % cada una y calla sobre el resto.
+Esa propiedad no está en esta capa. Vive en el registro de entidades, como una
+relación de cada propietaria con el registro del amarre, y la ficha de Sopela la
+enseña derivada en «Propiedad documentada». El registro sigue publicando lo que
+su acto dice, y su titular es una de las tres propietarias. El aviso, y lo que
+hay que saber antes de citarlo, están en la sección de la Comisión Federal de
+Comunicaciones de este documento.
 **Un aterrizaje gana su nombre desde el expediente de OTRO cable**
 *(2026-08-30, edición `.135`)* · El aterrizaje de la **Virgen del Mar**
 (Santander) llevaba desde su alta declarando que ningún acto bautizaba a su
