@@ -37,6 +37,62 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.171 — Lo que ningún documento dice solo
+
+El atlas publica desde esta edición un cuarto estado de verificación,
+`inferido`, para lo que ningún documento dice entero y sale de cruzar dos o más
+documentos primarios. Hasta ahora esas afirmaciones se publicaban como
+confirmadas sobre el documento que contenía la palabra, y el cruce se contaba en
+prosa. Ahora la cadena va en el dato. Quien descargue una capa sabe por la forma
+de un campo si detrás hay un documento o una cadena, y puede repetir la
+comprobación abriendo los documentos archivados. El primer caso es el nombre del
+cable Anjana.
+
+### Añadido
+
+- **El estado `inferido` (contrato 1.103.0).** Un campo inferido cita en su
+  `__f` una lista de documentos, y la clave que lo sostiene escribe la cadena:
+  cada documento con la frase literal que aporta y lo que aporta, los textos que
+  aparecen en todos ellos y el hallazgo que desharía la unión. Lleva la cifra 3
+  del código de dos ejes, porque sus documentos son primarios pero ninguno dice
+  la afirmación entera. Un registro con un campo inferido no puede ser
+  confirmado: es inferido, o parcial si además declara un hueco o tiene algún
+  campo por debajo.
+- **R20 · una cadena se declara y se comprueba.** En cada edición, la validación
+  busca la frase de cada documento en su copia archivada y los textos comunes en
+  todos los documentos de la cadena. Que la unión signifique lo que el registro
+  dice no lo puede comprobar una máquina, y lo firma una persona.
+
+### Cambiado
+
+- `cables-submarinos:virgen-del-mar-santander` · `sistema` de `confirmado` a
+  `inferido`. El nombre Anjana no lo dice ningún acto de su expediente. Sale de
+  juntar el anuncio del otorgamiento de su concesión en 2024
+  (BOE-B-2024-30299) con el proyecto básico del cable SOL, que dice que el único
+  amarre de esa playa se construyó en 2024 para Anjana. El registro sigue
+  parcial por el hueco de su destino.
+- **La ficha y el mapa pintan el estado nuevo.** La marca tiene el núcleo lleno y
+  el anillo discontinuo, y el sello y el color son propios. Bajo la clave que lo
+  sostiene va la cadena, con cada cita. El método lo explica en las dos lenguas,
+  con su código A3.
+
+### Huecos
+
+- **Las entidades todavía no admiten el estado.** La matriz de una sociedad que
+  sale de cruzar el registro mercantil con el de identificadores de entidad
+  jurídica es un caso de inferido, y llegará con su forma propia.
+- **Las uniones que no se escriben como texto común**, como dos perímetros que
+  coinciden en el mapa, no entran como inferidas.
+- **No se sabe cuántas afirmaciones de esta clase siguen dentro de
+  `confirmado`.** Hasta esta edición no se podían contar, y se leerán capa a
+  capa.
+
+### Sin cambiar, y dicho
+
+- Ningún otro registro cambia, y ninguna cifra se mueve.
+
+---
+
 ## datos-v2026.09.170 — Lo que el Boletín Hidrológico corrige después de publicar
 
 Esta edición no avanza el parte de embalses. Dice qué clase de dato publica la

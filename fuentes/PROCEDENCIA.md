@@ -1659,7 +1659,14 @@ la unión junta la concesión de esa ficha —Orden Ministerial de 30 de julio d
 lugar, año y objeto, y el proyecto no menciona un segundo amarre; si apareciera,
 la unión sería lo primero que revisar. *No es la primera vez:* el nombre de
 Grace Hopper también constaba solo en el proyecto que acompañaba a su
-expediente. **Y el hueco no se cierra, se estrecha**: adónde va Anjana sigue sin
+expediente. **Desde el 2026-09-21 esa unión es dato.** El nombre es el primer
+campo `inferido` del atlas: su fuente son los dos documentos a la vez, y la
+clave que lo sostiene escribe de cada uno la frase literal que aporta, los
+textos que aparecen en los dos (la playa de la Virgen del Mar, el año 2024 y el
+cable submarino) y el hallazgo que desharía la unión. La validación busca esas
+frases en las copias archivadas de este directorio en cada edición, así que
+cualquiera puede repetir la comprobación abriendo los dos ficheros. **Y el
+hueco no se cierra, se estrecha**: adónde va Anjana sigue sin
 tener fuente primaria, y el registro sigue `parcial`. *Y el mismo documento
 mejora la geometría:* publica la posición exacta de la arqueta, así que el punto
 deja de aproximarse por el topónimo de la ISLA de la Virgen del Mar —el

@@ -46,6 +46,7 @@ sensibles por separado. En el mapa, la marca lo dice sin leer la ficha:
 | Estado | Qué significa | Marca |
 |---|---|---|
 | **Confirmado** | Sostenido por al menos una fuente **primaria** archivada | Relleno sólido |
+| **Inferido** | Ningún documento lo dice solo: sale de cruzar al menos dos documentos primarios archivados, y la cadena va en el dato | Relleno casi entero con anillo de color; en una zona, borde discontinuo |
 | **Parcialmente verificado** | Hay fuente, pero no primaria, o cubre solo parte del registro | Relleno tenue, borde discontinuo |
 | **No verificado** | Registrado con su origen (prensa, anuncio corporativo), sin ascender a hecho | Hueco, borde discontinuo |
 

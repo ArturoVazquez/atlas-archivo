@@ -18,8 +18,8 @@ del contrato técnico se validó (`schema_version`).
 1. **Todo dato lleva procedencia.** Ningún valor entra sin fuente y fecha. Lo
    que no tiene fuente primaria se publica marcado como tal, no se rellena.
 2. **La verificación es un estado, no una promesa.** Cada registro —y sus
-   campos sensibles, uno a uno— declara si está confirmado, parcialmente
-   verificado o sin verificar. Un anuncio de empresa o una noticia se registran
+   campos sensibles, uno a uno— declara si está confirmado, inferido de varios
+   documentos primarios, parcialmente verificado o sin verificar. Un anuncio de empresa o una noticia se registran
    con su origen; no ascienden a hecho.
 3. **La memoria no se borra.** Un registro nunca se elimina: cambia de estado,
    y el historial completo queda en Git.
@@ -92,7 +92,7 @@ Presente en todo registro de toda capa:
 | `categoria` | ✔ | valor del vocabulario controlado de la capa (§8) |
 | `descripcion` | – | una a tres frases de contexto |
 | `estado_registro` | ✔ | `vigente` · `historico` · `retirado` |
-| `verif` | ✔ | `confirmado` · `parcial` · `no_verificado` — el estado global del registro |
+| `verif` | ✔ | `confirmado` · `inferido` · `parcial` · `no_verificado` — el estado global del registro |
 | `geo_precision` | ✔ | qué promete la coordenada (§6) |
 | `geo_fuente` | – | de dónde sale la geometría |
 | `fecha_alta` | ✔ | cuándo entró el registro en el atlas |
@@ -152,6 +152,40 @@ existencia y tener un campo en `parcial` porque su única fuente es prensa: los
 dos hechos se declaran por separado, y un dato solo sube de rango cuando sube
 su evidencia.
 
+**Lo que ningún documento dice solo** (desde septiembre de 2026). Hay hechos que
+existen, se pueden comprobar y solo salen de cruzar dos documentos: el nombre de
+un cable que ningún acto de su expediente bautiza puede salir de juntar la
+concesión de su amarre con el proyecto de otro cable que describe ese amarre.
+Esos campos van `inferido`, su `__f` es una lista de documentos y la clave que
+los sostiene escribe la cadena:
+
+```json
+"sistema": "Anjana",
+"sistema__v": "inferido",
+"sistema__f": ["f4", "f6"],
+"claves": [{
+  "k": "Cómo se supo que este cable es Anjana, y por dónde podría fallar",
+  "v": "…",
+  "verif": "inferido",
+  "sostiene": "sistema",
+  "eslabones": [
+    { "fuente": "f4", "cita": "por Orden Ministerial de 30 de julio de 2024 se ha resuelto el otorgamiento de la concesión de referencia", "aporta": "un cable con concesión de amarre en esta playa, otorgada en 2024" },
+    { "fuente": "f6", "cita": "fue construido en 2024 para permitir la conexión a tierra del cable de fibra óptica Anjana", "aporta": "el único amarre que existe en esta playa es de Anjana y se construyó en 2024" } ],
+  "juntura": ["Virgen del Mar", "2024", "cable submarino"],
+  "falla_si": "aparece un segundo amarre en la playa, o un acto que dé otro nombre al cable de esta concesión" }]
+```
+
+Cada **eslabón** nombra una fuente primaria archivada y la frase literal que
+aporta. La **juntura** son los textos que aparecen en todos los documentos de la
+cadena. **`falla_si`** es el hallazgo que desharía la unión. Para repetir la
+comprobación basta con abrir la copia archivada de cada fuente y buscar su
+cita; la validación lo hace en cada edición, sin tildes ni mayúsculas. Que la
+unión signifique lo que el registro dice lo firma una persona. Un registro con
+un campo inferido no puede ser `confirmado`: es `inferido`, o `parcial` si
+además declara un hueco o tiene algún campo por debajo. Una lista en `__f`
+solo aparece en un campo inferido, así que la forma del dato ya dice si detrás
+hay un documento o una cadena.
+
 **Y el mismo juicio, en el código de dos ejes de la OTAN** (desde septiembre de
 2026). Quien gradúa información en inteligencia usa una letra para la
 fiabilidad de la fuente, de la A a la F, y una cifra para la credibilidad del
@@ -163,13 +197,15 @@ de su `__f` y la cifra de su `__v`:
 | `tipo` | fiabilidad | estado | credibilidad |
 |---|---|---|---|
 | `primaria` | A | `confirmado` | 2 |
-| `corporativa` | C | `parcial` | 3 |
-| `prensa` | C | `no_verificado` | 6 |
-| `hueco` | F | | |
+| `corporativa` | C | `inferido` | 3 |
+| `prensa` | C | `parcial` | 3 |
+| `hueco` | F | `no_verificado` | 6 |
 
 Un campo sin fuente citada lleva la F. **Ningún dato lleva el 1**, que significa
 «confirmado por fuentes independientes», porque el atlas no comprueba que dos
-fuentes lo sean. Y la letra gradúa la **clase** de documento, no la trayectoria
+fuentes lo sean. Un campo inferido lleva el 3 y la letra de la peor de sus
+fuentes: sus documentos no dicen lo mismo, cada uno aporta una parte, y uno
+inferido de dos fuentes primarias es un A3. Y la letra gradúa la **clase** de documento, no la trayectoria
 de quien lo emite: un registro que publica lo que le declaran lleva la misma A
 que la resolución que autoriza.
 
@@ -279,8 +315,9 @@ puede colgar de `categoria` sin adivinar.
 **Una regla que nadie comprueba es prosa disfrazada de garantía.** Todo lo que
 este contrato afirma sobre los datos lo comprueba una validación automática en
 cada cambio, antes de publicar: el formato, los estados, que solo una fuente
-primaria sostenga un confirmado, que la precisión declarada de la geometría
-tenga la fuente que exige, que los vocabularios se respeten, que todo fichero
+primaria sostenga un confirmado, que cada cita de una cadena esté en su
+documento archivado, que la precisión declarada de la geometría tenga la fuente
+que exige, que los vocabularios se respeten, que todo fichero
 citado exista en el archivo. Lo que rompería un dato **bloquea** la release;
 lo que solo degrada (una capa sin color propio, una cita que aún no se puede
 comprobar) **avisa**, y el aviso queda a la vista.
@@ -473,7 +510,7 @@ no tiene: el día que la coordenada salga del catastro minero subirá a
 - **Nombres de campo en español**, porque el proyecto entero habla español; el
   coste se asume.
 - **`__v` y `__f` como sufijos**, para verificar campo a campo sin romper el
-  modelo plano.
+  modelo plano. Un `__f` en lista marca un campo inferido de varios documentos.
 - **La doctrina se comprueba, no se promete**: lo que el contrato afirma lo
   vigila la validación en cada cambio.
 - **El visor lee releases etiquetadas**, nunca el trabajo en curso.
