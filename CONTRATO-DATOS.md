@@ -184,7 +184,9 @@ unión signifique lo que el registro dice lo firma una persona. Un registro con
 un campo inferido no puede ser `confirmado`: es `inferido`, o `parcial` si
 además declara un hueco o tiene algún campo por debajo. Una lista en `__f`
 solo aparece en un campo inferido, así que la forma del dato ya dice si detrás
-hay un documento o una cadena.
+hay un documento o una cadena. Hoy solo lo llevan los registros de capa y los
+hechos de conjunto: una entidad y sus relaciones no admiten todavía el estado
+(§7).
 
 **Y el mismo juicio, en el código de dos ejes de la OTAN** (desde septiembre de
 2026). Quien gradúa información en inteligencia usa una letra para la
@@ -271,7 +273,11 @@ precisión se puede comprobar contra el propio mapa.
   que da el NIF y el nombre con los que está inscrito. Una relación
   solo es confirmada si la sostiene una fuente primaria, y cuando una sociedad
   declara que no comunica su matriz, se publica como hueco: no comunicarla no
-  es no tenerla. Desde septiembre de 2026 una entidad puede declarar también
+  es no tenerla. Una entidad y sus relaciones no admiten todavía el estado
+  `inferido` (§5): lo que en ellas sale de cruzar dos documentos, como la
+  matriz que dan juntos el Registro Mercantil y el registro LEI, se publica hoy
+  como `parcial` con su nota, y cuando entre lo hará con su cadena declarada,
+  como en un registro. Desde septiembre de 2026 una entidad puede declarar también
   de qué activo es propietaria, con la relación `propietario`: su contraparte
   es el registro de capa, `capa:slug`, el porcentaje va solo si el documento
   lo da, con `de` que dice de qué es y `total` que dice cuánto reparte ese
@@ -280,8 +286,12 @@ precisión se puede comprobar contra el propio mapa.
   termina no se borra, gana `hasta` con el documento que lo dice. El titular
   del expediente que publica el registro y el propietario del activo son dos
   hechos, y el atlas no deduce el uno del otro. La validación comprueba que
-  el registro exista en la edición y que los propietarios de un mismo activo
-  no sumen más de cien. Se leen en
+  el registro exista en la edición, que un porcentaje diga de qué es, que
+  ningún otro tipo de relación lleve `registro`, `de` ni `total`, que los
+  propietarios de un mismo activo no sumen más de cien por cada `de`, y que
+  las cuotas que citan un mismo documento declaren el mismo `total` y no pasen
+  de él. Una suma menor que ese `total` entra y se avisa: le falta al atlas un
+  propietario que el documento nombra. Se leen en
   [/entidad/](https://atlas.eltercioviejo.com/entidad/).
 - **Cotejos de imagen** (desde septiembre de 2026). Lo que una persona ve al
   comparar dos imágenes oficiales fechadas de la misma ventana alrededor de un
@@ -316,8 +326,10 @@ puede colgar de `categoria` sin adivinar.
 este contrato afirma sobre los datos lo comprueba una validación automática en
 cada cambio, antes de publicar: el formato, los estados, que solo una fuente
 primaria sostenga un confirmado, que cada cita de una cadena esté en su
-documento archivado, que la precisión declarada de la geometría tenga la fuente
-que exige, que los vocabularios se respeten, que todo fichero
+documento archivado y lo que une sus documentos aparezca en todos, que una
+relación de propiedad señale un registro de la edición y su reparto no pase de
+lo que el documento reparte, que la precisión declarada de la geometría tenga
+la fuente que exige, que los vocabularios se respeten, que todo fichero
 citado exista en el archivo. Lo que rompería un dato **bloquea** la release;
 lo que solo degrada (una capa sin color propio, una cita que aún no se puede
 comprobar) **avisa**, y el aviso queda a la vista.
