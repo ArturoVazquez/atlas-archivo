@@ -37,6 +37,62 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.170 — Lo que el Boletín Hidrológico corrige después de publicar
+
+Esta edición no avanza el parte de embalses. Dice qué clase de dato publica la
+capa `agua-embalsada` y anota la primera cifra que el propio Ministerio ha
+corregido después de publicarla. El Boletín Hidrológico sale por dos vías con
+el mismo origen: la base histórica descargable, que es la que el atlas
+transcribe, y un visor SIG con dos servicios del Ministerio. Cotejadas el 21 de
+septiembre de 2026 cifra a cifra, coinciden en los 401 embalses y en 1.950 de
+2.021 semanas, y difieren en 82 cifras desde junio de 2024. Las correcciones
+van en las dos direcciones y ninguna de las dos publicaciones trae fe de
+erratas.
+
+### Añadido
+
+- **`agua-embalsada:requejada-duero`**, una clave con la cifra corregida. La
+  base publica 0 hm³ en el parte del 8 de septiembre de 2026, con 35 la semana
+  anterior. El visor da 35 para ese mismo parte, y el total nacional del
+  boletín siguiente se calcula desde la cifra corregida. La ficha sigue
+  publicando el 0 de la base, que es la fuente de su serie entera, y la clave
+  da los 35 con su fuente. Es el mismo criterio que la capa aplica a los
+  embalses en los que el Inventario de Presas y el Boletín no coinciden: se
+  publica la cifra del Boletín y se dan las dos.
+- **La captura del visor**, archivada como fuente primaria: el parte n.º 36
+  entero, con sus 374 embalses, en
+  `fuentes/miteco/2026/2026-09-21_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-36.json`.
+- **La procedencia de `agua-embalsada`** explica qué significa que la base se
+  publique «sin validación», dónde están los datos validados y en qué se
+  separan las dos publicaciones del Boletín.
+
+### Cambiado
+
+- **La nota de la capa** dice que la base es provisional, que el Ministerio la
+  corrige después de publicarla y que los datos validados son los del Anuario
+  de Aforos de la red SAIH-ROEA, que hoy llega al año hidrológico 2021-22.
+  Versión de la capa: 1.6.10 → 1.6.11.
+
+### Huecos
+
+- **El parte del 15 de septiembre de 2026 no entra.** El visor lo tiene desde
+  ese día, con 374 embalses que suman 34.662 hm³, la misma cifra que da el
+  resumen semanal n.º 37. La base descargable seguía el 21 de septiembre
+  siendo la del 8 byte a byte, aunque la página del Boletín la rotulara con la
+  fecha del 15. La capa y sus series se mueven con la base, así que las fichas
+  siguen en el parte del 8. La energía de esa semana entra con su parte.
+- **Las otras 81 cifras en que difieren las dos publicaciones no se anotan una
+  a una.** En Barrios de Luna, el 18 de agosto de 2026, el parte publicó 25 hm³
+  entre semanas de 132 y 95; el visor conserva esa cifra y la base, que es la
+  que publica el atlas, la corrigió a 112. Las 80 restantes difieren entre 1 y
+  12 hm³, entre junio de 2024 y agosto de 2026, y casi siempre afectan a una
+  demarcación entera en una misma semana.
+- **Los datos validados van cuatro años por detrás.** El Anuario de Aforos
+  publica las reservas validadas hasta septiembre de 2022, y el atlas no las
+  ha cotejado con su serie.
+
+---
+
 ## datos-v2026.09.169 — Quién es propietario del cable Marea, y desde qué documento
 
 El atlas registra desde esta edición quién es propietario de un activo, en qué

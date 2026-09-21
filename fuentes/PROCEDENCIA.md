@@ -1404,7 +1404,8 @@ ambición queda en `claves`, verbatim y con su condicional intacto.
 **Inventario de Presas y Embalses** del SNCZI (desde la `.44`) · **IECA (Junta
 de Andalucía)**, DERA grupo 3 «Hidrografía», solo para identificar (`.46`) ·
 **MITECO**, Red Oficial de Estaciones de Aforo, para situar los cinco sistemas
-del Pirineo (`.48`).
+del Pirineo (`.48`) · **MITECO**, visor SIG del Boletín, para la corrección de
+una cifra (2026-09-21).
 **Licencia** · Ley 37/2007 · IGN · IECA, CC BY 4.0.
 **Qué hay que saber** · **La capa registra el agua, no el vaso.** La geometría
 del embalse está tras el CAPTCHA del SNCZI; el agua embalsada está en abierto y
@@ -1585,6 +1586,35 @@ almacenada **sí** es de estos embalses: es su agua convertida a electricidad po
 un cálculo teórico del Ministerio. La **producción** es la nacional y la firma
 REE, a quien el propio Boletín cita: incluye **centrales fluyentes** que no
 salen de ningún embalse de esta capa. La página lo dice con esas palabras.
+**Provisional, y el Ministerio lo dice** *(2026-09-21)*. La página del Boletín
+rotula la descarga de la base como «sin validación», y el documento que
+describe su modelo de datos remite a los datos validados: el Anuario de Aforos
+de la red SAIH-ROEA, que hoy llega al año hidrológico 2021-22, cuatro años por
+detrás del parte. El atlas publica la cifra del Boletín porque es la única
+semanal por embalse, y la marca `confirmado` porque la sostiene la fuente
+primaria que la emite. Provisional quiere decir que el emisor puede corregirla
+después, y lo hace.
+**Dos publicaciones del mismo parte, y se corrigen por separado.** El Boletín
+sale por dos vías con el mismo origen: la base descargable, que es la que el
+atlas transcribe y archiva, y un visor SIG con dos servicios ArcGIS del
+Ministerio, `Embalses_Mapa` con la semana en curso y `Embalses_Total` con el
+histórico. Cotejadas el 2026-09-21 cifra a cifra, coinciden en los 401 embalses
+y en 1.950 de 2.021 semanas. Difieren en 82 cifras, todas desde junio de 2024 y
+casi siempre una demarcación entera en una semana: el Ebro el 2024-10-08, el
+Miño-Sil el 2025-11-18. Las correcciones van en las dos direcciones. El parte
+del 2026-08-18 publicó Barrios de Luna con 25 hm³ entre semanas de 132 y 95; el
+visor conserva esa cifra y la base la corrigió a 112. El del 2026-09-08 publicó
+la Requejada con 0 hm³; la base conserva esa cifra y el visor la corrigió a 35.
+Ninguna de las dos es la versión corregida de la otra, y ninguna publica fe de
+erratas. El atlas sigue con la base: el visor pierde la fecha en el 5 % de sus
+filas y no sirve de histórico. Sí sirve para saber que el Ministerio ya tiene
+el parte de una semana antes de publicar la base: el del 15 de septiembre de
+2026 estaba en el visor desde ese día, y el 21 la base descargable seguía
+siendo la del 8, aunque la página la rotulara con la fecha nueva. Cuando una
+cifra publicada aquí ha sido corregida en el visor, se sigue el mismo criterio
+que con el Inventario de Presas: la capa publica la del Boletín y la ficha da
+las dos, con la captura del visor archivada como fuente. La Requejada lo
+estrena, con el parte 36 entero del visor en el archivo.
 **Refresco** · Es la única capa con parte semanal, y su archivo se **reemplaza**:
 el histórico viene entero cada vez (11 MB, 1988-2026), así que la copia nueva
 sustituye a la anterior en lugar de acumularse — las copias de ediciones pasadas
@@ -1592,7 +1622,7 @@ viven en su etiqueta de Git y en su depósito de Zenodo. **El PDF del boletín e
 la excepción**: ese se añade, porque cada uno trae una energía que ningún otro
 documento repite. Y cada ficha lleva **su** parte: 25 embalses dejaron de
 informar hace años y conservan su fecha, que es lo único cierto de ellos.
-**Archivado** · 4 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18`,
+**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18`,
 `.32`, `.43` y `.50` · §10
 
 ## cables-submarinos
