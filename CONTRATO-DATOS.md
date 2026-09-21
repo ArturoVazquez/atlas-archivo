@@ -399,7 +399,7 @@ a cualquier origen**. Estas nueve rutas son las que se prometen:
 | `/datos/capas/<id>.geojson` | la capa **tal como se publica en la release**, byte a byte |
 | `/datos/series/<capa>/<slug>.json` | las series temporales |
 | `/datos/conjuntos/<id>.json` | los documentos de conjunto |
-| `/datos/entidades/<id>.json` | las entidades: quién está detrás de un activo, con su identificador, los textos con los que los registros la nombran y sus relaciones con fuente |
+| `/datos/entidades/<id>.json` | las entidades: quién está detrás de un activo, con su identificador, los textos con los que los registros la nombran y sus relaciones con fuente, también la de propiedad de un registro, con su cuota y de qué es |
 | `/datos/indicadores.json` | el cuadro de indicadores: lo que se espera ver en cada pregunta principal, con la edición en que se definió; su estado no va en el fichero |
 | `/datos/cotejos/<id>.json` | los cotejos de imagen: lo que una persona vio al comparar dos imágenes oficiales fechadas de la ventana de un registro, con las rutas de sus copias archivadas; no sostienen ningún dato del registro |
 | `/datos/guardia/<AAAA>.json` | la guardia de un año: los actos que los vigías señalaron y lo que una persona decidió con cada uno, con su motivo y, cuando es el mismo acto u obra que otro hallazgo anterior, cuál repite |
@@ -532,6 +532,9 @@ no tiene: el día que la coordenada salga del catastro minero subirá a
 - **El texto del acto se queda y la entidad se deriva**: quién está detrás de
   un activo se resuelve casando textos exactos, sin normalizar lo que el acto
   escribe y sin adivinar por parecido.
+- **El titular del expediente y el propietario del activo son dos hechos**: el
+  registro publica lo que dice su acto, la entidad lo que dice el documento que
+  reparte la propiedad, y el atlas no deduce el uno del otro.
 - **Lo que falta se declara como dato**: una capa anunciada sin datos aparece
   en el manifiesto como `en_preparacion`, consultable — no como promesa suelta
   en un README.
