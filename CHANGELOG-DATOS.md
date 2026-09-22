@@ -37,6 +37,167 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.173 — Lo que la revisión encontró frágil
+
+Una revisión independiente leyó el 21 de septiembre de 2026 los registros de
+energía contra los documentos que citan, y con ellos el aparato con el que el
+atlas publica. La edición anterior corrigió las afirmaciones que no decían lo
+que dice su documento. Esta corrige lo que la misma revisión dejó señalado como
+frágil. Una capa entera citaba un registro que la ley no crea. Setenta y ocho
+geometrías no cumplían la norma de intercambio. Diez capas no estaban descritas
+campo a campo en el contrato. Tres explotadores de central nuclear no se
+resolvían en el registro de entidades. Una superficie que calcula el atlas se
+publicaba como confirmada. Y ningún paquete del archivo público se podía
+comprobar al descargarlo.
+
+### Corregido
+
+- `almacenamiento-petrolifero` · las 133 fichas decían estar «inscritas en el
+  registro del artículo 41.1 de la Ley 34/1998», y ese artículo no crea ningún
+  registro. Lo que dice es que los titulares «deberán permitir el acceso de
+  terceros mediante un procedimiento negociado» y «comunicar a la Comisión
+  Nacional de los Mercados y la Competencia las peticiones de acceso a sus
+  instalaciones, los contratos que suscriban, la relación de precios». Y que
+  «la Comisión Nacional de los Mercados y la Competencia publicará esta
+  información». La Comisión tampoco llama registro a lo suyo, y titula su
+  página «Características de las instalaciones de almacenamiento». Las fichas
+  dicen ahora lo que hay, que la Comisión publica esa instalación entre las del
+  artículo 41.1.
+- `almacenamiento-petrolifero` · la fecha de última actualización estaba mal
+  atribuida. El cuadro de capacidades en PDF llevaba escrito que declaraba el
+  25 de julio de 2026, y ese documento no trae ninguna fecha, ni impresa ni en
+  sus metadatos. La fecha existe y está archivada, en la página desde la que el
+  cuadro se descarga: «Elaboración a partir de la documentación aportada por
+  las compañías. Última actualización 25/07/2026». Ahí se cita desde ahora, y
+  el cuadro queda sin fecha porque no la tiene.
+- `almacenamiento-petrolifero` · tres terminales canarias publicaban «La
+  Palma», «El Hierro» y «La Gomera» en un campo llamado `municipio`, y ninguna
+  de esas islas es un municipio ni es de un solo término. El campo desaparece
+  en esas tres fichas y la isla se dice donde corresponde: en la precisión de
+  la geometría, en la procedencia del punto y en la descripción, que ahora la
+  nombra.
+- `almacenamiento-petrolifero` · ninguna capacidad, ninguna coordenada y ningún
+  identificador cambian. La ficha de procedencia de la capa y la definición de
+  sus categorías en el vocabulario dicen lo mismo que las fichas desde esta
+  edición.
+- **Setenta y tres geometrías generalizadas**, de las setenta y ocho del atlas
+  que no cumplían la norma de intercambio. Todas eran perímetros generalizados:
+  el borde que publica una fuente cartográfica oficial, simplificado por el
+  atlas para que quepa en una página web. Esa simplificación dejaba anillos que
+  se cruzan consigo mismos y tramos de línea sin longitud. Son figuras que la
+  norma da por inválidas y ante las que se detienen los programas de
+  información geográfica que leen estos datos. Se corrigen veinte perímetros
+  provinciales, que dos capas comparten y que quedan idénticos en las dos, y
+  que por eso cuentan dos veces; treinta zonas portuarias; y tres trazados, el tendido de 220 kV, los
+  gasoductos y los oleoductos. La corrección alcanza solo la parte rota de cada
+  geometría y el resto se queda como estaba. Ningún recinto mueve su superficie
+  más de un 0,022 %, y los perímetros provinciales no llegan al 0,003 %; los
+  trazados no pierden un metro. La precisión declarada no cambia y la fecha de
+  verificación tampoco, porque no se ha vuelto a la fuente: se ha corregido una
+  operación del propio atlas.
+
+### Cambiado
+
+- `zonas-defensa` · `superficie_ha` pasa de confirmada a parcial en las 120
+  zonas. El acto que señala cada zona publica sus vértices y casi nunca su
+  superficie, de modo que las hectáreas las calcula el atlas sobre esos
+  vértices. Medir sobre un dato primario no convierte la medida en primaria, y
+  el contrato reserva la marca de confirmado para lo que sostiene la fuente. Es
+  el mismo criterio con el que ya iban parciales la longitud del tendido
+  eléctrico y la fecha hasta la que rige cada autorización nuclear. Ninguna
+  cifra de hectáreas cambia. Lo que cambia es lo que el atlas afirma sobre de
+  dónde sale. La suma de esas hectáreas en el conjunto que las agrega pasa
+  también a parcial. El recuento de vértices sigue confirmado, porque ese sí lo
+  publica el acto.
+
+### Añadido
+
+- **Dos explotadores de central nuclear**, en el registro de entidades. Las
+  órdenes del ministerio que renuevan las autorizaciones de explotación nombran
+  a tres titulares, y hasta ahora ninguno de los tres se resolvía. Entran
+  Centrales Nucleares Almaraz-Trillo, AIE, titular de Almaraz I, Almaraz II y
+  Trillo, y la Asociación Nuclear Ascó-Vandellós II, A.I.E., titular de Ascó I,
+  Ascó II y Vandellós II. La segunda tiene identificador mundial de persona
+  jurídica, corroborado del todo contra el Registro Mercantil de Tarragona y
+  sin renovar desde noviembre de 2024, y por él consta que la consolida Endesa
+  Generación y, por encima de ella, Enel. Como el registro está caducado, su
+  identidad y sus dos relaciones de matriz quedan en parcial. El tercer
+  titular, el de Cofrentes, ya tenía ficha. La orden lo escribe «Iberdrola
+  Generación Nuclear, S.A.U.» y la relación de titulares del ministerio,
+  «Iberdrola Generación Nuclear, S.A.». Son la misma sociedad, así que el texto
+  nuevo se añade como alias en lugar de abrir una entidad repetida. Con esto
+  los siete reactores dicen ya quién los explota, y el censo de textos de
+  registro sin entidad baja de 108 a 101, de cuatro capas a tres.
+- **La suma de verificación de cada paquete.** Junto al `<etiqueta>.tar.gz` que
+  cuelga de cada edición del archivo público va ahora un segundo fichero,
+  `<etiqueta>.tar.gz.sha256`, con la suma SHA-256 del paquete en el formato que
+  espera `sha256sum -c`. Quien descargue una edición para citarla o para
+  reproducir un análisis comprueba en una línea que le ha llegado íntegra:
+  `sha256sum -c datos-v2026.09.172.tar.gz.sha256`. Hasta hoy no había manera de
+  comprobarlo, porque el identificador de la edición ampara el aparato de cita
+  y no los ficheros adjuntos a la release. La suma es la del adjunto tal como
+  se sirve: comprueba la descarga, y no reconstruye el paquete, que sigue
+  saliendo de su etiqueta. Las 130 ediciones que ya tenían paquete han recibido
+  la suya.
+
+### El contrato, edición 1.105.0
+
+- **Diez capas descritas campo a campo**, las que se habían quedado fuera de la
+  sección de esquemas: aeropuertos, almacenamiento de productos petrolíferos,
+  centros de referencia del Sistema Nacional de Salud, frontera exterior de
+  Schengen, catálogo de montes de utilidad pública, red de carreteras del
+  Estado, estaciones GNSS permanentes, zonas de seguridad e interés para la
+  Defensa, estaciones meteorológicas y nodos de la red ferroviaria. Ocho de
+  ellas estrenan además su propio esquema de validación. Sus 999 registros
+  pasan a comprobarse con el tipo de cada campo, con lo que cada registro tiene
+  que llevar y con la lista cerrada de lo que cabe. Y sus fichas técnicas dejan
+  de salir con los campos sin explicación, porque la explicación se lee del
+  esquema. Cada esquema dice también qué no publicará esa capa y por qué: la
+  actividad de los centros de referencia, que no se publica en ningún sitio; el
+  precio del almacenamiento, que fija cada compañía y cambia sin acto; la
+  unidad militar que ocupa una instalación, que no es lo que la capa registra.
+- **La escalera de `geo_precision`** deja de contradecirse. Las dos tablas del
+  contrato enumeraban siete peldaños y el vocabulario publicado tiene nueve.
+  Entran los dos que faltaban, la isla y la comunidad autónoma, y queda dicho
+  que los cuatro peldaños que solo acotan un ámbito no prometen cartografía del
+  objeto.
+- Dos condiciones más en la comprobación de geometría (§7.4), que detienen la
+  publicación: un tramo de línea tiene que tener dos posiciones distintas, y un
+  anillo tiene que encerrar superficie. El anillo que no cierra se comprobaba
+  desde la primera versión del contrato; el que cierra sin encerrar nada pasaba
+  entero.
+
+### Huecos
+
+- **El NIF de Centrales Nucleares Almaraz-Trillo, AIE.** No está en el registro
+  mundial de identificadores de persona jurídica y ninguna orden lo imprime.
+  Entra sin identificador, con el hueco escrito y la puerta dicha: el Registro
+  Mercantil, donde se inscribe una agrupación de interés económico, y el
+  boletín que publica sus actos.
+- Ciento un textos de registro siguen sin resolverse en una entidad, en tres
+  capas: almacenamiento de productos petrolíferos, plantas solares y una
+  mención de infraestructuras científicas que nombra a una dirección general y
+  no entra.
+
+### Sin cambiar, y dicho
+
+- **Cinco geometrías siguen sin ser válidas y se quedan como están.** Cuatro
+  son transcripciones literales: tres recintos de la Base Topográfica Nacional
+  (`parques-eolicos:parque-eolico-el-aguila`,
+  `plantas-solares:central-solar-puebla-de-guzman-3` y
+  `red-electrica:subestacion-electrica-el-berbel`) y un perímetro levantado
+  sobre los vértices que publica un acto del Boletín Oficial del Estado
+  (`zonas-defensa:campo-de-tiro-y-maniobras-de-san-gregorio-interes-defensa-2`).
+  El defecto está en el documento, y corregirlo sustituiría lo que la fuente
+  dice por lo que el atlas supone. La quinta es la zona terrestre interior del
+  puerto de Ferrol (`puertos:ferrol-y-su-ria-ferrol-interior-z-terrestre-3`),
+  cuyo arreglo le añadiría un 0,42 % de superficie, por encima del límite que
+  esta tanda se fijó. La validación advierte de las cinco.
+- Los esquemas no cambian ningún dato. Lo que el contrato escribe ahora es lo
+  que esas diez capas ya contenían.
+
+---
+
 ## datos-v2026.09.172 — Veintidós fichas cotejadas contra sus documentos
 
 Una revisión independiente leyó veintidós registros de energía contra los

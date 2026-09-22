@@ -157,7 +157,10 @@ escritorio.
 [release](https://github.com/ArturoVazquez/atlas-archivo/releases) de este
 repositorio lleva adjunto su **paquete de datos**, `<etiqueta>.tar.gz`: las
 capas, las series, los conjuntos y el manifiesto de esa edición, tal como se
-publicaron. **Las tienen todas**, no solo la última.
+publicaron. **Las tienen todas**, no solo la última. Al lado va su suma,
+`<etiqueta>.tar.gz.sha256`, con la que se comprueba que la descarga llegó
+entera: `sha256sum -c <etiqueta>.tar.gz.sha256`. Es la suma del adjunto tal
+como se sirve; el paquete sigue saliendo de su etiqueta.
 
 Es la diferencia entre citar y reproducir. Las rutas de arriba dan siempre lo
 vigente —que mañana puede ser otra cosa—; el paquete de una release da lo que

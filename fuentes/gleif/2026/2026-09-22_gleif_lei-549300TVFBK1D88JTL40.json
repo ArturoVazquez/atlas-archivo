@@ -1,0 +1,552 @@
+{
+ "_": "Copia de trabajo de la API de GLEIF (datos CC0), pedida por consultar-entidades.py. No es una cita: la cita es la copia en fuentes/gleif/<año>/, con su fecha.",
+ "consultado": "2026-09-22T20:47:14+00:00",
+ "lei-record": {
+  "type": "lei-records",
+  "id": "549300TVFBK1D88JTL40",
+  "attributes": {
+   "lei": "549300TVFBK1D88JTL40",
+   "entity": {
+    "legalName": {
+     "name": "ASOCIACION NUCLEAR ASCO VANDELLOS II AIE",
+     "language": "es"
+    },
+    "otherNames": [],
+    "transliteratedOtherNames": [],
+    "legalAddress": {
+     "language": "es",
+     "addressLines": [
+      "CARRETERA NACIONAL 340 S / N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "VANDELLOS I L'HOSPITALET DE L'INFANT",
+     "region": "ES-T",
+     "country": "ES",
+     "postalCode": "43890"
+    },
+    "headquartersAddress": {
+     "language": "es",
+     "addressLines": [
+      "CARRETERA NACIONAL 340 S / N"
+     ],
+     "addressNumber": null,
+     "addressNumberWithinBuilding": null,
+     "mailRouting": null,
+     "city": "VANDELLOS I L'HOSPITALET DE L'INFANT",
+     "region": "ES-T",
+     "country": "ES",
+     "postalCode": "43890"
+    },
+    "registeredAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "registeredAs": "T-21078-8",
+    "jurisdiction": "ES",
+    "category": "GENERAL",
+    "legalForm": {
+     "id": "I2WU",
+     "other": null
+    },
+    "associatedEntity": {
+     "lei": null,
+     "name": null
+    },
+    "status": "ACTIVE",
+    "expiration": {
+     "date": null,
+     "reason": null
+    },
+    "successorEntity": {
+     "lei": null,
+     "name": null
+    },
+    "successorEntities": [],
+    "creationDate": "2016-12-31T00:00:00Z",
+    "subCategory": null,
+    "otherAddresses": [],
+    "eventGroups": []
+   },
+   "registration": {
+    "initialRegistrationDate": "2017-12-28T00:00:00Z",
+    "lastUpdateDate": "2024-11-30T02:32:48Z",
+    "status": "LAPSED",
+    "nextRenewalDate": "2024-11-30T00:00:14Z",
+    "managingLou": "529900F6BNUR3RJ2WH29",
+    "corroborationLevel": "FULLY_CORROBORATED",
+    "validatedAt": {
+     "id": "RA000533",
+     "other": null
+    },
+    "validatedAs": "T-21078-8",
+    "otherValidationAuthorities": []
+   },
+   "bic": null,
+   "mic": null,
+   "ocid": null,
+   "qcc": "QESH8MXQNQ",
+   "gem": null,
+   "spglobal": [
+    "556910828"
+   ],
+   "conformityFlag": "NON_CONFORMING"
+  },
+  "relationships": {
+   "managing-lou": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/managing-lou"
+    }
+   },
+   "lei-issuer": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/lei-issuer"
+    }
+   },
+   "field-modifications": {
+    "links": {
+     "related": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/field-modifications"
+    }
+   },
+   "direct-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/direct-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/direct-parent"
+    }
+   },
+   "ultimate-parent": {
+    "links": {
+     "relationship-record": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/ultimate-parent-relationship",
+     "lei-record": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40/ultimate-parent"
+    }
+   }
+  },
+  "links": {
+   "self": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40"
+  }
+ },
+ "direct-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-22T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "5493000GGZ378WK2X474",
+   "attributes": {
+    "lei": "5493000GGZ378WK2X474",
+    "entity": {
+     "legalName": {
+      "name": "ENDESA GENERACION, S.A.U.",
+      "language": "es"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "es",
+      "addressLines": [
+       "AVENIDA DE LA BORBOLLA 5"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Seville",
+      "region": "ES-SE",
+      "country": "ES",
+      "postalCode": "41004"
+     },
+     "headquartersAddress": {
+      "language": "es",
+      "addressLines": [
+       "AVENIDA DE LA BORBOLLA 5"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "SEVILLE",
+      "region": "ES-SE",
+      "country": "ES",
+      "postalCode": "41004"
+     },
+     "registeredAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "registeredAs": "SE-55559-8",
+     "jurisdiction": "ES",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "5RDO",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2013-05-23T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2013-05-24T00:00:00Z",
+     "lastUpdateDate": "2025-11-04T14:46:00Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-11-30T00:01:00Z",
+     "managingLou": "529900F6BNUR3RJ2WH29",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000533",
+      "other": null
+     },
+     "validatedAs": "SE-55559-8",
+     "otherValidationAuthorities": []
+    },
+    "bic": null,
+    "mic": null,
+    "ocid": null,
+    "qcc": null,
+    "gem": "E100001001152",
+    "spglobal": [
+     "5467374"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "relationship-record": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/direct-parent-relationship",
+      "lei-record": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/direct-parent"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "relationship-record": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/ultimate-parent-relationship",
+      "lei-record": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/ultimate-parent"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474/direct-children"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474"
+   }
+  }
+ },
+ "direct-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-22T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300TVFBK1D88JTL40|LEI|IS_DIRECTLY_CONSOLIDATED_BY|42|4279f5d2b9505bb5aff74ce8056c53f94ecfbd51660d12330b9e417d6f043b68|",
+   "attributes": {
+    "validFrom": "2024-11-30T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300TVFBK1D88JTL40",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "5493000GGZ378WK2X474",
+      "type": "LEI"
+     },
+     "type": "IS_DIRECTLY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2022-01-01T00:00:00Z",
+       "endDate": "2022-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2020-01-01T00:00:00Z",
+       "endDate": "2020-12-31T00:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      },
+      {
+       "startDate": "2017-12-14T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-12-28T00:00:00Z",
+     "lastUpdateDate": "2024-11-30T02:32:48Z",
+     "status": "LAPSED",
+     "nextRenewalDate": "2024-11-30T00:00:14Z",
+     "managingLou": "529900F6BNUR3RJ2WH29",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/5493000GGZ378WK2X474"
+     }
+    }
+   }
+  }
+ },
+ "ultimate-parent": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-22T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "lei-records",
+   "id": "WOCMU6HCI0OJWNPRZS33",
+   "attributes": {
+    "lei": "WOCMU6HCI0OJWNPRZS33",
+    "entity": {
+     "legalName": {
+      "name": "ENEL - SPA",
+      "language": "it"
+     },
+     "otherNames": [],
+     "transliteratedOtherNames": [],
+     "legalAddress": {
+      "language": "it",
+      "addressLines": [
+       "VIALE REGINA MARGHERITA 137"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Roma",
+      "region": "IT-RM",
+      "country": "IT",
+      "postalCode": "00198"
+     },
+     "headquartersAddress": {
+      "language": "it",
+      "addressLines": [
+       "VIALE REGINA MARGHERITA 137"
+      ],
+      "addressNumber": null,
+      "addressNumberWithinBuilding": null,
+      "mailRouting": null,
+      "city": "Roma",
+      "region": "IT-RM",
+      "country": "IT",
+      "postalCode": "00198"
+     },
+     "registeredAt": {
+      "id": "RA000407",
+      "other": null
+     },
+     "registeredAs": "00811720580",
+     "jurisdiction": "IT",
+     "category": "GENERAL",
+     "legalForm": {
+      "id": "P418",
+      "other": null
+     },
+     "associatedEntity": {
+      "lei": null,
+      "name": null
+     },
+     "status": "ACTIVE",
+     "expiration": {
+      "date": null,
+      "reason": null
+     },
+     "successorEntity": {
+      "lei": null,
+      "name": null
+     },
+     "successorEntities": [],
+     "creationDate": "2012-06-06T00:00:00Z",
+     "subCategory": null,
+     "otherAddresses": [],
+     "eventGroups": []
+    },
+    "registration": {
+     "initialRegistrationDate": "2012-06-06T00:00:00Z",
+     "lastUpdateDate": "2025-11-04T14:45:53Z",
+     "status": "ISSUED",
+     "nextRenewalDate": "2026-11-30T00:00:53Z",
+     "managingLou": "529900F6BNUR3RJ2WH29",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "validatedAt": {
+      "id": "RA000407",
+      "other": null
+     },
+     "validatedAs": "00811720580",
+     "otherValidationAuthorities": []
+    },
+    "bic": [
+     "ENELITR2XXX"
+    ],
+    "mic": null,
+    "ocid": null,
+    "qcc": null,
+    "gem": "E100000000608",
+    "spglobal": [
+     "93486"
+    ],
+    "conformityFlag": "CONFORMING"
+   },
+   "relationships": {
+    "managing-lou": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/managing-lou"
+     }
+    },
+    "lei-issuer": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/lei-issuer"
+     }
+    },
+    "field-modifications": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/field-modifications"
+     }
+    },
+    "direct-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/direct-parent-reporting-exception"
+     }
+    },
+    "ultimate-parent": {
+     "links": {
+      "reporting-exception": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/ultimate-parent-reporting-exception"
+     }
+    },
+    "direct-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/direct-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/direct-children"
+     }
+    },
+    "ultimate-children": {
+     "links": {
+      "relationship-records": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/ultimate-child-relationships",
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/ultimate-children"
+     }
+    },
+    "isins": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33/isins"
+     }
+    }
+   },
+   "links": {
+    "self": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33"
+   }
+  }
+ },
+ "ultimate-parent-relationship": {
+  "meta": {
+   "goldenCopy": {
+    "publishDate": "2026-09-22T08:00:00Z"
+   }
+  },
+  "data": {
+   "type": "relationship-records",
+   "id": "549300TVFBK1D88JTL40|LEI|IS_ULTIMATELY_CONSOLIDATED_BY|47|b05d8942d6e82ac6354dcfe41fa830ccdf7d5bcaef2f8c359ca299d532139e35|",
+   "attributes": {
+    "validFrom": "2024-11-30T08:00:00Z",
+    "validTo": null,
+    "relationship": {
+     "startNode": {
+      "id": "549300TVFBK1D88JTL40",
+      "type": "LEI"
+     },
+     "endNode": {
+      "id": "WOCMU6HCI0OJWNPRZS33",
+      "type": "LEI"
+     },
+     "type": "IS_ULTIMATELY_CONSOLIDATED_BY",
+     "status": "ACTIVE",
+     "periods": [
+      {
+       "startDate": "2022-01-01T00:00:00Z",
+       "endDate": "2022-12-31T00:00:00Z",
+       "type": "ACCOUNTING_PERIOD"
+      },
+      {
+       "startDate": "2020-01-01T00:00:00Z",
+       "endDate": "2020-12-31T00:00:00Z",
+       "type": "DOCUMENT_FILING_PERIOD"
+      },
+      {
+       "startDate": "2017-12-14T00:00:00Z",
+       "type": "RELATIONSHIP_PERIOD"
+      }
+     ]
+    },
+    "registration": {
+     "initialRegistrationDate": "2017-12-28T00:00:00Z",
+     "lastUpdateDate": "2024-11-30T02:32:48Z",
+     "status": "LAPSED",
+     "nextRenewalDate": "2024-11-30T00:00:14Z",
+     "managingLou": "529900F6BNUR3RJ2WH29",
+     "corroborationLevel": "FULLY_CORROBORATED",
+     "corroborationDocuments": "ACCOUNTS_FILING",
+     "corroborationReference": null
+    },
+    "extension": {
+     "deletedAt": null
+    }
+   },
+   "relationships": {
+    "start-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/549300TVFBK1D88JTL40"
+     }
+    },
+    "end-node": {
+     "links": {
+      "related": "https://api.gleif.org/api/v1/lei-records/WOCMU6HCI0OJWNPRZS33"
+     }
+    }
+   }
+  }
+ }
+}
