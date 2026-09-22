@@ -37,6 +37,179 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.172 — Veintidós fichas cotejadas contra sus documentos
+
+Una revisión independiente leyó veintidós registros de energía contra los
+documentos que citan, archivados en esta misma colección, y comprobó 222
+afirmaciones una a una. Dieciséis no decían lo que dice su documento. Esta
+edición las corrige y deja escrito qué se comprobó y qué no se pudo comprobar.
+Ninguna corrección rellena un hueco: donde el documento no sostiene la
+afirmación, el campo baja a parcial y se declara qué documento lo acreditaría.
+
+### Corregido
+
+- `nuclear:trillo-i` · `autorizacion_hasta` de 2034-11-16 a 2034-11-17, y de
+  parcial a confirmado. Su clave decía que la orden no escribe la fecha y que
+  el día era aritmética sobre el plazo de diez años. La Orden TED/1269/2024 sí
+  la escribe, en su apartado Tercero: «esta se presentará 18 meses antes de que
+  expire la autorización vigente (17 de noviembre de 2034)».
+- `nuclear:asco-ii` y `nuclear:vandellos-ii` · `autorizacion_hasta` pasa de
+  parcial a confirmado, con la misma fecha que ya publicaba. Las dos órdenes
+  escriben el día en su anexo: «La presente autorización de explotación faculta
+  al titular, hasta el 1 de octubre de 2031, para:» y «hasta el 26 de julio de
+  2030». Lo que no lo escribe es la parte dispositiva, que es donde se había
+  mirado.
+- `nuclear:trillo-i` · se retira la clave que decía que el registro Electra del
+  ministerio coincide al kilovatio con su ficha de centrales. La clave
+  siguiente dice lo contrario y es la cierta: 1.066 MW en la ficha frente a
+  1.067,49 en Electra. De esa segunda clave se quita además la frase que la
+  daba por el único desacuerdo de los siete reactores, porque no lo es.
+- `nuclear:almaraz-i` y `nuclear:almaraz-ii` · la misma clave de plantilla
+  tampoco se cumplía aquí. Electra publica 1.049,43 y 1.044,45 MW de potencia
+  bruta, y la ficha de centrales 1.049,40 y 1.044,50. La clave publica ahora
+  las dos cifras de cada fuente, la potencia neta de Electra y la separación.
+- `nuclear:cofrentes` · la misma clave decía que la potencia neta está entre 30
+  y 60 MW por debajo de la bruta, y aquí la separación es de 28,08: Electra da
+  1.092,02 de bruta y 1.063,94 de neta. La clave publica ahora las dos cifras.
+- `residuos-radiactivos` · los seis almacenes temporales individualizados
+  entrecomillaban una frase que el séptimo Plan General de Residuos
+  Radiactivos no contiene. Decían «su ATI, al que se le añade una instalación
+  complementaria, así como medidas adicionales». El plan dice «El ATD de cada
+  central estará formado por su ATI o, en su caso, sus ATI, más una nueva
+  instalación complementaria o medidas adicionales, que permitan realizar las
+  operaciones de mantenimiento y reparación de sus contenedores, para
+  garantizar la función de recuperabilidad a nivel de contenedor». La cita ya
+  es literal, y una «o» deja de leerse como un «así como».
+- `gas-interconexiones` · los seis puntos apoyaban `pais_vecino` en la
+  metodología estadística de CORES, que enumera por un lado los puntos de
+  entrada y salida y por otro los países de origen y destino, sin casar unos
+  con otros. Cuatro se reapuntan a un acto de su propio expediente. Medgaz, a
+  la Orden TED/740/2021, que habla del «gasoducto submarino Argelia-Europa vía
+  España». Magreb-Europa, a la Orden TED/741/2021, que describe «El tramo
+  marroquí (539 km), Frontera Argelia-Tánger, Terrestre; Paso del Estrecho (47
+  km), Tánger-Zahara de los Atunes, Submarino». Larrau, a la resolución de 24
+  de septiembre de 2010, que llama a su gasoducto «la conexión de la red
+  nacional de gasoductos con la red francesa de gasoductos». E Irún, a la
+  resolución de 4 de febrero de 2025, que nombra la «última posición del
+  gasoducto “Bergara – Irún – Frontera Francesa”».
+- `gas-interconexiones:tuy` y `gas-interconexiones:badajoz` · `pais_vecino`
+  baja a parcial. Ningún acto propio de estas dos conexiones está archivado y
+  la metodología no dice el país.
+- `gas-interconexiones` · `fase` baja a parcial en Larrau, Irún, Tuy y Badajoz.
+  La metodología enumera el punto como variable de clasificación y no dice si
+  está en servicio. Medgaz y Magreb-Europa se quedan confirmadas porque sus
+  libros de flujo mensual traen caudal en el último parte publicado.
+- `gas-interconexiones` · la clave de los puntos virtuales baja a parcial en
+  los seis. Dice desde cuándo rige el régimen, qué puntos agrupa cada uno y que
+  la estadística imputa allí el flujo, y ninguna de las tres cosas está en un
+  documento archivado.
+- `gas-interconexiones:tuy` · la clave de su flujo se apoyaba en la metodología
+  y daba mal la fecha. Los libros de CORES ponen la columna a cero desde
+  noviembre de 2014, no desde octubre: octubre de 2014 todavía trae 446,67 GWh
+  de salida, y marzo de 2026 trae 1,525 GWh de entrada.
+- `gas-interconexiones:badajoz` · la misma clave decía que su columna está a
+  cero desde octubre de 2014. Está a cero desde mayo de 2016, y el último mes
+  con cifra es abril de 2016, con 46,2 GWh de salida. El título de la clave
+  pasa de 2014 a 2016.
+- `gas-interconexiones:larrau` · la clave de los nombres decía que el BOE llama
+  a la conducción «gasoducto Puerto de Larrau-Villar de Arnedo» y que sitúa
+  tres posiciones. La resolución archivada dice «gasoducto Larrau-Villar de
+  Arnedo» y sitúa una sola, «la posición G-02 del gasoducto Larrau-Villar de
+  Arnedo … en el término municipal de Gallués (Navarra)», y nombra además «la
+  estación de compresión de gas natural de Lumbier (Navarra)». Se retiran de la
+  clave y del texto de la geometría el «Puerto de Larrau» atribuido al acto, la
+  posición G-04 y la B-31.
+- `gas-regasificacion` · la fecha del informe de supervisión de la Comisión
+  Nacional de los Mercados y la Competencia pasa de 2026-03-24 a 2026-02-27 en
+  las siete plantas. Su portada dice «REF. IS/DE/005/26 — 27 de febrero de
+  2026», y el 24 de marzo no aparece en el documento.
+- `hidrogeno-produccion:soto-de-ribera-edp` · dos claves. Una decía que el
+  atlas publica la cifra de proyecto de las dos que da la ficha europea, y este
+  registro no publica potencia: la ficha sitúa los 150 MW de la fase inicial en
+  Aboño, que tiene registro propio. La otra presentaba una resta como hecho,
+  «350 más 500 son 850, no 1.000», cuando el mismo párrafo da 150 MW de fase
+  inicial y reparte el gigavatio de la segunda «a partes iguales entre las dos
+  ubicaciones». La clave transcribe las cuatro cifras y no compone ninguna
+  suma. La misma frase iba en `hidrogeno-produccion:abono-edp` y se corrige
+  igual.
+- `nuclear` · la descripción de Trillo llamaba «titularidad» al reparto de
+  propiedad, y la de Ascó II llamaba «titulares» a los propietarios. Los huecos
+  del Protocolo de intenciones de 2019 nombran ahora a quienes lo firmaron como
+  los nombran las órdenes del BOE, «los propietarios de las centrales
+  nucleares». La nota de Trillo decía además que su renovación es la más
+  reciente del parque, y la de Almaraz es de agosto de 2026.
+
+### Añadido
+
+- `nuclear` gana el campo `titular` (contrato 1.104.0). Es la sociedad a la que
+  su orden del BOE nombra titular de la autorización de explotación y
+  explotador responsable, con la fórmula «se considera como titular de esta
+  autorización y explotador responsable de la Central Nuclear Ascó I, a
+  Asociación Nuclear Ascó-Vandellós II, A.I.E.». Es una sola y no lleva
+  porcentaje. Los siete reactores lo declaran, confirmado sobre su orden:
+  Almaraz I, Almaraz II y Trillo, Centrales Nucleares Almaraz-Trillo, AIE;
+  Ascó I, Ascó II y Vandellós II, Asociación Nuclear Ascó-Vandellós II,
+  A.I.E.; Cofrentes, Iberdrola Generación Nuclear, S.A.U. El campo `titulares`
+  no cambia de valor y recoge a los propietarios, que es lo que publica la
+  tabla del ministerio en una columna aparte. El titular y los propietarios no
+  coinciden en ninguno de los siete.
+
+### Huecos
+
+- **El régimen de los puntos de interconexión virtual**, en las seis
+  interconexiones gasistas. Ningún documento archivado dice desde cuándo rige,
+  qué puntos agrupa cada uno ni que la estadística impute allí el flujo. Lo
+  acreditarían el reglamento europeo de código de red sobre mecanismos de
+  asignación de capacidad en los sistemas de transporte de gas y el acuerdo de
+  interconexión entre los gestores de los dos lados.
+- **El país al otro lado y el servicio actual de Tuy y de Badajoz.** Lo
+  acreditarían el listado de puntos de interconexión que publica ENTSOG o el
+  informe de supervisión del sistema gasista de la Comisión Nacional de los
+  Mercados y la Competencia.
+- **El servicio actual de Larrau y de Irún.** En Larrau, la resolución de 2010
+  habla de intercambios previstos y la estadística deja de darle cifra en
+  octubre de 2014. En Irún, la resolución de 2025 acredita un servicio
+  provisional en febrero de ese año y autoriza la reposición definitiva, que es
+  otra cosa.
+- **Los dos actos que autorizaron la conexión de Larrau**, que su hueco daba
+  por no localizados. La resolución de 2010 los identifica. Uno es la Orden del
+  Ministerio de Industria y Energía de 11 de marzo de 1991, publicada en el BOE
+  de 18 de marzo de 1991. El otro, la Resolución de la Dirección General de la
+  Energía de 3 de diciembre de 1991, publicada en el BOE de 21 de enero de
+  1992. El hueco sigue abierto porque los dos siguen sin archivar, pero ya dice
+  cuáles son.
+- **Las capacidades por planta de regasificación.** El hueco de las siete
+  plantas decía que el informe de la Comisión Nacional de los Mercados y la
+  Competencia no las trae, y sí las trae. Están en tres figuras: la de
+  utilización de la capacidad de regasificación, la de autonomía y existencias
+  y el mapa de entradas y salidas de la red de transporte. De su texto solo se
+  puede citar el total del sistema, «la capacidad máxima de regasificación es
+  2.138 GWh/d». Leer una cifra de una imagen no es transcribir un documento, y
+  el hueco dice ahora eso. Ninguna cifra se ha copiado de las figuras.
+
+### Sin cambiar, y dicho
+
+- Cuarenta y cinco afirmaciones descansan en libros que la revisión no pudo
+  abrir: hojas de cálculo y ficheros comprimidos de CORES, del registro
+  Electra, del inventario de complejos industriales y de la cartografía del
+  Instituto Geográfico Nacional. No se cuentan como discrepancias y no se han
+  tocado.
+- **Ninguna geometría cambia**, y ninguna precisión geográfica se ha movido.
+- **Los almacenamientos de productos petrolíferos quedan para otra edición.**
+  Sus fichas las escribe un extractor desde el documento archivado, y
+  corregirlas a mano volvería a separarlas de su origen.
+
+### En el visor y en la vigilancia
+
+- El visor dice qué hacer cuando no arranca, con el motivo separado: sin
+  WebGL2, sin manifiesto o sin mapa base. El aviso va en voz pública y se
+  anuncia al lector de pantalla.
+- Todo campo publicado tiene rótulo declarado, y una comprobación lo exige.
+- La vigilancia del BOE y la de los boletines autonómicos se ponen en rojo
+  cuando no pueden mirar, también cuando solo se cae una parte del barrido.
+
+---
+
 ## datos-v2026.09.171 — Lo que ningún documento dice solo
 
 El atlas publica desde esta edición un cuarto estado de verificación,
