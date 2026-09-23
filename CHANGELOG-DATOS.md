@@ -37,6 +37,92 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.175 — El parte tal como salió, y lo que la base cambió después
+
+Esta edición no avanza el parte de embalses, que sigue en el 22 de septiembre
+de 2026. Cambia de dónde sabe el atlas lo que el Ministerio corrige. Un
+análisis de las fuentes del agua embalsada, hecho el 23 de septiembre,
+confirmó que el histórico del Boletín Hidrológico es la fuente que conviene a
+la serie: no hay otra con dato por embalse, semanal, para los 401 y con la
+historia entera en un documento. Y encontró, en la misma sede del Boletín, el
+documento que faltaba: el desglose por embalses de cada parte, que sale cada
+martes y no se corrige después. Con él, cada corrección de la base tiene
+nombre y cifra. La edición añade además la película de la energía, la tabla
+de identificadores del Boletín y una comprobación de la producción contra
+Red Eléctrica, y corrige la licencia de la capa.
+
+### Añadido
+
+- Se archivan los 82 documentos «Reserva hidráulica: desglose por embalses»
+  del Boletín Hidrológico Semanal que la sede del Ministerio servía el 23 de
+  septiembre de 2026, del n.º 7 de 2025 (parte del 18 de febrero de 2025) al
+  n.º 38 de 2026 (parte del 22 de septiembre de 2026). La sede ya no sirve los
+  n.º 1 a 6, 8 y 12 de 2025, y guarda cada documento poco más de año y medio:
+  desde esta edición se archiva uno por semana junto con el resumen.
+- Cada documento conserva las cifras por embalse tal como salieron en su
+  parte, porque la sede no lo corrige. Cotejados con la base histórica del 22
+  de septiembre, en 33 de los 82 partes la base cambió después alguna cifra de
+  agua embalsada: 180 cifras en total, 126 de ellas de un hectómetro cúbico.
+  Las mayores son Barrios de Luna en el parte del 15 de septiembre de 2026
+  (264 hm³ en el documento y 80 en la base), Barrios de Luna el 18 de agosto
+  (25 y 112), la Requejada el 8 de septiembre (0 y 35) y Yesa el 5 de agosto de
+  2025 (270 y 244). Quedan nombradas las dos que la edición anterior no podía
+  atribuir, Barrios de Luna y Portodemouros (169 y 161) el 15 de septiembre, y
+  una que nadie había visto, Arlanzón (22 y 13) el 18 de agosto. La serie de
+  cada embalse sigue a la base, como hasta ahora: las correcciones se cuentan
+  aquí y no cambian ninguna cifra publicada.
+- Nueva serie de la energía hidroeléctrica almacenada del conjunto de la capa:
+  82 partes semanales, del 18 de febrero de 2025 al 22 de septiembre de 2026,
+  con la suma de las filas de cada documento, en `datos/series/conjuntos/agua-embalsada.json`.
+  Coincide con el resumen semanal en las siete semanas que lo tienen
+  archivado, y su último punto es la cifra que la capa publica para el parte
+  más reciente.
+- Contrato 1.106.0. Una serie temporal puede ser ahora la de los hechos del
+  conjunto de una capa, además de la de un registro o la de un documento de
+  conjunto. Y una comprobación nueva, §7.20: cada uno de los 401 embalses de
+  la capa casa con un identificador del Boletín y solo uno, y cada
+  identificador casa con un embalse. La única excepción es Pajares (Ebro), que
+  el visor guarda con dos identificadores, el 353 para 2003 y el 362 desde
+  2006. Ningún registro cambia de forma, y el identificador no se publica en
+  la capa.
+- Se archivan dos respuestas del visor del Boletín Hidrológico tomadas el 23
+  de septiembre de 2026: la tabla de identificadores de embalse de su
+  histórico, de 421 filas, y los 374 puntos del parte del 22 de septiembre.
+- Se archiva el documento «Modelo de Datos BD Embalses 1988-2022» del
+  Ministerio, de una página y fechado el 30 de marzo de 2022, que sostiene con
+  palabras del emisor que la base se publica sin validación.
+- Cada parte del agua que no es el vigente enseña ya la energía almacenada y
+  su capacidad de esa semana, con la cita del documento archivado que las da;
+  si esa semana no tiene documento archivado, la página lo dice.
+- La lista de lo que cada parte del agua no dice explica ahora que el
+  Ministerio puede corregir después una cifra ya publicada, y que el atlas
+  sigue siempre a la base.
+
+### Corregido
+
+- La licencia de la capa. La procedencia decía «Ley 37/2007» desde que nació
+  la capa; el catálogo de datos abiertos del propio Ministerio da el Boletín
+  Hidrológico Semanal como CC BY 4.0, comprobado el 23 de septiembre de 2026.
+- La dirección fechada de cada parte del agua y del gas sigue siendo la que se
+  cita, y ahora lo dice bien: su contenido solo cambia si el emisor corrige
+  después una cifra de esa fecha, y la corrección queda en este registro de
+  cambios. Hasta hoy prometía que «ya no cambiará», y la página del 8 de
+  septiembre había cambiado con la corrección de la Requejada.
+- Versión de la capa: 1.6.12 → 1.7.0.
+
+### Huecos
+
+- Las semanas del 25 de febrero y del 25 de marzo de 2025 no tienen punto en la
+  serie de energía, porque la sede ya no sirve su documento. Lo anterior al
+  n.º 7 de 2025 no se puede recuperar.
+- La energía por embalse y por semana que traen los documentos queda en el
+  archivo y no se publica todavía.
+- Las 180 cifras corregidas no se anotan una a una en las fichas. La serie
+  sigue a la base, y la tabla completa se obtiene de los documentos
+  archivados.
+
+---
+
 ## datos-v2026.09.174 — Dos partes de embalses en una base
 
 Esta edición lleva `agua-embalsada` al parte del 22 de septiembre de 2026. El

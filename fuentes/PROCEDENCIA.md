@@ -1408,8 +1408,11 @@ ambición queda en `claves`, verbatim y con su condicional intacto.
 de Andalucía)**, DERA grupo 3 «Hidrografía», solo para identificar (`.46`) ·
 **MITECO**, Red Oficial de Estaciones de Aforo, para situar los cinco sistemas
 del Pirineo (`.48`) · **MITECO**, visor SIG del Boletín, para la corrección de
-una cifra (2026-09-21).
-**Licencia** · Ley 37/2007 · IGN · IECA, CC BY 4.0.
+una cifra (2026-09-21) · **MITECO**, documento 60 de cada Boletín («Reserva
+hidráulica: desglose por embalses»), para la energía por embalse y el cotejo de
+correcciones (2026-09-23).
+**Licencia** · MITECO, CC BY 4.0 (Boletín Hidrológico Semanal, catálogo de
+datos abiertos del MITECO, comprobado el 2026-09-23) · IGN · IECA, CC BY 4.0.
 **Qué hay que saber** · **La capa registra el agua, no el vaso.** La geometría
 del embalse está tras el CAPTCHA del SNCZI; el agua embalsada está en abierto y
 sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
@@ -1596,7 +1599,8 @@ de la red SAIH-ROEA, que hoy llega al año hidrológico 2021-22, cuatro años po
 detrás del parte. El atlas publica la cifra del Boletín porque es la única
 semanal por embalse, y la marca `confirmado` porque la sostiene la fuente
 primaria que la emite. Provisional quiere decir que el emisor puede corregirla
-después, y lo hace.
+después, y lo hace. Ese documento del modelo de datos está archivado desde el
+2026-09-23 en `fuentes/miteco/2022/2026-09-23_miteco_modelo-datos-bd-embalses-1988-2022.pdf`.
 **Dos publicaciones del mismo parte, y se corrigen por separado.** El Boletín
 sale por dos vías con el mismo origen: la base descargable, que es la que el
 atlas transcribe y archiva, y un visor SIG con dos servicios ArcGIS del
@@ -1624,6 +1628,31 @@ ficha da las dos, con la captura del visor archivada como fuente. La Requejada
 lo estrenó, con el parte 36 entero del visor en el archivo. Desde la base del
 22 de septiembre las dos publicaciones discrepan en sentido contrario: la ficha
 publica los 35 de la base y da el 0 del visor con una segunda captura.
+**El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
+de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la
+capacidad, el agua actual, la diferencia con la semana anterior y la energía
+disponible, además del río. Es la primera versión de cada parte: la sede no lo
+corrige después, aunque la base sí corrija. Se archiva cada semana junto con el
+resumen (el documento 40), en `fuentes/miteco/<año del boletín>/`, aunque la
+sede de descargas solo lo conserva año y medio: lo que no se archiva cada
+semana se pierde. De él sale la película de energía del conjunto
+(`datos/series/conjuntos/agua-embalsada.json`). De él sale también el cotejo
+que nombra las correcciones que la base hace en silencio. El parte del 18 de
+agosto de 2026 salió con Arlanzón en 22 hm³ y la base lo da hoy en 13. El del 8
+de septiembre salió con la Requejada en 0 y la base lo da en 35. El del 15 de
+septiembre salió con Barrios de Luna en 264 y Portodemouros en 169, y la base
+los da en 80 y 161.
+**La tabla de claves del visor, archivada.** El servicio `Embalses_Total`
+numera cada embalse con un `EMBALSE_ID` de 1 a 402, estable desde 1988, y la
+tabla completa está archivada en
+`fuentes/miteco/2026/2026-09-23_miteco_visor-boletin-hidrologico-embalses-total-claves.json`.
+Con ella va la respuesta del mismo visor con el punto de cada embalse, en
+`fuentes/miteco/2026/2026-09-23_miteco_visor-boletin-hidrologico-embalses-mapa-puntos.json`
+(374 puntos, los del parte del 22 de septiembre de 2026, a una mediana de 52 m
+de los puntos de la capa). Casa con 401 de los 401 registros de la capa. Pajares es el único con dos
+identificadores: uno para las filas de 2003 y otro para las que se miden desde
+2006. La validación comprueba que cada registro de la capa casa con un
+identificador del Boletín, y con uno solo.
 **Refresco** · Es la única capa con parte semanal, y su archivo se **reemplaza**:
 el histórico viene entero cada vez (11 MB, 1988-2026), así que la copia nueva
 sustituye a la anterior en lugar de acumularse — las copias de ediciones pasadas
@@ -1631,8 +1660,9 @@ viven en su etiqueta de Git y en su depósito de Zenodo. **El PDF del boletín e
 la excepción**: ese se añade, porque cada uno trae una energía que ningún otro
 documento repite. Y cada ficha lleva **su** parte: 25 embalses dejaron de
 informar hace años y conservan su fecha, que es lo único cierto de ellos.
-**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.18`,
-`.32`, `.43` y `.50` · §10
+**Archivado** · en `fuentes/miteco/`, `fuentes/ign/` y `fuentes/ieca/`, cada
+fichero citado donde corresponde arriba · **El resto** · CHANGELOG
+`datos-v2026.08.18`, `.32`, `.43` y `.50` · §10
 
 ## cables-submarinos
 
