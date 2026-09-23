@@ -1607,17 +1607,23 @@ casi siempre una demarcación entera en una semana: el Ebro el 2024-10-08, el
 Miño-Sil el 2025-11-18. Las correcciones van en las dos direcciones. El parte
 del 2026-08-18 publicó Barrios de Luna con 25 hm³ entre semanas de 132 y 95; el
 visor conserva esa cifra y la base la corrigió a 112. El del 2026-09-08 publicó
-la Requejada con 0 hm³; la base conserva esa cifra y el visor la corrigió a 35.
+la Requejada con 0 hm³; el 21 de septiembre el visor daba 35, la base pasó a
+35 en su edición del 22 y el 23 el visor volvía a dar 0. El del 2026-09-15
+salió en el resumen semanal y en el visor con 34.662 hm³, y una semana después
+la base y el visor lo daban con 34.470, casi toda la diferencia en el Duero.
 Ninguna de las dos es la versión corregida de la otra, y ninguna publica fe de
-erratas. El atlas sigue con la base: el visor pierde la fecha en el 5 % de sus
-filas y no sirve de histórico. Sí sirve para saber que el Ministerio ya tiene
-el parte de una semana antes de publicar la base: el del 15 de septiembre de
-2026 estaba en el visor desde ese día, y el 21 la base descargable seguía
-siendo la del 8, aunque la página la rotulara con la fecha nueva. Cuando una
-cifra publicada aquí ha sido corregida en el visor, se sigue el mismo criterio
-que con el Inventario de Presas: la capa publica la del Boletín y la ficha da
-las dos, con la captura del visor archivada como fuente. La Requejada lo
-estrena, con el parte 36 entero del visor en el archivo.
+erratas. El atlas sigue con la base: el visor
+pierde la fecha en el 5 % de sus filas y no sirve de histórico. Sí sirve para
+saber que el Ministerio ya tiene el parte de una semana antes de publicar la
+base: el del 15 de septiembre de 2026 estaba en el visor desde ese día, el 21
+la base descargable seguía siendo la del 8, aunque la página la rotulara con la
+fecha nueva, y la base del 22 trajo juntos los partes del 15 y del 22. Cuando
+una cifra publicada aquí ha sido corregida en el visor, se sigue el mismo
+criterio que con el Inventario de Presas: la capa publica la del Boletín y la
+ficha da las dos, con la captura del visor archivada como fuente. La Requejada
+lo estrenó, con el parte 36 entero del visor en el archivo. Desde la base del
+22 de septiembre las dos publicaciones discrepan en sentido contrario: la ficha
+publica los 35 de la base y da el 0 del visor con una segunda captura.
 **Refresco** · Es la única capa con parte semanal, y su archivo se **reemplaza**:
 el histórico viene entero cada vez (11 MB, 1988-2026), así que la copia nueva
 sustituye a la anterior en lugar de acumularse — las copias de ediciones pasadas
