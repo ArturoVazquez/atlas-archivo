@@ -37,6 +37,32 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.176 — La ruta de las series de conjunto, prometida
+
+Una edición de contrato, sin cambio de datos. Cierra lo que la edición
+anterior dejó abierto.
+
+### Añadido
+
+- Contrato 1.107.0. La tabla de rutas prometidas incluye
+  `/datos/series/conjuntos/<id>.json`, la película de un documento de conjunto
+  o del conjunto de una capa. La ruta se servía desde agosto de 2026 con la
+  película del sistema gasista y desde la edición anterior lleva también la de
+  la energía del agua embalsada; las páginas del gas y del agua la leen. Desde
+  hoy la gobierna la regla de las rutas prometidas: el identificador no se
+  recicla y renombrarla es un cambio mayor.
+- La guardia semanal que avisa de una serie que lleva demasiado sin ir a su
+  fuente vigila también esas dos películas, que hasta hoy no miraba por no
+  colgar de una capa.
+
+### Huecos
+
+- La energía por embalse y por semana de los documentos de desglose sigue sin
+  publicarse: sería una segunda serie por embalse con otra fuente, y una serie
+  tiene una sola. Queda anotado para cuando una lectura la pida.
+
+---
+
 ## datos-v2026.09.175 — El parte tal como salió, y lo que la base cambió después
 
 Esta edición no avanza el parte de embalses, que sigue en el 22 de septiembre

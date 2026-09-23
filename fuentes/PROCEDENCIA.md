@@ -1641,7 +1641,9 @@ que nombra las correcciones que la base hace en silencio. El parte del 18 de
 agosto de 2026 salió con Arlanzón en 22 hm³ y la base lo da hoy en 13. El del 8
 de septiembre salió con la Requejada en 0 y la base lo da en 35. El del 15 de
 septiembre salió con Barrios de Luna en 264 y Portodemouros en 169, y la base
-los da en 80 y 161.
+los da en 80 y 161. La energía por embalse que trae cada documento queda en el
+archivo y no se publica: sería una segunda película por embalse con otra
+fuente, y una serie tiene una sola.
 **La tabla de claves del visor, archivada.** El servicio `Embalses_Total`
 numera cada embalse con un `EMBALSE_ID` de 1 a 402, estable desde 1988, y la
 tabla completa está archivada en
