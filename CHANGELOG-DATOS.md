@@ -37,6 +37,65 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.174 — Dos partes de embalses en una base
+
+Esta edición lleva `agua-embalsada` al parte del 22 de septiembre de 2026. El
+Ministerio publicó ese día la base histórica del Boletín Hidrológico que no
+había salido el 15, y trae juntas las dos semanas. La base nueva corrige además
+una cifra que el atlas publicaba desde el 8 de septiembre, y rebaja el parte del
+15 respecto a lo que el propio Boletín publicó esa semana.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 22 de septiembre de 2026. Los 374
+  embalses que informan por separado suman 33.801 hm³ de una capacidad de
+  56.043, el 60,3 %. El 15 sumaban 34.470 y el 8, 35.108. La reserva baja 1.307
+  hm³ en dos semanas: 638 en la primera y 669 en la segunda. La cifra no es la
+  reserva nacional, porque el Boletín no cuenta todo lo embalsado de España, y
+  por eso se publica con su denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 38
+  da 11.634 GWh almacenados de 23.011, el 50,6 %, y 450,6 GWh producidos en la
+  semana del 14 al 20 de septiembre. En lo que va de año son 28.772 GWh, contra
+  30.537 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versión de la capa: 1.6.11 → 1.6.12.
+
+### Corregido
+
+- `agua-embalsada:requejada-duero` · el parte del 8 de septiembre de 2026 pasa
+  de 0 a 35 hm³ en la serie. La base lo publicó con 0 en su edición del 8 y con
+  35 en la del 22, y la serie sigue a la base. El atlas publicó el 0 desde la
+  edición datos-v2026.09.144 hasta la .173, y por eso el total de ese parte
+  pasa de 35.073 a 35.108 hm³. El visor SIG del Boletín daba 35 el 21 de
+  septiembre y el 23 volvía a dar 0, así que las dos publicaciones siguen sin
+  coincidir, ahora en sentido contrario. La ficha da las dos, cada una con su
+  captura del visor.
+
+### Añadido
+
+- 722.341 puntos de serie, 748 más que la edición anterior: dos semanas nuevas
+  para cada embalse que informa.
+- Archivados en `fuentes/miteco/2026/`: la base del 22 de septiembre, que
+  reemplaza a la del 8; los resúmenes semanales n.º 37 y 38; y la captura del
+  visor del 23 de septiembre, con el parte n.º 36 entero.
+- La procedencia de `agua-embalsada` cuenta las dos correcciones nuevas.
+
+### Huecos
+
+- La energía de la semana del 15 no entra en la capa, que solo lleva la del
+  parte más reciente. Queda en el resumen n.º 37 archivado: 12.124 GWh
+  almacenados de 23.011, el 52,7 %, y 458,9 GWh producidos del 7 al 13 de
+  septiembre.
+- Qué embalse corrigió el Ministerio en el parte del 15. El resumen n.º 37 y el
+  visor lo publicaron con 34.662 hm³, y hoy la base y el visor dan 34.470, 192
+  menos. Casi toda la diferencia está en el Duero: el resumen le daba una
+  subida de 51 hm³ en la semana y la base una bajada de 133. No hay copia por
+  embalse de esa semana anterior a la corrección, así que no se puede nombrar.
+  La serie lleva la cifra de la base.
+
+---
+
 ## datos-v2026.09.173 — Lo que la revisión encontró frágil
 
 Una revisión independiente leyó el 21 de septiembre de 2026 los registros de
