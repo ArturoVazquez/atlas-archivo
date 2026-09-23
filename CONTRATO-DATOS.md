@@ -398,6 +398,7 @@ a cualquier origen**. Estas nueve rutas son las que se prometen:
 | `/datos/vocabularios.json` | categorías, grupos, el árbol y **los colores**, que están aquí y no en la aplicación para que cualquiera pueda repintar el atlas sin ella |
 | `/datos/capas/<id>.geojson` | la capa **tal como se publica en la release**, byte a byte |
 | `/datos/series/<capa>/<slug>.json` | las series temporales |
+| `/datos/series/conjuntos/<id>.json` | la película de un documento de conjunto o del conjunto de una capa; el `<id>` es el del documento o el de la capa |
 | `/datos/conjuntos/<id>.json` | los documentos de conjunto |
 | `/datos/entidades/<id>.json` | las entidades: quién está detrás de un activo, con su identificador, los textos con los que los registros la nombran y sus relaciones con fuente, también la de propiedad de un registro, con su cuota y de qué es |
 | `/datos/indicadores.json` | el cuadro de indicadores: lo que se espera ver en cada pregunta principal, con la edición en que se definió; su estado no va en el fichero |
