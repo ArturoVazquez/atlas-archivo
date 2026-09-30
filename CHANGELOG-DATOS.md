@@ -37,6 +37,98 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.09.177 — El parte del 29 de septiembre, y doce hallazgos juzgados
+
+Esta edición lleva `agua-embalsada` al parte del 29 de septiembre de 2026,
+con su energía, y juzga los doce hallazgos que los vigías señalaron entre el
+22 y el 30 de septiembre. La base nueva del Boletín no corrige ninguna cifra
+ya publicada. Dos hallazgos entrarían como dato y quedan pendientes: el
+convenio con Andorra y la aprobación parcial del plan de Rhodes piden archivar
+su documento, y cada uno tendrá su edición.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 29 de septiembre de 2026. Los 374
+  embalses que informan por separado suman 33.204 hm³ de una capacidad de
+  56.043, el 59,2 %. El 22 sumaban 33.801: la reserva baja 597 hm³ en la
+  semana. La cifra no es la reserva nacional, porque el Boletín no cuenta todo
+  lo embalsado de España, y por eso se publica con su denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 39
+  da 11.242 GWh almacenados de 23.011, el 48,9 %, y 512,8 GWh producidos en la
+  semana del 21 al 27 de septiembre. En lo que va de año son 29.285 GWh,
+  contra 31.012 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versión de la capa: 1.7.0 → 1.7.1.
+
+### Sin cambio
+
+- Ninguna cifra ya publicada cambia con la base nueva. Las 401 series se
+  cotejaron punto a punto contra la edición anterior y coinciden. El desglose
+  por embalses del n.º 39 da las mismas 374 cifras que la base, y los 82
+  desgloses anteriores siguen dando las 180 correcciones que contó la edición
+  datos-v2026.09.175, ninguna más.
+- `agua-embalsada:requejada-duero`: el 30 de septiembre el visor SIG del
+  Boletín daba otra vez 35 hm³ para el parte del 8 de septiembre, la cifra de
+  la base, después de dar 35 el 21 y 0 el 23. Su respuesta era idéntica a la
+  captura del 21 de septiembre, ya archivada, y no se archiva otra vez. La
+  clave de la ficha que decía que las dos publicaciones seguían sin coincidir
+  pasa a decir cuándo discreparon.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 512,8
+  GWh, no la reproduce el balance eléctrico que Red Eléctrica servía el 30 de
+  septiembre: hidráulica más turbinación de bombeo suman 506,0 GWh, 6,8 menos.
+  La semana anterior cuadraba a la décima el día de su parte, y siete días
+  después el mismo balance la daba 11,2 GWh más baja. Red Eléctrica revisa su
+  balance después de publicarlo. El atlas publica la cifra del Boletín, que es
+  su fuente.
+
+### Añadido
+
+- 374 puntos de serie, uno por embalse que informa: 722.715 en total. La
+  película de energía del conjunto gana el punto del 29 de septiembre y llega
+  a 83 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 29 de septiembre, que
+  reemplaza a la del 22; el resumen semanal n.º 39 y el desglose por embalses
+  n.º 39; y la captura del visor del 30 de septiembre con el parte del 29
+  entero, cuyas 374 cifras coinciden con la base.
+
+### La guardia
+
+- Doce hallazgos de los vigías entre el 22 y el 30 de septiembre, juzgados el
+  30:
+  - uno se suma a un expediente: la dirección de obra y la coordinación de
+    seguridad de la reparación de la desaladora del Bajo Almanzora, cuya obra
+    ya constaba;
+  - nueve quedan fuera: un cese en la Agencia Tributaria y una fábrica de
+    piensos en Huesca, que despertaron a los vigías por el nombre y por la
+    fórmula del acuerdo; tres plantas de biometano en Aragón, para las que no
+    hay capa; un parque fotovoltaico de autoconsumo en la desaladora de
+    Maspalomas I; una bomba para la desaladora de la Base Aérea de Gando; un
+    convenio de investigación entre Enresa y el CIEMAT; una campa de material
+    convencional en Garoña; una caldera de vapor en una fábrica de tabaco de
+    Cáceres; y la revisión de un proyecto de la desaladora de Cabanes-Oropesa
+    del Mar;
+  - dos quedan pendientes porque entrarían como dato y su documento está por
+    archivar: el convenio entre España y Andorra para la interconexión
+    eléctrica de 220 kV por Adrall, publicado en el BOE el 30 de septiembre y
+    en vigor desde el 23, y la aprobación definitiva parcial del Plan de
+    Interés General de Aragón del proyecto Rhodes, en Calatorao, publicada en
+    el BOA el mismo día. El primero da al registro de la interconexión su
+    primera fuente propia; el segundo aprueba el suelo y las redes del campus
+    y deja el centro de datos a la espera de su autorización ambiental.
+
+### Huecos
+
+- Qué balance de Red Eléctrica leyó el Boletín para dar 512,8 GWh. El que Red
+  Eléctrica sirve hoy no lo reproduce, y el atlas no tiene copia del que
+  sirvió el 29 de septiembre.
+- Los dos hallazgos pendientes de arriba. Hasta que su documento esté
+  archivado, la interconexión con Andorra sigue sostenida solo por el plan de
+  desarrollo de la red, y el hueco de Rhodes sigue diciendo que espera el plan
+  aprobado.
+
+---
+
 ## datos-v2026.09.176 — La ruta de las series de conjunto, prometida
 
 Una edición de contrato, sin cambio de datos. Cierra lo que la edición

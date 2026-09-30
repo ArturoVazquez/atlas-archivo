@@ -1626,8 +1626,13 @@ una cifra publicada aquí ha sido corregida en el visor, se sigue el mismo
 criterio que con el Inventario de Presas: la capa publica la del Boletín y la
 ficha da las dos, con la captura del visor archivada como fuente. La Requejada
 lo estrenó, con el parte 36 entero del visor en el archivo. Desde la base del
-22 de septiembre las dos publicaciones discrepan en sentido contrario: la ficha
-publica los 35 de la base y da el 0 del visor con una segunda captura.
+22 de septiembre las dos publicaciones discreparon en sentido contrario: la
+ficha publica los 35 de la base y da el 0 del visor con una segunda captura.
+El 30 de septiembre el visor volvía a dar 35 para ese parte, con una respuesta
+idéntica a la captura del 21, y las 374 cifras del parte del 29 de septiembre
+coincidían en la base y en el visor; esa captura del parte 39 está en
+`fuentes/miteco/2026/2026-09-30_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-39.json`.
+En cada refresco se vuelve a pedir el visor y se coteja con la base.
 **El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
 de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la
 capacidad, el agua actual, la diferencia con la semana anterior y la energía
