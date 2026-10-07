@@ -37,6 +37,142 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.10.178 — El parte del 6 de octubre estrena un embalse, y entran Andorra y Rhodes
+
+Esta edición lleva `agua-embalsada` al parte del 6 de octubre de 2026, con
+su energía, y da de alta el embalse de Flix, en el Ebro, que el Boletín
+Hidrológico publica por separado desde ese parte: el alcance de la capa pasa
+de 401 a 402 embalses, el cien por cien del Boletín, como promete. Entran
+además los dos documentos que la edición anterior dejó pendientes de
+archivar: el convenio entre España y Andorra para la interconexión de 220 kV
+y la aprobación definitiva parcial del plan del proyecto Rhodes. La base
+nueva del Boletín no corrige ninguna cifra ya publicada. Y se juzgan los
+cuatro hallazgos que los vigías señalaron entre el 29 de septiembre y el 7 de
+octubre.
+
+### Añadido
+
+- `agua-embalsada:flix-ebro`. El Boletín estrena el embalse de Flix en el
+  parte del 6 de octubre de 2026, con 11 hm³ de capacidad y 10 embalsados, y
+  lo cuenta como hidroeléctrico. Su punto sale del Nomenclátor Geográfico
+  Básico de España («Pantà de Flix») y se comprobó que cae en el municipio de
+  Flix, en Tarragona, y en la demarcación del Ebro, preguntando a las unidades
+  administrativas del IGN y al servicio de demarcaciones del Ministerio. Su
+  serie nace con un solo punto. El desglose por embalses del Boletín publica
+  la diferencia semanal de un embalse recién estrenado en blanco, y su fila de
+  totales la cuenta como el agua entera; el lector del desglose lo admite solo
+  cuando la base confirma que no hay ningún parte anterior.
+- `electricidad-interconexiones:interconexion-andorra` gana su primera fuente
+  propia. El Convenio entre España y Andorra para la interconexión eléctrica
+  de 220 kV, publicado en el BOE el 30 de septiembre de 2026, prevé en
+  territorio español un doble circuito de 220 kV desde Adrall hasta la
+  frontera, la ampliación de la subestación de Adrall a doble barra con
+  acoplamiento GIS y la modificación de la llegada de las líneas a Llavorsí y
+  a Cercs. La inversión en el lado español la paga Andorra, a cargo de FEDA,
+  por un importe que fijará un acuerdo entre Red Eléctrica y FEDA antes de las
+  obras, y la CNMC lo descontará de la base regulatoria de Red Eléctrica. El
+  convenio entró en vigor el 23 de septiembre de 2026. Tres claves nuevas:
+  las obras, quién paga y la vigencia. El enlace sigue proyectado, y el
+  promotor y el extremo andorrano siguen sin dato: el convenio nombra una
+  estación receptora en el Riu Runer, pero no la sitúa.
+- `centros-datos:rhodes-calatorao` gana la aprobación definitiva parcial de
+  su Plan de Interés General, acordada por el Gobierno de Aragón el 28 de
+  septiembre de 2026 y publicada en el BOA el 30 (Orden VFL/1400/2026).
+  Quedan aprobados la documentación urbanística, la urbanización y las
+  conexiones exteriores de electricidad, agua, saneamiento y drenaje, que
+  pasan a ser directamente ejecutables. El proyecto del centro de datos y el
+  de su subestación quedan pendientes de la autorización ambiental integrada
+  que tramita el INAGA, y con ellos la aprobación definitiva total del plan.
+  El instrumento del registro lo recoge, una clave nueva dice qué aprueba y
+  qué no, y el hueco que esperaba el plan aprobado pasa a esperar lo que
+  falta. La fase y la categoría no cambian: lo aprobado es el suelo y las
+  redes, no el centro.
+- 375 puntos de serie, uno por embalse que informa: 723.090 en total. La
+  película de energía del conjunto gana el punto del 6 de octubre y llega a 84
+  partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 6 de octubre, que
+  reemplaza a la del 29 de septiembre; el resumen semanal n.º 40 y el desglose
+  por embalses n.º 40; la captura del visor del 7 de octubre con el parte del
+  6 entero, cuyas 375 cifras coinciden con la base; y la tabla de claves del
+  visor del 7 de octubre, que ya trae el identificador 403 de Flix y sustituye
+  a la del 23 de septiembre como la que casa cada registro con su
+  identificador del Boletín.
+- Archivados el convenio con Andorra en `fuentes/boe/2026/` y la orden del
+  plan de Rhodes en `fuentes/boa/2026/`.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 6 de octubre de 2026. Los 375 embalses
+  que informan por separado suman 32.687 hm³ de una capacidad de 56.049, el
+  58,3 %. El 29 de septiembre sumaban 33.204: la reserva baja 517 hm³ en la
+  semana, y 10 de esa cuenta son el estreno de Flix. La cifra no es la reserva
+  nacional, porque el Boletín no cuenta todo lo embalsado de España, y por eso
+  se publica con su denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 40
+  da 10.836 GWh almacenados de 23.013, el 47,1 %, y 529,0 GWh producidos en la
+  semana del 28 de septiembre al 4 de octubre. En lo que va de año son 29.811
+  GWh, contra 31.543 del año anterior. La capacidad energética sube de 23.011
+  a 23.013 GWh: son los 2 GWh de Flix.
+- `agua-embalsada:barcala-cantabricoocci` · `capacidad_hm3` 34 → 29. La base
+  del 6 de octubre, el desglose n.º 40 y el visor dan los tres 29 hm³ para el
+  embalse de La Barca, que hasta el parte anterior publicaba 34. El Boletín no
+  explica el cambio.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versiones de capa: `agua-embalsada` 1.7.1 → 1.8.0, por el registro nuevo;
+  `electricidad-interconexiones` 1.1.0 → 1.1.1 y `centros-datos` 1.10.1 →
+  1.10.2, por la fuente y las claves nuevas de un registro cada una.
+
+### Sin cambio
+
+- Ninguna cifra ya publicada cambia con la base nueva. Las 401 series se
+  cotejaron punto a punto contra la edición anterior y coinciden. El desglose
+  por embalses del n.º 40 da las mismas 375 cifras que la base, y los 83
+  desgloses anteriores siguen dando las 180 correcciones en 33 partes que contó
+  la edición datos-v2026.09.175, ninguna más.
+- `agua-embalsada:requejada-duero`: el 7 de octubre el visor del Boletín
+  seguía dando 35 hm³ para el parte del 8 de septiembre, la cifra de la base,
+  y las 374 cifras de ese parte coincidían en las dos publicaciones.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 529,0
+  GWh, la reproduce el balance eléctrico que Red Eléctrica servía el 7 de
+  octubre: hidráulica más turbinación de bombeo suman 529,03 GWh.
+
+### La guardia
+
+- Los dos hallazgos que la edición anterior dejó pendientes pasan a entrar,
+  con el registro y la edición de arriba.
+- Cuatro hallazgos de los vigías entre el 29 de septiembre y el 7 de octubre,
+  juzgados el 7:
+  - uno se suma a un expediente: la orden del Gobierno de Aragón que incorpora
+    al plan de la Región Microsoft el estudio de impacto ambiental de la
+    urbanización del campus de La Muela, lo aprueba inicialmente y lo somete a
+    información pública, junto con el anuncio de ese trámite en el mismo
+    boletín. El plan sigue aprobado solo inicialmente y nada del registro
+    cambia;
+  - tres quedan fuera: un anuncio de pastos en el cauce del río Reconque, en
+    Teresa de Cofrentes, que despertó al vigía por el nombre del municipio; el
+    anuncio de la fusión por absorción de Enel Green Power España y Compañía
+    Eólica Tierras Altas por Endesa Generación, que es la absorbente y no
+    cambia de nombre, de matriz ni de estado; y la constitución de Wolfram
+    Abenojar Industries con Abenojar Tungsten como socio único, una sociedad
+    nueva que ningún acto nombra titular del proyecto El Moto.
+- El vigía de la evaluación ambiental se quedó ciego el 1 de octubre: la sede
+  del Ministerio contestó una página sin proyectos. El 7 de octubre volvía a
+  servir el listado entero, 7.888 proyectos, y no despertó ninguno nuevo.
+
+### Huecos
+
+- Qué pasó con la capacidad de La Barca. El Boletín publica 29 hm³ donde hasta
+  el 29 de septiembre publicaba 34, y ninguna de sus tres publicaciones explica
+  el cambio.
+- Por qué el Boletín estrena Flix ahora. El embalse existe desde hace décadas
+  y el Boletín no lo publicaba por separado; nada en el parte lo dice.
+- El promotor y el extremo andorrano de la interconexión con Andorra, y el
+  proyecto del centro de datos de Rhodes, que sigue a la espera de su
+  autorización ambiental integrada.
+
+---
+
 ## datos-v2026.09.177 — El parte del 29 de septiembre, y doce hallazgos juzgados
 
 Esta edición lleva `agua-embalsada` al parte del 29 de septiembre de 2026,

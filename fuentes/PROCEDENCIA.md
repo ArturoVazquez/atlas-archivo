@@ -1315,7 +1315,9 @@ autorización **no caduca por fecha sino por volumen** de celdas ocupadas.
 **De dónde** · **DOUE**, Reglamento Delegado (UE) 2026/764, lista de la Unión ·
 **MITECO**, Plan de desarrollo de la red de transporte 2021-2026 · **IGN**,
 Nomenclátor para el extremo español · **CINEA**, plataforma PCI-PMI: la ficha de
-cada enlace de la lista de la Unión, con su promotor y su estado de ejecución.
+cada enlace de la lista de la Unión, con su promotor y su estado de ejecución ·
+**BOE**, Convenio entre el Reino de España y el Principado de Andorra para la
+interconexión eléctrica de 220 kV por Adrall (BOE-A-2026-20269, de 30/09/2026).
 **Licencia** · CE, Decisión 2011/833/UE · Ley 37/2007 · IGN.
 **Qué hay que saber** · **Un enlace tiene dos extremos y el atlas solo puede
 situar uno.** El de fuera va nombrado y sin coordenada: dibujar una recta entre
@@ -1332,9 +1334,10 @@ servicio con Francia, Portugal, Marruecos y Andorra antes del plan no están en
 esta capa**; quien las inventaría es Red Eléctrica, fuente corporativa. Tercero:
 **Andorra y Marruecos no tienen promotor publicado**, porque no están en la lista
 de la Unión y el plan no lo nombra; lo dirá su autorización administrativa en el
-BOE.
-**Archivado** · 4 ficheros · **El resto** · CHANGELOG `datos-v2026.08.9` y
-`.148` · §10
+BOE. El convenio con Andorra nombra a Red Eléctrica de España y a FEDA como las
+transportistas de cada país, pero no dice quién promueve la actuación.
+**Archivado** · 5 ficheros · **El resto** · CHANGELOG `datos-v2026.08.9`,
+`.148` y `.178` · §10
 
 ## red-electrica
 
@@ -1419,8 +1422,14 @@ sin formulario. **La base no lleva coordenadas**: el punto se cose por nombre
 contra el Nomenclátor, normalizando nueve prefijos en cuatro lenguas y el sufijo
 vasco `urtegia`, y **cada punto se verifica** preguntando al Ministerio en qué
 demarcación cae. Esa vuelta cazó seis emparejamientos falsos.
-**Alcance** · **los 401 del Boletín, el 100 %**, desde la `.48`. Ojo al leerlo:
-el Boletín no cuenta todo lo embalsado de España, así que 401 de 401 **no es la
+**Alcance** · **los 402 del Boletín, el 100 %**. Eran 401 desde la `.48`. El
+Boletín estrenó Flix, en el Ebro, en el parte del 6 de octubre de 2026, con 11
+hm³ de capacidad, y entró en la capa con ese mismo parte. Su punto es el del
+«Pantà de Flix» del Nomenclátor. Se verificó el 7 de octubre de 2026 con el
+servicio de demarcaciones hidrográficas del Ministerio, que lo sitúa en la del
+Ebro, y con las unidades administrativas del IGN, que lo sitúan en el municipio
+de Flix, en Tarragona. Ojo al leerlo:
+el Boletín no cuenta todo lo embalsado de España, así que 402 de 402 **no es la
 reserva nacional** — la del Ministerio es algo mayor. El barrido del
 Nomenclátor es **doble**: tipo «Embalse» (2026-08-07) y su ampliación a «Masa de
 agua» y «Conjunto de masas de agua» (2026-08-09) — los embalses que el Boletín
@@ -1632,6 +1641,10 @@ El 30 de septiembre el visor volvía a dar 35 para ese parte, con una respuesta
 idéntica a la captura del 21, y las 374 cifras del parte del 29 de septiembre
 coincidían en la base y en el visor; esa captura del parte 39 está en
 `fuentes/miteco/2026/2026-09-30_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-39.json`.
+El 7 de octubre el visor seguía dando 35 para el parte del 8 de septiembre. Las
+375 cifras del parte del 6 de octubre, Flix incluido, coincidían en la base y en
+el visor; esa captura del parte 40 está en
+`fuentes/miteco/2026/2026-10-07_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-40.json`.
 En cada refresco se vuelve a pedir el visor y se coteja con la base.
 **El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
 de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la
@@ -1650,13 +1663,16 @@ los da en 80 y 161. La energía por embalse que trae cada documento queda en el
 archivo y no se publica: sería una segunda película por embalse con otra
 fuente, y una serie tiene una sola.
 **La tabla de claves del visor, archivada.** El servicio `Embalses_Total`
-numera cada embalse con un `EMBALSE_ID` de 1 a 402, estable desde 1988, y la
+numera cada embalse con un `EMBALSE_ID` de 1 a 403, estable desde 1988, y la
 tabla completa está archivada en
+`fuentes/miteco/2026/2026-10-07_miteco_visor-boletin-hidrologico-embalses-total-claves.json`.
+El 403 es Flix. La tabla anterior, del 23 de septiembre de 2026, llegaba al 402
+y sigue en
 `fuentes/miteco/2026/2026-09-23_miteco_visor-boletin-hidrologico-embalses-total-claves.json`.
 Con ella va la respuesta del mismo visor con el punto de cada embalse, en
 `fuentes/miteco/2026/2026-09-23_miteco_visor-boletin-hidrologico-embalses-mapa-puntos.json`
 (374 puntos, los del parte del 22 de septiembre de 2026, a una mediana de 52 m
-de los puntos de la capa). Casa con 401 de los 401 registros de la capa. Pajares es el único con dos
+de los puntos de la capa). Casa con 402 de los 402 registros de la capa. Pajares es el único con dos
 identificadores: uno para las filas de 2003 y otro para las que se miden desde
 2006. La validación comprueba que cada registro de la capa casa con un
 identificador del Boletín, y con uno solo.
@@ -2060,9 +2076,15 @@ subestación propia, de generadores de emergencia y de placas solares en suelo
 colindante, y no escriben un solo MW. Del BOA se archivan las dos formas —el
 facsímil PDF y el texto web—, porque el PDF va a dos columnas y la lectura por
 líneas las entrelaza.
-**Archivado** · 57 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
+**Qué se añadió** *(2026-10-07, release `.178`)* · El plan de interés general de
+Rhodes tiene aprobación definitiva parcial, por Acuerdo del Gobierno de Aragón
+de 28 de septiembre de 2026 (Orden VFL/1400/2026, BOA n.º 190). Se aprueban la
+documentación urbanística, la urbanización y las conexiones exteriores. El
+proyecto del centro de datos y el de su subestación esperan a la autorización
+ambiental integrada, que sigue en trámite. La fase no se mueve.
+**Archivado** · 58 ficheros · **El resto** · CHANGELOG `datos-v2026.08.11`,
 `.100`, `.102`, `.108`, `.109`, `.110`, `.111`, `.112`, `.136`, `.139`,
-`.145` y `.168` · §10
+`.145`, `.168` y `.178` · §10
 
 ## hidrogeno-red
 
