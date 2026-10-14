@@ -1645,6 +1645,14 @@ El 7 de octubre el visor seguía dando 35 para el parte del 8 de septiembre. Las
 375 cifras del parte del 6 de octubre, Flix incluido, coincidían en la base y en
 el visor; esa captura del parte 40 está en
 `fuentes/miteco/2026/2026-10-07_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-40.json`.
+El 14 de octubre el visor seguía dando 35 para el parte del 8 de septiembre. Las
+375 cifras del parte del 13 de octubre coincidían en la base y en el visor; esa
+captura del parte 41 está en
+`fuentes/miteco/2026/2026-10-14_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-41.json`.
+Ese día las dos publicaciones daban 32.691 hm³ para el parte del 6 de octubre,
+4 más que los 32.687 con los que salió: Anchuricas, Fuensanta, Santomera y
+Talave, en el Segura, subieron un hectómetro cúbico cada uno en la base y en el
+visor.
 En cada refresco se vuelve a pedir el visor y se coteja con la base.
 **El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
 de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la

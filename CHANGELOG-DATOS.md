@@ -37,6 +37,90 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.10.179 — El parte del 13 de octubre, y cuatro cifras del Segura corregidas
+
+Esta edición lleva `agua-embalsada` al parte del 13 de octubre de 2026, con
+su energía. La base nueva del Boletín corrige cuatro cifras del parte
+anterior, todas en la cuenca del Segura y de un hectómetro cúbico cada una, y
+el guion que mueve las series las nombra desde esta edición. Se juzga el único
+hallazgo que los vigías señalaron entre el 8 y el 14 de octubre.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 13 de octubre de 2026. Los 375 embalses
+  que informan por separado suman 32.409 hm³ de una capacidad de 56.049, el
+  57,8 %. El 6 de octubre sumaban 32.691 según la base de hoy: la reserva baja
+  282 hm³ en la semana. La cifra no es la reserva nacional, porque el Boletín
+  no cuenta todo lo embalsado de España, y por eso se publica con su
+  denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 41
+  da 10.522 GWh almacenados de 23.013, el 45,7 %, y 469,7 GWh producidos en la
+  semana del 5 al 11 de octubre. En lo que va de año son 30.288 GWh, contra
+  32.066 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versión de la capa: 1.8.0 → 1.8.1.
+
+### Corregido
+
+- Cuatro cifras del parte del 6 de octubre de 2026, que la edición anterior
+  publicó y la base del 14 de octubre cambia. Las cuatro son del Segura y suben
+  un hectómetro cúbico: `agua-embalsada:anchuricas-segura` 1 → 2,
+  `agua-embalsada:fuensanta-segura` 152 → 153, `agua-embalsada:santomera-segura`
+  2 → 3 y `agua-embalsada:talave-segura` 8 → 9. El total de ese parte pasa de
+  32.687 a 32.691 hm³. El visor del Boletín daba el 14 de octubre las mismas
+  cifras corregidas, y el desglose por embalses del n.º 40, que se archivó el
+  7 con las cifras de salida, es el documento que permite nombrarlas. El
+  Boletín no publica fe de erratas; el atlas sigue a la base, como dice el
+  contrato, y deja aquí constancia de lo que cambió.
+
+### Sin cambio
+
+- Ninguna otra cifra ya publicada cambia. Las 402 series se cotejaron punto a
+  punto contra la edición anterior. Los 85 desgloses archivados dan 34 partes
+  corregidos y 184 cifras: las 180 que contó la edición datos-v2026.09.175 y
+  las cuatro de arriba.
+- El desglose por embalses del n.º 41 da las mismas 375 cifras que la base, y
+  Flix, estrenado la semana pasada, viene ya con su diferencia semanal.
+- `agua-embalsada:requejada-duero`: el 14 de octubre el visor del Boletín
+  seguía dando 35 hm³ para el parte del 8 de septiembre, la cifra de la base.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 469,7
+  GWh, la reproduce el balance eléctrico que Red Eléctrica servía el 14 de
+  octubre: hidráulica más turbinación de bombeo suman 469,75 GWh.
+
+### Añadido
+
+- 375 puntos de serie, uno por embalse que informa: 723.465 en total. La
+  película de energía del conjunto gana el punto del 13 de octubre y llega a
+  85 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 13 de octubre, que
+  reemplaza a la del 6; el resumen semanal n.º 41 y el desglose por embalses
+  n.º 41; y la captura del visor del 14 de octubre con el parte del 13 entero,
+  cuyas 375 cifras coinciden con la base.
+
+### La guardia
+
+- Un hallazgo de los vigías entre el 8 y el 14 de octubre, juzgado el 14. Se
+  suma a un expediente: la orden del Gobierno de Aragón que vuelve a aprobar
+  inicialmente la reparcelación del sector Acampo del Marqués, porque cambia el
+  adjudicatario de una parcela, y aprueba inicialmente la fibra entre los
+  centros de datos de El Burgo de Ebro y La Cartuja, junto con el anuncio de su
+  información pública en el mismo boletín. La reparcelación sigue sin
+  aprobación definitiva, que es lo que mantiene al centro de La Cartuja en
+  tramitación, y nada del registro cambia.
+- Los demás vigías no despertaron: ni el BOE, ni el BORME, ni la contratación
+  pública, ni la evaluación ambiental, que volvió a leer el listado entero el 8
+  de octubre.
+
+### Huecos
+
+- Por qué la base corrigió el Segura una semana después. Las dos publicaciones
+  del Boletín lo dan ya corregido y ninguna lo explica.
+- La capacidad de La Barca, 29 hm³ desde el parte del 6 de octubre donde antes
+  publicaba 34, sigue sin explicación del Boletín.
+
+---
+
 ## datos-v2026.10.178 — El parte del 6 de octubre estrena un embalse, y entran Andorra y Rhodes
 
 Esta edición lleva `agua-embalsada` al parte del 6 de octubre de 2026, con
