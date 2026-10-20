@@ -37,6 +37,117 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.10.180 — El parte del 20 de octubre, doce cifras corregidas dos semanas atrás, y el listado de octubre del acceso a la red
+
+Esta edición lleva `agua-embalsada` al parte del 20 de octubre de 2026, con
+su energía. La base nueva del Boletín corrige doce cifras de los dos partes
+anteriores, siete del Ebro y tres del Segura en el del 13 de octubre y dos
+del Ebro en el del 6, y el visor del Boletín solo acompaña a las diez
+primeras. Se juzgan los doce hallazgos que los vigías señalaron entre el 15
+y el 20 de octubre: las once solicitudes nuevas del listado de octubre del
+acceso a la red de transporte y una licitación de la Mancomunidad de los
+Canales del Taibilla.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 20 de octubre de 2026. Los 375 embalses
+  que informan por separado suman 32.062 hm³ de una capacidad de 56.049, el
+  57,2 %. El 13 de octubre sumaban 32.414 según la base de hoy: la reserva
+  baja 352 hm³ en la semana. La cifra no es la reserva nacional, porque el
+  Boletín no cuenta todo lo embalsado de España, y por eso se publica con su
+  denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 42
+  da 10.425 GWh almacenados de 23.013, el 45,3 %, y 428,5 GWh producidos en la
+  semana del 12 al 18 de octubre. En lo que va de año son 30.716 GWh, contra
+  32.628 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versión de la capa: 1.8.1 → 1.8.2.
+
+### Corregido
+
+- Doce cifras de los dos partes anteriores, que las ediciones
+  datos-v2026.10.178 y datos-v2026.10.179 publicaron y la base del 20 de
+  octubre cambia. Del parte del 13 de octubre, diez: en el Ebro,
+  `agua-embalsada:canelles-ebro` 308 → 309, `agua-embalsada:escales-ebro`
+  120 → 122, `agua-embalsada:llauset-ebro` 6 → 7, `agua-embalsada:mansilla-ebro`
+  21 → 20, `agua-embalsada:mequinenza-ebro` 780 → 782,
+  `agua-embalsada:ribarroja-ebro` 202 → 200 y `agua-embalsada:trempotalarn-ebro`
+  98 → 99; en el Segura, `agua-embalsada:anchuricas-segura` 2 → 1,
+  `agua-embalsada:cenajo-segura` 251 → 252 y `agua-embalsada:fuensanta-segura`
+  149 → 150. El total de ese parte pasa de 32.409 a 32.414 hm³. Del parte del
+  6 de octubre, dos: `agua-embalsada:escales-ebro` 124 → 126 y
+  `agua-embalsada:mequinenza-ebro` 789 → 790, y su total pasa de 32.691 a
+  32.694 hm³. El visor del Boletín daba el 20 de octubre las diez cifras
+  corregidas del parte del 13 y seguía dando las dos antiguas del parte del
+  6: las dos publicaciones se han separado en ese parte. Los desgloses por
+  embalses de los n.º 40 y 41, archivados en su semana, son los documentos
+  que permiten nombrarlas. El Boletín no publica fe de erratas; el atlas
+  sigue a la base, como dice el contrato, y deja aquí constancia.
+
+### Sin cambio
+
+- Ninguna otra cifra ya publicada cambia. Las 402 series se cotejaron punto a
+  punto contra la edición anterior. Los 86 desgloses archivados dan 35 partes
+  corregidos y 196 cifras: las 184 que contaba la edición anterior y las doce
+  de arriba.
+- El desglose por embalses del n.º 42 da las mismas 375 cifras que la base, y
+  el visor también.
+- `agua-embalsada:requejada-duero`: el 20 de octubre el visor del Boletín
+  seguía dando 35 hm³ para el parte del 8 de septiembre, la cifra de la base.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 428,5
+  GWh, no la reproduce el balance eléctrico que Red Eléctrica servía el 20 de
+  octubre por la noche: hidráulica más turbinación de bombeo suman 431,17 GWh,
+  2,7 más. Las dos semanas anteriores cuadraban a la centésima el día de su
+  parte. El atlas publica la cifra del Boletín, que es su fuente.
+- El resumen n.º 42 dice que la energía almacenada baja 235 GWh respecto al
+  boletín anterior, y entre los 10.522 GWh que publicó el n.º 41 y los 10.425
+  de hoy van 97. El Ministerio recalcula la energía de la semana anterior y
+  no publica la cifra recalculada; la película del atlas sigue cada resumen
+  en su semana, y esa diferencia no es un dato del atlas.
+
+### Añadido
+
+- 375 puntos de serie, uno por embalse que informa: 723.840 en total. La
+  película de energía del conjunto gana el punto del 20 de octubre y llega a
+  86 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 20 de octubre, que
+  reemplaza a la del 13; el resumen semanal n.º 42 y el desglose por embalses
+  n.º 42; y la captura del visor del 20 de octubre con el parte entero.
+- Archivados en `fuentes/ree/2026/`: el listado de solicitudes de acceso de
+  demanda a la red de transporte publicado el 15 de octubre de 2026 y el
+  fichero de capacidad por nudo a 1 de octubre, que Red Eléctrica no conserva.
+
+### La guardia
+
+- Doce hallazgos de los vigías entre el 15 y el 20 de octubre, juzgados el 20:
+  - once son señal: las solicitudes de acceso para consumo que el listado de
+    octubre de Red Eléctrica trae por primera vez, sin promotor ni finalidad,
+    en los nudos de Cedillo 400 (133,5 MW), Compostilla 220 (205 MW), Don
+    Álvaro 400 (450 y 22 MW), Manzanares 400, Carmona 400, Santurce 220 (29
+    MW), Tabernas 220, Vaguadas 220 (12,5 MW), Valparaíso 220 y Virtus 400.
+    Ningún registro de las capas de grandes consumos cita esos nudos, y
+    ninguno es hoy nudo de concurso: el fichero de capacidad a 1 de octubre
+    tiene los mismos cincuenta nudos de concurso que el de septiembre;
+  - uno queda fuera: el encargo de redacción del proyecto de sustitución de
+    las turbinas de recuperación de energía por recuperadores isobáricos en
+    una línea de la desalinizadora de San Pedro del Pinatar, que mejora su
+    eficiencia y no cambia nada de lo que el atlas registra, como las
+    licitaciones iguales de Alicante y Baleares.
+- Los demás vigías no despertaron.
+
+### Huecos
+
+- Por qué la base corrige dos semanas atrás, y por qué el visor acompaña una
+  corrección y no la otra. Las dos publicaciones del Boletín lo dan sin
+  explicación.
+- Qué cifra de energía del parte del 13 de octubre usa el Ministerio para
+  decir que la de hoy baja 235 GWh. No la publica.
+- La capacidad de La Barca, 29 hm³ desde el parte del 6 de octubre donde antes
+  publicaba 34, sigue sin explicación del Boletín.
+
+---
+
 ## datos-v2026.10.179 — El parte del 13 de octubre, y cuatro cifras del Segura corregidas
 
 Esta edición lleva `agua-embalsada` al parte del 13 de octubre de 2026, con

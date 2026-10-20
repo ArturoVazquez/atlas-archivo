@@ -1653,6 +1653,18 @@ Ese día las dos publicaciones daban 32.691 hm³ para el parte del 6 de octubre,
 4 más que los 32.687 con los que salió: Anchuricas, Fuensanta, Santomera y
 Talave, en el Segura, subieron un hectómetro cúbico cada uno en la base y en el
 visor.
+El 20 de octubre el visor seguía dando 35 para el parte del 8 de septiembre. Las
+375 cifras del parte del 20 de octubre coincidían en la base y en el visor; esa
+captura del parte 42 está en
+`fuentes/miteco/2026/2026-10-20_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-42.json`.
+Ese día las dos publicaciones daban 32.414 hm³ para el parte del 13 de octubre,
+5 más que los 32.409 con los que salió: diez cifras de uno o dos hectómetros
+cúbicos, siete en el Ebro (Canelles, Escales, Llauset, Mansilla, Mequinenza,
+Ribarroja y Tremp) y tres en el Segura (Anchuricas, Cenajo y Fuensanta),
+corregidas a la vez en la base y en el visor. Para el parte del 6 de octubre se
+separaron: la base subió Escales de 124 a 126 hm³ y Mequinenza de 789 a 790, y
+el visor siguió dando 124 y 789, así que ese parte suma 32.694 hm³ en la base y
+32.691 en el visor.
 En cada refresco se vuelve a pedir el visor y se coteja con la base.
 **El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
 de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la
