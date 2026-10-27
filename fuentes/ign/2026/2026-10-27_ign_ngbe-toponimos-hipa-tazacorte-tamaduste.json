@@ -1,0 +1,1501 @@
+{
+ "_": "Consultas al Nomenclátor Geográfico Básico de España para los dos amarres del cable HIPA (El Hierro-La Palma), hechas el 2026-10-27. El proyecto básico sitúa el amarre de La Palma en la playa de los Tarajales de Tazacorte, junto al puerto, y el de El Hierro en una ensenada al este de Tamaduste, al final de la calle El Picacho, sin nombrarla. Ninguna de las dos playas está en el Nomenclátor: las consultas por nombre devuelven cero o topónimos «Los Tarajales» de otras islas, y los recuadros sobre las dos costas, que no llegan al tope de la respuesta (numberMatched igual a numberReturned), no contienen ninguna playa con ese nombre. En La Palma la única playa del recuadro amplio es la Playa de la Viña, al sur del puerto; en Tamaduste la única playa es la Playa del Salto, a unos 365 m del punto del proyecto, donde amarra otro cable.",
+ "consultas": [
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20los%20Tarajales",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [],
+    "numberMatched": 0,
+    "numberReturned": 0,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20los%20Tarajales"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=50&etiqueta=Playa%20de%20los%20Tarajales"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=50&etiqueta=Playa%20de%20los%20Tarajales"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:10:54.982349Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20Los%20Tarajales",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [],
+    "numberMatched": 0,
+    "numberReturned": 0,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20Los%20Tarajales"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=50&etiqueta=Playa%20de%20Los%20Tarajales"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=50&etiqueta=Playa%20de%20Los%20Tarajales"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:11:04.898035Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Los%20Tarajales",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Los Tarajales",
+       "fecha": "2023-07-24"
+      },
+      "id": "2626569",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -15.453775553865421,
+        28.092957354463312
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Los Tarajales",
+       "fecha": "2023-07-13"
+      },
+      "id": "2636581",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -16.4921874999999,
+        28.091125489
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Los Tarajales",
+       "fecha": "2023-07-13"
+      },
+      "id": "2636582",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -16.8157958979999,
+        28.190490723
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.NGBE",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Los Tarajales",
+       "fecha": "2023-06-28"
+      },
+      "id": "561098",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -6.47930795199994,
+        37.1818844620001
+       ]
+      }
+     }
+    ],
+    "numberMatched": 4,
+    "numberReturned": 4,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Los%20Tarajales"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=50&etiqueta=Los%20Tarajales"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=50&etiqueta=Los%20Tarajales"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:10:55.103545Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Tarajales",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [],
+    "numberMatched": 0,
+    "numberReturned": 0,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Tarajales"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=50&etiqueta=Tarajales"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=50&etiqueta=Tarajales"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:11:05.016997Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20Tazacorte",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [],
+    "numberMatched": 0,
+    "numberReturned": 0,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20Tazacorte"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=50&etiqueta=Playa%20de%20Tazacorte"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=50&etiqueta=Playa%20de%20Tazacorte"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:11:05.139416Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=500&bbox=-17.955,28.640,-17.935,28.655",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Curso natural de agua",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Barranco de las Angustias",
+       "fecha": "2023-07-19"
+      },
+      "id": "2630470",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9425048829999,
+        28.6527099620001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Curso natural de agua",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Barranco Hondo",
+       "fecha": "2023-07-07"
+      },
+      "id": "2630562",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9351196289999,
+        28.651123048
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Edificación",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Casa de la Punta",
+       "fecha": "2023-07-07"
+      },
+      "id": "2630661",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9403076179999,
+        28.6500854500001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.5",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Hidrónimo puntual",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Pozo San Antonio",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631877",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9382934579999,
+        28.6414794930001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "3.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Puerto",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Puerto de Tazacorte",
+       "fecha": "2023-07-24"
+      },
+      "id": "2631883",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.944519043,
+        28.645080567
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Punta de Juan Graje",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631900",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9492797849999,
+        28.6519165050001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Punta del Cascajo",
+       "fecha": "2023-07-20"
+      },
+      "id": "2631927",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9439086909999,
+        28.643127442
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.10",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Núcleos de población",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Puerto",
+       "fecha": "2025-09-18"
+      },
+      "id": "2641083",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94574851,
+        28.6521592
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Puerto",
+       "fecha": "2025-09-18"
+      },
+      "id": "2872024",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94574851,
+        28.6521592
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tarajal",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872026",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9440917969999,
+        28.64630127
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.3.1",
+       "fuente": "MITMA.IGN.Red Geodésica",
+       "tipo": "Vértice Geodésico",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tazacorte",
+       "fecha": "2023-06-30"
+      },
+      "id": "3300911",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94926928,
+        28.6516033
+       ]
+      }
+     }
+    ],
+    "numberMatched": 11,
+    "numberReturned": 11,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=500&bbox=-17.955,28.640,-17.935,28.655"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=500&bbox=-17.955,28.640,-17.935,28.655"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=500&bbox=-17.955,28.640,-17.935,28.655"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:10:55.227596Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=500&bbox=-17.975,28.62,-17.925,28.67",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Curso natural de agua",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Barranco de las Angustias",
+       "fecha": "2023-07-19"
+      },
+      "id": "2630470",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9425048829999,
+        28.6527099620001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Curso natural de agua",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Barranco Hondo",
+       "fecha": "2023-07-07"
+      },
+      "id": "2630562",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9351196289999,
+        28.651123048
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.3",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Curso artificial de agua",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Canal de Amagar",
+       "fecha": "2023-07-21"
+      },
+      "id": "2630615",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9539794919999,
+        28.6668701180001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Edificación",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Casa de la Punta",
+       "fecha": "2023-07-07"
+      },
+      "id": "2630661",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9403076179999,
+        28.6500854500001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Edificación",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Casa Massieu",
+       "fecha": "2023-07-21"
+      },
+      "id": "2630666",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9270019529999,
+        28.655517579
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "El Perdido",
+       "fecha": "2026-01-30"
+      },
+      "id": "2630842",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.927799749622015,
+        28.622513520043515
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Janero",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631142",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9569091789999,
+        28.6666870130001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "La Flamenca",
+       "fecha": "2023-07-20"
+      },
+      "id": "2631194",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9566040039999,
+        28.6580810560001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.3",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Elemento puntual del paisaje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Mirador el Timo",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631660",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9414062499999,
+        28.6643066410001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Mirasoles",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631664",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9509277339999,
+        28.6566772470001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.1.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Montaña",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Montaña Argual",
+       "fecha": "2023-07-25"
+      },
+      "id": "2631668",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9273071289999,
+        28.652893067
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Morro Negro",
+       "fecha": "2023-07-20"
+      },
+      "id": "2631762",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.96282959,
+        28.6671142590001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Playa",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Playa de la Viña",
+       "fecha": "2026-01-30"
+      },
+      "id": "2631845",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.934429595807174,
+        28.630102818180365
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "5.5",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Hidrónimo puntual",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Pozo San Antonio",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631877",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9382934579999,
+        28.6414794930001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "3.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Puerto",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Puerto de Tazacorte",
+       "fecha": "2023-07-24"
+      },
+      "id": "2631883",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.944519043,
+        28.645080567
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Punta de Juan Graje",
+       "fecha": "2023-07-21"
+      },
+      "id": "2631900",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9492797849999,
+        28.6519165050001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Punta del Cascajo",
+       "fecha": "2023-07-20"
+      },
+      "id": "2631927",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9439086909999,
+        28.643127442
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.3",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Isla",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Roques de Don Pedro",
+       "fecha": "2023-07-20"
+      },
+      "id": "2632017",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.942810059,
+        28.6328735360001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.3",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Isla",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Roques Gabaseras",
+       "fecha": "2023-07-20"
+      },
+      "id": "2632024",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9426269529999,
+        28.6369018560001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Salto del Perro",
+       "fecha": "2023-07-21"
+      },
+      "id": "2632039",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9598999019999,
+        28.668701173
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "San Isidro",
+       "fecha": "2023-07-13"
+      },
+      "id": "2632047",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9317016599999,
+        28.6304931650001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.10",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Núcleos de población",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Puerto",
+       "fecha": "2025-09-18"
+      },
+      "id": "2641083",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94574851,
+        28.6521592
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "1.3",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Municipio",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tazacorte",
+       "fecha": "2025-07-06"
+      },
+      "id": "2710537",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.93317984,
+        28.64060628
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.3",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Capital de municipio",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tazacorte",
+       "fecha": "2025-07-06"
+      },
+      "id": "2814457",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.93317984,
+        28.64060628
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Cardón",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872021",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9302978509999,
+        28.6444702150001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Marina",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872023",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9307250979999,
+        28.6367187500001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Puerto",
+       "fecha": "2025-09-18"
+      },
+      "id": "2872024",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94574851,
+        28.6521592
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "San Borondón",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872025",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.932800293,
+        28.6347045910001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tarajal",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872026",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9440917969999,
+        28.64630127
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tazacorte",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872027",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9343872069999,
+        28.6412963870001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "La Costa",
+       "fecha": "2023-06-29"
+      },
+      "id": "2872043",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9522094729999,
+        28.6660766610001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.3.1",
+       "fuente": "MITMA.IGN.Red Geodésica",
+       "tipo": "Vértice Geodésico",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tazacorte",
+       "fecha": "2023-06-30"
+      },
+      "id": "3300911",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94926928,
+        28.6516033
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.3.1",
+       "fuente": "MITMA.IGN.Red Geodésica",
+       "tipo": "Vértice Geodésico",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Time",
+       "fecha": "2023-06-30"
+      },
+      "id": "3300912",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.94129082,
+        28.66648371
+       ]
+      }
+     }
+    ],
+    "numberMatched": 33,
+    "numberReturned": 33,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=500&bbox=-17.975,28.62,-17.925,28.67"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=500&bbox=-17.975,28.62,-17.925,28.67"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=500&bbox=-17.975,28.62,-17.925,28.67"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:11:05.264651Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20Tamaduste",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [],
+    "numberMatched": 0,
+    "numberReturned": 0,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=50&etiqueta=Playa%20de%20Tamaduste"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=50&etiqueta=Playa%20de%20Tamaduste"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=50&etiqueta=Playa%20de%20Tamaduste"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:11:05.401736Z"
+   }
+  },
+  {
+   "url": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=500&bbox=-17.905,27.818,-17.885,27.834",
+   "fecha": "2026-10-27",
+   "respuesta": {
+    "type": "FeatureCollection",
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Baja de Guillermo",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619262",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8925781249999,
+        27.8261108400001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "El Pachonero",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619383",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8897094729999,
+        27.8206787110001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Espigón de la Beata",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619408",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8869018549999,
+        27.8182983400001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Lomo de Candía",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619610",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.9005126949999,
+        27.819091798
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "4.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Paraje",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Malpaís del Tamaduste",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619653",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8994750979999,
+        27.8308715830001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Playa",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Playa del Salto",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619832",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8936157229999,
+        27.8286743180001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Punta de los Bajones",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619868",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8937988279999,
+        27.8308715830001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.1",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Saliente costero",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Punta de Malpaís",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619876",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8939208979999,
+        27.832275392
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.3",
+       "fuente": "C.A. Canarias",
+       "tipo": "Isla",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "El Roque de las Gaviotas",
+       "fecha": "2025-12-16"
+      },
+      "id": "2619946",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8950805659999,
+        27.8334960940001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.2.3",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Isla",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Roque Tagao",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619961",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8875122069999,
+        27.818908692
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "6.1.2",
+       "fuente": "MITMA.IGN.BTN25",
+       "tipo": "Entrante costero y estrecho marítimo",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Ría del Tamaduste",
+       "fecha": "2023-07-20"
+      },
+      "id": "2619970",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.8950195309999,
+        27.8239135750001
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.10",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Núcleos de población",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tamaduste",
+       "fecha": "2025-09-18"
+      },
+      "id": "2641148",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.89689738,
+        27.82440208
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "codigo_ngbe": "2.1.9",
+       "fuente": "MITMA.IGN.NGMEP",
+       "tipo": "Entidad singular",
+       "tiponombre": "identificador_geografico",
+       "etiqueta": "Tamaduste",
+       "fecha": "2025-09-18"
+      },
+      "id": "2872051",
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        -17.89689738,
+        27.82440208
+       ]
+      }
+     }
+    ],
+    "numberMatched": 13,
+    "numberReturned": 13,
+    "links": [
+     {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=json&limit=500&bbox=-17.905,27.818,-17.885,27.834"
+     },
+     {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=jsonld&limit=500&bbox=-17.905,27.818,-17.885,27.834"
+     },
+     {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api-features.ign.es/collections/namedplace/items?f=html&limit=500&bbox=-17.905,27.818,-17.885,27.834"
+     },
+     {
+      "type": "application/json",
+      "title": "GN Lugar nombrado",
+      "rel": "collection",
+      "href": "https://api-features.ign.es/collections/namedplace"
+     }
+    ],
+    "timeStamp": "2026-10-27T19:10:55.352314Z"
+   }
+  }
+ ]
+}

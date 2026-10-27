@@ -1665,6 +1665,16 @@ corregidas a la vez en la base y en el visor. Para el parte del 6 de octubre se
 separaron: la base subió Escales de 124 a 126 hm³ y Mequinenza de 789 a 790, y
 el visor siguió dando 124 y 789, así que ese parte suma 32.694 hm³ en la base y
 32.691 en el visor.
+El 27 de octubre el visor seguía dando 35 para el parte del 8 de septiembre. Las
+375 cifras del parte del 27 de octubre coincidían en la base y en el visor; esa
+captura del parte 43 está en
+`fuentes/miteco/2026/2026-10-27_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-43.json`.
+Ese día la base no corrigió ninguna cifra ya publicada, y el parte del 20 de
+octubre sumaba 32.062 hm³ en las dos publicaciones. El visor, en cambio, volvió
+atrás en el parte del 13 de octubre: daba otra vez, cifra a cifra, lo mismo que
+la captura del parte 41 del 14 de octubre, 32.409 hm³, y dejó sin efecto las
+diez correcciones que había acompañado el 20. La base seguía dando 32.414. Para
+el parte del 6 de octubre el visor seguía en 32.691 y la base en 32.694.
 En cada refresco se vuelve a pedir el visor y se coteja con la base.
 **El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
 de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la
@@ -1821,6 +1831,23 @@ archivados en la `.33` como comprobados-y-fuera porque una subvención no sitúa
 nada, entran ahora a decir lo que sí dicen. El BOJA se archivó en sus dos
 formas (facsímil PDF y texto web): el PDF esconde su texto a la extracción,
 como el del BOC.
+**Qué se añadió** *(2026-10-27)* · Los dos aterrizajes del cable **HIPA**,
+entre El Hierro y La Palma. El BOC n.º 208, de 19 de octubre de 2026 (anuncio
+3593, firmado el 25 de septiembre), somete a información pública la solicitud
+de concesión de Telefónica de España, S.A., entre Tazacorte y Valverde. El
+anuncio nombra el sistema y sitúa por términos municipales. Los amarres los da
+el proyecto básico de la misma información pública, que Costas de Canarias
+publica en un paquete comprimido junto con los anexos y los planos; se archiva
+solo su documento n.º 1, Memoria y Presupuesto. La Memoria sitúa el amarre de
+La Palma en la playa de los Tarajales, al norte del puerto de Tazacorte, y el
+de El Hierro en una ensenada sin nombre al este de Tamaduste, a unos 365 m del
+amarre de Canalink Base 6. Ninguna de las dos playas está en el Nomenclátor,
+y la consulta archivada lo acredita con búsquedas por nombre y recuadros sobre
+las dos costas. Por eso los dos puntos son exactos: las coordenadas de entrada
+en el dominio público marítimo-terrestre que publica la Memoria. La misma
+Memoria dice que el sistema lo promueve el Ministerio de Defensa dentro de su
+red I3D y que Telefónica es la adjudicataria del contrato. El anuncio se
+archiva en sus dos formas oficiales, facsímil PDF y texto HTML del BOC.
 **Archivado** · 24 ficheros · **El resto** · CHANGELOG `datos-v2026.08.17`,
 `.33`, `.98`, `.103` y `.105` · §10
 

@@ -37,6 +37,128 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.10.181 — El parte del 27 de octubre, y el cable HIPA entre El Hierro y La Palma
+
+Esta edición lleva `agua-embalsada` al parte del 27 de octubre de 2026, con
+su energía, sin que la base nueva corrija ninguna cifra ya publicada. Entran
+los dos aterrizajes del cable submarino de telecomunicaciones HIPA, entre El
+Hierro y La Palma, cuya solicitud de concesión salió a información pública en
+el Boletín Oficial de Canarias. Y se juzgan los once hallazgos que los vigías
+señalaron entre el 15 y el 27 de octubre.
+
+### Añadido
+
+- `cables-submarinos:hipa-tamaduste` y `cables-submarinos:hipa-tazacorte`.
+  La Dirección General de Costas y Gestión del espacio marítimo canario
+  sometió a información pública, en el Boletín Oficial de Canarias del 19 de
+  octubre de 2026, la solicitud de Telefónica de España para ocupar dominio
+  público marítimo-terrestre con el cable submarino de telecomunicaciones El
+  Hierro-La Palma-HIPA, entre Valverde y Tazacorte. El anuncio nombra el sistema y
+  sitúa por términos municipales; los amarres los da el proyecto básico de la
+  misma información pública: la playa de los Tarajales, al norte del puerto
+  de Tazacorte, y una ensenada sin nombre al este de Tamaduste, a unos 365 m
+  del amarre de Canalink Base 6, que es otro cable de otro titular. El
+  Nomenclátor del IGN no recoge ninguna de las dos playas, y la consulta
+  archivada lo acredita, así que los dos puntos son las coordenadas de
+  entrada en el dominio público que publica la Memoria. La misma Memoria
+  dice que el sistema lo promueve el Ministerio de Defensa dentro de su red
+  de información para la defensa y que Telefónica es la adjudicataria del
+  contrato; el titular del registro es quien pide la concesión, y Defensa va
+  en una clave. La entidad de Telefónica de España gana el alias con el que
+  el anuncio la nombra, sin la U, que es la misma sociedad con el mismo NIF.
+- 375 puntos de serie, uno por embalse que informa: 724.215 en total. La
+  película de energía del conjunto gana el punto del 27 de octubre y llega a
+  87 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 27 de octubre, que
+  reemplaza a la del 20; el resumen semanal n.º 43 y el desglose por embalses
+  n.º 43; y la captura del visor del 27 de octubre con el parte entero, cuyas
+  375 cifras coinciden con la base.
+- Archivados el anuncio del cable HIPA en `fuentes/boc/2026/`, en sus dos
+  formas oficiales; la Memoria de su proyecto básico en `fuentes/canarias/2026/`;
+  y la consulta al Nomenclátor de las dos costas en `fuentes/ign/2026/`.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 27 de octubre de 2026. Los 375 embalses
+  que informan por separado suman 31.809 hm³ de una capacidad de 56.049, el
+  56,8 %. El 20 de octubre sumaban 32.062: la reserva baja 253 hm³ en la
+  semana. La cifra no es la reserva nacional, porque el Boletín no cuenta todo
+  lo embalsado de España, y por eso se publica con su denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 43
+  da 10.223 GWh almacenados de 23.013, el 44,4 %, y 427,3 GWh producidos en la
+  semana del 19 al 25 de octubre. En lo que va de año son 31.161 GWh, contra
+  33.063 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versiones de capa: `agua-embalsada` 1.8.2 → 1.8.3; `cables-submarinos`
+  1.8.0 → 1.9.0, por los dos registros nuevos.
+
+### Sin cambio
+
+- Ninguna cifra ya publicada cambia con la base nueva. Las 402 series se
+  cotejaron punto a punto contra la edición anterior. Los 87 desgloses
+  archivados siguen dando 35 partes corregidos y 196 cifras, ninguna más.
+- El desglose por embalses del n.º 43 da las mismas 375 cifras que la base, y
+  el visor también. El resumen dice que la energía baja 202 GWh respecto al
+  boletín anterior, y esta vez esa cuenta sale de la cifra que publicó el
+  n.º 42.
+- El visor del Boletín ha deshecho, en bloque, las diez correcciones del
+  parte del 13 de octubre que la semana pasada acompañaba: el 27 de octubre
+  daba otra vez las cifras con las que salió ese parte, 32.409 hm³, idénticas
+  a la captura del 14, mientras la base mantiene las corregidas, 32.414. En el
+  parte del 6 las dos publicaciones siguen separadas por los 3 hm³ de Escales
+  y Mequinenza. El atlas sigue a la base.
+- `agua-embalsada:requejada-duero`: el 27 de octubre el visor seguía dando 35
+  hm³ para el parte del 8 de septiembre, la cifra de la base.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 427,3
+  GWh, la reproduce el balance eléctrico que Red Eléctrica servía el 27 de
+  octubre por la tarde: hidráulica más turbinación de bombeo suman 427,30 GWh.
+
+### La guardia
+
+- Once hallazgos de los vigías entre el 15 y el 27 de octubre, juzgados el 27:
+  - uno entra como dato: la información pública del cable HIPA, de arriba;
+  - cuatro son señal: las consultas previas del estudio ambiental estratégico
+    del Campus Data Center San Mateo de Gállego, promovido por Copiapo
+    Renovables, que el acto nombra y reparte por cinco municipios pero no
+    dimensiona; la declaración de impacto ambiental del ducto de hidrógeno
+    Andorra-Caspe de CI ETF I Green Hydrogen for Spain, que coincide con el
+    hidroducto que describe la ficha del electrolizador Catalina pero cuyo
+    promotor no es, por su nombre, el del registro, y ningún documento une
+    a las dos sociedades; la planta de hidrógeno verde que Canal de Isabel II
+    contrató en 2023 y cuyo plazo se amplió el 20 de octubre, sin acto que
+    la sitúe; y el encargo del proyecto básico de una desaladora nueva en el
+    sur de Fuerteventura;
+  - seis quedan fuera: una adenda de financiación de contratos predoctorales
+    en Extremadura, que despertó al vigía por el nombre de un plan de
+    hidrógeno; la inscripción de la fusión por absorción de Enel Green Power
+    España y Compañía Eólica de Tierras Altas por Endesa Generación, que el
+    anuncio de septiembre ya recogía y no cambia nada de la entidad; una
+    fotovoltaica para la desaladora de Roque Prieto y unos filtros de arena
+    para la de Bocabarranco, en Gran Canaria; un convenio de asistencia
+    jurídica entre la Abogacía General del Estado y Enusa; y el Real Decreto
+    845/2026, que aplica en España los reglamentos europeos de materias primas
+    fundamentales y de tecnologías de cero emisiones netas, fija los efectos
+    de la condición de proyecto estratégico que llevan siete registros de
+    minerales y no nombra ninguno.
+- El listado de octubre del acceso a la red, juzgado la semana pasada, deja
+  al vigía en rojo hasta su corrida del 20 de noviembre.
+
+### Huecos
+
+- Si CI ETF I Green Hydrogen for Spain es la sociedad que promueve el
+  electrolizador Catalina. La ficha del registro nombra a otra sociedad del
+  mismo grupo, y hasta que un documento las una la declaración de impacto
+  ambiental de su ducto no se le atribuye.
+- Por qué el visor del Boletín deshace correcciones que ya había acompañado.
+  Las dos publicaciones del Boletín lo dan sin explicación.
+- La capacidad de La Barca, 29 hm³ desde el parte del 6 de octubre donde antes
+  publicaba 34, sigue sin explicación del Boletín.
+- La longitud del cable HIPA. La Memoria del proyecto la da dos veces y no
+  coincide consigo misma, 112,17 y 112,72 km, y los registros no la escriben.
+
+---
+
 ## datos-v2026.10.180 — El parte del 20 de octubre, doce cifras corregidas dos semanas atrás, y el listado de octubre del acceso a la red
 
 Esta edición lleva `agua-embalsada` al parte del 20 de octubre de 2026, con
