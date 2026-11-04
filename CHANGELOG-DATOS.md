@@ -37,6 +37,124 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.11.182 — El parte del 3 de noviembre, y la concesión de Canalink Base 6
+
+Esta edición lleva `agua-embalsada` al parte del 3 de noviembre de 2026, con
+su energía, sin que la base nueva corrija ninguna cifra ya publicada. Los dos
+aterrizajes del cable Canalink Base 6, entre Tenerife y El Hierro, tienen ya
+su concesión de dominio público otorgada y pasan a desarrollo. Y se juzgan los
+catorce hallazgos que los vigías señalaron entre el 28 de octubre y el 4 de
+noviembre.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 3 de noviembre de 2026. Los 375 embalses
+  que informan por separado suman 31.402 hm³ de una capacidad de 56.049, el
+  56,0 %. El 27 de octubre sumaban 31.809: la reserva baja 407 hm³ en la
+  semana. La cifra no es la reserva nacional, porque el Boletín no cuenta todo
+  lo embalsado de España, y por eso se publica con su denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 44
+  da 9.902 GWh almacenados de 23.013, el 43,0 %, y 500,2 GWh producidos en la
+  semana del 26 de octubre al 1 de noviembre. En lo que va de año son 31.661
+  GWh, contra 33.518 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- `cables-submarinos:canalink-base-6-tamaduste` y
+  `cables-submarinos:canalink-base-6-candelaria` pasan de tramitación a
+  desarrollo. La Dirección General de Costas y Gestión del espacio marítimo
+  canario publicó en el Boletín Oficial de Canarias del 3 de noviembre de 2026
+  el otorgamiento, por Resolución 788/2026 de 9 de septiembre, de la concesión
+  de dominio público marítimo-terrestre a Canarias Submarine Link, S.L.: una
+  sola concesión para los dos amarres, de 212.045,31 m², por veinticinco años
+  prorrogables por periodos de quince hasta el máximo legal. El anuncio no da
+  la cifra del canon. La fase es desarrollo y no producción porque la
+  concesión autoriza la instalación y ningún acto dice que el cable esté
+  tendido, el mismo criterio que la Virgen del Mar. El amarre de Candelaria
+  gana el nombre de su playa, la de Las Arenas en Caletillas, que el anuncio
+  nombra sin coordenada; su punto sigue en el término municipal. El acto cita
+  en su campo de deslinde un término municipal que no es ninguno de los dos,
+  Santiago del Teide, y la ficha lo declara sin transcribirlo. La información
+  pública de mayo, que ya era fuente, lleva ahora su hito.
+- Versiones de capa: `agua-embalsada` 1.8.3 → 1.8.4; `cables-submarinos`
+  1.9.0 → 1.9.1.
+
+### Añadido
+
+- 375 puntos de serie, uno por embalse que informa: 724.590 en total. La
+  película de energía del conjunto gana el punto del 3 de noviembre y llega a
+  88 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 3 de noviembre, que
+  reemplaza a la del 27 de octubre; el resumen semanal n.º 44 y el desglose
+  por embalses n.º 44; la captura del visor del 4 de noviembre con el parte
+  entero, cuyas 375 cifras coinciden con la base; y una captura del parte del
+  13 de octubre tal como el visor lo daba el 4 de noviembre, por lo que se
+  cuenta abajo.
+- Archivado en `fuentes/boc/2026/` el anuncio del otorgamiento de la concesión
+  de Canalink Base 6, en facsímil y en el texto del propio boletín.
+
+### Sin cambio
+
+- Ninguna cifra ya publicada cambia con la base nueva. Las 402 series se
+  cotejaron punto a punto contra la edición anterior. Los 88 desgloses
+  archivados siguen dando 35 partes corregidos y 196 cifras, ninguna más.
+- El desglose por embalses del n.º 44 da las mismas 375 cifras que la base, y
+  el visor también. Los partes del 27 y del 20 de octubre coinciden en las dos
+  publicaciones.
+- El visor del Boletín vuelve a dar, para el parte del 13 de octubre, las diez
+  cifras corregidas que la base publica desde el 20 de octubre, 32.414 hm³. El
+  27 de octubre las había deshecho y daba 32.409. En el parte del 6 de octubre
+  las dos publicaciones siguen separadas por los 3 hm³ de Escales y
+  Mequinenza. El atlas sigue a la base.
+- `agua-embalsada:requejada-duero`: el visor sigue dando 35 hm³ para el parte
+  del 8 de septiembre, la cifra de la base.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 500,2
+  GWh, no la reproduce el balance eléctrico que Red Eléctrica servía el 4 de
+  noviembre por la noche: hidráulica más turbinación de bombeo suman 507,4
+  GWh, 7,2 más. Red Eléctrica revisa su balance después de publicarlo, y la
+  consulta se hizo un día después del parte. El atlas publica la cifra del
+  Boletín, que es su fuente.
+
+### La guardia
+
+- Catorce hallazgos de los vigías entre el 28 de octubre y el 4 de noviembre,
+  diez juzgados el 2 de noviembre y cuatro el 4:
+  - uno entra como dato: el otorgamiento de la concesión de Canalink Base 6,
+    de arriba;
+  - cinco se suman a un expediente que ya se sigue: la coordinación de
+    seguridad y salud de la conducción de vertido de salmuera de la desaladora
+    de Carboneras; la dirección de obra de la ampliación de la desaladora de
+    Torrevieja; la ingeniería del almacén temporal de Vandellós I, contratada
+    en 2022; la evaluación ambiental de la planta fotovoltaica de autoconsumo
+    de las dos desaladoras de San Pedro del Pinatar; y las consultas previas
+    del estudio ambiental estratégico del Plan de Interés General del campus
+    de centros de datos Zaragoza-Wind, en Botorrita, primer trámite del plan
+    que el acuerdo de julio llamaba futuro;
+  - uno es señal: los anteproyectos para aumentar la capacidad de
+    desalinización en las zonas regables del trasvase Tajo-Segura, que la
+    Confederación Hidrográfica del Segura contrató en 2025 sin nombrar planta;
+  - siete quedan fuera: tres cambios de socio único en filiales de Repsol y de
+    Financiera Maderera que no nombran ningún registro; la sustitución de un
+    extractor de gases en la planta de contenedores de El Cabril; la
+    rehabilitación de una tubería de agua potable aguas abajo de la desaladora
+    de Alcúdia; la declaración de interés autonómico de la plataforma
+    logística Atenea, al norte de Zaragoza, que cita los centros de datos de la
+    zona como argumento y no tiene ninguno; y la modificación del plan de la
+    ampliación de la estación de esquí de Cerler, que despertó al vigía por la
+    fórmula del acuerdo.
+
+### Huecos
+
+- El canon de la concesión de Canalink Base 6. El anuncio dice que el
+  concesionario abonará el canon final en el Tesoro Público y no da la cifra.
+- Por qué el visor del Boletín deshace y rehace correcciones que la base ya
+  publicó. Las dos publicaciones del Boletín lo dan sin explicación. Desde esta
+  edición se vuelve a pedir al visor cada parte en el que las dos publicaciones
+  quedaron separadas la última vez, y no solo los dos anteriores.
+- Qué balance de Red Eléctrica leyó el Boletín para dar 500,2 GWh. El que Red
+  Eléctrica servía al día siguiente no lo reproduce.
+
+---
+
 ## datos-v2026.10.181 — El parte del 27 de octubre, y el cable HIPA entre El Hierro y La Palma
 
 Esta edición lleva `agua-embalsada` al parte del 27 de octubre de 2026, con

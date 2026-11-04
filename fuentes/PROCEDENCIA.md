@@ -1675,7 +1675,13 @@ atrás en el parte del 13 de octubre: daba otra vez, cifra a cifra, lo mismo que
 la captura del parte 41 del 14 de octubre, 32.409 hm³, y dejó sin efecto las
 diez correcciones que había acompañado el 20. La base seguía dando 32.414. Para
 el parte del 6 de octubre el visor seguía en 32.691 y la base en 32.694.
-En cada refresco se vuelve a pedir el visor y se coteja con la base.
+El 4 de noviembre el visor volvía a dar las diez correcciones del parte del 13
+de octubre, 32.414 como la base, y esa captura está en
+`fuentes/miteco/2026/2026-11-04_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-41.json`;
+el parte del 6 seguía separado por los mismos 3 hm³. El visor deshace y rehace
+sin anunciarlo. Por eso en cada refresco se pide al visor el parte nuevo, los
+dos anteriores y cada parte en el que las dos publicaciones quedaron separadas
+la última vez, y se coteja todo con la base.
 **El desglose por embalses, archivado desde el 2026-09-23.** El documento 60
 de cada Boletín, «Reserva hidráulica: desglose por embalses», da por embalse la
 capacidad, el agua actual, la diferencia con la semana anterior y la energía
