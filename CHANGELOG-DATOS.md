@@ -37,6 +37,91 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.11.183 — El parte del 10 de noviembre, y ocho hallazgos juzgados
+
+Esta edición lleva `agua-embalsada` al parte del 10 de noviembre de 2026, con
+su energía, sin que la base nueva corrija ninguna cifra ya publicada. Y juzga
+los ocho hallazgos que los vigías señalaron entre el 4 y el 10 de noviembre:
+uno se suma a un expediente y siete quedan fuera.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 10 de noviembre de 2026. Los 375
+  embalses que informan por separado suman 31.000 hm³ de una capacidad de
+  56.049, el 55,3 %. El 3 de noviembre sumaban 31.402: la reserva baja 402 hm³
+  en la semana. La cifra no es la reserva nacional, porque el Boletín no cuenta
+  todo lo embalsado de España, y por eso se publica con su denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 45
+  da 9.536 GWh almacenados de 23.013, el 41,4 %, y 486,3 GWh producidos en la
+  semana del 2 al 8 de noviembre. En lo que va de año son 32.165 GWh, contra
+  33.930 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- Versión de la capa: 1.8.4 → 1.8.5.
+
+### Añadido
+
+- 375 puntos de serie, uno por embalse que informa: 724.965 en total. La
+  película de energía del conjunto gana el punto del 10 de noviembre y llega a
+  89 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 10 de noviembre, que
+  reemplaza a la del 3; el resumen semanal n.º 45 y el desglose por embalses
+  n.º 45; la captura del visor del 10 de noviembre con el parte entero, cuyas
+  375 cifras coinciden con la base; y una captura del parte del 6 de octubre
+  tal como el visor lo daba el 10 de noviembre, por lo que se cuenta abajo.
+
+### Sin cambio
+
+- Ninguna cifra ya publicada cambia con la base nueva. Las 402 series se
+  cotejaron punto a punto contra la edición anterior. Los 89 desgloses
+  archivados siguen dando 35 partes corregidos y 196 cifras, ninguna más.
+- El desglose por embalses del n.º 45 da las mismas 375 cifras que la base, y
+  el visor también. Los partes del 3 de noviembre y del 27 de octubre coinciden
+  en las dos publicaciones.
+- El visor del Boletín deshace por tercera vez las diez correcciones del parte
+  del 13 de octubre: las acompañó el 20 de octubre, las deshizo el 27, las
+  rehízo el 4 de noviembre y el 10 vuelve a dar las cifras con las que salió
+  ese parte, 32.409 hm³, mientras la base mantiene 32.414. En el parte del 6 de
+  octubre el visor da ya las cuatro correcciones del Segura del 14 de octubre,
+  que su captura del 7 no tenía, y sigue separado de la base por los 3 hm³ de
+  Escales y Mequinenza. El atlas sigue a la base.
+- `agua-embalsada:requejada-duero`: el visor sigue dando 35 hm³ para el parte
+  del 8 de septiembre, la cifra de la base.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 486,3
+  GWh, la reproduce el balance eléctrico que Red Eléctrica servía el 10 de
+  noviembre por la tarde: hidráulica más turbinación de bombeo suman 486,26
+  GWh.
+
+### La guardia
+
+- Ocho hallazgos de los vigías entre el 4 y el 10 de noviembre, juzgados el
+  10:
+  - uno se suma a un expediente que ya se sigue: la dirección de obra de la
+    nueva conducción de vertido de salmuera de la desaladora de Carboneras,
+    cuyo lote de coordinación de seguridad quedó desierto y se licitó aparte en
+    el contrato que ya constaba;
+  - siete quedan fuera: la corrección de fechas de una licitación de Adif para
+    la red óptica entre sus propios centros de proceso de datos de Delicias,
+    Atocha y Villaverde; tres cambios de socio único en filiales de Exolum y de
+    Repsol que no nombran ningún registro, dos de ellas con denominación nueva;
+    unas canalizaciones interiores en Pozo Izquierdo, con el lote de la
+    desaladora del Sureste de Gran Canaria desierto; el proyecto de una
+    conducción de abastecimiento a Adra desde la desaladora de Campo de
+    Dalías, que es distribución aguas abajo; y la relicitación del extractor de
+    gases de la nave de ferralla de El Cabril, la misma obra que quedó desierta
+    en mayo y que la edición anterior ya dejó fuera.
+
+### Huecos
+
+- Por qué el visor del Boletín deshace y rehace correcciones que la base ya
+  publicó. Las dos publicaciones del Boletín lo dan sin explicación, y el parte
+  del 13 de octubre lleva tres vaivenes.
+- La desaladora de la Mancomunidad del Sureste de Gran Canaria, en Pozo
+  Izquierdo, sigue sin ficha: la contratación la nombra y ningún acto archivado
+  la sitúa ni la dimensiona.
+
+---
+
 ## datos-v2026.11.182 — El parte del 3 de noviembre, y la concesión de Canalink Base 6
 
 Esta edición lleva `agua-embalsada` al parte del 3 de noviembre de 2026, con
