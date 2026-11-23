@@ -37,6 +37,146 @@ que no sabe está afirmando que lo sabe todo.
 
 ---
 
+## datos-v2026.11.184 — El parte del 17 de noviembre, la edición de noviembre de los CSUR y treinta y cuatro hallazgos juzgados
+
+Esta edición lleva `agua-embalsada` al parte del 17 de noviembre de 2026, con
+su energía; la base nueva corrige dos cifras del parte anterior que se
+compensan. La capa `csur` pasa a la edición de noviembre de la lista de
+centros de referencia del Sistema Nacional de Salud, que el Ministerio de
+Sanidad publicó en otra dirección: once designaciones nuevas en ocho
+hospitales y una que sale. El registro de un campus de centros de datos en
+Villamayor de Gállego cita ya la numeración corregida de su plan. Y se juzgan
+los treinta y cuatro hallazgos que los vigías señalaron entre el 5 y el 21 de
+noviembre.
+
+### Cambiado
+
+- `agua-embalsada` avanza al parte del 17 de noviembre de 2026. Los 375
+  embalses que informan por separado suman 31.950 hm³ de una capacidad de
+  56.049, el 57,0 %. El 10 de noviembre sumaban 31.000: la reserva sube 950
+  hm³ en la semana. La cifra no es la reserva nacional, porque el Boletín no
+  cuenta todo lo embalsado de España, y por eso se publica con su
+  denominador.
+- La energía llega en la misma edición que el agua. El resumen semanal n.º 46
+  da 9.870 GWh almacenados de 23.013, el 42,9 %, y 507,6 GWh producidos en la
+  semana del 9 al 15 de noviembre. En lo que va de año son 32.704 GWh, contra
+  34.429 del año anterior.
+- Veintisiete registros conservan su fecha. Son los que el Boletín dejó de
+  publicar por separado, y solo se les mueve la fecha de verificación.
+- `csur` pasa a la edición de noviembre de 2026 de la lista de centros,
+  servicios y unidades de referencia, con órdenes hasta el 12 de noviembre, y
+  a su catálogo de la misma edición. Entran once designaciones en tres
+  patologías que en agosto no tenían centro: cáncer de tiroides complejo
+  (Clínic, Gregorio Marañón, 12 de Octubre, Vall d'Hebrón y Virgen del Rocío),
+  discinesia ciliar primaria (Vall d'Hebrón y La Fe) y cirugía de la estenosis
+  compleja de la vía aérea central en edad adulta (Cruces, La Paz, Virgen del
+  Rocío y La Fe). Sale una: la osteotomía pélvica en displasias de cadera del
+  adulto del Virgen del Rocío. Cambian ocho fichas y ninguna entra ni sale de
+  la capa, porque los once centros ya tenían ficha. El conjunto pasa de 418
+  designaciones a 428 y de 94 patologías con centro a 97; el catálogo lista
+  117. Los 46 hospitales y los seis territorios sin ningún centro de
+  referencia siguen siendo los mismos.
+- `centros-datos:tillion-villamayor` · instrumento — la orden de aprobación
+  inicial del plan del campus se cita como VFL/988/2026. El Boletín Oficial de
+  Aragón la publicó el 7 de julio de 2026 con la numeración VFL/988/2025 y la
+  rectificó el 16 de noviembre; la ficha ya anotaba el desajuste y ahora cita
+  la corrección. La fase, la categoría y las cifras no se mueven.
+- Versiones de capa: `agua-embalsada` 1.8.5 → 1.8.6; `csur` 1.0.0 → 1.1.0, por
+  las designaciones nuevas; `centros-datos` 1.10.2 → 1.10.3.
+
+### Corregido
+
+- `agua-embalsada:cenajo-segura` y `agua-embalsada:lapedrera-segura` · el parte
+  del 10 de noviembre de 2026 pasa de 236 a 235 hm³ en Cenajo y de 86 a 87 en
+  La Pedrera. La base del 17 de noviembre las corrige y la serie sigue a la
+  base. Las dos correcciones se compensan, así que el total publicado del 10,
+  31.000 hm³, no cambia. El visor del Boletín daba ya las cifras corregidas el
+  23 de noviembre.
+
+### Añadido
+
+- 375 puntos de serie, uno por embalse que informa: 725.340 en total. La
+  película de energía del conjunto gana el punto del 17 de noviembre y llega a
+  90 partes.
+- Archivados en `fuentes/miteco/2026/`: la base del 17 de noviembre, que
+  reemplaza a la del 10; el resumen semanal n.º 46 y el desglose por embalses
+  n.º 46; la captura del visor del 23 de noviembre con el parte entero, cuyas
+  375 cifras coinciden con la base; y la del parte del 10, con las dos cifras
+  corregidas.
+- Archivados en `fuentes/sanidad/2026/` la lista de centros de referencia y
+  el catálogo de patologías de noviembre de 2026. La lista de agosto ya no se
+  sirve en su dirección, y la copia archivada es la única que queda de esa
+  edición.
+- Archivados en `fuentes/ree/2026/` el listado de noviembre de 2026 de
+  solicitudes de acceso de demanda a la red de transporte y el fichero de
+  capacidad por nudo del 3 de noviembre.
+- Archivada en `fuentes/boa/2026/` la corrección de errores de la orden del
+  plan de Tillion Aragón.
+
+### Sin cambio
+
+- Fuera de las dos del Segura, ninguna cifra ya publicada cambia con la base
+  nueva. Las 402 series se cotejaron punto a punto contra la edición anterior.
+  Los 90 desgloses archivados dan ahora 36 partes corregidos y 198 cifras: el
+  nuevo es el del 10 de noviembre.
+- El desglose por embalses del n.º 46 da las mismas 375 cifras que la base, y
+  el visor también. El visor vuelve a dar las diez correcciones del parte del
+  13 de octubre, como la base, y el parte del 6 de octubre es el único en que
+  las dos publicaciones siguen separadas, por los 3 hm³ de Escales y
+  Mequinenza.
+- La producción de la semana que el Boletín atribuye a Red Eléctrica, 507,6
+  GWh, la reproduce el balance eléctrico que Red Eléctrica servía el 23 de
+  noviembre: hidráulica más turbinación de bombeo suman 507,63 GWh.
+
+### La guardia
+
+- Treinta y cuatro hallazgos de los vigías entre el 5 y el 21 de noviembre,
+  once juzgados el 15 y veintitrés el 23:
+  - uno entra como dato: la corrección de la orden del plan de Tillion Aragón,
+    de arriba;
+  - tres se suman a un expediente que ya se sigue: la cuarta vía pecuaria que
+    ocupa la línea de 20 kV del centro de datos de Quetta en Tres Cantos; el
+    informe ambiental del aumento de consumo de agua y del vertido del centro
+    de datos existente de Amazon en El Burgo de Ebro, cuyo anuncio no publica
+    ninguna cifra; y la modificación no sustancial del plan del polígono de
+    tecnologías de la información de Villanueva de Gállego, que no toca a los
+    centros de Amazon;
+  - diez son señal: ocho solicitudes de acceso a la red de transporte del
+    listado de noviembre de Red Eléctrica, tres de ellas de 137 MW cada una en
+    Nueva Escombreras, y dos nudos andaluces, Cártama y Santiponce, que dejan
+    de ser de concurso;
+  - veinte quedan fuera. Entre ellos, el Real Decreto 1032/2026, que fija los
+    requisitos de eficiencia, renovables y soberanía digital de los centros de
+    datos que piden acceso a la red y obliga a los de 500 kW o más a enviar
+    cada año sus datos de consumo al Ministerio para la Transición Ecológica,
+    que los publicará cuando una orden fije cómo. Es norma general y no nombra
+    ningún centro. Quedan fuera también ocho convenios de financiación de
+    inversiones municipales del Campo de Gibraltar; las plantas piloto de
+    investigación del Centro Nacional del Hidrógeno en Cuenca; una
+    depuradora en Corralejo; los sondeos de una futura desaladora de riego en
+    Tazacorte; una planta de reciclado de plásticos en San Mateo de Gállego;
+    cuatro contratos de desaladoras, dos de ellos de plantas en servicio que el
+    atlas aún no registra, Cabanes-Oropesa y Moncófar;
+    dos coincidencias de nombre, en Almaraz y en una línea eléctrica de Ayora;
+    y un cambio de socio único en una filial de Enagás.
+
+### Huecos
+
+- Los consumos de energía y de agua de los centros de datos siguen sin fuente
+  oficial por centro. El Real Decreto 1032/2026 promete publicarlos cada año,
+  y hasta que el Ministerio lo haga los registros los declaran como hueco.
+- La portada de la lista de noviembre de los centros de referencia dice 430
+  designaciones y sus tablas traen 428. El documento no explica la
+  diferencia. Y la lista designa centros bajo las patologías 25 y 26, que el
+  catálogo de la misma edición numera 25R1 y 26R1 con criterios revisados y
+  otro rótulo: el atlas no equipara unos números con otros, y las fichas
+  nombran la patología como la nombra la lista.
+- El texto completo de la resolución ambiental del centro de Amazon en El
+  Burgo de Ebro, que podría dar su consumo de agua, solo se sirve desde el
+  verificador de documentos del Gobierno de Aragón.
+
+---
+
 ## datos-v2026.11.183 — El parte del 10 de noviembre, y ocho hallazgos juzgados
 
 Esta edición lleva `agua-embalsada` al parte del 10 de noviembre de 2026, con

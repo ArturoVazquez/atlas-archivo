@@ -1684,6 +1684,12 @@ mismo que su captura del 14 de octubre, y para el parte del 6 daba ya las
 cuatro correcciones del Segura del 14 de octubre que su captura del 7 no tenía;
 esa respuesta está en
 `fuentes/miteco/2026/2026-11-10_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-40.json`.
+El 23 de noviembre el visor volvía a dar las diez del parte del 13 de octubre,
+como la base, y el parte del 6 seguía siendo el único en que las dos
+publicaciones discrepan. Ese día el visor daba ya para el parte del 10 de
+noviembre las dos cifras del Segura que la base corrigió esa semana, Cenajo
+235 y La Pedrera 87, que su captura del 10 no tenía; la nueva está en
+`fuentes/miteco/2026/2026-11-23_miteco_visor-boletin-hidrologico-embalses-total-parte-2026-45.json`.
 El visor deshace y rehace sin anunciarlo. Por eso en cada refresco se pide al
 visor el parte nuevo, los dos anteriores y cada parte en el que las dos
 publicaciones quedaron separadas la última vez, se coteja todo con la base
@@ -2962,12 +2968,25 @@ y la de descargas); las unidades administrativas del IGN ya estaban.
 
 **De dónde** · **Ministerio de Sanidad**, *Relación de centros, servicios y
 unidades de referencia (CSUR) del Sistema Nacional de Salud designados…*,
-edición de **agosto de 2026**, y su catálogo hermano de *Patologías o
-procedimientos CSUR*. Más el **Catálogo Nacional de Hospitales 2025** del mismo
+edición de **noviembre de 2026**, y su catálogo hermano de *Patologías o
+procedimientos CSUR* de la misma edición. Más el **Catálogo Nacional de Hospitales 2025** del mismo
 ministerio (nombre oficial, municipio, provincia, camas y dependencia funcional)
 y el geocodificador de **CartoCiudad** del IGN para el punto de cada centro. El
 marco es el **Real Decreto 1302/2006** (BOE-A-2006-19626), en vigor y **sin una
 sola modificación en veinte años**.
+**Ediciones y dirección** · El ministerio publica la lista por ediciones, y cada
+edición lleva el mes en el nombre del fichero. La de agosto de 2026 estaba en
+`https://www.sanidad.gob.es/areas/csur/centros/docs/Centros_designados_CSUR_agosto26.pdf`,
+y esa dirección da 404 desde que salió la de noviembre (comprobado el 23 de
+noviembre de 2026). La de noviembre está en
+`https://www.sanidad.gob.es/areas/csur/centros/docs/2._Centros_designados_CSUR_noviembre26.pdf`;
+su fichero es del 16 de noviembre de 2026 y su última orden, del 12. La
+dirección estable es la página que enlaza la edición vigente,
+`https://www.sanidad.gob.es/areas/csur/centros/csursns.htm`. La copia de la
+lista de agosto archivada aquí es la única que queda de esa edición, porque el
+ministerio ya no la sirve. El catálogo de agosto seguía en su dirección el 23 de
+noviembre de 2026, y está archivado igual. Las designaciones de noviembre no
+salieron en el BOE: el aviso fue la dirección muerta.
 **Licencia y qué obliga** · Sanidad, aviso legal del portal: reutilización
 autorizada **para usos comerciales y no comerciales**, con tres condiciones —
 no desnaturalizar el contenido, citar la fuente y **mencionar la fecha de la
@@ -2979,7 +2998,7 @@ ign.es`.
 venía esquivando el PDF: cuando una fuente solo se publicaba así, o había otra
 distribución o la capa se paraba. Aquí **no hay otra**: ni CSV, ni Excel, ni
 servicio, ni conjunto en `datos.gob.es` — 25 páginas de tablas y nada más. La
-alternativa era teclear 420 filas a mano, que es exactamente lo que este atlas
+alternativa era teclear cada fila a mano, que es exactamente lo que este atlas
 no hace. El lector de PDF es propio, sin dependencias, y sirve
 solo para PDF de texto: **no hay OCR y no lo habrá**. Reconstruye cada tabla
 desde las **reglas** que la dibujan —los rectángulos finos que Word pinta por
@@ -2995,25 +3014,41 @@ distinto es texto invisible**: el apóstrofo tipográfico de «Vall d’Hebrón�
 a Word a cambiar de fuente, y esa fuente escribe en códigos propios que solo el
 `/ToUnicode` traduce — sin resolverlo esa celda sale **vacía y sin error**, que
 es el peor fallo posible.
-**Tres números, y solo dos cuadran** · La portada dice «**420 CSUR en 53 centros
-para 94 patologías**». Las patologías salen **exactas**, y se comprueban además
-contra el **otro** documento: el catálogo lista **116**, de las que 94 tienen
-centro, **11 tienen los criterios retirados** y **11 están declaradas «No CSUR»**
-— y la extracción exige que toda catalogada sin designación diga por qué, o para
-la construcción. Los «53 centros» salen exactos **pero no son 53 hospitales**:
-son **53 unidades designadas**, y trece de ellas son **alianzas de dos centros**,
-así que hospitales distintos hay **46**. Y de las **420 filas rayadas**, dos son
-la **continuación de una fila partida por un salto de página**: designaciones hay
-**418**. Las dos se comprueban una a una —han de continuar una fila completa— y
-por eso la diferencia se afirma en vez de sospecharse.
+**Lo que dice la portada y lo que dicen las tablas** · La portada de la
+edición de noviembre de 2026 dice «**430 CSUR en 53 centros para 97
+patologías**». Las 97 patologías salen **exactas**. Los 53 «centros» también,
+**pero no son 53 hospitales**: son **53 unidades designadas**, y trece de ellas
+son **alianzas de dos centros**, así que hospitales distintos hay **46**. Las
+tablas traen **428 filas rayadas**, y cada una es una designación completa. La
+portada dice 430 y las tablas designan 428: el documento no explica la
+diferencia, y el atlas no la atribuye a nada. En la edición de agosto de 2026 la
+portada decía 420 y las tablas designaban 418, y dos de sus filas rayadas eran
+la continuación de una fila partida por un salto de página. En la de noviembre
+ninguna fila está partida y la diferencia sigue siendo de dos.
+**La lista y el catálogo no numeran igual dos patologías** · En la edición de
+noviembre de 2026 la lista designa centros bajo la 25, «Osteotomía pélvica en
+displasias de cadera en el adulto», y la 26, «Tratamiento de las infecciones
+osteoarticulares resistentes». El catálogo de la misma edición ya no tiene esos
+números: lista la 25R1, «Cirugía de preservación de cadera en el adolescente y
+adulto (Criterios revisados)», y la 26R1, «Tratamiento de las infecciones
+osteoarticulares resistentes (Criterios revisados)», y la lista no designa
+ningún centro con esos dos números. Los rótulos no coinciden y el atlas no
+equipara unos números con otros: las fichas nombran la patología como la nombra
+la lista. El catálogo lista **117** patologías o procedimientos: 95 con centro
+designado en la lista con el mismo número, **11 con los criterios retirados**,
+**9 declaradas «No CSUR»** y estas dos. La extracción exige que toda catalogada
+sin designación diga por qué, o que esté declarada con su rótulo exacto; si no,
+la construcción se detiene.
 **Por qué el nombre del centro va en tabla declarada** · Por tres cosas medidas
 sobre el documento. El **Vall d’Hebrón** aparece escrito de **seis maneras**
 (apóstrofo tipográfico, acento agudo, apóstrofo recto, con y sin espacio, con D
 mayúscula). **«Hospital U. Reina Sofía» (Córdoba) y «Hospital General U. Reina
 Sofía» (Murcia)** son dos hospitales a quinientos kilómetros que una palabra
 separa: cualquier casado por parecido los funde. Y partir las alianzas por
-« y » rompe **«Ramón y Cajal»** y **«y Politécnico La Fe»**. Son **66 grafías →
-53 unidades → 46 centros**, declaradas una a una, a mano.
+« y » rompe **«Ramón y Cajal»** y **«y Politécnico La Fe»**. En la edición de
+noviembre de 2026 son **67 grafías, 53 unidades y 46 centros**, declarados uno
+a uno. La grafía nueva es «Hospital U. y Politécnico la Fe», con minúscula, y en
+esa misma fila la comunidad se escribe «C. Valenciana».
 **La coordenada NO sale del domicilio, y hay un caso que lo prueba** · El primer
 intento fue geocodificar la dirección del Catálogo Nacional de Hospitales. Ese
 registro le da al **Ramón y Cajal** la calle de Ayala 38, en el centro de Madrid,
@@ -3041,9 +3076,9 @@ límite es **de la capa** y vive aquí.
 **Huecos declarados** · La capa dice **dónde** está designado cada centro y
 **para qué**, y nada sobre **actividad ni resultados**: el ministerio no publica
 casos atendidos por CSUR. Tampoco publica **por qué** un centro fue designado y
-otro no; los informes del Comité de Designación no son públicos. Las **once
-patologías catalogadas y declaradas «No CSUR»** no traen fecha de designación
-prevista. Y el **SEM** —el único CSUR que no es un hospital— sale **sin camas ni
+otro no; los informes del Comité de Designación no son públicos. Las **nueve
+patologías catalogadas y declaradas «No CSUR»** en la edición de noviembre de
+2026 no traen fecha de designación prevista. Y el **SEM** —el único CSUR que no es un hospital— sale **sin camas ni
 dependencia funcional**, porque el Catálogo Nacional de Hospitales solo cataloga
 hospitales.
 **Dos rarezas de la fuente, dichas y no corregidas** · La lista sigue llamando
@@ -3052,10 +3087,12 @@ está en el Hospital Universitario de Toledo, abierto en 2021. Y el Catálogo
 Nacional de Hospitales escribe **«Otras Entidades u o rganismos públicos»**, con
 la palabra partida; `dependencia` lo copia literal, que es lo que permite volver
 a la fila y encontrarla.
-**Archivado** · 6 ficheros (los dos PDF de Sanidad, el aviso legal del portal,
-el RD consolidado del BOE, el Excel del Catálogo Nacional de Hospitales y las 46
-respuestas de CartoCiudad).
-**El resto** · CHANGELOG `datos-v2026.08.69` · §10
+**Archivado** · 8 ficheros: los dos PDF de Sanidad de la edición de agosto de
+2026 y los dos de la de noviembre, el aviso legal del portal, el RD consolidado
+del BOE, el Excel del Catálogo Nacional de Hospitales y las 46 respuestas de
+CartoCiudad. La capa cita la edición de noviembre; los PDF de agosto se
+conservan aquí.
+**El resto** · CHANGELOG `datos-v2026.08.69` y `datos-v2026.11.184` · §10
 
 ## zonas-defensa
 
